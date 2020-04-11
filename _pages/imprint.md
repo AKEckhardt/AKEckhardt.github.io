@@ -12,21 +12,21 @@ redirect_from:
 <h2>Angaben gemäß § 5 TMG:</h2>
 Dr. André K. Eckhardt
 
-Massachusetts Institute of Technology
-Department of Chemistry
-77 Massachusetts Avenue
-Cambridge, MA 02139
+Massachusetts Institute of Technology  
+Department of Chemistry  
+77 Massachusetts Avenue  
+Cambridge, MA 02139  
 USA
 
 
 <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
 Dr. André K. Eckhardt
 
-Massachusetts Institute of Technology
-Department of Chemistry
-77 Massachusetts Avenue
-Cambridge, MA 02139
-USA
+Massachusetts Institute of Technology  
+Department of Chemistry  
+77 Massachusetts Avenue  
+Cambridge, MA 02139  
+USA  
 
 <h1>Datenschutzerklärung</h1>
 <h2 id="m14">Einleitung</h2>
