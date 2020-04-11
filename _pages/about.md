@@ -35,20 +35,6 @@ table, th, td {
 </table><br/>
 
 
-I'm thankful for conducting my research at the following universities at some point of my career.<br/>
-
-
-<table>
-  <tr>
-    <td style="width:20%;" align="center" valign="middle"><a href="https://www.uni-giessen.de/index.html"><img src="https://AKEckhardt.github.io/images/JLU.png" alt="Link" width="90%" height="auto%" align="middle"></a></td>
-    <td style="width:20%;" align="center" valign="middle"><a href="https://www.uc.pt/en"><img src="https://AKEckhardt.github.io/images/Coimbra.jpg" alt="Link" width="90%" height="auto%" align="middle"></a></td>
-    <td style="width:20%;" align="center" valign="middle"><a href="https://manoa.hawaii.edu/"><img src="https://AKEckhardt.github.io/images/UHM.jpg" alt="Link" width="90%" height="auto%" align="middle"></a></td>
-    <td style="width:20%;" align="center" valign="middle"><a href="http://web.mit.edu/"><img src="https://AKEckhardt.github.io/images/MIT.png" alt="Link" width="90%" height="auto%" align="middle"></a></td>
-    <td style="width:20%;" align="center" valign="middle"><a href="https://www.harvard.edu/"><img src="https://AKEckhardt.github.io/images/Harvard.png" alt="Link" width="90%" height="auto%" align="middle"></a></td>
-  </tr>
-</table><br/>
-
-
 Funding from the follwoing agencies during my carrer is gratefully acknowledged.<br/>
 
 
