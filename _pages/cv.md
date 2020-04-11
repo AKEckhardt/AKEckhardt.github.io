@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+excerpt: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,52 +9,43 @@ redirect_from:
 ---
 
 {% include base_path %}
+<p align="center"> <font size="6"><b>André K. Eckhardt</b></font></p>
+<p align="center"> <font size="5"><b>Curriculum Vitae</b></font></p>
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+<b>Harvard University</b>, Harvard-Smithsonian Center for Astrophysics (CfA), Cambridge, MA, USA (2020 - present)
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Postdoctoral Research Fellow, Advisor: [Michael C. McCarthy](https://www.cfa.harvard.edu/amp/mccarthygroup/index.html), PhD
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<b>Massachusetts Institute of Technology</b> (MIT), Department of Chemistry, Cambridge, MA, USA (2020 - present)
 
-Publications
+* Postdoctoral Research Fellow, Advisor: Prof. [Christopher C. Cummins](https://ccclab.mit.edu/)
+
+<b>Justus Liebig University</b> (JLU), Institute of Organic Chemistry, Gießen, Germany (2011 - 2020)
+
+* Postdoctoral Research Fellow, 05/2019 - 01/2020, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
+	* 09/2019: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
+	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
+* Dr. rer. nat. in Organic Chemistry, 10/2016 - 05/2019, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
+	* Thesis: "Sweet Life – Reactivity of Novel Carbenes in Tunneling and Sugar Forming Reactions" (summa cum laude)
+	* 04/2019: Visiting Researcher at <b>University of Coimbra</b>, Coimbra, Portugal,<br/>
+	Advisors: Prof. [Rui Fausto](http://www.qui.uc.pt/%7Erfausto/homepage/), [Cláudio M. Nunes](https://www.uc.pt/uid/tcc/people/Claudio_Nunes), PhD and Dr. hab. [Igor D. Reva](http://www.qui.uc.pt/~reva/)
+	* 08/2018 - 10/2018: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
+	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
+* M. Sc. in Organic Chemistry, 2014 - 2016, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
+* B. Sc. in Organic Chemistry, 2011 - 2014, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)<br/>
+
+* Abitur 2011 ([Theo-Koch-Schule Grünberg](https://www.theokoch.schule/))<br/><br/>
+
+
+Awards and Honors
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/pls/web/pub_hn_query.humboldtianer_details?p_externe_id=4835541&p_lang=en&p_pattern=))
+* DFG Walter Benjamin Postdoctoral Fellowship (2019, declined to accept Feodor Lynen Fellowship)
+* Reaxys PhD Prize Finalist ([2019](https://www.elsevier.com/solutions/reaxys/reaxys-phd-prize/2019-finalists))
+* FCI PhD Scholarship ([2017 - 2019](https://www.vci.de/fonds/stipendien/kekule-stipendium/seiten.jsp))
+* Poster Award ([691. WE-Heraeus-Seminar, 2019](https://www.we-heraeus-stiftung.de/veranstaltungen/seminare/2019/physical-organic-chemistry-recent-developments-in-instrumentation-structure-theory-and-mechanisms/))
+* GDCh Travel Grant Gordon Research Conference Physical Organic Chemistry, Holderness, NH, USA (2017)
+* GDCh Prize for the best Chemistry A-levels (2011)
+
