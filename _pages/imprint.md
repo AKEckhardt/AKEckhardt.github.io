@@ -12,29 +12,28 @@ redirect_from:
 <h2>Angaben gemäß § 5 TMG:</h2>
 Dr. André K. Eckhardt
 
-Massachusetts Institute of Technology 
-Department of Chemistry   
+Massachusetts Institute of Technology
+Department of Chemistry
 77 Massachusetts Avenue
 Cambridge, MA 02139
-USA 
+USA
 
-<a href="mailto:ake05[@]mit.edu">ake05[@]mit.edu</a>
 
 <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
 Dr. André K. Eckhardt
 
-Massachusetts Institute of Technology 
-Department of Chemistry   
+Massachusetts Institute of Technology
+Department of Chemistry
 77 Massachusetts Avenue
 Cambridge, MA 02139
-USA  
+USA
 
 <h1>Datenschutzerklärung</h1>
 <h2 id="m14">Einleitung</h2>
 <p>Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als "Daten“ bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "Onlineangebot“).</p>
 <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
 <ul class="m-elements"></ul><p>Stand: 11. April 2020</p><h2>Inhaltsübersicht</h2> <ul class="index"><li><a class="index-link" href="#m14"> Einleitung</a></li><li><a class="index-link" href="#m3"> Verantwortlicher</a></li><li><a class="index-link" href="#mOverview"> Übersicht der Verarbeitungen</a></li><li><a class="index-link" href="#m13"> Maßgebliche Rechtsgrundlagen</a></li><li><a class="index-link" href="#m27"> Sicherheitsmaßnahmen</a></li><li><a class="index-link" href="#m25"> Übermittlung und Offenbarung von personenbezogenen Daten</a></li><li><a class="index-link" href="#m24"> Datenverarbeitung in Drittländern</a></li><li><a class="index-link" href="#m134"> Einsatz von Cookies</a></li><li><a class="index-link" href="#m182"> Kontaktaufnahme</a></li><li><a class="index-link" href="#m225"> Bereitstellung des Onlineangebotes und Webhosting</a></li><li><a class="index-link" href="#m264"> Onlinemarketing</a></li><li><a class="index-link" href="#m12"> Löschung von Daten</a></li><li><a class="index-link" href="#m15"> Änderung und Aktualisierung der Datenschutzerklärung</a></li><li><a class="index-link" href="#m10"> Rechte der betroffenen Personen</a></li><li><a class="index-link" href="#m42"> Begriffsdefinitionen</a></li></ul><h2 id="m3">Verantwortlicher</h2> <p>Dr. André K. Eckhardt<br>Massachusetts Institute of Technology<br>Department of Chemistry<br>77 Massachusetts Avenue<br>Cambridge, MA 02139, USA</p>
-<p><strong>E-Mail-Adresse</strong>: <a href="mailto:ake05[@]mit.edu">ake05[@]mit.edu</a>
+<p>
 <ul class="m-elements"></ul><h2 id="mOverview">Übersicht der Verarbeitungen</h2><p>Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.</p><h3>Arten der verarbeiteten Daten</h3>
 <ul><li><p>Bestandsdaten (z.B. Namen, Adressen).</p></li><li><p>Inhaltsdaten  (z.B. Texteingaben, Fotografien, Videos).</p></li><li><p>Kontaktdaten (z.B. E-Mail, Telefonnummern).</p></li><li><p>Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).</p></li><li><p>Nutzungsdaten  (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).</p></li></ul><h3>Kategorien betroffener Personen</h3><ul><li><p>Interessenten.</p></li><li><p>Kommunikationspartner.</p></li><li><p>Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).</p></li></ul><h3>Zwecke der Verarbeitung</h3><ul><li><p>Besuchsaktionsauswertung.</p></li><li><p>Interessenbasiertes und verhaltensbezogenes Marketing.</p></li><li><p>Kontaktanfragen und Kommunikation.</p></li><li><p>Konversionsmessung (Messung der Effektivität von Marketingmaßnahmen).</p></li><li><p>Profiling (Erstellen von Nutzerprofilen).</p></li><li><p>Remarketing.</p></li><li><p>Reichweitenmessung (z.B. Zugriffsstatistiken, Erkennung wiederkehrender Besucher).</p></li><li><p>Tracking (z.B. interessens-/verhaltensbezogenes Profiling, Nutzung von Cookies).</p></li></ul><h2></h2><h3 id="m13">Maßgebliche Rechtsgrundlagen</h3><p>Im Folgenden teilen wir die Rechtsgrundlagen der Datenschutzgrundverordnung (DSGVO), auf deren Basis wir die personenbezogenen Daten verarbeiten, mit. Bitte beachten Sie, dass zusätzlich zu den Regelungen der DSGVO die nationalen Datenschutzvorgaben in Ihrem bzw. unserem Wohn- und Sitzland gelten können.</p>
  <ul><li><p><strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO)</strong> - Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.</p></li><li><p><strong>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b. DSGVO)</strong> - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen.</p></li><li><p><strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO)</strong> - Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten erforderlich, sofern nicht die Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten erfordern, überwiegen.</p></li></ul><p><strong>Nationale Datenschutzregelungen in Deutschland</strong>: Zusätzlich zu den Datenschutzregelungen der Datenschutz-Grundverordnung gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Des Weiteren regelt es die Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses (§ 26 BDSG), insbesondere im Hinblick auf die Begründung, Durchführung oder Beendigung von Beschäftigungsverhältnissen sowie die Einwilligung von Beschäftigten. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen.</p>
