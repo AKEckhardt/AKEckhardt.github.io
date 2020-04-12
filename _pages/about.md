@@ -11,9 +11,9 @@ redirect_from:
 
 <p style='text-align: justify;'> 
 <br/>Welcome to my homepage! I studied chemistry at Justus Liebig University Giessen (Germany) and completed my PhD studies with Prof. Dr. Peter R. Schreiner in 2019. 
-At the moment I'm a postdoctoral researcher at MIT with Prof. Kit Cummins and at Harvard Center for Astrophysics with Mike McCarthy. 
+At the moment I'm a postdoctoral researcher at MIT with Prof. Kit Cummins and at Harvard Center for Astrophysics with Mike McCarthy.<br/>
 My research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
-For the preparation of those molecules we use most of the time photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR and UV/Vis). 
+For the preparation of these molecules we use most of the time photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR and UV/Vis). 
 All prepared molecular structures are validated by comparison of experimental and computed properties. Suitable molecular precursors are synthesized in the lab. 
 During my postdoctoral stay in Cambridge I will extend my spectroscopic knowledge by learning microwave spectroscopy in combination with electrical discharge experiments.</p>
 
@@ -35,7 +35,7 @@ table, th, td {
 </table><br/>
 
 
-Funding from the follwoing agencies during my carrer is gratefully acknowledged.<br/>
+I gratefully acknowledge funding from the following agencies.<br/>
 
 
 <table>
