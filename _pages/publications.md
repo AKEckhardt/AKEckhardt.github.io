@@ -11,6 +11,15 @@ author_profile: true
 
 ___
 
+(16) <b>Photochemistry of HNSO<sub>2</sub> in cryogenic matrices: spectroscopic identification of the intermediates and mechanism.</b> C. Chen, L. Wang, X. Zhao, Z. Wu, B. Bernhardt, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2020</b>, <i>22</i>, 7975–7983, [doi:10.1039/D0CP00962H](http://doi.org/10.1039/D0CP00962H). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1039/D0CP00962H"><img src="https://AKEckhardt.github.io/images/pub16.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (15) <b>1,1-Ethenediol – The Long Elusive Enol of Acetic Acid.</b> Artur Mardyukov, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2020</b>, <i>59</i>, 5577–5580, [doi:10.1002/anie.201915646](http://doi.org/10.1002/anie.201915646); <i>Angew. Chem. </i>, <b>2020</b>, <i>132</i>, 5625–5628, [doi:10.1002/ange.201915646](http://doi.org/10.1002/ange.201915646). 
 
 <p align="center"> 
