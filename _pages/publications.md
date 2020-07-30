@@ -11,6 +11,17 @@ author_profile: true
 
 ___
 
+(17) <b>The elusive cyclotriphosphazene molecule and its Dewar benzene–type valence isomer (P<sub>3</sub>N<sub>3</sub>).</b> C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](http://doi.org/10.1126/sciadv.aba6934). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1126/sciadv.aba6934"><img src="https://AKEckhardt.github.io/images/pub17.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
+
+
+____
+
 (16) <b>Photochemistry of HNSO<sub>2</sub> in cryogenic matrices: spectroscopic identification of the intermediates and mechanism.</b> C. Chen, L. Wang, X. Zhao, Z. Wu, B. Bernhardt, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2020</b>, <i>22</i>, 7975–7983, [doi:10.1039/D0CP00962H](http://doi.org/10.1039/D0CP00962H). 
 
 <p align="center"> 
@@ -20,7 +31,7 @@ ___
 
 ___
 
-(15) <b>1,1-Ethenediol – The Long Elusive Enol of Acetic Acid.</b> Artur Mardyukov, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2020</b>, <i>59</i>, 5577–5580, [doi:10.1002/anie.201915646](http://doi.org/10.1002/anie.201915646); <i>Angew. Chem. </i>, <b>2020</b>, <i>132</i>, 5625–5628, [doi:10.1002/ange.201915646](http://doi.org/10.1002/ange.201915646). 
+(15) <b>1,1-Ethenediol – The Long Elusive Enol of Acetic Acid.</b> Artur Mardyukov, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2020</b>, <i>59</i>, 5577–5580, [doi:10.1002/anie.201915646](http://doi.org/10.1002/anie.201915646); <i>Angew. Chem.</i>, <b>2020</b>, <i>132</i>, 5625–5628, [doi:10.1002/ange.201915646](http://doi.org/10.1002/ange.201915646). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1002/anie.201915646"><img src="https://AKEckhardt.github.io/images/pub15.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -47,7 +58,7 @@ ___
 
 ___
 
-(12) <b>Formation of Glyoxylic Acid in Interstellar Ices: A Key Entry Point for Prebiotic Chemistry.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini,<sup>‡</sup> S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059); <i>Angew. Chem. </i>, <b>2019</b>, <i>131</i>, 5719–5723, [doi:10.1002/ange.201901059](http://doi.org/10.1002/ange.201901059). 
+(12) <b>Formation of Glyoxylic Acid in Interstellar Ices: A Key Entry Point for Prebiotic Chemistry.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini,<sup>‡</sup> S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059); <i>Angew. Chem.</i>, <b>2019</b>, <i>131</i>, 5719–5723, [doi:10.1002/ange.201901059](http://doi.org/10.1002/ange.201901059). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1002/anie.201901059"><img src="https://AKEckhardt.github.io/images/pub12.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -105,7 +116,7 @@ ___
 
 ___
 
-(06) <b>Spectroscopic Evidence for Aminomethylene (H−C̈−NH<sub>2</sub>) – The Simplest Amino Carbene.</b> <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2018</b>, <i>57</i>, 5248–5252, [doi:10.1002/anie.201800679](http://doi.org/10.1002/anie.201800679); <i>Angew. Chem. </i>, <b>2018</b>, <i>130</i>, 5346–5350, [doi:10.1002/ange.201800679](http://doi.org/10.1002/ange.201800679). 
+(06) <b>Spectroscopic Evidence for Aminomethylene (H−C̈−NH<sub>2</sub>) – The Simplest Amino Carbene.</b> <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2018</b>, <i>57</i>, 5248–5252, [doi:10.1002/anie.201800679](http://doi.org/10.1002/anie.201800679); <i>Angew. Chem.</i>, <b>2018</b>, <i>130</i>, 5346–5350, [doi:10.1002/ange.201800679](http://doi.org/10.1002/ange.201800679). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1002/anie.201800679"><img src="https://AKEckhardt.github.io/images/pub06.jpg" alt="Link" width="40%" height="auto%"/></a>
