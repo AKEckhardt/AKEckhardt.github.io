@@ -17,7 +17,7 @@ ___
 <a href="http://doi.org/10.1126/sciadv.aba6934"><img src="https://AKEckhardt.github.io/images/pub17.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
-<b>Highlight:</b> • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
+<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/07/22/elusive-molecular-building-block/) • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
 
 
 ____
