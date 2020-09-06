@@ -8,6 +8,14 @@ author_profile: true
 
 <br/>
 
+___
+
+(18) <b>Spectroscopic identification of the •SSNO isomers.</b> L. Wang, Z. Wu, B. Lu, <u>A. K. Eckhardt</u>, P. R. Schreiner, T. Trabelsi, J. S. Francisco, Q. Yao, C. Xie, H. Guo, and X. Zeng <i>J. Chem. Phys.</i>, <b>2020</b>, <i>153</i>, 094303, [doi:10.1063/5.0020669](http://doi.org/10.1063/5.0020669). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1063/5.0020669"><img src="https://AKEckhardt.github.io/images/pub18.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
 
 ___
 
@@ -20,7 +28,7 @@ ___
 <b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/07/22/elusive-molecular-building-block/) • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
 
 
-____
+___
 
 (16) <b>Photochemistry of HNSO<sub>2</sub> in cryogenic matrices: spectroscopic identification of the intermediates and mechanism.</b> C. Chen, L. Wang, X. Zhao, Z. Wu, B. Bernhardt, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2020</b>, <i>22</i>, 7975–7983, [doi:10.1039/D0CP00962H](http://doi.org/10.1039/D0CP00962H). 
 
