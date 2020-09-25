@@ -13,7 +13,7 @@ ___
 (19) <b>A Mechanistic Study on the Formation of Acetic Acid (CH<sub>3</sub>COOH) in Polar Interstellar Analog Ices Exploiting Photoionization Reflectron Time-of-flight Mass Spectrometry.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2020</b>, <i>901</i>, 84, [doi:10.3847/1538-4357/abafa4](https://doi.org/10.3847/1538-4357/abafa4). 
 
 <p align="center"> 
-<a href="https://doi.org/10.3847/1538-4357/abafa4"><img src="https://AKEckhardt.github.io/images/pub19.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.3847/1538-4357/abafa4"><img src="https://AKEckhardt.github.io/images/pub19.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
