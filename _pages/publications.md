@@ -10,6 +10,15 @@ author_profile: true
 
 ___
 
+(19) <b>A Mechanistic Study on the Formation of Acetic Acid (CH<sub>3</sub>COOH) in Polar Interstellar Analog Ices Exploiting Photoionization Reflectron Time-of-flight Mass Spectrometry.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2020</b>, <i>901</i>, 84, [doi:10.3847/1538-4357/abafa4](https://doi.org/10.3847/1538-4357/abafa4). 
+
+<p align="center"> 
+<a href="https://doi.org/10.3847/1538-4357/abafa4"><img src="https://AKEckhardt.github.io/images/pub19.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (18) <b>Spectroscopic identification of the •SSNO isomers.</b> L. Wang, Z. Wu, B. Lu, <u>A. K. Eckhardt</u>, P. R. Schreiner, T. Trabelsi, J. S. Francisco, Q. Yao, C. Xie, H. Guo, and X. Zeng <i>J. Chem. Phys.</i>, <b>2020</b>, <i>153</i>, 094303, [doi:10.1063/5.0020669](http://doi.org/10.1063/5.0020669). 
 
 <p align="center"> 
