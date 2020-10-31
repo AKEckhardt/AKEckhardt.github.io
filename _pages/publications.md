@@ -10,7 +10,7 @@ author_profile: true
 
 ___
 
-(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003. 
+(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
