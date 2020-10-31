@@ -10,6 +10,17 @@ author_profile: true
 
 ___
 
+(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003. 
+
+<p align="center"> 
+<a href="http://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/10/27/building-block-deep-space/) • [Miragenews.com](https://www.miragenews.com/key-building-block-of-life-may-have-arrived-from-deep-space/)
+
+
+___
+
 (19) <b>A Mechanistic Study on the Formation of Acetic Acid (CH<sub>3</sub>COOH) in Polar Interstellar Analog Ices Exploiting Photoionization Reflectron Time-of-flight Mass Spectrometry.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2020</b>, <i>901</i>, 84, [doi:10.3847/1538-4357/abafa4](https://doi.org/10.3847/1538-4357/abafa4). 
 
 <p align="center"> 
