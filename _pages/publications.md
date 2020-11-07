@@ -16,7 +16,7 @@ ___
 <a href="http://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
-<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/10/27/building-block-deep-space/) • [JLU press release](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/165-20biomolekuelsyntheseohnebiochemie) • [Astrobiology.com](http://astrobiology.com/2020/10/a-key-building-block-of-life-may-have-arrived-from-deep-space.html) • [Miragenews.com](https://www.miragenews.com/key-building-block-of-life-may-have-arrived-from-deep-space/)
+<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/10/27/building-block-deep-space/) • [JLU press release](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/165-20biomolekuelsyntheseohnebiochemie) • [Astrobiology.com](http://astrobiology.com/2020/10/a-key-building-block-of-life-may-have-arrived-from-deep-space.html) • [Miragenews.com](https://www.miragenews.com/key-building-block-of-life-may-have-arrived-from-deep-space/) • [Bionity.com](https://www.bionity.com/de/news/1168515/biomolekuelsynthese-ohne-biochemie-wie-organische-molekuele-im-weltraum-entstehen-koennen.html)
 
 
 ___
