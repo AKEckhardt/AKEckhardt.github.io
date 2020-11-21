@@ -41,7 +41,7 @@ Education
 
 Awards and Honors
 ======
-* Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/pls/web/pub_hn_query.humboldtianer_details?p_externe_id=4835541&p_lang=en&p_pattern=))
+* Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
 * DFG Walter Benjamin Postdoctoral Fellowship (2019, declined to accept Feodor Lynen Fellowship)
 * Reaxys PhD Prize Finalist ([2019](https://www.elsevier.com/solutions/reaxys/reaxys-phd-prize/2019-finalists))
 * FCI PhD Scholarship ([2017 - 2019](https://www.vci.de/fonds/stipendien/kekule-stipendium/seiten.jsp))
