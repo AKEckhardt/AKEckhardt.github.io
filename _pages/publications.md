@@ -10,7 +10,7 @@ author_profile: true
 
 ___
 
-(21) <b>A chemical dynamics study on the gas-phase formation of triplet and singlet (C<sub>5</sub>H<sub>2</sub>) carbenes.</b> C. He, G. R. Galimova, Y. Luo, L. Zhao, <u>A. K. Eckhardt</u>, R. Sun, A. M. Mebel and R. I. Kaiser <i>Proc. Natl. Acad. Sci. U.S.A.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1073/pnas.2019257117](http://doi.org/10.1073/pnas.2019257117). 
+(21) <b>A chemical dynamics study on the gas-phase formation of triplet and singlet (C<sub>5</sub>H<sub>2</sub>) carbenes.</b> C. He, G. R. Galimova, Y. Luo, L. Zhao, <u>A. K. Eckhardt</u>, R. Sun, A. M. Mebel and R. I. Kaiser <i>Proc. Natl. Acad. Sci. U.S.A.</i>, <b>2020</b>, <i>117</i>, 30142–30150, [doi:10.1073/pnas.2019257117](http://doi.org/10.1073/pnas.2019257117). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1073/pnas.2019257117"><img src="https://AKEckhardt.github.io/images/pub21.png" alt="Link" width="40%" height="auto%"/></a>
@@ -19,7 +19,7 @@ ___
 
 ___
 
-(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). 
+(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>6</i>, 3385–3395, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
