@@ -10,6 +10,15 @@ author_profile: true
 
 ___
 
+(22) <b>Intramolecular London Dispersion Interactions Do Not Cancel in Solution.</b> J. M. Schümann, J. P. Wagner, <u>A. K. Eckhardt</u>, H. Quanz and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1021/jacs.0c09597](http://doi.org/10.1021/jacs.0c09597). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1021/jacs.0c09597"><img src="https://AKEckhardt.github.io/images/pub22.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (21) <b>A chemical dynamics study on the gas-phase formation of triplet and singlet (C<sub>5</sub>H<sub>2</sub>) carbenes.</b> C. He, G. R. Galimova, Y. Luo, L. Zhao, <u>A. K. Eckhardt</u>, R. Sun, A. M. Mebel and R. I. Kaiser <i>Proc. Natl. Acad. Sci. U.S.A.</i>, <b>2020</b>, <i>117</i>, 30142–30150, [doi:10.1073/pnas.2019257117](http://doi.org/10.1073/pnas.2019257117). 
 
 <p align="center"> 
