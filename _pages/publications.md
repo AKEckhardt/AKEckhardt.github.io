@@ -10,6 +10,15 @@ author_profile: true
 
 ___
 
+(23) <b>A Photoionization Study on the Detection of 1-Sila Glycolaldehyde (HSiOCH<sub>2</sub>OH), 2-Sila Acetic Acid (SiH<sub>3</sub>COOH), and 1,2-Disila Acetaldehyde (HSiOSiH<sub>3</sub>).</b> Sankhabrata Chandra, <u>A. K. Eckhardt</u>, Andrew M. Turner, György Tarczay and Ralf I. Kaiser <i>Chem. Eur. J.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1002/chem.202004863](http://doi.org/10.1002/chem.202004863). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1002/chem.202004863"><img src="https://AKEckhardt.github.io/images/pub23.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (22) <b>Intramolecular London Dispersion Interactions Do Not Cancel in Solution.</b> J. M. Schümann, J. P. Wagner, <u>A. K. Eckhardt</u>, H. Quanz and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1021/jacs.0c09597](http://doi.org/10.1021/jacs.0c09597). 
 
 <p align="center"> 
