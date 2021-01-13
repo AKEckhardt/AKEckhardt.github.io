@@ -19,7 +19,7 @@ ___
 
 ___
 
-(22) <b>Intramolecular London Dispersion Interactions Do Not Cancel in Solution.</b> J. M. Schümann, J. P. Wagner, <u>A. K. Eckhardt</u>, H. Quanz and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1021/jacs.0c09597](http://doi.org/10.1021/jacs.0c09597). 
+(22) <b>Intramolecular London Dispersion Interactions Do Not Cancel in Solution.</b> J. M. Schümann, J. P. Wagner, <u>A. K. Eckhardt</u>, H. Quanz and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 41–45, [doi:10.1021/jacs.0c09597](http://doi.org/10.1021/jacs.0c09597). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1021/jacs.0c09597"><img src="https://AKEckhardt.github.io/images/pub22.jpg" alt="Link" width="40%" height="auto%"/></a>
