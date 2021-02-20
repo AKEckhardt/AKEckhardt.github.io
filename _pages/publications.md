@@ -43,6 +43,8 @@ ___
 <a href="http://doi.org/10.1073/pnas.2019257117"><img src="https://AKEckhardt.github.io/images/pub21.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
+<b>Highlight:</b> • [Energy.gov](https://www.energy.gov/science/bes/articles/new-study-evaluates-role-carbenes-formation-soot)
+
 
 ___
 
