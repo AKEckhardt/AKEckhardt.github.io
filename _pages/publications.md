@@ -28,10 +28,10 @@ ___
 
 ___
 
-(23) <b>A Photoionization Study on the Detection of 1-Sila Glycolaldehyde (HSiOCH<sub>2</sub>OH), 2-Sila Acetic Acid (SiH<sub>3</sub>COOH), and 1,2-Disila Acetaldehyde (HSiOSiH<sub>3</sub>).</b> S. Chandra, <u>A. K. Eckhardt</u>, A. M. Turner, G. Tarczay and R. I. Kaiser <i>Chem. Eur. J.</i>, <b>2020</b>, <i>accepted</i>, [doi:10.1002/chem.202004863](http://doi.org/10.1002/chem.202004863). 
+(23) <b>A Photoionization Study on the Detection of 1-Sila Glycolaldehyde (HSiOCH<sub>2</sub>OH), 2-Sila Acetic Acid (SiH<sub>3</sub>COOH), and 1,2-Disila Acetaldehyde (HSiOSiH<sub>3</sub>).</b> S. Chandra, <u>A. K. Eckhardt</u>, A. M. Turner, G. Tarczay and R. I. Kaiser <i>Chem. Eur. J.</i>, <b>2021</b>, <i>27</i>, 4939–4945, [doi:10.1002/chem.202004863](http://doi.org/10.1002/chem.202004863). 
 
 <p align="center"> 
-<a href="http://doi.org/10.1002/chem.202004863"><img src="https://AKEckhardt.github.io/images/pub23.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="http://doi.org/10.1002/chem.202004863"><img src="https://AKEckhardt.github.io/images/pub23.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
