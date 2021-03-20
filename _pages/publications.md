@@ -10,7 +10,7 @@ author_profile: true
 
 ___
 
-(25) <b>Ethynylhydroxycarbene (H–C≡C–C̈–OH).</b> B. Bernhardt, M. Ruth, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, accepted, [doi:10.1021/jacs.1c00897](http://doi.org/10.1021/jacs.1c00897). 
+(25) <b>Ethynylhydroxycarbene (H–C≡C–C̈–OH).</b> B. Bernhardt, M. Ruth, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>J. Am. Chem. Soc</i>, <b>2021</b>, <i>143</i>, 3741–3746, [doi:10.1021/jacs.1c00897](http://doi.org/10.1021/jacs.1c00897). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1021/jacs.1c00897"><img src="https://AKEckhardt.github.io/images/pub25.jpg" alt="Link" width="40%" height="auto%"/></a>
