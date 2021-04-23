@@ -258,7 +258,6 @@ ___
 
 ___
 
-<sup>‡</sup> = contributed equally
+<sup>‡</sup> = contributed equally  
 <sup>*</sup> = corresponding author
-
 
