@@ -10,7 +10,7 @@ author_profile: true
 
 ___
 
-(26) <b>Formation of phosphine imide (HN=PH<sub>3</sub>) and its phosphinous amide (H<sub>2</sub>N–PH<sub>2</sub>) isomer</b> C. Zhu, A. Bergantini, S. K. Singh, R. I. Kaiser, <u>A. K. Eckhardt</u>,<sup>*</sup> P. R. Schreiner, Y. S. Huang, B. J. Sund and A. H. H. Chang <i>Chem. Commun.</i>, <b>2021</b>, <i>accepted</i>, [doi:10.1039/D0CC08411E](https://doi.org/10.1039/D0CC08411E). 
+(26) <b>Formation of phosphine imide (HN=PH<sub>3</sub>) and its phosphinous amide (H<sub>2</sub>N–PH<sub>2</sub>) isomer.</b> C. Zhu, A. Bergantini, S. K. Singh, R. I. Kaiser, <u>A. K. Eckhardt</u>,<sup>*</sup> P. R. Schreiner, Y. S. Huang, B. J. Sund and A. H. H. Chang <i>Chem. Commun.</i>, <b>2021</b>, <i>accepted</i>, [doi:10.1039/D0CC08411E](https://doi.org/10.1039/D0CC08411E). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D0CC08411E"><img src="https://AKEckhardt.github.io/images/pub26.gif" alt="Link" width="40%" height="auto%"/></a>
