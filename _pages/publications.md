@@ -10,7 +10,16 @@ author_profile: true
 
 ___
 
-(25) <b>Ethynylhydroxycarbene (H–C≡C–C̈–OH).</b> B. Bernhardt, M. Ruth, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>J. Am. Chem. Soc</i>, <b>2021</b>, <i>143</i>, 3741–3746, [doi:10.1021/jacs.1c00897](http://doi.org/10.1021/jacs.1c00897). 
+(26) <b>Formation of phosphine imide (HN=PH<sub>3</sub>) and its phosphinous amide (H<sub>2</sub>N–PH<sub>2</sub>) isomer</b> C. Zhu, A. Bergantini, S. K. Singh, R. I. Kaiser, <u>A. K. Eckhardt</u>,<sup>*</sup> P. R. Schreiner, Y. S. Huang, B. J. Sund and A. H. H. Chang <i>Chem. Commun.</i>, <b>2021</b>, <i>accepted</i>, [doi:10.1039/D0CC08411E](https://doi.org/10.1039/D0CC08411E). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D0CC08411E"><img src="https://AKEckhardt.github.io/images/pub26.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(25) <b>Ethynylhydroxycarbene (H–C≡C–C̈–OH).</b> B. Bernhardt, M. Ruth, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 3741–3746, [doi:10.1021/jacs.1c00897](http://doi.org/10.1021/jacs.1c00897). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1021/jacs.1c00897"><img src="https://AKEckhardt.github.io/images/pub25.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -19,7 +28,7 @@ ___
 
 ___
 
-(24) <b>Characterization of the Simplest Thiolimine – The Higher Energy Tautomer of Thioformamide.</b> B. Bernhardt, F. Dressler, <u>A. K. Eckhardt</u>, J. Becker and P. R. Schreiner <i>Chem. Eur. J.</i>, <b>2021</b>, <i>accepted</i>, [doi:10.1002/chem.202005188](http://doi.org/10.1002/chem.202005188). 
+(24) <b>Characterization of the Simplest Thiolimine – The Higher Energy Tautomer of Thioformamide.</b> B. Bernhardt, F. Dressler, <u>A. K. Eckhardt</u>, J. Becker and P. R. Schreiner <i>Chem. Eur. J.</i>, <b>2021</b>, <i>27</i>, 6732–6739, [doi:10.1002/chem.202005188](http://doi.org/10.1002/chem.202005188). 
 
 <p align="center"> 
 <a href="http://doi.org/10.1002/chem.202005188"><img src="https://AKEckhardt.github.io/images/pub24.png" alt="Link" width="40%" height="auto%"/></a>
@@ -250,4 +259,4 @@ ___
 ___
 
 <sup>‡</sup> = contributed equally
-
+<sup>*</sup> = corresponding author
