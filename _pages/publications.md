@@ -10,7 +10,7 @@ author_profile: true
 
 ___
 
-(27) <b>Identification of Elusive Keto and Enol Intermediates in the Photolysis of 1,3,5-Trinitro-1,3,5-Triazinane</b> S. K. Singh, V. Vuppuluri, B. J. Sun, B. Y. Chang, <u>A. K. Eckhardt</u>, S. F. Son, A. H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2021</b>, <i>12</i>, 6062–6069, [doi:10.1021/acs.jpclett.1c01610](https://doi.org/10.1021/acs.jpclett.1c01610). 
+(27) <b>Identification of Elusive Keto and Enol Intermediates in the Photolysis of 1,3,5-Trinitro-1,3,5-Triazinane.</b> S. K. Singh, V. Vuppuluri, B. J. Sun, B. Y. Chang, <u>A. K. Eckhardt</u>, S. F. Son, A. H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2021</b>, <i>12</i>, 6062–6069, [doi:10.1021/acs.jpclett.1c01610](https://doi.org/10.1021/acs.jpclett.1c01610). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.1c01610"><img src="https://AKEckhardt.github.io/images/pub27.gif" alt="Link" width="40%" height="auto%"/></a>
