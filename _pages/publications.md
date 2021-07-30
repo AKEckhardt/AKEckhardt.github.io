@@ -10,6 +10,24 @@ author_profile: true
 
 ___
 
+(29) <b>Spectroscopic characterization and photochemistry of the vinylsulfinyl radical.</b> Z. Wu, L. Wang, B. Lu, <u>A. K. Eckhardt</u>, P. R. Schreiner, and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2021</b>, <i>XX</i>, XXX, [doi:10.1039/D1CP02584H](http://doi.org/10.1039/D1CP02584H). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1039/D1CP02584H"><img src="https://AKEckhardt.github.io/images/pub29.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(28) <b>A Photoionization Mass Spectrometry Investigation into Complex Organic Molecules Formed in Interstellar Analog Ices of Carbon Monoxide and Water Exposed to Ionizing Radiation.</b> A. M. Turner, A. Bergantini, A. S. Koutsogiannis, N. F. Kleimeier, S. K. Singh, C. Zhu, <u>A. K. Eckhardt</u> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2021</b>, <i>916</i>, 74, [doi:10.3847/1538-4357/ac0537](https://doi.org/10.3847/1538-4357/ac0537). 
+
+<p align="center"> 
+<a href="https://doi.org/10.3847/1538-4357/ac0537"><img src="https://AKEckhardt.github.io/images/pub28.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (27) <b>Identification of Elusive Keto and Enol Intermediates in the Photolysis of 1,3,5-Trinitro-1,3,5-Triazinane.</b> S. K. Singh, V. Vuppuluri, B. J. Sun, B. Y. Chang, <u>A. K. Eckhardt</u>, S. F. Son, A. H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2021</b>, <i>12</i>, 6062–6069, [doi:10.1021/acs.jpclett.1c01610](https://doi.org/10.1021/acs.jpclett.1c01610). 
 
 <p align="center"> 
