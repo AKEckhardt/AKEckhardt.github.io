@@ -22,7 +22,7 @@ ___
 (28) <b>A Photoionization Mass Spectrometry Investigation into Complex Organic Molecules Formed in Interstellar Analog Ices of Carbon Monoxide and Water Exposed to Ionizing Radiation.</b> A. M. Turner, A. Bergantini, A. S. Koutsogiannis, N. F. Kleimeier, S. K. Singh, C. Zhu, <u>A. K. Eckhardt</u> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2021</b>, <i>916</i>, 74, [doi:10.3847/1538-4357/ac0537](https://doi.org/10.3847/1538-4357/ac0537). 
 
 <p align="center"> 
-<a href="https://doi.org/10.3847/1538-4357/ac0537"><img src="https://AKEckhardt.github.io/images/pub28.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.3847/1538-4357/ac0537"><img src="https://AKEckhardt.github.io/images/pub28.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
