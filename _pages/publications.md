@@ -13,7 +13,7 @@ ___
 (29) <b>Spectroscopic characterization and photochemistry of the vinylsulfinyl radical.</b> Z. Wu, L. Wang, B. Lu, <u>A. K. Eckhardt</u>, P. R. Schreiner, and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2021</b>, <i>XX</i>, XXX, [doi:10.1039/D1CP02584H](http://doi.org/10.1039/D1CP02584H). 
 
 <p align="center"> 
-<a href="http://doi.org/10.1039/D1CP02584H"><img src="https://AKEckhardt.github.io/images/pub29.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="http://doi.org/10.1039/D1CP02584H"><img src="https://AKEckhardt.github.io/images/pub29.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
