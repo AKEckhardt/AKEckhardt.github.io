@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(XX) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistonis and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(31) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistonis and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 
 ___
@@ -21,7 +21,7 @@ Published
 ------
 ___
 
-(30) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, XXX–XXX, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
+(30) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub30.png" alt="Link" width="40%" height="auto%"/></a>
