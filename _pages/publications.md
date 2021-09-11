@@ -24,7 +24,7 @@ ___
 (31) <b>Carbon-13 studies of sulphur-terminated carbon chains: chemical bonding, molecular structures, and formation pathways.</b> M. C. McCarthy, K. L. K. Lee, J. P. Porterfield, P. B. Changala and <u>A. K. Eckhardt</u> <i>Mol. Phys.</i>, <b>2021</b>, <i>119</i>, e1975052, [doi:10.1080/00268976.2021.1975052](https://doi.org/10.1080/00268976.2021.1975052). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1080/00268976.2021.1975052"><img src="https://AKEckhardt.github.io/images/pub31.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1080/00268976.2021.1975052"><img src="https://AKEckhardt.github.io/images/pub31.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
