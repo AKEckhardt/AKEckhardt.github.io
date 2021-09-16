@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(32) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistonis and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(33) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistonis and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 
 ___
@@ -19,6 +19,15 @@ ___
 
 Published
 ------
+___
+
+(32) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1038/s41467-021-25775-1"><img src="https://AKEckhardt.github.io/images/pub32.PNG" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
 ___
 
 (31) <b>Carbon-13 studies of sulphur-terminated carbon chains: chemical bonding, molecular structures, and formation pathways.</b> M. C. McCarthy, K. L. K. Lee, J. P. Porterfield, P. B. Changala and <u>A. K. Eckhardt</u> <i>Mol. Phys.</i>, <b>2021</b>, <i>119</i>, e1975052, [doi:10.1080/00268976.2021.1975052](https://doi.org/10.1080/00268976.2021.1975052). 
