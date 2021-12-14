@@ -11,12 +11,7 @@ Preprints
 ------
 ___
 
-(34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Mono Phosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-xz4qh](https://doi.org/10.33774/chemrxiv-2021-xz4qh). 
-
-
-___
-
-(33) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(34) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
 
@@ -26,6 +21,15 @@ ___
 
 Published
 ------
+___
+
+(33) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, accepted, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.1c11426"><img src="https://AKEckhardt.github.io/images/pub33.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
 ___
 
 (32) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). 
