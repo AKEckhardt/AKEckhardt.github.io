@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(34) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(35) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
 
@@ -23,19 +23,19 @@ Published
 ------
 ___
 
-(33) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
+(34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1021/jacs.1c11426"><img src="https://AKEckhardt.github.io/images/pub33.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1021/jacs.1c11426"><img src="https://AKEckhardt.github.io/images/pub34.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
 ___
 
-(32) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). 
+(33) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1038/s41467-021-25775-1"><img src="https://AKEckhardt.github.io/images/pub32.PNG" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1038/s41467-021-25775-1"><img src="https://AKEckhardt.github.io/images/pub33.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
@@ -43,28 +43,37 @@ ___
 
 ___
 
-(31) <b>Carbon-13 studies of sulphur-terminated carbon chains: chemical bonding, molecular structures, and formation pathways.</b> M. C. McCarthy, K. L. K. Lee, J. P. Porterfield, P. B. Changala and <u>A. K. Eckhardt</u> <i>Mol. Phys.</i>, <b>2021</b>, <i>119</i>, e1975052, [doi:10.1080/00268976.2021.1975052](https://doi.org/10.1080/00268976.2021.1975052). 
+(32) <b>Carbon-13 studies of sulphur-terminated carbon chains: chemical bonding, molecular structures, and formation pathways.</b> M. C. McCarthy, K. L. K. Lee, J. P. Porterfield, P. B. Changala and <u>A. K. Eckhardt</u> <i>Mol. Phys.</i>, <b>2021</b>, <i>119</i>, e1975052, [doi:10.1080/00268976.2021.1975052](https://doi.org/10.1080/00268976.2021.1975052). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1080/00268976.2021.1975052"><img src="https://AKEckhardt.github.io/images/pub31.PNG" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1080/00268976.2021.1975052"><img src="https://AKEckhardt.github.io/images/pub32.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
 ___
 
-(30) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
+(31) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub30.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub31.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
 ___
 
-(29) <b>Dimerization and Cycloaddition Reactions of Transient Tri-<i>tert</i>-butylphosphacyclobutadiene Generated by Lewis Acid Induced Isomerization of Tri-<i>tert</i>-butylphosphatetrahedrane.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 13005–13009, [doi:10.1021/jacs.1c06840](https://doi.org/10.1021/jacs.1c06840). 
+(30) <b>Dimerization and Cycloaddition Reactions of Transient Tri-<i>tert</i>-butylphosphacyclobutadiene Generated by Lewis Acid Induced Isomerization of Tri-<i>tert</i>-butylphosphatetrahedrane.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 13005–13009, [doi:10.1021/jacs.1c06840](https://doi.org/10.1021/jacs.1c06840). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1021/jacs.1c06840"><img src="https://AKEckhardt.github.io/images/pub29.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1021/jacs.1c06840"><img src="https://AKEckhardt.github.io/images/pub30.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(29) <b>Spectroscopic characterization and photochemistry of the vinylsulfinyl radical.</b> Z. Wu, L. Wang, B. Lu, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>Phys. Chem. Chem. Phys.</i>, <b>2021</b>, <i>23</i>, 16307–16315, [doi:10.1039/D1CP02584H](http://doi.org/10.1039/D1CP02584H). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1039/D1CP02584H"><img src="https://AKEckhardt.github.io/images/pub29.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
