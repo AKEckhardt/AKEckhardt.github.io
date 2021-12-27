@@ -55,7 +55,7 @@ ___
 (31) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub31.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub31.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
