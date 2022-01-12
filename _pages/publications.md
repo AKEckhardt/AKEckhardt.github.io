@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(35) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(36) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
 
@@ -21,6 +21,15 @@ ___
 
 Published
 ------
+___
+
+(35) <b>Staudinger Reactivity and Click Chemistry of Anthracene (A)-Based Azidophosphine N<sub>3</sub>PA.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Inorg. Chem.</i>, <b>2022</b>, <i>61</i>, accepted, [doi:10.1021/acs.inorgchem.1c03753](https://doi.org/10.1021/acs.inorgchem.1c03753). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.inorgchem.1c03753"><img src="https://AKEckhardt.github.io/images/pub35.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
 ___
 
 (34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
