@@ -23,7 +23,7 @@ Published
 ------
 ___
 
-(35) <b>Staudinger Reactivity and Click Chemistry of Anthracene (A)-Based Azidophosphine N<sub>3</sub>PA.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Inorg. Chem.</i>, <b>2022</b>, <i>61</i>, accepted, [doi:10.1021/acs.inorgchem.1c03753](https://doi.org/10.1021/acs.inorgchem.1c03753). 
+(35) <b>Staudinger Reactivity and Click Chemistry of Anthracene (A)-Based Azidophosphine N<sub>3</sub>PA.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Inorg. Chem.</i>, <b>2022</b>, <i>61</i>, 1270–1274, [doi:10.1021/acs.inorgchem.1c03753](https://doi.org/10.1021/acs.inorgchem.1c03753). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.inorgchem.1c03753"><img src="https://AKEckhardt.github.io/images/pub35.png" alt="Link" width="40%" height="auto%"/></a>
