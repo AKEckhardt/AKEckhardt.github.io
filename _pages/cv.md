@@ -9,8 +9,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-<p align="center"> <font size="6"><b>André K. Eckhardt</b></font></p>
 <p align="center"> <font size="5"><b>Curriculum Vitae</b></font></p>
+<p align="center"> <font size="6"><b>André K. Eckhardt</b></font></p>
 
 Research Experience
 ======
@@ -30,7 +30,7 @@ Research Experience
 
 * Postdoctoral Research Fellow, 05/2019 - 01/2020, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
 	* 09/2019: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
-	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
+	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)<br/><br/>
 
 
 Education
