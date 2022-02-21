@@ -44,7 +44,7 @@ ___
 
 ___
 
-(33) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). 
+(33) <b>Identification of a prismatic P<sub>3</sub>N<sub>3</sub> molecule formed from electron irradiated phosphine-nitrogen ices.</b> C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
 
 <p align="center"> 
 <a href="https://doi.org/10.1038/s41467-021-25775-1"><img src="https://AKEckhardt.github.io/images/pub33.PNG" alt="Link" width="40%" height="auto%"/></a>
@@ -64,7 +64,7 @@ ___
 
 ___
 
-(31) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). 
+(31) <b>Identification of Glycolaldehyde Enol (HOHC═CHOH) in Interstellar Analogue Ices.</b> N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). (<sup>*</sup> = corresponding author)
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.1c07978"><img src="https://AKEckhardt.github.io/images/pub31.PNG" alt="Link" width="40%" height="auto%"/></a>
@@ -109,7 +109,7 @@ ___
 
 ___
 
-(26) <b>Formation of phosphine imide (HN=PH<sub>3</sub>) and its phosphinous amide (H<sub>2</sub>N–PH<sub>2</sub>) isomer.</b> C. Zhu, A. Bergantini, S. K. Singh, R. I. Kaiser, <u>A. K. Eckhardt</u>,<sup>*</sup> P. R. Schreiner, Y. S. Huang, B. J. Sun and A. H. H. Chang <i>Chem. Commun.</i>, <b>2021</b>, <i>57</i>, 4958–4961, [doi:10.1039/D0CC08411E](https://doi.org/10.1039/D0CC08411E). 
+(26) <b>Formation of phosphine imide (HN=PH<sub>3</sub>) and its phosphinous amide (H<sub>2</sub>N–PH<sub>2</sub>) isomer.</b> C. Zhu, A. Bergantini, S. K. Singh, R. I. Kaiser, <u>A. K. Eckhardt</u>,<sup>*</sup> P. R. Schreiner, Y. S. Huang, B. J. Sun and A. H. H. Chang <i>Chem. Commun.</i>, <b>2021</b>, <i>57</i>, 4958–4961, [doi:10.1039/D0CC08411E](https://doi.org/10.1039/D0CC08411E). (<sup>*</sup> = corresponding author)
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D0CC08411E"><img src="https://AKEckhardt.github.io/images/pub26.png" alt="Link" width="40%" height="auto%"/></a>
@@ -168,7 +168,7 @@ ___
 
 ___
 
-(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>6</i>, 3385–3395, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). 
+(20) <b>Interstellar Formation of Biorelevant Pyruvic Acid (CH<sub>3</sub>COCOOH).</b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>6</i>, 3385–3395, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). (<sup>‡</sup> = contributed equally)
 
 <p align="center"> 
 <a href="http://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -197,7 +197,7 @@ ___
 
 ___
 
-(17) <b>The elusive cyclotriphosphazene molecule and its Dewar benzene–type valence isomer (P<sub>3</sub>N<sub>3</sub>).</b> C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](http://doi.org/10.1126/sciadv.aba6934). 
+(17) <b>The elusive cyclotriphosphazene molecule and its Dewar benzene–type valence isomer (P<sub>3</sub>N<sub>3</sub>).</b> C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](http://doi.org/10.1126/sciadv.aba6934). (<sup>‡</sup> = contributed equally)
 
 <p align="center"> 
 <a href="http://doi.org/10.1126/sciadv.aba6934"><img src="https://AKEckhardt.github.io/images/pub17.png" alt="Link" width="40%" height="auto%"/></a>
@@ -247,7 +247,7 @@ ___
 
 ___
 
-(12) <b>Formation of Glyoxylic Acid in Interstellar Ices: A Key Entry Point for Prebiotic Chemistry.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini,<sup>‡</sup> S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059); <i>Angew. Chem.</i>, <b>2019</b>, <i>131</i>, 5719–5723, [doi:10.1002/ange.201901059](http://doi.org/10.1002/ange.201901059). 
+(12) <b>Formation of Glyoxylic Acid in Interstellar Ices: A Key Entry Point for Prebiotic Chemistry.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini,<sup>‡</sup> S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059); <i>Angew. Chem.</i>, <b>2019</b>, <i>131</i>, 5719–5723, [doi:10.1002/ange.201901059](http://doi.org/10.1002/ange.201901059). (<sup>‡</sup> = contributed equally)
 
 <p align="center"> 
 <a href="http://doi.org/10.1002/anie.201901059"><img src="https://AKEckhardt.github.io/images/pub12.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -288,7 +288,7 @@ ___
 
 ___
 
-(08) <b>Gas-phase sugar formation using hydroxymethylene as the reactive formaldehyde isomer.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> M. M. Linden,<sup>‡</sup> R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). 
+(08) <b>Gas-phase sugar formation using hydroxymethylene as the reactive formaldehyde isomer.</b> <u>A. K. Eckhardt</u>,<sup>‡</sup> M. M. Linden,<sup>‡</sup> R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). (<sup>‡</sup> = contributed equally)
 
 <p align="center"> 
 <a href="http://doi.org/10.1038/s41557-018-0128-2"><img src="https://AKEckhardt.github.io/images/pub08.png" alt="Link" width="40%" height="auto%"/></a>
@@ -365,7 +365,4 @@ ___
 
 
 ___
-
-<sup>‡</sup> = contributed equally  
-<sup>*</sup> = corresponding author
 
