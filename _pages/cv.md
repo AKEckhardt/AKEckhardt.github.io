@@ -14,7 +14,7 @@ redirect_from:
 
 Research Experience
 ======
-<b>Ruhr-Universität Bochum</b> (RUB), Lehrstuhl für Organische Chemie II, Bochum, Germany (2022 - present)
+<b>Ruhr-University Bochum</b> (RUB), Lehrstuhl für Organische Chemie II, Bochum, Germany (2022 - present)
 
 * Postdoctoral Research Fellow, Advisor: Prof. Dr. [Wolfram Sander](https://www.ruhr-uni-bochum.de/oc2/index.html)
 
