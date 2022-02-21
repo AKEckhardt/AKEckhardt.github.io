@@ -54,7 +54,6 @@ Awards and Honors
 * Feodor Lynen Return Fellowship ([2022](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
 * Dissertation Award (Natural Sciences) JLU Gießen ([2020](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/digitaler-rueckblick-auf-das-ausnahmejahr-2020))
 * Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
-* DFG Walter Benjamin Postdoctoral Fellowship (2019, declined to accept Feodor Lynen Fellowship)
 * Reaxys PhD Prize Finalist ([2019](https://www.elsevier.com/solutions/reaxys/reaxys-phd-prize/2019-finalists))
 * FCI PhD Scholarship ([2017 - 2019](https://www.vci.de/fonds/stipendien/kekule-stipendium/seiten.jsp))
 * Poster Award ([691. WE-Heraeus-Seminar, 2019](https://www.we-heraeus-stiftung.de/veranstaltungen/seminare/2019/physical-organic-chemistry-recent-developments-in-instrumentation-structure-theory-and-mechanisms/))
