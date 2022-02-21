@@ -25,7 +25,8 @@ Research Experience
 <b>Harvard-Smithsonian Center for Astrophysics</b> (CfA), Cambridge, MA, USA (2020 - 2022)
 
 * Postdoctoral Research Fellow, 02/2020 - 01/2022, Advisor: [Michael C. McCarthy](https://www.cfa.harvard.edu/amp/mccarthygroup/index.html), PhD
-
+	* 03/2020: Visiting Researcher at <b>Mauna Kea Observatories</b>, Submillimeter Array (SMA), Big Island, HI, USA<br/>
+	
 <b>Justus Liebig University</b> (JLU), Institute of Organic Chemistry, Gießen, Germany (2019 - 2020)
 
 * Postdoctoral Research Fellow, 05/2019 - 01/2020, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
