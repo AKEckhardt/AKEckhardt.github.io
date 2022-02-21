@@ -32,6 +32,7 @@ Research Experience
 	* 09/2019: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
 	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
 
+
 Education
 ======
 <b>Justus Liebig University</b> (JLU), Institute of Organic Chemistry, Gießen, Germany (2011 - 2020)
