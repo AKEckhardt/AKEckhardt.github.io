@@ -22,14 +22,25 @@ It is worth to study the formation of biomolecules in space towards the understa
 
 
 
-Reactive Intermediates
+Phosphorus Chemistry
+------
+<p style='text-align: justify;'> 
+P-Chem
+<br/>Selected publications:</p>
+* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
+* C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
+
+
+
+Reactive Intermediates and Matrix Isolation Spectroscopy
 ------
 <p style='text-align: justify;'> 
 Reactive intermediates play a key role in most of every chemical reaction. It is necessary to study the stability and reactivity of these intermediates towards the understanding of chemical reaction mechanisms and fine tuning of chemical reactions.
 Typical highly reactive intermediates include carbenes, radicals and nitrenes that can be trapped at cryogenic temperatures and studied by matrix isolation spectroscopy.
 <br/>Selected publications:</p>
 * <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2018</b>, <i>57</i>, 5248–5252, [doi:10.1002/anie.201800679](http://doi.org/10.1002/anie.201800679).
-* C. M. Nunes, <u>A. K. Eckhardt</u>, I. Reva, R. Fausto and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 14340–14348, [doi:10.1021/jacs.9b06869](http://doi.org/10.1021/jacs.9b06869). 
+* N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). (<sup>*</sup> = corresponding author) 
 * Z. Wu, C. Chen, J. Liu, Y. Lu, J. Xu, X. Liu, G. Cui, T. Trabelsi, J. S. Francisco, A. Mardyukov, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 3361–3365, [doi:10.1021/jacs.8b12746](http://doi.org/10.1021/jacs.8b12746). 
 
 
