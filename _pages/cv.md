@@ -18,13 +18,13 @@ Research Experience
 
 * Postdoctoral Research Fellow, Advisor: Prof. Dr. [Wolfram Sander](https://www.ruhr-uni-bochum.de/oc2/index.html)
 
-<b>Harvard University</b>, Harvard-Smithsonian Center for Astrophysics (CfA), Cambridge, MA, USA (2020 - 2022)
-
-* Postdoctoral Research Fellow, 02/2020 - 01/2022, Advisor: [Michael C. McCarthy](https://www.cfa.harvard.edu/amp/mccarthygroup/index.html), PhD
-
 <b>Massachusetts Institute of Technology</b> (MIT), Department of Chemistry, Cambridge, MA, USA (2020 - 2022)
 
 * Postdoctoral Research Fellow, 02/2020 - 01/2022, Advisor: Prof. [Christopher C. Cummins](https://ccclab.mit.edu/)
+
+<b>Harvard-Smithsonian Center for Astrophysics</b> (CfA), Cambridge, MA, USA (2020 - 2022)
+
+* Postdoctoral Research Fellow, 02/2020 - 01/2022, Advisor: [Michael C. McCarthy](https://www.cfa.harvard.edu/amp/mccarthygroup/index.html), PhD
 
 <b>Justus Liebig University</b> (JLU), Institute of Organic Chemistry, Gießen, Germany (2019 - 2020)
 
