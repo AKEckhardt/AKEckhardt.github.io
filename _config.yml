@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "André K. Eckhardt"
   avatar           : "ake.png"
-  bio              : "Postdoctoral Research Fellow at MIT and Harvard CfA"
-  location         : "Cambridge, MA, USA"
+  bio              : "Postdoctoral Research Fellow at RUB"
+  location         : "Bochum, Germany"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=André+K.+Eckhardt"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=André+K.+Eckhardt"
   googlescholar    : "https://scholar.google.de/citations?hl=de&user=r9CcyjcAAAAJ"
-  email            : "ake05[at]mit.edu"
+  email            : "Andre.Eckhardt[at]rub.de"
   researchgate     : "http://researchgate.net/profile/Andre_Eckhardt"
   uri              :
   bitbucket        :
