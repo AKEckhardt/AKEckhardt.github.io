@@ -35,14 +35,14 @@ table, th, td {
 </table><br/>
 
 
-I gratefully acknowledge funding from the following agencies.<br/>
+I gratefully acknowledge funding from the Alexander von Humboldt Foundation.<br/>
 
 
 <table>
   <tr>
+    <td style="width:33%;" align="center" valign="middle">[//]: # (<a href="https://www.vci.de/fonds/startseite.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="80%" height="auto%" align="middle"></a>)</td>
     <td style="width:33%;" align="center" valign="middle"><a href="http://www.humboldt-foundation.de"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="80%" height="auto%" align="middle"></a></td>
-    <td style="width:33%;" align="center" valign="middle"><a href="https://www.vci.de/fonds/startseite.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="80%" height="auto%" align="middle"></a></td>
-    <td style="width:33%;" align="center" valign="middle"><a href="https://www.gdch.de/"><img src="https://AKEckhardt.github.io/images/GDCh.png" alt="Link" width="80%" height="auto%" align="middle"></a></td>
+    <td style="width:33%;" align="center" valign="middle">[//]: # (<a href="https://www.gdch.de/"><img src="https://AKEckhardt.github.io/images/GDCh.png" alt="Link" width="80%" height="auto%" align="middle"></a>)</td>
   </tr>
 </table><br/><br/>
 

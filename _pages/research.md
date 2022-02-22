@@ -15,7 +15,7 @@ Phosphorus Chemistry
 Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
 However, phosphorus is an element essential to sustaining life largely through phosphates ( PO<sub>4</sub><sup>3−</sup>). 
 Phosphates are a component of DNA, RNA, ATP, and phospholipids. 
-Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy. 
+Air and moisture sensitive phosphorus species can be prepared under inert dinitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy. 
 As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest, their spectroscopic analysis and chemical reactivity.
 <br/>Selected publications:</p>
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
