@@ -9,6 +9,21 @@ redirect_from:
 ---
 
 {% include base_path %}
+Phosphorus Chemistry
+------
+<p style='text-align: justify;'> 
+Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
+However, phosphorus is an element essential to sustaining life largely through phosphates ( PO<sub>4</sub><sup>3−</sup>). 
+Phosphates are a component of DNA, RNA, ATP, and phospholipids. 
+Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy. 
+As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest, their spectroscopic analysis and chemical reactivity.
+<br/>Selected publications:</p>
+* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
+* C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
+
+
+
 Astro- and Prebiotic Chemistry
 ------
 <p style='text-align: justify;'> 
@@ -19,17 +34,6 @@ It is worth to study the formation of biomolecules in space towards the understa
 * <u>A. K. Eckhardt</u>, M. M. Linden, R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). 
 * <u>A. K. Eckhardt</u>, R. C. Wende and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2018</b>, <i>140</i>, 12333–12336, [doi:10.1021/jacs.8b07480](http://doi.org/10.1021/jacs.8b07480). 
 * <u>A. K. Eckhardt</u>, A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059). 
-
-
-
-Phosphorus Chemistry
-------
-<p style='text-align: justify;'> 
-P-Chem
-<br/>Selected publications:</p>
-* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
-* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
-* C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
 
 
 
@@ -45,17 +49,16 @@ Typical highly reactive intermediates include carbenes, radicals and nitrenes th
 
 
 
-Chemical Reactivity and Physical Organic Chemistry
+Chemical Reactivity and Physical (In)Organic Chemistry
 ------
 <p style='text-align: justify;'> 
 For the understanding of chemical reactivity it is necessary to combine and compare experimental and theoretical results. Nowadays, high-level computations on small molecules are very reliable and go most
 of the time hand in hand with experimental physical organic measurements. 
 At low temperatures quantum mechanical tunneling dominates chemical reactivity of light particles and even governs chemical selectivity. 
 This phenomena is known as tunneling control of a chemical reaction, a third reactivity principle besides the established concept of thermodynamic and kinetic control.
-In the tunneling studies below we demonstrated experimentally that every atom participates in a tunneling process of a chemical reaction and that tunneling can also be competitive as it is known for other classical chemical reactions.
 Quantum mechanical tunneling processes open new pathways to reaction products that cannot be formed in a classic way. 
 <br/>Selected publications:</p>  
 * <u>A. K. Eckhardt</u>, F. R. Erb and P. R. Schreiner <i>Chem. Sci.</i>, <b>2019</b>, <i>10</i>, 802–810, [doi:10.1039/C8SC03720E](http://doi.org/10.1039/C8SC03720E). 
 * <u>A. K. Eckhardt</u>, D. Gerbig and P. R. Schreiner <i>J. Phys. Chem. A</i>, <b>2018</b>, <i>122</i>, 1488–1495, [doi:10.1021/acs.jpca.7b12118](http://doi.org/10.1021/acs.jpca.7b12118). 
 * C. M. Nunes, <u>A. K. Eckhardt</u>, I. Reva, R. Fausto and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 14340–14348, [doi:10.1021/jacs.9b06869](http://doi.org/10.1021/jacs.9b06869). 
-
+* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Inorg. Chem.</i>, <b>2022</b>, <i>61</i>, 1270–1274, [doi:10.1021/acs.inorgchem.1c03753](https://doi.org/10.1021/acs.inorgchem.1c03753). 
