@@ -35,7 +35,7 @@ It is worth to study the formation of biomolecules in space towards the understa
 * <u>A. K. Eckhardt</u>,<sup>‡</sup> M. M. Linden,<sup>‡</sup> R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). (<sup>‡</sup> = contributed equally)
 * <u>A. K. Eckhardt</u>, R. C. Wende and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2018</b>, <i>140</i>, 12333–12336, [doi:10.1021/jacs.8b07480](http://doi.org/10.1021/jacs.8b07480). 
 * <u>A. K. Eckhardt</u>, A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059). 
-* </b> N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>6</i>, 3385–3395, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). (<sup>‡</sup> = contributed equally)
+* N. F. Kleimeier,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> P. R. Schreiner and R. I. Kaiser <i>Chem</i>, <b>2020</b>, <i>6</i>, 3385–3395, [doi:10.1016/j.chempr.2020.10.003](http://doi.org/10.1016/j.chempr.2020.10.003). (<sup>‡</sup> = contributed equally)
 
 
 
