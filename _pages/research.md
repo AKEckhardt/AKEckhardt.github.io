@@ -19,10 +19,13 @@ table, th, td {
 </style>
 <table>
   <tr>
-    <td style="width:70%;" align="justify" valign="middle"><font size="5">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
+    <td style="width:70%;" align="justify" valign="middle"><font size="3">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
 However, phosphorus is an element essential to sustaining life largely through phosphates ( PO<sub>4</sub><sup>3−</sup>). 
-Phosphates are a component of DNA, RNA, ATP, and phospholipids. </font></td>
-	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="auto%" height="60%" align="middle"></td>
+Phosphates are a component of DNA, RNA, ATP, and phospholipids. 
+Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy. 
+As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest, their spectroscopic analysis and chemical reactivity.
+</font></td>
+	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="auto%" height="30%" align="middle"></td>
   </tr>
 </table><br/>
 <br/>Selected publications:</p>
