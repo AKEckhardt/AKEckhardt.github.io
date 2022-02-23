@@ -43,7 +43,7 @@ Many reactive molecules have been already detected in interstellar media by micr
 Larger molecules can be formed there by barrierless chemical reactions in the gas phase or by light induced photochemistry in ices in the solid state. 
 It is worth to study the formation of biomolecules in space towards the understanding how life could have been emerged on early Earth and which prebiotic chemical reactions could have been contributed to these complex reaction networks.
 </font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/sugar.jpg" width="40%" height="auto%" align="middle"></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/sugar.jpg" width="50%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * <u>A. K. Eckhardt</u>,<sup>‡</sup> M. M. Linden,<sup>‡</sup> R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). (<sup>‡</sup> = contributed equally)
