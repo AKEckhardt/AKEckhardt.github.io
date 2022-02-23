@@ -23,11 +23,11 @@ table, th, td {
 However, phosphorus is an element essential to sustaining life largely through phosphates (PO<sub>4</sub><sup>3−</sup>). 
 Phosphates are a component of DNA, RNA, ATP, and phospholipids. <br/>
 Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy as well as in single-crystal X-ray diffraction experiments. 
-As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest, their spectroscopic analysis and chemical reactivity.
+As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest as well as their spectroscopic analysis and chemical reactivity.
 </font></td>
-	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="70%" height="auto%" align="middle"></td>
+	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="68%" height="auto%" align="middle"></td>
   </tr>
-</table><br/>
+</table>
 <br/>Selected publications:</p>
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
