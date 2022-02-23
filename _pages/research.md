@@ -18,31 +18,34 @@ table, th, td {
 }
 </style>
 <table>
-  <tr>
-    <td style="width:70%;" align="justify" valign="middle"><font size="4">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
 However, phosphorus is an element essential to sustaining life largely through phosphates (PO<sub>4</sub><sup>3−</sup>). 
 Phosphates are a component of DNA, RNA, ATP, and phospholipids. <br/>
 Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy as well as in single-crystal X-ray diffraction experiments. 
 As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest as well as their spectroscopic analysis and chemical reactivity.
 </font></td>
 	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="68%" height="auto%" align="middle"></td>
-  </tr>
-</table>
+</tr></table>
 Selected publications:</p>
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
 * C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](http://doi.org/10.1126/sciadv.aba6934). (<sup>‡</sup> = contributed equally)
 * C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
-
+<br/>
 
 
 Astro- and Prebiotic Chemistry
 ------
-<p style='text-align: justify;'> 
+<table>
+<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
 Many reactive molecules have been already detected in interstellar media by microwave spectroscopy. Some of them are not stable here on Earth under ambient conditions but stabilized by the very low temperatures and pressure in space. 
 Larger molecules can be formed there by barrierless chemical reactions in the gas phase or by light induced photochemistry in ices in the solid state. 
 It is worth to study the formation of biomolecules in space towards the understanding how life could have been emerged on early Earth and which prebiotic chemical reactions could have been contributed to these complex reaction networks.
-<br/>Selected publications:</p>
+</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/sugar.jpg" width="40%" height="auto%" align="middle"></td>
+</tr></table>
+<p style='text-align: justify;'>Selected publications:</p>
 * <u>A. K. Eckhardt</u>,<sup>‡</sup> M. M. Linden,<sup>‡</sup> R. C. Wende, B. Bernhardt and P. R. Schreiner <i>Nat. Chem.</i>, <b>2018</b>, <i>10</i>, 1141–1147, [doi:10.1038/s41557-018-0128-2](http://doi.org/10.1038/s41557-018-0128-2). (<sup>‡</sup> = contributed equally)
 * <u>A. K. Eckhardt</u>, R. C. Wende and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2018</b>, <i>140</i>, 12333–12336, [doi:10.1021/jacs.8b07480](http://doi.org/10.1021/jacs.8b07480). 
 * <u>A. K. Eckhardt</u>, A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2019</b>, <i>58</i>, 5663–5667, [doi:10.1002/anie.201901059](http://doi.org/10.1002/anie.201901059). 
