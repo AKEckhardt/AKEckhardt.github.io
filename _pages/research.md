@@ -28,7 +28,7 @@ As phosphorus bearing molecules like, e.g. PN, have already been detected in spa
 	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="68%" height="auto%" align="middle"></td>
   </tr>
 </table>
-<br/>Selected publications:</p>
+Selected publications:</p>
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 * <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
 * C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](http://doi.org/10.1126/sciadv.aba6934). (<sup>‡</sup> = contributed equally)
