@@ -43,7 +43,5 @@ I gratefully acknowledge funding from the Alexander von Humboldt Foundation.<br/
     <td style="width:33%;" align="center" valign="middle"><a href="http://www.humboldt-foundation.de"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="80%" height="auto%" align="middle"></a></td>
     <td style="width:33%;" align="center" valign="middle"></td>
   </tr>
-</table><br/><br/>
-
-
+</table>
 
