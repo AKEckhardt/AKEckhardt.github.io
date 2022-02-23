@@ -19,9 +19,9 @@ table, th, td {
 </style>
 <table>
   <tr>
-    <td style="width:70%;" align="justify" valign="middle" font size="5">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
+    <td style="width:70%;" align="justify" valign="middle"><font size="5">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
 However, phosphorus is an element essential to sustaining life largely through phosphates ( PO<sub>4</sub><sup>3−</sup>). 
-Phosphates are a component of DNA, RNA, ATP, and phospholipids. </td>
+Phosphates are a component of DNA, RNA, ATP, and phospholipids. </font></td>
 	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="auto%" height="60%" align="middle"></td>
   </tr>
 </table><br/>
