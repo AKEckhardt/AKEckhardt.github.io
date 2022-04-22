@@ -72,10 +72,19 @@ social:
 
 
 # Analytics
+#analytics:
+#  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+#  google:
+#    tracking_id          : "UA-162125489-1"
+
+# Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          : "UA-162125489-1"
+    measurement_id       : "G-JL35JRTRW3"
+    anonymize_ip         : # true, false (default)
+
+
 
 
 # Site Author

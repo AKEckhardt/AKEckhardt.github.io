@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(37) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(38) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
 
@@ -25,6 +25,17 @@ ___
 
 2022
 ------
+___
+
+(37) <b>Reactions of Tri-<i>tert</i>-Butylphosphatetrahedrane as a Spring-Loaded Phosphinidene Synthon Featuring Nickel-Catalyzed Transfer to Unactivated Alkenes.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2022</b>, <i>144</i>, XXX–XXX, [doi:10.1021/jacs.2c02236](https://doi.org/10.1021/jacs.2c02236). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.2c02236"><img src="https://AKEckhardt.github.io/images/pub37.PNG" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [MIT News](https://news.mit.edu/2022/phosphorus-molecular-rings-0421)
+
+
 ___
 
 (36) <b>Detection of 1<i>H</i>-Triphosphirene (<i>c</i>-HP<sub>3</sub>) and 2-Triphosphenylidene (HP<sub>3</sub>): The Isovalent Counterparts of 1<i>H</i>-Triazirine (<i>c</i>-HN<sub>3</sub>) and Hydrazoic Acid (HN<sub>3</sub>).</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2022</b>, <i>13</i>, 2725-2730, [doi:10.1021/acs.jpclett.2c00639](https://doi.org/10.1021/acs.jpclett.2c00639). (<sup>*</sup> = corresponding author)
