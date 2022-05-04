@@ -27,7 +27,7 @@ ___
 ------
 ___
 
-(37) <b>Reactions of Tri-<i>tert</i>-Butylphosphatetrahedrane as a Spring-Loaded Phosphinidene Synthon Featuring Nickel-Catalyzed Transfer to Unactivated Alkenes.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2022</b>, <i>144</i>, XXX–XXX, [doi:10.1021/jacs.2c02236](https://doi.org/10.1021/jacs.2c02236). 
+(37) <b>Reactions of Tri-<i>tert</i>-Butylphosphatetrahedrane as a Spring-Loaded Phosphinidene Synthon Featuring Nickel-Catalyzed Transfer to Unactivated Alkenes.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2022</b>, <i>144</i>, 7578–7582, [doi:10.1021/jacs.2c02236](https://doi.org/10.1021/jacs.2c02236). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.2c02236"><img src="https://AKEckhardt.github.io/images/pub37.PNG" alt="Link" width="40%" height="auto%"/></a>
