@@ -11,7 +11,7 @@ Preprints
 ------
 ___
 
-(38) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+(39) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
 
 <b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
 
@@ -25,6 +25,15 @@ ___
 
 2022
 ------
+___
+
+(38) <b>Formation of the elusive tetrahedral P<sub>3</sub>N molecule.</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> and R. I. Kaiser <i>Sci. Adv.</i>, <b>2022</b>, <i>8</i>, eabo5792, [doi:10.1126/sciadv.abo5792](http://doi.org/10.1126/sciadv.abo5792). (<sup>*</sup> = corresponding author)
+
+<p align="center"> 
+<a href="http://doi.org/10.1126/sciadv.abo5792"><img src="https://AKEckhardt.github.io/images/pub38.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
 ___
 
 (37) <b>Reactions of Tri-<i>tert</i>-Butylphosphatetrahedrane as a Spring-Loaded Phosphinidene Synthon Featuring Nickel-Catalyzed Transfer to Unactivated Alkenes.</b> M.-L. Y. Riu, <u>A. K. Eckhardt</u> and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2022</b>, <i>144</i>, 7578–7582, [doi:10.1021/jacs.2c02236](https://doi.org/10.1021/jacs.2c02236). 
