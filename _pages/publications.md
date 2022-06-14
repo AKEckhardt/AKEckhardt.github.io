@@ -7,24 +7,23 @@ author_profile: true
 ---
 
 
-Preprints
-------
-___
-
-(39) <b>Taming Phosphorus Mononitride (PN).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Preprint on ChemRxiV</i>, <b>2021</b>, [doi:10.33774/chemrxiv-2021-zxtmf](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
-
-<b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
-
-
-___
-
-
 Published
 ------
 ___
 
 2022
 ------
+___
+
+(39) <b>Taming Phosphorus Mononitride.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>_Nat. Chem.</i>, <b>2022</b>, [doi:10.1038/s41557-022-00958-5](https://doi.org/10.1038/s41557-022-00958-5). [ChemRxiv](https://doi.org/10.33774/chemrxiv-2021-zxtmf). 
+
+<p align="center"> 
+<a href="http://doi.org/10.1038/s41557-022-00958-5"><img src="https://AKEckhardt.github.io/images/pub39.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
+
+
 ___
 
 (38) <b>Formation of the elusive tetrahedral P<sub>3</sub>N molecule.</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> and R. I. Kaiser <i>Sci. Adv.</i>, <b>2022</b>, <i>8</i>, eabo5792, [doi:10.1126/sciadv.abo5792](http://doi.org/10.1126/sciadv.abo5792). (<sup>*</sup> = corresponding author)
@@ -69,7 +68,7 @@ ___
 ------
 ___
 
-(34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426). 
+(34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426).  [ChemRxiv](https://doi.org/10.26434/chemrxiv-2021-xz4qh). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.1c11426"><img src="https://AKEckhardt.github.io/images/pub34.jpg" alt="Link" width="40%" height="auto%"/></a>
