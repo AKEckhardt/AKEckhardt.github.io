@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "André"
-excerpt: "Curriculum Vitae"
+title: ""
+excerpt: "André"
 permalink: /cv/
 author_profile: true
 redirect_from:
