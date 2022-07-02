@@ -16,7 +16,7 @@ Research Experience
 ======
 <b>Ruhr-University Bochum</b> (RUB), Lehrstuhl für Organische Chemie II, Bochum, Germany (2022 - present)
 
-* Independent Early Career Research Group Leader (([Liebig Fellow])(https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp))
+* Independent Early Career Research Group Leader ([Liebig Fellow](https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp))
 
 <b>Massachusetts Institute of Technology</b> (MIT), Department of Chemistry, Cambridge, MA, USA (2020 - 2022)
 
