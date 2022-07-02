@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to Eckhardt lab!"
+title: "Welcome to the Eckhardt lab!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,7 +10,7 @@ redirect_from:
 
 
 <p style='text-align: justify;'> 
-<br/>Welcome to Eckhardt lab! 
+<br/>Welcome to the Eckhardt lab! 
 Our research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
 For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
 All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. 
