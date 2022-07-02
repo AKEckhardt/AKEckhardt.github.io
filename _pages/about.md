@@ -36,8 +36,3 @@ ___
 
 
 
-
-[comment]: <> (André studied chemistry at Justus Liebig University Giessen (Germany) and completed my PhD studies with Prof. Dr. Peter R. Schreiner in 2019. )
-[comment]: <> (In 2020 André joined the research groups of Prof. Kit Cummins at MIT and Mike McCarthy at Harvard-Smithsonian Center for Astrophysics as a Feodor Lynen research fellow. )
-[comment]: <> (In 2022 André returned to Germany and joined the research group of Prof. Dr. Wolfram Sander at Ruhr University Bochum as a Feodor Lynen return fellow. )
-[comment]: <> (In July André was awarded with a Liebig fellowship of the Fonds der Chemischen Industrie and became an idependent early career research group leader.<br/>)
