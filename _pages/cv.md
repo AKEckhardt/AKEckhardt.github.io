@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-excerpt: "About André"
+excerpt: "cv"
 permalink: /cv/
 author_profile: true
 
