@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to the Eckhardt lab!"
+title: "Welcome to the Eckhardt Lab!"
 excerpt: "About me"
 author_profile: true
 
@@ -23,11 +23,11 @@ News:
 ___
 
 <table>
-  <tr>
-    <td style="width:50%;" align="justify" valign="middle"><b>July 2022</b><br/>Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.</td>
-    <td style="width:50%;" align="center" valign="middle"><a href="https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="40%" height="auto%" align="middle"></a></td>
-  </tr>
-</table>
+<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
+<b>July 2022</b><br/>Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.
+</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" width="80%" height="auto%" align="middle"></td>
+</tr></table>
 
 
 ___
