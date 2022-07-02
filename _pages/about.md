@@ -1,5 +1,6 @@
 ---
 permalink: /
+layout: archive
 title: "Welcome to the Eckhardt Lab!"
 excerpt: "About me"
 author_profile: true
@@ -14,7 +15,8 @@ For the preparation and spectroscopic characterization of these molecules we emp
 All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. 
 </p>
 
-
+Open Positions
+------
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via e-mail.
 
 
