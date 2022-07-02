@@ -18,7 +18,7 @@ All prepared molecular structures are validated by comparison of experimental an
 Open Positions
 ------
 <p style='text-align: justify;'> 
-We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt[at]rub.de">E-mail</a>.
+We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt[at]rub.de">E-Mail</a>.
 </p>
 
 
@@ -28,7 +28,7 @@ ___
 <table>
 <style>table, th, td {border: transparent;}</style>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
-<b>July 2022</b><br/>Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.
+<font size="5"><b>July 2022</b></font><br/>Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.
 </font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/FCI.png" width="80%" height="auto%" align="middle"></td>
 </tr></table>
