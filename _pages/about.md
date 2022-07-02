@@ -26,7 +26,7 @@ News:
 ------
 ___
 <table> <style>table, th, td {border: transparent;}</style> <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
-<h1 style="font-size:22px;"> <b>July 2022</b></h1>
+<h2 id="July 2022">July 2022</h2>
 <br/>Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.
 </font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/FCI.png" width="80%" height="auto%" align="middle"></td>
