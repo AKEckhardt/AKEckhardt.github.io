@@ -16,7 +16,7 @@ Research Experience
 ======
 <b>Ruhr-University Bochum</b> (RUB), Lehrstuhl für Organische Chemie II, Bochum, Germany (2022 - present)
 
-* Independent Early Career Research Group Leader (Liebig Fellow)
+* Independent Early Career Research Group Leader (Liebig Fellow)](https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp))
 
 <b>Massachusetts Institute of Technology</b> (MIT), Department of Chemistry, Cambridge, MA, USA (2020 - 2022)
 
@@ -52,7 +52,7 @@ Education
 
 Awards and Honors
 ======
-* FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp)
+* FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp))
 * Feodor Lynen Return Fellowship ([2022](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
 * Dissertation Award (Natural Sciences) JLU Gießen ([2020](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/digitaler-rueckblick-auf-das-ausnahmejahr-2020))
 * Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
