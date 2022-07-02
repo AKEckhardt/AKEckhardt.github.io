@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "André K. Eckhardt"
+title                    : "Eckhardt lab"
 title_separator          : "-"
 name                     : &name "André K. Eckhardt"
 description              : &description "personal description"
@@ -91,7 +91,7 @@ analytics:
 author:
   name             : "André K. Eckhardt"
   avatar           : "ake.png"
-  bio              : "Postdoctoral Research Fellow at RUB"
+  bio              : "Liebig ECR Group Leader at RUB"
   location         : "Bochum, Germany"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=André+K.+Eckhardt"
