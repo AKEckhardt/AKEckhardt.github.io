@@ -1,16 +1,16 @@
 ---
 layout: archive
 title: ""
-excerpt: "André"
+excerpt: "About André"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
+
 ---
 
 {% include base_path %}
 <p align="center"> <font size="5"><b>Curriculum Vitae</b></font></p>
 <p align="center"> <font size="6"><b>André K. Eckhardt</b></font></p>
+<p align="center"> Andre.Eckhardt(at)rub.de</p>
 
 Research Experience
 ======

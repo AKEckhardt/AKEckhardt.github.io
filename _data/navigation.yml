@@ -1,7 +1,10 @@
 # main links links
 main:
-  - title: "CV"
-    url: /cv/
+  - title: "About André"
+    url: /ake/
+
+  - title: "Group"
+    url: /group/
     
   - title: "Research"
     url: /research/
