@@ -3,7 +3,7 @@ layout: archive
 title: "Group"
 excerpt: "ake group"
 permalink: /group/
-author_profile: true
+author_profile: false
 
 ---
 
