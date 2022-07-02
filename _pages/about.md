@@ -17,12 +17,13 @@ All prepared molecular structures are validated by comparison of experimental an
 
 Open Positions
 ------
+<p style='text-align: justify;'> 
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via e-mail.
+</p>
 
 
 News:
 ------
-___
 
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
