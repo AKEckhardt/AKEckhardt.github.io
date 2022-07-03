@@ -2,6 +2,7 @@
 layout: archive
 title: "Alumni 1"
 excerpt: "ake group"
+permalink: /akegroup/alumni1/
 author_profile: false
 sidebar:
   nav: "docs"

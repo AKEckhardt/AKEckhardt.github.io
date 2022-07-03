@@ -2,6 +2,7 @@
 layout: archive
 title: "PhD 1"
 excerpt: "ake group"
+permalink: /akegroup/phd1/
 author_profile: false
 sidebar:
   nav: "docs"
