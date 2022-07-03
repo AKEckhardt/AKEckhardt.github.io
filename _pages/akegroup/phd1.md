@@ -1,8 +1,7 @@
 ---
 layout: archive
-title: "Alumni 1"
+title: "PhD 1"
 excerpt: "ake group"
-permalink: /group/
 author_profile: false
 sidebar:
   nav: "docs"
