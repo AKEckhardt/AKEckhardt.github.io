@@ -31,9 +31,8 @@ main:
 #    url: /markdown/
 
 
-group:
+docs:
   - title: AKE Group
-    url: /group/
         
   - title: Group Leader
     children:
