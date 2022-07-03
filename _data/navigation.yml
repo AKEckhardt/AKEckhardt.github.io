@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "Home"
+    url: /about/
+
   - title: "About André"
     url: /cv/
 
@@ -12,9 +15,6 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "<a href="https://www.chemie.ruhr-uni-bochum.de/fak/lsag.html.de"><img src="/images/RUB.png" alt="Ruhr-Universität Bochum" width="48" height="48" align="middle"></a>"
-    url: https://www.chemie.ruhr-uni-bochum.de/fak/lsag.html.de
-
 #  - title: "Talks"
 #    url: /talks/    
 
