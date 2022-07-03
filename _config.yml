@@ -7,7 +7,6 @@
 
 # Site Settings
 locale                   : "en-US"
-logo: "/assets/images/RUB.png"
 title                    : "Eckhardt Lab"
 title_separator          : "-"
 name                     : &name "André K. Eckhardt"
