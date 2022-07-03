@@ -43,17 +43,17 @@ docs:
   - title: PhD Students
     children:
       - title: "PhD 1"
-        url: /docs/phd1/
+        url: /phd1/
 
   - title: Students
     children:
       - title: "Student 1"
-        url: /docs/student1/
+        url: /student1/
 
   - title: Alumni
     children:
       - title: "Alumni 1"
-        url: /docs/alumni1/
+        url: /alumni1/
 
 
 
