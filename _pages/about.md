@@ -32,11 +32,11 @@ ___
 </tr></table>
 ___
 
-<table> <style>table, th, td {border: transparent;}</style> <tr><td style="width:30%;" align="justify" valign="middle">
+<table> <style>table, th, td {border: transparent;}</style> <td style="width:30%;" align="justify" valign="middle">
 <a class="twitter-timeline" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 /td>
 <td style="width:70%;" align="center" valign="middle"></td>
-</tr></table>
+</table>
 
 
 
