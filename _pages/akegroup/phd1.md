@@ -18,10 +18,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <table> <style>table, th, td {border: transparent;}</style> <tr>
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/RUB.png" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
-<font size="4">Your Bio</font></td>
-</tr></table>
-
-
+<font size="4">Your Bio</font>
 
 <div class="page__footer-follow">
 <ul class="social-icons">
@@ -32,9 +29,24 @@ We are looking for highly motivated Bachelor and Master students interested in (
 </ul>
 </div>
 
+</td>
+</tr></table>
+
+
+
+
+
 
 Publications
 ------
+___
+
+(01) <b>XXX</b> <u>PhD 1</u> and XXX <i>XXX</i>, <b>XXXX</b>, <i>X</i>, XXXX, [doi:XXXX](http://doi.org/XXXX).
+
+
+___
+
+
 
 
 
