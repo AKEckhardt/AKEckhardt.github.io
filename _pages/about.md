@@ -8,23 +8,27 @@ author_profile: true
 ---
 
 
-<table> <style>table, th, td {border: transparent;}</style> <td style="width:70%;" align="justify" valign="top">
-<p style='text-align: justify;'> 
+<table>
+<style>table, th, td {border: transparent;}</style> <tr>
+<td style="width:70%;" align="justify" valign="top">
+<p style='text-align: justify;'> <font size="4">
 Our research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
-For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties.
+For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
+All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. 
+</font>
 </p>
 </td>
-<td style="width:30%;">
-<a class="twitter-timeline" data-height="200" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</td>
-</table>
-
-
-Open Positions
-------
-<p style='text-align: justify;'> 
+  <td rowspan="2"><a class="twitter-timeline" data-height="400" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></td>
+ </tr>
+ <tr>
+  <td style="width:70%;" align="justify" valign="top"><font size="5"><b>Open Positions</b></font><br/>
+<p style='text-align: justify;'> <font size="4">
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>.
+</font>
 </p>
+  </td>
+ </tr>
+</table>
 
 
 News:
