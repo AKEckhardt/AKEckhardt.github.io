@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Group"
+title: "Student 1"
 excerpt: "ake group"
 permalink: /group/
 author_profile: false
