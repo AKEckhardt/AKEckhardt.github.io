@@ -48,12 +48,12 @@ docs:
   - title: Students
     children:
       - title: "Student 1"
-        url: /docs/student/
+        url: /docs/student1/
 
   - title: Alumni
     children:
       - title: "Alumni 1"
-        url: /docs/alumni/
+        url: /docs/alumni1/
 
 
 
