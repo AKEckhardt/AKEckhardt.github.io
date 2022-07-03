@@ -10,7 +10,6 @@ author_profile: true
 {% include base_path %}
 <p align="center"> <font size="5"><b>Curriculum Vitae</b></font></p>
 <p align="center"> <font size="6"><b>André K. Eckhardt</b></font></p>
-<p align="center"> Andre.Eckhardt@rub.de</p>
 
 Research Experience
 ======
