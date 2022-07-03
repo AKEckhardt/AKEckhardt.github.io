@@ -24,16 +24,10 @@ All prepared molecular structures are validated by comparison of experimental an
   <td style="width:70%;" align="justify" valign="top"><font size="5"><b>Open Positions</b></font><br/>
 <p style='text-align: justify;'> <font size="4">
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>.
-</font>
-</p>
-  </td>
- </tr>
+</font></p></td></tr>
 </table>
 
-
-News:
-------
-___
+<font size="5"><b>News</b></font><br/>
 <table> <style>table, th, td {border: transparent;}</style> <tr><td style="width:70%;" align="justify" valign="middle">
 <font size="4"><b>July 2022</b></font><br/>
 <font size="1"><br/></font><font size="4">Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.</font></td>
