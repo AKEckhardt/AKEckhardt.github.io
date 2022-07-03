@@ -12,7 +12,7 @@ sidebar:
 {% include base_path %}
 You!
 ------
-We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt[at]rub.de">E-Mail</a>.
+We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>.
 <br/>
 <br/>
 <br/>
@@ -20,18 +20,25 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <table> <style>table, th, td {border: transparent;}</style> <tr>
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/RUB.png" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
-<font size="4">Your Bio
-
-
+<font size="4">
+<b>Your Name</b><br/>
+Dr. rer. nat.<br/>
+Present Address: XXX<br/>
+<a href="mailto:XXX.XXX@rub.de">E-Mail</a><br/>
 <br/>
+BSc (XXX, XXX), MSc (XXX, XXX), Dr. rer. nat. (XXX, XXX)
+<br/>
+Your Bio
+
+
 <br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
-<li><a href="http://linkedin.com/in/AKEckhardt"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-<li><a href="https://twitter.com/AKEckhardt"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-<li><a href="http://researchgate.net/profile/Andre_Eckhardt"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+<li><a href="http://linkedin.com/in/XXX"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+<li><a href="https://twitter.com/XXX"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+<li><a href="http://researchgate.net/profile/XXX"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
 </ul>
 </div>
 </font>
