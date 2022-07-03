@@ -33,11 +33,6 @@ ___
 ___
 
 
-<blockquote class="twitter-timeline" data-lang="en">
-<p lang="en" dir="ltr">AKEckhardt (@AKEckhardt) 
-<a href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw</a></p>&mdash; AKEckhardt (@AKEckhardt) 
-<a href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw"></a></blockquote>
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<a class="twitter-timeline" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
