@@ -4,6 +4,8 @@ title: "Group"
 excerpt: "ake group"
 permalink: /group/
 author_profile: false
+sidebar:
+  nav: "docs"
 
 ---
 
