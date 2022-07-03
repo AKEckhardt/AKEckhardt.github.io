@@ -32,7 +32,8 @@ main:
 
 
 docs:
-  - title: AKE Group
+  - title: AKE Group        
+    url: /group/
         
   - title: Group Leader
     children:
@@ -42,17 +43,17 @@ docs:
   - title: PhD Students
     children:
       - title: "PhD 1"
-        url: /group/PhD_1/
+        url: /docs/PhD_1/
 
   - title: Students
     children:
       - title: "Student 1"
-        url: /group/Student_1/
+        url: /docs/Student_1/
 
   - title: Alumni
     children:
-      - title: "PhD 1"
-        url: /group/PhD_1/
+      - title: "Alumni 1"
+        url: /docs/Alumni_1/
 
 
 
