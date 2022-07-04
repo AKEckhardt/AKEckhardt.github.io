@@ -37,5 +37,4 @@ ___
 
 
 
-{% include cookie-consent.html %}
 
