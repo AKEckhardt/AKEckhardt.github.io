@@ -84,7 +84,8 @@ analytics:
     measurement_id       : "G-JL35JRTRW3"
     anonymize_ip         : # true, false (default)
 
-
+# Google Analytics
+google_analytics: G-JL35JRTRW3
 
 
 # Site Author
