@@ -12,19 +12,19 @@ redirect_from:
 <h2>Angaben gemäß § 5 TMG:</h2>
 Dr. André K. Eckhardt
 
-Ruhr-Universität Bochum
-Organische Chemie II
-Universitätsstraße 150
-44801 Bochum
+Ruhr-Universität Bochum  
+Organische Chemie II  
+Universitätsstraße 150  
+44801 Bochum  
 
 
 <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
 Dr. André K. Eckhardt
 
-Ruhr-Universität Bochum
-Organische Chemie II
-Universitätsstraße 150
-44801 Bochum
+Ruhr-Universität Bochum  
+Organische Chemie II  
+Universitätsstraße 150  
+44801 Bochum  
 
 <h1>Datenschutzerklärung</h1>
 <h2 id="m14">Einleitung</h2>
