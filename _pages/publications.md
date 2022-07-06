@@ -15,6 +15,15 @@ ___
 ------
 ___
 
+(40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, accepted, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A).
+
+<p align="center"> 
+<a href="http://doi.org/10.1039/D2CC03065A"><img src="https://AKEckhardt.github.io/images/pub40.PNG" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 (39) <b>Taming Phosphorus Mononitride.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Nat. Chem.</i>, <b>2022</b>, [doi:10.1038/s41557-022-00958-5](https://doi.org/10.1038/s41557-022-00958-5). [(ChemRxiv)](https://doi.org/10.33774/chemrxiv-2021-zxtmf)
 
 <p align="center"> 
