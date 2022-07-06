@@ -30,12 +30,12 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">First paper of the group published in <i>Chem. Commun.</i>! Check out our work about the explosive decomposition of diazidoethane, diiminoethane and imidazole synthesis <a href=""http://doi.org/10.1039/D2CC03065A">here</a>!</font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news2.PNG" width="75%" height="auto%" align="middle"></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">First paper of the group published in <i>Chem. Commun.</i>! Check out our work about the explosive decomposition of diazidoethane, diiminoethane and imidazole synthesis <a href="http://doi.org/10.1039/D2CC03065A">here</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1038/s41467-021-25775-1"><img src="https://AKEckhardt.github.io/images/pub40.PNG" alt="Link" width="50%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.</font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/FCI.png" width="75%" height="auto%" align="middle"></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/FCI.png" width="50%" height="auto%" align="middle"></td>
 </tr>
 </table>
 ___
