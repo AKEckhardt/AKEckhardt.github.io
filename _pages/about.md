@@ -30,7 +30,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">First paper of the group published in <i>Chem. Commun.</i>! Check out our work about the explosive decomposition of diazidoethane, diiminoethane and imidazole synthesis <a href="http://doi.org/10.1039/D2CC03065A">here</a>!</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">First paper of the group published in <i>Chem. Commun.</i>! Check out our work about the explosive decomposition of 1,2-diazidoethane, spectroscopic identification of 1,2-diiminoethane and imidazole synthesis <a href="http://doi.org/10.1039/D2CC03065A">here</a>!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="http://doi.org/10.1039/D2CC03065A"><img src="https://AKEckhardt.github.io/images/news2.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
