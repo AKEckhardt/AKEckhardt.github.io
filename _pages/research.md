@@ -2,8 +2,9 @@
 layout: archive
 title: "Research Interests"
 excerpt: "Personal research interests"
-permalink: /research/
-author_profile: true
+author_profile: false
+sidebar:
+  nav: "res"
 
 ---
 

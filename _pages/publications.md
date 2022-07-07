@@ -14,7 +14,8 @@ Published
 ------
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:$dark-gray; text-decoration:none" name="2022">2022</a>    
+<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2022">2022</a>
+
 ___
 
 (40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, accepted, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A). (<sup>*</sup> = corresponding author)
