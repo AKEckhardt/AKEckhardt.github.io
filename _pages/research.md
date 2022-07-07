@@ -9,8 +9,8 @@ sidebar:
 ---
 
 {% include base_path %}
-Astro- and Prebiotic Chemistry
-------
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="Astro">Astro- and Prebiotic Chemistry</a>
+
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
 Many reactive molecules have been already detected in interstellar media by microwave spectroscopy. Some of them are not stable here on Earth under ambient conditions but stabilized by the very low temperatures and pressure in space. 
@@ -27,8 +27,8 @@ It is worth to study the formation of biomolecules in space towards the understa
 <br/>
 <br/>
 
-Chemical Reactivity and Physical (In)Organic Chemistry
-------
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="POC">Chemical Reactivity and Physical (In)Organic Chemistry</a>
+
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
 For the understanding of chemical reactivity it is necessary to combine and compare experimental and theoretical results. Nowadays, high-level computations on small molecules are very reliable and go most
@@ -48,8 +48,8 @@ Quantum mechanical tunneling processes open new pathways to reaction products th
 <br/>
 
 
-Reactive Intermediates and Matrix Isolation Spectroscopy
-------
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
+
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
 Reactive intermediates play a key role in most of every chemical reaction. It is necessary to study the stability and reactivity of these intermediates towards the understanding of chemical reaction mechanisms and fine tuning of chemical reactions.
@@ -65,8 +65,8 @@ Typical highly reactive intermediates include carbenes, radicals and nitrenes th
 <br/>
 
 
-Phosphorus Chemistry
-------
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="31P">Phosphorus Chemistry</a>
+
 <p style='text-align: justify;'> 
 <style>table, th, td {border: transparent;}</style>
 <table><tr><td style="width:70%;" align="justify" valign="middle">

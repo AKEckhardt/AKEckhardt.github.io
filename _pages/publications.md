@@ -10,11 +10,7 @@ sidebar:
 ---
 
 
-Published
-------
-___
-
-<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2022">2022</a>
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2022">2022</a>
 
 ___
 
@@ -76,7 +72,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2021">2021</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2021">2021</a><br/>
 ___
 
 (34) <b>Frustrated Lewis Pair Stabilized Phosphoryl Nitride (NPO), a Monophosphorus Analogue of Nitrous Oxide (N<sub>2</sub>O).</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426).  [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2021-xz4qh)
@@ -198,7 +194,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2020">2020</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2020">2020</a><br/>
 ___
 
 (21) <b>A chemical dynamics study on the gas-phase formation of triplet and singlet (C<sub>5</sub>H<sub>2</sub>) carbenes.</b> C. He, G. R. Galimova, Y. Luo, L. Zhao, <u>A. K. Eckhardt</u>, R. Sun, A. M. Mebel and R. I. Kaiser <i>Proc. Natl. Acad. Sci. U.S.A.</i>, <b>2020</b>, <i>117</i>, 30142–30150, [doi:10.1073/pnas.2019257117](http://doi.org/10.1073/pnas.2019257117). 
@@ -279,7 +275,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2019">2019</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2019">2019</a><br/>
 ___
 
 (13) <b>Competitive Nitrogen versus Carbon Tunneling.</b> C. M. Nunes, <u>A. K. Eckhardt</u>, I. Reva, R. Fausto and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 14340–14348, [doi:10.1021/jacs.9b06869](http://doi.org/10.1021/jacs.9b06869). 
@@ -318,7 +314,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:mix(#000, #7a8288, 40%); text-decoration:none" name="2018">2018</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2018">2018</a><br/>
 ___
 
 (09) <b>1,3-Dioxolane-4-ol Hemiacetal Stores Formaldehyde and Glycolaldehyde in the Gas-Phase.</b> <u>A. K. Eckhardt</u>, R. C. Wende and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2018</b>, <i>140</i>, 12333–12336, [doi:10.1021/jacs.8b07480](http://doi.org/10.1021/jacs.8b07480). 

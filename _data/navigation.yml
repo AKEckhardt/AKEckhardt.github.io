@@ -74,11 +74,11 @@ pubs:
         
 res:
   - title: Astro- and Prebiotic Chemistry     
-    url: /publications/#Astro
+    url: /research/#Astro
   - title: Chemical Reactivity and Physical (In)Organic Chemistry
-    url: /publications/#Reactivity
+    url: /research/#POC
   - title: Reactive Intermediates and Matrix Isolation Spectroscopy    
-    url: /publications/#Matrix
+    url: /research/#Matrix
   - title: Phosphorus Chemistry
-    url: /publications/#31P
+    url: /research/#31P
         
