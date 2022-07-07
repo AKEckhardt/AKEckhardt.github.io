@@ -58,16 +58,19 @@ docs:
 
 
 pubs:
-  - title: "2022"
-    url: /publications/#2022
-  - title: "2021"
-    url: /publications/#2021
-  - title: "2020"
-    url: /publications/#2020
-  - title: "2019"
-    url: /publications/#2019
-  - title: "2018"
-    url: /publications/#2018
+  - title: Publications     
+    url: /publications/
+    children:
+      - title: "2022"
+        url: /publications/#2022
+      - title: "2021"
+        url: /publications/#2021
+      - title: "2020"
+        url: /publications/#2020
+      - title: "2019"
+        url: /publications/#2019
+      - title: "2018"
+        url: /publications/#2018
         
         
         
