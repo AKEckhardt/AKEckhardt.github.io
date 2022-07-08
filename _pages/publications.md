@@ -10,7 +10,7 @@ sidebar:
 ---
 
 <br/>
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2022">2022</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2022">2022</a>
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2021">2021</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2021">2021</a><br/>
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2020">2020</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2020">2020</a><br/>
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2019">2019</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2019">2019</a><br/>
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="2018">2018</a><br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2018">2018</a><br/>
 
 ___
 

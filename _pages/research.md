@@ -28,7 +28,7 @@ It is worth to study the formation of biomolecules in space towards the understa
 <br/>
 <br/>
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="POC">Chemical Reactivity and Physical (In)Organic Chemistry</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="POC">Chemical Reactivity and Physical (In)Organic Chemistry</a>
 
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
@@ -49,7 +49,7 @@ Quantum mechanical tunneling processes open new pathways to reaction products th
 <br/>
 
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
 
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
@@ -66,7 +66,7 @@ Typical highly reactive intermediates include carbenes, radicals and nitrenes th
 <br/>
 
 
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="31P">Phosphorus Chemistry</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="31P">Phosphorus Chemistry</a>
 
 <p style='text-align: justify;'> 
 <style>table, th, td {border: transparent;}</style>
