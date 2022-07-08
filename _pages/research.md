@@ -10,7 +10,7 @@ sidebar:
 ---
 
 {% include base_path %}
-<a style="font-weight:bold; font-size:1.25em; color:black; text-decoration:none" name="Astro">Astro- and Prebiotic Chemistry</a>
+<a style="font-weight:bold; font-size:1.25em; color:#737882; text-decoration:none" name="Astro">Astro- and Prebiotic Chemistry</a>
 
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
