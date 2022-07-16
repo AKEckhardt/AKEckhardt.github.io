@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Alumni 1"
-excerpt: "ake group"
+excerpt: "AKE Group"
 permalink: /akegroup/alumni1/
 author_profile: false
 sidebar:

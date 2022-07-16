@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Research Interests"
-excerpt: "Personal research interests"
+excerpt: "Research Interests"
 permalink: /research/
 author_profile: false
 sidebar:

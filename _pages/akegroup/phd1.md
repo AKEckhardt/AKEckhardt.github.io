@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "PhD 1"
-excerpt: "ake group"
+excerpt: "AKE Group"
 permalink: /akegroup/phd1/
 author_profile: false
 sidebar:
