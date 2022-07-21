@@ -41,7 +41,7 @@ Education
 * Dr. rer. nat. in Organic Chemistry, 10/2016 - 05/2019, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
 	* Thesis: "Sweet Life – Reactivity of Novel Carbenes in Tunneling and Sugar Forming Reactions" (summa cum laude)
 	* 04/2019: Visiting Researcher at <b>University of Coimbra</b>, Coimbra, Portugal,<br/>
-	Advisors: Prof. [Rui Fausto](http://www.qui.uc.pt/~rfausto/homepage/), [Cláudio M. Nunes](https://sites.google.com/view/cmnunes), PhD and Dr. hab. [Igor D. Reva](www.qui.uc.pt/~reva/)
+	Advisors: Prof. [Rui Fausto](http://www.qui.uc.pt/~rfausto/homepage/), [Cláudio M. Nunes](https://sites.google.com/view/cmnunes), PhD and Dr. hab. [Igor D. Reva](http://www.qui.uc.pt/~reva/)
 	* 08/2018 - 10/2018: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
 	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
 * M. Sc. in Organic Chemistry, 2014 - 2016, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
