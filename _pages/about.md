@@ -23,6 +23,7 @@ All prepared molecular structures are validated by comparison of experimental an
  <tr>
   <td style="width:70%;" align="justify" valign="top"><font size="5"><b>Open Positions</b></font><br/>
 <p style='text-align: justify;'> <font size="4">
+Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> 
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>.
 </font></p></td></tr>
 </table>
