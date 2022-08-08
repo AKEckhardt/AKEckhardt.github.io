@@ -25,7 +25,7 @@ ___
 
 ___
 
-(39) <b>Taming Phosphorus Mononitride.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Nat. Chem.</i>, <b>2022</b>, [doi:10.1038/s41557-022-00958-5](https://doi.org/10.1038/s41557-022-00958-5). [(ChemRxiv)](https://doi.org/10.33774/chemrxiv-2021-zxtmf)
+(39) <b>Taming Phosphorus Mononitride.</b> <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Nat. Chem.</i>, <b>2022</b>, <i>14</i>, 928–934, [doi:10.1038/s41557-022-00958-5](https://doi.org/10.1038/s41557-022-00958-5). [(ChemRxiv)](https://doi.org/10.33774/chemrxiv-2021-zxtmf)
 
 <p align="center"> 
 <a href="https://doi.org/10.1038/s41557-022-00958-5"><img src="https://AKEckhardt.github.io/images/pub39.png" alt="Link" width="40%" height="auto%"/></a>
