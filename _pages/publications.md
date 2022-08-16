@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A). (<sup>*</sup> = corresponding author)
+(40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis.</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A). (<sup>*</sup> = corresponding author)
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D2CC03065A"><img src="https://AKEckhardt.github.io/images/pub40.PNG" alt="Link" width="40%" height="auto%"/></a>
