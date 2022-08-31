@@ -36,9 +36,9 @@ Your Bio
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
-<li><a href="http://linkedin.com/in/XXX"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+<li><a href="https://linkedin.com/in/XXX"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
 <li><a href="https://twitter.com/XXX"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-<li><a href="http://researchgate.net/profile/XXX"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+<li><a href="https://researchgate.net/profile/XXX"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
 </ul>
 </div>
 </font>

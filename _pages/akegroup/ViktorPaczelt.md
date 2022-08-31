@@ -28,7 +28,7 @@ MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
-<li><a href="http://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+<li><a href="https://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
 </ul>
 </div>
 </font>
@@ -36,7 +36,7 @@ MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 </tr></table>
 
 <br/>
-Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018. During his BSc studies Viktor was doing organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
+Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018 with <a href="http://photochem.sci.muni.cz/">Prof. Petr Klán</a>. During his BSc studies Viktor was doing organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
 
 
 
