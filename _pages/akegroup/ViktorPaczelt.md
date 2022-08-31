@@ -17,20 +17,26 @@ sidebar:
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
 <b>Viktor Paczelt</b><br/>
-M.Sc. student<br/>
+MSc student<br/>
 Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:Viktor.Paczelt@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
 BSc (2014 - 2018, Masaryk University Brno, Czech Republic)<br/>
-MSc (2019 - present, Ruhr-University Bochum, Germany)
+MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
-Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018. During his BSc studies Viktor was doing a lots of organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
-
-
-
+<br/>
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><strong>Follow:</strong></li>
+<li><a href="http://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+</ul>
+</div>
 </font>
 </td>
 </tr></table>
+
+<br/>
+Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018. During his BSc studies Viktor was doing organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
 
 
 
