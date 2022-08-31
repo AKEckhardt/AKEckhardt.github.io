@@ -47,8 +47,8 @@ docs:
 
   - title: Students
     children:
-      - title: "Student 1"
-        url: /akegroup/student1/
+      - title: "Viktor Paczelt"
+        url: /akegroup/ViktorPaczelt/
 
   - title: Alumni
     children:
