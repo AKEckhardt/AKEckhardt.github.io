@@ -11,7 +11,7 @@ sidebar:
 
 {% include base_path %}
 
-
+<br/>
 <table> <style>table, th, td {border: transparent;}</style> <tr>
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/ViktorPaczelt.jpg" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
