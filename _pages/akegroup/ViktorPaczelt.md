@@ -24,7 +24,6 @@ Room NC 3/132, Tel: +49 234 32 26715<br/>
 BSc (2014 - 2018, Masaryk University Brno, Czech Republic)<br/>
 MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
-<br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
@@ -35,9 +34,9 @@ MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 </td>
 </tr></table>
 
-<br/>
+<p style='text-align: justify;'>
 Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018 with <a href="http://photochem.sci.muni.cz/">Prof. Petr Klán</a>. During his BSc studies Viktor was doing organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
-
+</p>
 
 
 
