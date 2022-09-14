@@ -26,8 +26,8 @@ BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
-<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
-<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="fab fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="ai ai-researchgate-square ai-3x" aria-hidden="true"></i> ResearchGate</a></li>
+<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="ai ai-orcid-square ai-3x" aria-hidden="true"></i> ORCID</a></li>
 </ul>
 </div>
 </font>
@@ -37,7 +37,7 @@ BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
 <p style='text-align: justify;'>
 Vladimir studied chemistry at Lomonosov Moscow State University in Moscow (Russia) and obtained his MSc in 2021 with <a href="https://www.rc.chem.msu.ru/cgi-bin/main.cgi?page=index&lang=en">Prof. Vladimir I. Feldman</a>. During his Master thesis Vladimir was investigating the radiation chemistry of hydrogen cyanide complexes with C2 hydrocarbons in low-temperature matrices. In 2022 Vladimir moved to Bochum for his PhD studies.
 </p>
-<br/>
+<font size="1"><br/></font>
 
 
 
