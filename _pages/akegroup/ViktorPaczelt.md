@@ -27,7 +27,7 @@ MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
 <li><strong>Follow:</strong></li>
-<li><a href="https://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+<li><a href="https://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="ai ai-linkedin-square ai-3x" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 </font>
