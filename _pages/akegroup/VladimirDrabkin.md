@@ -25,8 +25,8 @@ BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
-<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="ai ai-researchgate-square ai-3x" style="color:black" aria-hidden="true"></i></a></li>
-<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="ai ai-orcid-square ai-3x" style="color:black" aria-hidden="true"></i></a></li>
+<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="ai ai-researchgate-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 </font>
