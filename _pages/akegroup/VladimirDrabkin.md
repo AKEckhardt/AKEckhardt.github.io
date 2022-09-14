@@ -23,13 +23,11 @@ Room NCBF 03/497, Tel: +49 234 32 26715<br/>
 <br/>
 BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
 <br/>
-<div class="page__footer-follow">
-<ul class="social-icons">
-<li><strong>Follow:</strong></li>
-<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="ai ai-researchgate-square ai-3x" aria-hidden="true"></i> ResearchGate</a></li>
-<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="ai ai-orcid-square ai-3x" aria-hidden="true"></i> ORCID</a></li>
-</ul>
-</div>
+
+
+<a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="ai ai-researchgate-square ai-3x" aria-hidden="true"></i> ResearchGate</a>
+<a href="https://orcid.org/0000-0001-8597-9059"><i class="ai ai-orcid-square ai-3x" aria-hidden="true"></i> ORCID</a>
+
 </font>
 </td>
 </tr></table>
