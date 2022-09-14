@@ -31,7 +31,7 @@ ___
 <a href="https://doi.org/10.1038/s41557-022-00958-5"><img src="https://AKEckhardt.github.io/images/pub39.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
-<b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35)
+<b>Highlight:</b> • [C&EN: Novel P and N chemistry](https://cen.acs.org/physical-chemistry/chemical-bonding/Novel-P-N-chemistry/99/i35) • [Highlighted in “Notizen aus der Chemie” Nachr. Chem. 2022, 70 (August), 52.](https://doi.org/10.1002/nadc.20224129136)
 
 
 ___

@@ -40,12 +40,20 @@ docs:
       - title: "André K. Eckhardt"
         url: /cv/
 
+  - title: PhD Students
+    children:
+      - title: "Vladimir D. Drabkin"
+        url: /akegroup/VladimirDrabkin/
 
   - title: Students
     children:
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
 
+#  - title: Alumni
+#    children:
+#      - title: "Alumni 1"
+#        url: /akegroup/alumni1/
 
 
 

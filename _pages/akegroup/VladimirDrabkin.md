@@ -1,0 +1,58 @@
+---
+layout: archive
+title: "PhD 1"
+excerpt: "AKE Group"
+permalink: /akegroup/VladimirDrabkin/
+author_profile: false
+sidebar:
+  nav: "docs"
+
+---
+
+{% include base_path %}
+
+<font size="2"><br/></font>
+<table> <style>table, th, td {border: transparent;}</style> <tr>
+<td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/ViktorDrabkin.jpg" width="50%" height="auto%" align="middle"></td>
+<td style="width:50%;" align="justify" valign="middle">
+<font size="4">
+<b>Vladimir D. Drabkin</b><br/>
+PhD student<br/>
+Room NCBF 03/497, Tel: +49 234 32 26715<br/>
+<a href="mailto:Vladimir.Drabkin@ruhr-uni-bochum.de">E-Mail</a><br/>
+<br/>
+BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
+<br/>
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><strong>Follow:</strong></li>
+<li><a href="https://www.researchgate.net/profile/Vladimir-Drabkin"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+<li><a href="https://orcid.org/0000-0001-8597-9059"><i class="fab fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+</ul>
+</div>
+</font>
+</td>
+</tr></table>
+
+<p style='text-align: justify;'>
+Vladimir studied chemistry at Lomonosov Moscow State University in Moscow (Russia) and obtained his MSc in 2021 with <a href="https://www.rc.chem.msu.ru/cgi-bin/main.cgi?page=index&lang=en">Prof. Vladimir I. Feldman</a>. During his Master thesis Vladimir was investigating the radiation chemistry of hydrogen cyanide complexes with C2 hydrocarbons in low-temperature matrices. In 2022 Vladimir moved to Bochum for his PhD studies.
+</p>
+
+
+
+
+Publications
+------
+___
+
+(01) <b>Radiation-induced transformations of HCN•••C<sub>2</sub>H<sub>2</sub>, HCN•••C<sub>2</sub>H<sub>4</sub> and HCN•••C<sub>2</sub>H<sub>6</sub> complexes in noble gas matrices: Synthesis of C<sub>3</sub>H<sub>x</sub>N molecules in cryogenic media.</b> M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u>, I. S. Sosulin, S. V. Kameneva and V. I. Feldman <i>Rad. Phys. Chem.</i>, <b>2021</b>, <i>180</i>, 109232, [doi:10.1016/j.radphyschem.2020.109232](https://doi.org/10.1016/j.radphyschem.2020.109232).
+(02) <b>A matrix isolation and Ab initio study on C<sub>2</sub>H<sub>6</sub>•••HCN complex: An unusual example of hydrogen bonding.</b> I. S. Sosulin, M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u> and S. V. Kameneva <i>J. Mol. Struct.</i>, <b>2021</b>, <i>1231</i>, 129910, [doi:10.1016/j.molstruc.2021.129910](https://doi.org/10.1016/j.molstruc.2021.129910).
+
+___
+
+
+
+
+
+
+

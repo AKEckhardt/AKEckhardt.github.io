@@ -31,6 +31,14 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by RESOLV! We will investigate cryosolvation effects in the future.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/VladimirDrabkin">Vladimir D. Drabkin</a> joined the group for his PhD studies. He will investigate the cryosolvation of interstellar relevant molecules using matrix isolation spectroscopy and computational chemistry!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/VladimirDrabkin"><img src="https://AKEckhardt.github.io/images/news4.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt">Viktor Paczelt</a> joined the group for an in-depth practical. He will have fun in the lab doing organic synthesis, matrix isolation spectroscopy and computational chemistry!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt"><img src="https://AKEckhardt.github.io/images/news3.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
