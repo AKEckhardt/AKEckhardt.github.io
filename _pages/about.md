@@ -31,7 +31,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by RESOLV! We will investigate cryosolvation effects in the future.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by <a href="https://www.solvation.de/">RESOLV</a>! We will investigate cryosolvation effects in the future.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
