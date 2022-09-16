@@ -10,7 +10,6 @@ sidebar:
 ---
 {% include base_path %}
 
-<font size="1"><br/></font>
 
 <p align="center">
   <img width="50%" height="auto" src="https://AKEckhardt.github.io/images/group_2022.jpg">
