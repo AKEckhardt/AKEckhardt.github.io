@@ -18,7 +18,7 @@ sidebar:
 <font size="4">
 <b>Vladimir D. Drabkin</b><br/>
 PhD student<br/>
-Room NCBF 03/497, Tel: +49 234 32 26715<br/>
+Room NCBF 03/497, Tel: +49 234 32 25521<br/>
 <a href="mailto:Vladimir.Drabkin@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
 BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
