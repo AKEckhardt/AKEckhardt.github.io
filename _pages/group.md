@@ -8,14 +8,14 @@ sidebar:
   nav: "docs"
 
 ---
-
 {% include base_path %}
 
+<br/>
 
 <p align="center">
-  <img width="auto" height="auto" src="https://AKEckhardt.github.io/images/group_2022.jpg">
+  <img width="auto" height="50%" src="https://AKEckhardt.github.io/images/group_2022.jpg">
 </p>  
-From left to right: <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/cv/">André</a>, <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a> and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/VladimirDrabkin/">Vladimir</a>.
+<p style='text-align: center;'>From left to right: <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/cv/">André</a>, <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a> and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/VladimirDrabkin/">Vladimir</a>.</p>
 
 
 
