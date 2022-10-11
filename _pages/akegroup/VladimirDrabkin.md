@@ -34,7 +34,7 @@ BSc & MSc (2015-2021, Lomonosov Moscow State University, Moscow, Russia)<br/>
 </tr></table>
 
 <p style='text-align: justify;'>
-Vladimir studied chemistry at Lomonosov Moscow State University in Moscow (Russia) and obtained his MSc in 2021 with <a href="https://www.rc.chem.msu.ru/cgi-bin/main.cgi?page=index&lang=en">Prof. Vladimir I. Feldman</a>. During his Master thesis Vladimir was investigating the radiation chemistry of hydrogen cyanide complexes with C2 hydrocarbons in low-temperature matrices. In 2022 Vladimir moved to Bochum for his PhD studies.
+Vladimir studied chemistry at Lomonosov Moscow State University in Moscow (Russia) and obtained his MSc in 2021 with <a href="https://rad.chem.msu.ru/wordpress/?lang=en">Prof. Vladimir I. Feldman</a>. During his Master thesis Vladimir was investigating the radiation chemistry of hydrogen cyanide complexes with C2 hydrocarbons in low-temperature matrices. In 2022 Vladimir moved to Bochum for his PhD studies.
 </p>
 
 
