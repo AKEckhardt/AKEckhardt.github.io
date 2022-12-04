@@ -28,13 +28,7 @@ Research Experience
 <b>Harvard-Smithsonian Center for Astrophysics</b> (CfA), Cambridge, MA, USA (2020 - 2022)
 
 * Postdoctoral Research Fellow, 02/2020 - 01/2022, Advisor: [Michael C. McCarthy](https://www.cfa.harvard.edu/amp/mccarthygroup/index.html), PhD
-	* 03/2020: Visiting Researcher at <b>Mauna Kea Observatories</b>, Submillimeter Array (SMA), Big Island, HI, USA<br/>
-	
-<b>Justus Liebig University</b> (JLU), Institute of Organic Chemistry, Gießen, Germany (2019 - 2020)
-
-* Postdoctoral Research Fellow, 05/2019 - 01/2020, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
-	* 09/2019: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
-	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)<br/><br/>
+	* 03/2020: Visiting Researcher at <b>Mauna Kea Observatories</b>, Submillimeter Array (SMA), Big Island, HI, USA<br/><br/>
 
 
 Education
@@ -47,15 +41,15 @@ Education
 	Advisors: Prof. [Rui Fausto](http://www.qui.uc.pt/~rfausto/homepage/), [Cláudio M. Nunes](https://sites.google.com/view/cmnunes), PhD and Dr. hab. [Igor D. Reva](http://www.qui.uc.pt/~reva/)
 	* 08/2018 - 10/2018: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
 	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
-* M. Sc. in Organic Chemistry, 2014 - 2016, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)
-* B. Sc. in Organic Chemistry, 2011 - 2014, Advisor: Prof. Dr. [Peter R. Schreiner](https://www.uni-giessen.de/fbz/fb08/Inst/organische-chemie/agschreiner)<br/>
+* M. Sc. in Organic Chemistry, 2014 - 2016
+* B. Sc. in Organic Chemistry, 2011 - 2014<br/>
 
 * Abitur 2011 ([Theo-Koch-Schule Grünberg](https://www.theokoch.schule/))<br/><br/>
 
 
 Awards and Honors
 ======
-* FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp))
+* FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp)
 * Feodor Lynen Return Fellowship ([2022](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
 * Dissertation Award (Natural Sciences) JLU Gießen ([2020](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/digitaler-rueckblick-auf-das-ausnahmejahr-2020))
 * Feodor Lynen Postdoctoral Research Fellowship ([2020 - 2021](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))

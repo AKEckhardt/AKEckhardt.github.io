@@ -48,7 +48,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://www.vci.de/(not-generated)/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 </table>
 ___
