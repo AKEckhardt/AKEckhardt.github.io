@@ -44,12 +44,17 @@ Publications
 ------
 ___
 
-(01) <b>Radiation-induced transformations of HCN•••C<sub>2</sub>H<sub>2</sub>, HCN•••C<sub>2</sub>H<sub>4</sub> and HCN•••C<sub>2</sub>H<sub>6</sub> complexes in noble gas matrices: Synthesis of C<sub>3</sub>H<sub>x</sub>N molecules in cryogenic media.</b> M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u>, I. S. Sosulin, S. V. Kameneva and V. I. Feldman <i>Rad. Phys. Chem.</i>, <b>2021</b>, <i>180</i>, 109232, [doi:10.1016/j.radphyschem.2020.109232](https://doi.org/10.1016/j.radphyschem.2020.109232).
+(03) <b>Direct evidence for formation of acetimidic acid and acetamide under irradiation of isolated acetonitrile–water complexes at cryogenic temperatures.</b> <u>V. D. Drabkin</u>, A. D. Volosatova and V. I. Feldman <i>Mon. Not. R. Astron. Soc.</i>, <b>2023</b>, <i>518</i>, 1744-1749, [doi:doi.org/10.1093/mnras/stac3067](https://doi.org/10.1093/mnras/stac3067).
 
 
 ___
 
-(02) <b>A matrix isolation and Ab initio study on C<sub>2</sub>H<sub>6</sub>•••HCN complex: An unusual example of hydrogen bonding.</b> I. S. Sosulin, M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u> and S. V. Kameneva <i>J. Mol. Struct.</i>, <b>2021</b>, <i>1231</i>, 129910, [doi:10.1016/j.molstruc.2021.129910](https://doi.org/10.1016/j.molstruc.2021.129910).
+(02) <b>Radiation-induced transformations of HCN•••C<sub>2</sub>H<sub>2</sub>, HCN•••C<sub>2</sub>H<sub>4</sub> and HCN•••C<sub>2</sub>H<sub>6</sub> complexes in noble gas matrices: Synthesis of C<sub>3</sub>H<sub>x</sub>N molecules in cryogenic media.</b> M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u>, I. S. Sosulin, S. V. Kameneva and V. I. Feldman <i>Rad. Phys. Chem.</i>, <b>2021</b>, <i>180</i>, 109232, [doi:10.1016/j.radphyschem.2020.109232](https://doi.org/10.1016/j.radphyschem.2020.109232).
+
+
+___
+
+(01) <b>A matrix isolation and Ab initio study on C<sub>2</sub>H<sub>6</sub>•••HCN complex: An unusual example of hydrogen bonding.</b> I. S. Sosulin, M. A. Lukianova, A. D. Volosatova, <u>V. D. Drabkin</u> and S. V. Kameneva <i>J. Mol. Struct.</i>, <b>2021</b>, <i>1231</i>, 129910, [doi:10.1016/j.molstruc.2021.129910](https://doi.org/10.1016/j.molstruc.2021.129910).
 
 
 ___
