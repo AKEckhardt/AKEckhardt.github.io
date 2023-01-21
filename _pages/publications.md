@@ -10,11 +10,42 @@ sidebar:
 ---
 
 <br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2023">2022</a>
+
+___
+
+(43) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> V. Paczelt, R. C. Wende, P. R. Schreiner and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, XXX–XXX, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, XXX–XXX, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(42) <b>Equilibrating parent aminomercaptocarbene and CO<sub>2</sub> with 2-amino-2-thioxoacetic acid <i>via</i> heavy-atom quantum tunneling.</b> Bastian Bernhardt, Markus Schauermann, Ephrath Solel, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Chem. Sci.</i>, <b>2023</b>, <i>14</i>, 130–135, [doi:10.1039/D2SC05388H](https://doi.org/10.1039/D2SC05388H). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2022">2022</a>
 
 ___
 
-(40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis.</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A). (<sup>*</sup> = corresponding author)
+(41) <b>A Mechanistic Study on the Formation of Acetone (CH<sub>3</sub>COCH<sub>3</sub>), Propanal (CH<sub>3</sub>CH<sub>2</sub>CHO), Propylene Oxide (<i>c</i>-CH<sub>3</sub>CHOCH<sub>2</sub>) along with Their Propenol Enols (CH<sub>3</sub>CHCHOH/CH<sub>3</sub>C(OH)CH<sub>2</sub>) in Interstellar Analog Ices.</b> S. K. Singh, N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Astrophys. J.</i>, <b>2022</b>, <i>941</i>, 103, [doi:10.3847/1538-4357/ac8c92](https://doi.org/10.3847/1538-4357/ac8c92). 
+
+<p align="center"> 
+<a href="https://doi.org/10.3847/1538-4357/ac8c92"><img src="https://AKEckhardt.github.io/images/pub41.PNG" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(40) <b>Spectroscopic Evidence for 1,2-Diiminoethane – A Key Intermediate in Imidazole Synthesis.</b> <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A).
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D2CC03065A"><img src="https://AKEckhardt.github.io/images/pub40.PNG" alt="Link" width="40%" height="auto%"/></a>

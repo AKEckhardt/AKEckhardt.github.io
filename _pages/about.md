@@ -31,6 +31,10 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2023</b></font><br/><font size="1"><br/></font><font size="4">Our paper about glycine imine is now published in <i>Angewandte</i>! Check out our work about glycine imine as the reactive intermediate in amino acid synthesis <a href="https://doi.org/10.1002/anie.202218548">here</a>! More about imino acids is coming soon.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by <a href="https://www.solvation.de/">RESOLV</a>! We will investigate cryosolvation effects in the future.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
