@@ -67,7 +67,7 @@ ___
 
 ___
 
-(38) <b>Formation of the elusive tetrahedral P<sub>3</sub>N molecule.</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> and R. I. Kaiser <i>Sci. Adv.</i>, <b>2022</b>, <i>8</i>, eabo5792, [doi:10.1126/sciadv.abo5792](https://doi.org/10.1126/sciadv.abo5792). (<sup>*</sup> = corresponding author)
+(38) <b>Formation of the elusive tetrahedral P<sub>3</sub>N molecule.</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> and R. I. Kaiser <i>Sci. Adv.</i>, <b>2022</b>, <i>8</i>, eabo5792, [doi:10.1126/sciadv.abo5792](https://doi.org/10.1126/sciadv.abo5792). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1126/sciadv.abo5792"><img src="https://AKEckhardt.github.io/images/pub38.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -87,7 +87,7 @@ ___
 
 ___
 
-(36) <b>Detection of 1<i>H</i>-Triphosphirene (<i>c</i>-HP<sub>3</sub>) and 2-Triphosphenylidene (HP<sub>3</sub>): The Isovalent Counterparts of 1<i>H</i>-Triazirine (<i>c</i>-HN<sub>3</sub>) and Hydrazoic Acid (HN<sub>3</sub>).</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2022</b>, <i>13</i>, 2725-2730, [doi:10.1021/acs.jpclett.2c00639](https://doi.org/10.1021/acs.jpclett.2c00639). (<sup>*</sup> = corresponding author)
+(36) <b>Detection of 1<i>H</i>-Triphosphirene (<i>c</i>-HP<sub>3</sub>) and 2-Triphosphenylidene (HP<sub>3</sub>): The Isovalent Counterparts of 1<i>H</i>-Triazirine (<i>c</i>-HN<sub>3</sub>) and Hydrazoic Acid (HN<sub>3</sub>).</b> C. Zhang, C. Zhu, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2022</b>, <i>13</i>, 2725-2730, [doi:10.1021/acs.jpclett.2c00639](https://doi.org/10.1021/acs.jpclett.2c00639). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.2c00639"><img src="https://AKEckhardt.github.io/images/pub36.jpg" alt="Link" width="40%" height="auto%"/></a>
