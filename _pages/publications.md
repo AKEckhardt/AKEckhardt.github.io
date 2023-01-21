@@ -17,7 +17,7 @@ ___
 (43) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> V. Paczelt, R. C. Wende, P. R. Schreiner and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, XXX–XXX, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, XXX–XXX, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 
@@ -26,7 +26,7 @@ ___
 (42) <b>Equilibrating parent aminomercaptocarbene and CO<sub>2</sub> with 2-amino-2-thioxoacetic acid <i>via</i> heavy-atom quantum tunneling.</b> Bastian Bernhardt, Markus Schauermann, Ephrath Solel, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Chem. Sci.</i>, <b>2023</b>, <i>14</i>, 130–135, [doi:10.1039/D2SC05388H](https://doi.org/10.1039/D2SC05388H). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="100%" height="auto%"/></a>
 </p>
 
 
