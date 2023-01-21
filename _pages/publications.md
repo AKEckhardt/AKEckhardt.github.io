@@ -26,7 +26,7 @@ ___
 (42) <b>Equilibrating parent aminomercaptocarbene and CO<sub>2</sub> with 2-amino-2-thioxoacetic acid <i>via</i> heavy-atom quantum tunneling.</b> Bastian Bernhardt, Markus Schauermann, Ephrath Solel, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Chem. Sci.</i>, <b>2023</b>, <i>14</i>, 130–135, [doi:10.1039/D2SC05388H](https://doi.org/10.1039/D2SC05388H). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="100%" height="auto%"/></a>
+<a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="auto%" height="auto%"/></a>
 </p>
 
 
