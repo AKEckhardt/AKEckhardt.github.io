@@ -45,7 +45,7 @@ Publications
 ------
 ___
 
-(01) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> V. Paczelt, R. C. Wende, P. R. Schreiner and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218548, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218548, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
+(01) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> <u>V. Paczelt</u>, R. C. Wende, P. R. Schreiner and A. K. Eckhardt <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218548, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218548, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
 
 
 ___
