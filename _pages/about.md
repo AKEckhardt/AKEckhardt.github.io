@@ -31,6 +31,14 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the Kaiser and Mebel group, we found first evidence for the existence of oxirene. Our findings are published now in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/news8.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2023</b></font><br/><font size="1"><br/></font><font size="4">Thank you <i>Angewandte</i> for publishing André's introducing author profile! Learn more about André <a href="https://doi.org/10.1002/anie.202301830">here</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202301830"><img src="https://AKEckhardt.github.io/images/news7.png" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2023</b></font><br/><font size="1"><br/></font><font size="4">Our paper about glycine imine is now published in <i>Angewandte</i>! Check out our work about glycine imine as the reactive intermediate in amino acid synthesis <a href="https://doi.org/10.1002/anie.202218548">here</a>! More about other imino acids is coming soon.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
