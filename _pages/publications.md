@@ -14,10 +14,10 @@ sidebar:
 
 ___
 
-(45) <b>Gas-phase detection of oxirene.</b> Jia Wang, Joshua H. Marks, Andrew M. Turner, Alexander M. Mebel, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Sci. Adv.</i>, <b>2023</b>, <i>9</i>, eadg1134, [doi:10.1126/sciadv.adg1134](https://doi.org/10.1126/sciadv.adg1134). 
+(45) <b>Gas-phase detection of oxirene.</b> Jia Wang, Joshua H. Marks, Andrew M. Turner, Alexander M. Mebel, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Sci. Adv.</i>, <b>2023</b>, <i>9</i>, eadg1134, [doi:10.1126/sciadv.adg1134](https://www.science.org/doi/10.1126/sciadv.adg1134). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/pub45.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/pub45.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 <b>Highlight:</b> • [UHM News](https://www.hawaii.edu/news/2023/03/10/gas-phase-detection-oxirene/)
