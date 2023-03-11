@@ -31,7 +31,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the Kaiser and Mebel group, we found first evidence for the existence of oxirene. Our findings are published now in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the Kaiser and Mebel group we discovered first evidence for the existence of oxirene! Our findings are published now in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/news8.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
