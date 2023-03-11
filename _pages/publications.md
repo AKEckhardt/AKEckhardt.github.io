@@ -14,7 +14,27 @@ sidebar:
 
 ___
 
-(43) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> V. Paczelt, R. C. Wende, P. R. Schreiner and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, XXX–XXX, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, XXX–XXX, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
+(45) <b>Gas-phase detection of oxirene.</b> Jia Wang, Joshua H. Marks, Andrew M. Turner, Alexander M. Mebel, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Sci. Adv.</i>, <b>2023</b>, <i>9</i>, eadg1134, [doi:10.1126/sciadv.adg1134](https://doi.org/10.1126/sciadv.adg1134). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/pub45.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [UHM News](https://www.hawaii.edu/news/2023/03/10/gas-phase-detection-oxirene/)
+
+
+___
+
+(44) <b>Prebiotic Synthesis and Isomerization in Interstellar Analog Ice: Glycinal, Acetamide, and Their Enol Tautomers.</b> Joshua H. Marks, Jia Wang, N. Fabian Kleimeier, Andrew M. Turner, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218645, [doi:10.1002/anie.202218645](https://doi.org/10.1002/anie.202218645); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218645, [doi:10.1002/ange.202218645](https://doi.org/10.1002/ange.202218645). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/anie.202218645"><img src="https://AKEckhardt.github.io/images/pub44.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(43) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> V. Paczelt, R. C. Wende, P. R. Schreiner and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218548, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218548, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="40%" height="auto%"/></a>
@@ -114,6 +134,8 @@ ___
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.1c11426"><img src="https://AKEckhardt.github.io/images/pub34.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
+
+<b>Highlight:</b> • [Highlighted in “Trendbericht Anorganische Chemie 2023: Hauptgruppen” Nachr. Chem. 2023, 71, 46-57.](https://doi.org/10.1002/nadc.20234132411)
 
 
 ___
@@ -249,7 +271,7 @@ ___
 <a href="https://doi.org/10.1016/j.chempr.2020.10.003"><img src="https://AKEckhardt.github.io/images/pub20.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
-<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/10/27/building-block-deep-space/) • [JLU press release](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/165-20biomolekuelsyntheseohnebiochemie) • [Astrobiology.com](https://astrobiology.com/2020/10/a-key-building-block-of-life-may-have-arrived-from-deep-space.html) • [Miragenews.com](https://www.miragenews.com/key-building-block-of-life-may-have-arrived-from-deep-space/) • [Bionity.com](https://www.bionity.com/de/news/1168515/biomolekuelsynthese-ohne-biochemie-wie-organische-molekuele-im-weltraum-entstehen-koennen.html)
+<b>Highlight:</b> • [UHM News](https://www.hawaii.edu/news/2020/10/27/building-block-deep-space/) • [JLU press release](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/165-20biomolekuelsyntheseohnebiochemie) • [Astrobiology.com](https://astrobiology.com/2020/10/a-key-building-block-of-life-may-have-arrived-from-deep-space.html) • [Miragenews.com](https://www.miragenews.com/key-building-block-of-life-may-have-arrived-from-deep-space/) • [Bionity.com](https://www.bionity.com/de/news/1168515/biomolekuelsynthese-ohne-biochemie-wie-organische-molekuele-im-weltraum-entstehen-koennen.html)
 
 
 ___
@@ -278,7 +300,7 @@ ___
 <a href="https://doi.org/10.1126/sciadv.aba6934"><img src="https://AKEckhardt.github.io/images/pub17.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
-<b>Highlight:</b> • [UHM press release](https://www.hawaii.edu/news/2020/07/22/elusive-molecular-building-block/) • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
+<b>Highlight:</b> • [UHM News](https://www.hawaii.edu/news/2020/07/22/elusive-molecular-building-block/) • [Phys.org News](https://phys.org/news/2020-07-laser-techniques-photochemistry-elusive-molecular.html)
 
 
 ___
