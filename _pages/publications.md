@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(45) <b>Gas-phase detection of oxirene.</b> Jia Wang, Joshua H. Marks, Andrew M. Turner, Alexander M. Mebel, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Sci. Adv.</i>, <b>2023</b>, <i>9</i>, eadg1134, [doi:10.1126/sciadv.adg1134](https://www.science.org/doi/10.1126/sciadv.adg1134). 
+(45) <b>Gas-phase detection of oxirene.</b> J. Wang, J. H. Marks, A. M. Turner, A. M. Mebel, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Sci. Adv.</i>, <b>2023</b>, <i>9</i>, eadg1134, [doi:10.1126/sciadv.adg1134](https://www.science.org/doi/10.1126/sciadv.adg1134). 
 
 <p align="center"> 
 <a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/pub45.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -25,7 +25,7 @@ ___
 
 ___
 
-(44) <b>Prebiotic Synthesis and Isomerization in Interstellar Analog Ice: Glycinal, Acetamide, and Their Enol Tautomers.</b> Joshua H. Marks, Jia Wang, N. Fabian Kleimeier, Andrew M. Turner, <u>A. K. Eckhardt</u><sup>*</sup> and Ralf I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218645, [doi:10.1002/anie.202218645](https://doi.org/10.1002/anie.202218645); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218645, [doi:10.1002/ange.202218645](https://doi.org/10.1002/ange.202218645). 
+(44) <b>Prebiotic Synthesis and Isomerization in Interstellar Analog Ice: Glycinal, Acetamide, and Their Enol Tautomers.</b> J. H. Marks, J. Wang, N. F. Kleimeier, A. M. Turner, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218645, [doi:10.1002/anie.202218645](https://doi.org/10.1002/anie.202218645); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218645, [doi:10.1002/ange.202218645](https://doi.org/10.1002/ange.202218645). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/anie.202218645"><img src="https://AKEckhardt.github.io/images/pub44.jpg" alt="Link" width="40%" height="auto%"/></a>
@@ -43,7 +43,7 @@ ___
 
 ___
 
-(42) <b>Equilibrating parent aminomercaptocarbene and CO<sub>2</sub> with 2-amino-2-thioxoacetic acid <i>via</i> heavy-atom quantum tunneling.</b> Bastian Bernhardt, Markus Schauermann, Ephrath Solel, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Chem. Sci.</i>, <b>2023</b>, <i>14</i>, 130–135, [doi:10.1039/D2SC05388H](https://doi.org/10.1039/D2SC05388H). 
+(42) <b>Equilibrating parent aminomercaptocarbene and CO<sub>2</sub> with 2-amino-2-thioxoacetic acid <i>via</i> heavy-atom quantum tunneling.</b> B. Bernhardt, M. Schauermann, E. Solel, <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Chem. Sci.</i>, <b>2023</b>, <i>14</i>, 130–135, [doi:10.1039/D2SC05388H](https://doi.org/10.1039/D2SC05388H). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D2SC05388H"><img src="https://AKEckhardt.github.io/images/pub42.gif" alt="Link" width="auto%" height="auto%"/></a>
