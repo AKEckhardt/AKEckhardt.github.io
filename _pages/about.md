@@ -31,7 +31,11 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the <a href="https://uhmreactiondynamics.org/">Kaiser</a> and <a href="https://faculty.fiu.edu/~mebela/index_files/slide0003.htm">Mebel</a> groups we discovered first evidence for the existence of oxirene! Our findings are now published in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck">Luciana Herbeck</a> joined the group for an in-depth practical. She will learn more about organic synthesis and computational chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck"><img src="https://AKEckhardt.github.io/images/news9.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the <a href="https://uhmreactiondynamics.org/">Kaiser</a> and <a href="https://faculty.fiu.edu/~mebela/index_files/slide0003.htm">Mebel</a> groups we found first evidence for the existence of oxirene! Our findings are now published in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/news8.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
@@ -43,7 +47,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by <a href="https://www.solvation.de/">RESOLV</a>! We will investigate cryosolvation effects in the future.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by <a href="https://www.solvation.de/">RESOLV</a>! We will investigate solvation effects in the future.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
