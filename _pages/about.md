@@ -31,6 +31,10 @@ We are looking for highly motivated Bachelor and Master students interested in (
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AdamHasso">Adam Hasso</a> joined the group for an in-depth practical. He will synthesize a new precursor for our imine chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AdamHasso"><img src="https://AKEckhardt.github.io/images/news10.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck">Luciana Herbeck</a> joined the group for an in-depth practical. She will learn more about organic synthesis and computational chemistry.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck"><img src="https://AKEckhardt.github.io/images/news9.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
