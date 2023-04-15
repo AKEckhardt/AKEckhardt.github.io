@@ -29,7 +29,7 @@ MSc (2022 - present, Ruhr-University Bochum, Germany)<br/>
 </tr></table>
 
 <p style='text-align: justify;'>
-Adam studied chemistry at RU Bochum and obtained his Bsc degree in 2022 with <a href="https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry">Prof. Michael Römelt</a> exploring the absorption properties of chlorophyll monomers and dimers. He continues his Msc studies at RU Bochum and joined Eckhardt-lab for in-depth practical in April 2023-
+Adam studied chemistry at RU Bochum and obtained his Bsc degree in 2022 with <a href="https://www.chemie.hu-berlin.de/en/forschung-en/theoretical-chemistry">Prof. Michael Römelt</a> exploring the absorption properties of chlorophyll monomers and dimers. He continues his Msc studies at RU Bochum and joined Eckhardt-lab for in-depth practical in April 2023.
 </p>
 
 
