@@ -18,7 +18,7 @@ All prepared molecular structures are validated by comparison of experimental an
 </font>
 </p>
 </td>
-  <td rowspan="2"><a class="twitter-timeline" data-height="550" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></td>
+  <td rowspan="2"><a class="twitter-timeline" data-height="560" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></td>
  </tr>
  <tr>
   <td style="width:70%;" align="justify" valign="top"><font size="5"><b>Open Positions</b></font><br/>
