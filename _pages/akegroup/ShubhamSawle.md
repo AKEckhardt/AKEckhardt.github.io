@@ -21,7 +21,7 @@ Visiting student<br/>
 Room NCBF 03/497, Tel: +49 234 32 25521<br/>
 <a href="mailto:Shubham.Sawle@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-BSc & MSc (2017-2022, Indian Institute of Science Education and Research, Pune, India<br/>
+BSc & MSc (2017-2022), Indian Institute of Science Education and Research, Pune, India<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
