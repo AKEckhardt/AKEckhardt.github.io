@@ -2,7 +2,7 @@
 layout: archive
 title: "Alexander Swienty"
 excerpt: "AKE Group"
-permalink: /akegroup/AdamHasso/
+permalink: /akegroup/AlexanderSwienty/
 author_profile: false
 sidebar:
   nav: "docs"
