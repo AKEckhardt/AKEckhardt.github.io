@@ -33,6 +33,18 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/DonalODonnell">Dónal O'Donnell</a> joined the group as an undergraduate researcher for an international internship. He will study solvation science questions in the next three months with us. The program is funded by <a href="https://www.solvation.de/">RESOLV</a>.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DonalODonnell"><img src="https://AKEckhardt.github.io/images/news14.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AlexanderSwienty">Alexander Swienty</a> joined the group for for an external master thesis and will work with us in the synthesis lab for the next six months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AlexanderSwienty"><img src="https://AKEckhardt.github.io/images/news13.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>Mai 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Aya S. A. Alhaddad</a> joined the group for for an in-depth practical. She will work in the synthesis lab and learn quantum chemical calculations.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news12.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ShubhamSawle">Shubham Sawle</a> joined the group for an international internship funded by RESOLV. He will learn more about solvation science in the next six months.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ShubhamSawle"><img src="https://AKEckhardt.github.io/images/news11.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
