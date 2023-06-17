@@ -49,12 +49,12 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ShubhamSawle"><img src="https://AKEckhardt.github.io/images/news11.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AdamHasso">Adam Hasso</a> joined the group for an in-depth practical. He will synthesize a new precursor for our imine chemistry.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AdamHasso"><img src="https://AKEckhardt.github.io/images/news10.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Adam Hasso</a> joined the group for an in-depth practical. He will synthesize a new precursor for our imine chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news10.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck">Luciana Herbeck</a> joined the group for an in-depth practical. She will learn more about organic synthesis and computational chemistry.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/LucianaHerbeck"><img src="https://AKEckhardt.github.io/images/news9.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Luciana Herbeck</a> joined the group for an in-depth practical. She will learn more about organic synthesis and computational chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news9.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the <a href="https://uhmreactiondynamics.org/">Kaiser</a> and <a href="https://faculty.fiu.edu/~mebela/index_files/slide0003.htm">Mebel</a> groups we found first evidence for the existence of oxirene! Our findings are now published in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
