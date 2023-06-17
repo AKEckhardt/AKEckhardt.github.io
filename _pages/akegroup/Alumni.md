@@ -25,13 +25,16 @@ March - April 2023<br/></font>
 <br/>Adam Hasso<br/>
 April - Mai 2023<br/></font>
 </td>
-
+</tr>
+<tr>
 <td style="width:50%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/AyaAlhaddad.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
 <br/>Aya S. A. Alhaddad<br/>
 Mai - June 2023<br/></font>
 </td>
+
+</tr>
 
 </tr></table>
 
