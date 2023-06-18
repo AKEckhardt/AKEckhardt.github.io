@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Donal O Donnell"
+title: "Dónal O'Donnell"
 excerpt: "AKE Group"
 permalink: /akegroup/DonalODonnell/
 author_profile: false

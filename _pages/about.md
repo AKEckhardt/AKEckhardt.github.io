@@ -41,7 +41,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AlexanderSwienty"><img src="https://AKEckhardt.github.io/images/news13.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>Mai 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Aya S. A. Alhaddad</a> joined the group for for an in-depth practical. She will work in the synthesis lab and learn quantum chemical calculations.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Aya S. A. Alhaddad</a> joined the group for for an in-depth practical. She will work in the synthesis lab and learn quantum chemical calculations.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news12.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
