@@ -29,7 +29,7 @@ MSc (2021 - present, Westfälische Hochschule Recklinghausen, Germany)<br/>
 </tr></table>
 
 <p style='text-align: justify;'>
-Alexander studied chemistry at the Westfälische Hochschule in Recklinghausen and obtained his BSc in 2021 with <a href="https://www.w-hs.de/service/informationen-zur-person/person/kadzimirsz/">Prof. Daniel Kadzimirsz</a>. During his BSc studies Alexander was doing synthesis and characterization of Triptycenesulfonic acids. He started his MSc studies in 2021 at the Westfälische Hochschule in Recklinghausen. In 2023 Alexander joined Eckhardt-lab for his Master thesis.</p>
+Alexander studied chemistry at the Westfälische Hochschule in Recklinghausen and obtained his BSc in 2021 with <a href="https://www.w-hs.de/service/informationen-zur-person/person/kadzimirsz/">Prof. Daniel Kadzimirsz</a>. During his BSc studies Alexander synthesized and characterized triptycenesulfonic acids. In 2021 he started his MSc studies at the Westfälische Hochschule in Recklinghausen and in 2023 he joined Eckhardt-lab for his Master thesis.</p>
 
 
 
