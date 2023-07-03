@@ -49,21 +49,20 @@ docs:
     children:
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
-      - title: "Luciana Herbeck"
-        url: /akegroup/LucianaHerbeck/
-      - title: "Adam Hasso"
-        url: /akegroup/AdamHasso/
+      - title: "Alexander Swienty"
+        url: /akegroup/AlexanderSwienty/
         
   - title: Visiting Students
     children:
+      - title: "Dónal O'Donnell"
+        url: /akegroup/DonalODonnell/
       - title: "Shubham Sawle"
         url: /akegroup/ShubhamSawle/
-
         
-#  - title: Alumni
-#    children:
-#      - title: "Alumni 1"
-#        url: /akegroup/alumni1/
+  - title: Alumni
+    children:
+      - title: "Alumni"
+        url: /akegroup/Alumni/
 
 
 
