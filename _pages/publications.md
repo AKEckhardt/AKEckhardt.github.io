@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(47) <b>Quantum Tunneling Mediated Low-Temperature Synthesis of Interstellar Hemiacetals</b> J. Wang, A. A. Nikolayev, J. H. Marks, M. Mcanally, V. N. Azyazov, <u>A. K. Eckhardt</u><sup>*</sup>, A. M. Mebel and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2023</b>, <i>14</i>, 6078–6085, [doi:10.1021/acs.jpclett.3c01144](https://doi.org/10.1021/acs.jpclett.3c01144). 
+(47) <b>Quantum Tunneling Mediated Low-Temperature Synthesis of Interstellar Hemiacetals</b> J. Wang, A. A. Nikolayev, J. H. Marks, M. Mcanally, V. N. Azyazov, <u>A. K. Eckhardt,</u><sup>*</sup> A. M. Mebel and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2023</b>, <i>14</i>, 6078–6085, [doi:10.1021/acs.jpclett.3c01144](https://doi.org/10.1021/acs.jpclett.3c01144). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.3c01144"><img src="https://AKEckhardt.github.io/images/pub47.PNG" alt="Link" width="40%" height="auto%"/></a>
@@ -23,7 +23,7 @@ ___
 
 ___
 
-(46) <b>Synthesis of interstellar propen-2-ol (CH<sub>3</sub>C(OH)CH<sub>2</sub>) – the simplest enol tautomer of a ketone.</b> J. Wang, A. A. Nikolayev, C. Zhang, J. H. Marks, V. N. Azyazov, <u>A. K. Eckhardt</u><sup>*</sup>, A. M. Mebel and R. I. Kaiser <i>Phys. Chem. Chem. Phys.</i>, <b>2023</b>, <i>X</i>, Advance Article, [doi:10.1039/D3CP02307A](https://doi.org/10.1039/D3CP02307A). 
+(46) <b>Synthesis of interstellar propen-2-ol (CH<sub>3</sub>C(OH)CH<sub>2</sub>) – the simplest enol tautomer of a ketone.</b> J. Wang, A. A. Nikolayev, C. Zhang, J. H. Marks, V. N. Azyazov, <u>A. K. Eckhardt,</u><sup>*</sup> A. M. Mebel and R. I. Kaiser <i>Phys. Chem. Chem. Phys.</i>, <b>2023</b>, <i>X</i>, Advance Article, [doi:10.1039/D3CP02307A](https://doi.org/10.1039/D3CP02307A). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D3CP02307A"><img src="https://AKEckhardt.github.io/images/pub46.gif" alt="Link" width="40%" height="auto%"/></a>
