@@ -8,27 +8,17 @@ author_profile: true
 ---
 
 
-<table>
-<style>table, th, td {border: transparent;}</style> <tr>
-<td style="width:70%;" align="justify" valign="top">
-<p style='text-align: justify;'> <font size="4">
 Our research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
 For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
 All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. 
-</font>
-</p>
-</td>
-  <td rowspan="2"><a class="twitter-timeline" data-height="560" href="https://twitter.com/AKEckhardt?ref_src=twsrc%5Etfw">Tweets by AKEckhardt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></td>
- </tr>
- <tr>
-  <td style="width:70%;" align="justify" valign="top"><font size="5"><b>Open Positions</b></font><br/>
-<p style='text-align: justify;'> <font size="4">
+
+
 We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program (Deadline: 13 September 2023).
 <br/> 
-</font></p></td></tr>
-</table>
+
+
 
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
