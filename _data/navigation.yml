@@ -44,18 +44,16 @@ docs:
     children:
       - title: "Vladimir D. Drabkin"
         url: /akegroup/VladimirDrabkin/
+      - title: "Viktor Paczelt"
+        url: /akegroup/ViktorPaczelt/
 
   - title: Students
     children:
-      - title: "Viktor Paczelt"
-        url: /akegroup/ViktorPaczelt/
       - title: "Alexander Swienty"
         url: /akegroup/AlexanderSwienty/
         
   - title: Visiting Students
     children:
-      - title: "Dónal O'Donnell"
-        url: /akegroup/DonalODonnell/
       - title: "Shubham Sawle"
         url: /akegroup/ShubhamSawle/
         

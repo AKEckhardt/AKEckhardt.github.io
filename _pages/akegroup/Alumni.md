@@ -36,7 +36,22 @@ Mai - June 2023<br/></font>
 </tr></table>
 
 
+<b>Visiting Students</b>
+<table> <style>table, th, td {border: transparent;}</style> <tr>
+<td style="width:33%;" align="center" valign="middle">
+<img src="https://AKEckhardt.github.io/images/DonalODonnell.jpg" width="50%" height="auto%" align="middle">
+<font size="4">
+<br/>Dónal O'Donnell<br/>
+June - August 2023<br/></font>
+</td>
 
+<td style="width:33%;" align="center" valign="middle">
+</td>
+
+<td style="width:33%;" align="center" valign="middle">
+</td>
+
+</tr></table>
 
 
 

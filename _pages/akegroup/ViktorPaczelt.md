@@ -22,7 +22,7 @@ Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:Viktor.Paczelt@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
 BSc (2014 - 2018, Masaryk University Brno, Czech Republic)<br/>
-MSc (2019 - present, Ruhr-University Bochum, Germany)<br/>
+MSc (2019 - 2023, Ruhr-University Bochum, Germany)<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
