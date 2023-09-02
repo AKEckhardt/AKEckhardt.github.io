@@ -33,6 +33,10 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt">Viktor Paczelt</a> successfully completed his Master studies and submitted his Master thesis. He will continue with his PhD studies at RUB in our group.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DonalODonnell"><img src="https://AKEckhardt.github.io/images/news3.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/DonalODonnell">Dónal O'Donnell</a> joined the group as an undergraduate researcher for an international internship. He will study solvation science questions in the next three months with us. The program is funded by <a href="https://www.solvation.de/">RESOLV</a>.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DonalODonnell"><img src="https://AKEckhardt.github.io/images/news14.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
