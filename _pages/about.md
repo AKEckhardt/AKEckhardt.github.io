@@ -17,7 +17,7 @@ We are looking for highly motivated Bachelor and Master students interested in (
 Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
-<br/> 
+<br/> <br/> 
 </p>
 
 
