@@ -14,6 +14,17 @@ sidebar:
 
 ___
 
+(48) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde .</b> V. D. Drabkin, V. Paczelt and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, XXX–XXX, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/pub48.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [Chemical Communications 2023 Emerging Investigators](https://pubs.rsc.org/en/journals/articlecollectionlanding?sercode=cc&themeid=902892aa-69dd-463d-957e-35fe3dff6a40)
+
+
+___
+
 (47) <b>Quantum Tunneling Mediated Low-Temperature Synthesis of Interstellar Hemiacetals</b> J. Wang, A. A. Nikolayev, J. H. Marks, M. Mcanally, V. N. Azyazov, <u>A. K. Eckhardt,</u><sup>*</sup> A. M. Mebel and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2023</b>, <i>14</i>, 6078–6085, [doi:10.1021/acs.jpclett.3c01144](https://doi.org/10.1021/acs.jpclett.3c01144). 
 
 <p align="center"> 
