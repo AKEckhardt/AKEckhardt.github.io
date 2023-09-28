@@ -24,8 +24,8 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2023</b></font><br/><font size="1"><br/></font><font size="4">Next step in the preparation and spectroscopic characterization of interstellar relevant imines. Vladimir and Viktor successfully generated and isolated iminoacetaldehyde in solid argon. Congratulations!</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/news15.png" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2023</b></font><br/><font size="1"><br/></font><font size="4">Next step in the preparation and spectroscopic characterization of interstellar relevant imines. Vladimir and Viktor successfully generated and isolated iminoacetaldehyde in solid argon. Congratulations! Our results are published in <a href="https://doi.org/10.1039/D3CC04192A"><i>Chem. Commun.</i></a> as invited communication and part of the 2023 Emerging Investigators collection.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/news15.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt">Viktor Paczelt</a> successfully completed his Master studies and submitted his Master thesis. He will continue with his PhD studies at RUB in our group.</font></td>
