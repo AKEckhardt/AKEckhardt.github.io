@@ -15,21 +15,21 @@ sidebar:
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/LucianaHerbeck.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
-<br/>Luciana Herbeck<br/>
+<br/><b>Luciana Herbeck</b><br/>
 March - April 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/AdamHasso.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
-<br/>Adam Hasso<br/>
+<br/><b>Adam Hasso</b><br/>
 April - Mai 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/AyaAlhaddad.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
-<br/>Aya S. A. Alhaddad<br/>
+<br/><b>Aya S. A. Alhaddad</b><br/>
 Mai - June 2023<br/></font>
 </td>
 
@@ -41,14 +41,14 @@ Mai - June 2023<br/></font>
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/DonalODonnell.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
-<br/>Dónal O'Donnell<br/>
+<br/><b>Dónal O'Donnell</b><br/>
 June - August 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/Shubham_2023.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
-<br/>Shubham Sawle<br/>
+<br/><b>Shubham Sawle</b><br/>
 April - September 2023<br/></font>
 </td>
 
