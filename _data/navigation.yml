@@ -52,10 +52,10 @@ docs:
       - title: "Alexander Swienty"
         url: /akegroup/AlexanderSwienty/
         
-  - title: Visiting Students
-    children:
-      - title: "Shubham Sawle"
-        url: /akegroup/ShubhamSawle/
+#  - title: Visiting Students
+#    children:
+#      - title: "Shubham Sawle"
+#        url: /akegroup/ShubhamSawle/
         
   - title: Alumni
     children:

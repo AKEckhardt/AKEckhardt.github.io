@@ -44,8 +44,8 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news12.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ShubhamSawle">Shubham Sawle</a> joined the group for an international internship funded by RESOLV. He will learn more about solvation science in the next six months.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ShubhamSawle"><img src="https://AKEckhardt.github.io/images/news11.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Shubham Sawle</a> joined the group for an international internship funded by RESOLV. He will learn more about solvation science in the next six months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news11.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Adam Hasso</a> joined the group for an in-depth practical. He will synthesize a new precursor for our imine chemistry.</font></td>

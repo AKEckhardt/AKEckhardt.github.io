@@ -46,6 +46,10 @@ June - August 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
+<img src="https://AKEckhardt.github.io/images/Shubham_2023.jpg" width="50%" height="auto%" align="middle">
+<font size="4">
+<br/>Shubham Sawle<br/>
+April - September 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
