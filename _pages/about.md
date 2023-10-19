@@ -19,8 +19,8 @@ Fully funded PhD position available! Please contact André directly via <a href=
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
 
-You are a current Master or PhD student in chemistry? Win a three-month reasearch stay in our group and take part at the  
-<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLVstudent challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
+You are a current Master or PhD student in chemistry? Win a paid three-month reasearch stay in our group and take part at the  
+<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
 <br/> <br/> </p>
 <p align="center"> 
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" alt="Link" width="35%" height="auto%"/></a>
