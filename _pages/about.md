@@ -18,11 +18,20 @@ Fully funded PhD position available! Please contact André directly via <a href=
 
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
+
+You are a current Master or PhD student in chemistry? Win a three-month reasearch stay in our group and take part at the  
+<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV</a> student challenge 2024! (Deadlines: 12/31/2023 and 06/01/2024)
+<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" alt="Link" width="65%" height="auto%"/></a>
+<br/> <br/> 
 </p>
 
 
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/JulianEßer">Julian Eßer</a> joined the group for an in-depth practical. He will learn more about organic synthesis, computational chemistry and matrix isolation spectroscopy.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/JulianEßer"><img src="https://AKEckhardt.github.io/images/news16.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2023</b></font><br/><font size="1"><br/></font><font size="4">Next step in the preparation and spectroscopic characterization of interstellar relevant imines. Vladimir and Viktor successfully generated and isolated iminoacetaldehyde in solid argon. Congratulations! Our results are published in <a href="https://doi.org/10.1039/D3CC04192A"><i>Chem. Commun.</i></a> as invited communication and part of the 2023 Emerging Investigators collection.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/news15.PNG" alt="Link" width="65%" height="auto%"/></a></td>
