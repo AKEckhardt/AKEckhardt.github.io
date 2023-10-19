@@ -21,8 +21,9 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 
 You are a current Master or PhD student in chemistry? Win a three-month reasearch stay in our group and take part at the  
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLVstudent challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
-<br/> <br/> 
-<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" class="center" alt="Link" width="35%" height="auto%"/></a>
+<br/> <br/> </p>
+<p align="center"> 
+<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" alt="Link" width="35%" height="auto%"/></a>
 <br/> 
 </p>
 
