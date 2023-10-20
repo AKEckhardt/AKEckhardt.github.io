@@ -54,10 +54,10 @@ docs:
       - title: "Julian Eßer"
         url: /akegroup/JulianEßer/      
         
-#  - title: Visiting Students
-#    children:
-#      - title: "Shubham Sawle"
-#        url: /akegroup/ShubhamSawle/
+  - title: Visiting Students
+    children:
+      - title: "Anahita Safiyan"
+        url: /akegroup/AnahitaSafiyan/
         
   - title: Alumni
     children:
