@@ -19,7 +19,7 @@ Fully funded PhD position available! Please contact André directly via <a href=
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
 
-You are a current Master or PhD student in chemistry? Win a paid three-month reasearch stay in our group and take part at the  
+You are a current Master or PhD student in chemistry? Win a paid three-month research stay in our group and take part at the  
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
 </p>
 <p align="center"> 
@@ -31,7 +31,7 @@ You are a current Master or PhD student in chemistry? Win a paid three-month rea
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> joined the group under RESOLV's program for Iranian researchers. She will learn more about solvation effects in reactive intermediates.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> joined the group under RESOLV's program for Iranian researchers. She will learn more about solvation effects in organic synthesis.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan"><img src="https://AKEckhardt.github.io/images/news17.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
