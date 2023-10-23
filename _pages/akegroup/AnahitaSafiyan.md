@@ -30,7 +30,7 @@ MSc (2016 - 2019, Institute for Advanced Studies in Basic Sciences (IASBS), Zanj
 </tr></table>
 
 <p style='text-align: justify;'>
-Anahita studied chemistry at the Institute for Advanced Studies in Basic Sciences (IASBS) in Iran and obtained her BSc in 2019 with 
+Anahita studied chemistry at the Institute for Advanced Studies in Basic Sciences (IASBS) in Iran and obtained her MSc in 2019 with 
 <a href="https://iasbs.ac.ir/~karimi/">Prof. Babak Karimi</a>. 
 During her BSc studies, Anahita was doing projects in the Application of Cubic Ordered Mesoporous Polymers 
 with Hydrogen Sulfate Unite as a Catalyst in Esterification Reactions. 
