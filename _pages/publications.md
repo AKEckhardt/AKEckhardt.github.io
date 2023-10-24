@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(48) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde .</b> V. D. Drabkin, V. Paczelt and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, XXX–XXX, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
+(48) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde.</b> V. D. Drabkin, V. Paczelt and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/pub48.png" alt="Link" width="40%" height="auto%"/></a>

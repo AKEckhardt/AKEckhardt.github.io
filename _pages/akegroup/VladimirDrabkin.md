@@ -44,6 +44,11 @@ Publications
 ------
 ___
 
+(04) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde.</b> <u>V. D. Drabkin</u>, V. Paczelt and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
+
+
+___
+
 (03) <b>Direct evidence for formation of acetimidic acid and acetamide under irradiation of isolated acetonitrile–water complexes at cryogenic temperatures.</b> <u>V. D. Drabkin</u>, A. D. Volosatova and V. I. Feldman <i>Mon. Not. R. Astron. Soc.</i>, <b>2023</b>, <i>518</i>, 1744-1749, [doi:doi.org/10.1093/mnras/stac3067](https://doi.org/10.1093/mnras/stac3067).
 
 
