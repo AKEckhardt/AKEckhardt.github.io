@@ -32,7 +32,7 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff">Kristin Wulff</a> joined the group for an in-depth practical. She will learn more about organic synthesis and matrix isolation spectroscopy.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff"><img src="https://AKEckhardt.github.io/images/news18.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff"><img src="https://AKEckhardt.github.io/images/news18.jpeg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> joined the group under RESOLV's program for Iranian researchers. She will learn more about solvation effects in organic synthesis.</font></td>
