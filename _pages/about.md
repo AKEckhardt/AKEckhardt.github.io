@@ -25,7 +25,7 @@ wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für 
   <li>große Mitverantwortung in Labororganisation</li>
   <li>Mehr Flexibilität bei der Projektauswahl</li>
   <li>In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!</li>
-</ul>  
+</ul>  <p style='text-align: justify;'>
 Wer als einer der ersten Vertiefungspraktikanten, Bachelor-, Master- oder Doktoranden frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
 Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen. Promotionsstellen sind ebenfalls vorhanden. <br/> <br/> 
 
