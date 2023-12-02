@@ -17,8 +17,7 @@ All prepared molecular structures are validated by comparison of experimental an
 
 <b>Für alle RUB-Studenten:</b><br/> 
 Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
-wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Das Arbeiten in einer jungen Arbeitsgruppe bietet einige Vorteile:
-<ul>
+wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Das Arbeiten in einer jungen Arbeitsgruppe bietet einige Vorteile: <ul>
   <li>direkte Zusammenarbeit mit dem Betreuer: besseres Erlernen neuer Laborfähigkeiten</li>
   <li>großes Interesse, dass die Projekte funktionieren und zügig abgeschlossen werden</li>
   <li>große Eigenverantwortung und Selbstständigkeit</li>
