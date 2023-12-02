@@ -15,12 +15,23 @@ Our research focuses on the preparation, characterization and reactivity of smal
 For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
 All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. <br/> <br/> 
 
-We are looking for highly motivated Bachelor and Master students interested in (in)organic synthesis, matrix isolation spectroscopy and/or computational chemistry to join our research group. Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
+<b>Für alle RUB-Studenten:</b>
+Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
+wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Das Arbeiten in einer jungen Arbeitsgruppe bietet einige Vorteile:<br/> 
+- direkte Zusammenarbeit mit dem Betreuer: optimale Voraussetzungen für das besseres Erlernen neuer Laborfähigkeiten<br/> 
+- großes Interesse, dass die Projekte funktionieren und zügig abgeschlossen werden<br/> 
+- große Eigenverantwortung und Selbstständigkeit<br/> 
+- große Mitverantwortung in Labororganisation<br/> 
+- Mehr Flexibilität bei der Projektauswahl<br/> 
+In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!<br/> 
+Wer als einer der ersten Vertiefungspraktikanten, Bachelor-, Master- oder Doktoranden frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
+Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen. Promotionsstellen sind ebenfalls vorhanden. <br/> <br/> 
 
-Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
+
+Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 
 You are a current Master or PhD student in chemistry? Win a paid three-month research stay in our group and take part at the  
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
