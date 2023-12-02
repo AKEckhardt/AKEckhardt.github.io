@@ -17,13 +17,15 @@ All prepared molecular structures are validated by comparison of experimental an
 
 <b>Für alle RUB-Studenten:</b><br/> 
 Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
-wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Das Arbeiten in einer jungen Arbeitsgruppe bietet einige Vorteile:<br/> 
-     - direkte Zusammenarbeit mit dem Betreuer: besseres Erlernen neuer Laborfähigkeiten<br/> 
-     - großes Interesse, dass die Projekte funktionieren und zügig abgeschlossen werden<br/> 
-     - große Eigenverantwortung und Selbstständigkeit<br/> 
-     - große Mitverantwortung in Labororganisation<br/> 
-     - Mehr Flexibilität bei der Projektauswahl<br/> <br/> 
-In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!<br/> <br/> 
+wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Das Arbeiten in einer jungen Arbeitsgruppe bietet einige Vorteile:<br/><font size="1"><br/>
+<pre>
+    - direkte Zusammenarbeit mit dem Betreuer: besseres Erlernen neuer Laborfähigkeiten<br/> 
+    - großes Interesse, dass die Projekte funktionieren und zügig abgeschlossen werden<br/> 
+    - große Eigenverantwortung und Selbstständigkeit<br/> 
+    - große Mitverantwortung in Labororganisation<br/> 
+    - Mehr Flexibilität bei der Projektauswahl<br/><font size="1"><br/> 
+</pre> 
+In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!<br/><font size="1"><br/>
 Wer als einer der ersten Vertiefungspraktikanten, Bachelor-, Master- oder Doktoranden frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
 Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen. Promotionsstellen sind ebenfalls vorhanden. <br/> <br/> 
 
