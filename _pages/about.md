@@ -46,6 +46,10 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2023</b></font><br/><font size="1"><br/></font><font size="4">We got accepted in the <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether">Emmy Noether programme</a>of the DFG. In the next six years we will explore more reactive intermediates in interstellar ice analogs. More information are available <a href="https://news.rub.de/wissenschaft/2023-12-13-forschungsfoerderung-neue-emmy-noether-gruppe-erforscht-interstellare-eisgemische">here</a>.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff">Kristin Wulff</a> joined the group for an in-depth practical. She will learn more about organic synthesis and matrix isolation spectroscopy.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff"><img src="https://AKEckhardt.github.io/images/news18.jpeg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
