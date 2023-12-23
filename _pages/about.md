@@ -74,8 +74,8 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news14.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AlexanderSwienty">Alexander Swienty</a> joined the group for for an external master thesis and will work with us in the synthesis lab for the next six months.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AlexanderSwienty"><img src="https://AKEckhardt.github.io/images/news13.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Alexander Swienty</a> joined the group for for an external master thesis and will work with us in the synthesis lab for the next six months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news13.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Aya S. A. Alhaddad</a> joined the group for for an in-depth practical. She will work in the synthesis lab and learn quantum chemical calculations.</font></td>

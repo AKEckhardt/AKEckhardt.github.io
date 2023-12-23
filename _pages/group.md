@@ -14,7 +14,7 @@ sidebar:
   <img width="50%" height="auto" src="https://AKEckhardt.github.io/images/group_2023.jpg">
 </p>  
 <p style='text-align: center;'>From left to right: 
-<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AlexanderSwienty/">Alexander</a>, 
+<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni/">Alexander</a>, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/VladimirDrabkin/">Vladimir</a>, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a>,  
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni/">Shubham</a>, 

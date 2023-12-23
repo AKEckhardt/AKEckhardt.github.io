@@ -23,14 +23,14 @@ March - April 2023<br/></font>
 <img src="https://AKEckhardt.github.io/images/AdamHasso.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
 <br/><b>Adam Hasso</b><br/>
-April - Mai 2023<br/></font>
+April - May 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
 <img src="https://AKEckhardt.github.io/images/AyaAlhaddad.jpg" width="50%" height="auto%" align="middle">
 <font size="4">
 <br/><b>Aya S. A. Alhaddad</b><br/>
-Mai - June 2023<br/></font>
+May - June 2023<br/></font>
 </td>
 
 </tr></table>
@@ -53,6 +53,10 @@ April - September 2023<br/></font>
 </td>
 
 <td style="width:33%;" align="center" valign="middle">
+<img src="https://AKEckhardt.github.io/images/Alex_2023.jpg" width="50%" height="auto%" align="middle">
+<font size="4">
+<br/><b>Alexander Swienty</b><br/>
+June - December 2023<br/></font>
 </td>
 
 </tr></table>
