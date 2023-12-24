@@ -21,8 +21,8 @@ wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für 
   <li>direkte Zusammenarbeit mit dem Betreuer: besseres Erlernen neuer Laborfähigkeiten</li>
   <li>großes Interesse, dass die Projekte funktionieren und zügig abgeschlossen werden</li>
   <li>große Eigenverantwortung und Selbstständigkeit</li>
-  <li>große Mitverantwortung in Labororganisation</li>
-  <li>Mehr Flexibilität bei der Projektauswahl</li>
+  <li>große Mitverantwortung in der Labororganisation</li>
+  <li>mehr Flexibilität bei der Projektauswahl</li>
   <li>In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!</li>
 </ul>  <p style='text-align: justify;'>
 Wer als einer der ersten Vertiefungspraktikanten, Bachelor-, Master- oder Doktoranden frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
