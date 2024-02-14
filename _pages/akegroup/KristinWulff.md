@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Kristin Wulff"
-excerpt: "AKE Group"
 permalink: /akegroup/KristinWulff/
 author_profile: false
 sidebar:

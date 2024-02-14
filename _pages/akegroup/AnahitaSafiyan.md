@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Anahita Safiyan"
-excerpt: "AKE Group"
 permalink: /akegroup/AnahitaSafiyan/
 author_profile: false
 sidebar:

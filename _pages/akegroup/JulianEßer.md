@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Julian Eßer"
-excerpt: "AKE Group"
 permalink: /akegroup/JulianEßer/
 author_profile: false
 sidebar:

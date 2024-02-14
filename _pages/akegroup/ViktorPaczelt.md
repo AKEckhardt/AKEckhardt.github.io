@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Viktor Paczelt"
-excerpt: "AKE Group"
 permalink: /akegroup/ViktorPaczelt/
 author_profile: false
 sidebar:

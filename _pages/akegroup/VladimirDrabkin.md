@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Vladimir D. Drabkin"
-excerpt: "AKE Group"
 permalink: /akegroup/VladimirDrabkin/
 author_profile: false
 sidebar:
