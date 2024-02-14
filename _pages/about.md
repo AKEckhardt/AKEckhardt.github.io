@@ -2,7 +2,6 @@
 permalink: /
 layout: archive
 title: "Welcome to the Eckhardt Lab!"
-excerpt: "Eckhardt Lab"
 author_profile: true
 
 ---

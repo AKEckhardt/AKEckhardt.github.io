@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: ""
-excerpt: "cv"
 permalink: /cv/
 author_profile: true
 

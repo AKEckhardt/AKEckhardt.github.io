@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "AKE Group"
-excerpt: "AKE Group"
 permalink: /group/
 author_profile: false
 sidebar:

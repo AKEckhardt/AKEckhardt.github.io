@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Imprint / Impressum"
-excerpt: "Imprint / Impressum"
 permalink: /imprint/
 author_profile: true
 redirect_from:
