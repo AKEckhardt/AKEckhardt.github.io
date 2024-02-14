@@ -13,7 +13,7 @@ sidebar:
 
 ___
 
-(49) <b>Bottom-Up Formation of Antiaromatic Cyclobutadiene (<i>c</i>-C<sub>4</sub>H<sub>3</sub>) in Interstellar Ice Analogs.</b> J. Wang, J. H. Marks, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2024</b>, <i>15</i>, 1211–1217, [doi:10.1021/acs.jpclett.3c03524](https://doi.org/10.1021/acs.jpclett.3c03524). 
+(49) <b>Bottom-Up Formation of Antiaromatic Cyclobutadiene (<i>c</i>-C<sub>4</sub>H<sub>4</sub>) in Interstellar Ice Analogs.</b> J. Wang, J. H. Marks, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2024</b>, <i>15</i>, 1211–1217, [doi:10.1021/acs.jpclett.3c03524](https://doi.org/10.1021/acs.jpclett.3c03524). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.3c03524"><img src="https://AKEckhardt.github.io/images/pub49.jpeg" alt="Link" width="40%" height="auto%"/></a>
