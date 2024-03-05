@@ -31,7 +31,7 @@ Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@ru
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
 
-Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
+Fully funded PhD position available! Please check the requirements <a href="https://jobs.ruhr-uni-bochum.de/jobposting/85036b42144c3cce63458a555a330e22198f11db0?ref=homepage">here</a>! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 
 You are a current Master or PhD student in chemistry? Win a paid three-month research stay in our group and take part at the  
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
