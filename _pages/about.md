@@ -16,7 +16,6 @@ author_profile: true
 </td>
 </tr>
 </table>
-<br/> 
 </p>
 
 
