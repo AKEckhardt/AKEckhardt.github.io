@@ -8,7 +8,7 @@ author_profile: true
 <p align="center"> 
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/EckhardtLab.png" alt="Link" width="50%" height="auto%"/></td>
+<td style="width:70%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/EckhardtLab.png" alt="Link" width="48%" height="auto%"/></td>
 <td style="width:30%;" align="center" valign="middle">
 <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a><br><br>
