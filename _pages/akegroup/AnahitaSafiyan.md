@@ -34,7 +34,7 @@ Anahita studied chemistry at the Institute for Advanced Studies in Basic Science
 During her BSc studies, Anahita was doing projects in the Application of Cubic Ordered Mesoporous Polymers 
 with Hydrogen Sulfate Unite as a Catalyst in Esterification Reactions. 
 In October 2023  Anahita moved to Germany and started her work as an intern 
-student for the next six months in the Eckhardt-lab. In April 2024 she joined as a PhD student funded by a DAAD scholarship. 
+student for the next six months in the Eckhardt-lab. In April 2024 she joined the group as a PhD student funded by a DAAD scholarship. 
 </p>
 
 
