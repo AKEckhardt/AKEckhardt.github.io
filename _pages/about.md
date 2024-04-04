@@ -56,6 +56,18 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> won a <a href="https://www.daad.de/de/">DAAD scholarship</a> and joined the group as a third PhD student.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2024</b></font><br/><font size="1"><br/></font><font size="4">André presented the group's results at the <a href="https://veranstaltungen.gdch.de/microsite/index.cfm?l=11551&sp_id=1">Chemiedozententagung 2024</a> in Aachen. Our new IR spectrometer arrived and is up and running.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://veranstaltungen.gdch.de/microsite/index.cfm?l=11551&sp_id=1"><img src="https://AKEckhardt.github.io/images/news21.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2024</b></font><br/><font size="1"><br/></font><font size="4">André visited the <a href="https://uhmreactiondynamics.org/">Kaiser group</a> in Honolulu and presented the group's results at the Third Laboratory Astrophysics Workshop in Kapaa, Kauai, Hawaii.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news20.PNG" alt="Link" width="65%" height="auto%"/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2023</b></font><br/><font size="1"><br/></font><font size="4">We got accepted in the <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether">Emmy Noether programme</a> of the DFG. In the next six years we will explore more reactive intermediates in interstellar ice analogs. Further information is available <a href="https://news.rub.de/wissenschaft/2023-12-13-forschungsfoerderung-neue-emmy-noether-gruppe-erforscht-interstellare-eisgemische">here</a>.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
