@@ -46,6 +46,8 @@ docs:
         url: /akegroup/VladimirDrabkin/
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
+      - title: "Anahita Safiyan"
+        url: /akegroup/AnahitaSafiyan/
 
   - title: Students
     children:
@@ -54,10 +56,10 @@ docs:
       - title: "Kristin Wulff"
         url: /akegroup/KristinWulff/   
         
-  - title: Visiting Students
-    children:
-      - title: "Anahita Safiyan"
-        url: /akegroup/AnahitaSafiyan/
+#  - title: Visiting Students
+#    children:
+#      - title: "Anahita Safiyan"
+#        url: /akegroup/AnahitaSafiyan/
         
   - title: Alumni
     children:

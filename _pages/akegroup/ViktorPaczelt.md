@@ -16,7 +16,7 @@ sidebar:
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
 <b>Viktor Paczelt</b><br/>
-MSc student<br/>
+PhD student<br/>
 Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:Viktor.Paczelt@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
