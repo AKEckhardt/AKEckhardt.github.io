@@ -24,7 +24,7 @@ All prepared molecular structures are validated by comparison of experimental an
 <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a><br><br>
-<a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/DAAD.PNG" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.humboldt-foundation.de/"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 </td>
 </tr>
