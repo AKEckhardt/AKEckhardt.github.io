@@ -9,7 +9,7 @@ author_profile: true
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
 <td style="width:70%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/EckhardtLab.png" alt="Link" width="50%" height="auto%"/>
-
+<br/> 
 <p style='text-align: justify;'><font size="4">
 Our research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
 For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
@@ -32,8 +32,6 @@ All prepared molecular structures are validated by comparison of experimental an
 </p>
 
 
-
-<br/> <br/> 
 <p style='text-align: justify;'>
 <b>Für alle RUB-Studenten:</b><br/> 
 Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
