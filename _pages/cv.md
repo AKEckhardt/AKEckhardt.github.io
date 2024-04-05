@@ -57,7 +57,7 @@ Awards and Honors
 * GDCh Prize for the best Chemistry A-levels (2011)
 <br/><br/>
 
-Conference attendances and oral presentations
+Conference attendances and oral contributions
 ======
 <b>20. Resolv Klausurtagung 2024</b>
    - March 13–15, 2024, Marienfeld, Germany
