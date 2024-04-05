@@ -60,7 +60,7 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2024</b></font><br/><font size="1"><br/></font><font size="4">André presented the group's results at the <a href="https://veranstaltungen.gdch.de/microsite/index.cfm?l=11551&sp_id=1">Chemiedozententagung 2024</a> in Aachen. Our new IR spectrometer arrived and is up and running.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2024</b></font><br/><font size="1"><br/></font><font size="4">André presented the group's results at the <a href="https://veranstaltungen.gdch.de/microsite/index.cfm?l=11551&sp_id=1">Chemiedozententagung 2024</a> in Aachen. Viktor, Vladimir and André attended the RESOLV Klausurtagung 2024. Finally, our new IR spectrometer arrived!</font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news21.jpg" alt="Link" width="65%" height="auto%"/></td>
 </tr>
 <tr>
