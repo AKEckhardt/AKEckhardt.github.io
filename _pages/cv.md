@@ -59,17 +59,11 @@ Awards and Honors
 
 Conference attendances and oral contributions
 ======
-<b>20. Resolv Klausurtagung 2024</b>
-   - March 13–15, 2024, Marienfeld, Germany
-   - Conference attendance<br/>
+<b>20. Resolv Klausurtagung 2024</b>, March 13–15, 2024, Marienfeld, Germany, conference attendance.
 
-<b>19. Chemiedozententagung 2024</b>
-   - March 11–13, 2024, Aachen, Germany
-   - Oral contribution<br/>
+<b>19. Chemiedozententagung 2024</b>, March 11–13, 2024, Aachen, Germany, oral contribution.
 
-<b>18. ICE 2024: Third Laboratory Astrophysics Workshop</b>
-   - February 18–22, 2024, Kapaa, Kauai, Hawaii, USA
-   - Oral contribution<br/>
+<b>18. ICE 2024: Third Laboratory Astrophysics Workshop</b>, February 18–22, 2024, Kapaa, Kauai, Hawaii, USA, Oral contribution.<br/>
 
 <b>17. Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar</b>
    - September 17–23, 2013, Bad Honnef (Physikzentrum), Germany
