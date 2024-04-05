@@ -59,83 +59,83 @@ Awards and Honors
 
 Conference attendances and oral presentations
 ======
-20. Resolv Klausurtagung 2024
+<b>20. Resolv Klausurtagung 2024</b>
    - March 13–15, 2024, Marienfeld, Germany
    - Conference attendance
 
-19. Chemiedozententagung 2024
+<b>19. Chemiedozententagung 2024</b>
    - March 11–13, 2024, Aachen, Germany
    - Oral contribution
 
-18. ICE 2024: Third Laboratory Astrophysics Workshop
+<b>18. ICE 2024: Third Laboratory Astrophysics Workshop</b>
    - February 18–22, 2024, Kapaa, Kauai, Hawaii, USA
    - Oral contribution
 
-17. Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar
+<b>17. Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar</b>
    - September 17–23, 2013, Bad Honnef (Physikzentrum), Germany
    - Oral contribution
 
-16. Physical Organic Chemistry Gordon Research Conference
+<b>16. Physical Organic Chemistry Gordon Research Conference</b>
    - June 25–30, 2033, Holderness, NH, USA
    - Conference attendance
 
-15. 25th Steinheimer Gespräche
+<b>15. 25th Steinheimer Gespräche</b>
    - June 15–17, 2023, Mainz, Germany
    - Conference attendance
 
-14. Resolv Klausurtagung 2023
+<b>14. Resolv Klausurtagung 2023</b>
    - March 08–10, 2023, Marienfeld, Germany
    - Conference attendance
 
-13. Sitzung der DECHEMA-Fachgruppe Kinetik und Reaktionsmechanismen (FGr KIN)
+<b>13. Sitzung der DECHEMA-Fachgruppe Kinetik und Reaktionsmechanismen (FGr KIN)</b>
    - January 09, 2023, Frankfurt, Germany
    - Oral contribution
 
-12. RESOLV 10th anniversary – Fully RESOLVed?
+<b>12. RESOLV 10th anniversary – Fully RESOLVed?</b>
    - November 3–4, 2022, Essen, Germany
    - Conference attendance
 
-11. Phosphorus-Chemistry Seminar Series
+<b>11. Phosphorus-Chemistry Seminar Series</b>
    - February 24, 2022, Online
    - Oral contribution
 
-10. SWRM Main Group Chemistry in the Southwest Symposium
+<b>10. SWRM Main Group Chemistry in the Southwest Symposium</b>
     - November 2, 2021, Online
     - Oral contribution
 
-9. MIT Chemistry Student Seminar Series
+<b>9. MIT Chemistry Student Seminar Series</b>
    - December 4, 2020, Online
    - Oral contribution
 
-8. NISMS Virtual Conference
+<b>8. NISMS Virtual Conference</b>
    - June 23, 2020, Online
    - Oral contribution
 
-7. Reaxys PhD Prize Symposium 2019
+<b>7. Reaxys PhD Prize Symposium 2019</b>
    - October 3–4, 2019, Amsterdam, Netherlands
    - Poster presentation
 
-6. Physical Organic Chemistry Gordon Research Conference
+<b>6. Physical Organic Chemistry Gordon Research Conference</b>
    - June 22–28, 2019, Holderness, NH, USA
    - Poster presentation
 
-5. Physical Organic Chemistry: Recent developments in instrumentation, structure, theory, and mechanisms, 691. WE-Heraeus-Seminar
+<b>5. Physical Organic Chemistry: Recent developments in instrumentation, structure, theory, and mechanisms, 691. WE-Heraeus-Seminar</b>
    - February 18–21, 2019, Bad Honnef (Physikzentrum), Germany
    - Poster presentation (Poster Award)
 
-4. University of Hawaiʻi at Mānoa
+<b>4. University of Hawaiʻi at Mānoa</b>
    - October 8, 2018, Honolulu, USA
    - Oral contribution
 
-3. 24th IUPAC International Conference on Physical Organic Chemistry (ICPOC 24)
+<b>3. 24th IUPAC International Conference on Physical Organic Chemistry (ICPOC 24)</b>
    - July 01–06, 2018, Faro, Portugal
    - Poster presentation
 
-2. 11th Triennial Congress of the World Association of Theoretical and Computational Chemists (WATOC)
+<b>2. 11th Triennial Congress of the World Association of Theoretical and Computational Chemists (WATOC)</b>
    - August 27–September 01, 2017, Munich, Germany
    - Poster presentation
 
-1. Physical Organic Chemistry Gordon Research Conference
+<b>1. Physical Organic Chemistry Gordon Research Conference</b>
    - June 24–30, 2017, Holderness, NH, USA
    - Poster presentation (GDCh Travel Grant)
 
