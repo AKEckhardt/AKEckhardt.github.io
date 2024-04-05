@@ -63,75 +63,41 @@ Conference attendances and oral contributions
 
 19. <b>Chemiedozententagung 2024</b>, March 11–13, 2024, Aachen, Germany, oral contribution.
 
-<b>18. ICE 2024: Third Laboratory Astrophysics Workshop</b>, February 18–22, 2024, Kapaa, Kauai, Hawaii, USA, Oral contribution.
+18. <b>ICE 2024: Third Laboratory Astrophysics Workshop</b>, February 18–22, 2024, Kapaa, Kauai, Hawaii, USA, oral contribution.
 
-<b>17. Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar</b>
-   - September 17–23, 2013, Bad Honnef (Physikzentrum), Germany
-   - Oral contribution<br/>
+17. <b>Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar</b>, September 17–23, 2013, Bad Honnef (Physikzentrum), Germany, oral contribution.
 
-<b>16. Physical Organic Chemistry Gordon Research Conference</b>
-   - June 25–30, 2033, Holderness, NH, USA
-   - Conference attendance<br/>
+16. <b>Physical Organic Chemistry Gordon Research Conference</b>, June 25–30, 2033, Holderness, NH, USA, Conference attendance.
 
-<b>15. 25th Steinheimer Gespräche</b>
-   - June 15–17, 2023, Mainz, Germany
-   - Conference attendance<br/>
+15. <b>25th Steinheimer Gespräche</b>, June 15–17, 2023, Mainz, Germany, Conference attendance.
 
-<b>14. Resolv Klausurtagung 2023</b>
-   - March 08–10, 2023, Marienfeld, Germany
-   - Conference attendance<br/>
+14. <b>Resolv Klausurtagung 2023</b>, March 08–10, 2023, Marienfeld, Germany, Conference attendance.
 
-<b>13. Sitzung der DECHEMA-Fachgruppe Kinetik und Reaktionsmechanismen (FGr KIN)</b>
-   - January 09, 2023, Frankfurt, Germany
-   - Oral contribution<br/>
+13. <b>Sitzung der DECHEMA-Fachgruppe Kinetik und Reaktionsmechanismen (FGr KIN)</b>, January 09, 2023, Frankfurt, Germany, oral contribution.
 
-<b>12. RESOLV 10th anniversary – Fully RESOLVed?</b>
-   - November 3–4, 2022, Essen, Germany
-   - Conference attendance<br/>
+12. <b>RESOLV 10th anniversary – Fully RESOLVed?</b>, November 3–4, 2022, Essen, Germany, Conference attendance.>
 
-<b>11. Phosphorus-Chemistry Seminar Series</b>
-   - February 24, 2022, Online
-   - Oral contribution<br/>
+11. <b>Phosphorus-Chemistry Seminar Series</b>, February 24, 2022, online, oral contribution.
 
-<b>10. SWRM Main Group Chemistry in the Southwest Symposium</b>
-    - November 2, 2021, Online
-    - Oral contribution<br/>
+10. <b>SWRM Main Group Chemistry in the Southwest Symposium</b>, November 2, 2021, online, oral contribution.
 
-<b>9. MIT Chemistry Student Seminar Series</b>
-   - December 4, 2020, Online
-   - Oral contribution<br/>
+9. <b>MIT Chemistry Student Seminar Series</b>, December 4, 2020, online, oral contribution.
 
-<b>8. NISMS Virtual Conference</b>
-   - June 23, 2020, Online
-   - Oral contribution<br/>
+8. <b>NISMS Virtual Conference</b>, June 23, 2020, online, oral contribution.
 
-<b>7. Reaxys PhD Prize Symposium 2019</b>
-   - October 3–4, 2019, Amsterdam, Netherlands
-   - Poster presentation<br/>
+7. <b>Reaxys PhD Prize Symposium 2019</b>, October 3–4, 2019, Amsterdam, Netherlands, poster presentation.
 
-<b>6. Physical Organic Chemistry Gordon Research Conference</b>
-   - June 22–28, 2019, Holderness, NH, USA
-   - Poster presentation<br/>
+6. <b>Physical Organic Chemistry Gordon Research Conference</b>, June 22–28, 2019, Holderness, NH, USA, poster presentation.
 
-<b>5. Physical Organic Chemistry: Recent developments in instrumentation, structure, theory, and mechanisms, 691. WE-Heraeus-Seminar</b>
-   - February 18–21, 2019, Bad Honnef (Physikzentrum), Germany
-   - Poster presentation (Poster Award)<br/>
+5. <b>Physical Organic Chemistry: Recent developments in instrumentation, structure, theory, and mechanisms, 691. WE-Heraeus-Seminar</b>, February 18–21, 2019, Bad Honnef (Physikzentrum), Germany, poster presentation (poster award).
 
-<b>4. University of Hawaiʻi at Mānoa</b>
-   - October 8, 2018, Honolulu, USA
-   - Oral contribution<br/>
+4. <b>University of Hawaiʻi at Mānoa</b>, October 8, 2018, Honolulu, USA, oral contribution.
 
-<b>3. 24th IUPAC International Conference on Physical Organic Chemistry (ICPOC 24)</b>
-   - July 01–06, 2018, Faro, Portugal
-   - Poster presentation<br/>
+3. <b>24th IUPAC International Conference on Physical Organic Chemistry (ICPOC 24)</b>, July 01–06, 2018, Faro, Portugal, poster presentation.
 
-<b>2. 11th Triennial Congress of the World Association of Theoretical and Computational Chemists (WATOC)</b>
-   - August 27–September 01, 2017, Munich, Germany
-   - Poster presentation<br/>
+2. <b>11th Triennial Congress of the World Association of Theoretical and Computational Chemists (WATOC)</b>, August 27–September 01, 2017, Munich, Germany, poster presentation.
 
-<b>1. Physical Organic Chemistry Gordon Research Conference</b>
-   - June 24–30, 2017, Holderness, NH, USA
-   - Poster presentation (GDCh Travel Grant)
+1. <b>Physical Organic Chemistry Gordon Research Conference</b>, June 24–30, 2017, Holderness, NH, USA, poster presentation (GDCh travel grant).
 
 <br/>
 <br/>
