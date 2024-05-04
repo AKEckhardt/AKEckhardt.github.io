@@ -59,6 +59,8 @@ Awards and Honors
 
 Conference attendances and oral contributions
 ======
+21. <b>Physical chemistry seminar</b>, April 15, 2024, Clausius Institute for Physical and Theoretical Chemistry Bonn, Germany.
+
 20. <b>Resolv Klausurtagung 2024</b>, March 13–15, 2024, Marienfeld, Germany, conference attendance.
 
 19. <b>Chemiedozententagung 2024</b>, March 11–13, 2024, Aachen, Germany, oral contribution.

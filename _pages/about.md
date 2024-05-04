@@ -63,7 +63,11 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> won a <a href="https://www.daad.de/de/">DAAD scholarship</a> and joined the group as a third PhD student.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ShahidIqbal">Shahid Iqbal</a> started his in-depth practical in our group.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ShahidIqbal"><img src="https://AKEckhardt.github.io/images/ShahidIqbal_2024.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> won a <a href="https://www.daad.de/de/">DAAD scholarship</a> and joined the group as a third PhD student. André presented the group's research at the <a href="https://www.chemie.uni-bonn.de/ciptc/en">Clausius Institute for Physical and Theoretical Chemistry</a> in Bonn.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
