@@ -20,7 +20,7 @@ MSc student<br/>
 Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:Shahid.Iqbal@edu.ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-BSc (2019 - 2023, University of Swabi, Pakistan)<br/>
+BSc (2018 - 2023, University of Swabi, Pakistan)<br/>
 MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
 
