@@ -40,6 +40,15 @@ docs:
       - title: "André K. Eckhardt"
         url: /akegroup/ake/
 
+  - title: Postdocs
+    children:
+      - title: "Mika Maehara"
+        url: /akegroup/MikaMaehara/
+#      - title: "Adrián Portela González"
+#        url: /akegroup/AdrianGonzalez/
+#      - title: "Christian Thiehoff"
+#        url: /akegroup/ChristianThiehoff/
+
   - title: PhD Students
     children:
       - title: "Vladimir D. Drabkin"
@@ -48,6 +57,8 @@ docs:
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
         url: /akegroup/AnahitaSafiyan/
+#      - title: "Deepak Kumar Singh"
+#        url: /akegroup/DeepakSingh/
 
   - title: Students
     children:
@@ -57,11 +68,15 @@ docs:
         url: /akegroup/KristinWulff/   
       - title: "Shahid Iqbal"
         url: /akegroup/ShahidIqbal/
+      - title: "Media Mohamad"
+        url: /akegroup/MediaMohamad/
+      - title: "Daniel Kühn"
+        url: /akegroup/DanielKuehn/  
         
 #  - title: Visiting Students
 #    children:
-#      - title: "Anahita Safiyan"
-#        url: /akegroup/AnahitaSafiyan/
+#      - title: "Hasan Yavuz Goren"
+#        url: /akegroup/HasanGoren/
         
   - title: Alumni
     children:
