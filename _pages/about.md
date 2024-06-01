@@ -64,7 +64,7 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ShahidIqbal">Shahid Iqbal</a>, <a href="https://AKEckhardt.github.io/akegroup/DanielKuehn">Daniel Kühn</a>, and <a href="https://AKEckhardt.github.io/akegroup/MediaMohamad">Media Mohamad</a> started an in-depth practical in our group. <a href="https://AKEckhardt.github.io/akegroup/MikaMaehara">Mika Maehara</a> joined the group as a first postdoc.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news23.jpg" alt="Link" width="65%" height="auto%"/></a></td><br/>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news23.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> won a <a href="https://www.daad.de/de/">DAAD scholarship</a> and joined the group as a third PhD student. André presented the group's research at the <a href="https://www.chemie.uni-bonn.de/ciptc/en">Clausius Institute for Physical and Theoretical Chemistry</a> in Bonn.</font></td>
