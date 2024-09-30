@@ -63,7 +63,22 @@ You are a current Master or PhD student in chemistry? Win a paid three-month res
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ShahidIqbal">Shahid Iqbal</a>, <a href="https://AKEckhardt.github.io/akegroup/DanielKuehn">Daniel Kühn</a>, and <a href="https://AKEckhardt.github.io/akegroup/MediaMohamad">Media Mohamad</a> started an in-depth practical in our group. <a href="https://AKEckhardt.github.io/akegroup/MikaMaehara">Mika Maehara</a> joined the group as a first postdoc.</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2024</b></font><br/><font size="1"><br/></font><font size="4">
+Ivan Shchus and Olga Vorobyova won a research stay in our group in the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge "Your Step into Solvation Science"</a>. They will stay with us for the next three months and investigate cryosolvation effects.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news26.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2024</b></font><br/><font size="1"><br/></font><font size="4">
+<a href="https://AKEckhardt.github.io/akegroup/AdrianPortelaGonzalez">Adrián Portela González</a> joined the group as a second postdoc. He will mainly work on our matrix isolation EPR experimental setup. André attended the BioOrganik24 symposium in Dortmund.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news25.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June and July 2024</b></font><br/><font size="1"><br/></font><font size="4">
+André attended the <a href="https://www.vci.de/fonds/der-fonds/netzwerke/netzwerke/freq/liebig-meetings/liebig-meetings.jsp">26. Steinheimer Gespräche</a> and was invited to presented the group's research at the <a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html">CPLT2024</a> in Niseko (Japan). CPLT2026 will take place in Bochum and be co-organized by uns and the <a href="https://www.mertenlab.de/">Merten Lab</a>. <a href="https://AKEckhardt.github.io/akegroup/Alumni">Hasan Gören</a> joined the group for three months as an Erasmus fellow.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news24.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Shahid Iqbal</a>, <a href="https://AKEckhardt.github.io/akegroup/DanielKuehn">Daniel Kühn</a>, and <a href="https://AKEckhardt.github.io/akegroup/Alumni">Media Mohamad</a> started an in-depth practical in our group. <a href="https://AKEckhardt.github.io/akegroup/MikaMaehara">Mika Maehara</a> joined the group as a first postdoc.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news23.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
