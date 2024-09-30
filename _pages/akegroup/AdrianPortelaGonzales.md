@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Adrián Portela González"
-permalink: /akegroup/AdrianPortelaGonzales/
+permalink: /akegroup/AdrianPortelaGonzalez/
 author_profile: false
 sidebar:
   nav: "docs"

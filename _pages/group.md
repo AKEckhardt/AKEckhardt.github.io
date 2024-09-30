@@ -22,7 +22,7 @@ Michel (AG Dyker),
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnahitaSafiyan/">Anahita</a>, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a>,  
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/VladimirDrabkin/">Vladimir</a>, 
-and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AdrianPortelaGonzales/">Adriàn</a>. 
+and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AdrianPortelaGonzalez/">Adriàn</a>. 
 </p>
 
 
