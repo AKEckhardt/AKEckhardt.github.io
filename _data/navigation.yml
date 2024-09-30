@@ -42,12 +42,12 @@ docs:
 
   - title: Postdocs
     children:
+      - title: "Adrián Portela González"
+        url: /akegroup/AdrianPortelaGonzalez/
       - title: "Mika Maehara"
         url: /akegroup/MikaMaehara/
-#      - title: "Adrián Portela González"
-#        url: /akegroup/AdrianGonzalez/
-#      - title: "Christian Thiehoff"
-#        url: /akegroup/ChristianThiehoff/
+      - title: "Christian Thiehoff"
+        url: /akegroup/ChristianThiehoff/
 
   - title: PhD Students
     children:
@@ -64,15 +64,10 @@ docs:
     children:
       - title: "Julian Eßer"
         url: /akegroup/JulianEßer/      
-      - title: "Kristin Wulff"
-        url: /akegroup/KristinWulff/   
-      - title: "Shahid Iqbal"
-        url: /akegroup/ShahidIqbal/
-      - title: "Media Mohamad"
-        url: /akegroup/MediaMohamad/
       - title: "Daniel Kühn"
         url: /akegroup/DanielKuehn/  
-        
+      - title: "Kristin Wulff"
+        url: /akegroup/KristinWulff/           
 #  - title: Visiting Students
 #    children:
 #      - title: "Hasan Yavuz Goren"
