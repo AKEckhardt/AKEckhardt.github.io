@@ -74,7 +74,7 @@ Ivan Shchus and Olga Vorobyova won a research stay in our group in the <a href="
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June and July 2024</b></font><br/><font size="1"><br/></font><font size="4">
-André attended the <a href="https://www.vci.de/fonds/der-fonds/netzwerke/netzwerke/freq/liebig-meetings/liebig-meetings.jsp">26. Steinheimer Gespräche</a> and was invited to presented the group's research at the <a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html">CPLT2024</a> in Niseko (Japan). CPLT2026 will take place in Bochum and be co-organized by uns and the <a href="https://www.mertenlab.de/">Merten Lab</a>. <a href="https://AKEckhardt.github.io/akegroup/Alumni">Hasan Gören</a> joined the group for three months as an Erasmus fellow.</font></td>
+André attended the <a href="https://www.vci.de/fonds/der-fonds/netzwerke/netzwerke/freq/liebig-meetings/liebig-meetings.jsp">26. Steinheimer Gespräche</a> and was invited to presented the group's research at the <a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html">CPLT2024</a> in Niseko (Japan). CPLT2026 will take place in Bochum and be co-organized by us and the <a href="https://www.mertenlab.de/">Merten Lab</a>. <a href="https://AKEckhardt.github.io/akegroup/Alumni">Hasan Gören</a> joined the group for three months as an Erasmus fellow.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html"><img src="https://AKEckhardt.github.io/images/news24.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
