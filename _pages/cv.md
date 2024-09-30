@@ -59,7 +59,15 @@ Awards and Honors
 
 Conference attendances and oral contributions
 ======
-21. <b>Physical chemistry seminar</b>, April 15, 2024, Clausius Institute for Physical and Theoretical Chemistry Bonn, Germany.
+25. <b>Seminar talk</b>, October 2, 2024, ELTE - Eötvös University, Budapest, Hungary.
+
+24. <b>BioOrganik24</b>, August 21–23, 2024, Dortmund, Germany, oral contribution.
+
+23. <b>CPLT2024</b>, July 06–11, 2024, Niseko Village, Hokkaido, Japan, oral contribution.
+
+22. <b>26th Steinheimer Gespräche</b>, June 06–07, 2024, Mainz, Germany, conference attendance.
+
+21. <b>Physical chemistry seminar</b>, April 15, 2024, Clausius Institute for Physical and Theoretical Chemistry, Bonn, Germany.
 
 20. <b>Resolv Klausurtagung 2024</b>, March 13–15, 2024, Marienfeld, Germany, conference attendance.
 
@@ -69,15 +77,15 @@ Conference attendances and oral contributions
 
 17. <b>Solvation Chemistry and Reactive Molecules, 755. WE-Heraeus-Seminar</b>, September 17–23, 2013, Bad Honnef (Physikzentrum), Germany, oral contribution.
 
-16. <b>Physical Organic Chemistry Gordon Research Conference</b>, June 25–30, 2033, Holderness, NH, USA, Conference attendance.
+16. <b>Physical Organic Chemistry Gordon Research Conference</b>, June 25–30, 2033, Holderness, NH, USA, conference attendance.
 
-15. <b>25th Steinheimer Gespräche</b>, June 15–17, 2023, Mainz, Germany, Conference attendance.
+15. <b>25th Steinheimer Gespräche</b>, June 15–17, 2023, Mainz, Germany, conference attendance.
 
-14. <b>Resolv Klausurtagung 2023</b>, March 08–10, 2023, Marienfeld, Germany, Conference attendance.
+14. <b>Resolv Klausurtagung 2023</b>, March 08–10, 2023, Marienfeld, Germany, conference attendance.
 
 13. <b>Sitzung der DECHEMA-Fachgruppe Kinetik und Reaktionsmechanismen (FGr KIN)</b>, January 09, 2023, Frankfurt, Germany, oral contribution.
 
-12. <b>RESOLV 10th anniversary – Fully RESOLVed?</b>, November 3–4, 2022, Essen, Germany, Conference attendance.>
+12. <b>RESOLV 10th anniversary – Fully RESOLVed?</b>, November 3–4, 2022, Essen, Germany, conference attendance.>
 
 11. <b>Phosphorus-Chemistry Seminar Series</b>, February 24, 2022, online, oral contribution.
 

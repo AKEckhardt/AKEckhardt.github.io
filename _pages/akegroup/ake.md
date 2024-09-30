@@ -62,6 +62,14 @@ Awards and Honors
 
 Conference attendances and oral contributions
 ======
+25. <b>Seminar talk</b>, October 2, 2024, ELTE - Eötvös University, Budapest, Hungary.
+
+24. <b>BioOrganik24</b>, August 21–23, 2024, Dortmund, Germany, oral contribution.
+
+23. <b>CPLT2024</b>, July 06–11, 2024, Niseko Village, Hokkaido, Japan, oral contribution.
+
+22. <b>26th Steinheimer Gespräche</b>, June 06–07, 2024, Mainz, Germany, conference attendance.
+
 21. <b>Physical chemistry seminar</b>, April 15, 2024, Clausius Institute for Physical and Theoretical Chemistry Bonn, Germany.
 
 20. <b>Resolv Klausurtagung 2024</b>, March 13–15, 2024, Marienfeld, Germany, conference attendance.
