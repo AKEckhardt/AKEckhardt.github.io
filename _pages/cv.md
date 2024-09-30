@@ -14,7 +14,8 @@ Research Experience
 ======
 <b>Ruhr-University Bochum</b> (RUB), Lehrstuhl für Organische Chemie II, Bochum, Germany (2022 - present)
 
-* Independent Early Career Research Group Leader ([Liebig Fellow](https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp))
+* Emmy Noether Research Group Leader ([since 05/2024](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether))
+* Liebig Research Group Leader 07/22 - 04/2024 ([Liebig Fellow](https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp))
 * Feodor Lynen Return Fellow 02/22 - 06/2022, Advisor: Prof. Dr. [Wolfram Sander](https://www.ruhr-uni-bochum.de/oc2/index.html)
 
 <b>Massachusetts Institute of Technology</b> (MIT), Department of Chemistry, Cambridge, MA, USA (2020 - 2022)
