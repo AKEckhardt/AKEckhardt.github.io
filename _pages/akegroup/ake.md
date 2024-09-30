@@ -48,7 +48,7 @@ Education
 
 Awards and Honors
 ======
-* Emmy Noether programme of the DFG (([2024 - 2030](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether))
+* Emmy Noether programme of the DFG ([2024 - 2030](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether))
 * FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp))
 * Feodor Lynen Return Fellowship ([2022](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1209506&cHash=4dc63f656b61b2c6620402dc58491c1f))
 * Dissertation Award (Natural Sciences) JLU Gießen ([2020](https://www.uni-giessen.de/ueber-uns/pressestelle/pm/digitaler-rueckblick-auf-das-ausnahmejahr-2020))
