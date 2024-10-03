@@ -52,7 +52,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
 
 You are a current Master or PhD student in chemistry? Win a paid three-month research stay in our group and take part at the  
-<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/31/2023 and 06/01/2024)
+<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/01/2024)
 </p>
 <p align="center"> 
 <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" alt="Link" width="35%" height="auto%"/></a>
