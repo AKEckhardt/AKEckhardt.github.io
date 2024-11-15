@@ -57,15 +57,15 @@ docs:
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
         url: /akegroup/AnahitaSafiyan/
-#      - title: "Deepak Kumar Singh"
-#        url: /akegroup/DeepakSingh/
 
   - title: Students
     children:
       - title: "Julian Eßer"
         url: /akegroup/JulianEßer/      
       - title: "Daniel Kühn"
-        url: /akegroup/DanielKuehn/  
+        url: /akegroup/DanielKuehn/ 
+      - title: "Martyna Rybka"
+        url: /akegroup/MartynaRybka/        
       - title: "Kristin Wulff"
         url: /akegroup/KristinWulff/           
 #  - title: Visiting Students
