@@ -20,7 +20,7 @@ MSc student<br/>
 Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:Martyna.Rybka@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-BSc (2020 - 2023, Ruhr-University Bochum, Germany)<br/>
+BSc (2019 - 2023, Ruhr-University Bochum, Germany)<br/>
 MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
 
