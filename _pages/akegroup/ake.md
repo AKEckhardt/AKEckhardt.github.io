@@ -62,6 +62,8 @@ Awards and Honors
 
 Conference attendances and oral contributions
 ======
+26. <b>Seminar talk</b>, November 25, 2024, Universität Duisburg-Essen, Essen, Germany.
+
 25. <b>Seminar talk</b>, October 2, 2024, ELTE - Eötvös University, Budapest, Hungary.
 
 24. <b>BioOrganik24</b>, August 21–23, 2024, Dortmund, Germany, oral contribution.

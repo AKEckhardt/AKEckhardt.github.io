@@ -11,6 +11,12 @@ sidebar:
 {% include base_path %}
 <b>In-depth Students</b>
 
+<b>Martyna Rybka</b><br/>
+October - December 2024
+
+<b>Philip Mund</b><br/>
+October - November 2024
+
 <b>Media Mohamad</b><br/>
 May - June 2024
 
@@ -30,6 +36,11 @@ March - April 2023<br/>
 
 <b>Visiting Students</b>
 
+<b>Olga Vorobyova</b><br/>
+September - November 2024
+
+<b>Ivan Shchus</b><br/>
+September - November 2024
 
 <b>Hasan Gören</b><br/>
 July - September 2024
