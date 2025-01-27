@@ -9,7 +9,31 @@ sidebar:
 ---
 
 <br/>
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2024">2024</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
+
+___
+
+(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>Preprint</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-7mfcm](https://doi.org/10.26434/chemrxiv-2025-7mfcm). 
+
+<p align="center"> 
+<a href="https://doi.org/10.26434/chemrxiv-2025-7mfcm"><img src="https://AKEckhardt.github.io/images/pub51.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+
+___
+
+(50) <b>Binding the Power of Cycloaddition and Cross-Coupling in a Single Mechanism: An Unexpected Bending Journey to Radical Chemistry of Butadiynyl with Conjugated Dienes.</b> I. A. Medvedkov, Z. Yang, A. A. Nikolayev, S. J. Goettl, <u>A. K. Eckhardt</u>, Alexander M. Mebel and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 658–666, [doi:10.1021/acs.jpclett.4c03150](https://doi.org/10.1021/acs.jpclett.4c03150). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.jpclett.4c03150"><img src="https://AKEckhardt.github.io/images/pub50.jpeg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+<b>Highlight:</b> • [Cover Feature](https://pubs.acs.org/cms/10.1021/jpclcd.2025.16.issue-2/asset/jpclcd.2025.16.issue-2.xlargecover.jpg)
+
+
+___
+
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2023">2023</a>
 
 ___
 
@@ -18,6 +42,7 @@ ___
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.3c03524"><img src="https://AKEckhardt.github.io/images/pub49.jpeg" alt="Link" width="40%" height="auto%"/></a>
 </p>
+
 
 ___
 
