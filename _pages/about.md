@@ -53,6 +53,16 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Dilara Korkut joined the group for her BSc thesis. Good luck, Dilara!.</font></td>
+<td style="width:30%;" align="center" valign="middle"><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2024</b></font><br/><font size="1"><br/></font><font size="4">
+André visited the neighbor university in Essen for a seminar talk.</font></td>
+<td style="width:30%;" align="center" valign="middle"><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
 Philip Mund and Martyna Rybka joined the group for an in-depth practical. André visited ELTE - Eötvös University in Hungary.</font></td>
 <td style="width:30%;" align="center" valign="middle"><br/></td>
