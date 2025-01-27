@@ -49,19 +49,14 @@ Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@ru
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
 
-Fully funded PhD position available! Please contact André directly via <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a>. <br/> <br/> 
-
-You are a current Master or PhD student in chemistry? Win a paid three-month research stay in our group and take part at the  
-<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">RESOLV student challenge 2024</a>! (Deadlines: 12/01/2024)
-</p>
-<p align="center"> 
-<a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group"><img src="https://AKEckhardt.github.io/images/Challenge.png" alt="Link" width="35%" height="auto%"/></a>
-<br/> 
-</p>
-
 
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> 
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
+Philip Mund and Martyna Rybka joined the group for an in-depth practical. André visited ELTE - Eötvös University in Hungary.</font></td>
+<td style="width:30%;" align="center" valign="middle"><br/></td>
+</tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2024</b></font><br/><font size="1"><br/></font><font size="4">
 Ivan Shchus and Olga Vorobyova won a research stay in our group in the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge "Your Step into Solvation Science"</a>. They will stay with us for the next three months and investigate cryosolvation effects.</font></td>
