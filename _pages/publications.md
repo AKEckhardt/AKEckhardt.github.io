@@ -13,7 +13,7 @@ sidebar:
 
 ___
 
-(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>Preprint</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-7mfcm](https://doi.org/10.26434/chemrxiv-2025-7mfcm). 
+(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv preprint</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-7mfcm](https://doi.org/10.26434/chemrxiv-2025-7mfcm). 
 
 <p align="center"> 
 <a href="https://doi.org/10.26434/chemrxiv-2025-7mfcm"><img src="https://AKEckhardt.github.io/images/pub51.jpg" alt="Link" width="40%" height="auto%"/></a>
