@@ -13,7 +13,15 @@ sidebar:
 
 ___
 
-(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, 16, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-7mfcm-v2) [(Data)](https://doi.org/10.17877/RESOLV-2025-M5O4142V)
+(52) <b>Generation and UV-photolysis of N-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-6ksdm](https://doi.org/10.26434/chemrxiv-2025-6ksdm). 
+
+<p align="center"> 
+<a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm"><img src="https://AKEckhardt.github.io/images/pub52.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, 16, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-7mfcm-v2) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M5O4142V)
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/pub51.jpg" alt="Link" width="40%" height="auto%"/></a>
