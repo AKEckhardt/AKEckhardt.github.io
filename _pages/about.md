@@ -54,12 +54,12 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <table> <style>table, th, td {border: transparent;}</style> 
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Ben will work on the synthesis of a quadricyclan compound and Margarita will work on some interesting Phosphorus compounds. Welcome to our group!  Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide DOI: 10.26434/chemrxiv-2025-6ksdm  Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung.</font></td>
+Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Ben will work on the synthesis of a quadricyclan compound and Margarita will work on some interesting Phosphorus compounds. Welcome to our group! <br/>Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide DOI: 10.26434/chemrxiv-2025-6ksdm <br/>Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung.</font></td>
 <td style="width:30%;" align="center" valign="middle"><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Dominik Schreiner joined the group for an in-depth practical working on the synthesis of Na(OCP). Welcome to our group!  Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. Check it out! DOI: 10.1021/acs.jpclett.5c00117</font></td>
+Dominik Schreiner joined the group for an in-depth practical working on the synthesis of Na(OCP). Welcome to our group! <br/>Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. Check it out! DOI: 10.1021/acs.jpclett.5c00117</font></td>
 <td style="width:30%;" align="center" valign="middle"><br/></td>
 </tr>
 <tr>
