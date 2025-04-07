@@ -60,7 +60,7 @@ Dilara finished her Bachelor's Thesis. Congratulations! </font></td>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Ben will work on the synthesis of a quadricyclan compound and Margarita will work on some interesting Phosphorus compounds. Welcome to our group! 
-<br/>Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide DOI: 10.26434/chemrxiv-2025-6ksdm 
+<br/>Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm"</a>
 <br/>Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung.</font></td>
 <td style="width:30%;" align="center" valign="middle"><br/></td>
 </tr>
