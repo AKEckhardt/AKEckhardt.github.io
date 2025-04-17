@@ -20,7 +20,7 @@ BSc student<br/>
 Room NC 3/132, Tel: +49 234 32 26715<br/>
 <a href="mailto:dilara.korkut-z74@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-BSc (2020 - present, Ruhr-University Bochum, Germany)<br/>
+BSc (2020 - 2025)<br/>
 <br/>
 
 </font>
@@ -28,7 +28,7 @@ BSc (2020 - present, Ruhr-University Bochum, Germany)<br/>
 </tr></table>
 
 <p style='text-align: justify;'>
-Dilara studies chemistry at the Ruhr-University Bochum and is currently working on her Bachelor’s thesis. 
+Dilara studies chemistry at the Ruhr-University Bochum and finished her Bachelor’s Thesis within the group. 
 For her Bachelor thesis Dilara is focusing on the isolation and characterization of novel carbenes using matrix isolation techniques.
 </p>
 
