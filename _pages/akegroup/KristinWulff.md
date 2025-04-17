@@ -32,7 +32,7 @@ MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 Kristin studied chemistry at the Ruhr-University Bochum and received her BSc in SS2023 in the group of 
 <a href="https://www.gessnerlab.ruhr-uni-bochum.de/">Prof. Dr. Däschlein-Gessner</a>. 
 During her Bachelor studies Kristin worked on the synthesis of phosphorus compounds under inert conditions. 
-In october 2023 she started her master studies at the Ruhr-University Bochum and joined the Eckhardt-lab for her first in-depth practical.
+In october 2023 she started her master studies at the Ruhr-University Bochum and joined the Eckhardt-lab for her first in-depth practical. Since end of march, she started her Master's Thesis within the Group. 
 </p>
 
 
