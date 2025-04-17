@@ -73,7 +73,7 @@ Dominik Schreiner joined the group for an in-depth practical. Welcome to our gro
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Dilara Korkut joined the group for her BSc thesis. Good luck, Dilara!</font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut.jpg"><img src="https://AKEckhardt.github.io/images/news28.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2024</b></font><br/><font size="1"><br/></font><font size="4">
