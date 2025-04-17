@@ -78,7 +78,7 @@ Dilara Korkut joined the group for her BSc thesis. Good luck, Dilara!</font></td
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2024</b></font><br/><font size="1"><br/></font><font size="4">
 André visited the neighbor university in Essen for a seminar talk.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-due.de"><img src="https://AKEckhardt.github.io/images/news29.png" alt="Link" width="50%" height="auto%"/></a><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-due.de"><img src="https://AKEckhardt.github.io/images/news29.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
