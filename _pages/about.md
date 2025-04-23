@@ -53,14 +53,31 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Anna and Vladislava joined the Group for an indepth practical. Welcome to our Group!
-<br/>Dilara finished her Bachelor's Thesis. Congratulations! </font></td>
-<td style="width:30%;" align="center" valign="middle"><a 
-href="https://AKEckhardt.github.io/akegroup/AnnaMarjanovic_2025"><img src="https://AKEckhardt.github.io/images/AnnaMarjanovic_2025.jpg" alt="Link" width="50%" height="auto%"/></a><br/><a
-href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="50%" height="auto%"/></a><br/></td>
+    <!-- Linke Spalte: Text -->
+    <td style="width:70%;" align="justify" valign="top">
+      <font size="4"><b>April 2025</b></font>
+      <p style="font-size: 16px;">
+        Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!
+      </p>
+      <p style="font-size: 16px;">
+        Dilara finished her Bachelor's Thesis. Congratulations!
+      </p>
+    </td>
 
-</tr> 
+    <!-- Rechte Spalte: Bilder passend zum Text -->
+    <td style="width:30%;" align="center" valign="top">
+      <p>
+        <a href="https://AKEckhardt.github.io/akegroup/AnnaMarjanovic_2025">
+          <img src="https://AKEckhardt.github.io/images/AnnaMarjanovic_2025.jpg" alt="Anna Marjanovic" width="80%" />
+        </a>
+      </p>
+      <p>
+        <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
+          <img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Dilara Korkut" width="80%" />
+        </a>
+      </p>
+    </td>
+  </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! 
