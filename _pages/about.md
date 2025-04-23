@@ -54,8 +54,8 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Anna and Vladislava joined the Group for an indepth practical. Welcome to our Group!</b>
-Dilara finished her Bachelor's Thesis. Congratulations! </font></td>
+Anna and Vladislava joined the Group for an indepth practical. Welcome to our Group!
+<br/>Dilara finished her Bachelor's Thesis. Congratulations! </font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="50%" height="auto%"/></a><br/></td>
 </tr> 
 <tr>
