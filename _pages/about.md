@@ -68,12 +68,12 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
     <td style="width:30%;" align="center" valign="top">
       <p>
         <a href="https://AKEckhardt.github.io/akegroup/AnnaMarjanovic_2025">
-          <img src="https://AKEckhardt.github.io/images/AnnaMarjanovic_2025.jpg" alt="Anna Marjanovic" width="80%" />
+          <img src="https://AKEckhardt.github.io/images/AnnaMarjanovic_2025.jpg" alt="Anna Marjanovic" width="65%" />
         </a>
       </p>
       <p>
         <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
-          <img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Dilara Korkut" width="80%" />
+          <img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Dilara Korkut" width="65%" />
         </a>
       </p>
     </td>
