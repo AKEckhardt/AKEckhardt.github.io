@@ -54,11 +54,6 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
-<tr> 
-Dilara finished her Bachelor's Thesis. Congratulations! </font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="50%" height="auto%"/></a><br/></td>
-<br/>
-</tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! 
