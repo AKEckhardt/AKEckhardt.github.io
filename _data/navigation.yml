@@ -68,10 +68,10 @@ docs:
         url: /akegroup/DanielKuehn/   
       - title: "Kristin Wulff"
         url: /akegroup/KristinWulff/           
-#  - title: Visiting Students
-#    children:
-#      - title: "Hasan Yavuz Goren"
-#        url: /akegroup/HasanGoren/
+  - title: Visiting Students
+    children:
+      - title: "Moulay Driss Mellaoui"
+#        url: /akegroup/MoulayDrissMellaoui/
         
   - title: Alumni
     children:
