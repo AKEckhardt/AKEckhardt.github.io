@@ -67,11 +67,12 @@ docs:
       - title: "Daniel Kühn"
         url: /akegroup/DanielKuehn/   
       - title: "Kristin Wulff"
-        url: /akegroup/KristinWulff/           
+        url: /akegroup/KristinWulff/ 
+      - title: "Anna Marjanovic"
+        url: /akegroup/AnnaMarjanovic/           
   - title: Visiting Students
     children:
-      - title: "Moulay Driss Mellaoui"
-        url: /akegroup/MoulayDrissMellaoui/
+      - title: "Visiting students"
         
   - title: Alumni
     children:
