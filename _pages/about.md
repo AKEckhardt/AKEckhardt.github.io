@@ -67,8 +67,8 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
     <!-- Rechte Spalte: Bilder passend zum Text -->
     <td style="width:30%;" align="center" valign="top">
       <p>
-        <img src="https://AKEckhardt.github.io/images/news30.png" alt="Link" width="65%" />
-        </a>
+        <img src="https://AKEckhardt.github.io/images/news30.png" alt="Link" width="80%" />
+        
       </p>
       <p>
         <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
