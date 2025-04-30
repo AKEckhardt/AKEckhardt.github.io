@@ -57,7 +57,9 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
     <td style="width:70%;" align="justify" valign="top">
       <font size="4"><b>April 2025</b></font>
       <p style="font-size: 18px;">
-        Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!
+	<a href="https://AKEckhardt.github.io/group/">
+          Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!
+	</a>
       </p>
       <p style="font-size: 18px;">
         Dilara finished her Bachelor's Thesis. Congratulations!

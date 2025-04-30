@@ -11,6 +11,12 @@ sidebar:
 {% include base_path %}
 <b>In-depth Students</b>
 
+<b>Ben Vöth </b><br/>
+March - April 2024
+
+<b>Margarita Shishkova </b><br/>
+March - April 2024
+
 <b>Martyna Rybka</b><br/>
 October - December 2024
 
@@ -35,6 +41,9 @@ March - April 2023<br/>
 <br/>
 
 <b>Visiting Students</b>
+
+<b>Moulay Driss Mellaoui</b><br/>
+September - November 2024
 
 <b>Olga Vorobyova</b><br/>
 September - November 2024
