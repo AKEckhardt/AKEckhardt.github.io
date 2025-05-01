@@ -21,7 +21,7 @@ ___
 
 ___
 
-(52) <b>A Combined Crossed Molecular Beam and Theoretical Investigation of the Elementary Reaction of Tricarbon (C3(X1Σg+)) with Diacetylene (C4H2(X1Σg+)): Gas Phase Formation of the Heptatriynylidyne Radical (l-C7H(X2Π)).</b> I. A. Medvedkov, A. A. Nikolayev, Z. Yang, S. J. Goettl, A. A. Kuznetsova, <u>A. K. Eckhardt</u>, A. M. Mebel, and R. I. Kaiser <i>J. Phys. Chem. A</i>, <b>2025</b>, <i>129</i>, 3931–3939, [doi:10.1021/acs.jpca.5c01330](https://doi.org/10.1021/acs.jpca.5c01330). 
+(52) <b>A Combined Crossed Molecular Beam and Theoretical Investigation of the Elementary Reaction of Tricarbon (C<sub>3</sub>(X<sup>1</sup>Σ<sub>g</sub><sup>+</sup>)) with Diacetylene (C<sub>4</sub>H<sub>2</sub>(X<sup>1</sup>Σ<sub>3</sub><sup>+</sup>)): Gas Phase Formation of the Heptatriynylidyne Radical (<i>I</i>-C<sub>7</sub>H(X<sup>2</sup>Π)).</b> I. A. Medvedkov, A. A. Nikolayev, Z. Yang, S. J. Goettl, A. A. Kuznetsova, <u>A. K. Eckhardt</u>, A. M. Mebel, and R. I. Kaiser <i>J. Phys. Chem. A</i>, <b>2025</b>, <i>129</i>, 3931–3939, [doi:10.1021/acs.jpca.5c01330](https://doi.org/10.1021/acs.jpca.5c01330). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpca.5c01330"><img src="https://AKEckhardt.github.io/images/pub52.gif" alt="Link" width="40%" height="auto%"/></a>
@@ -29,7 +29,7 @@ ___
 
 ___
 
-(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, 16, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-7mfcm-v2) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M5O4142V)
+(51) <b>H-Tunneling Rotamerization in Glycine Imine.</b> V. D. Drabkin and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-7mfcm-v2) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M5O4142V)
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/pub51.jpg" alt="Link" width="40%" height="auto%"/></a>
