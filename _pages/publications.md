@@ -21,7 +21,7 @@ ___
 
 ___
 
-(52) <b>A Combined Crossed Molecular Beam and Theoretical Investigation of the Elementary Reaction of Tricarbon (C<sub>3</sub>(X<sup>1</sup>Σ<sub>g</sub><sup>+</sup>)) with Diacetylene (C<sub>4</sub>H<sub>2</sub>(X<sup>1</sup>Σ<sub>3</sub><sup>+</sup>)): Gas Phase Formation of the Heptatriynylidyne Radical (<i>I</i>-C<sub>7</sub>H(X<sup>2</sup>Π)).</b> I. A. Medvedkov, A. A. Nikolayev, Z. Yang, S. J. Goettl, A. A. Kuznetsova, <u>A. K. Eckhardt</u>, A. M. Mebel, and R. I. Kaiser <i>J. Phys. Chem. A</i>, <b>2025</b>, <i>129</i>, 3931–3939, [doi:10.1021/acs.jpca.5c01330](https://doi.org/10.1021/acs.jpca.5c01330). 
+(52) <b>A Combined Crossed Molecular Beam and Theoretical Investigation of the Elementary Reaction of Tricarbon (C<sub>3</sub>(X<sup>1</sup>Σ<sub>g</sub><sup>+</sup>)) with Diacetylene (C<sub>4</sub>H<sub>2</sub>(X<sup>1</sup>Σ<sub>g</sub><sup>+</sup>)): Gas Phase Formation of the Heptatriynylidyne Radical (<i>I</i>-C<sub>7</sub>H(X<sup>2</sup>Π)).</b> I. A. Medvedkov, A. A. Nikolayev, Z. Yang, S. J. Goettl, A. A. Kuznetsova, <u>A. K. Eckhardt</u>, A. M. Mebel, and R. I. Kaiser <i>J. Phys. Chem. A</i>, <b>2025</b>, <i>129</i>, 3931–3939, [doi:10.1021/acs.jpca.5c01330](https://doi.org/10.1021/acs.jpca.5c01330). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpca.5c01330"><img src="https://AKEckhardt.github.io/images/pub52.gif" alt="Link" width="40%" height="auto%"/></a>
