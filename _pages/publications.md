@@ -13,10 +13,18 @@ sidebar:
 
 ___
 
-(52) <b>Generation and UV-photolysis of N-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-6ksdm](https://doi.org/10.26434/chemrxiv-2025-6ksdm). 
+(53) <b>Generation and UV-photolysis of N-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-6ksdm](https://doi.org/10.26434/chemrxiv-2025-6ksdm). 
 
 <p align="center"> 
-<a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm"><img src="https://AKEckhardt.github.io/images/pub52.png" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm"><img src="https://AKEckhardt.github.io/images/pub53.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(52) <b>A Combined Crossed Molecular Beam and Theoretical Investigation of the Elementary Reaction of Tricarbon (C3(X1Σg+)) with Diacetylene (C4H2(X1Σg+)): Gas Phase Formation of the Heptatriynylidyne Radical (l-C7H(X2Π)).</b> I. A. Medvedkov, A. A. Nikolayev, Z. Yang, S. J. Goettl, A. A. Kuznetsova, <u>A. K. Eckhardt</u>, A. M. Mebel, and R. I. Kaiser <i>J. Phys. Chem. A</i>, <b>2025</b>, <i>129</i>, 3931–3939, [doi:10.1021/acs.jpca.5c01330](https://doi.org/10.1021/acs.jpca.5c01330). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.jpca.5c01330"><img src="https://AKEckhardt.github.io/images/pub52.gif" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 ___
