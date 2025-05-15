@@ -17,7 +17,7 @@ sidebar:
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ake/">André</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ChristianThiehoff/">Christian</a>, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/KristinWulff/">Kristin</a>,
-<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/JulianEsser/">Julian</a>,   
+<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/JulianEßer/">Julian</a>,   
 Vladislava, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AdrianPortelaGonzalez/">Adrián</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnahitaSafiyan/">Anahita</a>,
