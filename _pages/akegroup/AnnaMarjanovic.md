@@ -19,3 +19,10 @@ sidebar:
 Master student - Indepth Practical<br/>
 <br/>
 
+</font>
+</td>
+</tr></table>
+
+<p style='text-align: justify;'>
+Anna studied chemistry at Ruhr-University Bochum and received her B.Sc. in 2024 with Prof. Dr. Däschlein-Geßner. In her thesis she focussed on synthesizing ketenimine anions from metalated ylides. Now she is joining the Eckhard-lab for a Master's in-depth practical.
+</p>
