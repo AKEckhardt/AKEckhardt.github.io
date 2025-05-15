@@ -10,7 +10,7 @@ sidebar:
 {% include base_path %}
 
 <p align="center">
-  <img width="50%" height="auto" src="https://AKEckhardt.github.io/images/group_2024.jpg">
+  <img width="50%" height="auto" src="https://AKEckhardt.github.io/images/group_2025.jpg">
 </p>  
 <p style='text-align: center;'>From left to right: 
 Ivan (visitor), 
