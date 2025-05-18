@@ -65,7 +65,7 @@ Anna and Vladislava joined our group for an in-depth practical. Welcome to our g
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung. 
+Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the <a href="https://www.solvation.de/news/current-news/detail/klausurtagung-2025">RESOLV Klausurtagung</a>. 
 André attended the Chemiedozententagung in Braunschweig. Dilara finished her Bachelor's Thesis. Congratulations!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news31.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
