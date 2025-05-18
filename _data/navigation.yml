@@ -70,9 +70,9 @@ docs:
         url: /akegroup/KristinWulff/ 
       - title: "Anna Marjanovic"
         url: /akegroup/AnnaMarjanovic/           
-  - title: Visiting Students
-    children:
-      - title: "Visiting students"
+#  - title: Visiting Students
+#    children:
+#      - title: "Visiting students"
         
   - title: Alumni
     children:
