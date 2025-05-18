@@ -71,7 +71,7 @@ André attended the Chemiedozententagung in Braunschweig. Dilara finished her Ba
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Dominik Schreiner joined the group for an in-depth practical and Moulay Driss Mellaoui for a research stay as part of the Resolv Student Challenge. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
+Dominik Schreiner joined the group for an in-depth practical and Moulay Driss Mellaoui for a research stay as part of the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge</a>. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/news30.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
