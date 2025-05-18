@@ -54,9 +54,14 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>Mai 2025</b></font><br/><font size="1"><br/></font><font size="4">
+The Boehringer Ingelheim Stiftung supports our research with an Exploration Grant. Thank you very much! Our study about <i>N</i>-methyleneformamide got accepted in <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/SC/D5SC02777B"><i>Chem. Sci.</i></a>! </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Anna and Vladislava joined our group for an in-depth practical. Welcome to our group!</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/group/"><img src="https://AKEckhardt.github.io/images/news32.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+Anna and Vladislava joined our group for an in-depth practical. Welcome to our group! The new semester started and André teaches Organic Chemistry I this term.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/group/"><img src="https://AKEckhardt.github.io/images/news32.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
@@ -66,7 +71,7 @@ André attended the Chemiedozententagung in Braunschweig. Dilara finished her Ba
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Dominik Schreiner joined the group for an in-depth practical. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
+Dominik Schreiner joined the group for an in-depth practical and Moulay Driss Mellaoui for a research stay as part of the Resolv Student Challenge. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/news30.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
