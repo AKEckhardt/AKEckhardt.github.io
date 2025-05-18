@@ -12,7 +12,7 @@ sidebar:
 
 <font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style> <tr>
-<td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/KristinWulff_2023.jpg" width="50%" height="auto%" align="middle"></td>
+<td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Kristin_2025.JPG" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
 <b>Kristin Wulff</b><br/>
