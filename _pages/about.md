@@ -54,36 +54,15 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
-    <!-- Linke Spalte: Text -->
-    <td style="width:70%;" align="justify" valign="top">
-      <font size="4"><b>April 2025</b></font>
-      <p style="font-size: 18px;">
-	<a href="https://AKEckhardt.github.io/group/">
-          Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!
-	</a>
-      </p>
-      <p style="font-size: 18px;">
-        Dilara finished her Bachelor's Thesis. Congratulations!
-      </p>
-    </td>
-
-    <!-- Rechte Spalte: Bilder passend zum Text -->
-    <td style="width:30%;" align="center" valign="top">
-      <p>
-        <img src="https://AKEckhardt.github.io/images/news32.png" alt="Link" width="80%" />
-        
-      </p>
-      <p>
-        <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
-          <img src="https://AKEckhardt.github.io/images/news33.jpg" alt="Dilara Korkut" width="65%" />
-        </a>
-      </p>
-    </td>
-  </tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/group/"><img src="https://AKEckhardt.github.io/images/news32.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung. André attended the Chemiedozententagung in Braunschweig.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm"><img src="https://AKEckhardt.github.io/images/news31.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung. 
+André attended the Chemiedozententagung in Braunschweig. Dilara finished her Bachelor's Thesis. Congratulations!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news31.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
