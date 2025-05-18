@@ -9,6 +9,22 @@ sidebar:
 ---
 
 {% include base_path %}
+<b>PhD Students</b>
+
+<b>Vladimir D. Drabkin</b><br/>
+September 2022 - January 2025
+<br/>
+<br/>
+
+
+<b>Bachelor Students</b>
+
+<b>Dilara Korkut</b><br/>
+January - March 2025
+<br/>
+<br/>
+
+
 <b>In-depth Students</b>
 
 <b>Ben Vöth </b><br/>
@@ -16,6 +32,9 @@ March - April 2024
 
 <b>Margarita Shishkova </b><br/>
 March - April 2024
+
+<b>Dominik Schreiner</b><br/>
+February - March 2025
 
 <b>Martyna Rybka</b><br/>
 October - December 2024
@@ -40,10 +59,11 @@ March - April 2023<br/>
 <br/>
 <br/>
 
+
 <b>Visiting Students</b>
 
 <b>Moulay Driss Mellaoui</b><br/>
-September - November 2024
+Februar - April 2025
 
 <b>Olga Vorobyova</b><br/>
 September - November 2024

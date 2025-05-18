@@ -51,8 +51,8 @@ docs:
 
   - title: PhD Students
     children:
-      - title: "Vladimir D. Drabkin"
-        url: /akegroup/VladimirDrabkin/
+#      - title: "Vladimir D. Drabkin"
+#        url: /akegroup/VladimirDrabkin/
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
