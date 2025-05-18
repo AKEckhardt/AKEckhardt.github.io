@@ -84,7 +84,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! 
 <br/>Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">DOI: 10.26434/chemrxiv-2025-6ksdm </a>
-<br/>Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung.</font></td>
+<br/>Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung. André attended the Chemiedozententagung in Braunschweig.</font></td>
 <td style="width:30%;" align="center" valign="middle"><br/></td>
 </tr>
 <tr>
