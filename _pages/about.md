@@ -70,12 +70,12 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
     <!-- Rechte Spalte: Bilder passend zum Text -->
     <td style="width:30%;" align="center" valign="top">
       <p>
-        <img src="https://AKEckhardt.github.io/images/news30.png" alt="Link" width="80%" />
+        <img src="https://AKEckhardt.github.io/images/news32.png" alt="Link" width="80%" />
         
       </p>
       <p>
         <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
-          <img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Dilara Korkut" width="65%" />
+          <img src="https://AKEckhardt.github.io/images/news33.jpg" alt="Dilara Korkut" width="65%" />
         </a>
       </p>
     </td>
@@ -89,8 +89,8 @@ Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Wel
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Dominik Schreiner joined the group for an in-depth practical. Welcome to our group! <br/>Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. Check it out! <a href="https://doi.org/10.1021/acs.jpclett.5c00117">DOI: 10.1021/acs.jpclett.5c00117 </a> </font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+Dominik Schreiner joined the group for an in-depth practical. Welcome to our group! <br/>Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/news30.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2025</b></font><br/><font size="1"><br/></font><font size="4">
@@ -105,7 +105,7 @@ André visited the neighbor university in Essen for a seminar talk.</font></td>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
 Philip Mund and Martyna Rybka joined the group for an in-depth practical. André visited ELTE - Eötvös University in Hungary.</font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.elte.hu/en/"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2024</b></font><br/><font size="1"><br/></font><font size="4">
