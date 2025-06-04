@@ -13,7 +13,15 @@ sidebar:
 
 ___
 
-(53) <b>Generation and UV-photolysis of N-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Sci.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
+(54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/pub54.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(53) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Sci.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D5SC02777B"><img src="https://AKEckhardt.github.io/images/pub53.png" alt="Link" width="40%" height="auto%"/></a>
