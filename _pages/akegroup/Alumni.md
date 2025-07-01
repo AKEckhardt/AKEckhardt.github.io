@@ -27,11 +27,17 @@ January - March 2025
 
 <b>In-depth Students</b>
 
+<b>Vladislava Kulinich</b><br/>
+April - June 2025
+
+<b>Anna Marjanovic</b><br/>
+April - June 2025
+
 <b>Ben Vöth </b><br/>
-March - April 2024
+March - April 2025
 
 <b>Margarita Shishkova </b><br/>
-March - April 2024
+March - April 2025
 
 <b>Dominik Schreiner</b><br/>
 February - March 2025
