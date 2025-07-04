@@ -51,8 +51,8 @@ docs:
 
   - title: PhD Students
     children:
-      - title: "Vladimir D. Drabkin"
-        url: /akegroup/VladimirDrabkin/
+#      - title: "Vladimir D. Drabkin"
+#        url: /akegroup/VladimirDrabkin/
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
@@ -65,14 +65,14 @@ docs:
       - title: "Dilara Korkut"
         url: /akegroup/DilaraKorkut/  
       - title: "Daniel Kühn"
-        url: /akegroup/DanielKuehn/   
+        url: /akegroup/DanielKuehn/
+      - title: "Dominik Schreiner"
+        url: /akegroup/DominikSchreiner/         
       - title: "Kristin Wulff"
-        url: /akegroup/KristinWulff/ 
-      - title: "Anna Marjanovic"
-        url: /akegroup/AnnaMarjanovic/           
-  - title: Visiting Students
-    children:
-      - title: "Visiting students"
+        url: /akegroup/KristinWulff/        
+#  - title: Visiting Students
+#    children:
+#      - title: "Visiting students"
         
   - title: Alumni
     children:

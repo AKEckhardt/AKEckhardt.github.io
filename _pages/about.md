@@ -23,6 +23,7 @@ All prepared molecular structures are validated by comparison of experimental an
 <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.humboldt-foundation.de/"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 </td>
@@ -53,43 +54,30 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
-    <!-- Linke Spalte: Text -->
-    <td style="width:70%;" align="justify" valign="top">
-      <font size="4"><b>April 2025</b></font>
-      <p style="font-size: 18px;">
-	<a href="https://AKEckhardt.github.io/group/">
-          Anna and Vladislava joined the Group for an in-depth practical. Welcome to our Group!
-	</a>
-      </p>
-      <p style="font-size: 18px;">
-        Dilara finished her Bachelor's Thesis. Congratulations!
-      </p>
-    </td>
-
-    <!-- Rechte Spalte: Bilder passend zum Text -->
-    <td style="width:30%;" align="center" valign="top">
-      <p>
-        <img src="https://AKEckhardt.github.io/images/news30.png" alt="Link" width="80%" />
-        
-      </p>
-      <p>
-        <a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut">
-          <img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Dilara Korkut" width="65%" />
-        </a>
-      </p>
-    </td>
-  </tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2025</b></font><br/><font size="1"><br/></font><font size="4">
+We contributed to the <i>JOC</i> Special Issue: Physical Organic Chemistry: Never Out of Style. Our study about the <i>P-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study</i> is now <a href="https://doi.org/10.1021/acs.joc.5c00840"><i>accepted</i></a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/news33.gif" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2025</b></font><br/><font size="1"><br/></font><font size="4">
+The Boehringer Ingelheim Stiftung supports our research with an <a href="https://www.boehringer-ingelheim-stiftung.de/was-wir-foerdern/foerderprogramme/exploration-grants.html">Exploration Grant</a>. Thank you very much! Our study about <i>N</i>-methyleneformamide got accepted in <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/SC/D5SC02777B"><i>Chem. Sci.</i></a>! André gave a talk at the 75. Steinheimer Gespräche.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Anna and Vladislava joined our group for an in-depth practical. Welcome to our group! The new semester started and André teaches Organic Chemistry I this term.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/group/"><img src="https://AKEckhardt.github.io/images/news32.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! 
-<br/>Check out the preprint of our new paper studying the generation and UV-Photolysis of N-methyleneformamide <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">DOI: 10.26434/chemrxiv-2025-6ksdm </a>
-<br/>Viktor, Anahita, Adrian and André participated at the RESOLV Klausurtagung.</font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the <a href="https://www.solvation.de/news/current-news/detail/klausurtagung-2025">RESOLV Klausurtagung</a>. 
+André attended the Chemiedozententagung in Braunschweig. Dilara finished her Bachelor's Thesis. Congratulations!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news31.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Dominik Schreiner joined the group for an in-depth practical. Welcome to our group! <br/>Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. Check it out! <a href="https://doi.org/10.1021/acs.jpclett.5c00117">DOI: 10.1021/acs.jpclett.5c00117 </a> </font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+Dominik Schreiner joined the group for an in-depth practical and Moulay Driss Mellaoui for a research stay as part of the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge</a>. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/news30.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2025</b></font><br/><font size="1"><br/></font><font size="4">
@@ -104,7 +92,7 @@ André visited the neighbor university in Essen for a seminar talk.</font></td>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
 Philip Mund and Martyna Rybka joined the group for an in-depth practical. André visited ELTE - Eötvös University in Hungary.</font></td>
-<td style="width:30%;" align="center" valign="middle"><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.elte.hu/en/"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2024</b></font><br/><font size="1"><br/></font><font size="4">
@@ -202,7 +190,7 @@ André attended the <a href="https://www.vci.de/fonds/der-fonds/netzwerke/netzwe
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
-<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/VladimirDrabkin">Vladimir D. Drabkin</a> joined the group for his PhD studies. He will investigate the cryosolvation of interstellar relevant molecules using matrix isolation spectroscopy and computational chemistry!</font></td>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Vladimir D. Drabkin</a> joined the group for his PhD studies. He will investigate the cryosolvation of interstellar relevant molecules using matrix isolation spectroscopy and computational chemistry!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/VladimirDrabkin"><img src="https://AKEckhardt.github.io/images/news4.jpg" alt="Link" width="65%" height="auto%"/></a></td>
 </tr>
 <tr>
