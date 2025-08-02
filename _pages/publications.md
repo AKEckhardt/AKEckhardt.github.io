@@ -20,6 +20,7 @@ ___
 </p>
 
 <b>Highlight:</b> • [Cover Feature](https://pubs.acs.org/toc/joceah/90/30)
+
 ___
 
 (53) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
