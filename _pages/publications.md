@@ -9,15 +9,19 @@ sidebar:
 ---
 
 <br/>
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Preprints">2025</a>
 
 ___
 
-(56) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-wk0fr](https://doi.org/10.26434/chemrxiv-2025-wk0fr). 
+(56) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-wk0fr](https://doi.org/10.26434/chemrxiv-2025-wk0fr). 
 
 <p align="center"> 
 <a href="https://doi.org/10.26434/chemrxiv-2025-wk0fr"><img src="https://AKEckhardt.github.io/images/pub56.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
+
+___
+<br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
 
 ___
 
