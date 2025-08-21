@@ -13,6 +13,14 @@ sidebar:
 
 ___
 
+(56) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-wk0fr](https://doi.org/10.26434/chemrxiv-2025-wk0fr). 
+
+<p align="center"> 
+<a href="https://doi.org/10.26434/chemrxiv-2025-wk0fr"><img src="https://AKEckhardt.github.io/images/pub56.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (55) <b>Formation of hydrogen trioxide (HOOOH) in extraterrestrial ice analogs and its role as an oxidizer in prebiotic chemistry.</b> X. Bai, C. Li, Y. Luo, Q. Gong, J. Lu, J. Yang, Y. Pan, Z. Sun, <u>A. K. Eckhardt</u><sup>*</sup>, R. Sun, R. I. Kaiser and T. Yang <i>Sci. Ad.</i>, <b>2025</b>, <i>11</i>, eadw5720, [doi:10.1126/sciadv.adw5720](https://doi.org/10.1126/sciadv.adw5720). 
 
 <p align="center"> 
