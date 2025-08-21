@@ -13,6 +13,14 @@ sidebar:
 
 ___
 
+(55) <b>Formation of hydrogen trioxide (HOOOH) in extraterrestrial ice analogs and its role as an oxidizer in prebiotic chemistry.</b> X. Bai, C. Li, Y. Luo, Q. Gong, J. Lu, J. Yang, Y. Pan, Z. Sun, <u>A. K. Eckhardt</u><sup>*</sup>, R. Sun, R. I. Kaiser and T. Yang <i>Sci. Ad.</i>, <b>2025</b>, <i>11</i>, eadw5720, [doi:10.1126/sciadv.adw5720](https://doi.org/10.1126/sciadv.adw5720). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1126/sciadv.adw5720"><img src="https://AKEckhardt.github.io/images/pub55.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
 
 <p align="center"> 
