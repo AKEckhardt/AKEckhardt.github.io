@@ -27,6 +27,9 @@ January - March 2025
 
 <b>In-depth Students</b>
 
+<b>Hadiseh Zahed</b><br/>
+June - August 2025
+
 <b>Vladislava Kulinich</b><br/>
 April - June 2025
 
