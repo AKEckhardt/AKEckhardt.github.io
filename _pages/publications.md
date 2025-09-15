@@ -34,7 +34,7 @@ ___
 
 ___
 
-(55) <b>Formation of hydrogen trioxide (HOOOH) in extraterrestrial ice analogs and its role as an oxidizer in prebiotic chemistry.</b> X. Bai, C. Li, Y. Luo, Q. Gong, J. Lu, J. Yang, Y. Pan, Z. Sun, <u>A. K. Eckhardt</u><sup>*</sup>, R. Sun, R. I. Kaiser and T. Yang <i>Sci. Ad.</i>, <b>2025</b>, <i>11</i>, eadw5720, [doi:10.1126/sciadv.adw5720](https://doi.org/10.1126/sciadv.adw5720). 
+(55) <b>Formation of hydrogen trioxide (HOOOH) in extraterrestrial ice analogs and its role as an oxidizer in prebiotic chemistry.</b> X. Bai, C. Li, Y. Luo, Q. Gong, J. Lu, J. Yang, Y. Pan, Z. Sun, <u>A. K. Eckhardt</u><sup>*</sup>, R. Sun, R. I. Kaiser and T. Yang <i>Sci. Adv.</i>, <b>2025</b>, <i>11</i>, eadw5720, [doi:10.1126/sciadv.adw5720](https://doi.org/10.1126/sciadv.adw5720). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1126/sciadv.adw5720"><img src="https://AKEckhardt.github.io/images/pub55.jpg" alt="Link" width="40%" height="auto%"/></a>
