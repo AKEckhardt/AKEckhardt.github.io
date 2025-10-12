@@ -9,7 +9,7 @@ sidebar:
 ---
 
 <br/>
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Preprints">Preprints</a>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Preprint">Preprints</a>
 
 ___
 
