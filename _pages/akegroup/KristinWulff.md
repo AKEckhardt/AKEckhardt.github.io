@@ -17,7 +17,7 @@ sidebar:
 <font size="4">
 <b>Kristin Wulff</b><br/>
 MSc student<br/>
-Room NC 3/172, Tel: +49 234 32 17556<br/>
+Room NC 3/132, Tel: +49 234 32 17556<br/>
 <a href="mailto:Kristin.Wulff@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
 BSc (2020 - 2023, Ruhr-University Bochum, Germany)<br/>
