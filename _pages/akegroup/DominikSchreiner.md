@@ -18,9 +18,9 @@ sidebar:
 <b>Dominik Schreiner</b><br/>
 MSc student<br/>
 Room NC 3/172, Tel: +49 234 32 26715<br/>
-<a href="mailto:Dominik Schreiner@ruhr-uni-bochum.de">E-Mail</a><br/>
+<a href="mailto:Dominik.Schreiner@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-BSc 2016<br/>
+BSc<br/>
 <br/>
 
 </font>

@@ -57,19 +57,20 @@ docs:
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
         url: /akegroup/AnahitaSafiyan/
-
+      - title: "Kristin Wulff"
+        url: /akegroup/KristinWulff/  
+      - title: "Julian Eßer"
+        url: /akegroup/JulianEßer/  
+        
   - title: Students
     children:
-      - title: "Julian Eßer"
-        url: /akegroup/JulianEßer/      
       - title: "Dilara Korkut"
         url: /akegroup/DilaraKorkut/  
       - title: "Daniel Kühn"
         url: /akegroup/DanielKuehn/
       - title: "Dominik Schreiner"
         url: /akegroup/DominikSchreiner/         
-      - title: "Kristin Wulff"
-        url: /akegroup/KristinWulff/        
+            
 #  - title: Visiting Students
 #    children:
 #      - title: "Visiting students"

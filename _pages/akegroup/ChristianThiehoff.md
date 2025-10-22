@@ -15,7 +15,7 @@ sidebar:
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Christian_2024.jpg" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
-<b>Christian Thiehoff</b><br/>
+<b>Dr. Christian Thiehoff</b><br/>
 Postdoc<br/>
 Room NC 3/172, Tel: +49 234 32 17556<br/>
 <a href="mailto:Christian.Thiehoff@ruhr-uni-bochum.de">E-Mail</a><br/>

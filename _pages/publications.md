@@ -9,6 +9,7 @@ sidebar:
 ---
 
 <br/>
+<<<<<<< HEAD
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Preprint">Preprints</a>
 
 ___
@@ -18,17 +19,18 @@ ___
 <p align="center"> 
 <a href="https://doi.org/10.26434/chemrxiv-2025-j11rd"><img src="https://AKEckhardt.github.io/images/pub58.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
-
 ___
 
 
 <br/>
+=======
+>>>>>>> parent of d91ec7d (Merge branch 'master' of https://github.com/AKEckhardt/AKEckhardt.github.io)
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
 
 ___
 
+<<<<<<< HEAD
 (57) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Am. Chem. Soc.</i>, <b>2025</b>, accepted, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
-
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.jpg" alt="Link" width="40%" height="auto%"/></a>
 </p>
@@ -52,12 +54,13 @@ ___
 ___
 
 (54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
+=======
+(54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
+>>>>>>> parent of d91ec7d (Merge branch 'master' of https://github.com/AKEckhardt/AKEckhardt.github.io)
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/pub54.gif" alt="Link" width="40%" height="auto%"/></a>
 </p>
-
-<b>Highlight:</b> • [Cover Feature](https://pubs.acs.org/toc/joceah/90/30)
 
 ___
 
