@@ -21,7 +21,7 @@ sidebar:
 Vladislava, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AdrianPortelaGonzalez/">Adrián</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnahitaSafiyan/">Anahita</a>,
-<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnnaMarjanovic/">Anna</a>,
+Anna,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/MikaMaehara/">Mika</a>, 
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a>. 
 </p>

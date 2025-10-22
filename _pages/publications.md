@@ -9,15 +9,53 @@ sidebar:
 ---
 
 <br/>
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Preprint">Preprints</a>
+
+___
+
+(58) <b>EPR Spectroscopy in <i>para</i>-Hydrogen Matrices.</b> A. Portela-González, W. Sander and <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemRxiv</i>, <b>2025</b>, [doi:10.26434/chemrxiv-2025-j11rd](https://doi.org/10.26434/chemrxiv-2025-j11rd). 
+
+<p align="center"> 
+<a href="https://doi.org/10.26434/chemrxiv-2025-j11rd"><img src="https://AKEckhardt.github.io/images/pub58.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+___
+
+
+<br/>
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
 
 ___
 
-(54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
+(57) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Am. Chem. Soc.</i>, <b>2025</b>, accepted, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(56) <b>Interstellar Formation of 1,2-Propanediol (CH<sub>3</sub>CH(OH)CH<sub>2</sub>OH) and 1,2-Ethenediol (HOCHCHOH) — Key Precursors to Sugars and Sugar Derivatives.</b> J. Wang, C. Zhang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC05315C](https://doi.org/10.1039/D5SC05315C). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5SC05315C"><img src="https://AKEckhardt.github.io/images/pub56.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(55) <b>Formation of hydrogen trioxide (HOOOH) in extraterrestrial ice analogs and its role as an oxidizer in prebiotic chemistry.</b> X. Bai, C. Li, Y. Luo, Q. Gong, J. Lu, J. Yang, Y. Pan, Z. Sun, <u>A. K. Eckhardt</u><sup>*</sup>, R. Sun, R. I. Kaiser and T. Yang <i>Sci. Adv.</i>, <b>2025</b>, <i>11</i>, eadw5720, [doi:10.1126/sciadv.adw5720](https://doi.org/10.1126/sciadv.adw5720). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1126/sciadv.adw5720"><img src="https://AKEckhardt.github.io/images/pub55.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(54) <b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, K. Wulff and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/pub54.gif" alt="Link" width="40%" height="auto%"/></a>
 </p>
+
+<b>Highlight:</b> • [Cover Feature](https://pubs.acs.org/toc/joceah/90/30)
 
 ___
 
