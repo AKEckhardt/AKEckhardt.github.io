@@ -64,7 +64,7 @@ docs:
         
   - title: Students
     children:
-       - title: "Dilara Korkut"
+      - title: "Dilara Korkut"
         url: /akegroup/DilaraKorkut/  
       - title: "Daniel Kühn"
         url: /akegroup/DanielKuehn/
