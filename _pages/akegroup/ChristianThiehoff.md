@@ -17,7 +17,7 @@ sidebar:
 <font size="4">
 <b>Christian Thiehoff</b><br/>
 Postdoc<br/>
-Room NC 3/132, Tel: +49 234 32 17556<br/>
+Room NC 3/172, Tel: +49 234 32 17556<br/>
 <a href="mailto:Christian.Thiehoff@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
 
