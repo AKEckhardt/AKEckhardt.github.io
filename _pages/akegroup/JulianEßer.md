@@ -32,7 +32,7 @@ MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 Julian studied chemistry at the Ruhr-University Bochum and received his B.Sc. in 2023 with 
 <a href="https://www.gessnerlab.ruhr-uni-bochum.de/">Prof. Dr. Däschlein-Gessner</a>. 
 During his Bachelor studies Julian worked on the synthesis and application of weakly coordinating carbanions. 
-In 2023 he continued his studies at the Ruhr-University Bochum and joined the Eckhardt-lab for his in-depth practical. He now decided to write his Master's Thesis within the Group. 
+In 2023 he continued his studies at the Ruhr-University Bochum and finished his Master Thesis within the Group in october 2025. In November 2025 he will start his PhD. 
 </p>
 
 
