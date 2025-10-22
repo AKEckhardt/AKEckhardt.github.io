@@ -15,7 +15,7 @@ sidebar:
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Mika_2024.jpg" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
-<b>Dr. Mika Maehara</b><br/>
+<b>Mika Maehara</b><br/>
 Postdoc<br/>
 Room NCBF 05/655, Tel: +49 234 32 27884<br/>
 <a href="mailto:Mika.Maehara@ruhr-uni-bochum.de">E-Mail</a><br/>
