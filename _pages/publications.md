@@ -28,7 +28,7 @@ ___
 
 (57) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Am. Chem. Soc.</i>, <b>2025</b>, accepted, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
 <p align="center"> 
-<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.gif" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 ___
@@ -36,7 +36,7 @@ ___
 (56) <b>Interstellar Formation of 1,2-Propanediol (CH<sub>3</sub>CH(OH)CH<sub>2</sub>OH) and 1,2-Ethenediol (HOCHCHOH) — Key Precursors to Sugars and Sugar Derivatives.</b> J. Wang, C. Zhang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC05315C](https://doi.org/10.1039/D5SC05315C). 
 
 <p align="center"> 
-<a href="https://doi.org/10.1039/D5SC05315C"><img src="https://AKEckhardt.github.io/images/pub56.jpg" alt="Link" width="40%" height="auto%"/></a>
+<a href="https://doi.org/10.1039/D5SC05315C"><img src="https://AKEckhardt.github.io/images/pub56.gif" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 ___
