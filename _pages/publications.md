@@ -33,7 +33,7 @@ ___
 
 ___
 
-(56) <b>Interstellar Formation of 1,2-Propanediol (CH<sub>3</sub>CH(OH)CH<sub>2</sub>OH) and 1,2-Ethenediol (HOCHCHOH) — Key Precursors to Sugars and Sugar Derivatives.</b> J. Wang, C. Zhang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2025</b>, <i>accepted</i>, [doi:10.1039/D5SC05315C](https://doi.org/10.1039/D5SC05315C). 
+(56) <b>Interstellar Formation of 1,2-Propanediol (CH<sub>3</sub>CH(OH)CH<sub>2</sub>OH) and 1,2-Ethenediol (HOCHCHOH) — Key Precursors to Sugars and Sugar Derivatives.</b> J. Wang, C. Zhang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2025</b>, <i>16</i>, 21111–21120 [doi:10.1039/D5SC05315C](https://doi.org/10.1039/D5SC05315C). 
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D5SC05315C"><img src="https://AKEckhardt.github.io/images/pub56.gif" alt="Link" width="40%" height="auto%"/></a>
