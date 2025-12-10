@@ -56,7 +56,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Julian and Kristin finished their Master's Thesis. Congratulations! Mika and Viktor attended the 20th European Symposium on Organic Reactivity (ESOR2025).</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-muenster.de/Chemie.oc/glorius/dream_reactions.html"><img src="https://AKEckhardt.github.io/images/news36.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news36.png" alt="Link" width="65%" height="auto%"/><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2025</b></font><br/><font size="1"><br/></font><font size="4">
