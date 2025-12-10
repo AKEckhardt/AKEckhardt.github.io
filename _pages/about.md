@@ -54,6 +54,11 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Adrián attended the 37th International Symposium on Free Radicals and presented his work about EPR spectroscopy in <i>para</i>-H<sub>2</sub>. Most Group members attended the Dream Reactions Symposium 2025 in Münster. Kristin presented her research on a poster.</td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-muenster.de/Chemie.oc/glorius/dream_reactions.html"><img src="https://AKEckhardt.github.io/images/news35.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2025</b></font><br/><font size="1"><br/></font><font size="4">
 The semester is over and we enjoyed an unforgettable kayak trip with our neighbor's from the Schulz lab, rounded off with a relaxed BBQ by the Ruhr river.</font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news34.JPG" alt="Link" width="65%" height="auto%"/><br/></td>
