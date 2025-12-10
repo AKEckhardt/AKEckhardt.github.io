@@ -65,7 +65,7 @@ After more than three years of development, our work on EPR spectroscopy in <i>p
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2025</b></font><br/><font size="1"><br/></font><font size="4">
-Our work on alanine imine was published in <a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><i>JACS</i></a> in colaboration with the <a href="https://crespootero.uk/">Crespo-Otero group</a>! Anoop started an in-depth practical, and Kristin began her PhD studies in a joint project with the <a href="https://www.uni-muenster.de/Chemie.ac/forschung/ak_szych/welcome/index.html">Szych group</a> in Münster – good luck!</font></td>
+Our work on alanine imine was published in <a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><i>JACS</i></a> in collaboration with the <a href="https://crespootero.uk/">Crespo-Otero group</a>! Anoop started an in-depth practical, and Kristin began her PhD studies in a joint project with the <a href="https://www.uni-muenster.de/Chemie.ac/forschung/ak_szych/welcome/index.html">Szych group</a> in Münster – good luck!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/news37.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
