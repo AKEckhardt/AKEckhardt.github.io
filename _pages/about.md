@@ -54,6 +54,11 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Our work on alanine imine was published in <a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><i>JACS</i></a> in colaboration with the <a href="https://crespootero.uk/">Crespo-Otero group</a>! Anoop started an in-depth practical, and Kristin began her PhD studies in a joint project with the <a href="https://www.uni-muenster.de/Chemie.ac/forschung/ak_szych/welcome/index.html">Szych group</a> in Münster – good luck!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/news37.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Julian and Kristin finished their Master's Thesis. Congratulations! Mika and Viktor attended the 20th European Symposium on Organic Reactivity (ESOR2025).</font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news36.png" alt="Link" width="65%" height="auto%"/><br/></td>
