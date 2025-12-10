@@ -55,7 +55,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2025</b></font><br/><font size="1"><br/></font><font size="4">
-André attended the 9th Annual Workshop of the <a href="https://www.astrobiologie.de/">German Astrobiological Society/a>, where he received the Best Presentation Award. We welcomed Jonas Haiduk to the group for an in-depth practical.</font></td>
+André attended the 9th Annual Workshop of the <a href="https://www.astrobiologie.de/">German Astrobiological Society</a>, where he received the Best Presentation Award. We welcomed Jonas Haiduk to the group for an in-depth practical.</font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news39.jpeg" alt="Link" width="65%" height="auto%"/><br/></td>
 </tr>
 <tr>
