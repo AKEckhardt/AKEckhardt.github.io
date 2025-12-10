@@ -54,6 +54,16 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2025</b></font><br/><font size="1"><br/></font><font size="4">
+André attended the 9th Annual Workshop of the <a href="https://www.astrobiologie.de/">German Astrobiological Society/a>, where he received the Best Presentation Award. We welcomed Jonas Haiduk to the group for an in-depth practical.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news39.jpeg" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2025</b></font><br/><font size="1"><br/></font><font size="4">
+After more than three years of development, our work on EPR spectroscopy was published in <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><i>ACIE</i></a>! Kristin was selected to present her Master’s thesis at the GDCh Division of Photochemistry. More group updates: Nathalie and Sharanki started their BSc theses, Theodor started an in-depth practical, Julian began his PhD studies, and Anita joined as a postdoc – good luck!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><img src="https://AKEckhardt.github.io/images/news38.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2025</b></font><br/><font size="1"><br/></font><font size="4">
 Our work on alanine imine was published in <a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><i>JACS</i></a> in colaboration with the <a href="https://crespootero.uk/">Crespo-Otero group</a>! Anoop started an in-depth practical, and Kristin began her PhD studies in a joint project with the <a href="https://www.uni-muenster.de/Chemie.ac/forschung/ak_szych/welcome/index.html">Szych group</a> in Münster – good luck!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/news37.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
