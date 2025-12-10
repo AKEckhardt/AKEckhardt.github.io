@@ -54,6 +54,11 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2025</b></font><br/><font size="1"><br/></font><font size="4">
+The semester is over and we enjoyed an unforgettable kayak trip with our neighbor's from the Schulz lab, rounded off with a relaxed BBQ by the Ruhr river.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news34.JPG" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2025</b></font><br/><font size="1"><br/></font><font size="4">
 We contributed to the <i>JOC</i> Special Issue: Physical Organic Chemistry: Never Out of Style. Our study about the <i>P-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study</i> is now <a href="https://doi.org/10.1021/acs.joc.5c00840"><i>accepted</i></a>! Julian and André attendend the <a href="https://www.grc.org/physical-organic-chemistry-conference/2025/">Physical Organic Chemistry Gordon Research Conference</a>.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/news33.gif" alt="Link" width="65%" height="auto%"/></a><br/></td>
