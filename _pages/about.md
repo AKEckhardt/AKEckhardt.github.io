@@ -60,7 +60,7 @@ André attended the 9th Annual Workshop of the <a href="https://www.astrobiologi
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2025</b></font><br/><font size="1"><br/></font><font size="4">
-After more than three years of development, our work on EPR spectroscopy in <i>para</i>-H<sub>2</sub> was published in <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><i>Angewandte</i></a>! Kristin was selected to present her Master’s thesis at the Master's thesis prize symposium of the GDCh Division of Photochemistry. More group updates: Nathalie and Sharanki started their BSc theses, Theodor started an in-depth practical, Julian began his PhD studies, and Anita joined as a postdoc – good luck!</font></td>
+After more than three years of development, our work on EPR spectroscopy in <i>para</i>-H<sub>2</sub> was published in <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><i>Angewandte</i></a>! Kristin was selected to present her Master’s thesis at the Master's thesis prize symposium of the GDCh Division of Photochemistry. More group updates: Nathalie and Sharanki started their BSc theses, Theodor started an in-depth practical, Julian began his PhD studies, and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnitaSchneiker/">Anita</a> joined as a postdoc – good luck!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><img src="https://AKEckhardt.github.io/images/news38.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
