@@ -44,7 +44,7 @@ wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für 
   <li>In einer kleinen Gruppe kommt es auf jedes Mitglied an und alle zählen mehr!</li>
 </ul>  <p style='text-align: justify;'>
 Wer als einer der ersten Vertiefungspraktikanten, Bachelor-, Master- oder Doktoranden frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
-Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen. Promotionsstellen sind ebenfalls vorhanden. <br/> <br/> 
+Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen.<br/> <br/> 
 
 <b>For all non-RUB members:</b><br/> 
 You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
