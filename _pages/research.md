@@ -20,7 +20,7 @@ reactions and through UV-driven photochemistry in icy grain mantles. Because imi
 more complex, biologically relevant compounds, understanding their formation, stability, and reactivity helps to constrain how prebiotic 
 reaction networks may have operated in space and how they could have contributed to the chemical inventory of the early Earth.
 </font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/sugar.jpg" width="71%" height="auto%" align="middle"></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news37.png" width="71%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327).
