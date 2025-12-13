@@ -65,6 +65,7 @@ effects provide an exceptionally weakly perturbing setting to probe intrinsic re
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * V. D. Drabkin and A. K. Eckhardt <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117).
+* V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327).
 * <i>more publications in preparation</i>
 <br/>
 <br/>
