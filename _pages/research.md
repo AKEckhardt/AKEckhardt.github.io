@@ -23,8 +23,8 @@ reaction networks may have operated in space and how they could have contributed
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/sugar.jpg" width="71%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
-* V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327).
-* V. Paczelt, V. D. Drabkin, D. Kühn and <u>A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B).
+* V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327).
+* V. Paczelt, V. D. Drabkin, D. Kühn and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B).
 * A. K. Eckhardt <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A).<br/>
 <br/>
 
