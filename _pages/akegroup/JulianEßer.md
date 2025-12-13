@@ -23,7 +23,11 @@ Room NC 3/132, Tel: +49 234 32 26715<br/>
 BSc (2019 - 2023, Ruhr-University Bochum, Germany)<br/>
 MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
-
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://orcid.org/0009-0003-6237-8543"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
 </font>
 </td>
 </tr></table>
@@ -32,7 +36,7 @@ MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 Julian studied chemistry at the Ruhr-University Bochum and received his B.Sc. in 2023 with 
 <a href="https://www.gessnerlab.ruhr-uni-bochum.de/">Prof. Dr. Däschlein-Gessner</a>. 
 During his Bachelor studies Julian worked on the synthesis and application of weakly coordinating carbanions. 
-In 2023 he continued his studies at the Ruhr-University Bochum and finished his Master Thesis within the Group in October 2025. In November 2025 he will start his PhD. 
+In 2023 he continued his studies at the Ruhr-University Bochum and finished his Master Thesis within the Group in October 2025. In November 2025 he started his PhD studies. 
 </p>
 
 
