@@ -1,0 +1,15 @@
+/* Social icons: LinkedIn + Instagram schwarz (Sidebar + Footer) */
+.social-icons .fa-linkedin,
+.social-icons .fa-linkedin-in,
+.social-icons .fa-instagram,
+.social-icons .fa-square-instagram {
+  color: #000 !important;
+}
+
+/* falls beim Hover wieder bunt wird */
+.social-icons a:hover .fa-linkedin,
+.social-icons a:hover .fa-linkedin-in,
+.social-icons a:hover .fa-instagram,
+.social-icons a:hover .fa-square-instagram {
+  color: #000 !important;
+}
