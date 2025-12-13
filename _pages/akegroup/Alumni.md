@@ -17,7 +17,7 @@ September 2022 - January 2025
 <br/>
 
 
-<b>Bachelor Students</b>
+<b>Bachelor's Thesis Candidates</b>
 
 <b>Dilara Korkut</b><br/>
 January - March 2025
@@ -26,6 +26,15 @@ January - March 2025
 
 
 <b>In-depth Students</b>
+
+<b>Teodor Leuca</b><br/>
+November - December 2025
+
+<b>Dilara Korkut</b><br/>
+August - September 2025
+
+<b>Ömer Tiska</b><br/>
+August - September 2025
 
 <b>Hadiseh Zahed</b><br/>
 June - August 2025
