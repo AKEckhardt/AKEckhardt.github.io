@@ -30,6 +30,25 @@ reaction networks may have operated in space and how they could have contributed
 <br/>
 
 
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
+
+<table>
+<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
+Reactive intermediates play a key role in virtually every chemical reaction. Understanding their stability and reactivity is essential for 
+elucidating reaction mechanisms and for the rational fine-tuning of chemical transformations. Typical highly reactive intermediates include 
+carbenes, radicals, and nitrenes, which can be trapped at cryogenic temperatures and investigated by matrix-isolation spectroscopy. In addition, 
+we study reactive species in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
+high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build amatrix isolation EPR spectroscopy experiment, which can 
+be used with <i>para</i>-H<sub>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
+</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news38.png" width="62%" height="auto%" align="middle"></td>
+</tr></table>
+<p style='text-align: justify;'>Selected publications:</p>
+* A. Portela-González, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517).
+* M. Saraswat, A. Portela-González, K. Wulff and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840).
+* V. D. Drabkin, V. Paczelt and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
+<br/>
+<br/>
 
 
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="POC">Chemical Reactivity and Physical (In)Organic Chemistry</a>
@@ -52,26 +71,6 @@ Quantum mechanical tunneling processes open new pathways to reaction products th
 <br/>
 <br/>
 
-
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
-
-<table>
-<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
-Reactive intermediates play a key role in virtually every chemical reaction. Understanding their stability and reactivity is essential for 
-elucidating reaction mechanisms and for the rational fine-tuning of chemical transformations. Typical highly reactive intermediates include 
-carbenes, radicals, and nitrenes, which can be trapped at cryogenic temperatures and investigated by matrix-isolation spectroscopy. In addition, 
-we study reactive species in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
-high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build amatrix isolation EPR spectroscopy experiment, which can 
-be used with <i>para</i>-H<sub>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
-</font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news38.png" width="62%" height="auto%" align="middle"></td>
-</tr></table>
-<p style='text-align: justify;'>Selected publications:</p>
-* A. Portela-González, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517).
-* M. Saraswat, A. Portela-González, K. Wulff and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840).
-* V. D. Drabkin, V. Paczelt and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
-<br/>
-<br/>
 
 
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="31P">Phosphorus Chemistry</a>
