@@ -48,6 +48,7 @@ be used with <i>para</sub>-H<i>2</sub> matrices, complementing optical and vibra
 <p style='text-align: justify;'>Selected publications:</p>
 * A. Portela-González, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517).
 * M. Saraswat, A. Portela-González, K. Wulff and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840).
+* V. D. Drabkin, V. Paczelt and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
 <br/>
 <br/>
 
