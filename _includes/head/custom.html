@@ -36,4 +36,41 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
+
+
+
+
+<style>
+/* LinkedIn + Instagram Icons immer schwarz (Sidebar + Footer) */
+.social-icons a[href*="linkedin.com"] i,
+.social-icons a[href*="instagram.com"] i {
+  color: #000 !important;
+}
+
+/* falls der Theme-Hover sie wieder einfärbt */
+.social-icons a[href*="linkedin.com"]:hover i,
+.social-icons a[href*="instagram.com"]:hover i,
+.social-icons a[href*="linkedin.com"]:focus i,
+.social-icons a[href*="instagram.com"]:focus i {
+  color: #000 !important;
+}
+
+/* falls Instagram per "Gradient-Text" eingefärbt wird (selten, aber nervig) */
+.social-icons a[href*="instagram.com"] i {
+  background: none !important;
+  -webkit-text-fill-color: #000 !important;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- end custom head snippets -->
