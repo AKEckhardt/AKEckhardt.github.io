@@ -24,7 +24,11 @@ BSc: 2015-2018, Eötvös Loránd University (ELTE), Budapest, Hungary<br/>
 MSc: 2018-2020, Eötvös Loránd University (ELTE), Budapest, Hungary<br/>
 PhD: 2020-2025, Hevesy György PhD School of Chemistry, Eötvös Loránd University (ELTE), Budapest, Hungary<br/>
 <br/>
-
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://orcid.org/0000-0002-8399-1529"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
 </font>
 </td>
 </tr></table>
