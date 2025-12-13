@@ -38,7 +38,7 @@ Reactive intermediates play a key role in virtually every chemical reaction. Und
 elucidating reaction mechanisms and for the rational fine-tuning of chemical transformations. Typical highly reactive intermediates include 
 carbenes, radicals, and nitrenes, which can be trapped at cryogenic temperatures and investigated by matrix-isolation spectroscopy. In addition, 
 we study reactive species in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
-high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build amatrix isolation EPR spectroscopy experiment, which can 
+high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build a unique matrix isolation EPR spectroscopy experiment, which can 
 be used with <i>para</i>-H<sub>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
 </font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news38.png" width="62%" height="auto%" align="middle"></td>
@@ -55,19 +55,16 @@ be used with <i>para</i>-H<sub>2</sub> matrices, complementing optical and vibra
 
 <table>
 <tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
-For the understanding of chemical reactivity it is necessary to combine and compare experimental and theoretical results. Nowadays, high-level computations on small molecules are very reliable and go most
-of the time hand in hand with experimental physical organic measurements. 
-At low temperatures quantum mechanical tunneling dominates chemical reactivity of light particles and even governs chemical selectivity. 
-This phenomena is known as tunneling control of a chemical reaction, a third reactivity principle besides the established concept of thermodynamic and kinetic control.
-Quantum mechanical tunneling processes open new pathways to reaction products that cannot be formed in a classic way.
+For a comprehensive understanding of chemical reactivity, experimental observations must be combined with and benchmarked against theory. 
+Today, high-level computations for small molecules are highly reliable and often go hand in hand with experimental physical-organic measurements. 
+At cryogenic temperatures, quantum-mechanical tunneling can dominate the reactivity of light particles and may even determine chemical selectivity. 
+We investigate such effects not only in conventional low-temperature environments, but in particular in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation 
+effects provide an exceptionally weakly perturbing setting to probe intrinsic reaction dynamics.
 </font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Tunneling.png" width="62%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
-* <u>A. K. Eckhardt</u>, D. Gerbig and P. R. Schreiner <i>J. Phys. Chem. A</i>, <b>2018</b>, <i>122</i>, 1488–1495, [doi:10.1021/acs.jpca.7b12118](https://doi.org/10.1021/acs.jpca.7b12118). 
-* <u>A. K. Eckhardt</u>, F. R. Erb and P. R. Schreiner <i>Chem. Sci.</i>, <b>2019</b>, <i>10</i>, 802–810, [doi:10.1039/C8SC03720E](https://doi.org/10.1039/C8SC03720E). 
-* C. M. Nunes, <u>A. K. Eckhardt</u>, I. Reva, R. Fausto and P. R. Schreiner <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 14340–14348, [doi:10.1021/jacs.9b06869](https://doi.org/10.1021/jacs.9b06869). 
-* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>Inorg. Chem.</i>, <b>2022</b>, <i>61</i>, 1270–1274, [doi:10.1021/acs.inorgchem.1c03753](https://doi.org/10.1021/acs.inorgchem.1c03753). 
+* V. D. Drabkin and A. K. Eckhardt <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117).
 <br/>
 <br/>
 
