@@ -44,6 +44,21 @@ Publications
 ------
 ___
 
+(04) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, <u>V. Paczelt</u>, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(03) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> <u>V. Paczelt</u>, V. D. Drabkin, D. Kühn and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5SC02777B"><img src="https://AKEckhardt.github.io/images/pub53.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (02) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde.</b> V. D. Drabkin, <u>V. Paczelt</u> and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
 
 

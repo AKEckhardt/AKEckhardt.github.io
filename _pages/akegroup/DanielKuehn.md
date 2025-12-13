@@ -23,7 +23,11 @@ Room NC 3/132, Tel: +49 234 32 26715<br/>
 BSc (2019 - 2022, Westfälische Hochschule Recklinghausen, Germany)<br/>
 MSc (2023 - present, Ruhr-University Bochum, Germany)<br/>
 <br/>
-
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://orcid.org/0009-0009-9800-3982"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
 </font>
 </td>
 </tr></table>
@@ -36,6 +40,17 @@ During his bachelor thesis he worked on the investigation of nanoparticles to bi
 
 
 
+Publications
+------
+___
+
+(01) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, <u>D. Kühn</u> and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5SC02777B"><img src="https://AKEckhardt.github.io/images/pub53.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
 
 
 

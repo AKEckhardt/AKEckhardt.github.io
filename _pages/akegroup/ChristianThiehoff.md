@@ -20,7 +20,11 @@ Postdoc<br/>
 Room NC 3/172, Tel: +49 234 32 17556<br/>
 <a href="mailto:Christian.Thiehoff@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
-
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://orcid.org/0009-0009-4213-7041"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
 <br/>
 
 </font>
@@ -37,6 +41,16 @@ he worked as research scientist in the pharmaceutical and recycling industries.
 
 
 
+Publications
+------
+___
+
+(01) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, <u>C. Thiehoff</u>, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
 
 
 
