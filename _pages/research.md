@@ -25,8 +25,33 @@ reaction networks may have operated in space and how they could have contributed
 <p style='text-align: justify;'>Selected publications:</p>
 * V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327).
 * V. Paczelt, V. D. Drabkin, D. Kühn and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B).
-* A. K. Eckhardt <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A).<br/>
+* A. K. Eckhardt <i>Chem. Commun.</i>, <b>2022</b>, <i>58</i>, 8484–8487, [doi:10.1039/D2CC03065A](https://doi.org/10.1039/D2CC03065A).
 <br/>
+<br/>
+
+
+
+
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
+
+<table>
+<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
+Reactive intermediates play a key role in virtually every chemical reaction. Understanding their stability and reactivity is essential for 
+elucidating reaction mechanisms and for the rational fine-tuning of chemical transformations. Typical highly reactive intermediates include 
+carbenes, radicals, and nitrenes, which can be trapped at cryogenic temperatures and investigated by matrix-isolation spectroscopy. In addition, 
+we study reactive species in <i>para</sub>-H<i>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
+high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build amatrix isolation EPR spectroscopy experiment, which can 
+be used with <i>para</sub>-H<i>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
+</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/new38.png" width="62%" height="auto%" align="middle"></td>
+</tr></table>
+<p style='text-align: justify;'>Selected publications:</p>
+* A. Portela-González, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517).
+* M. Saraswat, A. Portela-González, K. Wulff and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840).
+<br/>
+<br/>
+
+
 
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="POC">Chemical Reactivity and Physical (In)Organic Chemistry</a>
 
@@ -48,22 +73,6 @@ Quantum mechanical tunneling processes open new pathways to reaction products th
 <br/>
 <br/>
 
-
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="Matrix">Reactive Intermediates and Matrix Isolation Spectroscopy</a>
-
-<table>
-<tr><td style="width:70%;" align="justify" valign="middle"><font size="4">
-Reactive intermediates play a key role in most of every chemical reaction. It is necessary to study the stability and reactivity of these intermediates towards the understanding of chemical reaction mechanisms and fine tuning of chemical reactions.
-Typical highly reactive intermediates include carbenes, radicals and nitrenes that can be trapped at cryogenic temperatures and studied by matrix isolation spectroscopy.
-</font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/HCNH2.png" width="62%" height="auto%" align="middle"></td>
-</tr></table>
-<p style='text-align: justify;'>Selected publications:</p>
-* <u>A. K. Eckhardt</u> and P. R. Schreiner <i>Angew. Chem Int. Ed.</i>, <b>2018</b>, <i>57</i>, 5248–5252, [doi:10.1002/anie.201800679](https://doi.org/10.1002/anie.201800679).
-* Z. Wu, C. Chen, J. Liu, Y. Lu, J. Xu, X. Liu, G. Cui, T. Trabelsi, J. S. Francisco, A. Mardyukov, <u>A. K. Eckhardt</u>, P. R. Schreiner and X. Zeng <i>J. Am. Chem. Soc.</i>, <b>2019</b>, <i>141</i>, 3361–3365, [doi:10.1021/jacs.8b12746](https://doi.org/10.1021/jacs.8b12746). 
-* N. F. Kleimeier, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 14009–14018, [doi:10.1021/jacs.1c07978](https://doi.org/10.1021/jacs.1c07978). (<sup>*</sup> = corresponding author) 
-<br/>
-<br/>
 
 
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="31P">Phosphorus Chemistry</a>
