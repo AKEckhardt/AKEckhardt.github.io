@@ -61,7 +61,7 @@ At cryogenic temperatures, quantum-mechanical tunneling can dominate the reactiv
 We investigate such effects not only in conventional low-temperature environments, but in particular in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation 
 effects provide an exceptionally weakly perturbing setting to probe intrinsic reaction dynamics.
 </font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Tunneling.png" width="62%" height="auto%" align="middle"></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/pub51.jpg" width="62%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * V. D. Drabkin and A. K. Eckhardt <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117).
