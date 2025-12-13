@@ -60,11 +60,11 @@ Quantum mechanical tunneling processes open new pathways to reaction products th
 Reactive intermediates play a key role in virtually every chemical reaction. Understanding their stability and reactivity is essential for 
 elucidating reaction mechanisms and for the rational fine-tuning of chemical transformations. Typical highly reactive intermediates include 
 carbenes, radicals, and nitrenes, which can be trapped at cryogenic temperatures and investigated by matrix-isolation spectroscopy. In addition, 
-we study reactive species in <i>para</sub>-H<i>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
+we study reactive species in <i>para</i>-H<sub>2</sub> matrices, where quantum solvation effects provide a uniquely gentle, weakly perturbing environment that enable 
 high-resolution spectroscopy. To access electronic structure and spin dynamics directly, we developed and build amatrix isolation EPR spectroscopy experiment, which can 
-be used with <i>para</sub>-H<i>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
+be used with <i>para</i>-H<sub>2</sub> matrices, complementing optical and vibrational methods and allowing a detailed characterization of paramagnetic intermediates under well-defined cryogenic conditions.
 </font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/new38.png" width="62%" height="auto%" align="middle"></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news38.png" width="62%" height="auto%" align="middle"></td>
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * A. Portela-González, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517).
