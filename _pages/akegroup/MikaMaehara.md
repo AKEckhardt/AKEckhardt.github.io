@@ -22,7 +22,11 @@ Room NCBF 05/655, Tel: +49 234 32 27884<br/>
 <br/>
 BSc, MSc, Dr. rer. nat. (Ruhr-University Bochum, Germany)<br/>
 <br/>
-
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://orcid.org/0000-0003-4946-8205"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
 </font>
 </td>
 </tr></table>
