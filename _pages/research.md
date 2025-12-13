@@ -65,6 +65,7 @@ effects provide an exceptionally weakly perturbing setting to probe intrinsic re
 </tr></table>
 <p style='text-align: justify;'>Selected publications:</p>
 * V. D. Drabkin and A. K. Eckhardt <i>J. Phys. Chem. Lett.</i>, <b>2025</b>, <i>16</i>, 9, 2223–2230, [doi:10.1021/acs.jpclett.5c00117](https://doi.org/10.1021/acs.jpclett.5c00117).
+* <i>more publications in preparation</i>
 <br/>
 <br/>
 
@@ -75,17 +76,18 @@ effects provide an exceptionally weakly perturbing setting to probe intrinsic re
 <p style='text-align: justify;'> 
 <style>table, th, td {border: transparent;}</style>
 <table><tr><td style="width:70%;" align="justify" valign="middle">
-<font size="4">Elemental phosphorus mainly exists in two forms, white and red phosphorus, but is never found as a free element on Earth because of its high reactivity. 
-However, phosphorus is an element essential to sustaining life largely through phosphates (PO<sub>4</sub><sup>3−</sup>). 
-Phosphates are a component of DNA, RNA, ATP, and phospholipids. <br/>
-Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy as well as in single-crystal X-ray diffraction experiments. 
-As phosphorus bearing molecules like, e.g. PN, have already been detected in space but do not exist under standard laboratory conditions here on Earth, we are interested in the synthesis of simple phosphorus bearing molecules of interstellar interest as well as their spectroscopic analysis and chemical reactivity.
+<font size="4">
+Elemental phosphorus mainly exists in two allotropes, white and red phosphorus, and is not found as a free element on Earth 
+because of its high reactivity. Yet phosphorus is essential for life, largely through phosphates (PO<sub>4</sub><sup>3−</sup>), 
+which are key components of DNA, RNA, ATP, and phospholipids. <br/>
+Air and moisture sensitive phosphorus species can be prepared under inert nitrogen or argon atmospheres using Schlenk techniques 
+or directly inside a glovebox and analyzed by <sup>31</sup>P NMR spectroscopy as well as in single-crystal X-ray diffraction experiments. 
+Motivated by the fact that phosphorus-bearing molecules (e.g., PN or PO) have been detected in space while often being inaccessible or unstable 
+under standard laboratory conditions on Earth, we target the synthesis of simple phosphorus-containing molecules of astrochemical relevance, 
+and we investigate their spectroscopic signatures and reactivity as model systems for phosphorus chemistry in cold interstellar environments.
 </font></td>
-	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/PN.jpg" width="65%" height="auto%" align="middle"></td>
+	<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/31P.png" width="65%" height="auto%" align="middle"></td>
 </tr></table>
 Selected publications:</p>
-* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, M. Ye, P. Müller, G. Bistoni and C. C. Cummins <i>Nat. Chem.</i>, <b>2022</b>, [doi:10.1038/s41557-022-00958-5](https://doi.org/10.1038/s41557-022-00958-5). [(ChemRxiv)](https://doi.org/10.33774/chemrxiv-2021-zxtmf)
-* <u>A. K. Eckhardt</u>, M.-L. Y. Riu, P. Müller and C. C. Cummins <i>J. Am. Chem. Soc.</i>, <b>2021</b>, <i>143</i>, 21252–21257, [doi:10.1021/jacs.1c11426](https://doi.org/10.1021/jacs.1c11426).  [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2021-xz4qh)
-* C. Zhu,<sup>‡</sup> <u>A. K. Eckhardt</u>,<sup>‡</sup> A. Bergantini, S. K. Singh, P. R. Schreiner and R. I. Kaiser <i>Sci. Adv.</i>, <b>2020</b>, <i>6</i>, eaba6934, [doi:10.1126/sciadv.aba6934](https://doi.org/10.1126/sciadv.aba6934). (<sup>‡</sup> = contributed equally)
-* C. Zhu, <u>A. K. Eckhardt</u>,<sup>*</sup> S. Chandra, A. M. Turner, P. R. Schreiner and R. I. Kaiser <i>Nat. Commun.</i>, <b>2021</b>, <i>12</i>, 5467, [doi:10.1038/s41467-021-25775-1](https://doi.org/10.1038/s41467-021-25775-1). (<sup>*</sup> = corresponding author)
-
+* M. Saraswat, A. Portela-González, K. Wulff and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840).
+* <i>more publications in preparation</i>
