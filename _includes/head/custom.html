@@ -41,11 +41,17 @@
 
 
 <style>
-/* LinkedIn + Instagram Icons immer schwarz (Sidebar + Footer) */
-.social-icons a[href*="linkedin.com"] i,
-.social-icons a[href*="instagram.com"] i {
+/* Sidebar: LinkedIn schwarz */
+.sidebar .social-icons a[href*="linkedin.com"] i,
+.author__urls .social-icons a[href*="linkedin.com"] i {
   color: #000 !important;
 }
+
+/* Footer: LinkedIn wie der Rest (grau) */
+.page__footer .social-icons a[href*="linkedin.com"] i {
+  color: currentColor !important;
+}
+
 
 /* falls der Theme-Hover sie wieder einfärbt */
 .social-icons a[href*="linkedin.com"]:hover i,
