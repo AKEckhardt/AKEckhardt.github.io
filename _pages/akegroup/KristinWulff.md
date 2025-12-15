@@ -16,7 +16,7 @@ sidebar:
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
 <b>Kristin Wulff</b><br/>
-MSc student<br/>
+PhD student<br/>
 Room NC 3/172, Tel: +49 234 32 17556<br/>
 <a href="mailto:Kristin.Wulff@ruhr-uni-bochum.de">E-Mail</a><br/>
 <br/>
