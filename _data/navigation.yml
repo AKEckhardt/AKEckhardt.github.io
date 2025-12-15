@@ -55,14 +55,15 @@ docs:
     children:
 #      - title: "Vladimir D. Drabkin"
 #        url: /akegroup/VladimirDrabkin/
+      - title: "Julian Eßer"
+        url: /akegroup/JulianEßer/ 
       - title: "Viktor Paczelt"
         url: /akegroup/ViktorPaczelt/
       - title: "Anahita Safiyan"
         url: /akegroup/AnahitaSafiyan/
       - title: "Kristin Wulff"
         url: /akegroup/KristinWulff/  
-      - title: "Julian Eßer"
-        url: /akegroup/JulianEßer/  
+
         
   - title: Students
     children:
