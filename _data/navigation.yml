@@ -66,6 +66,8 @@ docs:
         
   - title: Students
     children:
+      - title: "Tamari Kiknadze"
+        url: /akegroup/TamariKiknadze/        
       - title: "Dilara Korkut"
         url: /akegroup/DilaraKorkut/  
       - title: "Daniel Kühn"
