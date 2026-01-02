@@ -20,6 +20,7 @@ ___
 </p>
 
 <b>Highlight:</b> • [Cover Feature](https://onlinelibrary.wiley.com/doi/10.1002/anie.2025-m2412011500) ([German Version](https://onlinelibrary.wiley.com/doi/10.1002/ange.2025-m2412011500))
+
 ___
 
 (57) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
