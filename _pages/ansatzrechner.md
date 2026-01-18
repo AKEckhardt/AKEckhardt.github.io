@@ -16,8 +16,8 @@ classes: wide
 .ansatzrechner-wrap{
   width: 94vw;
   max-width: 94vw;
-  margin-left: calc(50% - 48vw);
-  margin-right: calc(50% - 46vw);
+  margin-left: calc(50% - 46vw);
+  margin-right: calc(50% - 48vw);
 }
 
 /* 3) Iframe sauber block-level, damit keine komischen Inline-Abstände entstehen */
