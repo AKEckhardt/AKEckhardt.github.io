@@ -9,6 +9,19 @@ sidebar:
 ---
 
 <br/>
+
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2026">2026</a>
+
+___
+
+(59) <b>Abiotic Formation of Nitrile Precursors to Amino Acids and Nucleobases in Interstellar Ice Analogues.</b> J. Wang, S. Inada, C. Zhang, J. H. Marks, Z. Wang, A. Bergantini, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, accepted, [doi:10.1039/D5SC08569A](https://doi.org/10.1039/D5SC08569A).
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5SC08569A"><img src="https://AKEckhardt.github.io/images/pub59.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 <a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
 
 ___

@@ -46,6 +46,11 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2026</b></font><br/><font size="1"><br/></font><font size="4">
+With the help of ChatGPT we launched the first version of our <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/ansatzrechner/">reaction planner (Ansatzrechner)</a>, which connects the PubChem database with some basic math tools for reaction setup calculations, which are (still) often done in spreadsheets or on paper by hand with a calculator. It is still a bit buggy but might be useful for students and some research groups. </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/ansatzrechner/"><img src="https://AKEckhardt.github.io/images/news41.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2025</b></font><br/><font size="1"><br/></font><font size="4">
 André attended the 9th Annual Workshop of the <a href="https://www.astrobiologie.de/">German Astrobiological Society</a>, where he received the Best Presentation Award. We welcomed Jonas Haiduk to the group for an in-depth practical. Sharanki und Nathalie finished their Bachelor's Thesis. Congratulations! </font></td>
 <td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news40.jpeg" alt="Link" width="65%" height="auto%"/><br/></td>

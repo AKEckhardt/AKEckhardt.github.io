@@ -5653,7 +5653,7 @@ function refreshRoleChoices_(preselectKey){
     inp.addEventListener('click', ()=>{
       inputs.forEach(o=>{ o.checked = false; });
       inp.checked = true;
-      closeRoleModal_(inp.value);
+      // selection only (confirm with OK)
     });
   });
 }
@@ -5703,6 +5703,35 @@ function addReagentWithRole(item){
     addReagent(item, roleKey || '');
   });
 }
+
+
+// init role modal buttons (Close / Cancel / OK)
+(function initRoleModalButtons_(){
+  const ov = document.getElementById('roleModalOverlay');
+  const btnClose = document.getElementById('btnRoleClose');
+  const btnCancel = document.getElementById('btnRoleCancel');
+  const btnOk = document.getElementById('btnRoleOk');
+
+  const cancel = ()=>{ try { closeRoleModal_(null); } catch(_){} };
+
+  if (btnClose) btnClose.addEventListener('click', cancel);
+  if (btnCancel) btnCancel.addEventListener('click', cancel);
+
+  if (btnOk) btnOk.addEventListener('click', ()=>{
+    // empty selection is allowed (role "none")
+    let v = null;
+    try { v = getRoleChoice_(); } catch(_) {}
+    closeRoleModal_((v===null) ? '' : v);
+  });
+
+  if (ov) ov.addEventListener('click', (ev)=>{ if (ev.target === ov) cancel(); });
+
+  document.addEventListener('keydown', (ev)=>{
+    if (ev.key !== 'Escape') return;
+    const o = document.getElementById('roleModalOverlay');
+    if (o && o.classList.contains('open')) cancel();
+  });
+})();
 
 
 // ======= GESTIS CAS→URL mapping (static) =======
@@ -19458,6 +19487,8 @@ if (btnClose) btnClose.addEventListener('click', closeSignupModal_);
       const exMap = mapPictos(ex.pictos);
       const curSignal = normSignal(r.signalWord||'');
       const exSignal  = normSignal(ex.signal||'');
+      const curSignalDisp = (typeof signalWordForLang === 'function') ? signalWordForLang(curSignal) : curSignal;
+      const exSignalDisp  = (typeof signalWordForLang === 'function') ? signalWordForLang(exSignal) : exSignal;
       const sigOk = (curSignal === exSignal);
       if (!sigOk) { allOk = false; errorCount++; }
 
@@ -19465,7 +19496,7 @@ if (btnClose) btnClose.addEventListener('click', closeSignupModal_);
       html += '<td>'+(i+1)+'</td>';
       html += '<td style="text-align:left">'+String(r.name||'')+'</td>';
       html += '<td><span class="cmp-badge">'+ex.source+'</span></td>';
-      html += '<td class="'+(sigOk?'cmp-ok':'cmp-bad')+'">'+(curSignal||'–')+' → '+(exSignal||'–')+'</td>';
+      html += '<td class="'+(sigOk?'cmp-ok':'cmp-bad')+'">'+(curSignalDisp||'–')+' → '+(exSignalDisp||'–')+'</td>';
 
       try{
         (PICTO_KEYS||[]).forEach(k=>{
