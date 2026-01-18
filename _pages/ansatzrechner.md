@@ -4,39 +4,35 @@ permalink: /ansatzrechner/
 layout: single
 author_profile: false
 sidebar: false
+classes: wide
 ---
 
 <style>
-/* Jekyll-Titel ausblenden */
-.page__title, h1.page__title { display: none !important; }
+/* 1) Jekyll/Theme-Überschrift (page title) auf dieser Seite ausblenden */
+.page__title { display: none !important; }
 
-/* Theme-Container auf dieser Seite „entklemmen“ */
-.page,
-.page__inner-wrap,
-.initial-content,
-.page__content {
-  max-width: none !important;
-  width: 100% !important;
+/* 2) Iframe-Container: 90% der Viewportbreite (= 5% Rand links/rechts),
+      zentriert und unabhängig vom Theme-Container */
+.ansatzrechner-wrap{
+  width: 94vw;
+  max-width: 94vw;
+  margin-left: calc(50% - 48vw);
+  margin-right: calc(50% - 46vw);
 }
 
-/* 5% Rand links/rechts */
-.page__content {
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
-}
-
-/* Iframe */
-.ansatz-iframe{
-  display:block;
-  width:100%;
-  height: calc(100vh - 180px);
-  border:0;
-  border-radius:12px;
+/* 3) Iframe sauber block-level, damit keine komischen Inline-Abstände entstehen */
+.ansatzrechner-wrap iframe{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
 }
 </style>
 
-<iframe
-  class="ansatz-iframe"
-  src="{{ '/assets/ansatzrechner/index.html' | relative_url }}"
-  loading="lazy"
-></iframe>
+<div class="ansatzrechner-wrap">
+  <iframe
+    src="{{ '/assets/ansatzrechner/index.html' | relative_url }}"
+    style="height: calc(100vh - 180px);"
+    loading="lazy"
+  ></iframe>
+</div>
