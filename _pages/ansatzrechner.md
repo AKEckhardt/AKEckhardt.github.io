@@ -28,10 +28,28 @@ classes: wide
   border-radius: 12px;
 }
 
-/* Hintergrundfarbe der ganzen Seite (außer evtl. Theme-Header) */
-.initial-content { background: #f7f7f8 !important; }
-body { background: #fff !important; } /* optional */
+/* Header/Nav explizit weiß lassen */
+body { background: #fff !important; }
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav a,
+.greedy-nav__toggle,
+.masthead__menu {
+  background: #fff !important;
+}
 
+/* NUR der Inhaltsbereich (unter dem Header) soll grau sein */
+.initial-content {
+  background: #f7f7f8 !important;
+}
+
+/* Die inneren Boxen sollen transparent sein, damit das Grau durchscheint */
+.page,
+.page__inner-wrap,
+.page__content,
+.archive {
+  background: transparent !important;
 }
 
 
