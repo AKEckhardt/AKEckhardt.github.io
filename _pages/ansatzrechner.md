@@ -28,8 +28,10 @@ classes: wide
   border-radius: 12px;
 }
 
-/* Header/Nav explizit weiß lassen */
-body { background: #fff !important; }
+/* 1) „Untergrund“ der Seite grau */
+body { background: #f7f7f8 !important; }
+
+/* 2) Header/Nav bleibt weiß */
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav,
@@ -39,17 +41,27 @@ body { background: #fff !important; }
   background: #fff !important;
 }
 
-/* NUR der Inhaltsbereich (unter dem Header) soll grau sein */
-.initial-content {
-  background: #f7f7f8 !important;
-}
-
-/* Die inneren Boxen sollen transparent sein, damit das Grau durchscheint */
+/* 3) Content-Wrapper transparent, damit das Grau durchkommt */
+.initial-content,
+#main,
 .page,
 .page__inner-wrap,
 .page__content,
-.archive {
+.archive,
+.layout--single {
   background: transparent !important;
+}
+
+/* 4) 5% Rand links/rechts im Content */
+.page__content{
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+
+/* Optional: Footer wieder weiß */
+.page__footer,
+.page__footer footer {
+  background: #fff !important;
 }
 
 
