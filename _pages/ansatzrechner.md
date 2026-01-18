@@ -8,22 +8,31 @@ classes: wide
 ---
 
 <style>
-/* Full-bleed: bricht aus der Theme-Contentbreite aus */
-.full-bleed {
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+/* 1) Jekyll/Theme-Überschrift (page title) auf dieser Seite ausblenden */
+.page__title { display: none !important; }
+
+/* 2) Iframe-Container: 90% der Viewportbreite (= 5% Rand links/rechts),
+      zentriert und unabhängig vom Theme-Container */
+.ansatzrechner-wrap{
+  width: 90vw;
+  max-width: 90vw;
+  margin-left: calc(50% - 45vw);
+  margin-right: calc(50% - 45vw);
 }
 
-/* Optional: verhindert horizontales Scrollen durch 100vw/Scrollbar */
-html, body { overflow-x: clip; }
+/* 3) Iframe sauber block-level, damit keine komischen Inline-Abstände entstehen */
+.ansatzrechner-wrap iframe{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+}
 </style>
 
-<div class="full-bleed">
+<div class="ansatzrechner-wrap">
   <iframe
     src="{{ '/assets/ansatzrechner/index.html' | relative_url }}"
-    style="width:100%; height: calc(100vh - 180px); border:0; border-radius: 12px;"
+    style="height: calc(100vh - 180px);"
     loading="lazy"
   ></iframe>
 </div>
