@@ -29,22 +29,9 @@ classes: wide
 }
 
 /* Hintergrundfarbe der ganzen Seite (außer evtl. Theme-Header) */
-body { background: #f7f7f8 !important; }
+.initial-content { background: #f7f7f8 !important; }
+body { background: #fff !important; } /* optional */
 
-/* Minimal Mistakes / typische Wrapper: sorgt dafür, dass wirklich alles grau ist */
-.page,
-.initial-content,
-.page__inner-wrap,
-.page__content,
-.archive {
-  background: transparent !important;
-}
-
-/* Optional: falls der Theme-Header/Nav noch weiß ist und du ihn auch grau willst */
-.masthead,
-.greedy-nav,
-.masthead__inner-wrap {
-  background: #f7f7f8 !important;
 }
 
 
