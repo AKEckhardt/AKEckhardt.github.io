@@ -15,6 +15,9 @@ main:
   - title: "Publications"
     url: /publications/
     
+  - title: "Ansatzrechner"
+    url: /ansatzrechner/ 
+
 #  - title: "Talks"
 #    url: /talks/    
 
@@ -90,6 +93,8 @@ docs:
 pubs:
   - title: Publications     
     url: /publications/
+  - title: "2026"
+    url: /publications/#2026
   - title: "2025"
     url: /publications/#2025
   - title: "2024"
