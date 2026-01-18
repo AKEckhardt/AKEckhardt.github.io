@@ -107,5 +107,8 @@ redirect_from:
 
   <h3>10. Aktualität dieser Datenschutzerklärung</h3>
   <p>Wir passen diese Datenschutzerklärung an, wenn sich die Datenverarbeitung ändert oder rechtliche Anforderungen dies notwendig machen.</p>
+<br>
+<br>
+
 
 </main>
