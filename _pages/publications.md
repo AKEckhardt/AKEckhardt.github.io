@@ -14,7 +14,8 @@ sidebar:
 
 ___
 
-(60) <b>Ambident Reactivity in the Phenyl + NO Radical Recombination.</b> V. Bhagat, A. Portela-González, <u>A. K. Eckhardt</u><sup>*</sup> and J. P. Wagner <i>Chem. Eur. J.</i>, <b>2026</b>, accepted, [doi:10.1002/chem.202503332](https://doi.org/10.1002/chem.202503332).
+(60) <b>Ambident Reactivity in the Phenyl + NO Radical Recombination.</b> V. Bhagat, A. Portela-González, <u>A. K. Eckhardt</u><sup>*</sup> and J. P. Wagner <i>Chem. Eur. J.</i>, <b>2026</b>,  
+0:e03332, [doi:10.1002/chem.202503332](https://doi.org/10.1002/chem.202503332).
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/chem.202503332"><img src="https://AKEckhardt.github.io/images/pub60.jpg" alt="Link" width="40%" height="auto%"/></a>
