@@ -14,6 +14,14 @@ sidebar:
 
 ___
 
+(60) <b>Ambident Reactivity in the Phenyl + NO Radical Recombination.</b> V. Bhagat, A. Portela-González, <u>A. K. Eckhardt</u><sup>*</sup> and J. P. Wagner <i>Chem. Eur. J.</i>, <b>2026</b>, accepted, [doi:10.1002/chem.202503332](https://doi.org/10.1002/chem.202503332).
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/chem.202503332"><img src="https://AKEckhardt.github.io/images/pub60.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (59) <b>Abiotic Formation of Nitrile Precursors to Amino Acids and Nucleobases in Interstellar Ice Analogues.</b> J. Wang, S. Inada, C. Zhang, J. H. Marks, Z. Wang, A. Bergantini, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, accepted, [doi:10.1039/D5SC08569A](https://doi.org/10.1039/D5SC08569A).
 
 <p align="center"> 
