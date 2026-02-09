@@ -38,17 +38,17 @@ ___
 
 ___
 
-<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
-
-___
-
-(58) <b>Enhanced Resolution in EPR Spectroscopy Using <i>para</i>-Hydrogen Matrices.</b> A. Portela-González, W. Sander and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517); <i>Angew. Chem.</i>, <b>2025</b>, <i>65</i>, e18517, [doi:10.1002/ange.202518517](https://doi.org/10.1002/ange.202518517). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-j11rd) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCX9DTIH)
+(58) <b>Enhanced Resolution in EPR Spectroscopy Using <i>para</i>-Hydrogen Matrices.</b> A. Portela-González, W. Sander and <u>A. K. Eckhardt</u><sup>*</sup> <i>Angew. Chem. Int. Ed.</i>, <b>2026</b>, <i>65</i>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517); <i>Angew. Chem.</i>, <b>2026</b>, <i>138</i>, e18517, [doi:10.1002/ange.202518517](https://doi.org/10.1002/ange.202518517). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-j11rd) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCX9DTIH)
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/anie.202518517"><img src="https://AKEckhardt.github.io/images/pub58.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
 
 <b>Highlight:</b> • [Cover Feature](https://onlinelibrary.wiley.com/doi/10.1002/anie.2025-m2412011500) ([German Version](https://onlinelibrary.wiley.com/doi/10.1002/ange.2025-m2412011500))
+
+___
+
+<a style="font-weight:bold; font-size:1.25em; color:rgb(73,78,82); text-decoration:none" name="2025">2025</a>
 
 ___
 
