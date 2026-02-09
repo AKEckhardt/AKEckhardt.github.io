@@ -14,6 +14,14 @@ sidebar:
 
 ___
 
+(61) <b>Exploring the cyclization reaction channel for the gas-phase elementary reaction between the silicon nitride radical (SiN, X<sup>2</sup>Σ<sup>+</sup>) and isoprene (C<sub>5</sub>H<sub>8</sub>, X<sup>1</sup>A′) to prepare methylazasilacyclohexadienylidenes (SiNC<sub>5</sub>H<sub>7</sub>, X<sup>1</sup>A′) </b>  S. Metya, I. A. Medvedkov, D. González, S. J. Goettl, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Phys. Chem. Chem. Phys.</i>, <b>2026</b>, accepted, [doi:10.1039/D5CP04314J](https://doi.org/10.1039/D5CP04314J).
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5CP04314J"><img src="https://AKEckhardt.github.io/images/pub61.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (60) <b>Ambident Reactivity in the Phenyl + NO Radical Recombination.</b> V. Bhagat, A. Portela-González, <u>A. K. Eckhardt</u><sup>*</sup> and J. P. Wagner <i>Chem. Eur. J.</i>, <b>2026</b>, e03332, [doi:10.1002/chem.202503332](https://doi.org/10.1002/chem.202503332).
 
 <p align="center"> 
