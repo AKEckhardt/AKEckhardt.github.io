@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(63) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b>  A. Portela-González, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071).
+(63) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b>  A. Portela-González, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MIU9TIN3)
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="40%" height="auto%"/></a>
