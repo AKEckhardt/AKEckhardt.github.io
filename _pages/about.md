@@ -47,7 +47,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2026</b></font><br/><font size="1"><br/></font><font size="4">
-Group updates: Jonas finished his in-depth practical. Tamari and Daniel started their Master's thesis projects. Laurin started his BSc thesis project. Our new publication about the spectroscopic characterization and electrocyclic ring opening of parent 2-Azetine <a href="https://doi.org/10.1002/poc.70071">online</a>. </font></td>
+Group updates: <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/TamariKiknadze/">Tamari</a> and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/DanielKuehn/">Daniel</a> started their Master's thesis projects. Laurin Inama started his BSc thesis project. Julian visited the group of <a href="https://cmt.physik.tu-dortmund.de/schapiro-group/">Prof. Dr. Igor Schapiro</a> in Dortmund to learn more about molecular photodynamic simulations. Our new publication about the spectroscopic characterization and electrocyclic ring opening of parent 2-Azetine <a href="https://doi.org/10.1002/poc.70071">online</a>. </font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
