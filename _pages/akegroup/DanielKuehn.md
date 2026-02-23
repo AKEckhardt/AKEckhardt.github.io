@@ -44,6 +44,14 @@ Publications
 ------
 ___
 
+(02) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b>  A. Portela-González, <u>D. Kühn</u> and A. K. Eckhardt <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MIU9TIN3)
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (01) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> V. Paczelt, V. D. Drabkin, <u>D. Kühn</u> and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
 
 <p align="center"> 

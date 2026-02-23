@@ -44,6 +44,22 @@ Publications
 ------
 ___
 
+(04) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b> <u>A. Portela-González</u>, D. Kühn and A. K. Eckhardt <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MIU9TIN3)
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(03) <b>Ambident Reactivity in the Phenyl + NO Radical Recombination.</b> V. Bhagat, <u>A. Portela-González</u>, A. K. Eckhardt and J. P. Wagner <i>Chem. Eur. J.</i>, <b>2026</b>, e03332, [doi:10.1002/chem.202503332](https://doi.org/10.1002/chem.202503332).
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/chem.202503332"><img src="https://AKEckhardt.github.io/images/pub60.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (02) <b>Enhanced Resolution in EPR Spectroscopy Using <i>para</i>-Hydrogen Matrices.</b> <u>A. Portela-González</u>, W. Sander and A. K. Eckhardt <i>Angew. Chem. Int. Ed.</i>, <b>2025</b>, e18517, [doi:10.1002/anie.202518517](https://doi.org/10.1002/anie.202518517); <i>Angew. Chem.</i>, <b>2025</b>, e18517, [doi:10.1002/ange.202518517](https://doi.org/10.1002/ange.202518517). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-j11rd) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCX9DTIH)
 
 <p align="center"> 
