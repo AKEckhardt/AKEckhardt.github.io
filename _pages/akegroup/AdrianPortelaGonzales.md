@@ -25,6 +25,7 @@ MSc and PhD (Ruhr-University Bochum, 2016-2024)<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
+<li><a href="https://www.linkedin.com/in/adri%C3%A1n-portela-gonz%C3%A1lez-b89343218/"><i class="fab fa-linkedin fa-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 <li><a href="https://orcid.org/0000-0001-9859-4043"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 </ul>
 </div>

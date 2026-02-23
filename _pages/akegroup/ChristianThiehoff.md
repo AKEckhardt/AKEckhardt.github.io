@@ -22,6 +22,7 @@ Room NC 3/172, Tel: +49 234 32 17556<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
+<li><a href="https://www.linkedin.com/in/christian-thiehoff-459956199/"><i class="fab fa-linkedin fa-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 <li><a href="https://orcid.org/0009-0009-4213-7041"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 </ul>
 </div>

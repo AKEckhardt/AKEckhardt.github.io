@@ -25,6 +25,7 @@ MSc (2023 - 2025, Ruhr-University Bochum, Germany)<br/>
 <br/>
 <div class="page__footer-follow">
 <ul class="social-icons">
+<li><a href="https://www.linkedin.com/in/julian-e%C3%9Fer-2b5499336/><i class="fab fa-linkedin fa-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 <li><a href="https://orcid.org/0009-0003-6237-8543"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
 </ul>
 </div>
