@@ -14,7 +14,23 @@ sidebar:
 
 ___
 
-(61) <b>Exploring the cyclization reaction channel for the gas-phase elementary reaction between the silicon nitride radical (SiN, X<sup>2</sup>Σ<sup>+</sup>) and isoprene (C<sub>5</sub>H<sub>8</sub>, X<sup>1</sup>A′) to prepare methylazasilacyclohexadienylidenes (SiNC<sub>5</sub>H<sub>7</sub>, X<sup>1</sup>A′) </b>  S. Metya, I. A. Medvedkov, D. González, S. J. Goettl, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Phys. Chem. Chem. Phys.</i>, <b>2026</b>, accepted, [doi:10.1039/D5CP04314J](https://doi.org/10.1039/D5CP04314J).
+(63) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b>  A. Portela-González, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071).
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(62) <b>Unconventional Formation of Cyanamide, a Key Intermediate in Prebiotic Chemical Evolution, in Interstellar Ice Analogues.</b> J. Wang, J. H. Marks, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1021/acs.jpclett.6c00331](https://doi.org/10.1021/acs.jpclett.6c00331).
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.jpclett.6c00331"><img src="https://AKEckhardt.github.io/images/pub62.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(61) <b>Exploring the cyclization reaction channel for the gas-phase elementary reaction between the silicon nitride radical (SiN, X<sup>2</sup>Σ<sup>+</sup>) and isoprene (C<sub>5</sub>H<sub>8</sub>, X<sup>1</sup>A′) to prepare methylazasilacyclohexadienylidenes (SiNC<sub>5</sub>H<sub>7</sub>, X<sup>1</sup>A′).</b>  S. Metya, I. A. Medvedkov, D. González, S. J. Goettl, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Phys. Chem. Chem. Phys.</i>, <b>2026</b>, <i>28</i>, 4862-4871, [doi:10.1039/D5CP04314J](https://doi.org/10.1039/D5CP04314J).
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D5CP04314J"><img src="https://AKEckhardt.github.io/images/pub61.gif" alt="Link" width="40%" height="auto%"/></a>
