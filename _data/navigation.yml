@@ -79,9 +79,9 @@ docs:
       - title: "Dominik Schreiner"
         url: /akegroup/DominikSchreiner/         
             
-#  - title: Visiting Students
-#    children:
-#      - title: "Soham Chowdhury"
+  - title: Visiting Students
+    children:
+      - title: "Soham Chowdhury"
 	 url: /akegroup/SohamChowdhury/ 
         
   - title: Alumni
