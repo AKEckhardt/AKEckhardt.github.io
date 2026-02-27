@@ -1,0 +1,29 @@
+---
+layout: archive
+title: "Soham Chowdhury"
+permalink: /akegroup/SohamChowdhury/
+author_profile: false
+sidebar:
+  nav: "docs"
+
+---
+
+{% include base_path %}
+
+<font size="2"><br/></font>
+<table> <style>table, th, td {border: transparent;}</style> <tr>
+<td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/SohamChowdhury.JPG" width="50%" height="auto%" align="middle"></td>
+<td style="width:50%;" align="justify" valign="middle">
+<font size="4">
+<b>Soham Chowdhury</b><br/>
+Exchange student<br/>
+<br/>
+</font>
+</td>
+</tr></table>
+
+<p style='text-align: justify;'>
+Soham obtained his B.Sc. (Honours) in Chemistry from the University of Calcutta (2019) and completed his M.Sc. in Chemistry at IIT Madras (2021). He is currently pursuing his Ph.D. at IIT Madras under the supervision of Prof. T. Pradeep. His research focuses on the thermal and photochemical formation and transformation of clathrate hydrates and interstellar ice analogues.
+He was selected for the RESOLV Student Challenge Program (2025), during which he joined the Eckhardt Lab to investigate radical confinement and reactivity in clathrate hydrates. His experimental expertise includes infrared spectroscopy, TPD-MS, SIMS, and XPS.
+</p>
+
