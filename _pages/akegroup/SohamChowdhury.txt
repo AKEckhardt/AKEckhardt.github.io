@@ -16,7 +16,7 @@ sidebar:
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
 <b>Soham Chowdhury</b><br/>
-Exchange student<br/>
+Visiting student<br/>
 <br/>
 </font>
 </td>
