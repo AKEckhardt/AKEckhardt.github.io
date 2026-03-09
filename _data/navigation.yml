@@ -19,6 +19,8 @@ main:
     children:
       - title: "Ansatzrechner"
         url: /ansatzrechner/
+      - title: "Spectra-DX-Converter"
+        url: /converter/
 
 #  - title: "Talks"
 #    url: /talks/    

@@ -1,0 +1,2888 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Spectra DX Converter</title>
+  <style>
+
+    :root{
+      --bg:#f2f4f7;
+      --card:#ffffff;
+      --text:#1a1f2b;
+      --muted:#6b7280;
+      --border:#d9dee6;
+      --accent:#2b6cb0;
+      --warn:#b45309;
+      --err:#b91c1c;
+      --ok:#15803d;
+      --shadow:0 6px 18px rgba(17,24,39,.08);
+      --radius:14px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:var(--bg);
+    }
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px 16px 40px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:16px 16px 14px;
+      margin: 0 0 14px 0;
+    }
+    h1{
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      letter-spacing:.2px;
+    }
+    h2{
+      font-size: 16px;
+      margin: 0 0 12px 0;
+    }
+    p{margin: 8px 0; color: var(--muted); line-height:1.4}
+    label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
+    input[type="file"], input[type="number"], select{
+      width:100%;
+      padding:10px 10px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      font-size:14px;
+      box-sizing:border-box;
+    }
+    input[type="number"]{font-family:var(--mono)}
+    .row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .col{
+      flex: 1 1 240px;
+      min-width: 240px;
+    }
+    .btn{
+      appearance:none;
+      border:1px solid var(--accent);
+      background:var(--accent);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .btn.secondary{
+      background:#fff;
+      color:var(--accent);
+    }
+    .btn:disabled{opacity:.6; cursor:not-allowed}
+    .btn.small{padding:6px 10px; font-size:12px; border-radius:10px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#eef2ff;
+      border:1px solid #dbeafe;
+      font-size:12px;
+      color:#1f2937;
+      margin-right:8px;
+      margin-top:6px;
+    }
+    .pill.ok{background:#ecfdf5;border-color:#bbf7d0;color:#065f46}
+    .pill.warn{background:#fffbeb;border-color:#fde68a;color:#92400e}
+    .pill.err{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+    .small{font-size:12px}
+    .mono{font-family:var(--mono)}
+    .muted{color:var(--muted)}
+    .right{text-align:right}
+    .hr{height:1px;background:var(--border);margin:10px 0}
+    table{
+      width:100%;
+      border-collapse: collapse;
+      font-size:13px;
+    }
+    th,td{
+      padding:8px 8px;
+      border-bottom:1px solid #eef2f7;
+      vertical-align:top;
+    }
+    th{color:#374151; text-align:left; font-weight:700; font-size:12px; letter-spacing:.03em}
+    .kpi{
+      display:flex;
+      gap:10px;
+      flex-wrap:nowrap;
+      overflow-x:auto;
+      margin-top:10px;
+      padding-bottom:4px;
+    }
+    .kpi .box{
+      flex: 1 1 200px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px 12px;
+      background:#fafbfc;
+    }
+    .kpi .box .t{font-size:12px;color:var(--muted)}
+    .kpi .box .v{font-size:15px;font-weight:700;margin-top:4px}
+    canvas{
+      width:100%;
+      height:320px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+    }
+    .svgplot{
+      width:100%;
+      height:320px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .svgplot svg{
+      width:100%;
+      height:100%;
+      display:block;
+    }
+    .twoCanvas{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .hint{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:6px;
+    }
+    .compact-hint{margin-top:4px; margin-bottom:2px;}
+    .hint.compact{margin-top:0;}
+
+    .labelLink{display:inline-flex; align-items:center; gap:8px; cursor:pointer;}
+    .labelLink .tag{font-size:11px; color:var(--accent); border:1px solid rgba(43,108,176,.25); padding:2px 6px; border-radius:999px; background:#eef5ff}
+    .modal{position:fixed; inset:0; display:none; z-index:50;}
+    .modal .backdrop{position:absolute; inset:0; background:rgba(17,24,39,.45);}
+    .modal .box{position:relative; max-width:860px; margin:60px auto; background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:14px 14px 12px;}
+    .modal .head{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px;}
+    .modal .head .title{font-weight:800;}
+    .modal .close{border:1px solid var(--border); background:#fff; border-radius:10px; padding:6px 10px; cursor:pointer;}
+    .modal pre{white-space:pre; overflow:auto; max-height:60vh; background:#0b1020; color:#e5e7eb; border-radius:12px; padding:12px; font-family:var(--mono); font-size:12px; line-height:1.35; border:1px solid rgba(255,255,255,.08);}
+    .modal .foot{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+
+  
+    .headrow{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .langwrap{display:flex;align-items:center;gap:8px}
+    .langsel{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text);font-size:14px}
+    .sr{position:absolute;left:-9999px}
+
+  
+    /* i18n: keep layout width stable */
+    .card, .row, .col { max-width: 100%; }
+    .col { min-width: 240px; }
+    label, h2, h1, .pill { overflow-wrap:anywhere; word-break:break-word; }
+    .arr-controls{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      align-items:center;
+      margin: 6px 0 10px;
+      padding: 10px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+    }
+    .arr-controls .label{
+      font-size:13px;
+      color:var(--muted);
+      margin-right:2px;
+      white-space:nowrap;
+    }
+    .arr-controls .chk{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      font-size:13px;
+      color:var(--text);
+      user-select:none;
+      white-space:nowrap;
+    }
+    .arr-controls input[type="checkbox"]{
+      width:16px;
+      height:16px;
+      accent-color: var(--accent);
+    }
+
+    .arr-controls .arr-temp{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-left:auto;
+      flex: 1 1 340px;
+      min-width: 280px;
+      justify-content:flex-end;
+    }
+    .arr-controls .arr-temp input[type="range"]{
+      width: 260px;
+      max-width: 100%;
+    }
+    .arr-controls .arr-temp .mono{
+      min-width: 3ch;
+      display:inline-block;
+      text-align:right;
+    }
+    .subsection{ margin-top: 6px; }
+
+
+
+    .filepick{ display:flex; gap:10px; align-items:center; }
+    .filepick input[type="file"]{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+    .filepick .file-name{
+      flex:1; padding:10px 12px; border:1px solid var(--border);
+      border-radius:12px; background:#fff; color:var(--text);
+      overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+    }
+    .filepick .file-name.empty{ color:var(--muted); }
+    .filepick .file-clear{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:38px; height:38px; border:1px solid var(--border);
+      border-radius:12px; background:#fff; color:var(--muted);
+      cursor:pointer; user-select:none; font-size:18px; line-height:1;
+    }
+    .filepick .file-clear:hover{ color:var(--text); border-color:#b8c0cc; }
+    .filepick .file-clear:disabled{ opacity:.45; cursor:default; }
+
+  
+    /* v60c layout fixes */
+    #cardInputs{ margin-bottom:22px; }
+    #cardInputs .btnbar{ width:100%; justify-content:flex-start; padding-top:2px; padding-bottom:4px; }
+
+  
+
+    /* ==== Spectrum tool overrides ==== */
+    .svgplot{ height: 460px; }
+    .plotbar{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      margin-top: 10px;
+    }
+    .plotbar .left, .plotbar .right{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .kbd{
+      font-family: var(--mono);
+      font-size:11px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      border:1px solid var(--border);
+      background:#fff;
+      color: var(--text);
+    }
+    .hint b{color:var(--text)}
+
+    .freqscale-grid{
+      display:grid;
+      grid-template-columns:minmax(280px, 430px) minmax(260px, 1fr);
+      gap:12px 18px;
+      align-items:start;
+    }
+    .freqscale-main{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:nowrap;
+    }
+    .freqscale-main input[type="number"]{
+      flex:1 1 170px;
+      min-width:120px;
+    }
+    .chk-inline{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      white-space:nowrap;
+      margin:0;
+      user-select:none;
+      color:var(--text);
+      font-size:13px;
+    }
+    .chk-inline input[type="checkbox"]{
+      width:16px;
+      height:16px;
+      accent-color: var(--accent);
+      margin:0;
+    }
+    .freqscale-meta{
+      min-width: 220px;
+      align-self:end;
+    }
+    .freqscale-meta .hint{ margin-top:2px; }
+    .freqscale-inline-row{ margin-top:10px; }
+    @media (max-width: 920px){
+      .freqscale-grid{ grid-template-columns:1fr; }
+      .freqscale-main{ flex-wrap:wrap; }
+      .freqscale-meta{ min-width:0; }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="card">
+      <div class="headrow">
+        <h1 data-i18n="title">Spectra DX Converter</h1>
+        <div class="langwrap">
+          <label class="sr" for="langSel" data-i18n="lab_language">Language</label>
+          <select id="langSel" class="langsel">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
+      </div>
+      <p class="small" data-i18n="subtitle">Upload a quantum-chemistry output (Gaussian / ORCA / CFOUR) → choose settings → generate a spectrum and export as SVG/PNG/CSV/JCAMP-DX (.dx).</p>
+      <div id="statusPills"></div>
+    </div>
+
+    <div class="card" id="cardInputs">
+      <h2 data-i18n="sec_inputs">1) Input &amp; Settings</h2>
+
+      <div class="row">
+        <div class="col">
+          <label class="labelLink" data-i18n="lab_gaussian_output">Gaussian output (.out/.log) <span class="tag">Gaussian input</span></label>
+          <div class="filepick">
+            <input id="fileG" type="file" accept=".out,.log,.txt"/>
+            <button type="button" class="btn secondary file-btn" data-file="fileG" data-i18n="btn_browse">Browse…</button>
+            <div class="file-name empty" id="fileGName" data-i18n="txt_no_file">No file chosen</div>
+            <button type="button" class="file-clear" data-file="fileG" aria-label="Remove file" title="Remove" data-i18n-attr="file_clear">×</button>
+          </div>
+          <div class="hint" data-i18n="hint_local">The file stays local in your browser (no upload).</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+<!-- IR settings -->
+      <div id="irSettings" class="subsection">
+        <div class="row">
+          <div class="col">
+            <label data-i18n="lab_ir_source">Data source</label>
+            <select id="irSource">
+              <option value="auto">Auto (prefer anharmonic if present)</option>
+              <option value="harm">Harmonic (Frequencies / IR Inten)</option>
+              <option value="anh_i">Anharmonic (I in km/mol)</option>
+              <option value="anh_ds">Anharmonic (DS in 10^-40 esu^2 cm^2)</option>
+            </select>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_ir_bandset">Bands</label>
+            <select id="irBandSet">
+              <option value="fund">Fundamentals</option>
+              <option value="fund+ov">Fundamentals + Overtones</option>
+              <option value="fund+comb">Fundamentals + Combination</option>
+              <option value="all">All (Fund + Ov + Comb)</option>
+            </select>
+          </div>
+</div>
+        
+        <div class="row">
+          <div class="col">
+            <label data-i18n="lab_ir_xmin">Plot min (cm⁻¹)</label>
+            <input id="irXMin" type="number" value="400" step="1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_ir_xmax">Plot max (cm⁻¹)</label>
+            <input id="irXMax" type="number" value="4000" step="1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_ir_step">Resolution / step size Δx (cm⁻¹)</label>
+            <input id="irResolution" type="number" value="1" step="0.1" min="0.01" inputmode="decimal" lang="en"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label data-i18n="lab_ir_fwhm">Line width FWHM (cm⁻¹)</label>
+            <input id="irWidth" type="number" value="6" step="0.1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_ir_shape">Broadening</label>
+            <select id="irShape">
+              <option value="lorentz">Lorentz</option>
+              <option value="gauss">Gauss</option>
+            </select>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_ir_scale2">Intensity factor (plot &amp; DX)</label>
+            <input id="irScale" type="number" value="0.01" step="0.001" lang="en"/>
+            
+          </div>
+        </div>
+
+        <div class="hint compact-hint" data-i18n="hint_ir_scale">Default: <b>0.01</b> → ~100× smaller intensities (typ. 0.2–2 in experiments).</div>
+
+        
+        <div class="row freqscale-inline-row">
+          <div class="col">
+            <label data-i18n="lab_ir_freqscale">Frequency scaling factor</label>
+            <div class="freqscale-grid compact">
+              <input id="irFreqScale" type="number" step="0.0001" value="1" />
+              <label class="chk-inline" title="CCCBDB scaling">
+                <input type="checkbox" id="useNistScale">
+                <span data-i18n="chk_use_nist">Use CCCBDB</span>
+              </label>
+              <div class="hint compact" id="nistScaleInfo" data-i18n="txt_nist_pending">CCCBDB: —</div>
+              <div class="hint compact">
+                <a href="https://cccbdb.nist.gov/vsfx.asp" target="_blank" rel="noopener" data-i18n="lnk_nist">NIST CCCBDB scaling factors</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arr-controls compact" style="margin-top:8px">
+          <span class="label" data-i18n="lab_options">Options:</span>
+          <label class="chk"><input type="checkbox" id="irInvertX" checked><span data-i18n="chk_ir_invertx">Invert X (typical IR)</span></label>
+          <label class="chk"><input type="checkbox" id="irNormalize"><span data-i18n="chk_ir_normalize">Normalize (max=1)</span></label>
+          <label class="chk"><input type="checkbox" id="irShowSticks" checked><span data-i18n="chk_ir_sticks">Show sticks</span></label>
+          <label class="chk"><input type="checkbox" id="irEmission"><span data-i18n="chk_emission">Transmission</span></label>
+        </div>
+
+<div class="row">
+          <div class="col">
+            <label data-i18n="lab_dx_title">DX title (OPUS)</label>
+            <input id="dxTitle" type="text" value="" placeholder=""/>
+          </div>
+        </div>
+
+        <div class="hint" data-i18n="hint_dx">DX export: JCAMP-DX (*.dx) on an equidistant grid (Δx = resolution).</div>
+      </div>
+
+      <!-- UV settings -->
+      <div id="uvSettings" class="subsection" style="display:none">
+        <div class="row">
+          <div class="col">
+            <label data-i18n="lab_uv_xmin">Plot min (nm)</label>
+            <input id="uvXMin" type="number" value="190" step="1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_uv_xmax">Plot max (nm)</label>
+            <input id="uvXMax" type="number" value="800" step="1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_uv_step">Resolution / step size Δx (nm)</label>
+            <input id="uvResolution" type="number" value="1" step="0.5" min="0.01" inputmode="decimal" lang="en"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label data-i18n="lab_uv_fwhm">Line width FWHM (nm)</label>
+            <input id="uvWidthNM" type="number" value="20" step="1" lang="en"/>
+          </div>
+          <div class="col">
+            <label data-i18n="lab_uv_scale">Intensity factor</label>
+            <input id="uvScale" type="number" value="1" step="0.001" lang="en"/>
+          </div>
+          <div class="col">
+            <label>&nbsp;</label>
+            <div class="hint" data-i18n="hint_uv_parse">UV/Vis is parsed from TD-DFT lines “Excited State … eV … nm … f=…”.</div>
+          </div>
+        </div>
+
+        <div class="arr-controls" style="margin-top:10px">
+          <span class="label" data-i18n="lab_options">Options:</span>
+          <label class="chk"><input type="checkbox" id="uvNormalize" checked><span data-i18n="chk_ir_normalize">Normalize (max=1)</span></label>
+          <label class="chk"><input type="checkbox" id="uvShowSticks" checked><span data-i18n="chk_ir_sticks">Show sticks</span></label>
+          <label class="chk"><input type="checkbox" id="uvEnergyGaussian" checked><span data-i18n="chk_uv_energygauss">Gaussian in energy domain</span></label>
+        </div>
+      </div>
+
+      <div class="row btnbar" style="margin-top:12px; align-items:center; gap:10px; flex-wrap:wrap">
+        <button class="btn" id="btnGenerate" disabled data-i18n="btn_generate">Generate</button>
+        <button class="btn secondary" id="btnReset" data-i18n="btn_reset">Reset</button>
+        <button class="btn secondary" id="btnExportSVG" disabled data-i18n="btn_export_svg">Save plot (SVG)</button>
+        <button class="btn secondary" id="btnExportPNG" disabled data-i18n="btn_export_png">Save plot (PNG)</button>
+        <button class="btn secondary" id="btnExportCSV" disabled data-i18n="btn_export_csv">Export CSV</button>
+        <button class="btn secondary" id="btnExportDX" disabled data-i18n="btn_export_dx">Export JCAMP-DX (.dx)</button>
+      </div>
+
+      <div class="hint" id="statusText" data-i18n="status_idle">Status: Please load a Gaussian file…</div>
+      <div class="hint" data-i18n="hint_zoom_ui">Zoom: <span class="kbd">drag</span> = zoom in, <span class="kbd">double click</span> = zoom out.</div>
+    </div>
+
+    <div class="card" id="cardPlot" style="display:none">
+      <h2 data-i18n="sec_preview">2) Preview</h2>
+
+      <div class="plotbar">
+        <div class="left">
+          <span class="pill" id="plotMeta">—</span>
+          <span class="pill" id="cursorMeta"><b>x</b> — <b>y</b> —</span>
+        </div>
+        <div class="right">
+          <button class="btn secondary small" id="btnZoomReset" disabled data-i18n="btn_zoom_reset">Zoom reset</button>
+          <button class="btn secondary small" id="btnCopySVG" disabled data-i18n="btn_copy_svg">Copy SVG</button>
+          <button class="btn secondary small" id="btnCopyDX" disabled data-i18n="btn_copy_dx">Copy DX</button>
+        </div>
+      </div>
+
+      <div id="plot" class="svgplot" aria-label="Spectrum plot"></div>
+      <div class="hint" id="plotHint"></div>
+    </div>
+
+    <div class="card" id="cardPeaks" style="display:none">
+      <h2 data-i18n="sec_peaks">3) Peaks</h2>
+      <div id="peaksContainer" class="small">—</div>
+    </div>
+
+  </div>
+
+<script>
+/* ============================================================
+   WKB – Gaussian IR & UV/Vis Spektren (Browser) – WKB UI style
+   - Upload Gaussian output
+   - IR: harmonic + anharmonic (I / DS) with band selection
+   - UV: TD-DFT Excited State parsing
+   - SVG plot with crosshair, box-zoom (drag), dblclick reset
+   - Export SVG/PNG/CSV/JCAMP-DX (.dx)
+   ============================================================ */
+
+const $ = (id)=>document.getElementById(id);
+
+// Transmission option for IR only
+function getEmission(){
+  const ir = $("irEmission");
+  return !!(ir && ir.checked);
+}
+function setEmission(v){
+  const ir = $("irEmission");
+  if(ir) ir.checked = !!v;
+}
+
+
+
+let LANG = "en";
+const I18N = {
+  en: {    title: "Spectra DX Converter",
+    subtitle: "Upload a quantum-chemistry output (Gaussian / ORCA / CFOUR) → choose settings → generate a spectrum and export as SVG/PNG/CSV/JCAMP-DX (.dx).",
+    sec_inputs: "1) Input &amp; Settings",
+    lab_gaussian_output: 'Output file (.out/.log) <span class="tag">Gaussian / ORCA / CFOUR</span>',
+    btn_browse: "Browse…",
+    txt_no_file: "No file chosen",
+    lab_fileinfo: "File info",
+    lab_ir_source: "Data source",
+    lab_ir_bandset: "Bands",
+    lab_ir_xmin: "Plot min (cm⁻¹)",
+    lab_ir_xmax: "Plot max (cm⁻¹)",
+    lab_ir_step: "Resolution / step size Δx (cm⁻¹)",
+    lab_ir_fwhm: "Line width FWHM (cm⁻¹)",
+    lab_ir_freqscale: "Frequency scaling factor",
+    chk_use_nist: "Use CCCBDB",
+    lnk_nist: "NIST CCCBDB scaling factors",
+    txt_scale_note: "Default: no scaling (factor = 1).",
+    txt_nist_pending: "CCCBDB: —",
+    txt_nist_found: "CCCBDB: {factor} for {method}/{basis}",
+    txt_nist_not_found: "CCCBDB: no factor found for {method}/{basis}",
+    st_no_nist: "No CCCBDB scaling factor found for this method/basis.",
+    lab_ir_shape: "Broadening",
+    lab_ir_scale: "Intensity factor",
+    lab_ir_scale2: "Intensity factor (plot &amp; DX)",
+    chk_ir_invertx: "Invert X (typical IR)",
+    chk_ir_normalize: "Normalize (max=1)",
+    chk_ir_sticks: "Show sticks",
+        chk_emission: "Transmission",
+lab_dx_title: "DX title",
+    sec_preview: "2) Preview",
+    btn_zoom_reset: "Zoom reset",
+    btn_copy_svg: "Copy SVG",
+    btn_copy_dx: "Copy JCAMP-DX",
+    sec_peaks: "3) Peaks",
+    btn_generate: "Generate",
+    btn_export_svg: "Export SVG",
+    btn_export_png: "Export PNG",
+    btn_export_csv: "Export CSV",
+    btn_export_dx: "Export JCAMP-DX (.dx)",
+    hint_zoom: "Drag a rectangle to zoom (X/Y) • Double-click to reset zoom",
+    hint_zoom_ui: "Zoom: <span class=\"kbd\">drag</span> = zoom in, <span class=\"kbd\">double click</span> = zoom out.",
+    hint_local: "The file stays local in your browser (no upload).",
+    status_idle: "Status: Please load an output file…",
+    opt_irsource_auto: "Auto (prefer anharmonic if present)",
+    opt_irsource_harm: "Harmonic (Frequencies / IR Inten)",
+    opt_irsource_anh_i: "Anharmonic (I in km/mol)",
+    opt_irsource_anh_ds: "Anharmonic (DS in 10^-40 esu^2 cm^2)",
+    opt_irband_fund: "Fundamentals",
+    opt_irband_fundov: "Fundamentals + Overtones",
+    opt_irband_fundcomb: "Fundamentals + Combination",
+    opt_irband_all: "All (Fund + Ov + Comb)",
+    hint_dx: "DX export: the generated spectrum is a JCAMP-DX (*.dx) on an equidistant grid (Δx = resolution).",
+    st_load_file_first: "Please load a file first.",
+    st_cannot_detect: "Could not detect IR/UV data in this file.",
+    st_ir_no_peaks: "IR: No peaks found for the selected source/bands.",
+    st_uv_no_states: "UV/Vis: No excited states found.",
+    st_reading: "Reading file…",
+    st_no_data: "No usable IR/UV data found. Please check that this is a complete output (Gaussian / ORCA / CFOUR) that contains frequencies and/or excited states.",
+    st_loaded: "File loaded. Choose settings and click Generate.",
+    st_svg_copied: "SVG copied.",
+    st_dx_copied: "DX copied.",
+    pill_prog: "Program",
+    pill_auto: "Auto",
+    pill_ir: "IR",
+    pill_uv: "UV",
+    pill_states: "states",
+    pill_harm: "harm",
+    pill_anhfund: "anh-fund",
+    lab_uv_xmin: "Plot min (nm)",
+    lab_uv_xmax: "Plot max (nm)",
+    lab_uv_step: "Resolution / step size Δx (nm)",
+    lab_uv_fwhm: "Line width FWHM (nm)",
+    chk_uv_energygauss: "Gaussian in energy domain",
+        btn_reset: "Reset",
+    pill_no_data_short: "No usable data found",
+    lab_options: "Options:",
+    hint_ir_scale: "Default: <b>0.01</b> → ~100× smaller intensities (typ. 0.2–2 in experiments).",
+    hint_uv_parse: "UV/Vis is parsed from TD-DFT lines “Excited State … eV … nm … f=…”.",
+    lab_uv_scale: "Intensity factor",
+    ph_dx_title: "auto (filename)",
+    meta_peaks: "peaks",
+    meta_states: "states",
+    meta_scale: "scale",
+    meta_norm: " • norm",
+    st_ir_generated: "IR generated: {n} peaks.",
+    st_uv_generated: "UV/Vis generated: {n} states.",
+    zoom_range: "Zoom: x=[{xmin}, {xmax}] {xunit}, y=[{ymin}, {ymax}]",
+    title_ir: "IR spectrum",
+    title_ir_emission: "IR spectrum (transmission view)",
+    title_uv: "UV/Vis spectrum",
+    title_uv_emission: "UV/Vis emission spectrum",
+    ylab_ir: "Intensity (a.u.)",
+    ylab_ir_emission: "Transmission (%)",
+    ylab_uv: "Absorption (arb.)",
+    ylab_uv_emission: "Emission (arb.)",
+    ylab_uv_emission: "Emission (arb.)",
+    th_ir_band: "Vibration",
+    th_ir_stick: "Intensity",
+    th_uv_state: "State",
+    lab_language: "Language",
+  },
+  de: {    title: "Spectra DX Converter",
+    subtitle: "Output laden (Gaussian / ORCA / CFOUR) → Einstellungen wählen → Spektrum erzeugen und als SVG/PNG/CSV/JCAMP-DX (.dx) exportieren.",
+    sec_inputs: "1) Input &amp; Einstellungen",
+    lab_gaussian_output: 'Output-Datei (.out/.log) <span class="tag">Gaussian / ORCA / CFOUR</span>',
+    btn_browse: "Browse…",
+    txt_no_file: "Keine Datei gewählt",
+    lab_fileinfo: "Datei-Info",
+    lab_ir_source: "Datenquelle",
+    lab_ir_bandset: "Bänder",
+    lab_ir_xmin: "Plotbereich min (cm⁻¹)",
+    lab_ir_xmax: "Plotbereich max (cm⁻¹)",
+    lab_ir_step: "Auflösung / Schrittweite Δx (cm⁻¹)",
+    lab_ir_fwhm: "Linienbreite FWHM (cm⁻¹)",
+    lab_ir_freqscale: "Skalierungsfaktor",
+    chk_use_nist: "CCCBDB-Empfehlung übernehmen (falls vorhanden)",
+    lnk_nist: "NIST CCCBDB Skalierungsfaktoren",
+    txt_scale_note: "Standard: keine Skalierung (Faktor = 1).",
+    txt_nist_pending: "CCCBDB: —",
+    txt_nist_found: "CCCBDB: {factor} für {method}/{basis}",
+    txt_nist_not_found: "CCCBDB: kein Faktor gefunden für {method}/{basis}",
+    st_no_nist: "Kein CCCBDB-Skalierungsfaktor für diese Methode/Basis gefunden.",
+    lab_ir_shape: "Broadening",
+    lab_ir_scale: "Intensitätsfaktor",
+    lab_ir_scale2: "Intensitätsfaktor (Plot &amp; DX)",
+    chk_ir_invertx: "X invertieren (IR typisch)",
+    chk_ir_normalize: "Normieren (Max=1)",
+    chk_ir_sticks: "Sticks anzeigen",
+        chk_emission: "Transmission",
+lab_dx_title: "DX-Titel",
+    sec_preview: "2) Vorschau",
+    btn_zoom_reset: "Zoom zurücksetzen",
+    btn_copy_svg: "SVG kopieren",
+    btn_copy_dx: "JCAMP-DX kopieren",
+    sec_peaks: "3) Peaks",
+    btn_generate: "Generieren",
+    btn_export_svg: "SVG exportieren",
+    btn_export_png: "PNG exportieren",
+    btn_export_csv: "CSV exportieren",
+    btn_export_dx: "JCAMP-DX (.dx) exportieren",
+    hint_zoom: "Kästchen ziehen: Zoom in X/Y • Doppelklick: Reset-Zoom",
+    hint_zoom_ui: "Zoom: <span class=\"kbd\">ziehen</span> = Zoom-In, <span class=\"kbd\">Doppelklick</span> = Zoom-Out.",
+    hint_local: "Die Datei bleibt lokal im Browser (kein Upload).",
+    status_idle: "Status: Bitte eine Output-Datei laden…",
+    opt_irsource_auto: "Auto (bevorzugt anharmonisch, falls vorhanden)",
+    opt_irsource_harm: "Harmonisch (Frequencies / IR Inten)",
+    opt_irsource_anh_i: "Anharmonisch (I in km/mol)",
+    opt_irsource_anh_ds: "Anharmonisch (DS in 10^-40 esu^2 cm^2)",
+    opt_irband_fund: "Fundamentals",
+    opt_irband_fundov: "Fundamentals + Overtones",
+    opt_irband_fundcomb: "Fundamentals + Combination",
+    opt_irband_all: "Alle (Fund + Ov + Comb)",
+    hint_dx: "DX-Export: Das erzeugte Spektrum ist ein JCAMP-DX (*.dx) mit gleichmäßigem Raster (Δx = Auflösung).",
+    st_load_file_first: "Bitte zuerst eine Datei laden.",
+    st_cannot_detect: "Konnte keine IR/UV-Daten in der Datei erkennen.",
+    st_ir_no_peaks: "IR: Keine Peaks für Quelle/Bänder gefunden.",
+    st_uv_no_states: "UV/Vis: Keine Excited States gefunden.",
+    st_reading: "Lese Datei…",
+    st_no_data: "Keine IR/UV-Daten erkannt. Prüfe, ob es ein vollständiges Output (Gaussian / ORCA / CFOUR) mit Frequenzen und/oder angeregten Zuständen ist.",
+    st_loaded: "Datei geladen. Einstellungen wählen und Generieren klicken.",
+    st_svg_copied: "SVG kopiert.",
+    st_dx_copied: "DX kopiert.",
+    pill_prog: "Programm",
+    pill_auto: "Auto",
+    pill_ir: "IR",
+    pill_uv: "UV",
+    pill_states: "Zustände",
+    pill_harm: "harm",
+    pill_anhfund: "anh-fund",
+    lab_uv_xmin: "Plotbereich min (nm)",
+    lab_uv_xmax: "Plotbereich max (nm)",
+    lab_uv_step: "Auflösung / Schrittweite Δx (nm)",
+    lab_uv_fwhm: "Linienbreite FWHM (nm)",
+    chk_uv_energygauss: "Gauss in Energie-Domäne",
+    btn_reset: "Zurücksetzen",
+    pill_no_data_short: "Keine verwertbaren Daten gefunden",
+    lab_options: "Optionen:",
+    hint_ir_scale: "Standard: <b>0.01</b> → Intensitäten ~100× kleiner (typ. 0.2–2 im Experiment).",
+    hint_uv_parse: "UV/Vis wird aus TD-DFT Zeilen „Excited State … eV … nm … f=…“ gelesen.",
+    lab_uv_scale: "Intensitätsfaktor",
+    ph_dx_title: "auto (Dateiname)",
+    meta_peaks: "Peaks",
+    meta_states: "Zustände",
+    meta_scale: "Skalierung",
+    meta_norm: " • norm",
+    st_ir_generated: "IR generiert: {n} Peaks.",
+    st_uv_generated: "UV/Vis generiert: {n} Zustände.",
+    zoom_range: "Zoom: x=[{xmin}, {xmax}] {xunit}, y=[{ymin}, {ymax}]",
+    title_ir: "IR Spektrum",
+    title_ir_emission: "IR-Spektrum (Transmissionsansicht)",
+    title_uv: "UV/Vis Spektrum",
+    title_uv_emission: "UV/Vis-Emissionsspektrum",
+    ylab_ir: "Intensität (a.u.)",
+    ylab_ir_emission: "Transmission (%)",
+    ylab_uv: "Absorption (arb.)",
+    ylab_uv_emission: "Emission (arb.)",
+    ylab_uv_emission: "Emission (arb.)",
+    th_ir_band: "Schwingung",
+    th_ir_stick: "Intensität",
+    th_uv_state: "Übergang",
+    lab_language: "Sprache",
+  }
+};
+
+function t(k){
+  return (I18N[LANG] && I18N[LANG][k] !== undefined) ? I18N[LANG][k] : (I18N.en[k] ?? k);
+}
+
+
+function fmt(str, vars){
+  return String(str).replace(/\{(\w+)\}/g, (_,k)=> (vars && vars[k] !== undefined) ? vars[k] : `{${k}}`);
+}
+
+function applyLang(){
+  document.documentElement.lang = LANG;
+  // Generic nodes
+  for (const el of document.querySelectorAll("[data-i18n]")){
+    const k = el.getAttribute("data-i18n");
+    el.innerHTML = t(k);
+  }
+  
+  // Select option text (where options are not wrapped in data-i18n)
+  const irSrc = document.getElementById("irSource");
+  if(irSrc){
+    const m = {auto:"opt_irsource_auto", harm:"opt_irsource_harm", anh_i:"opt_irsource_anh_i", anh_ds:"opt_irsource_anh_ds"};
+    for (const opt of irSrc.options){
+      const k = m[opt.value];
+      if(k) opt.textContent = t(k);
+    }
+  }
+  const irBands = document.getElementById("irBandSet");
+  if(irBands){
+    const m = {fund:"opt_irband_fund", "fund+ov":"opt_irband_fundov", "fund+comb":"opt_irband_fundcomb", all:"opt_irband_all"};
+    for (const opt of irBands.options){
+      const k = m[opt.value];
+      if(k) opt.textContent = t(k);
+    }
+  }
+
+  // Placeholders / document title
+  const dx = document.getElementById("dxTitle");
+  if(dx) dx.placeholder = t("ph_dx_title");
+  document.title = t("title").replace(/<[^>]*>/g, "");
+
+// Special attributes (title/aria-label)
+  for (const el of document.querySelectorAll("[data-i18n-attr]")){
+    const key = el.getAttribute("data-i18n-attr");
+    if(key === "file_clear"){
+      el.title = (LANG==="de") ? "Entfernen" : "Remove";
+      el.setAttribute("aria-label", (LANG==="de") ? "Datei entfernen" : "Remove file");
+    }
+  }
+  // Re-render pills/hints if a file is loaded
+  if(STATE && STATE.text){
+    const canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+    const canUV = STATE.uv.lines.length>0;
+    renderPills(canIR, canUV);
+    // Refresh zoom hint if present
+    $("plotHint").textContent = t("hint_zoom");
+  }
+  // Update dynamic text blocks depending on language
+  updateNistUI();
+
+}
+
+function initLang(){
+  const sel = document.getElementById("langSel");
+  const saved = localStorage.getItem("wkb_lang");
+  LANG = (saved==="de" || saved==="en") ? saved : "en";
+  if(sel){
+    sel.value = LANG;
+    const handler = ()=>{
+      LANG = sel.value;
+      localStorage.setItem("wkb_lang", LANG);
+      applyLang();
+
+      const canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+      const canUV = STATE.uv.lines.length>0;
+      renderPills(canIR, canUV);
+
+      if(STATE.last){
+        refreshPlotText();
+        renderPeaks();
+        renderPlot();
+      }
+
+      refreshStatusForLang();
+    };
+    sel.addEventListener("change", handler);
+    sel.addEventListener("input", handler);
+  }
+  applyLang();
+}
+
+const STATE = {
+  filename:null,
+  text:null,
+  program:null, // 'gaussian' | 'orca' | 'cfour' | 'unknown'
+  theory:null,  // {method,basis}
+  nistScale:null,
+  detected:null, // 'ir' | 'uv' | null
+  ir:{ harmonic:[], anhI:{fund:[],ov:[],comb:[]}, anhDS:{fund:[],ov:[],comb:[]} },
+  uv:{ lines:[] },
+  last:null // last plot object with data + view
+};
+
+function pill(html, kind){
+  const cls = kind ? ("pill " + kind) : "pill";
+  return `<span class="${cls}">${html}</span>`;
+}
+function setPills(list){
+  $("statusPills").innerHTML = (list||[]).join(" ");
+}
+
+function renderPills(canIR, canUV){
+  const pills = [];
+  const prog = programLabel(STATE.program);
+  pills.push(pill(`${t("pill_prog")}: <b>${prog}</b>`, (STATE.program && STATE.program!=="unknown") ? "ok" : "warn"));
+  pills.push(pill(`${t("pill_auto")}: <b>${STATE.detected ? STATE.detected.toUpperCase() : "—"}</b>`, STATE.detected ? "ok" : "warn"));
+  if(canIR) pills.push(pill(`${t("pill_ir")}: ${STATE.ir.harmonic.length} ${t("pill_harm")} / ${STATE.ir.anhI.fund.length} ${t("pill_anhfund")}`, "ok"));
+  if(canUV) pills.push(pill(`${t("pill_uv")}: ${STATE.uv.lines.length} ${t("pill_states")}`, "ok"));
+  if(!canIR && !canUV) pills.push(pill(t("pill_no_data_short"), "err"));
+  setPills(pills);
+}
+function setStatusText(msg){ $("statusText").textContent = msg; }
+
+function detectSpectrumGaussian(text){
+  const hasUV = /Excited State\s+\d+:/m.test(text) && /f\s*=\s*[\d.]+/m.test(text);
+  const hasIR = /Frequencies\s+--/m.test(text) || /Anharmonic Infrared Spectroscopy/m.test(text);
+  if(hasUV && !hasIR) return "uv";
+  if(hasIR && !hasUV) return "ir";
+  if(hasUV && hasIR) return "ir";
+  return null;
+}
+
+function detectProgram(text){
+  // Heuristics based on common headers/keywords
+  if(/\bCFOUR\b/i.test(text) || /Program\s+CFOUR/i.test(text) || /CFOUR\s*\(/i.test(text)) return "cfour";
+  if(/\bO\s*R\s*C\s*A\b/i.test(text) || /This\s+is\s+ORCA/i.test(text) || /ORCA\s+VERSION/i.test(text)) return "orca";
+  if(/Gaussian,\s*Inc\.|Entering\s+Gaussian\s+System|Gaussian\s+0?9|Gaussian\s+1?6|\bG0?9\b|\bG16\b/i.test(text)) return "gaussian";
+  return "unknown";
+}
+
+/* ---------------- Frequency scaling (CCCBDB / NIST) ----------------
+   Values below are taken from NIST CCCBDB "Precomputed vibrational scaling factors" (CCCBDB)
+   and correspond to the standard basis-set columns (e.g. 6-31G*, 6-31G**, ...).
+   Link: https://cccbdb.nist.gov/vsfx.asp
+------------------------------------------------------------------- */
+
+const NIST_CCCBDB_SCALE = {
+  // DFT
+  "B3LYP":     {"6-31G*":0.960, "6-31G**":0.961, "6-31+G**":0.964, "6-311G*":0.966, "6-311G**":0.967, "TZVP":0.965, "CC-PVDZ":0.970, "CC-PVTZ":0.967, "AUG-CC-PVDZ":0.970, "AUG-CC-PVTZ":0.968},
+  "B3LYPULTRAFINE": {"6-31G*":0.967, "6-31G**":0.963},
+  "PBE1PBE":   {"6-31G*":0.950, "6-31G**":0.953, "6-31+G**":0.955, "6-311G*":0.959, "6-311G**":0.959}, // PBE0 in many programs
+  "M06-2X":    {"6-31G*":0.952, "6-31G**":0.952, "6-31+G**":0.946, "6-311G*":0.955, "6-311G**":0.956},
+  "WB97X-D":   {"6-31G*":0.955, "6-31G**":0.953, "6-31+G**":0.956, "6-311G*":0.957, "6-311G**":0.957},
+  // wavefunction
+  "MP2":       {"6-31G*":0.943, "6-31G**":0.937, "6-31+G**":0.941, "6-311G*":0.950, "6-311G**":0.950},
+  "HF":        {"6-31G*":0.899, "6-31G**":0.903}
+};
+
+function normMethod(m){
+  if(!m) return null;
+  let s = String(m).trim();
+  s = s.replace(/['"]/g,"");
+  s = s.replace(/\s+/g,"");
+  
+  // Gaussian route keywords can append grid info (e.g., "B3LYPultrafine")
+  s = s.replace(/ULTRAFINE/ig,"");
+  if(/^B3LYP$/i.test(s)) s = "B3LYP";
+s = s.replace(/WB97XD/i,"WB97X-D");
+  s = s.replace(/wB97X-D/i,"WB97X-D");
+  // ORCA sometimes uses PBE0 keyword
+  if(/^PBE0$/i.test(s)) s = "PBE1PBE";
+  return s.toUpperCase();
+}
+
+function normBasis(b){
+  if(!b) return null;
+  let s = String(b).trim();
+  s = s.replace(/\s+/g,"");
+  s = s.replace(/['"]/g,"");
+  // common Gaussian aliases
+  s = s.replace(/6-31G\(D\)/i,"6-31G*");
+  s = s.replace(/6-31G\(D,P\)/i,"6-31G**");
+  s = s.replace(/6-31\+G\(D,P\)/i,"6-31+G**");
+  s = s.replace(/6-31\+G\(D\)/i,"6-31+G*");
+  // also accept already star-notation
+  s = s.replace(/6-31G\*/i,"6-31G*");
+  s = s.replace(/6-31G\*\*/i,"6-31G**");
+  s = s.replace(/6-31\+G\*\*/i,"6-31+G**");
+  return s.toUpperCase();
+}
+
+function detectTheoryGaussian(text){
+  // route section usually begins with '#'
+  const m = text.match(/^\s*#\s*(.+)$/m);
+  if(!m) return null;
+  const route = m[1];
+  const mm = route.match(/([A-Za-z0-9+\-]+)\s*\/\s*([A-Za-z0-9+\-()_*]+)\b/);
+  if(!mm) return null;
+  return {method:mm[1], basis:mm[2]};
+}
+
+function detectTheoryOrca(text){
+  // Try the "!" input line first
+  const bang = text.match(/^\s*!\s*(.+)$/m);
+  const line = bang ? bang[1] : "";
+  // method candidates in decreasing specificity
+  const methodMatch = (line.match(/\b(wB97X-D|WB97X-D|WB97XD|M06-2X|PBE0|PBE1PBE|B3LYP)\b/i)
+                    || text.match(/\b(wB97X-D|WB97X-D|WB97XD|M06-2X|PBE0|PBE1PBE|B3LYP)\b/i));
+  // basis candidates
+  const basisMatch = (line.match(/\b(6-31\+?G\(\s*D\s*,\s*P\s*\)|6-31\+?G\(\s*D\s*\)|6-31\+?G\*\*|6-31\+?G\*|6-311G\*\*|6-311G\*|cc-pV[DTQ]Z|aug-cc-pV[DTQ]Z|TZVP|def2-[A-Za-z0-9+\-]+)\b/i)
+                    || text.match(/\b(6-31\+?G\(\s*D\s*,\s*P\s*\)|6-31\+?G\(\s*D\s*\)|6-31\+?G\*\*|6-31\+?G\*|6-311G\*\*|6-311G\*|cc-pV[DTQ]Z|aug-cc-pV[DTQ]Z|TZVP|def2-[A-Za-z0-9+\-]+)\b/i));
+  const method = methodMatch ? methodMatch[1] : null;
+  const basis = basisMatch ? basisMatch[1] : null;
+  if(!method && !basis) return null;
+  return {method, basis};
+}
+
+function detectTheoryCfour(text){
+  const mm = text.match(/\b(CALC_LEVEL|METHOD)\s*=\s*([A-Za-z0-9+\-()_]+)\b/i);
+  const bb = text.match(/\bBASIS\s*=\s*([A-Za-z0-9+\-()_*]+)\b/i);
+  const method = mm ? mm[2] : null;
+  const basis = bb ? bb[1] : null;
+  if(!method && !basis) return null;
+  return {method, basis};
+}
+
+function detectTheory(text){
+  if(STATE.program==="gaussian") return detectTheoryGaussian(text);
+  if(STATE.program==="orca") return detectTheoryOrca(text);
+  if(STATE.program==="cfour") return detectTheoryCfour(text);
+  return null;
+}
+
+function lookupNistScale(method, basis){
+  const m = normMethod(method);
+  const b = normBasis(basis);
+  if(!m || !b) return null;
+  const row = NIST_CCCBDB_SCALE[m];
+  if(!row) return null;
+  // prefer exact basis hit
+  if(row[b] !== undefined) return row[b];
+  // fallback: if user used 6-31G(d) etc and normalization didn't catch:
+  const b2 = b.replace(/\(D,P\)/,"**").replace(/\(D\)/,"*");
+  if(row[b2] !== undefined) return row[b2];
+  return null;
+}
+
+function updateNistUI(){
+  const infoEl = $("nistScaleInfo");
+  if(!infoEl) return;
+  const th = STATE.theory;
+  if(!th || (!th.method && !th.basis)){
+    infoEl.textContent = t("txt_nist_pending").replace("—","—");
+    STATE.nistScale = null;
+    return;
+  }
+  const factor = lookupNistScale(th.method, th.basis);
+  STATE.nistScale = factor;
+  const method = th.method || "—";
+  const basis = th.basis || "—";
+  if(factor){
+    infoEl.textContent = fmt(t("txt_nist_found"), {factor: factor.toFixed(4), method, basis});
+  } else {
+    infoEl.textContent = fmt(t("txt_nist_not_found"), {method, basis});
+  }
+}
+
+function applyNistToggle(){
+  const cb = $("useNistScale");
+  const inp = $("irFreqScale");
+  if(!cb || !inp) return;
+  if(cb.checked){
+    if(STATE.nistScale){
+      inp.value = Number(STATE.nistScale).toFixed(4);
+      inp.disabled = true;
+      scheduleLiveUpdate();
+    } else {
+      cb.checked = false;
+      inp.disabled = false;
+      setStatusText(t("st_no_nist"));
+    }
+  } else {
+    inp.disabled = false;
+    scheduleLiveUpdate();
+  }
+
+  // Live update after toggling scaling
+  rerender(false);
+}
+
+
+
+function programLabel(program){
+  if(program==="gaussian") return "Gaussian";
+  if(program==="orca") return "ORCA";
+  if(program==="cfour") return "CFOUR";
+  return "Unknown";
+}
+
+function detectSpectrumAny(text, program){
+  // IR markers
+  const hasIR_g = /Frequencies\s+--/m.test(text) || /Anharmonic\s+Infrared\s+Spectroscopy/m.test(text);
+  const hasIR_orca = /VIBRATIONAL\s+FREQUENCIES/i.test(text) || /IR\s+SPECTRUM/i.test(text) || /IR\s+INTEN/i.test(text);
+  const hasIR_cfour = /HARMONIC\s+VIBRATIONAL\s+FREQUENCIES/i.test(text) || /INFRARED\s+INTENSITIES/i.test(text) || /IR\s+INTENSITIES/i.test(text);
+  const hasIR = hasIR_g || hasIR_orca || hasIR_cfour;
+
+  // UV/Vis markers
+  const hasUV_g = /Excited\s+State\s+\d+:/m.test(text) && /f\s*=\s*[\d.]+/m.test(text);
+  const hasUV_orca = /ABSORPTION\s+SPECTRUM/i.test(text) && /(fosc|oscillator\s+strength|\bf\s*=?\s*\d)/i.test(text);
+  const hasUV_orca2 = /TD-DFT\s+EXCITED\s+STATES/i.test(text) && /(fosc|oscillator\s+strength)/i.test(text);
+  const hasUV_cfour = /(OSCILLATOR\s+STRENGTH|Oscillator\s+strength)/i.test(text) && /eV/i.test(text);
+  const hasUV = hasUV_g || hasUV_orca || hasUV_orca2 || hasUV_cfour;
+
+  if(hasUV && !hasIR) return "uv";
+  if(hasIR && !hasUV) return "ir";
+  if(hasUV && hasIR) return "ir"; // prefer IR if both present
+  return null;
+}
+
+function parseNums(s){
+  return s.trim().split(/\s+/).map(x=>parseFloat(x)).filter(v=>Number.isFinite(v));
+}
+function uniqueByX(lines, tol=0.02){
+  const arr=[...lines].sort((a,b)=>a.x-b.x);
+  const out=[];
+  for(const p of arr){
+    if(!out.length){ out.push(p); continue; }
+    const q = out[out.length-1];
+    if(Math.abs(p.x-q.x)<=tol){
+      if(Math.abs(p.y)>=Math.abs(q.y)) out[out.length-1]=p;
+    } else out.push(p);
+  }
+  return out;
+}
+
+
+/* ---------------- Label helpers ---------------- */
+function toSubscriptDigits(n){
+  const map = {'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉','-':'₋'};
+  return String(n).split('').map(ch => map[ch] ?? ch).join('');
+}
+function nuLabel(index1){
+  // Greek nu + subscript index (1-based)
+  return "ν" + toSubscriptDigits(index1);
+}
+function formatModePairLabel(a0, b0){
+  // ORCA VPT2 "Overtones and combination bands" uses two 0-based mode indices.
+  const a = a0 + 1;
+  const b = b0 + 1;
+  if(a0 === b0) return "2" + nuLabel(a);
+  return nuLabel(a) + " + " + nuLabel(b);
+}
+
+/* ---------------- IR parsing ---------------- */
+function parseIRHarmonicGaussian(text){
+  const lines = text.split(/\r?\n/);
+  const out=[];
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+    if(/Frequencies\s+--/.test(L)){
+      const freqPart = (L.split(/Frequencies\s+--/)[1]||"");
+      const freqs = parseNums(freqPart);
+      if(!freqs.length) continue;
+      let irLine=null;
+      for(let j=i+1;j<Math.min(i+10, lines.length);j++){
+        if(/IR Inten/.test(lines[j]) && /--/.test(lines[j])){ irLine=lines[j]; break; }
+      }
+      if(!irLine) continue;
+      const intenPart = (irLine.split(/IR Inten\s+--/)[1]||"");
+      const intens = parseNums(intenPart);
+      const m = Math.min(freqs.length, intens.length);
+      for(let k=0;k<m;k++){
+        const x=freqs[k], y=intens[k];
+        if(Number.isFinite(x) && Number.isFinite(y)) out.push({x,y,label:nuLabel(out.length+1)});
+      }
+    }
+  }
+
+  // Create nice mode labels ν₁, ν₂, ...
+  const hasZero = out.some(p => p.mode === 0);
+  for(const p of out){
+    if(p.mode !== undefined && Number.isFinite(p.mode)){
+      const idx = hasZero ? (p.mode + 1) : p.mode;
+      p.label = nuLabel(idx);
+    } else if(!p.label){
+      p.label = "";
+    }
+  }
+  // keep only x,y,label for downstream
+  const cleaned = out.map(p => ({x:p.x, y:p.y, label:p.label || ""}));
+  return uniqueByX(cleaned, 0.02);
+}
+
+
+function parseIROrca(text){
+  // ORCA IR can appear in different sections depending on the calculation:
+  //  A) "IR SPECTRUM" table (often in standard freq runs)
+  //  B) "IR Intensities" table (also used by VPT2/GVPT2)
+  const lines = text.split(/\r?\n/);
+  const out=[];
+
+  // --- A) IR SPECTRUM ---
+  let inIR=false;
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+
+    if(/^\s*IR\s+SPECTRUM\s*$/i.test(L.trim())){
+      inIR=true;
+      continue;
+    }
+    if(!inIR) continue;
+
+    // skip headers / separators
+    if(/^-{3,}/.test(L) || /^\s*Mode\s+freq/i.test(L) || /\bcm\*\*?-?1\b/i.test(L) || /\bkm\/mol\b/i.test(L)) continue;
+
+    if(L.trim()===""){
+      if(out.length>0) break;
+      continue;
+    }
+
+    // Example (ORCA variants):
+    //  6:    157.36   0.002903   14.67  0.005757  ( ... )
+    // Here the 3rd numeric after freq is typically Int (km/mol).
+    const m = L.match(/^\s*(\d+)\s*:\s*([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)/);
+    if(m){
+      const freq = parseFloat(m[2]);
+      const inten = parseFloat(m[4]);
+      if(Number.isFinite(freq) && Number.isFinite(inten) && freq>0 && freq<8000){
+        out.push({x:freq, y:inten, mode:parseInt(m[1],10)});
+      }
+      continue;
+    }
+
+    // Fallback: Mode  Freq(cm-1)  Int(km/mol)
+    const m2 = L.match(/^\s*(\d+)\s+([0-9.]+)\s+([0-9.]+)/);
+    if(m2){
+      const freq = parseFloat(m2[2]);
+      const inten = parseFloat(m2[3]);
+      if(Number.isFinite(freq) && Number.isFinite(inten) && freq>0 && freq<8000){
+        out.push({x:freq, y:inten, mode:parseInt(m2[1],10)});
+      }
+    }
+  }
+
+  // --- B) IR Intensities (VPT2 / GVPT2) ---
+  // ORCA VPT2 can print several intermediate "IR Intensities" tables (for displaced geometries).
+  // For plotting we want the final table, which is typically the LAST occurrence in the output.
+  // Example:
+  // Mode freq     Int          T2 ...
+  // 6  1750.52 82.704   0.002917 ( ... )
+  let lastIdx = -1;
+  for(let i=lines.length-1;i>=0;i--){
+    if(/^\s*IR\s+Intensities\s*$/i.test(lines[i].trim())){
+      lastIdx = i;
+      break;
+    }
+  }
+  if(lastIdx >= 0){
+    // Scan forward until a clear section break, then parse numeric rows.
+    for(let j=lastIdx+1;j<Math.min(lastIdx+900, lines.length);j++){
+      const R = lines[j];
+      if(/^\s*Analysis of /i.test(R)) break;
+      if(/^\s*\*{3,}/.test(R)) break;
+      if(/^\s*-{3,}\s*$/.test(R)) continue;
+      if(/Mode\s+freq/i.test(R) || /cm-1/i.test(R) || /km\/mol/i.test(R)) continue;
+
+      const t = R.trim();
+      if(t==="") continue;
+
+      const mm = t.match(/^(\d+)\s+([+-]?[0-9.]+)\s+([+-]?(?:nan|NaN|[0-9.]+))/);
+      if(mm){
+        const mode = parseInt(mm[1],10);
+        const freq = parseFloat(mm[2]);
+        const inten = parseFloat(mm[3]);
+        // Filter out translations/rotations close to 0; keep genuine low-frequency vibrations.
+        if(Number.isFinite(freq) && Number.isFinite(inten) && freq>=1.0 && freq<8000){
+          out.push({x:freq, y:inten, mode:mode});
+        }
+      }
+    }
+  }
+
+
+  // Create nice mode labels ν₁, ν₂, ...
+  const hasZero = out.some(p => p.mode === 0);
+  for(const p of out){
+    if(p.mode !== undefined && Number.isFinite(p.mode)){
+      const idx = hasZero ? (p.mode + 1) : p.mode;
+      p.label = nuLabel(idx);
+    } else if(!p.label){
+      p.label = "";
+    }
+  }
+  // keep only x,y,label for downstream
+  const cleaned = out.map(p => ({x:p.x, y:p.y, label:p.label || ""}));
+  return uniqueByX(cleaned, 0.02);
+}
+
+
+/* ---------------- ORCA VPT2 anharmonic IR parsing ---------------- */
+function parseOrcaVPT2Anharm(text, harmonicLines){
+  // Returns the same structure as Gaussian anharm (I): {fund, ov, comb}
+  // Fundamentals: frequencies from "Fundamental transitions" table (v(fund))
+  // Intensities: taken from IR Intensities table by matching the harmonic frequency w(harm).
+  // Overtones/Combinations: parsed from "Overtones and combination bands" table (Int column in km/mol).
+
+  const out = {fund:[], ov:[], comb:[]};
+  const lines = text.split(/\r?\n/);
+
+  // Build a helper for matching harmonic frequencies to intensities.
+  const harm = (harmonicLines||[]).filter(p=>Number.isFinite(p.x) && Number.isFinite(p.y));
+  function matchIntensityByFreq(freq){
+    if(!harm.length) return null;
+    let best = harm[0], bestd = Math.abs(harm[0].x - freq);
+    for(const p of harm){
+      const d = Math.abs(p.x - freq);
+      if(d < bestd){ bestd=d; best=p; }
+    }
+    // Typical ORCA fundamental table prints w(harm) with high precision, so a small tolerance is fine.
+    // Use a generous safety window for other cases:
+    return (bestd <= 25.0) ? best.y : null;
+  }
+
+  // --- Fundamentals table ---
+  let inFund=false;
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+    if(/^\s*Fundamental transitions\s*\[1\/cm\]\s*$/i.test(L.trim())){
+      inFund=true;
+      continue;
+    }
+    if(!inFund) continue;
+
+    if(/^\s*-{3,}/.test(L)) continue;
+    if(/^\s*Mode\s+w\(harm\)/i.test(L)) continue;
+    if(L.trim()===""){
+      if(out.fund.length>0) break;
+      continue;
+    }
+
+    const m = L.match(/^\s*(\d+)\s+([0-9.]+)\s+([0-9.]+)\s+([+-]?[0-9.]+)/);
+    if(m){
+      const mode = parseInt(m[1],10);
+      const wharm = parseFloat(m[2]);
+      const vfund = parseFloat(m[3]);
+      const inten = matchIntensityByFreq(wharm);
+      if(Number.isFinite(vfund) && Number.isFinite(wharm) && inten !== null){
+        out.fund.push({xharm:wharm, xanh:vfund, yanh:inten, label:nuLabel(mode+1)});
+      }
+    }
+  }
+
+  // --- Overtones and combination bands ---
+  let inOC=false;
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+    if(/^\s*Overtones and combination bands\s*$/i.test(L.trim())){
+      inOC=true;
+      continue;
+    }
+    if(!inOC) continue;
+
+    if(/^\s*-{3,}/.test(L)) continue;
+    if(/\[cm-1\]/i.test(L) || /\[km\/mol\]/i.test(L) || /\[L\/\(mol\*cm\)\]/i.test(L)) continue;
+    if(/^\s*modes\s+freq/i.test(L)) continue;
+
+    const t = L.trim();
+    if(t===""){
+      if((out.ov.length + out.comb.length)>0) break;
+      continue;
+    }
+
+    // Example:
+    //  0   1  5654.76  0.000090    0.46   0.000005   ( ... )
+    const m = t.match(/^(\d+)\s+(\d+)\s+([0-9.]+)\s+([0-9.Ee+-]+)\s+([0-9.Ee+-]+)\s+([0-9.Ee+-]+)/);
+    if(m){
+      const a = parseInt(m[1],10);
+      const b = parseInt(m[2],10);
+      const freq = parseFloat(m[3]);
+      // m[4]=eps, m[5]=Int(km/mol), m[6]=T**2
+      const inten = parseFloat(m[5]);
+      if(Number.isFinite(freq) && Number.isFinite(inten) && freq>0 && freq<12000){
+        const entry = {xanh:freq, yanh:inten, label:formatModePairLabel(a,b)};
+        if(a===b) out.ov.push(entry);
+        else out.comb.push(entry);
+      }
+    }
+  }
+
+  return out;
+}
+
+function parseIRCfour(text){
+  const lines = text.split(/\r?\n/);
+
+  // 1) Preferred: CFOUR prints a combined table:
+  // Frequency      Intensity
+  // (cm-1)         (km/mol)
+  //   A  126.5708  22.1187  VIBRATION
+  const out=[];
+  let inTable=false;
+
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+
+    if(/Frequency\s+Intensity/i.test(L)){
+      inTable=true;
+      continue;
+    }
+    if(!inTable) continue;
+
+    if(/^\s*-{3,}\s*$/.test(L)) continue;
+    if(/\(cm-1\)/i.test(L) || /\(km\/mol\)/i.test(L)) continue;
+
+    if(L.trim()===""){
+      if(out.length>0) break;
+      continue;
+    }
+
+    // Ignore translations/rotations and imaginary freqs. Use only VIBRATION lines.
+    const m = L.match(/^\s*([A-Za-z0-9\-]+)\s+([0-9.]+)(i)?\s+([0-9.]+)\s+VIBRATION/i);
+    if(m){
+      const sym = m[1];
+      const freq = parseFloat(m[2]);
+      const isImag = !!m[3];
+      const inten = parseFloat(m[4]);
+      if(!isImag && Number.isFinite(freq) && Number.isFinite(inten) && freq>0 && freq<8000){
+        out.push({x:freq, y:inten, label:sym});
+      }
+      continue;
+    }
+  }
+
+  if(out.length>0) return uniqueByX(out, 0.02);
+
+  // 2) Fallback: split freq/intensity sections (best-effort legacy parsing)
+  const freqs = [];
+  const intens = [];
+  let inFreq=false, inInt=false;
+
+  for(let i=0;i<lines.length;i++){
+    const L = lines[i];
+
+    // combined numeric table (rare)
+    const mc = L.match(/^\s*(\d+)\s+(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)/);
+    if(mc && /cm/i.test(lines[i-1]||"") && /IR/i.test(lines[i-1]||"")){
+      const idx = parseInt(mc[1],10)-1;
+      freqs[idx]=parseFloat(mc[2]);
+      intens[idx]=parseFloat(mc[3]);
+      continue;
+    }
+
+    if(/HARMONIC\s+VIBRATIONAL\s+FREQUENCIES/i.test(L) || (/VIBRATIONAL\s+FREQUENCIES/i.test(L) && /CM/i.test(L))){
+      inFreq=true; inInt=false; continue;
+    }
+    if(/INFRARED\s+INTENSITIES/i.test(L) || /IR\s+INTENSITIES/i.test(L)){
+      inInt=true; inFreq=false; continue;
+    }
+
+    if(inFreq){
+      const m = L.match(/^\s*(\d+)\s+(-?\d+(?:\.\d+)?)/);
+      if(m){
+        const idx = parseInt(m[1],10)-1;
+        const f = parseFloat(m[2]);
+        if(Number.isFinite(f)) freqs[idx]=f;
+      } else if(/^\s*$/.test(L) && freqs.length>0){
+        inFreq=false;
+      }
+      continue;
+    }
+    if(inInt){
+      const m = L.match(/^\s*(\d+)\s+(-?\d+(?:\.\d+)?)/);
+      if(m){
+        const idx = parseInt(m[1],10)-1;
+        const it = parseFloat(m[2]);
+        if(Number.isFinite(it)) intens[idx]=it;
+      } else if(/^\s*$/.test(L) && intens.length>0){
+        inInt=false;
+      }
+    }
+  }
+
+  const out2=[];
+  const n = Math.min(freqs.length, intens.length);
+  for(let i=0;i<n;i++){
+    const x = freqs[i], y = intens[i];
+    if(Number.isFinite(x) && Number.isFinite(y) && x>0 && x<8000){
+      out2.push({x, y, label:String(i+1)});
+    }
+  }
+  return uniqueByX(out2, 0.02);
+}
+
+function parseIRHarmonicByProgram(text, program){
+  if(program==="orca") return parseIROrca(text);
+  if(program==="cfour") return parseIRCfour(text);
+  return parseIRHarmonicGaussian(text);
+}
+
+function parseAnharmTable(text, which /* 'I' or 'DS' */){
+  const out = {fund:[], ov:[], comb:[]};
+  const keyLine = (which==="I") ? /Integrated intensity\s*\(I\)/m : /Dipole strengths\s*\(DS\)/m;
+  const idx = text.search(keyLine);
+  if(idx<0) return out;
+  const sub = text.slice(idx);
+
+  function prettyGaussianBandLabel(mode, mode2, kind){
+    const a = Number(mode);
+    const b = Number(mode2);
+    if(kind==="fund") return Number.isFinite(a) ? nuLabel(a) : "";
+    if(kind==="ov") return Number.isFinite(a) ? ("2" + nuLabel(a)) : "";
+    if(kind==="comb"){
+      if(Number.isFinite(a) && Number.isFinite(b)){
+        return (a===b) ? ("2" + nuLabel(a)) : (nuLabel(a) + " + " + nuLabel(b));
+      }
+    }
+    return "";
+  }
+
+  function parseSection(sectionName, mode){
+    const reHeader = new RegExp(sectionName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "m");
+    const h = sub.search(reHeader);
+    if(h<0) return;
+    const chunk = sub.slice(h).split(/\r?\n/);
+    for(let i=0;i<chunk.length;i++){
+      const line = chunk[i];
+      if(/^\s*-{2,}\s*$/.test(line)) continue;
+      if(/^\s*Mode\(n\)/.test(line)) continue;
+      if(/^\s*$/.test(line)) { if(i>10) break; else continue; }
+      if(/^(Overtones|Combination Bands|Fundamental Bands|Units:)/.test(line.trim())) {
+        if(i>0 && line.trim()!==sectionName) break;
+      }
+      if(mode==="fund"){
+        const m = line.match(/^\s*(\d+)\(\d+\)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s*$/);
+        if(m){
+          const modeNo = parseInt(m[1],10);
+          out.fund.push({
+            xharm:parseFloat(m[2]),
+            xanh:parseFloat(m[3]),
+            yharm:parseFloat(m[4]),
+            yanh:parseFloat(m[5]),
+            label: prettyGaussianBandLabel(modeNo, null, "fund")
+          });
+        }
+      } else if(mode==="ov"){
+        const m = line.match(/^\s*(\d+)\(\d+\)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s*$/);
+        if(m){
+          const modeNo = parseInt(m[1],10);
+          out.ov.push({
+            xharm:parseFloat(m[2]),
+            xanh:parseFloat(m[3]),
+            yanh:parseFloat(m[4]),
+            label: prettyGaussianBandLabel(modeNo, null, "ov")
+          });
+        }
+      } else if(mode==="comb"){
+        const m = line.match(/^\s*(\d+)\(\d+\)\s+(\d+)\(\d+\)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s+([\d.]+(?:E[+-]?\d+)?)\s*$/);
+        if(m){
+          const modeA = parseInt(m[1],10);
+          const modeB = parseInt(m[2],10);
+          out.comb.push({
+            xharm:parseFloat(m[3]),
+            xanh:parseFloat(m[4]),
+            yanh:parseFloat(m[5]),
+            label: prettyGaussianBandLabel(modeA, modeB, "comb")
+          });
+        }
+      }
+    }
+  }
+  parseSection("Fundamental Bands","fund");
+  parseSection("Overtones","ov");
+  parseSection("Combination Bands","comb");
+  return out;
+}
+function hasAnharm(){
+  return (STATE.ir.anhI.fund.length + STATE.ir.anhDS.fund.length) > 0;
+}
+function getIRLinesSelected(){
+  const src = $("irSource").value;
+  const bandSet = $("irBandSet").value;
+  const minI = 0;
+
+  let table;
+  if(src==="harm"){
+    table = {fund: STATE.ir.harmonic.map(p=>({x:p.x,y:p.y,label:p.label})), ov:[], comb:[]};
+  } else {
+    const prefer = (src==="auto") ? (hasAnharm() ? "anh_i" : "harm") : src;
+    if(prefer==="harm"){
+      table = {fund: STATE.ir.harmonic.map(p=>({x:p.x,y:p.y,label:p.label})), ov:[], comb:[]};
+    } else if(prefer==="anh_i"){
+      table = STATE.ir.anhI;
+    } else {
+      table = STATE.ir.anhDS;
+    }
+  }
+
+  function chooseFreq(o){ return (o.xanh!==undefined) ? o.xanh : (o.x!==undefined ? o.x : o.xharm); }
+  function chooseInt(o){ return (o.yanh!==undefined) ? o.yanh : (o.y!==undefined ? o.y : o.yharm); }
+
+  let raw=[];
+  if(bandSet==="fund") raw = table.fund;
+  if(bandSet==="fund+ov") raw = [...table.fund, ...table.ov];
+  if(bandSet==="fund+comb") raw = [...table.fund, ...table.comb];
+  if(bandSet==="all") raw = [...table.fund, ...table.ov, ...table.comb];
+
+  const lines = raw.map(o=>({x:chooseFreq(o), y:chooseInt(o), label:o.label||""}))
+                   .filter(p=>Number.isFinite(p.x) && Number.isFinite(p.y) && Math.abs(p.y)>=minI);
+  return uniqueByX(lines, 0.02);
+}
+
+/* ---------------- UV parsing ---------------- */
+function parseUVGaussian(text){
+  const out=[];
+  const lines = text.split(/\r?\n/);
+  for(const L of lines){
+    const m = L.match(/^\s*Excited State\s+(\d+):.*?\s([\d.]+)\s+eV\s+([\d.]+)\s+nm\s+f=([\d.]+)/);
+    if(m){
+      out.push({n:parseInt(m[1],10), eV:parseFloat(m[2]), nm:parseFloat(m[3]), f:parseFloat(m[4]), label:L.trim()});
+    }
+  }
+  return out;
+}
+
+
+function parseUVOrca(text){
+  // ORCA TD-DFT UV/Vis parser (robust against unrelated numeric tables elsewhere in the output).
+  // Priority order:
+  //  1) ABSORPTION SPECTRUM VIA TRANSITION ELECTRIC DIPOLE MOMENTS (transition table with "->")
+  //  2) Explicit STATE lines that include nm and oscillator strength (rare, version-dependent)
+  //  3) Simple numeric tables inside an absorption spectrum block (version-dependent)
+
+  const lines = text.split(/\r?\n/);
+
+  // ---------- Pass 1: Electric-dipole absorption spectrum table ----------
+  {
+    const out=[];
+    let inElecTable = false;
+
+    for(let i=0;i<lines.length;i++){
+      const L = lines[i];
+      if(/ABSORPTION\s+SPECTRUM\s+VIA\s+TRANSITION\s+ELECTRIC\s+DIPOLE\s+MOMENTS/i.test(L)){
+        inElecTable = true;
+        continue;
+      }
+      if(!inElecTable) continue;
+
+      if(/ABSORPTION\s+SPECTRUM\s+VIA\s+TRANSITION\s+VELOCITY\s+DIPOLE\s+MOMENTS/i.test(L) || /CD\s+SPECTRUM/i.test(L) || /\*\*\*\s*ORCA-CIS\/TD-DFT/i.test(L)){
+        break;
+      }
+
+      const s = L.trim();
+      if(!s) continue;
+      if(/^-{3,}/.test(s)) continue;
+      if(/^Transition\b/i.test(s)) continue;
+      if(/^\(eV\)/i.test(s)) continue;
+
+      const toks = s.split(/\s+/);
+      const ai = toks.indexOf('->');
+      if(ai >= 0 && toks.length >= ai + 6){
+        const to = toks[ai+1];
+        const eV = parseFloat(toks[ai+2]);
+        const nm = parseFloat(toks[ai+4]);
+        const f  = parseFloat(toks[ai+5]);
+
+        let n = parseInt((to.split('-')[0] || '').replace(/\D+/g,''), 10);
+        if(!Number.isFinite(n)) n = out.length + 1;
+
+        if(Number.isFinite(eV) && Number.isFinite(nm) && Number.isFinite(f)){
+          out.push({n, eV, nm, f, label: s});
+        }
+      }
+    }
+
+    if(out.length){
+      const seen = new Set();
+      const uniq=[];
+      for(const p of out){
+        const key = `${p.n}-${p.eV.toFixed(6)}`;
+        if(!seen.has(key)){
+          seen.add(key);
+          uniq.push(p);
+        }
+      }
+      uniq.sort((a,b)=>a.n-b.n);
+      return uniq;
+    }
+  }
+
+  // ---------- Pass 2: explicit STATE lines with nm and oscillator strength ----------
+  {
+    const out=[];
+    for(const L of lines){
+      const m = L.match(/^\s*(?:STATE|State)\s+(\d+)\s*[: ]\s+.*?(-?\d+(?:\.\d+)?)\s*eV.*?(-?\d+(?:\.\d+)?)\s*nm.*?(?:fosc|f)\s*=?\s*([0-9.]+)/i);
+      if(m){
+        const n = parseInt(m[1],10);
+        const eV = parseFloat(m[2]);
+        const nm = parseFloat(m[3]);
+        const f  = parseFloat(m[4]);
+        if(Number.isFinite(n) && Number.isFinite(eV) && Number.isFinite(nm) && Number.isFinite(f)){
+          out.push({n,eV,nm,f,label:L.trim()});
+        }
+      }
+    }
+    if(out.length){
+      out.sort((a,b)=>a.n-b.n);
+      return out;
+    }
+  }
+
+  // ---------- Pass 3: numeric tables inside absorption spectrum blocks (best-effort) ----------
+  {
+    const out=[];
+    let inAbs = false;
+    for(let i=0;i<lines.length;i++){
+      const L = lines[i];
+      if(/ABSORPTION\s+SPECTRUM/i.test(L) && /Wavelength/i.test(L)){
+        inAbs = true;
+        continue;
+      }
+      if(!inAbs) continue;
+
+      if(/(CD\s+SPECTRUM|\*\*\*\s*ORCA-CIS\/TD-DFT|TOTAL\s+RUN\s+TIME|ORCA\s+TERMINATED)/i.test(L)) break;
+
+      const s = L.trim();
+      if(!s) continue;
+      if(/^-{3,}/.test(s)) continue;
+      if(/^Transition\b/i.test(s)) continue;
+
+      // Expect: n  eV  cm-1  nm  fosc  ...  OR: n eV nm f
+      const toks = s.split(/\s+/);
+      if(toks.length>=5 && /^\d+$/.test(toks[0])){
+        const n = parseInt(toks[0],10);
+        const eV = parseFloat(toks[1]);
+        const nm = parseFloat(toks[3]);
+        const f  = parseFloat(toks[4]);
+        if(Number.isFinite(n) && Number.isFinite(eV) && Number.isFinite(nm) && Number.isFinite(f)){
+          out.push({n,eV,nm,f,label:s});
+        }
+      } else if(toks.length>=4 && /^\d+$/.test(toks[0])){
+        const n = parseInt(toks[0],10);
+        const eV = parseFloat(toks[1]);
+        const nm = parseFloat(toks[2]);
+        const f  = parseFloat(toks[3]);
+        if(Number.isFinite(n) && Number.isFinite(eV) && Number.isFinite(nm) && Number.isFinite(f)){
+          out.push({n,eV,nm,f,label:s});
+        }
+      }
+    }
+    if(out.length){
+      out.sort((a,b)=>a.n-b.n);
+      return out;
+    }
+  }
+
+  return [];
+}
+
+function parseUVCfour(text){
+  // Best-effort: only works if oscillator strengths are present in the output.
+  const lines = text.split(/\r?\n/);
+  const out=[];
+  let currentEV = null;
+
+  for(const L of lines){
+    let m = L.match(/Excitation\s+energy.*?([0-9.]+)\s*eV/i);
+    if(m){
+      currentEV = parseFloat(m[1]);
+      continue;
+    }
+    m = L.match(/Oscillator\s+strength.*?([0-9.]+)/i);
+    if(m && Number.isFinite(currentEV)){
+      const f = parseFloat(m[1]);
+      if(Number.isFinite(f)){
+        const n = out.length+1;
+        const eV = currentEV;
+        const nm = 1240.0/eV;
+        out.push({n,eV,nm,f,label:`State ${n}`});
+      }
+      currentEV = null;
+      continue;
+    }
+
+    // single-line patterns (rare)
+    m = L.match(/^\s*(\d+)\s+([0-9.]+)\s*eV.*?(?:f|osc)\s*=?\s*([0-9.]+)/i);
+    if(m){
+      const n = parseInt(m[1],10);
+      const eV = parseFloat(m[2]);
+      const f = parseFloat(m[3]);
+      if(Number.isFinite(n) && Number.isFinite(eV) && Number.isFinite(f)){
+        out.push({n,eV,nm:1240.0/eV,f,label:L.trim()});
+      }
+      currentEV = null;
+    }
+  }
+  out.sort((a,b)=>a.n-b.n);
+  return out;
+}
+
+function parseUVByProgram(text, program){
+  if(program==="orca") return parseUVOrca(text);
+  if(program==="cfour") return parseUVCfour(text);
+  return parseUVGaussian(text);
+}
+
+
+/* ---------------- Broadening ---------------- */
+function lorentz(x,x0,fwhm){
+  const g=0.5*fwhm;
+  return (g*g)/((x-x0)*(x-x0)+g*g);
+}
+function gauss(x,x0,fwhm){
+  const sigma = fwhm/(2*Math.sqrt(2*Math.log(2)));
+  const z=(x-x0)/sigma;
+  return Math.exp(-0.5*z*z);
+}
+function normalizeGridParams(xMin, xMax, step, maxPoints=20000){
+  if(!Number.isFinite(xMin) || !Number.isFinite(xMax) || !Number.isFinite(step)) return null;
+  if(step <= 0) return null;
+  if(xMax <= xMin) return null;
+  let n = Math.floor((xMax - xMin) / step) + 1;
+  if(!Number.isFinite(n) || n < 2) return null;
+  if(n > maxPoints){
+    step = (xMax - xMin) / (maxPoints - 1);
+    n = maxPoints;
+  }
+  return {xMin, xMax, step, n};
+}
+
+function computeSpectrumFromLines(lines, xMin, xMax, step, fwhm, shape){
+  const grid = normalizeGridParams(xMin, xMax, step);
+  if(!grid) return {x:[], y:[], stepUsed: step, pointCount: 0};
+  const {n} = grid;
+  step = grid.step;
+  const x=new Array(n);
+  const y=new Array(n).fill(0);
+  const kernel = (shape==="gauss") ? gauss : lorentz;
+  for(let i=0;i<n;i++){
+    const xi=xMin+i*step;
+    x[i]=xi;
+    let sum=0;
+    for(const p of lines){
+      sum += p.y * kernel(xi, p.x, fwhm);
+    }
+    y[i]=sum;
+  }
+  return {x,y,stepUsed:step,pointCount:n};
+}
+function computeUVSpectrum(lines, xMin, xMax, step, fwhmNM, energyGaussian){
+  // UV/Vis is plotted on a wavelength axis (nm). FWHM is provided in nm.
+  // If "energyGaussian" is enabled, we broaden in energy space using an approximate conversion:
+  //   FWHM_eV ≈ |dE/dλ| * FWHM_nm  with E = 1240/λ  => |dE/dλ| = 1240/λ^2
+  const grid = normalizeGridParams(xMin, xMax, step);
+  if(!grid) return {x:[], y:[], stepUsed: step, pointCount: 0};
+  const {n} = grid;
+  step = grid.step;
+  const x=new Array(n);
+  const y=new Array(n).fill(0);
+  const kernel = gauss;
+
+  for(let i=0;i<n;i++){
+    const lam = xMin + i*step;
+    x[i]=lam;
+    let sum=0;
+    for(const p of lines){
+      if(!Number.isFinite(p.nm) || !Number.isFinite(p.eV) || !Number.isFinite(p.f)) continue;
+      if(energyGaussian){
+        const E  = 1240.0/lam;
+        const lam0 = Math.max(1e-6, p.nm);
+        const fwhmEV = Math.max(1e-6, (1240.0/(lam0*lam0)) * Math.max(1e-6, fwhmNM));
+        sum += p.f * kernel(E, p.eV, fwhmEV);
+      } else {
+        sum += p.f * kernel(lam, p.nm, Math.max(1e-6, fwhmNM));
+      }
+    }
+    y[i]=sum;
+  }
+  return {x,y,stepUsed:step,pointCount:n};
+}
+
+/* ---------------- SVG plot (crosshair + box zoom) ---------------- */
+function niceTicks(min,max,n=6){
+  const span=max-min;
+  if(span<=0) return [min];
+  const step0 = span/Math.max(1,(n-1));
+  const mag = Math.pow(10, Math.floor(Math.log10(step0)));
+  const norm = step0/mag;
+  let step;
+  if(norm<1.5) step=1*mag;
+  else if(norm<3) step=2*mag;
+  else if(norm<7) step=5*mag;
+  else step=10*mag;
+
+  const start = Math.ceil(min/step)*step;
+  const ticks=[];
+  for(let v=start; v<=max+1e-9; v+=step) ticks.push(v);
+  return ticks;
+}
+
+function clamp(v,a,b){ return Math.max(a, Math.min(b,v)); }
+
+function buildSVGPlot(plot, onZoom, onReset){
+  const W=980, H=460;
+  const margin={l:64,r:20,t:28,b:52};
+  const innerW=W-margin.l-margin.r;
+  const innerH=H-margin.t-margin.b;
+
+  const x = plot.x, y = plot.y;
+  const xUnit = plot.xUnit;
+  const invertX = !!plot.invertX;
+  const showSticks = !!plot.showSticks;
+  const sticks = plot.sticks || [];
+  const title = plot.title || "Spectrum";
+
+  const fullXMin = Math.min(...x), fullXMax = Math.max(...x);
+  const displayMode = plot.displayMode || "normal";
+  let yAutoMin = (displayMode === "transmission") ? 0 : 0;
+  let yAutoMax = (displayMode === "transmission") ? 100 : (Math.max(...y.map(v=>Math.abs(v))) || 1);
+  if(!(Number.isFinite(yAutoMin) && Number.isFinite(yAutoMax)) || yAutoMax === yAutoMin){
+    yAutoMin = 0;
+    yAutoMax = 1;
+  }
+
+  const view = plot.view || {xMin: fullXMin, xMax: fullXMax, yMin: yAutoMin, yMax: yAutoMax};
+  const vxMin=view.xMin, vxMax=view.xMax, vyMin=view.yMin, vyMax=view.yMax;
+
+  const xMap = (v)=>{
+    if(!invertX) return margin.l + (v - vxMin)/(vxMax - vxMin) * innerW;
+    return margin.l + (vxMax - v)/(vxMax - vxMin) * innerW;
+  };
+  const yMap = (v)=>{
+    return margin.t + innerH - (v - vyMin)/(vyMax - vyMin) * innerH;
+  };
+  const xFromPx = (px)=>{
+    const u = (px - margin.l)/innerW;
+    const uu = clamp(u,0,1);
+    if(!invertX) return vxMin + uu*(vxMax-vxMin);
+    return vxMax - uu*(vxMax-vxMin);
+  };
+  const yFromPy = (py)=>{
+    const u = (margin.t+innerH - py)/innerH;
+    const uu = clamp(u,0,1);
+    return vyMin + uu*(vyMax-vyMin);
+  };
+
+  let d="";
+  let started=false;
+  for(let i=0;i<x.length;i++){
+    const xi=x[i];
+    if(xi < Math.min(vxMin,vxMax) - 1e-9 || xi > Math.max(vxMin,vxMax) + 1e-9) continue;
+    const px=xMap(xi);
+    const py=yMap(Math.max(vyMin, Math.min(vyMax, y[i])));
+    d += (started ? "L":"M") + px.toFixed(2) + " " + py.toFixed(2) + " ";
+    started=true;
+  }
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
+  svg.setAttribute("width", W);
+  svg.setAttribute("height", H);
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.style.display="block";
+
+  const bg = document.createElementNS(svg.namespaceURI,"rect");
+  bg.setAttribute("x",0); bg.setAttribute("y",0);
+  bg.setAttribute("width",W); bg.setAttribute("height",H);
+  bg.setAttribute("fill","#ffffff");
+  svg.appendChild(bg);
+
+  const g = document.createElementNS(svg.namespaceURI,"g");
+  svg.appendChild(g);
+
+  for(const t of niceTicks(vxMin,vxMax,7)){
+    const xg = xMap(t);
+    const ln = document.createElementNS(svg.namespaceURI,"line");
+    ln.setAttribute("x1",xg); ln.setAttribute("x2",xg);
+    ln.setAttribute("y1",margin.t); ln.setAttribute("y2",margin.t+innerH);
+    ln.setAttribute("stroke","rgba(17,24,39,0.08)");
+    ln.setAttribute("stroke-width","1");
+    g.appendChild(ln);
+  }
+  for(const t of niceTicks(vyMin,vyMax,6)){
+    const yg = yMap(t);
+    const ln = document.createElementNS(svg.namespaceURI,"line");
+    ln.setAttribute("x1",margin.l); ln.setAttribute("x2",margin.l+innerW);
+    ln.setAttribute("y1",yg); ln.setAttribute("y2",yg);
+    ln.setAttribute("stroke","rgba(17,24,39,0.08)");
+    ln.setAttribute("stroke-width","1");
+    g.appendChild(ln);
+  }
+
+  const ax = document.createElementNS(svg.namespaceURI,"rect");
+  ax.setAttribute("x", margin.l);
+  ax.setAttribute("y", margin.t);
+  ax.setAttribute("width", innerW);
+  ax.setAttribute("height", innerH);
+  ax.setAttribute("fill","transparent");
+  ax.setAttribute("stroke","rgba(107,114,128,0.45)");
+  ax.setAttribute("stroke-width","1.2");
+  g.appendChild(ax);
+
+  if(showSticks && sticks.length){
+    const maxStick = Math.max(...sticks.map(p=>Math.abs(p.y))) || 1;
+    for(const s of sticks){
+      if(s.x < Math.min(vxMin,vxMax) - 1e-9 || s.x > Math.max(vxMin,vxMax) + 1e-9) continue;
+      const xs = xMap(s.x);
+      const ln = document.createElementNS(svg.namespaceURI,"line");
+      ln.setAttribute("x1",xs); ln.setAttribute("x2",xs);
+      if(displayMode === "transmission"){
+        const baseline = (plot.stickBaseline !== undefined) ? plot.stickBaseline : vyMax;
+        const hh = (Math.abs(s.y)/maxStick) * ((baseline - vyMin)*0.95);
+        const y0 = yMap(baseline);
+        const y1 = yMap(Math.max(vyMin, baseline - hh));
+        ln.setAttribute("y1",y0); ln.setAttribute("y2",y1);
+      } else {
+        const y0 = yMap(0);
+        const hh = (Math.abs(s.y)/maxStick) * (vyMax*0.95);
+        const y1 = yMap(hh);
+        ln.setAttribute("y1",y0); ln.setAttribute("y2",y1);
+      }
+      ln.setAttribute("stroke","rgba(43,108,176,0.55)");
+      ln.setAttribute("stroke-width","1");
+      g.appendChild(ln);
+    }
+  }
+
+  const path = document.createElementNS(svg.namespaceURI,"path");
+  path.setAttribute("d", d.trim());
+  path.setAttribute("fill","none");
+  path.setAttribute("stroke","#111827");
+  path.setAttribute("stroke-width","2.0");
+  path.setAttribute("stroke-linejoin","round");
+  path.setAttribute("stroke-linecap","round");
+  g.appendChild(path);
+
+  const tt = document.createElementNS(svg.namespaceURI,"text");
+  tt.setAttribute("x", margin.l);
+  tt.setAttribute("y", 18);
+  tt.setAttribute("fill","#111827");
+  tt.setAttribute("font-size","13");
+  tt.setAttribute("font-family","ui-sans-serif, system-ui");
+  tt.textContent = title;
+  svg.appendChild(tt);
+
+  const xl = document.createElementNS(svg.namespaceURI,"text");
+  xl.setAttribute("x", margin.l + innerW/2);
+  xl.setAttribute("y", H-16);
+  xl.setAttribute("fill","#6b7280");
+  xl.setAttribute("font-size","12");
+  xl.setAttribute("text-anchor","middle");
+  xl.textContent = (xUnit==="cm-1") ? "Wavenumber / cm⁻¹" : (xUnit==="nm" ? "Wavelength / nm" : "Energy / eV");
+  svg.appendChild(xl);
+
+  const yl = document.createElementNS(svg.namespaceURI,"text");
+  yl.setAttribute("x", 18);
+  yl.setAttribute("y", margin.t + innerH/2);
+  yl.setAttribute("fill","#6b7280");
+  yl.setAttribute("font-size","12");
+  yl.setAttribute("text-anchor","middle");
+  yl.setAttribute("transform", `rotate(-90 18 ${margin.t + innerH/2})`);
+  yl.textContent = plot.yLabel || "Intensity (arb.)";
+  svg.appendChild(yl);
+
+  for(const tv of niceTicks(vxMin,vxMax,7)){
+    const tx = xMap(tv);
+    const lab = document.createElementNS(svg.namespaceURI,"text");
+    lab.setAttribute("x",tx);
+    lab.setAttribute("y", margin.t+innerH+18);
+    lab.setAttribute("fill","#6b7280");
+    lab.setAttribute("font-size","11");
+    lab.setAttribute("text-anchor","middle");
+    lab.textContent = (xUnit==="eV") ? tv.toFixed(1) : tv.toFixed(0);
+    svg.appendChild(lab);
+  }
+  for(const tv of niceTicks(vyMin,vyMax,6)){
+    const ty = yMap(tv);
+    const lab = document.createElementNS(svg.namespaceURI,"text");
+    lab.setAttribute("x", margin.l-8);
+    lab.setAttribute("y", ty+4);
+    lab.setAttribute("fill","#6b7280");
+    lab.setAttribute("font-size","11");
+    lab.setAttribute("text-anchor","end");
+    lab.textContent = (Math.abs(tv)>=100) ? tv.toFixed(0) : tv.toFixed(2);
+    svg.appendChild(lab);
+  }
+
+  const vline = document.createElementNS(svg.namespaceURI,"line");
+  vline.setAttribute("stroke","rgba(17,24,39,0.20)");
+  vline.setAttribute("stroke-width","1");
+  vline.setAttribute("visibility","hidden");
+  svg.appendChild(vline);
+
+  const hline = document.createElementNS(svg.namespaceURI,"line");
+  hline.setAttribute("stroke","rgba(17,24,39,0.20)");
+  hline.setAttribute("stroke-width","1");
+  hline.setAttribute("visibility","hidden");
+  svg.appendChild(hline);
+
+  const selRect = document.createElementNS(svg.namespaceURI,"rect");
+  selRect.setAttribute("fill","rgba(43,108,176,0.12)");
+  selRect.setAttribute("stroke","rgba(43,108,176,0.85)");
+  selRect.setAttribute("stroke-width","1");
+  selRect.setAttribute("visibility","hidden");
+  svg.appendChild(selRect);
+
+  const overlay = document.createElementNS(svg.namespaceURI,"rect");
+  overlay.setAttribute("x", margin.l);
+  overlay.setAttribute("y", margin.t);
+  overlay.setAttribute("width", innerW);
+  overlay.setAttribute("height", innerH);
+  overlay.setAttribute("fill","transparent");
+  overlay.style.cursor="crosshair";
+  svg.appendChild(overlay);
+
+  function svgPoint(evt){
+    const pt = svg.createSVGPoint();
+    pt.x = evt.clientX; pt.y = evt.clientY;
+    const ctm = svg.getScreenCTM().inverse();
+    return pt.matrixTransform(ctm);
+  }
+
+  let drag=null;
+
+  overlay.addEventListener("mousemove", (ev)=>{
+    const p = svgPoint(ev);
+    const px = clamp(p.x, margin.l, margin.l+innerW);
+    const py = clamp(p.y, margin.t, margin.t+innerH);
+
+    vline.setAttribute("x1", px); vline.setAttribute("x2", px);
+    vline.setAttribute("y1", margin.t); vline.setAttribute("y2", margin.t+innerH);
+    hline.setAttribute("x1", margin.l); hline.setAttribute("x2", margin.l+innerW);
+    hline.setAttribute("y1", py); hline.setAttribute("y2", py);
+    vline.setAttribute("visibility","visible");
+    hline.setAttribute("visibility","visible");
+
+    const xv = xFromPx(px);
+    const yv = yFromPy(py);
+    $("cursorMeta").innerHTML = `<b>x</b> ${xv.toFixed(xUnit==="eV"?3:1)} ${xUnit} &nbsp; <b>y</b> ${yv.toFixed(4)}`;
+
+    if(drag){
+      drag.x1 = px; drag.y1 = py;
+      const x0 = drag.x0, y0 = drag.y0;
+      const xA = Math.min(x0, px), xB = Math.max(x0, px);
+      const yA = Math.min(y0, py), yB = Math.max(y0, py);
+      selRect.setAttribute("x", xA);
+      selRect.setAttribute("y", yA);
+      selRect.setAttribute("width", Math.max(0, xB-xA));
+      selRect.setAttribute("height", Math.max(0, yB-yA));
+      selRect.setAttribute("visibility","visible");
+    }
+  });
+
+  overlay.addEventListener("mouseleave", ()=>{
+    vline.setAttribute("visibility","hidden");
+    hline.setAttribute("visibility","hidden");
+    $("cursorMeta").innerHTML = `<b>x</b> — <b>y</b> —`;
+    if(drag){
+      selRect.setAttribute("visibility","hidden");
+    }
+  });
+
+  overlay.addEventListener("mousedown", (ev)=>{
+    if(ev.button!==0) return;
+    const p = svgPoint(ev);
+    const px = clamp(p.x, margin.l, margin.l+innerW);
+    const py = clamp(p.y, margin.t, margin.t+innerH);
+    drag = {x0:px, y0:py, x1:px, y1:py};
+    selRect.setAttribute("x", px);
+    selRect.setAttribute("y", py);
+    selRect.setAttribute("width", 0);
+    selRect.setAttribute("height", 0);
+    selRect.setAttribute("visibility","visible");
+    ev.preventDefault();
+  });
+
+  overlay.addEventListener("mouseup", (ev)=>{
+    if(!drag) return;
+    const dx = Math.abs(drag.x1 - drag.x0);
+    const dy = Math.abs(drag.y1 - drag.y0);
+    selRect.setAttribute("visibility","hidden");
+
+    if(dx < 6 || dy < 6){ drag=null; return; }
+
+    const xA = Math.min(drag.x0, drag.x1);
+    const xB = Math.max(drag.x0, drag.x1);
+    const yA = Math.min(drag.y0, drag.y1);
+    const yB = Math.max(drag.y0, drag.y1);
+
+    const newXMin = xFromPx(xA);
+    const newXMax = xFromPx(xB);
+    const newYMax = yFromPy(yA);
+    const newYMin = yFromPy(yB);
+
+    drag=null;
+    if(onZoom){
+      const z = {
+        xMin: Math.min(newXMin, newXMax),
+        xMax: Math.max(newXMin, newXMax),
+        yMin: Math.min(newYMin, newYMax),
+        yMax: Math.max(newYMin, newYMax),
+      };
+      if(Math.abs(z.xMax-z.xMin) > 1e-9 && Math.abs(z.yMax-z.yMin) > 1e-9){
+        onZoom(z);
+      }
+    }
+  });
+
+  overlay.addEventListener("dblclick", (ev)=>{
+    ev.preventDefault();
+    if(onReset) onReset();
+  });
+
+  return svg;
+}
+
+/* ---------------- Exports ---------------- */
+function downloadBlob(filename, blob){
+  const a=document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },0);
+}
+function downloadText(filename, text, mime="text/plain"){
+  downloadBlob(filename, new Blob([text], {type:mime}));
+}
+async function svgToPng(svgEl, scale=2){
+  const xml = new XMLSerializer().serializeToString(svgEl);
+  const svg64 = btoa(unescape(encodeURIComponent(xml)));
+  const image64 = "data:image/svg+xml;base64," + svg64;
+  const img = new Image();
+  return await new Promise((resolve,reject)=>{
+    img.onload = ()=>{
+      const canvas = document.createElement("canvas");
+      canvas.width = svgEl.viewBox.baseVal.width * scale;
+      canvas.height = svgEl.viewBox.baseVal.height * scale;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob((blob)=> blob?resolve(blob):reject(new Error("PNG export failed")), "image/png");
+    };
+    img.onerror = reject;
+    img.src = image64;
+  });
+}
+function buildCSV(x,y,xLabel,yLabel){
+  const header = `${xLabel},${yLabel}\n`;
+  const rows = x.map((xi,i)=> `${xi},${y[i]}`).join("\n");
+  return header + rows + "\n";
+}
+function buildJcampDX(x,y, opts){
+  opts = opts || {};
+  const title   = opts.title   || "Spectrum";
+  const origin  = opts.origin  || "Unknown";
+  const dataType= opts.dataType|| "SPECTRUM";
+  const xUnits  = opts.xUnits  || "1/CM";
+  const yUnits  = opts.yUnits  || "ABSORBANCE";
+
+  const dx = (x.length>1) ? Math.abs(x[1]-x[0]) : 1;
+  const n = x.length;
+  const firstx = x[0];
+  const lastx = x[n-1];
+  const now = new Date().toISOString();
+
+  let s="";
+  s += `##TITLE=${title}\n`;
+  s += `##JCAMP-DX=5.01\n`;
+  s += `##DATA TYPE=${dataType}\n`;
+  s += `##ORIGIN=${origin} (Browser)\n`;
+  s += `##OWNER=WKB\n`;
+  s += `##DATE=${now}\n`;
+  s += `##XUNITS=${xUnits}\n`;
+  s += `##YUNITS=${yUnits}\n`;
+  s += `##XFACTOR=1\n`;
+  s += `##YFACTOR=1\n`;
+  s += `##NPOINTS=${n}\n`;
+  s += `##FIRSTX=${firstx}\n`;
+  s += `##LASTX=${lastx}\n`;
+  s += `##DELTAX=${dx}\n`;
+  s += `##XYDATA=(XY..XY)\n`;
+  for(let i=0;i<n;i++){
+    s += `${x[i].toFixed(3)} ${y[i].toExponential(6)}\n`;
+  }
+  s += `##END=\n`;
+  return s;
+}
+async function copyText(text){
+  await navigator.clipboard.writeText(text);
+}
+
+/* ---------------- UI logic ---------------- */
+
+function updateIRBandsetAvailability(){
+  const bands = $("irBandSet");
+  if(!bands) return;
+  const src = $("irSource") ? $("irSource").value : "harm";
+
+  let prefer = src;
+  if(src==="auto"){
+    prefer = hasAnharm() ? "anh_i" : "harm";
+  }
+  let table;
+  if(prefer==="harm"){
+    table = {fund: STATE.ir.harmonic, ov:[], comb:[]};
+  } else if(prefer==="anh_i"){
+    table = STATE.ir.anhI;
+  } else {
+    table = STATE.ir.anhDS;
+  }
+  const hasOv = (table.ov && table.ov.length>0);
+  const hasComb = (table.comb && table.comb.length>0);
+
+  for(const opt of bands.options){
+    if(opt.value==="fund") opt.disabled = false;
+    if(opt.value==="fund+ov") opt.disabled = !hasOv;
+    if(opt.value==="fund+comb") opt.disabled = !hasComb;
+    if(opt.value==="all") opt.disabled = !(hasOv || hasComb);
+  }
+  // If current choice became invalid → fall back to fundamentals.
+  const selOpt = bands.selectedOptions && bands.selectedOptions[0];
+  if(selOpt && selOpt.disabled) bands.value = "fund";
+}
+
+function updateSettingsVisibility(){
+  const eff = effectiveType();
+  const isIR = (eff !== "uv");
+  $("irSettings").style.display = isIR ? "block" : "none";
+  $("uvSettings").style.display = isIR ? "none" : "block";
+
+  if(!isIR) return;
+
+  const hasAnharmOrca = (STATE.program==="orca") && (STATE.ir.anhI.fund.length + STATE.ir.anhI.ov.length + STATE.ir.anhI.comb.length > 0);
+  const hasAnharmI = (STATE.ir.anhI.fund.length + STATE.ir.anhI.ov.length + STATE.ir.anhI.comb.length > 0);
+  const hasAnharmDS = (STATE.ir.anhDS.fund.length + STATE.ir.anhDS.ov.length + STATE.ir.anhDS.comb.length > 0);
+
+  // Enable the source selector:
+  // - Gaussian: always allow, but disable anharm options if no anharm data exists.
+  // - ORCA: allow only if we actually parsed VPT2 anharmonic data.
+  // - CFOUR: harmonic-only.
+  const supportsSource = (STATE.program==="gaussian") || hasAnharmOrca;
+
+  const srcSel = $("irSource");
+  if(srcSel){
+    srcSel.disabled = !supportsSource;
+
+    const optI  = srcSel.querySelector('option[value="anh_i"]');
+    const optDS = srcSel.querySelector('option[value="anh_ds"]');
+
+    if(optI){
+      optI.disabled = !supportsSource || !hasAnharmI;
+      optI.hidden   = false;
+    }
+    if(optDS){
+      // ORCA does not provide DS in our current implementation → hide/disable DS option.
+      if(STATE.program==="orca"){
+        optDS.disabled = true;
+        optDS.hidden   = true;
+      } else {
+        optDS.hidden   = false;
+        optDS.disabled = !supportsSource || !hasAnharmDS;
+      }
+    }
+
+    // If the chosen value is not allowed, fall back to harmonic.
+    const selOpt = srcSel.selectedOptions && srcSel.selectedOptions[0];
+    if(!supportsSource || (selOpt && selOpt.disabled)){
+      srcSel.value = "harm";
+    }
+  }
+
+  updateIRBandsetAvailability();
+}
+
+function effectiveType(){
+  if(STATE.detected) return STATE.detected;
+  const canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+  const canUV = STATE.uv.lines.length>0;
+  if(canIR) return "ir";
+  if(canUV) return "uv";
+  return null;
+}
+
+function enableButtons(ok){
+  $("btnGenerate").disabled = !ok;
+}
+function enableExports(hasPlot){
+  $("btnExportSVG").disabled = !hasPlot;
+  $("btnExportPNG").disabled = !hasPlot;
+  $("btnExportCSV").disabled = !hasPlot;
+  $("btnExportDX").disabled = !hasPlot;
+  $("btnZoomReset").disabled = !hasPlot || !STATE.last?.view;
+  $("btnCopySVG").disabled = !hasPlot;
+  $("btnCopyDX").disabled = !hasPlot;
+}
+
+
+function refreshPlotText(){
+  const p = STATE.last;
+  if(!p) return;
+
+  if(p.type==="ir"){
+    const meta = p.meta || {};
+    const emission = !!meta.emission;
+    p.title = emission ? t("title_ir_emission") : t("title_ir");
+    p.yLabel = emission ? t("ylab_ir_emission") : t("ylab_ir");
+    p.displayMode = emission ? "transmission" : "normal";
+    p.stickBaseline = emission ? 100 : 0;
+    const n = (p.sticks && p.sticks.length) ? p.sticks.length : (p.lines ? p.lines.length : 0);
+    const normSuffix = meta.normalize ? t("meta_norm") : "";
+    const emSuffix = emission ? ` • ${t("meta_emission")}` : "";
+    $("plotMeta").innerHTML = `<b>IR</b>${emSuffix} • ${t("meta_peaks")} ${n} • Δx ${meta.step} • FWHM ${meta.fwhm} • ${meta.shape}${normSuffix}${(meta.freqScale && Math.abs(meta.freqScale-1)>1e-6)?` • ${t("meta_scale")} ${Number(meta.freqScale).toFixed(4)}`:""}`;
+  } else {
+    const meta = p.meta || {};
+    const emission = !!meta.emission;
+    p.title = emission ? t("title_uv_emission") : t("title_uv");
+    p.yLabel = emission ? t("ylab_uv_emission") : t("ylab_uv");
+    const normSuffix = meta.normalize ? t("meta_norm") : "";
+    const emSuffix = emission ? ` • ${t("meta_emission")}` : "";
+    const n = STATE.uv.lines.filter(q=>Number.isFinite(q.eV) && Number.isFinite(q.f)).length;
+    $("plotMeta").innerHTML = `<b>UV/Vis</b>${emSuffix} • ${t("meta_states")} ${n} • Δx ${meta.step} • FWHM ${meta.fwhm} nm${normSuffix}`;
+  }
+}
+
+function refreshStatusForLang(){
+  if(!STATE.text){
+    setStatusText(t("status_idle"));
+    return;
+  }
+  const canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+  const canUV = STATE.uv.lines.length>0;
+
+  if(!canIR && !canUV){
+    setStatusText(t("st_no_data"));
+    return;
+  }
+
+  if(STATE.last){
+    if(STATE.last.type==="ir"){
+      const n = (STATE.last.sticks && STATE.last.sticks.length) ? STATE.last.sticks.length : (STATE.last.lines ? STATE.last.lines.length : 0);
+      setStatusText(fmt(t("st_ir_generated"), {n}));
+    } else {
+      const n = STATE.uv.lines.filter(q=>Number.isFinite(q.eV) && Number.isFinite(q.f)).length;
+      setStatusText(fmt(t("st_uv_generated"), {n}));
+    }
+  } else {
+    setStatusText(t("st_loaded"));
+  }
+}
+
+function updateFileName(id){
+  const inp = $(id);
+  const out = $(id+"Name");
+  const clr = document.querySelector(`.file-clear[data-file="${id}"]`);
+  if(!inp || !out) return;
+  const f = inp.files && inp.files[0];
+  if(f){
+    out.textContent=f.name;
+    out.classList.remove("empty");
+    if(clr) clr.disabled=false;
+  } else {
+    out.textContent="No file chosen";
+    out.classList.add("empty");
+    if(clr) clr.disabled=true;
+  }
+}
+
+function bindFilePickers(){
+  document.querySelectorAll(".file-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const id = btn.getAttribute("data-file");
+      const inp = $(id);
+      if(inp) inp.click();
+    });
+  });
+  document.querySelectorAll(".file-clear").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const id = btn.getAttribute("data-file");
+      const inp = $(id);
+      if(inp) inp.value="";
+      updateFileName(id);
+      clearAll();
+    });
+  });
+}
+bindFilePickers();
+
+function clearAll(){
+  STATE.filename=null; STATE.text=null; STATE.detected=null;
+  STATE.ir.harmonic=[]; STATE.ir.anhI={fund:[],ov:[],comb:[]}; STATE.ir.anhDS={fund:[],ov:[],comb:[]};
+  STATE.uv.lines=[];
+  STATE.last=null;
+  STATE.theory=null; STATE.nistScale=null;
+  if($("useNistScale")) { $("useNistScale").checked=false; }
+  if($("irFreqScale")) { $("irFreqScale").value="1"; $("irFreqScale").disabled=false; }
+  if($("nistScaleInfo")) { $("nistScaleInfo").textContent = t("txt_nist_pending"); }
+
+  $("cardPlot").style.display="none";
+  $("cardPeaks").style.display="none";
+  $("peaksContainer").textContent="—";
+  $("plot").innerHTML="";
+  setPills([]);
+  setStatusText(t("status_idle"));
+  enableButtons(false);
+  enableExports(false);
+  updateSettingsVisibility();
+}
+
+function resetZoom(){
+  if(STATE.last){
+    STATE.last.view = null;
+    renderPlot();
+    enableExports(true);
+  }
+}
+$("btnZoomReset").addEventListener("click", resetZoom);
+
+$("btnReset").addEventListener("click", ()=>{
+  $("fileG").value="";
+  updateFileName("fileG");
+  clearAll();
+});
+
+// ---------- Export / Copy handlers ----------
+function viewSlice(p){
+  if(!p) return {x:[], y:[]};
+  if(!p.view) return {x:[...p.x], y:[...p.y]};
+  const xMin = p.view.xMin, xMax = p.view.xMax;
+  const x=[], y=[];
+  for(let i=0;i<p.x.length;i++){
+    const xi = p.x[i];
+    if(xi >= xMin-1e-12 && xi <= xMax+1e-12){
+      x.push(xi); y.push(p.y[i]);
+    }
+  }
+  return {x,y};
+}
+
+function dxOptsForPlot(p){
+  const origin = (STATE.program || "Unknown").toUpperCase();
+  if(p.type==="uv"){
+    const em = !!(p.meta && p.meta.emission);
+    return { dataType: (em ? "EMISSION SPECTRUM" : "UV/VIS SPECTRUM"), xUnits:"NM", yUnits:(em ? "INTENSITY" : "ABSORBANCE"), origin };
+  }
+  const em = !!(p.meta && p.meta.emission);
+  if(em){
+    return { dataType:"INFRARED SPECTRUM", xUnits:"1/CM", yUnits:"%T", origin };
+  }
+  return { dataType:"INFRARED SPECTRUM", xUnits:"1/CM", yUnits:"ABSORBANCE", origin };
+}
+
+$("btnExportSVG").addEventListener("click", ()=>{
+  const svg = $("plot").querySelector("svg");
+  if(!svg) return;
+  const xml = new XMLSerializer().serializeToString(svg);
+  const base = (STATE.filename ? STATE.filename.replace(/\.[^.]+$/,"") : "spectrum");
+  downloadText(base + ".svg", xml, "image/svg+xml");
+});
+
+$("btnExportPNG").addEventListener("click", async ()=>{
+  const svg = $("plot").querySelector("svg");
+  if(!svg) return;
+  const blob = await svgToPng(svg, 2);
+  const base = (STATE.filename ? STATE.filename.replace(/\.[^.]+$/,"") : "spectrum");
+  downloadBlob(base + ".png", blob);
+});
+
+$("btnExportCSV").addEventListener("click", ()=>{
+  const p = STATE.last;
+  if(!p) return;
+  const base = (STATE.filename ? STATE.filename.replace(/\.[^.]+$/,"") : "spectrum");
+  const {x,y} = viewSlice(p);
+  const xLabel = (p.type==="ir") ? "wavenumber_cm-1" : "wavelength_nm";
+  const csv = buildCSV(x,y, xLabel, "intensity");
+  downloadText(base + ".csv", csv, "text/csv");
+});
+
+$("btnExportDX").addEventListener("click", ()=>{
+  const p = STATE.last;
+  if(!p) return;
+  const base = (STATE.filename ? STATE.filename.replace(/\.[^.]+$/,"") : "spectrum");
+  let {x,y} = viewSlice(p);
+
+  // For IR: if axis is inverted, export descending wavenumbers (common in IR software)
+  if(p.type==="ir" && p.invertX){
+    x = x.slice().reverse();
+    y = y.slice().reverse();
+  }
+  const title = ($("dxTitle") && $("dxTitle").value) ? $("dxTitle").value : base;
+  const opts = dxOptsForPlot(p);
+  const dx = buildJcampDX(x,y, {title, ...opts});
+  downloadText(base + ".dx", dx, "text/plain");
+});
+
+$("btnCopySVG").addEventListener("click", async ()=>{
+  const svg = $("plot").querySelector("svg");
+  if(!svg) return;
+  const xml = new XMLSerializer().serializeToString(svg);
+  await copyText(xml);
+  setStatusText(t("st_svg_copied"));
+});
+
+$("btnCopyDX").addEventListener("click", async ()=>{
+  const p = STATE.last;
+  if(!p) return;
+  let {x,y} = viewSlice(p);
+  if(p.type==="ir" && p.invertX){
+    x = x.slice().reverse();
+    y = y.slice().reverse();
+  }
+  const base = (STATE.filename ? STATE.filename.replace(/\.[^.]+$/,"") : "spectrum");
+  const title = ($("dxTitle") && $("dxTitle").value) ? $("dxTitle").value : base;
+  const opts = dxOptsForPlot(p);
+  const dx = buildJcampDX(x,y, {title, ...opts});
+  await copyText(dx);
+  setStatusText(t("st_dx_copied"));
+});
+
+$("fileG").addEventListener("change", async ()=>{
+  updateFileName("fileG");
+  const file = $("fileG").files && $("fileG").files[0];
+  if(!file){ clearAll(); return; }
+  STATE.filename = file.name;
+  $("dxTitle").value = file.name;
+  setStatusText(t("st_reading"));
+
+  const raw = await file.text();
+  STATE.text = raw.replace(/([0-9])D([+-]?\d+)/g, "$1E$2");
+  STATE.program = detectProgram(STATE.text);
+  STATE.theory = detectTheory(STATE.text);
+  updateNistUI();
+  if($("useNistScale")) { $("useNistScale").checked = false; }
+  if($("irFreqScale")) { $("irFreqScale").disabled = false; }
+  STATE.detected = null; // set after parsing based on actual data
+
+  STATE.ir.harmonic = parseIRHarmonicByProgram(STATE.text, STATE.program);
+
+  if(STATE.program==="gaussian"){
+    STATE.ir.anhI = parseAnharmTable(STATE.text, "I");
+    STATE.ir.anhDS = parseAnharmTable(STATE.text, "DS");
+  } else if(STATE.program==="orca"){
+    // ORCA VPT2/GVPT2 anharmonic analysis (if present)
+    STATE.ir.anhI = parseOrcaVPT2Anharm(STATE.text, STATE.ir.harmonic);
+    STATE.ir.anhDS = {fund:[],ov:[],comb:[]};
+  } else {
+    STATE.ir.anhI = {fund:[],ov:[],comb:[]};
+    STATE.ir.anhDS = {fund:[],ov:[],comb:[]};
+  }
+
+  STATE.uv.lines = parseUVByProgram(STATE.text, STATE.program);
+
+  // Decide auto spectrum type based on parsed data (avoids false positives like "IR spectrum ... NO")
+  const _canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+  const _canUV = STATE.uv.lines.length>0;
+  if(_canUV && !_canIR) STATE.detected = "uv";
+  else if(_canIR && !_canUV) STATE.detected = "ir";
+  else if(_canIR && _canUV) STATE.detected = "ir"; // prefer IR if both available
+  else STATE.detected = detectSpectrumAny(STATE.text, STATE.program);
+
+  const canIR = STATE.ir.harmonic.length>0 || STATE.ir.anhI.fund.length>0 || STATE.ir.anhDS.fund.length>0;
+  const canUV = STATE.uv.lines.length>0;
+
+  updateSettingsVisibility();
+  renderPills(canIR, canUV);
+if(!canIR && !canUV){
+    enableButtons(false);
+    setStatusText(t("st_no_data"));
+    return;
+  }
+
+  enableButtons(true);
+  setStatusText(t("st_loaded"));
+  // Auto-generate once with defaults
+  generate({preserveView:false});
+});
+
+function renderPeaks(){
+  const p = STATE.last;
+  if(!p){ return; }
+  if(p.type==="ir"){
+    const sorted=[...p.lines].sort((a,b)=>a.x-b.x);
+    const rows = sorted.map((q,i)=>`<tr><td>${i+1}</td><td>${q.label||""}</td><td class="right">${q.x.toFixed(2)}</td><td class="right">${q.y.toFixed(6)}</td></tr>`).join("");
+    $("peaksContainer").innerHTML = `<table>
+      <thead><tr><th>#</th><th>${t("th_ir_band")}</th><th class="right">ν / cm⁻¹</th><th class="right">${t("th_ir_stick")}</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  } else {
+    const sorted=[...STATE.uv.lines].sort((a,b)=>a.n-b.n);
+    const rows = sorted.map(q=>`<tr><td>${q.n}</td><td class="right">${q.eV.toFixed(4)}</td><td class="right">${q.nm.toFixed(2)}</td><td class="right">${q.f.toFixed(4)}</td></tr>`).join("");
+    $("peaksContainer").innerHTML = `<table>
+      <thead><tr><th>${t("th_uv_state")}</th><th class="right">E / eV</th><th class="right">λ / nm</th><th class="right">f</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  }
+}
+
+function renderPlot(){
+  const p = STATE.last;
+  if(!p) return;
+  $("plot").innerHTML = "";
+  const svg = buildSVGPlot(p, (z)=>{
+    p.view = z;
+    renderPlot();
+    enableExports(true);
+    $("btnZoomReset").disabled = false;
+  }, ()=>{
+    p.view = null;
+    renderPlot();
+    enableExports(true);
+  });
+  $("plot").appendChild(svg);
+
+  const z = p.view;
+  if(z){
+    $("plotHint").textContent = fmt(t("zoom_range"), {xmin: z.xMin.toFixed(1), xmax: z.xMax.toFixed(1), xunit: p.xUnit, ymin: z.yMin.toFixed(3), ymax: z.yMax.toFixed(3)});
+  } else {
+    $("plotHint").textContent = "";
+  }
+  $("btnZoomReset").disabled = !p.view;
+}
+
+function generate(opts={preserveView:true}){
+  if(!STATE.text){ setStatusText(t("st_load_file_first")); return; }
+  const eff = effectiveType();
+  if(!eff){ setStatusText(t("st_cannot_detect")); return; }
+
+  const prev = (opts && opts.preserveView && STATE.last && STATE.last.type===eff) ? STATE.last.view : null;
+
+if(eff==="ir"){
+    const lines = getIRLinesSelected();
+    if(!lines.length){ setStatusText(t("st_ir_no_peaks")); return; }
+
+    const xMin = parseFloat($("irXMin").value);
+    const xMax = parseFloat($("irXMax").value);
+    let step = parseFloat($("irResolution").value);
+    const fwhm = Math.max(1e-6, parseFloat($("irWidth").value));
+    if(!Number.isFinite(step) || step <= 0 || !Number.isFinite(xMin) || !Number.isFinite(xMax) || xMax <= xMin){
+      setStatusText("Invalid IR plot range or resolution. Resolution must be > 0 and max > min.");
+      return;
+    }
+    const shape = $("irShape").value;
+    const scale = parseFloat($("irScale").value) || 1;
+    const normalize = $("irNormalize").checked;
+    const invertX = $("irInvertX").checked;
+    const showSticks = $("irShowSticks").checked;
+
+            const emission = getEmission();
+    const emSuffix = emission ? ` • ${t("meta_emission")}` : "";
+let freqScale = parseFloat($("irFreqScale").value);
+    if(!Number.isFinite(freqScale) || freqScale<=0) freqScale = 1;
+    const linesScaled = lines.map(p=>({x:p.x*freqScale, y:p.y, label:p.label||""}));
+
+    const spec = computeSpectrumFromLines(linesScaled, xMin, xMax, step, fwhm, shape);
+    if(!spec.x.length){
+      setStatusText("Invalid IR grid. Please use a positive resolution and a valid plot range.");
+      return;
+    }
+    step = spec.stepUsed;
+
+    let y = spec.y.map(v=>v*scale);
+    if(normalize){
+      const m = Math.max(...y.map(v=>Math.abs(v))) || 1;
+      y = y.map(v=>v/m);
+    }
+
+    let sticks = linesScaled.map(p=>({x:p.x, y:p.y*scale, label:p.label||""}));
+    if(normalize){
+      const ms = Math.max(...sticks.map(v=>Math.abs(v.y))) || 1;
+      sticks = sticks.map(s=>({x:s.x, y:s.y/ms, label:s.label||""}));
+    }
+
+    let displayMode = "normal";
+    let stickBaseline = 0;
+    if(emission){
+      const ymax = Math.max(...y.map(v=>Math.abs(v))) || 1;
+      y = y.map(v => 100 - (Math.max(0, v) / ymax) * 100);
+      displayMode = "transmission";
+      stickBaseline = 100;
+    }
+
+    STATE.last = {
+      type:"ir",
+      x: spec.x,
+      y,
+      xUnit:"cm-1",
+      invertX,
+      showSticks,
+      sticks,
+      displayMode,
+      stickBaseline,
+      title: emission ? t("title_ir_emission") : t("title_ir"),
+      yLabel: emission ? t("ylab_ir_emission") : t("ylab_ir"),
+      lines: sticks,
+      view: prev,
+      meta: {shape, fwhm, step, freqScale, xMin, xMax, scale, normalize, emission, displayMode}
+    };
+
+    const normSuffix = normalize ? t("meta_norm") : "";
+    $("plotMeta").innerHTML = `<b>IR</b>${emSuffix} • ${t("meta_peaks")} ${lines.length} • Δx ${step} • FWHM ${fwhm} • ${shape}${normSuffix}${(Math.abs(freqScale-1)>1e-6)?` • ${t("meta_scale")} ${freqScale.toFixed(4)}`:""}`;
+    setStatusText(fmt(t("st_ir_generated"), {n: lines.length}));
+  }
+
+  if(eff==="uv"){
+    const unit = "nm";
+const lines = STATE.uv.lines.filter(p=>Number.isFinite(p.eV) && Number.isFinite(p.f));
+    if(!lines.length){ setStatusText(t("st_uv_no_states")); return; }
+
+    const xMin = parseFloat($("uvXMin").value);
+    const xMax = parseFloat($("uvXMax").value);
+    let step = parseFloat($("uvResolution").value);
+    const fwhm = Math.max(1e-6, parseFloat(($("uvWidthNM")||$("uvWidthEV")).value));
+    if(!Number.isFinite(step) || step <= 0 || !Number.isFinite(xMin) || !Number.isFinite(xMax) || xMax <= xMin){
+      setStatusText("Invalid UV/Vis plot range or resolution. Resolution must be > 0 and max > min.");
+      return;
+    }
+    const scale = parseFloat($("uvScale").value) || 1;
+    const normalize = $("uvNormalize").checked;
+    const showSticks = $("uvShowSticks").checked;
+    const emission = getEmission();
+    const emSuffix = emission ? ` • ${t("meta_emission")}` : "";
+    const energyGaussian = $("uvEnergyGaussian").checked;
+
+    const spec = computeUVSpectrum(lines, xMin, xMax, step, fwhm, energyGaussian);
+    if(!spec.x.length){
+      setStatusText("Invalid UV/Vis grid. Please use a positive resolution and a valid plot range.");
+      return;
+    }
+    step = spec.stepUsed;
+
+    let y = spec.y.map(v=>v*scale);
+    if(normalize){
+      const m = Math.max(...y.map(v=>Math.abs(v))) || 1;
+      y = y.map(v=>v/m);
+    }
+
+    let sticks = showSticks ? lines.map(p=>({x: unit==="eV" ? p.eV : p.nm, y: p.f*scale})) : [];
+    if(normalize && sticks.length){
+      const ms = Math.max(...sticks.map(s=>Math.abs(s.y))) || 1;
+      sticks = sticks.map(s=>({x:s.x, y:s.y/ms}));
+    }
+
+    STATE.last = {
+      type:"uv",
+      x: spec.x,
+      y,
+      xUnit: unit,
+      invertX:false,
+      showSticks,
+      sticks,
+      displayMode:"normal",
+      stickBaseline:0,
+      title: emission ? t("title_uv_emission") : t("title_uv"),
+      yLabel: emission ? t("ylab_uv_emission") : t("ylab_uv"),
+      lines: sticks,
+      view: prev,
+      meta: {fwhm, step, xMin, xMax, scale, normalize, emission, energyGaussian}
+    };
+    refreshPlotText();
+    setStatusText(fmt(t("st_uv_generated"), {n: lines.length}));
+  }
+
+  $("cardPlot").style.display = "";
+  $("cardPeaks").style.display = "";
+  renderPlot();
+  renderPeaks();
+  enableExports(true);
+}
+
+
+// Live updates: re-render spectrum when parameters change (no need to click Generate)
+let _liveTimer = null;
+function scheduleLiveUpdate(){
+  if(!STATE.text) return;
+  const ae = document.activeElement;
+  if(ae && ae.tagName==="INPUT" && (ae.type||"").toLowerCase()==="number"){
+    const v = String(ae.value ?? "").trim();
+    if(v==="" || v==="-" || v==="." || v==="-.") return;
+  }
+  clearTimeout(_liveTimer);
+  _liveTimer = setTimeout(()=>{ updateSettingsVisibility(); generate({preserveView:true}); }, 140);
+}
+
+function bindLive(ids){
+  for(const id of ids){
+    const el = $(id);
+    if(!el) continue;
+    const type = (el.type || "").toLowerCase();
+    const isInput = (el.tagName==="INPUT" && (type==="number" || type==="text"));
+    if(isInput){
+      el.addEventListener("input", scheduleLiveUpdate);
+      el.addEventListener("change", scheduleLiveUpdate);
+    } else {
+      el.addEventListener("change", scheduleLiveUpdate);
+    }
+  }
+}
+
+// Bind for IR + UV controls (DX title does not affect plot)
+bindLive(["irSource","irBandSet","irXMin","irXMax","irResolution","irWidth","irShape","irScale","irInvertX","irNormalize","irShowSticks","irFreqScale","useNistScale","irEmission"]);
+bindLive(["uvXMin","uvXMax","uvResolution","uvWidthNM","uvScale","uvNormalize","uvShowSticks","uvEnergyGaussian"]);
+
+
+
+// CCCBDB scaling toggle
+if($("useNistScale")) $("useNistScale").addEventListener("change", applyNistToggle);
+
+initLang();
+clearAll();
+updateFileName("fileG");
+</script>
+</body>
+</html>
