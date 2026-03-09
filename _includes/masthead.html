@@ -1,5 +1,7 @@
 {% include base_path %}
 
+{% include base_path %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -19,9 +21,7 @@
 
             <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
               {% if link.children %}
-                <button type="button" class="masthead__menu-label">
-                  {{ link.title }}
-                </button>
+                <span class="masthead__menu-label">{{ link.title }}</span>
 
                 <ul class="masthead__dropdown">
                   {%- for child in link.children -%}
@@ -30,16 +30,13 @@
                     {%- else -%}
                       {%- assign child_domain = base_path -%}
                     {%- endif -%}
-
                     <li class="masthead__dropdown-item">
                       <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
                     </li>
                   {%- endfor -%}
                 </ul>
               {% else %}
-                <a href="{{ domain }}{{ link.url }}">
-                  {{ link.title }}
-                </a>
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
               {% endif %}
             </li>
           {%- endfor -%}
