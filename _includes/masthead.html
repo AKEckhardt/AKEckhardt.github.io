@@ -4,32 +4,54 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-<ul class="visible-links">
-  {%- for link in site.data.navigation.main -%}
-    <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
 
-      {% if link.children %}
-        <button type="button" class="masthead__menu-label">
-          {{ link.title }}
+        <a class="site-title" href="{{ base_path }}/">
+          {{ site.masthead_title | default: site.title }}
+        </a>
+
+        <ul class="visible-links">
+          {%- for link in site.data.navigation.main -%}
+            {%- if link.url contains 'http' -%}
+              {%- assign domain = '' -%}
+            {%- else -%}
+              {%- assign domain = base_path -%}
+            {%- endif -%}
+
+            <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
+              {% if link.children %}
+                <button type="button" class="masthead__menu-label">
+                  {{ link.title }}
+                </button>
+
+                <ul class="masthead__dropdown">
+                  {%- for child in link.children -%}
+                    {%- if child.url contains 'http' -%}
+                      {%- assign child_domain = '' -%}
+                    {%- else -%}
+                      {%- assign child_domain = base_path -%}
+                    {%- endif -%}
+
+                    <li class="masthead__dropdown-item">
+                      <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {% else %}
+                <a href="{{ domain }}{{ link.url }}">
+                  {{ link.title }}
+                </a>
+              {% endif %}
+            </li>
+          {%- endfor -%}
+        </ul>
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">
+            {{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}
+          </span>
+          <div class="navicon"></div>
         </button>
 
-        <ul class="masthead__dropdown">
-          {% for child in link.children %}
-            <li class="masthead__dropdown-item">
-              <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        <a href="{{ link.url | relative_url }}">
-          {{ link.title }}
-        </a>
-      {% endif %}
-
-    </li>
-  {%- endfor -%}
-</ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
