@@ -1,0 +1,4885 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>WKB Tunneling Calculator</title>
+  <style>
+    :root{
+      --bg:#f2f4f7;
+      --card:#ffffff;
+      --text:#1a1f2b;
+      --muted:#6b7280;
+      --border:#d9dee6;
+      --accent:#2b6cb0;
+      --warn:#b45309;
+      --err:#b91c1c;
+      --ok:#15803d;
+      --shadow:0 6px 18px rgba(17,24,39,.08);
+      --radius:14px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:var(--bg);
+    }
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px 16px 40px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px 18px 16px;
+      margin: 0 0 16px 0;
+    }
+    h1{
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      letter-spacing:.2px;
+    }
+    h2{
+      font-size: 16px;
+      margin: 0 0 12px 0;
+    }
+    p{margin: 8px 0; color: var(--muted); line-height:1.4}
+    label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
+    input[type="file"], input[type="number"], select{
+      width:100%;
+      padding:10px 10px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      font-size:14px;
+      box-sizing:border-box;
+    }
+    input[type="number"]{font-family:var(--mono)}
+    .row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .col{
+      flex: 1 1 240px;
+      min-width: 240px;
+    }
+    .btn{
+      appearance:none;
+      border:1px solid var(--accent);
+      background:var(--accent);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .btn.secondary{
+      background:#fff;
+      color:var(--accent);
+    }
+    .btn:disabled{opacity:.6; cursor:not-allowed}
+    .btn.small{padding:6px 10px; font-size:12px; border-radius:10px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#eef2ff;
+      border:1px solid #dbeafe;
+      font-size:12px;
+      color:#1f2937;
+      margin-right:8px;
+      margin-top:6px;
+    }
+    .pill.ok{background:#ecfdf5;border-color:#bbf7d0;color:#065f46}
+    .pill.warn{background:#fffbeb;border-color:#fde68a;color:#92400e}
+    .pill.err{background:#fef2f2;border-color:#fecaca;color:#7f1d1d}
+    .small{font-size:12px}
+    .mono{font-family:var(--mono)}
+    .muted{color:var(--muted)}
+    .right{text-align:right}
+    .hr{height:1px;background:var(--border);margin:14px 0}
+    table{
+      width:100%;
+      border-collapse: collapse;
+      font-size:13px;
+    }
+    th,td{
+      padding:8px 8px;
+      border-bottom:1px solid #eef2f7;
+      vertical-align:top;
+    }
+    th{color:#374151; text-align:left; font-weight:700; font-size:12px; letter-spacing:.03em}
+    .kpi{
+      display:flex;
+      gap:10px;
+      flex-wrap:nowrap;
+      overflow-x:auto;
+      margin-top:10px;
+      padding-bottom:4px;
+    }
+    .kpi .box{
+      flex: 1 1 200px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px 12px;
+      background:#fafbfc;
+    }
+    .kpi .box .t{font-size:12px;color:var(--muted)}
+    .kpi .box .v{font-size:15px;font-weight:700;margin-top:4px}
+    canvas{
+      width:100%;
+      height:320px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+    }
+    .svgplot{
+      width:100%;
+      height:320px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .svgplot svg{
+      width:100%;
+      height:100%;
+      display:block;
+    }
+    .twoCanvas{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .hint{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+
+    .labelLink{display:inline-flex; align-items:center; gap:8px; cursor:pointer;}
+    .labelLink .tag{font-size:11px; color:var(--accent); border:1px solid rgba(43,108,176,.25); padding:2px 6px; border-radius:999px; background:#eef5ff}
+.tag.orca{ border-color:#cfe3d1; color:#2a7a3a; }
+
+    .modal{position:fixed; inset:0; display:none; z-index:50;}
+    .modal .backdrop{position:absolute; inset:0; background:rgba(17,24,39,.45);}
+    .modal .box{position:relative; max-width:860px; margin:60px auto; background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:14px 14px 12px;}
+    .modal .head{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px;}
+    .modal .head .title{font-weight:800;}
+    .modal .close{border:1px solid var(--border); background:#fff; border-radius:10px; padding:6px 10px; cursor:pointer;}
+    .modal pre{white-space:pre; overflow:auto; max-height:60vh; background:#0b1020; color:#e5e7eb; border-radius:12px; padding:12px; font-family:var(--mono); font-size:12px; line-height:1.35; border:1px solid rgba(255,255,255,.08);}
+    .modal .foot{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+
+  
+    .headrow{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .langsel{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text);font-size:14px}
+    .sr{position:absolute;left:-9999px}
+
+  
+    /* i18n: keep layout width stable */
+    .card, .row, .col { max-width: 100%; }
+    .col { min-width: 240px; }
+    label, h2, h1, .pill { overflow-wrap:anywhere; word-break:break-word; }
+    .arr-controls{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      align-items:center;
+      margin: 6px 0 10px;
+      padding: 10px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+    }
+    .arr-controls .label{
+      font-size:13px;
+      color:var(--muted);
+      margin-right:2px;
+      white-space:nowrap;
+    }
+    .arr-controls .chk{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      font-size:13px;
+      color:var(--text);
+      user-select:none;
+      white-space:nowrap;
+    }
+    .arr-controls input[type="checkbox"]{
+      width:16px;
+      height:16px;
+      accent-color: var(--accent);
+    }
+
+    .arr-controls .arr-temp{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-left:auto;
+      flex: 1 1 340px;
+      min-width: 280px;
+      justify-content:flex-end;
+    }
+    .arr-controls .arr-temp input[type="range"]{
+      width: 260px;
+      max-width: 100%;
+    }
+    .arr-controls .arr-temp .mono{
+      min-width: 3ch;
+      display:inline-block;
+      text-align:right;
+    }
+    .subsection{ margin-top: 6px; }
+
+
+
+    .filepick{ display:flex; gap:10px; align-items:center; }
+    .filepick input[type="file"]{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+    .filepick .file-name{
+      flex:1; padding:10px 12px; border:1px solid var(--border);
+      border-radius:12px; background:#fff; color:var(--text);
+      overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+    }
+    .filepick .file-name.empty{ color:var(--muted); }
+    .filepick .file-clear{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:38px; height:38px; border:1px solid var(--border);
+      border-radius:12px; background:#fff; color:var(--muted);
+      cursor:pointer; user-select:none; font-size:18px; line-height:1;
+    }
+    .filepick .file-clear:hover{ color:var(--text); border-color:#b8c0cc; }
+    .filepick .file-clear:disabled{ opacity:.45; cursor:default; }
+
+  
+    /* v60c layout fixes */
+    #cardInputs{ margin-bottom:22px; }
+    #cardInputs .btnbar{ width:100%; justify-content:flex-start; padding-top:2px; padding-bottom:4px; }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="headrow">
+        <h1 data-i18n="title">WKB Tunneling Calculator</h1>
+        <div class="langwrap">
+          <label class="sr" for="langSel">Language</label>
+          <select id="langSel" class="langsel">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
+      </div>
+      <p class="small" data-i18n="subtitle">Upload Gaussian outputs (reactant, product, TS, IRC forward &amp; reverse). Then compute WKB tunneling and an Arrhenius plot (tunneling only).</p>
+    </div>
+
+    <div class="card" id="cardInputs">
+      <h2 data-i18n="sec_inputs">1) Inputs</h2>
+      <div class="row">
+        <div class="col">
+          <label id="labE" class="labelLink" data-modal="educt" data-i18n="lab_reactant">Reactant (Gaussian .out/.log) <span class="tag" data-i18n="tag_gaussian_input">Gaussian input</span> <span class="tag orca" data-modal="orca_educt" data-i18n="tag_orca_input">ORCA input</span></label>
+          <div class="filepick">
+  <input id="fileE" type="file" accept=".out,.log,.txt"/>
+  <button type="button" class="btn secondary file-btn" data-file="fileE" data-i18n="btn_browse">Browse…</button>
+  <div class="file-name empty" id="fileEName" data-i18n="file_none">No file chosen</div>
+  <button type="button" class="file-clear" data-file="fileE" aria-label="Remove file" title="Remove">×</button>
+</div>
+        </div>
+        <div class="col">
+          <label id="labP" class="labelLink" data-modal="prod" data-i18n="lab_product">Product (Gaussian .out/.log) <span class="tag" data-i18n="tag_gaussian_input">Gaussian input</span> <span class="tag orca" data-modal="orca_prod" data-i18n="tag_orca_input">ORCA input</span></label>
+          <div class="filepick">
+  <input id="fileP" type="file" accept=".out,.log,.txt"/>
+  <button type="button" class="btn secondary file-btn" data-file="fileP" data-i18n="btn_browse">Browse…</button>
+  <div class="file-name empty" id="filePName" data-i18n="file_none">No file chosen</div>
+  <button type="button" class="file-clear" data-file="fileP" aria-label="Remove file" title="Remove">×</button>
+</div>
+        </div>
+        <div class="col">
+          <label id="labTS" class="labelLink" data-modal="ts" data-i18n="lab_ts">TS (Gaussian .out/.log) <span class="tag" data-i18n="tag_gaussian_input">Gaussian input</span> <span class="tag orca" data-modal="orca_ts" data-i18n="tag_orca_input">ORCA input</span></label>
+          <div class="filepick">
+  <input id="fileTS" type="file" accept=".out,.log,.txt"/>
+  <button type="button" class="btn secondary file-btn" data-file="fileTS" data-i18n="btn_browse">Browse…</button>
+  <div class="file-name empty" id="fileTSName" data-i18n="file_none">No file chosen</div>
+  <button type="button" class="file-clear" data-file="fileTS" aria-label="Remove file" title="Remove">×</button>
+</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="col">
+          <label class="labelLink" data-modal="irc_rev" data-i18n="lab_irc_rev">
+  IRC reverse (e.g. <span class="mono">*_IRC_B_trj.xyz / *rev.out</span>) <span class="tag" data-i18n="tag_gaussian_input">Gaussian input</span> <span class="tag orca" data-modal="orca_irc_rev" data-i18n="tag_orca_input">ORCA input</span>
+</label>
+          <div class="filepick">
+  <input id="fileRev" type="file" accept=".out,.log,.txt,.xyz"/>
+  <button type="button" class="btn secondary file-btn" data-file="fileRev" data-i18n="btn_browse">Browse…</button>
+  <div class="file-name empty" id="fileRevName" data-i18n="file_none">No file chosen</div>
+  <button type="button" class="file-clear" data-file="fileRev" aria-label="Remove file" title="Remove">×</button>
+</div>
+        </div>
+        <div class="col">
+          <label class="labelLink" data-modal="irc_fwd" data-i18n="lab_irc_fwd">
+  IRC forward (e.g. <span class="mono">*_IRC_F_trj.xyz / *fwd.out</span>) <span class="tag" data-i18n="tag_gaussian_input">Gaussian input</span> <span class="tag orca" data-modal="orca_irc_fwd" data-i18n="tag_orca_input">ORCA input</span>
+</label>
+          <div class="filepick">
+  <input id="fileFwd" type="file" accept=".out,.log,.txt,.xyz"/>
+  <button type="button" class="btn secondary file-btn" data-file="fileFwd" data-i18n="btn_browse">Browse…</button>
+  <div class="file-name empty" id="fileFwdName" data-i18n="file_none">No file chosen</div>
+  <button type="button" class="file-clear" data-file="fileFwd" aria-label="Remove file" title="Remove">×</button>
+</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <div class="col">
+          <label data-i18n="xi_label">Tunneling frequency ξ (cm⁻¹)</label>
+          <input id="xi" type="number" value="" placeholder="auto" step="0.1" min="1" lang="en"/>
+        <div class="hint" id="xiStatus" style="margin-top:6px"></div>
+        <div style="margin-top:6px; display:flex; gap:8px; flex-wrap:wrap">
+  <button class="btn secondary small" id="btnXiAuto" type="button" disabled>ξ auto</button>
+</div>
+</div>
+        <div class="col">
+          <label data-i18n="temp_label">Temperature for averaging (K)</label>
+          <input id="temp" type="number" value="3" step="0.01" min="1" lang="en"/>
+        </div>
+        <div class="col">
+          <label data-i18n="fscale_label">Frequency scaling (projected IRC frequencies)</label>
+          <input id="fscale" type="number" value="1.0000" step="0.0001" lang="en"/>
+        </div>
+        <div class="col">
+          <label data-i18n="barshift_label">Barrier shift (kcal mol⁻¹)</label>
+          <input id="barShift" type="number" value="0.00" step="0.01" lang="en"/>
+        </div>
+        <div class="col">
+  <label data-i18n="mode_label">Mode</label>
+  <select id="mode">
+    <option value="wkb_zpve" data-i18n="opt_mode_wkb_zpve">IRC / WKB (ZPVE)</option>
+    <option value="wkb_elec" data-i18n="opt_mode_wkb_elec">IRC / WKB (E<sub>elec</sub>)</option>
+    <option value="wkb_hybrid" data-i18n="opt_mode_wkb_hybrid">IRC / WKB (Hybrid)</option>
+    <option value="eckart" data-i18n="opt_mode_eckart">Eckart (no IRC)</option>
+  </select>
+</div>
+
+      
+      </div>
+
+      <div class="row btnbar" style="margin-top:12px; align-items:center; gap:10px; flex-wrap:wrap">
+        <button class="btn" id="btnRun">Compute</button>
+        <button class="btn secondary" id="btnReset">Reset</button>
+        <button class="btn secondary" id="btnImport">Import</button>
+        <input type="file" id="fileImportState" accept="application/json" style="display:none"/>
+        <button class="btn secondary" id="btnExport" disabled>Export</button>
+        <span id="statusPills"></span>
+      </div>
+      <div class="hint" id="hintSwap"></div>
+    </div>
+
+    <div class="card" id="cardSP" style="display:none">
+      <h2 data-i18n="sec_sp">2) Stationary points</h2>
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="th_point">Point</th>
+            <th class="right">E<sub>elec</sub> / Eh</th>
+            <th class="right">ZPVE / Eh</th>
+            <th class="right">E<sub>tot</sub> / Eh</th>
+            <th class="right">ΔE / kcal mol⁻¹</th>
+          </tr>
+        </thead>
+        <tbody id="tblSP"></tbody>
+      </table>
+
+      <div class="kpi" id="kpiSP"></div>
+    </div>
+
+    <div class="card" id="cardProfile" style="display:none">
+      <h2 data-i18n="sec_profile">3) Energy profile &amp; turning points</h2><div>
+        <div id="plotProfile" class="svgplot" aria-label="Energy profile plot"></div>
+        <canvas id="cvProfile" width="980" height="320" style="display:none"></canvas>
+        <div style="margin-top:8px"><button class="btn secondary" id="btnSaveProfile" disabled>Save plot (SVG)</button></div>
+        <div class="hint" id="hintProfile"></div>
+      </div>
+
+      <div class="hr"></div>
+
+      <!-- WKB results moved into this card (same area as energy profile) -->
+      <div id="cardWKB" class="subsection" style="display:none">
+        <h2 data-i18n="sec_wkb">WKB results</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>v</th>
+              <th class="right">ε<sub>v</sub> (abs) / kcal mol⁻¹</th>
+              <th class="right">E / kcal mol⁻¹</th>
+              <th class="right">x<sub>L</sub></th>
+              <th class="right">x<sub>R</sub></th>
+              <th class="right">Width |x<sub>R</sub>−x<sub>L</sub>|</th>
+              <th class="right">k / s⁻¹</th>
+              <th class="right">t½ / s</th>
+              <th class="right">t½ / min</th>
+              <th class="right">t½ / h</th>
+              <th class="right">t½ / a</th>
+            </tr>
+          </thead>
+          <tbody id="tblWKB"></tbody>
+        </table>
+
+        <div class="kpi" id="kpiWKB"></div>
+      </div>
+    </div>
+
+    <div class="card" id="cardArr" style="display:none">
+      <h2 data-i18n="sec_arr">4) Arrhenius plot</h2>
+
+      <div class="arr-controls" id="arrControls" aria-label="Arrhenius series controls">
+        <div class="label" data-i18n="arr_show_label">Show:</div>
+        <label class="chk"><input type="checkbox" id="chkArrTST" checked><span data-i18n="arr_tst">TST</span></label>
+        <label class="chk"><input type="checkbox" id="chkArrWKB" checked><span data-i18n="arr_wkb">WKB tunneling</span></label>
+        <label class="chk"><input type="checkbox" id="chkArrTSTWKB" checked><span data-i18n="arr_tst_wkb">TST + WKB</span></label>
+<label class="chk"><input type="checkbox" id="chkArrTSTEckart"><span data-i18n="arr_tst_eckart">TST + Eckart</span></label>
+<div class="arr-temp">
+          <span class="label"><span data-i18n="sum_temp_label">Temperature</span>:</span>
+          <b class="mono" id="arrTText">—</b>
+          <span class="label">K</span>
+          <input id="arrT" type="range" min="3" max="500" step="1" value="298" />
+        </div>
+      </div>
+
+      <div id="plotArr" class="svgplot" aria-label="Arrhenius plot"></div>
+      <canvas id="cvArr" width="980" height="320" style="display:none"></canvas>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <button class="btn secondary" id="btnSaveArr" disabled data-i18n="btn_save_plot">Save plot (SVG)</button>
+        <button class="btn secondary" id="btnExportRates" disabled data-i18n="btn_export_rates">Export rate constants</button>
+      </div>
+
+      <div class="kpi" id="kpiSummary" style="margin-top:12px"></div>
+      <div class="hint" id="hintArr"></div>
+    </div>
+
+    <div class="card" id="cardErr" style="display:none">
+      <h2 data-i18n="sec_error">Error</h2>
+      <div class="pill err" id="errMsg"></div>
+      <div class="hint" id="errHint"></div>
+    </div>
+
+  </div>
+
+<script>
+
+/* ======================= i18n ======================= */
+const I18N = {
+  en:{
+    title: "WKB Tunneling Calculator",
+    subtitle: "Lade Gaussian- (oder ORCA für SP) Outputs hoch (Edukt, Produkt, TS, IRC forward & reverse). Danach WKB-Tunneling und Arrhenius-Plot berechnen.",
+    sec_inputs: "1) Inputs",
+    sec_sp: "2) Stationary points",
+    sec_profile: "3) Energy profile & turning points",
+    sec_wkb: "WKB results",
+    sec_arr: "4) Arrhenius plot",
+    sec_summary: "Summary",
+    sec_error: "Error",
+    tag_gaussian_input: "Gaussian input",
+    tag_orca_input: "ORCA input",
+    modal_hint_gauss: "Gaussian input template",
+    modal_hint_orca: "ORCA input template",
+    modal_download_gjf: "Download .gjf",
+    modal_download_inp: "Download .inp",
+    lab_reactant: "Edukt (.out/.log — Gaussian oder ORCA)",
+    lab_product: "Produkt (.out/.log — Gaussian oder ORCA)",
+    lab_ts: "TS (.out/.log — Gaussian oder ORCA)",
+    lab_irc_rev: "IRC reverse (e.g.",
+    lab_irc_fwd: "IRC forward (e.g.",
+    xi_label: "Tunneling frequency ξ (cm⁻¹)",
+    temp_label: "Temperature for averaging (K)",
+    fscale_label: "Frequency scaling (projected IRC frequencies)",
+    barshift_label: "Barrier shift (kcal mol⁻¹)",
+    mode_label: "Modus",
+    btn_xi_auto: "ξ auto",
+    btn_compute: "Compute",
+    btn_reset: "Reset",
+    btn_import: "Import",
+    btn_export: "Export",
+    btn_save_png: "Save plot (SVG)",
+    modal_close: "Close",
+    modal_copy: "Copy",
+    modal_download: "Download .gjf",
+    modal_hint: "Note: adjust method/basis, memory/cores and paths. The IRC templates use IOp(1/73=2) to print projected frequencies (3N−7). The alternative calcfc,recalc=5 is faster but slightly less accurate.",
+    hint_profile: "Profile is relative to the reactant reference. In Hybrid mode the electronic IRC profile is shifted so that V(TS) matches the stationary-point ZPVE-corrected barrier. E-lines: v=0..3 (quantized). In ZPVE/Hybrid bookkeeping, E_level = v·hν is used internally (v=0 is 0).",
+    hint_arr: "Arrhenius plot: ln(k / s⁻¹) vs. T⁻¹ (T = 3..500 K, step 1 K).",
+    arr_dg_note: "ΔG‡ was taken from Gaussian thermochemistry at T = {T} K and assumed temperature-independent for this plot.",
+    sum_temp_label: "Temperature",
+    sum_k_tst: "k (TST)",
+    sum_t12_tst: "t½ (TST)",
+    sum_k_wkb: "k (WKB)",
+    sum_t12_wkb: "t½ (WKB)",
+    sum_k_tst_wkb: "k (TST + WKB)",
+    sum_t12_tst_wkb: "t½ (TST + WKB)",
+    err_T: "Please provide T > 0.",
+    err_irc_points: "Too few valid IRC points after parsing.",
+
+    err_Elevel_above: "E level is above the barrier maximum.",
+    sp_reactant: "Reactant",
+    sp_product: "Product",
+    sp_ts: "TS",
+    kpi_barrier: "Barrier",
+    kpi_ts_minus_reactant_full: "TS−reactant (3N−6)",
+    kpi_tunnel_barrier: "Tunnel (3N−7)",
+    kpi_exo: "Reaction energy (product−reactant)",
+    kpi_turning_v0: "Turning points v=0",
+    kpi_width_v0: "Width |x<sub>R</sub>−x<sub>L</sub>| (v=0)",
+    th_point: "Point",
+    opt_zpve: "ZPVE-corrected (E_elec + projected ZPVE along IRC)",
+    opt_elec: "electronic energy only (no ZPVE)",
+    opt_hybrid: "Hybrid: electronic IRC + ZPVE for reactant/TS/product",
+    opt_mode_wkb_zpve: "IRC / WKB (ZPVE)",
+    opt_mode_wkb_elec: "IRC / WKB (E_elec)",
+    opt_mode_wkb_hybrid: "IRC / WKB (Hybrid)",
+    opt_mode_eckart: "Eckart (no IRC)",
+    opt_mode_wkb_zpve: "IRC / WKB (ZPVE)",
+    opt_mode_wkb_elec: "IRC / WKB (electronic only)",
+    opt_mode_wkb_hybrid: "IRC / WKB (Hybrid)",
+    opt_mode_eckart: "Eckart (no IRC)",
+    pill_swap: "Auto-swap: reactant ↔ product",
+    swap_hint: "Reactant/product were swapped automatically so that the reactant is higher in energy than the product.",
+    xi_ok: "ξ detected: {raw} cm⁻¹ → {scaled} cm⁻¹{src}",
+    xi_fail: "ξ could not be determined automatically — please enter it manually.",
+    err_unknown_import: "Unknown import format.",
+    arr_show_label: "Show:",
+    arr_wkb: "WKB tunneling",
+    arr_tst: "TST",
+    arr_tst_wkb: "TST + WKB",
+    arr_tst_eckart: "TST + Eckart",
+    btn_browse: "Browse…",
+    file_none: "No file chosen",
+    btn_save_plot: "Save plot (SVG)",
+    btn_export_rates: "Export rate constants",
+    dir_ok: "Direction: ok (reactant > product)",
+    dir_amb: "Direction: ambiguous (reactant ≤ product)",
+    xi_autofail: "ξ auto-detection failed — please enter it manually.",
+    err_need_all: "Please upload reactant, product, TS and IRC reverse/forward, or import a saved state.",
+    err_need_sp: "Please upload reactant, product and TS.",
+    err_need_irc: "Please upload IRC reverse and forward.",
+    err_need_orca_trj: "For ORCA IRC, please upload the *_IRC_F_trj.xyz and *_IRC_B_trj.xyz trajectory files (not the .out alone).",
+    xi_auto_src_rev: "Reactant vs. IRC reverse endpoint",
+    xi_auto_src_fwd: "Fallback: reactant vs. IRC forward endpoint",
+    err_xi_auto: "Tunnel frequency ξ could not be determined automatically. Please enter ξ (cm⁻¹) and compute again.",
+    err_file_elec: "Could not find electronic energy (HF/SCF Done).",
+    err_irc_natoms: "IRC: Could not find NAtoms=.",
+    err_irc_few_points: "IRC: Too few valid points after extraction (rc/E). Check output (Normal termination, iOP, etc.).",
+    err_irc_few_freq: "IRC: Too few frequencies: found {found}, expected at least {need} (= {n}*{FREQ}).",
+    warn_irc_few_freq: "IRC: projected frequencies not found (found {found}, expected ≥ {need} = {n}*{FREQ}). ZPVE mode disabled → switched to Hybrid.",
+    pill_no_proj: "IRC: no projected freqs → ZPVE disabled (Hybrid)",
+    err_zpve_need_proj: "ZPVE-corrected profile requires projected IRC frequencies (3N−7). Please run IRC with IOp(1/73=2) or Freq=Projected.",
+    err_turning_fail: "Turning points could not be determined (barrier too short / E too high).",
+    err_import_unknown: "Unknown import format.",
+    err_import_failed: "Import failed. Please load a previously exported .json file.",
+    err_import_incomplete_sp_profile: "Import does not contain complete data (sp/profile).",
+    err_import_incomplete_sp_irc_profile: "Import does not contain complete data (sp/irc/profile).",
+    err_hint_general: "Tip: For Gaussian IRC, check 'Normal termination' and that the log contains 'NET REACTION COORDINATE...' and 'Frequencies --' (Freq=Projected). For ORCA IRC, upload the *_IRC_F_trj.xyz and *_IRC_B_trj.xyz trajectory files (energies are read from the XYZ headers).",
+    energy_mode_label: "Energy mode",
+    opt_tunnel_irc: "IRC / WKB",
+    opt_tunnel_eckart: "Eckart",
+lab_eck_energy: "Eckart energy line",
+opt_eck_kbt: "E = kBT (Arrhenius T)",
+opt_eck_custom: "Custom E (kcal mol⁻¹)",
+lbl_V1: "Barrier (reactant→TS)",
+lbl_V2: "Barrier (product→TS)",
+lbl_nu_imag: "ν‡ (imag.)",
+    lbl_Esel: "Selected E",
+kpi_turning_E: "Turning points (E)",
+kpi_width_E: "Width (E)",
+    tunnel_irc: "IRC / WKB",
+    tunnel_eckart: "Eckart",
+    err_need_ts_imag: "TS imaginary frequency not found.",
+    err_need_barrier: "Barrier height not positive (cannot build tunneling profile).",
+    sum_k_tst_eckart: "k (TST + Eckart) / s⁻¹",
+    sum_t12_tst_eckart: "t½ (TST + Eckart)",
+  },
+    lab_eckE_mode: "Energy line",
+    opt_eckE_kbt: "E = kBT (Arrhenius T)",
+    opt_eckE_custom: "Custom (kcal/mol)",
+    lab_eckE_custom: "Custom E (kcal/mol)",
+
+
+  de:{
+    title: "WKB‑Tunnelrechner",
+    subtitle: "Upload: Gaussian‑Outputs (Edukt, Produkt, TS, IRC forward & reverse). Danach WKB‑Tunneling und Arrhenius‑Plot (nur Tunneling).",
+    sec_inputs: "1) Inputs",
+    sec_sp: "2) Stationäre Punkte",
+    sec_profile: "3) Energieprofil & Turning Points",
+    sec_wkb: "WKB‑Ergebnisse",
+    sec_arr: "4) Arrhenius‑Plot",
+    sec_summary: "Zusammenfassung",
+    sec_error: "Fehler",
+    tag_gaussian_input: "Gaussian‑Input",
+    tag_orca_input: "ORCA input",
+    modal_hint_gauss: "Gaussian input template",
+    modal_hint_orca: "ORCA input template",
+    modal_download_gjf: "Download .gjf",
+    modal_download_inp: "Download .inp",
+    lab_reactant: "Edukt (Gaussian .out/.log)",
+    lab_product: "Produkt (Gaussian .out/.log)",
+    lab_ts: "TS (Gaussian .out/.log)",
+    lab_irc_rev: "IRC reverse (z.B.",
+    lab_irc_fwd: "IRC forward (z.B.",
+    xi_label: "Tunnelschwingung ξ (cm⁻¹)",
+    temp_label: "Temperatur für Mittelung (K)",
+    fscale_label: "Frequenz‑Skalierung (proj. IRC‑Frequenzen)",
+    barshift_label: "Barrieren‑Verschiebung (kcal mol⁻¹)",
+    mode_label: "Tunneling Profile",
+    opt_mode_wkb_zpve: "IRC / WKB (ZPVE)",
+    opt_mode_wkb_elec: "IRC / WKB (E_elec)",
+    opt_mode_wkb_hybrid: "IRC / WKB (Hybrid)",
+    opt_mode_eckart: "Eckart (no IRC)",
+    btn_xi_auto: "ξ automatisch",
+    btn_compute: "Berechnen",
+    btn_reset: "Reset",
+    btn_import: "Import",
+    btn_export: "Export",
+    btn_save_png: "Plot speichern (SVG)",
+    modal_close: "Schließen",
+    modal_copy: "Kopieren",
+    modal_download: ".gjf herunterladen",
+    modal_hint: "Hinweis: Passe Methode/Basis, Speicher/Procs und Pfade an. Die IRC‑Templates nutzen IOp(1/73=2), um projizierte Frequenzen (3N−7) auszugeben. Die Alternative calcfc,recalc=5 ist schneller, aber etwas ungenauer.",
+    hint_profile: "Profil ist relativ zur Edukt‑Referenz. Im Hybrid‑Modus wird das elektronische IRC‑Profil konstant verschoben, so dass V(TS) der ZPVE‑korrigierten Barriere (aus TS/Edukt) entspricht. E‑Linien: v=0..3 (quantisiert). Im ZPVE/Hybrid‑Bookkeeping gilt intern E_level = v·hν (v=0 liegt bei 0).",
+    hint_arr: "Arrhenius‑Plot: ln(k / s⁻¹) vs. T⁻¹ (T = 3..500 K, Schritt 1 K).",
+    arr_dg_note: "ΔG‡ wurde aus der Gaussian‑Thermochemie bei T = {T} K übernommen und für diesen Plot als temperaturunabhängig angenommen.",
+    sum_temp_label: "Temperatur",
+    sum_k_tst: "k (TST)",
+    sum_t12_tst: "t½ (TST)",
+    sum_k_wkb: "k (WKB)",
+    sum_t12_wkb: "t½ (WKB)",
+    sum_k_tst_wkb: "k (TST + WKB)",
+    sum_t12_tst_wkb: "t½ (TST + WKB)",
+    err_T: "Bitte T > 0 angeben.",
+    err_irc_points: "Zu wenige gültige IRC‑Punkte nach Parsing.",
+
+    err_Elevel_above: "Elevel liegt über dem Barrieremaximum.",
+    sp_reactant: "Edukt",
+    sp_product: "Produkt",
+    sp_ts: "TS",
+    kpi_barrier: "Barriere",
+    kpi_ts_minus_reactant_full: "TS−Edukt (3N−6)",
+    kpi_tunnel_barrier: "Tunnel (3N−7)",
+    kpi_exo: "Exothermie (Produkt−Edukt)",
+    kpi_turning_v0: "Turning Points v=0",
+    kpi_width_v0: "Barrierenbreite |x<sub>R</sub>−x<sub>L</sub>| (v=0)",
+    th_point: "Punkt",
+    opt_zpve: "ZPVE‑korrigiert (E_elec + proj. ZPVE entlang IRC)",
+    opt_elec: "nur elektronische Energie (ohne ZPVE)",
+    opt_hybrid: "Hybrid: IRC elektronisch + ZPVE für Edukt/TS/Produkt",
+    pill_swap: "Auto‑Swap: Edukt ↔ Produkt",
+    swap_hint: "Edukt und Produkt wurden automatisch getauscht, damit das Edukt energetisch höher liegt als das Produkt.",
+    xi_ok: "ξ automatisch erkannt: {raw} cm⁻¹ → {scaled} cm⁻¹{src}",
+    xi_fail: "ξ konnte nicht automatisch bestimmt werden – bitte manuell eingeben.",
+    err_unknown_import: "Unbekanntes Importformat.",
+    arr_show_label: "Anzeigen:",
+    arr_wkb: "WKB‑Tunneln",
+    arr_tst: "TST",
+    arr_tst_wkb: "TST + WKB",
+    arr_tst_eckart: "TST + Eckart",
+    btn_browse: "Durchsuchen…",
+    file_none: "Keine Datei gewählt",
+    btn_save_plot: "Plot speichern (SVG)",
+    btn_export_rates: "Geschwindigkeitskonstanten exportieren",
+    dir_ok: "Richtung: ok (Edukt > Produkt)",
+    dir_amb: "Richtung: unklar (Edukt ≤ Produkt)",
+    xi_autofail: "ξ Auto‑Erkennung fehlgeschlagen – bitte manuell eingeben.",
+    err_need_all: "Bitte Edukt, Produkt, TS und IRC reverse/forward hochladen oder eine gespeicherte Rechnung importieren.",
+    err_need_sp: "Bitte Edukt, Produkt und TS hochladen.",
+    err_need_irc: "Bitte IRC reverse + forward hochladen.",
+    err_need_orca_trj: "Für ORCA-IRC bitte die Trajektorien *_IRC_F_trj.xyz und *_IRC_B_trj.xyz hochladen (nicht nur die .out).",
+    xi_auto_src_rev: "Edukt vs. IRC reverse‑Endpunkt",
+    xi_auto_src_fwd: "Fallback: Edukt vs. IRC forward‑Endpunkt",
+    err_xi_auto: "Tunnelschwingung ξ konnte nicht automatisch bestimmt werden. Bitte ξ (cm⁻¹) eingeben und erneut berechnen.",
+    err_file_elec: "Konnte Eelec (HF/SCF Done) nicht finden.",
+    err_irc_natoms: "IRC: Konnte NAtoms= nicht finden.",
+    err_irc_few_points: "IRC: Zu wenige gültige Punkte nach Script‑Extraktion (rc/E). Prüfe Output (Normal termination, iOP, etc.).",
+    err_irc_few_freq: "IRC: Zu wenige Frequenzen: gefunden {found}, erwartet mindestens {need} (= {n}*{FREQ}).",
+    warn_irc_few_freq: "IRC: projizierte Frequenzen fehlen (gefunden {found}, erwartet ≥ {need} = {n}*{FREQ}). ZPVE‑Modus deaktiviert → auf Hybrid umgestellt.",
+    pill_no_proj: "IRC: keine proj. Frequenzen → ZPVE deaktiviert (Hybrid)",
+    err_zpve_need_proj: "ZPVE‑korrigiertes Profil benötigt projizierte IRC‑Frequenzen (3N−7). Bitte IRC mit IOp(1/73=2) oder Freq=Projected rechnen.",
+    err_turning_fail: "Turning‑Points konnten nicht bestimmt werden (Barrier evtl. zu kurz / E zu hoch).",
+    err_import_unknown: "Unbekanntes Import‑Format.",
+    err_import_failed: "Import fehlgeschlagen. Bitte eine zuvor exportierte .json laden.",
+    err_import_incomplete_sp_profile: "Import enthält keine vollständigen Daten (sp/profile).",
+    err_import_incomplete_sp_irc_profile: "Import enthält keine vollständigen Daten (sp/irc/profile).",
+    err_hint_general: "Tipp: Für Gaussian-IRC: 'Normal termination' und im Log 'NET REACTION COORDINATE...' sowie 'Frequencies --' (Freq=Projected). Für ORCA-IRC: bitte die Trajektorien *_IRC_F_trj.xyz und *_IRC_B_trj.xyz hochladen (Energien werden aus den XYZ-Headern gelesen).",
+    energy_mode_label: "Energy mode",
+    opt_tunnel_irc: "IRC / WKB",
+    opt_tunnel_eckart: "Eckart",
+lab_eck_energy: "Eckart-Energielinie",
+opt_eck_kbt: "E = kBT (Arrhenius-T)",
+opt_eck_custom: "Benutzer-E (kcal mol⁻¹)",
+lbl_V1: "Barriere (Edukt→TS)",
+lbl_V2: "Barriere (Produkt→TS)",
+lbl_nu_imag: "ν‡ (imag.)",
+    lbl_Esel: "Gewähltes E",
+kpi_turning_E: "Turning Points (E)",
+kpi_width_E: "Breite (E)",
+    tunnel_irc: "IRC / WKB",
+    tunnel_eckart: "Eckart",
+    err_need_ts_imag: "TS-Imaginärfrequenz nicht gefunden.",
+    err_need_barrier: "Barrierenhöhe nicht positiv (Tunneling-Profil kann nicht gebaut werden).",
+    sum_k_tst_eckart: "k (TST + Eckart) / s⁻¹",
+    sum_t12_tst_eckart: "t½ (TST + Eckart)",
+    lab_eckE_mode: "Energielinie",
+    opt_eckE_kbt: "E = kBT (Arrhenius‑T)",
+    opt_eckE_custom: "Benutzerdefiniert (kcal/mol)",
+    lab_eckE_custom: "Benutzerdef. E (kcal/mol)",
+
+
+
+  }
+};
+let LANG = "en";
+function t(key){ return (I18N[LANG] && I18N[LANG][key]) ? I18N[LANG][key] : key; }
+function applyLang(){
+  document.documentElement.lang = LANG;
+  // data-i18n nodes
+  for (const el of document.querySelectorAll("[data-i18n]")){
+    const k = el.getAttribute("data-i18n");
+    // keep inner spans (e.g. tags + mono) intact for input labels
+    if (el.querySelector("span.tag") && (k==="lab_reactant"||k==="lab_product"||k==="lab_ts"||k==="lab_irc_rev"||k==="lab_irc_fwd")){
+      const tags = Array.from(el.querySelectorAll("span.tag"));
+      const mono = el.querySelector("span.mono");
+
+      // Snapshot texts we need to preserve
+      const monoText = mono ? mono.textContent : null;
+
+      // Update tag texts based on their own data-i18n (or class)
+      for (const tg of tags){
+        const tk = tg.getAttribute("data-i18n") || (tg.classList.contains("orca") ? "tag_orca_input" : "tag_gaussian_input");
+        tg.textContent = t(tk);
+      }
+
+      // Rebuild children but preserve mono (IRC labels) and all tags
+      while (el.firstChild) el.removeChild(el.firstChild);
+
+      if (k==="lab_irc_rev" || k==="lab_irc_fwd"){
+        el.appendChild(document.createTextNode(t(k)+" "));
+        if (monoText){
+          const m = document.createElement("span");
+          m.className = "mono";
+          m.textContent = monoText;
+          el.appendChild(m);
+        }
+        el.appendChild(document.createTextNode(") "));
+      } else {
+        el.appendChild(document.createTextNode(t(k)+" "));
+      }
+
+      tags.forEach((tg, i)=>{
+        el.appendChild(tg);
+        if (i < tags.length-1) el.appendChild(document.createTextNode(" "));
+      });
+
+    } else {
+      el.textContent = t(k);
+    }
+  }
+  // specific labels in hints
+  const hp = document.getElementById("hintProfile");
+  if (hp) hp.textContent = t("hint_profile");
+  const ha = document.getElementById("hintArr");
+  if (ha){
+    let msg = t("hint_arr");
+    let Tg = NaN;
+    try{
+      if (STATE && STATE.sp){
+        Tg = Number(STATE.sp.educt?.Tgauss);
+        if (!isFinite(Tg)) Tg = Number(STATE.sp.ts?.Tgauss);
+        if (!isFinite(Tg)) Tg = Number(STATE.sp.prod?.Tgauss);
+      }
+    }catch(e){}
+    if (isFinite(Tg)){
+      const TgTxt = (Math.round(Tg*100)/100).toFixed(2);
+      msg += " " + String(t("arr_dg_note")||"").replace("{T}", TgTxt);
+    }
+    ha.textContent = msg;
+  }
+  // select options
+  const oz=document.querySelector('option[value="zpve"][data-i18n="opt_zpve"]'); if (oz) oz.textContent=t("opt_zpve");
+  const oe=document.querySelector('option[value="elec"][data-i18n="opt_elec"]'); if (oe) oe.textContent=t("opt_elec");
+  const oh=document.querySelector('option[value="hybrid"][data-i18n="opt_hybrid"]'); if (oh) oh.textContent=t("opt_hybrid");
+  // buttons
+  const b1=document.getElementById("btnXiAuto"); if (b1) b1.textContent=t("btn_xi_auto");
+  const b2=document.getElementById("btnRun"); if (b2) b2.textContent=t("btn_compute");
+  const b3=document.getElementById("btnReset"); if (b3) b3.textContent=t("btn_reset");
+  const b4=document.getElementById("btnImport"); if (b4) b4.textContent=t("btn_import");
+  const b5=document.getElementById("btnExport"); if (b5) b5.textContent=t("btn_export");
+  for (const id of ["btnSaveProfile","btnSaveArr"]){
+    const b=document.getElementById(id); if (b) b.textContent=t("btn_save_png");
+  }
+
+  // modal
+  const modal = document.getElementById("modal");
+  const key = modal && modal.dataset ? modal.dataset.key : null;
+  const mt = document.getElementById("modalTitle");
+  const pre = document.getElementById("modalPre");
+  const hint = document.getElementById("modalHint");
+  const dlBtn = document.getElementById("modalDownload");
+
+  if (modal && modal.style.display==="block" && key){
+    const tpl = (typeof getTemplate==="function") ? getTemplate(key) : null;
+    if (mt) mt.textContent = tpl ? tpl.title : "";
+    if (pre && tpl && tpl.text) pre.textContent = tpl.text.trimEnd();
+    if (hint) hint.innerHTML = t(/^orca_/.test(String(key)) ? "modal_hint_orca" : "modal_hint_gauss");
+    if (dlBtn && tpl){
+      const fn = String(tpl.filename||"");
+      dlBtn.textContent = fn.endsWith(".inp") ? t("modal_download_inp") : t("modal_download_gjf");
+    }
+  } else {
+    if (mt) mt.textContent = t("tag_gaussian_input");
+    if (hint) hint.innerHTML = t("modal_hint_gauss");
+    if (dlBtn) dlBtn.textContent = t("modal_download_gjf");
+  }
+
+  const mc=document.getElementById("modalClose"); if (mc) mc.textContent=t("modal_close");
+  const mcopy=document.getElementById("modalCopy"); if (mcopy) mcopy.textContent=t("modal_copy");
+  // Re-render dynamic (non data-i18n) content
+  try{  }catch(e){}
+  try{
+    if (STATE && STATE.sp){
+      const fscaleNow = Number($("fscale") ? $("fscale").value : 1.0);
+      renderStatusPills(STATE.sp, currentEnergyMode(), fscaleNow);
+    }
+  }catch(e){}
+  try{ setXiFromAuto(Number($("fscale") ? $("fscale").value : 1.0)); }catch(e){}
+  try{
+    if (STATE && STATE.lastArr) renderSummary(STATE.lastArr);
+  }catch(e){}
+  ["fileE","fileP","fileTS","fileRev","fileFwd"].forEach(updateFileName);
+  try{ updateTunnelHeaders(STATE && STATE.profile ? STATE.profile : null); }catch(e){}
+}
+function initLang(){
+  const sel = document.getElementById("langSel");
+  const saved = localStorage.getItem("wkb_lang");
+  LANG = (saved==="de"||saved==="en") ? saved : "en";
+  if (sel){ sel.value = LANG; sel.addEventListener("change", ()=>{ LANG=sel.value; localStorage.setItem("wkb_lang", LANG); applyLang(); }); }
+  applyLang();
+}
+
+/* ======================= Constants (from Mathematica notebook) ======================= */
+const CONST = {
+  reveLo: 1822.8886259874,               // amu in me (used with mass-scaled coord sqrt(amu)*bohr)
+  wn2h: 4.5563352527542e-6,              // cm^-1 -> Hartree
+  kb: 3.16681536e-6,                     // Hartree/K
+  kb_over_h: 2.083661912e10,              // (kB/h) in s⁻¹ K⁻¹
+  c0: 299792458,                         // m/s
+  h2kcal: 627.509474,                    // Hartree -> kcal mol⁻¹
+  ln2: Math.log(2),
+};
+
+/* ======================= Small helpers ======================= */
+const $ = (id)=>document.getElementById(id);
+
+function currentMode(){
+  return $("mode")?.value || "eckart";
+}
+
+function currentEnergyMode(){
+  const m = currentMode();
+  if (m.startsWith("wkb_")) return m.slice(4);
+  return (STATE.lastEnergyMode || "zpve");
+}
+
+function currentTunnelMode(){
+  const m = currentMode();
+  return m.startsWith("wkb_") ? "irc" : "eckart";
+}
+
+function guessIRCProjected(){
+  const rev = $("fileRev")?.files?.[0];
+  const fwd = $("fileFwd")?.files?.[0];
+  if (rev && fwd){
+    const rn = (rev.name||"").toLowerCase();
+    const fn = (fwd.name||"").toLowerCase();
+    if (rn.endsWith(".xyz") || fn.endsWith(".xyz")) return false; // ORCA trajectories have no projected freqs
+  }
+  if (STATE && STATE.irc && STATE.irc.hasProjected === false) return false;
+  if (STATE && STATE.irc && STATE.irc.hasProjected === true) return true;
+  return null; // unknown/not parsed yet
+}
+
+
+
+let LAST_HAS_IRC = false;
+
+function updateModeAvailability(hasIRC, hasProjected=null){
+  const sel = $("mode");
+  if (!sel) return;
+
+  // Disable all WKB/IRC modes if no IRC files are present
+  for (const opt of sel.options){
+    if (opt.value.startsWith("wkb_")){
+      opt.disabled = !hasIRC;
+    }
+  }
+
+  // Decide preferred mode when IRC becomes available
+  const prefer = (hasIRC && hasProjected === false) ? "wkb_hybrid" : "wkb_zpve";
+
+  // If IRC just became available, jump to preferred mode (Gaussian -> ZPVE if available/unknown, ORCA -> Hybrid)
+  if (hasIRC && !LAST_HAS_IRC){
+    const optPrefer = [...sel.options].find(o=>o.value===prefer && !o.disabled);
+    if (optPrefer){
+      sel.value = prefer;
+    } else {
+      const first = [...sel.options].find(o=>o.value.startsWith("wkb_") && !o.disabled);
+      if (first) sel.value = first.value;
+    }
+  }
+
+  // If IRC exists but projected frequencies are missing (e.g. ORCA IRC / XYZ trajectories),
+  // disable the ZPVE-path option and force a switch to Hybrid if needed.
+  if (hasIRC && hasProjected === false){
+    const optZ = [...sel.options].find(o=>o.value==="wkb_zpve");
+    if (optZ) optZ.disabled = true;
+    if (sel.value === "wkb_zpve") sel.value = "wkb_hybrid";
+  } else if (hasIRC && hasProjected !== false){
+    // If projected freqs exist or are unknown (not parsed yet), keep ZPVE selectable
+    const optZ = [...sel.options].find(o=>o.value==="wkb_zpve");
+    if (optZ) optZ.disabled = false;
+  }
+
+  // If IRC removed, fall back to Eckart
+  if (!hasIRC && sel.value.startsWith("wkb_")){
+    sel.value = "eckart";
+  }
+
+  LAST_HAS_IRC = !!hasIRC;
+}
+
+function applyArrDefaultSelection(mode, arrObj){
+  // Default visible series in Arrhenius plot depends on chosen mode.
+  // - Eckart: show TST + TST+Eckart
+  // - IRC/WKB: show TST + TST+WKB
+  const tst = $("chkArrTST");
+  const wkb = $("chkArrWKB");
+  const tw  = $("chkArrTSTWKB");
+  const ec  = $("chkArrTSTEckart");
+
+  if (tst) tst.checked = true;
+
+  if (mode === "eckart"){
+    if (tw) tw.checked = false;
+    if (wkb) wkb.checked = false;
+    if (ec) ec.checked = !!(arrObj && arrObj.series && Array.isArray(arrObj.series.tst_eckart) && arrObj.series.tst_eckart.length>1) && !ec.disabled;
+  } else if (String(mode||"").startsWith("wkb_")){
+    if (ec) ec.checked = false;
+    if (wkb) wkb.checked = false;
+    if (tw) tw.checked = !!(arrObj && arrObj.series && Array.isArray(arrObj.series.tst_wkb) && arrObj.series.tst_wkb.length>1) && !tw.disabled;
+  }
+}
+
+
+let FILEPICK_BOUND = false;
+
+function updateFileName(id){
+  const inp = $(id);
+  const out = $(id+"Name");
+  const clr = document.querySelector(`.file-clear[data-file="${id}"]`);
+  if (!inp || !out) return;
+  const f = inp.files && inp.files[0];
+  if (f){
+    out.textContent = f.name;
+    out.classList.remove("empty");
+    if (clr) clr.disabled = false;
+  } else {
+    out.textContent = t("file_none");
+    out.classList.add("empty");
+    if (clr) clr.disabled = true;
+  }
+}
+
+function bindFilePickers(){
+  if (FILEPICK_BOUND) return;
+  FILEPICK_BOUND = true;
+
+  document.querySelectorAll(".file-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const id = btn.getAttribute("data-file");
+      const inp = $(id);
+      if (inp) inp.click();
+    });
+  });
+
+  document.querySelectorAll(".file-clear").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const id = btn.getAttribute("data-file");
+      const inp = $(id);
+      if (inp) inp.value = "";
+      updateFileName(id);
+      const hasIRC = !!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc;
+      updateModeAvailability(hasIRC, guessIRCProjected());
+    });
+  });
+
+  ["fileE","fileP","fileTS","fileRev","fileFwd"].forEach(id=>{
+    const inp = $(id);
+    if (inp){
+      inp.addEventListener("change", ()=>{
+      updateFileName(id);
+      const hasIRC = !!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc;
+      updateModeAvailability(hasIRC, guessIRCProjected());
+    });
+      updateFileName(id);
+    }
+  });
+}
+
+let ARR_SLIDER_BOUND = false;
+
+function bindArrSlider(){
+  if (ARR_SLIDER_BOUND) return;
+  ARR_SLIDER_BOUND = true;
+
+  const slider = $("arrT");
+  if (!slider) return;
+
+  slider.addEventListener("input", ()=>{
+    if (!STATE.lastArr) return;
+    const Tnow = Number(slider.value);
+    if (isFinite(Tnow)) STATE.arrT = Tnow;
+
+    updateSummaryAtTemperature(Tnow, STATE.lastArr);
+
+    // live pointer update in Arrhenius plot without re-binding summary
+    drawArrhenius(STATE.lastArr, {skipSummary:true});
+
+    // If Eckart profile uses E=kBT (Arrhenius T), update turning points overlay live
+    try{
+      if (STATE && STATE.profile && STATE.profile.mapInfo && STATE.profile.mapInfo.profileType==="eckart"){
+        const m = ($("eckEMode")?.value) || STATE.eckEMode || "kbt";
+        if (m === "kbt") refreshProfileDerived();
+      }
+    }catch(_e){}
+  });
+}
+
+function fmt(x, n=6){
+  if (!isFinite(x)) return "—";
+  return x.toFixed(n);
+}
+function fmtSci(x, sig=3){
+  if (!isFinite(x)) return "—";
+  if (x===0) return "0";
+  const ax = Math.abs(x);
+  if (ax >= 1e-3 && ax < 1e4) return x.toPrecision(sig);
+  return x.toExponential(sig-1);
+}
+function fmtTime(s){
+  const year = 365.25*24*3600;
+  const day = 24*3600;
+  if (!isFinite(s) || s<=0) return {s:"—", min:"—", h:"—", d:"—", y:"—"};
+  return {
+    s: fmtSci(s,4),
+    min: fmtSci(s/60,4),
+    h: fmtSci(s/3600,4),
+    d: fmtSci(s/day,4),
+    y: fmtSci(s/year,4)
+  };
+}
+function pill(text, kind){
+  const cls = kind ? ("pill " + kind) : "pill";
+  return `<span class="${cls}">${text}</span>`;
+}
+function showError(msg, hint=""){
+  $("cardErr").style.display = "";
+  $("errMsg").textContent = msg;
+  $("errHint").textContent = hint;
+  $("cardSP").style.display = "none";
+  $("cardProfile").style.display = "none";
+  $("cardWKB").style.display = "none";
+  const ca = $("cardArr"); if (ca) ca.style.display = "none";
+  $("statusPills").innerHTML = pill(t("sec_error"), "err");
+}
+function clearError(){
+  $("cardErr").style.display = "none";
+  $("errMsg").textContent = "";
+  $("errHint").textContent = "";
+}
+function readFileAsText(file){
+  return new Promise((resolve,reject)=>{
+    const fr = new FileReader();
+    fr.onload = ()=>resolve(String(fr.result||""));
+    fr.onerror = ()=>reject(fr.error||new Error("File read error"));
+    fr.readAsText(file);
+  });
+}
+
+/* ======================= Gaussian parsers (analog to your scripts) ======================= */
+
+function parseGaussianStationary(text){
+  // emulate: cat | tr -d \012 | tr -d blank | grep -o "HF=-..." -m 1
+  const collapsed = text.replace(/\n/g,"").replace(/\s+/g,"");
+  let m = collapsed.match(/HF=(-?\d+\.\d+)/);
+  let E0 = m ? parseFloat(m[1]) : NaN;
+
+  // fallback: SCF Done
+  if (!isFinite(E0)){
+    const m2 = text.match(/SCF Done:\s+E\([RU]?[A-Za-z0-9]+\)\s*=\s*(-?\d+\.\d+)/);
+    if (m2) E0 = parseFloat(m2[1]);
+  }
+
+  // ZPVE (Hartree) — value printed by Gaussian corresponds to unscaled frequencies.
+  let ZPVE = 0.0;
+  const mz = text.match(/Zero-point correction=\s*([0-9]*\.[0-9]+)/);
+  if (mz) ZPVE = parseFloat(mz[1]);
+
+  // Full harmonic frequencies (cm^-1): collect all numbers from 'Frequencies --' lines
+  // (3N−6 for minima; TS may include one imaginary (negative) frequency)
+  const freqs = [];
+  const re = /Frequencies --\s+([-+0-9\.\s]+)/g;
+  for (const mm of text.matchAll(re)){
+    const nums = (mm[1].match(/[-+]?\d+\.\d+/g) || []).map(v=>parseFloat(v));
+    freqs.push(...nums);
+  }
+
+  if (!isFinite(E0)) throw new Error(t("err_file_elec"));
+    // Thermal correction to Gibbs Free Energy (Hartree)
+  let Gcorr = NaN;
+  const mg = text.match(/Thermal correction to Gibbs Free Energy=\s*([-+]?\d*\.\d+)/);
+  if (mg) Gcorr = parseFloat(mg[1]);
+
+  // Thermochemistry conditions
+  let Tgauss = NaN, Pgauss = NaN;
+  const mt = text.match(/Temperature\s+([0-9]*\.[0-9]+)\s+Kelvin\.\s+Pressure\s+([0-9]*\.[0-9]+)\s+Atm\./);
+  if (mt){ Tgauss = parseFloat(mt[1]); Pgauss = parseFloat(mt[2]); }
+
+  return {E0, ZPVE, freqs, Gcorr, Tgauss, Pgauss};
+}
+
+
+/* ======================= ORCA parser (SP energies/ZPVE/G-correction) ======================= */
+/*
+  Goal: allow Eckart/TST/Arrhenius from ORCA stationary-point outputs.
+  We extract:
+   - E0 (Hartree): preferably from "FINAL SINGLE POINT ENERGY"
+   - ZPVE (Hartree): "Zero point energy"
+   - Gcorr (Hartree): either "G-E(el)" (preferred) or from (Gibbs - E0)
+   - Tgauss/Pgauss (thermochemistry conditions, if present)
+   - freqs (cm^-1): from "VIBRATIONAL FREQUENCIES" block (TS may contain one imaginary negative freq)
+*/
+function _orcaParseEnergyWithUnit(numStr, unitStr){
+  const v = Number(numStr);
+  if (!isFinite(v)) return NaN;
+  const u = (unitStr||"").toLowerCase();
+  if (u.includes("kcal")) return v / CONST.h2kcal; // kcal/mol -> Hartree
+  if (u.includes("kj"))   return (v / 4.184) / CONST.h2kcal; // kJ/mol -> kcal/mol -> Hartree
+  // default: Eh / a.u.
+  return v;
+}
+
+function parseOrcaStationary(text){
+  let E0 = NaN;
+
+  // Most robust: last "FINAL SINGLE POINT ENERGY"
+  const spAll = [...text.matchAll(/FINAL SINGLE POINT ENERGY\s+([+-]?\d+(?:\.\d+)?)/g)];
+  if (spAll.length){
+    E0 = parseFloat(spAll[spAll.length-1][1]);
+  }
+
+  // Thermochemistry block often prints E(el) as "Electronic energy ...  -280.0 Eh"
+  if (!isFinite(E0)){
+    const me = text.match(/Electronic\s+energy[^\d+-]*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au))?/i);
+    if (me) E0 = _orcaParseEnergyWithUnit(me[1], me[2]||"Eh");
+  }
+
+  // Fallbacks
+  if (!isFinite(E0)){
+    const m1 = text.match(/Total Energy\s*[:=]\s*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au))?/i);
+    if (m1) E0 = _orcaParseEnergyWithUnit(m1[1], m1[2]||"Eh");
+  }
+  if (!isFinite(E0)){
+    const m2 = text.match(/TOTAL SCF ENERGY\s+([+-]?\d+(?:\.\d+)?)/i);
+    if (m2) E0 = parseFloat(m2[1]);
+  }
+  if (!isFinite(E0)){
+    const m3 = text.match(/E\(0\)\s*=\s*([+-]?\d+(?:\.\d+)?)/i);
+    if (m3) E0 = parseFloat(m3[1]);
+  }
+
+  // ZPVE (accept "...", ":" or "=" separators)
+  let ZPVE = 0.0;
+  {
+    const mz = text.match(/Zero\s*point\s*energy[^\d+-]*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au|kcal\/mol|kJ\/mol))?/i);
+    if (mz) ZPVE = _orcaParseEnergyWithUnit(mz[1], mz[2]||"Eh");
+  }
+
+  // Frequencies (cm^-1): prefer VIBRATIONAL FREQUENCIES block, else "freq." lines from THERMOCHEMISTRY
+  const freqs = [];
+
+  // 1) VIBRATIONAL FREQUENCIES
+  const vibIdx = text.search(/VIBRATIONAL\s+FREQUENCIES/i);
+  if (vibIdx >= 0){
+    // Grab a generous slice; ORCA normal mode sections can be large
+    const seg = text.slice(vibIdx, vibIdx + 200000);
+    const lines = seg.split(/\r?\n/).slice(0, 2500);
+
+    // Prefer line-wise parsing to avoid accidentally picking up unrelated "cm-1" values
+    // Example:
+    //   6:    -568.02 cm**-1  ***imaginary mode***
+    for (const line of lines){
+      const ml = line.match(/^\s*\d+\s*:\s*([+-]?\d+(?:\.\d+)?)\s*cm(?:\*\*|\^|-)?\s*-?1\b/i);
+      if (ml){
+        const f = parseFloat(ml[1]);
+        if (isFinite(f) && Math.abs(f) < 20000) freqs.push(f);
+        continue;
+      }
+    }
+
+    // Fallback: sometimes ORCA prints frequencies in simpler tables
+    if (!freqs.length){
+      for (const line of lines){
+        const mline = line.match(/^\s*\d+\s*[:)]?\s*([+-]?\d+(?:\.\d+)?)(?:\s|$)/);
+        if (mline){
+          const f = parseFloat(mline[1]);
+          if (isFinite(f) && Math.abs(f) < 20000) freqs.push(f);
+        }
+      }
+    }
+  }
+
+  // 2) THERMOCHEMISTRY prints lines like "freq.   232.31"
+  for (const mm of text.matchAll(/\bfreq\.\s*([+-]?\d+(?:\.\d+)?)/gi)){
+    const f = parseFloat(mm[1]);
+    if (isFinite(f) && Math.abs(f) < 20000) freqs.push(f);
+  }
+
+  // de-duplicate
+  if (freqs.length){
+    const uniq = [];
+    for (const f of freqs){
+      if (!uniq.some(u=>Math.abs(u-f) < 1e-6)) uniq.push(f);
+    }
+    freqs.length = 0;
+    for (const f of uniq) freqs.push(f);
+  }
+
+  // Thermochemistry conditions (T, P) — ORCA variants:
+  // "THERMOCHEMISTRY AT 298.15K" and/or "Temperature ... 298.15 K", "Pressure ... 1.00 atm"
+  let Tgauss = NaN, Pgauss = NaN;
+
+  const mt0 = text.match(/THERMOCHEMISTRY\s+AT\s+([0-9]*\.?[0-9]+)\s*K/i);
+  if (mt0) Tgauss = parseFloat(mt0[1]);
+
+  const mt1 = text.match(/Temperature[^\d]*([0-9]*\.?[0-9]+)\s*K/i);
+  if (mt1) Tgauss = parseFloat(mt1[1]);
+
+  const mp1 = text.match(/Pressure[^\d]*([0-9]*\.?[0-9]+)\s*atm/i);
+  if (mp1) Pgauss = parseFloat(mp1[1]);
+
+  // G-correction: prefer "G-E(el)" if present (ORCA prints with "...")
+  let Gcorr = NaN;
+  const mg1 = text.match(/G-?E\(el\)[^\d+-]*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au|kcal\/mol|kJ\/mol))?/i);
+  if (mg1){
+    Gcorr = _orcaParseEnergyWithUnit(mg1[1], mg1[2]||"Eh");
+  } else {
+    // else compute from "Final Gibbs free energy" - E0
+    const mg2 = text.match(/Final\s+Gibbs\s+free\s+energy[^\d+-]*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au))?/i);
+    if (mg2){
+      const G = _orcaParseEnergyWithUnit(mg2[1], mg2[2]||"Eh");
+      if (isFinite(G) && isFinite(E0)) Gcorr = (G - E0);
+    } else {
+      const mg3 = text.match(/\bGibbs\s+free\s+energy[^\d+-]*([+-]?\d+(?:\.\d+)?)(?:\s*(Eh|a\.u\.|au))?/i);
+      if (mg3){
+        const G = _orcaParseEnergyWithUnit(mg3[1], mg3[2]||"Eh");
+        if (isFinite(G) && isFinite(E0)) Gcorr = (G - E0);
+      }
+    }
+  }
+
+  if (!isFinite(E0)) throw new Error(t("err_file_elec"));
+  return {E0, ZPVE, freqs, Gcorr, Tgauss, Pgauss};
+}
+
+function detectStationaryProgram(text){
+  // ORCA fingerprints
+  if (/FINAL SINGLE POINT ENERGY/i.test(text)) return "orca";
+  if (/\bO\s*R\s*C\s*A\b/i.test(text)) return "orca";
+  if (/Program Version\s+ORCA/i.test(text)) return "orca";
+  if (/THERMOCHEMISTRY\s+AT/i.test(text)) return "orca";
+  if (/Final\s+Gibbs\s+free\s+energy/i.test(text)) return "orca";
+  if (/G-?E\(el\)/i.test(text)) return "orca";
+
+  // Gaussian fingerprints
+  if (/SCF Done:/i.test(text)) return "gaussian";
+  if (/NAtoms=/i.test(text)) return "gaussian";
+  if (/Frequencies --/i.test(text)) return "gaussian";
+
+  return "gaussian";
+}
+
+function parseStationaryAuto(text){
+  const prog = detectStationaryProgram(text);
+  if (prog === "orca") return parseOrcaStationary(text);
+  return parseGaussianStationary(text);
+}
+
+
+function parseNumberMaybeD(str){
+  // handles  -1.2345D+03
+  const s = str.replace("D","E").replace("d","E");
+  const v = Number(s);
+  return isFinite(v) ? v : NaN;
+}
+
+
+
+/* ======================= ORCA IRC (trajectory XYZ) ======================= */
+
+// Minimal atomic weights (amu). Used for mass-weighted reaction coordinate s.
+const ATOMIC_WEIGHT = {
+  H:1.00784, He:4.002602, Li:6.94, Be:9.0121831, B:10.81, C:12.011, N:14.007, O:15.999, F:18.998403163,
+  Ne:20.1797, Na:22.98976928, Mg:24.305, Al:26.9815385, Si:28.085, P:30.973761998, S:32.06, Cl:35.45,
+  Ar:39.948, K:39.0983, Ca:40.078, Sc:44.955908, Ti:47.867, V:50.9415, Cr:51.9961, Mn:54.938044,
+  Fe:55.845, Co:58.933194, Ni:58.6934, Cu:63.546, Zn:65.38, Ga:69.723, Ge:72.63, As:74.921595,
+  Se:78.971, Br:79.904, Kr:83.798, Rb:85.4678, Sr:87.62, Y:88.90584, Zr:91.224, Nb:92.90637,
+  Mo:95.95, Tc:98, Ru:101.07, Rh:102.9055, Pd:106.42, Ag:107.8682, Cd:112.414, In:114.818,
+  Sn:118.71, Sb:121.76, Te:127.6, I:126.90447, Xe:131.293
+};
+const ANG2BOHR = 1.8897259886;
+
+function _atomicMass(sym){
+  const s = (sym||"").trim();
+  const m = ATOMIC_WEIGHT[s];
+  if (isFinite(m)) return m;
+  // fallback: treat unknown as carbon (keeps s-scale reasonable for rare elements)
+  return 12.011;
+}
+
+// Power iteration for dominant eigenvector (4x4)
+function _eig4_power(M, iters=25){
+  let q = [1,0,0,0];
+  for (let k=0;k<iters;k++){
+    const nq = [
+      M[0][0]*q[0] + M[0][1]*q[1] + M[0][2]*q[2] + M[0][3]*q[3],
+      M[1][0]*q[0] + M[1][1]*q[1] + M[1][2]*q[2] + M[1][3]*q[3],
+      M[2][0]*q[0] + M[2][1]*q[1] + M[2][2]*q[2] + M[2][3]*q[3],
+      M[3][0]*q[0] + M[3][1]*q[1] + M[3][2]*q[2] + M[3][3]*q[3],
+    ];
+    const norm = Math.hypot(nq[0],nq[1],nq[2],nq[3]) || 1;
+    q = [nq[0]/norm, nq[1]/norm, nq[2]/norm, nq[3]/norm];
+  }
+  return q;
+}
+
+function _quatToRot(q){
+  const [q0,q1,q2,q3] = q;
+  return [
+    [ q0*q0+q1*q1-q2*q2-q3*q3, 2*(q1*q2 - q0*q3),         2*(q1*q3 + q0*q2)        ],
+    [ 2*(q1*q2 + q0*q3),        q0*q0-q1*q1+q2*q2-q3*q3,  2*(q2*q3 - q0*q1)        ],
+    [ 2*(q1*q3 - q0*q2),        2*(q2*q3 + q0*q1),        q0*q0-q1*q1-q2*q2+q3*q3  ]
+  ];
+}
+
+function _matVec3(R, v){
+  return [
+    R[0][0]*v[0] + R[0][1]*v[1] + R[0][2]*v[2],
+    R[1][0]*v[0] + R[1][1]*v[1] + R[1][2]*v[2],
+    R[2][0]*v[0] + R[2][1]*v[1] + R[2][2]*v[2],
+  ];
+}
+
+// Align curr -> prev by weighted quaternion fit (Horn), return aligned coords in prev frame
+function _alignCoordsQuat(prev, curr, w){
+  const n = prev.length;
+  let sw = 0;
+  let cp=[0,0,0], cq=[0,0,0];
+  for (let i=0;i<n;i++){
+    const wi = w[i] || 1;
+    sw += wi;
+    cp[0]+=wi*prev[i][0]; cp[1]+=wi*prev[i][1]; cp[2]+=wi*prev[i][2];
+    cq[0]+=wi*curr[i][0]; cq[1]+=wi*curr[i][1]; cq[2]+=wi*curr[i][2];
+  }
+  if (!sw) sw = 1;
+  cp = [cp[0]/sw, cp[1]/sw, cp[2]/sw];
+  cq = [cq[0]/sw, cq[1]/sw, cq[2]/sw];
+
+  // covariance S = Σ w * (q) (p)^T  (curr to prev)
+  let Sxx=0,Sxy=0,Sxz=0, Syx=0,Syy=0,Syz=0, Szx=0,Szy=0,Szz=0;
+  for (let i=0;i<n;i++){
+    const wi = w[i] || 1;
+    const px = prev[i][0]-cp[0], py = prev[i][1]-cp[1], pz = prev[i][2]-cp[2];
+    const qx = curr[i][0]-cq[0], qy = curr[i][1]-cq[1], qz = curr[i][2]-cq[2];
+    Sxx += wi*qx*px; Sxy += wi*qx*py; Sxz += wi*qx*pz;
+    Syx += wi*qy*px; Syy += wi*qy*py; Syz += wi*qy*pz;
+    Szx += wi*qz*px; Szy += wi*qz*py; Szz += wi*qz*pz;
+  }
+
+  const N = [
+    [Sxx+Syy+Szz, Syz-Szy,      Szx-Sxz,      Sxy-Syx],
+    [Syz-Szy,     Sxx-Syy-Szz,  Sxy+Syx,      Szx+Sxz],
+    [Szx-Sxz,     Sxy+Syx,     -Sxx+Syy-Szz,  Syz+Szy],
+    [Sxy-Syx,     Szx+Sxz,      Syz+Szy,     -Sxx-Syy+Szz],
+  ];
+  const q = _eig4_power(N, 30);
+  const R = _quatToRot(q);
+
+  const out = new Array(n);
+  for (let i=0;i<n;i++){
+    const v = [curr[i][0]-cq[0], curr[i][1]-cq[1], curr[i][2]-cq[2]];
+    const rv = _matVec3(R, v);
+    out[i] = [rv[0]+cp[0], rv[1]+cp[1], rv[2]+cp[2]];
+  }
+  return out;
+}
+
+function _mwDist(a, b, w){
+  let s = 0;
+  for (let i=0;i<a.length;i++){
+    const wi = w[i] || 1;
+    const dx=a[i][0]-b[i][0], dy=a[i][1]-b[i][1], dz=a[i][2]-b[i][2];
+    s += wi*(dx*dx+dy*dy+dz*dz);
+  }
+  return Math.sqrt(s);
+}
+
+function _parseOrcaXYZFrames(text){
+  const lines = text.split(/\r?\n/);
+  let i=0;
+  const frames=[];
+  let nat = null;
+  let syms = null;
+
+  function skipBlank(){
+    while (i<lines.length && lines[i].trim()==="") i++;
+  }
+
+  while (i < lines.length){
+    skipBlank();
+    if (i>=lines.length) break;
+    const n = parseInt(lines[i].trim(),10);
+    if (!(n>0)) break;
+    if (nat==null) nat=n;
+    if (n!==nat) throw new Error("ORCA XYZ: inconsistent atom count.");
+    i++;
+    if (i>=lines.length) break;
+    const comment = lines[i]||"";
+    const mE = comment.match(/\bE\s+(-?\d+(?:\.\d+)?(?:[Ee][+\-]?\d+)?)/);
+    const E = mE ? Number(mE[1]) : NaN;
+    i++;
+    const coords=[];
+    const symHere=[];
+    for (let k=0;k<nat && i<lines.length;k++,i++){
+      const parts = lines[i].trim().split(/\s+/);
+      if (parts.length < 4) continue;
+      const sym = parts[0];
+      const x = Number(parts[1]), y = Number(parts[2]), z = Number(parts[3]);
+      symHere.push(sym);
+      coords.push([x*ANG2BOHR, y*ANG2BOHR, z*ANG2BOHR]);
+    }
+    if (!syms) syms = symHere.slice();
+    frames.push({E, coords});
+  }
+
+  if (!nat || !frames.length) throw new Error(t("err_need_orca_trj"));
+  return {nat, syms: syms||[], frames};
+}
+
+function parseOrcaIRCTrajXYZ(text, sign){
+  const {nat, syms, frames} = _parseOrcaXYZFrames(text);
+  const masses = (syms && syms.length===nat) ? syms.map(_atomicMass) : new Array(nat).fill(12.011);
+
+  if (frames.length < 4) throw new Error(t("err_irc_points"));
+
+  let rc = 0.0;
+  let prev = frames[0].coords;
+  const pts = [];
+  // include TS point only on the negative side to avoid duplicate rc=0
+  if (sign < 0){
+    pts.push({rc: 0.0, E: frames[0].E});
+  }
+
+  for (let i=1;i<frames.length;i++){
+    const curr = frames[i].coords;
+    const aligned = _alignCoordsQuat(prev, curr, masses);
+    const ds = _mwDist(prev, aligned, masses);
+    rc += (isFinite(ds) ? ds : 0);
+    pts.push({rc: sign*Math.abs(rc), E: frames[i].E});
+    prev = aligned;
+  }
+
+  pts.sort((a,b)=>a.rc-b.rc);
+  return {
+    nat,
+    FREQ: 3*nat - 7,
+    points: pts,
+    hasProjected: false,
+    freqFound: 0,
+    freqNeed: 0,
+    nPoints: pts.length
+  };
+}
+
+// Auto-detect IRC input: Gaussian log/out vs ORCA trajectory xyz
+function parseIRCAuto(text, sign){
+  const t0 = (text||"").trimStart();
+  // ORCA trajectory xyz: starts with integer + "Coordinates from ORCA-job"
+  const m = t0.match(/^(\d+)\s*[\r\n]+([^\r\n]+)/);
+  if (m){
+    const n = parseInt(m[1],10);
+    const hdr = m[2] || "";
+    if (n>0 && n<2000 && /ORCA-job/i.test(hdr)) return parseOrcaIRCTrajXYZ(text, sign);
+  }
+  // Gaussian IRC
+  if (/NET REACTION COORDINATE UP TO THIS POINT/.test(text) || /\bNAtoms=\s*\d+/.test(text) || /SCF Done:\s+E\(/.test(text)){
+    return parseGaussianIRC(text, sign);
+  }
+  // ORCA .out alone (no trajectory) -> instruct user
+  if (/\bORCA\b/i.test(text) && /\bIRC\b/i.test(text)){
+    throw new Error(t("err_need_orca_trj"));
+  }
+  throw new Error(t("err_need_irc"));
+}
+
+
+function parseGaussianIRC(text, sign){
+  // Matches get_IOP_freq_IRC.sh extraction (tac | sed "/NET.../,/SCF Done:  E(/p" | tac)
+  // sign: +1 for fwd, -1 for rev (script makes rev negative)
+  const isMP2 = /EUMP2\s*=/.test(text) || /\bMP2\b/.test(text);
+  const mNat = text.match(/NAtoms=\s*(\d+)/);
+  if (!mNat) throw new Error(t("err_irc_natoms"));
+  const nat = parseInt(mNat[1],10);
+  const FREQ = 3*nat - 7;
+
+  const lines = text.split(/\r?\n/);
+  const rev = [...lines].reverse();
+
+  const startRe = /NET REACTION COORDINATE UP TO THIS POINT/;
+  const endRe   = isMP2 ? /EUMP2\s*=/ : /SCF Done:\s+E\(/;
+
+  // collect sed-style blocks on reversed file
+  const sel = [];
+  let inBlock = false;
+  for (const line of rev){
+    if (startRe.test(line)) inBlock = true;
+    if (inBlock) sel.push(line);
+    if (inBlock && endRe.test(line)) inBlock = false;
+  }
+  sel.reverse(); // tac back
+
+  // Extract rc, energies, and ALL frequency numbers from the selected text
+  const rc = [];
+  const E  = [];
+  const freqAll = [];
+
+  for (const line of sel){
+    if (line.includes("NET REACTION COORDINATE UP TO THIS POINT =")){
+      const m = line.match(/([0-9]*\.[0-9]+)/);
+      if (m) rc.push(parseFloat(m[1]));
+      continue;
+    }
+    if (!isMP2){
+      if (line.includes("SCF Done:") && line.includes("E(")){
+        const m = line.match(/\)\s*=\s*([-]?\d+\.\d+)/);
+        if (m) E.push(parseFloat(m[1]));
+        continue;
+      }
+    } else {
+      const m = line.match(/EUMP2\s*=\s*([-]?\d+\.\d+(?:[DdEe][+-]?\d+)?)/);
+      if (m) E.push(parseNumberMaybeD(m[1]));
+    }
+
+    if (line.includes("Frequencies --")){
+      const nums = (line.match(/[-+]?\d+\.\d+/g) || []).map(v=>parseFloat(v));
+      freqAll.push(...nums);
+    }
+  }
+
+  const n = Math.min(rc.length, E.length);
+  if (n < 8) throw new Error(t("err_irc_few_points"));
+
+  // Frequencies: keep only first n*FREQ numbers, then split sequentially (exactly like the bash script)
+  const need = n * FREQ;
+  const hasProjected = (freqAll.length >= need);
+
+  // If projected frequencies are missing (e.g. IRC run without IOp(1/73=2)),
+  // we still return rc/E so that electronic-only and Hybrid WKB can be computed.
+  const pts = [];
+  for (let i=0;i<n;i++){
+    let freqs = null;
+    let zprojRaw = NaN;
+    if (hasProjected){
+      freqs = freqAll.slice(i*FREQ, (i+1)*FREQ);
+      zprojRaw = 0.0;
+      for (const f of freqs){
+        if (isFinite(f) && f>0) zprojRaw += 0.5 * CONST.wn2h * f;
+      }
+    }
+    pts.push({rc: sign*Math.abs(rc[i]), E: E[i], freqs, zprojRaw});
+  }
+
+  pts.sort((a,b)=>a.rc-b.rc);
+  return {nat, FREQ, isMP2, points: pts, hasProjected, freqFound: freqAll.length, freqNeed: need, nPoints: n};
+}
+
+
+
+
+function inferTunnelFrequency(eductFreqsFull, ircFreqs){
+  // Goal: estimate the tunneling/attempt frequency ξ from comparing
+  // Edukt (3N−6) frequencies to projected IRC endpoint (3N−7) frequencies.
+  //
+  // In practice, very low-frequency torsions (<~200 cm⁻¹) can behave erratically and may appear "missing".
+  // Your Mathematica workflow typically uses the chemically relevant tunneling mode (often higher),
+  // so we use a two-step heuristic:
+  //   (1) Identify the "missing" mode via best skip alignment (A vs B).
+  //       If it is >= 200 cm⁻¹ -> use it.
+  //   (2) If the missing mode is < 200 cm⁻¹, fall back to the mode with the *largest* deviation
+  //       between A and B after filtering out low frequencies (< 200 cm⁻¹). This reproduces your example
+  //       where the missing torsion is not the chosen tunnel mode.
+  const A = (Array.isArray(eductFreqsFull)?eductFreqsFull:[])
+    .map(Number).filter(f=>isFinite(f) && f>0).sort((a,b)=>a-b);
+  const B = (Array.isArray(ircFreqs)?ircFreqs:[])
+    .map(Number).filter(f=>isFinite(f) && f>0).sort((a,b)=>a-b);
+  if (A.length<3 || B.length<3) return NaN;
+  if (A.length <= B.length) return NaN;
+
+  // ---- (1) "missing mode" via best skip alignment ----
+  function scoreSkip(skipIdx){
+    const A2 = A.filter((_,i)=>i!==skipIdx);
+    const L = Math.min(A2.length, B.length);
+    const Ause = A2.slice(0,L);
+    const Buse = B.slice(0,L);
+
+    let matches = 0, cost = 0, maxDiff = 0;
+    for (let i=0;i<L;i++){
+      const a = Ause[i], b = Buse[i];
+      const d = Math.abs(a-b);
+      const tol = Math.max(12.0, 0.02*Math.max(a,b)); // 12 cm^-1 or 2%
+      if (d <= tol) matches += 1;
+      cost += d;
+      if (d > maxDiff) maxDiff = d;
+    }
+    return {matches, cost, maxDiff};
+  }
+
+  let best = {skipIdx:-1, matches:-1, cost:Infinity, maxDiff:Infinity};
+  for (let i=0;i<A.length;i++){
+    const s = scoreSkip(i);
+    if (s.matches > best.matches ||
+       (s.matches === best.matches && s.cost < best.cost) ||
+       (s.matches === best.matches && s.cost === best.cost && s.maxDiff < best.maxDiff)){
+      best = {skipIdx:i, ...s};
+    }
+  }
+
+  const target = Math.min(B.length, A.length-1);
+  const good = (best.matches >= Math.max(6, Math.floor(0.90*target)));
+  const missing = good ? A[best.skipIdx] : NaN;
+
+  if (isFinite(missing) && missing >= 200) return missing;
+
+  // ---- (2) Fallback: ignore low modes and pick the largest mismatch among aligned ranks ----
+  const FMIN = 200;
+  const Ah = A.filter(f=>f>=FMIN);
+  const Bh = B.filter(f=>f>=FMIN);
+  if (Ah.length >= 6 && Ah.length === Bh.length){
+    let maxD = -1, bestF = NaN;
+    for (let i=0;i<Ah.length;i++){
+      const d = Math.abs(Ah[i]-Bh[i]);
+      if (d > maxD){
+        maxD = d;
+        bestF = Ah[i];
+      }
+    }
+    if (isFinite(bestF) && maxD >= 1.0) return bestF;
+  }
+
+  return missing;
+}
+
+
+/* ======================= Build energy profile ======================= */
+function buildProfile(ircData, sp, freqScale, energyMode, barrierShiftKcal=0){
+  // energyMode:
+  //   "zpve"   : E_elec + projected ZPVE (3N−7) along the IRC
+  //   "elec"   : electronic energy only
+  //   "hybrid" : electronic IRC profile, but barrier anchored to stationary-point ZPVE (reactant/TS/product)
+  const useZPVE = (energyMode === "zpve" || energyMode === "hybrid");
+  const useZPVE_path = (energyMode === "zpve");
+
+  if (energyMode === "zpve" && ircData && ircData.hasProjected === false){
+    throw new Error(t("err_zpve_need_proj"));
+  }
+
+  const Eeduct_ref = useZPVE ? (sp.educt.E0 + sp.educt.ZPVE*freqScale) : sp.educt.E0;
+  const Eprod_ref  = useZPVE ? (sp.prod.E0  + sp.prod.ZPVE*freqScale)  : sp.prod.E0;
+
+  const ptsRaw = ircData.points.map(p=>{
+    const rc = p.rc;
+    const Eelec = p.E;
+    let zproj = 0.0;
+    if (useZPVE_path){
+      if (isFinite(p.zprojRaw)){
+        zproj = p.zprojRaw * freqScale;
+      } else {
+        for (const f0 of (p.freqs||[])){
+          const f = (isFinite(f0) ? f0*freqScale : NaN);
+          if (isFinite(f) && f>0) zproj += 0.5 * CONST.wn2h * f;
+        }
+      }
+    }
+    const Etot = useZPVE_path ? (Eelec + zproj) : Eelec;
+        return {rc, E: Eelec, zproj, Etot, freqs: p.freqs};
+  }).filter(p=>isFinite(p.rc) && isFinite(p.Etot)).sort((a,b)=>a.rc-b.rc);
+
+
+  // Ensure TS point at rc=0 (Mathematica appends {0,TSE0} and {0,TSZPVE})
+  const hasZero = ptsRaw.some(p=>Math.abs(p.rc) < 1e-8);
+  if (!hasZero && sp && sp.ts){
+    const EtotTS = useZPVE_path ? (sp.ts.E0 + sp.ts.ZPVE*freqScale) : sp.ts.E0;
+    ptsRaw.push({rc:0.0, E: sp.ts.E0, zproj: (useZPVE_path ? sp.ts.ZPVE*freqScale : 0.0), Etot: EtotTS});
+    ptsRaw.sort((a,b)=>a.rc-b.rc);
+  }
+
+  if (ptsRaw.length < 8) throw new Error(t("err_irc_points"));
+
+  // Determine which end corresponds to Edukt/Produkt by comparing electronic energies (robust vs ZPVE bookkeeping)
+  const N = Math.min(6, ptsRaw.length);
+  const leftAvg  = ptsRaw.slice(0,N).reduce((s,p)=>s+p.Etot,0)/N;
+  const rightAvg = ptsRaw.slice(-N).reduce((s,p)=>s+p.Etot,0)/N;
+
+  const leftAvgE0  = ptsRaw.slice(0,N).reduce((s,p)=>s+p.E,0)/N;
+  const rightAvgE0 = ptsRaw.slice(-N).reduce((s,p)=>s+p.E,0)/N;
+
+  const Eeduct0 = sp.educt.E0;
+  const Eprod0  = sp.prod.E0;
+
+  const leftIsEduct  = Math.abs(leftAvgE0  - Eeduct0) <= Math.abs(leftAvgE0  - Eprod0);
+  const rightIsEduct = Math.abs(rightAvgE0 - Eeduct0) <= Math.abs(rightAvgE0 - Eprod0);
+  let eductSide = leftIsEduct ? "left" : (rightIsEduct ? "right" : "left");
+
+  const eductEndEtot = (eductSide==="left") ? leftAvg : rightAvg;
+  const shift = eductEndEtot - Eeduct_ref;  // IRC-Ende minus stationäres Edukt (Diagnostik)
+
+  // Mathematica-Referenz: Nullpunkt ist das stationäre Edukt (E0+ZPVE oder nur E0).
+// HYBRID (gewünschtes Verhalten):
+//   1) Berechne ΔE‡(ZPVE) aus stationären Punkten (TS, Edukt).
+//   2) Ziehe diese Barriere vom TS (elektronisches IRC, rc≈0) ab -> Referenzenergie.
+//   3) Setze diese Referenz auf 0: V(rc) = E_elec(rc) − (E_TS_elec − ΔE‡(ZPVE)).
+// Damit werden Turning Points für die ZPVE‑korrigierte Barriere analog zum ZPVE‑Modus gefunden.
+let barrierTarget = NaN; // Hartree, ΔE‡(ZPVE) from stationary points
+let addConst = 0.0;      // Hartree, constant offset applied to IRC energies (unused in hybrid)
+let baseline = (energyMode === "elec") ? sp.educt.E0 : Eeduct_ref; // Hartree
+
+// TS electronic energy on the IRC (rc ≈ 0). Prefer the actual IRC value over the stationary-point value.
+let EtsIRC = NaN;
+for (const p of ptsRaw){
+  if (Math.abs(p.rc) < 1e-8 && isFinite(p.Etot)){
+    if (!isFinite(EtsIRC) || p.Etot > EtsIRC) EtsIRC = p.Etot;
+  }
+}
+if (!isFinite(EtsIRC) && sp && sp.ts) EtsIRC = sp.ts.E0;
+
+if (energyMode === "hybrid" && sp && sp.educt && sp.ts){
+  barrierTarget = (sp.ts.E0 + sp.ts.ZPVE*freqScale) - (sp.educt.E0 + sp.educt.ZPVE*freqScale); // Hartree
+  if (isFinite(EtsIRC) && isFinite(barrierTarget)){
+    baseline = EtsIRC - barrierTarget; // Hartree
+  } else {
+    baseline = sp.educt.E0; // fallback
+  }
+}
+
+let points = ptsRaw.map(p=>({
+  ...p,
+  V: (p.Etot + addConst - baseline) // Hartree relativ zu Referenz
+}));
+
+
+// Ensure Edukt is always on the left in plots (negative IRC).
+if (eductSide === "right"){
+  for (const p of points){ p.rc = -p.rc; }
+  points.sort((a,b)=>a.rc-b.rc);
+  eductSide = "left";
+}
+
+// Diagnostics only: in the new hybrid definition we do not rescale the barrier shape automatically.
+let hybridAutoShiftEh = 0.0;
+
+  // Optional barrier shift (kcal mol⁻¹): adjust barrier height while keeping endpoints at 0.
+  const dKcal = Number(barrierShiftKcal);
+  if (isFinite(dKcal) && Math.abs(dKcal) > 1e-12){
+    const dEh = dKcal / CONST.h2kcal;
+    // Use current maximum as reference; scale only the positive part so that V=0 endpoints stay fixed.
+    let vmax0 = -Infinity;
+    for (const p of points){ if (p.V > vmax0) vmax0 = p.V; }
+    if (isFinite(vmax0) && vmax0 > 0){
+      for (const p of points){
+        const vpos = (p.V > 0) ? p.V : 0;
+        p.V = p.V + dEh * (vpos / vmax0);
+      }
+    }
+  }
+
+  // spline representation of V(rc)
+  const spline = buildNotAKnotSpline(points.map(p=>p.rc), points.map(p=>p.V));
+
+  // barrier maximum
+  let vmax=-Infinity, imax=0;
+  for (let i=0;i<points.length;i++){
+    if (points[i].V > vmax){ vmax = points[i].V; imax=i; }
+  }
+
+  return {
+    points,
+    spline,
+    imax,
+    vmax,
+    mapInfo: {leftAvg, rightAvg, leftIsEduct, rightIsEduct, eductSide, eductEndEtot, shift, baseline, addConst, hybridAutoShiftEh, energyMode, useZPVE, barrierTarget: (isFinite(barrierTarget)?barrierTarget:null), barrierShiftKcal: Number(barrierShiftKcal)||0, profileType:"irc"}
+  };
+}
+
+
+/* ======================= Synthetic tunneling profiles (Eckart) ======================= */
+
+function _barrierEnergiesEh(sp, fscale, energyMode, barShiftKcal){
+  const useZ = (energyMode==="zpve" || energyMode==="hybrid");
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+
+  const Eeduct = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+  const Eprod  = useZ ? (sp.prod.E0  + sp.prod.ZPVE*fs)  : sp.prod.E0;
+  const Ets    = useZ ? (sp.ts.E0    + sp.ts.ZPVE*fs)    : sp.ts.E0;
+
+  const dK_Eh = (Number(barShiftKcal)||0) / CONST.h2kcal;
+  const V1 = (Ets - Eeduct) + dK_Eh;          // barrier above educt
+  const V2 = (Ets - Eprod ) + dK_Eh;          // barrier above product
+  const dE = (Eprod - Eeduct);                // product relative to educt
+  return {useZ, fs, Eeduct, Eprod, Ets, V1, V2, dE, dK_Eh};
+}
+
+
+
+function buildSyntheticProfile(kind, sp, fscale, energyMode, barrierShiftKcal=0){
+  const E = _barrierEnergiesEh(sp, fscale, energyMode, barrierShiftKcal);
+  const nu = _tsImagFreqCm(sp, fscale);
+  if (!(isFinite(nu) && nu>0)) throw new Error(t("err_need_ts_imag"));
+
+  const {V1, V2, dE} = E;
+  if (!(isFinite(V1) && V1>0)) throw new Error(t("err_need_barrier"));
+
+  // Choose V0 and a such that curvature at top matches imaginary frequency (mass-weighted coord, see CONST.reveLo).
+  // ω(a.u.) = ħω in Eh = h*c*nu (converted via CONST.wn2h)
+  const omega = CONST.wn2h * nu; // a.u. angular frequency
+  let V0 = V1 - dE/2;            // bump amplitude in asymmetric construction
+  if (!(isFinite(V0) && V0>1e-12)) V0 = Math.max(V1, 1e-6);
+
+  const a = Math.sqrt(Math.max(1e-18, (omega*omega*CONST.reveLo) / (2*V0)));
+  const Qmax = Math.max(2.5, Math.min(18.0, 8.0/a)); // √amu·bohr
+  const N = 601;
+
+  function step(q){
+    // left -> 0, right -> dE
+    return (dE/2) * (1 + Math.tanh(a*q));
+  }
+  function bumpEckart(q){
+    const c = Math.cosh(a*q);
+    return V0 / (c*c);
+  }
+  
+
+
+  const pts=[];
+  for (let i=0;i<N;i++){
+    const q = -Qmax + (2*Qmax*i)/(N-1);
+    const bump = bumpEckart(q);
+const V = bump + step(q);
+    pts.push({rc:q, V});
+  }
+
+  // barrier maximum
+  let vmax=-Infinity, imax=0;
+  for (let i=0;i<pts.length;i++){
+    if (pts[i].V > vmax){ vmax=pts[i].V; imax=i; }
+  }
+  const spline = buildNotAKnotSpline(pts.map(p=>p.rc), pts.map(p=>p.V));
+  return {
+    points: pts,
+    spline,
+    imax,
+    vmax,
+    mapInfo: {
+      energyMode,
+      useZPVE: E.useZ,
+      barrierShiftKcal: Number(barrierShiftKcal)||0,
+      profileType: kind,
+      synthetic: true,
+      nuImag: nu,
+      V1, V2, dE
+    }
+  };
+}
+
+function updateTunnelHeaders(profile){
+  const h3 = $("hdrProfile");
+  const hR = $("hdrTunnelResults");
+  const type = (profile && profile.mapInfo && profile.mapInfo.profileType) ? profile.mapInfo.profileType : "irc";
+  const labelKey = (type==="eckart") ? "tunnel_eckart" : "tunnel_irc";
+  const label = t(labelKey);
+  if (h3) h3.textContent = `${t("sec_profile")} (${label})`;
+  if (hR) hR.textContent = `${t("sec_wkb")} (${label})`;
+}
+
+/* ======================= Turning points & WKB integral ======================= */
+function interpLinear(x1,y1,x2,y2,x){
+  if (x2===x1) return y1;
+  const t = (x-x1)/(x2-x1);
+  return y1 + t*(y2-y1);
+}
+
+
+// Generate "nice" tick marks similar to plotting programs (Origin/Mathematica).
+function niceTicks(min, max, n=6){
+  min = Number(min); max = Number(max);
+  if (!isFinite(min) || !isFinite(max)) return [];
+  if (min === max){
+    const step = (min === 0) ? 1 : Math.abs(min)*0.1;
+    return [min-step, min, min+step];
+  }
+  // swap if needed
+  if (min > max){ const t = min; min = max; max = t; }
+  const rawRange = max - min;
+  const niceNum = (x, round) => {
+    const exp = Math.floor(Math.log10(x));
+    const f = x / Math.pow(10, exp);
+    let nf;
+    if (round){
+      if (f < 1.5) nf = 1;
+      else if (f < 3) nf = 2;
+      else if (f < 7) nf = 5;
+      else nf = 10;
+    } else {
+      if (f <= 1) nf = 1;
+      else if (f <= 2) nf = 2;
+      else if (f <= 5) nf = 5;
+      else nf = 10;
+    }
+    return nf * Math.pow(10, exp);
+  };
+  const niceRange = niceNum(rawRange, false);
+  const step = niceNum(niceRange / Math.max(1, (n-1)), true);
+  const niceMin = Math.floor(min / step) * step;
+  const niceMax = Math.ceil(max / step) * step;
+
+  const ticks = [];
+  // avoid floating accumulation by counting steps
+  const N = Math.round((niceMax - niceMin) / step);
+  for (let i=0;i<=N;i++){
+    const v = niceMin + i*step;
+    // trim tiny -0
+    ticks.push(Math.abs(v) < 1e-12 ? 0 : v);
+  }
+  return ticks;
+}
+
+
+/* ---- Natural cubic spline (for turning points & integrals) ----
+   Solves for second derivatives y2[] with natural boundary conditions (y''=0 at ends).
+   Based on Numerical Recipes tridiagonal algorithm.
+*/
+
+function buildNotAKnotSpline(xs, ys){
+  // Cubic spline matching Mathematica Interpolation[..., Method->"Spline"] (not-a-knot)
+  const n = xs.length;
+  if (n < 4){
+    return {xs, ys, y2: new Array(n).fill(0)};
+  }
+
+  const h = new Array(n-1);
+  for (let i=0;i<n-1;i++){
+    h[i] = xs[i+1] - xs[i];
+    if (!isFinite(h[i]) || h[i]===0) h[i] = 1e-12;
+  }
+
+  // Build dense linear system A*y2 = rhs (y2 = second derivatives)
+  const A = Array.from({length:n}, ()=> new Array(n).fill(0));
+  const rhs = new Array(n).fill(0);
+
+  // not-a-knot at x1: (y2[1]-y2[0])/h0 == (y2[2]-y2[1])/h1
+  A[0][0] = -h[1];
+  A[0][1] =  (h[0] + h[1]);
+  A[0][2] = -h[0];
+  rhs[0] = 0;
+
+  // interior equations
+  for (let i=1;i<=n-2;i++){
+    A[i][i-1] = h[i-1];
+    A[i][i]   = 2*(h[i-1] + h[i]);
+    A[i][i+1] = h[i];
+    rhs[i] = 6*((ys[i+1]-ys[i])/h[i] - (ys[i]-ys[i-1])/h[i-1]);
+  }
+
+  // not-a-knot at x_{n-2}: (y2[n-1]-y2[n-2])/h_{n-2} == (y2[n-2]-y2[n-3])/h_{n-3}
+  A[n-1][n-3] = -h[n-2];
+  A[n-1][n-2] =  (h[n-3] + h[n-2]);
+  A[n-1][n-1] = -h[n-3];
+  rhs[n-1] = 0;
+
+  // Solve by Gaussian elimination with partial pivoting (n is small: O(n^3) is fine)
+  const M = A.map(r=>r.slice());
+  const b = rhs.slice();
+
+  for (let k=0;k<n;k++){
+    // pivot
+    let piv = k;
+    let best = Math.abs(M[k][k]);
+    for (let i=k+1;i<n;i++){
+      const v = Math.abs(M[i][k]);
+      if (v > best){ best = v; piv = i; }
+    }
+    if (best === 0) continue;
+
+    if (piv !== k){
+      const tmpR = M[k]; M[k] = M[piv]; M[piv] = tmpR;
+      const tmpB = b[k]; b[k] = b[piv]; b[piv] = tmpB;
+    }
+
+    const diag = M[k][k];
+    for (let j=k;j<n;j++) M[k][j] /= diag;
+    b[k] /= diag;
+
+    for (let i=0;i<n;i++){
+      if (i===k) continue;
+      const factor = M[i][k];
+      if (factor===0) continue;
+      for (let j=k;j<n;j++) M[i][j] -= factor*M[k][j];
+      b[i] -= factor*b[k];
+    }
+  }
+
+  const y2 = b; // solution
+  return {xs, ys, y2};
+}
+
+
+function splineEval(spl, x){
+  const {xs, ys, y2} = spl;
+  const n = xs.length;
+  if (x<=xs[0]) return ys[0];
+  if (x>=xs[n-1]) return ys[n-1];
+
+  // binary search
+  let klo=0, khi=n-1;
+  while (khi-klo>1){
+    const k=(khi+klo)>>1;
+    if (xs[k] > x) khi=k; else klo=k;
+  }
+  const h = xs[khi]-xs[klo];
+  if (h===0) return ys[klo];
+
+  const a = (xs[khi]-x)/h;
+  const b = (x-xs[klo])/h;
+  return a*ys[klo] + b*ys[khi] + ((a*a*a-a)*y2[klo] + (b*b*b-b)*y2[khi])*(h*h)/6.0;
+}
+function valueAt(profile, x){
+  // Prefer spline (matches Mathematica Interpolation["Spline"])
+  if (profile.spline) return splineEval(profile.spline, x);
+
+  // Fallback: linear interpolation on tabulated points
+  const pts = profile.points;
+  if (x<=pts[0].rc) return pts[0].V;
+  if (x>=pts[pts.length-1].rc) return pts[pts.length-1].V;
+  let lo=0, hi=pts.length-1;
+  while (hi-lo>1){
+    const mid=(lo+hi)>>1;
+    if (pts[mid].rc>=x) hi=mid; else lo=mid;
+  }
+  const a=pts[lo], b=pts[hi];
+  return interpLinear(a.rc,a.V,b.rc,b.V,x);
+}
+
+function findTurningPoints(profile, Elevel){
+  const pts = profile.points;
+  const imax = profile.imax;
+
+  const Vmax = pts[imax].V;
+  if (Vmax < Elevel) return {ok:false, error: t("err_Elevel_above"), xL:NaN, xR:NaN};
+
+  const f = (x)=> valueAt(profile,x) - Elevel;
+
+  function bisect(a,b){
+    let fa=f(a), fb=f(b);
+    if (!isFinite(fa) || !isFinite(fb)) return NaN;
+    if (fa===0) return a;
+    if (fb===0) return b;
+    // require a sign change
+    if (fa*fb>0) return NaN;
+    for (let it=0; it<80; it++){
+      const m=(a+b)/2;
+      const fm=f(m);
+      if (fa*fm<=0){ b=m; fb=fm; }
+      else { a=m; fa=fm; }
+    }
+    return (a+b)/2;
+  }
+
+  // Left turning point: scan left from the maximum until V < Elevel, then bisect in that bracket
+  let iL = imax;
+  while (iL>0 && pts[iL].V >= Elevel) iL--;
+  if (iL===imax) return {ok:false, error:"Kein linker Turning‑Point.", xL:NaN, xR:NaN};
+  const xL = bisect(pts[iL].rc, pts[iL+1].rc);
+
+  // Right turning point
+  let iR = imax;
+  while (iR<pts.length-1 && pts[iR].V >= Elevel) iR++;
+  if (iR===imax) return {ok:false, error:"Kein rechter Turning‑Point.", xL:NaN, xR:NaN};
+  const xR = bisect(pts[iR-1].rc, pts[iR].rc);
+
+  if (!isFinite(xL) || !isFinite(xR) || xR<=xL){
+    return {ok:false, error:t("err_turning_fail"), xL, xR};
+  }
+  return {ok:true, xL, xR};
+}
+
+function integrateSigma(profile, Elevel){
+  const tp = findTurningPoints(profile, Elevel);
+  if (!tp.ok) return {ok:false, error:tp.error, ...tp};
+
+  const {xL,xR} = tp;
+  const pts = profile.points;
+
+  const seg = [];
+  seg.push({x:xL, V:valueAt(profile,xL)});
+  for (const p of pts){
+    if (p.rc > xL && p.rc < xR) seg.push({x:p.rc, V:p.V});
+  }
+  seg.push({x:xR, V:valueAt(profile,xR)});
+  seg.sort((a,b)=>a.x-b.x);
+
+  let sigma = 0.0;
+  for (let i=0;i<seg.length-1;i++){
+    const a = seg[i], b = seg[i+1];
+    const dx = b.x - a.x;
+    const Ia = Math.sqrt(Math.max(0, 2*CONST.reveLo*(a.V - Elevel)));
+    const Ib = Math.sqrt(Math.max(0, 2*CONST.reveLo*(b.V - Elevel)));
+    sigma += 0.5*(Ia+Ib)*dx;
+  }
+  return {ok:true, sigma, xL, xR, width: Math.abs(xR-xL)};
+}
+
+function probFromSigma(sigma){
+  // stable: P = 1/(1+exp(2σ)) ; for large σ, P≈exp(-2σ)
+  const a = 2*sigma;
+  if (a>50) return Math.exp(-a);
+  return 1.0/(1.0 + Math.exp(a));
+}
+
+function computeWKB(profile, xi_cm, T){
+  const useZ = !!(profile && profile.mapInfo && profile.mapInfo.useZPVE);
+
+  const hnu = xi_cm * CONST.wn2h;             // Hartree (one quantum hν in Eh)
+  const epsAbs = (v)=> (0.5+v) * hnu;         // ε_v absolute (includes 1/2)
+  const eps0 = 0.5 * hnu;
+
+  // Mathematica‑kompatible Energiebuchhaltung:
+  // Profil (ZPVE‑korrigiert) ist relativ zu (E_R + ZPVE_R(full, 3N−6)).
+  // Die projizierte ZPVE entlang IRC enthält 3N−7 Moden (ohne Reaktionsmode).
+  // => Das 1/2‑Quant der Reaktionsmode steckt bereits im Nullpunkt, daher gilt:
+  //    Elevel(v) = v * hν  (v=0 -> 0).
+  // Im rein elektronischen Modus steckt kein 1/2‑Quant im Nullpunkt:
+  //    Elevel(v) = (v+1/2) * hν.
+  const ElevelEff = (v)=> useZ ? (v * hnu) : epsAbs(v);
+
+  const res=[];
+  for (let v=0; v<=3; v++){
+    const Elevel = ElevelEff(v);
+    const integ = integrateSigma(profile, Elevel);
+    if (!integ.ok){
+      const Vmax = profile.points[profile.imax].V;
+      const barrierEh = (isFinite(Vmax)? (Vmax - Elevel) : NaN);
+      res.push({v, ok:false, error:integ.error, Elevel, epsAbs: epsAbs(v), eps0, barrierEh});
+      continue;
+    }
+    const sigma = integ.sigma;
+    const P = probFromSigma(sigma);
+    const log10P = (-2*sigma)/Math.LN10; // stabil auch für extrem kleine P
+    const k = xi_cm * 100 * CONST.c0 * P;
+    const t = CONST.ln2 / k;
+    const Vmax = profile.points[profile.imax].V;
+    const barrierEh = (Vmax - Elevel);
+    res.push({v, ok:true, Elevel, epsAbs: epsAbs(v), eps0, barrierEh, sigma, P, log10P, k, t, xL:integ.xL, xR:integ.xR, width: integ.width});
+  }
+
+  // thermische Populationen (v=0..3). Nur Differenzen zählen -> v*hν (Null bei v=0).
+  const Epop = (v)=> v * hnu;
+  const Z = [0,1,2,3].reduce((s,v)=> s + Math.exp(-(Epop(v))/(CONST.kb*T)), 0);
+  const M = [0,1,2,3].map(v => Math.exp(-(Epop(v))/(CONST.kb*T)) / Z);
+
+  let ktemp = 0.0;
+  let Pavg  = 0.0;
+  for (let v=0; v<=3; v++){
+    const r = res[v];
+    if (!r.ok) continue;
+    ktemp += M[v] * (xi_cm * 100 * CONST.c0 * r.P);
+    Pavg  += M[v] * r.P;
+  }
+  const tauTemp = CONST.ln2 / ktemp;
+  return {levels: res, boltz: {T, M, Z, ktemp, tauTemp, Pavg}, scheme: {useZ, hnu, eps0}};
+}
+
+/* ======================= Arrhenius data (tunneling only) ======================= */
+
+function computeArrhenius(xi_cm, Plevels){
+  // Returns tunneling-only rate vs T (3..500 K).
+  // Plevels: array length 4 with P0..P3
+  const xi = xi_cm;
+  const hnu = xi * CONST.wn2h; // Hartree (hν)
+  const Epop = (v)=> v * hnu;  // relative energies (v=0 -> 0) in ZPVE-mode mapping
+
+  const out=[];
+  for (let T=3; T<=500; T+=1){
+    const Z = [0,1,2,3].reduce((s,v)=> s + Math.exp(-(Epop(v))/(CONST.kb*T)), 0);
+    const M = [0,1,2,3].map(v => Math.exp(-(Epop(v))/(CONST.kb*T)) / Z);
+    const ktemp = xi*100*CONST.c0 * (M[0]*Plevels[0] + M[1]*Plevels[1] + M[2]*Plevels[2] + M[3]*Plevels[3]);
+    out.push({T, invT: 1.0/T, k: ktemp, lnK: Math.log(ktemp)});
+  }
+  return out;
+}
+
+
+function computeArrheniusWKB(xi_cm, Plevels){
+  // tunneling-only rate vs T (3..500 K, step 1 K)
+  const xi = xi_cm;
+  const hnu = xi * CONST.wn2h; // Hartree (hν)
+  const Epop = (v)=> v * hnu;  // ZPVE-mode mapping: v=0 -> 0 (matches your Mathematica bookkeeping)
+
+  const out=[];
+  for (let T=3; T<=500; T+=1){
+    const Z = [0,1,2,3].reduce((s,v)=> s + Math.exp(-(Epop(v))/(CONST.kb*T)), 0);
+    const M = [0,1,2,3].map(v => Math.exp(-(Epop(v))/(CONST.kb*T)) / Z);
+    const ktemp = xi*100*CONST.c0 * (M[0]*Plevels[0] + M[1]*Plevels[1] + M[2]*Plevels[2] + M[3]*Plevels[3]);
+    out.push({T, invT: 1.0/T, k: ktemp, lnK: Math.log(ktemp)});
+  }
+  return out;
+}
+
+/* ======================= ΔG(T) TST in a Web Worker ======================= */
+let _thermoWorker = null;
+
+function _buildThermoWorker(){
+  const src = `  const Rkcal = 0.00198720425864083; // kcal mol^-1 K^-1
+
+  function vibG(freqs, T, wn2kcal){
+    // Harmonic oscillator vibrational Gibbs free energy contribution:
+    // Gvib = Σ [ 1/2 hν + RT ln(1 - e^{-hν/RT}) ]
+    const kBT = Rkcal * T;
+    let sum = 0.0;
+    for (let i=0;i<freqs.length;i++){
+      const nu = freqs[i];
+      if (!(nu>0)) continue;
+      const zpe = 0.5 * wn2kcal * nu;
+      const x = (wn2kcal * nu) / kBT; // dimensionless
+      let lnTerm = 0.0;
+      if (x < 50){
+        const ex = Math.exp(-x);
+        lnTerm = Math.log1p(-ex);
+      }
+      sum += zpe + kBT * lnTerm;
+    }
+    return sum; // kcal/mol
+  }
+
+  self.onmessage = (ev)=>{
+    const d = ev.data || {};
+    const temps = d.temps || [];
+    const wn2kcal = d.wn2kcal;
+    const kb_over_h = d.kb_over_h;
+
+    const fscale = (isFinite(d.fscale) && d.fscale>0) ? d.fscale : 1.0;
+    const barShiftKcal = isFinite(d.barShiftKcal) ? d.barShiftKcal : 0.0;
+
+    // Stationary point electronic energies (kcal/mol)
+    const EelecR_kcal = d.EelecR_kcal;
+    const EelecTS_kcal = d.EelecTS_kcal;
+
+    const freqsR_full = (d.freqsR_full||[]).map(x=>x*fscale).filter(x=>x>0);
+    const freqsTS_full = (d.freqsTS_full||[]).map(x=>x*fscale).filter(x=>x>0);
+
+    const useFullStationary = !!d.useFullStationary;
+    const GcorrR_kcal = (isFinite(d.GcorrR_kcal) ? d.GcorrR_kcal : NaN);
+    const GcorrTS_kcal = (isFinite(d.GcorrTS_kcal) ? d.GcorrTS_kcal : NaN);
+    const Tgauss = (isFinite(d.Tgauss) ? d.Tgauss : NaN);
+
+    // ΔG‡ is taken from Gaussian thermochemistry at Tgauss and assumed temperature-independent
+    let dG0 = NaN;
+    if (useFullStationary && isFinite(GcorrR_kcal) && isFinite(GcorrTS_kcal) && isFinite(Tgauss)){
+      dG0 = (EelecTS_kcal + GcorrTS_kcal) - (EelecR_kcal + GcorrR_kcal) + barShiftKcal;
+    }
+
+    const seriesTST = [];
+    for (let ti=0; ti<temps.length; ti++){
+      const T = temps[ti];
+      const pre = kb_over_h * T;
+
+      let dG = dG0;
+      if (!isFinite(dG)){
+        // fallback: vibrational-only approximation (still T-dependent)
+        const GR = EelecR_kcal + vibG(freqsR_full, T, wn2kcal);
+        const GTS = EelecTS_kcal + vibG(freqsTS_full, T, wn2kcal);
+        dG = (GTS - GR) + barShiftKcal;
+      }
+
+      const ktst = pre * Math.exp(-(dG)/(Rkcal*T));
+      seriesTST.push({T, invT:1.0/T, k:ktst, lnK: Math.log(ktst)});
+    }
+
+    self.postMessage({ok:true, series:{tst:seriesTST}});
+  };`;
+  const blob = new Blob([src], {type:'text/javascript'});
+  const url = URL.createObjectURL(blob);
+  return new Worker(url);
+}
+
+function getThermoWorker(){
+  if (_thermoWorker) return _thermoWorker;
+  try{
+    _thermoWorker = _buildThermoWorker();
+    return _thermoWorker;
+  } catch(e){
+    _thermoWorker = null;
+    return null;
+  }
+}
+
+async function computeTST(profile, sp, fscale, barShiftKcal, useFullThermo){
+  const temps = [];
+  for (let T=3; T<=500; T+=1) temps.push(T);
+
+  const worker = getThermoWorker();
+  if (!worker){
+    // Fallback (no Worker): compute TST on the main thread (still fast for our temperature grid).
+    const wn2kcal = CONST.wn2h * CONST.h2kcal;
+    const Rkcal = 0.00198720425864083;
+    const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+
+    const freqsR = (sp.educt.freqs||[]).map(x=>x*fs).filter(x=>x>0);
+    const freqsTS = (sp.ts.freqs||[]).map(x=>x*fs).filter(x=>x>0);
+
+    function vibG_local(freqs, T){
+      // Gvib = Σ [ 1/2 hν + RT ln(1 - e^{-hν/RT}) ]  (kcal/mol)
+      const kBT = Rkcal*T;
+      let sum = 0.0;
+      for (const nu of freqs){
+        if (!(nu>0)) continue;
+        const zpe = 0.5*wn2kcal*nu;
+        const x = (wn2kcal*nu) / kBT;
+        let lnTerm = 0.0;
+        if (x < 50){
+          const ex = Math.exp(-x);
+          lnTerm = Math.log1p(-ex);
+        }
+        sum += zpe + kBT*lnTerm;
+      }
+      return sum;
+    }
+
+    // ΔG‡ is taken from Gaussian thermochemistry at Tgauss and assumed temperature-independent
+    const Tgauss = (isFinite(sp.educt.Tgauss) ? sp.educt.Tgauss : (isFinite(sp.ts.Tgauss) ? sp.ts.Tgauss : NaN));
+    let dG0 = NaN;
+    if (useFullThermo && isFinite(sp.educt.Gcorr) && isFinite(sp.ts.Gcorr) && isFinite(Tgauss)){
+      dG0 = ((sp.ts.E0 + sp.ts.Gcorr) - (sp.educt.E0 + sp.educt.Gcorr))*CONST.h2kcal + (Number(barShiftKcal)||0);
+    }
+
+    const seriesTST = [];
+    for (let ti=0; ti<temps.length; ti++){
+      const T = temps[ti];
+      const pre = CONST.kb_over_h * T;
+
+      let dG_tst = dG0;
+      if (!isFinite(dG_tst)){
+        // fallback: vibrational-only approximation (still T-dependent)
+        const GR = sp.educt.E0*CONST.h2kcal + vibG_local(freqsR, T);
+        const GTS = sp.ts.E0*CONST.h2kcal + vibG_local(freqsTS, T);
+        dG_tst = (GTS - GR) + (Number(barShiftKcal)||0);
+      }
+      const ktst = pre * Math.exp(-(dG_tst)/(Rkcal*T));
+      seriesTST.push({T, invT:1.0/T, k:ktst, lnK: Math.log(ktst)});
+    }
+    return {series: {tst: seriesTST}};
+  }
+
+  const payload = {
+    temps,
+    wn2kcal: CONST.wn2h * CONST.h2kcal,
+    kb_over_h: CONST.kb_over_h,
+    fscale,
+    barShiftKcal: Number(barShiftKcal)||0,
+
+    EelecR_kcal: sp.educt.E0 * CONST.h2kcal,
+    EelecTS_kcal: sp.ts.E0 * CONST.h2kcal,
+    freqsR_full: sp.educt.freqs || [],
+    freqsTS_full: sp.ts.freqs || [],
+
+    useFullStationary: !!useFullThermo,
+    GcorrR_kcal: isFinite(sp.educt.Gcorr) ? sp.educt.Gcorr * CONST.h2kcal : NaN,
+    GcorrTS_kcal: isFinite(sp.ts.Gcorr) ? sp.ts.Gcorr * CONST.h2kcal : NaN,
+    Tgauss: (isFinite(sp.educt.Tgauss) ? sp.educt.Tgauss : (isFinite(sp.ts.Tgauss) ? sp.ts.Tgauss : NaN))
+  };
+
+  return await new Promise((resolve, reject)=>{
+    const onMsg = (ev)=>{
+      const d = ev.data || {};
+      if (d.ok){
+        worker.removeEventListener("message", onMsg);
+        worker.removeEventListener("error", onErr);
+        resolve(d);
+      } else {
+        reject(new Error(d.error||"Thermo worker failed."));
+      }
+    };
+    const onErr = (err)=>{
+      worker.removeEventListener("message", onMsg);
+      worker.removeEventListener("error", onErr);
+      reject(err);
+    };
+    worker.addEventListener("message", onMsg);
+    worker.addEventListener("error", onErr);
+    worker.postMessage(payload);
+  });
+}
+
+async function computeArrheniusCurves(profile, sp, xi_cm, Plevels, fscale, energyMode, barShiftKcal){
+  // WKB series (thermally averaged over vibrational levels)
+  const wkb = computeArrheniusWKB(xi_cm, Plevels);
+
+  // ΔG-based TST series (Gaussian-anchored stationary full thermo is used by default)
+  const useFullThermo = true;
+  const dg = await computeTST(profile, sp, fscale, barShiftKcal, useFullThermo);
+  const tst = dg.series.tst;
+
+  // Combine by addition (as requested): k_total = k_TST + k_WKB
+  const tst_wkb = tst.map((p,i)=>({
+    T:p.T, invT:p.invT,
+    k: p.k + wkb[i].k,
+    lnK: Math.log(p.k + wkb[i].k)
+  }));
+
+  const arrObj = {
+    meta: {},
+    series: { wkb, tst, tst_wkb }
+  };
+  appendEckartSeries(arrObj, sp, fscale, energyMode, barShiftKcal);
+  return arrObj;
+}
+
+/* ======================= Simple plotting/* ======================= Simple plotting on canvas ======================= */
+function drawPlot(canvas, series, opts){
+  // series: [{x,y}, ...]
+  const ctx = canvas.getContext("2d");
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0,0,W,H);
+
+  const hasTop = !!opts.topAxis;
+  // Origin-like layout: larger margins, darker axes, consistent typography
+  const padL=84, padR=26, padT=(hasTop?82:26), padB=(opts.xUnit?66:56);
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+
+  const xs=series.map(p=>p.x), ys=series.map(p=>p.y);
+  const xmin=Math.min(...xs), xmax=Math.max(...xs);
+  const ymin=Math.min(...ys), ymax=Math.max(...ys);
+
+  const xPad = (xmax-xmin)*0.03 || 1;
+  const yPad = (ymax-ymin)*0.02 || 1; // tighter y-padding to avoid huge empty ranges
+  const X0=xmin-xPad, X1=xmax+xPad;
+  const Y0=ymin-yPad, Y1=ymax+yPad;
+
+  function tx(x){ return padL + (x-X0)/(X1-X0)*plotW; }
+  function ty(y){ return padT + (Y1-y)/(Y1-Y0)*plotH; }
+
+  // axes
+  ctx.strokeStyle="#9aa3af";
+  ctx.lineWidth=1;
+  ctx.beginPath();
+  // left axis
+  ctx.moveTo(padL, padT);
+  ctx.lineTo(padL, padT+plotH);
+  // bottom axis
+  ctx.lineTo(padL+plotW, padT+plotH);
+  ctx.stroke();
+
+  // optional top axis (Arrhenius: temperature)
+  if (hasTop){
+    ctx.beginPath();
+    ctx.moveTo(padL, padT);
+    ctx.lineTo(padL+plotW, padT);
+    ctx.stroke();
+  }
+
+  // ticks (no background grid)
+  ctx.font="12px "+getComputedStyle(document.body).fontFamily;
+  const nTicks=5;
+
+  // x ticks bottom (+ top)
+  for (let i=0;i<=nTicks;i++){
+    const t=i/nTicks;
+    const xv = X0 + t*(X1-X0);
+    const xpx = tx(xv);
+
+    // bottom tick
+    ctx.strokeStyle="#9aa3af";
+    ctx.beginPath();
+    ctx.moveTo(xpx, padT+plotH);
+    ctx.lineTo(xpx, padT+plotH+7);
+    ctx.stroke();
+
+    // bottom label
+    ctx.fillStyle="#6b7280";
+    const bl = (opts.xTickFmt?opts.xTickFmt(xv):xv.toFixed(3));
+    ctx.save(); ctx.textAlign="center"; ctx.fillText(bl, xpx, padT+plotH+22); ctx.restore();
+
+  }
+
+  // top ticks (custom, e.g. temperature labels) — independent from bottom ticks
+  if (hasTop){
+    const ticks = (opts.topAxis && Array.isArray(opts.topAxis.ticks)) ? opts.topAxis.ticks : [];
+    ctx.save();
+    ctx.strokeStyle="#9aa3af";
+    ctx.fillStyle="#6b7280";
+    ctx.textAlign="center";
+    ctx.textBaseline="alphabetic";
+    const ticksSorted = ticks.slice().sort((a,b)=>(a.x||0)-(b.x||0));
+    let lastRight = -1e9;
+    const yText = padT - 18; // keep above the top axis line
+    for (const tk of ticksSorted){
+      const xv = Number(tk.x);
+      if (!isFinite(xv)) continue;
+      if (xv < X0 || xv > X1) continue;
+      const xpx = tx(xv);
+
+      // tick mark
+      ctx.beginPath();
+      ctx.moveTo(xpx, padT);
+      ctx.lineTo(xpx, padT-7);
+      ctx.stroke();
+
+      const lbl = String(tk.label ?? "");
+      if (!lbl) continue;
+
+      const w = ctx.measureText(lbl).width;
+      const left = xpx - w/2;
+      const right = xpx + w/2;
+
+      // Do NOT clamp: if it would run outside, omit it (as requested)
+      if (left < padL+2 || right > padL+plotW-2) continue;
+
+      // Avoid overlaps by omitting dense labels
+      if (left <= lastRight + 8) continue;
+
+      ctx.fillText(lbl, xpx, yText);
+      lastRight = right;
+    }
+    ctx.restore();
+  }
+
+  // y ticks left
+  for (let i=0;i<=nTicks;i++){
+    const t=i/nTicks;
+    const yv = Y0 + t*(Y1-Y0);
+    const ypx = ty(yv);
+
+    ctx.strokeStyle="#9aa3af";
+    ctx.beginPath();
+    ctx.moveTo(padL-7, ypx);
+    ctx.lineTo(padL, ypx);
+    ctx.stroke();
+
+    ctx.fillStyle="#6b7280";
+    const yl = (opts.yTickFmt?opts.yTickFmt(yv):yv.toFixed(2));
+    ctx.save(); ctx.textAlign="right"; ctx.fillText(yl, padL-10, ypx+5); ctx.restore();
+  }
+
+  // line
+  ctx.strokeStyle="#111827";
+  ctx.lineWidth=2;
+  ctx.beginPath();
+  series.forEach((p,idx)=>{
+    const x=tx(p.x), y=ty(p.y);
+    if (idx===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+
+  // overlays
+  if (opts.overlays){
+    for (const ov of opts.overlays){
+      ov(ctx,{tx,ty,padL,padT,plotW,plotH,X0,X1,Y0,Y1});
+    }
+  }
+
+  // labels
+  ctx.fillStyle="#111827";
+  ctx.font="13px "+getComputedStyle(document.body).fontFamily;
+
+  // bottom x-label (single line)
+  ctx.save();
+  ctx.textAlign="center";
+  ctx.textBaseline="middle";
+  const xText = (opts.xUnit ? `${opts.xLabel||""} / ${opts.xUnit||""}` : (opts.xLabel||""));
+  ctx.fillText(xText, padL+plotW/2, H-16);
+  ctx.restore();
+
+  // top axis label (single line)
+  if (hasTop){
+    ctx.save();
+    ctx.textAlign="center";
+    ctx.textBaseline="middle";
+    const lab = (opts.topAxis && opts.topAxis.label) ? String(opts.topAxis.label) : "";
+    const unit = (opts.topAxis && opts.topAxis.unit) ? String(opts.topAxis.unit) : "";
+    const topText = (unit ? `${lab} / ${unit}` : lab);
+    // put it higher so it doesn't collide with tick labels
+    ctx.fillText(topText, padL+plotW/2, 16);
+    ctx.restore();
+  }
+
+  // left y-label (rotated, single line)
+  ctx.save();
+  ctx.translate(12, padT+plotH/2);
+  ctx.rotate(-Math.PI/2);
+  ctx.textAlign="center";
+  ctx.textBaseline="middle";
+  const yText = (opts.yUnit ? `${opts.yLabel||""} / ${opts.yUnit||""}` : (opts.yLabel||""));
+  ctx.fillText(yText, 0, 0);
+  ctx.restore();
+}
+function drawEnergyProfile(profile, wkbRes, xi_cm){
+  const host = $("plotProfile");
+  if (!host) return;
+  try{
+    const svg = buildEnergySVG(profile, wkbRes, xi_cm);
+    host.innerHTML = svg;
+  } catch (e){
+    host.innerHTML = `<div class="small muted" style="padding:12px">`+_escXml(String(e && e.message ? e.message : e))+`</div>`;
+  }
+}
+
+
+
+
+// ===== Profile UI + effective-model overlays (Eckart) =====
+function _getArrTSelected(){
+  const v = (STATE && isFinite(STATE.arrT)) ? Number(STATE.arrT) : NaN;
+  if (isFinite(v)) return v;
+  const Tui = Number($("temp")?.value);
+  return isFinite(Tui) ? Tui : 298;
+}
+
+// For Eckart, energy lines are relative to reactant level (E=0 in plot)
+function getEckartSelectedEnergyKcal(){
+  const mode = ($("eckEMode")?.value) || (STATE && STATE.eckEMode) || "kbt";
+  if (mode==="custom"){
+    const v = Number($("eckECustom")?.value);
+    const x = isFinite(v) ? v : 0.0;
+    if (STATE) STATE.eckECustom = x;
+    return x;
+  }
+  const Tsel = _getArrTSelected();
+  return (CONST.kb * Tsel) * CONST.h2kcal;
+}
+
+function getEckartEnergyLabel(){
+  const mode = ($("eckEMode")?.value) || (STATE && STATE.eckEMode) || "kbt";
+  if (mode==="custom"){
+    const v = getEckartSelectedEnergyKcal();
+    return `E = ${fmtSci(v,4)} kcal mol⁻¹`;
+  }
+  const Tsel = _getArrTSelected();
+  return `E = kBT (${Math.round(Tsel)} K)`;
+}
+
+function updateEckartEnergyInfo(){
+  const info = $("eckEInfo");
+  if (!info) return;
+  const mode = ($("eckEMode")?.value) || (STATE && STATE.eckEMode) || "kbt";
+  const E = getEckartSelectedEnergyKcal();
+  if (mode==="custom"){
+    info.textContent = `${getEckartEnergyLabel()} (rel. to reactant)`;
+  } else {
+    info.textContent = `${getEckartEnergyLabel()} = ${fmtSci(E,4)} kcal mol⁻¹`;
+  }
+}
+
+
+
+
+function syncProfileControlsVisibility(profile){
+  const type = (profile && profile.mapInfo && profile.mapInfo.profileType) ? profile.mapInfo.profileType : "irc";
+  const eck = $("ctrlEckartEnergy");
+if (eck) eck.style.display = (type==="eckart") ? "" : "none";
+
+  // Toggle custom input
+  const mSel = $("eckEMode");
+  const inp = $("eckECustom");
+  if (mSel){
+    if (!mSel._bound){
+      mSel.addEventListener("change", ()=>{
+        if (STATE) STATE.eckEMode = mSel.value;
+        if (inp) inp.style.display = (mSel.value==="custom") ? "" : "none";
+        if (type==="eckart"){
+          updateEckartEnergyInfo();
+          refreshProfileDerived();
+        }
+      });
+      mSel._bound = true;
+    }
+    if (STATE && STATE.eckEMode) mSel.value = STATE.eckEMode;
+  }
+  if (inp){
+    if (!inp._bound){
+      inp.addEventListener("input", ()=>{
+        if (STATE) STATE.eckECustom = Number(inp.value);
+        if (type==="eckart"){
+          updateEckartEnergyInfo();
+          refreshProfileDerived();
+        }
+      });
+      inp._bound = true;
+    }
+    inp.style.display = ((mSel?.value || (STATE && STATE.eckEMode) || "kbt")==="custom") ? "" : "none";
+  }
+
+  if (type==="eckart") updateEckartEnergyInfo();
+}
+
+function _extraTurningPointsForProfile(profile){
+  const type = (profile && profile.mapInfo && profile.mapInfo.profileType) ? profile.mapInfo.profileType : "irc";
+  if (type!=="eckart") return {tpKind:"none"};
+  const Ek = getEckartSelectedEnergyKcal();
+  const Eeh = Ek / CONST.h2kcal;
+  const tp = findTurningPoints(profile, Eeh);
+  if (tp && tp.ok){
+    return {tpKind:"E", tpLabel:getEckartEnergyLabel(), xL0:tp.xL, xR0:tp.xR, width0:Math.abs(tp.xR-tp.xL)};
+  }
+  return {tpKind:"E", tpLabel:getEckartEnergyLabel(), xL0:NaN, xR0:NaN, width0:NaN};
+}
+
+function renderModelTunnelResults(type, profile, arrObj, T){
+  const card = $("cardWKB");
+  if (!card) return;
+
+  // For IRC we keep the full WKB table; for effective models we hide the table and show KPI boxes.
+  const table = card.querySelector("table");
+  const kpi = $("kpiWKB");
+  if (!kpi) return;
+
+  if (type==="irc"){
+    if (table) table.style.display = "";
+    return;
+  }
+
+  if (table) table.style.display = "none";
+
+  const S = arrObj?.series || {};
+  const base = S.tst || [];
+  const i = _nearestIndexByT(base, T);
+  const ktst = Number(base[i]?.k);
+  const ln2 = Math.log(2);
+  const hl = (k)=> (isFinite(k) && k>0) ? (ln2/k) : NaN;
+
+  let kcorr = NaN;
+  let kap = NaN;
+  if (type==="eckart"){
+    const a = S.tst_eckart || [];
+    kcorr = Number(a[i]?.k);
+    kap = (isFinite(ktst) && ktst>0 && isFinite(kcorr) && kcorr>0) ? (kcorr/ktst) : NaN;
+  }
+
+  const boxes = [];
+  boxes.push(`<div class="box"><div class="t">T</div><div class="v mono">${isFinite(T)?T.toFixed(2):"—"} K</div></div>`);
+  boxes.push(`<div class="box"><div class="t">k<sub>TST</sub>(T)</div><div class="v mono">${(isFinite(ktst)&&ktst>0)?fmtSci(ktst,4):"—"} s⁻¹</div></div>`);
+  boxes.push(`<div class="box"><div class="t">κ(T)</div><div class="v mono">${(isFinite(kap)&&kap>0)?fmtSci(kap,4):"—"}</div></div>`);
+  boxes.push(`<div class="box"><div class="t">k(T)</div><div class="v mono">${(isFinite(kcorr)&&kcorr>0)?fmtSci(kcorr,4):"—"} s⁻¹</div></div>`);
+  boxes.push(`<div class="box"><div class="t">t½</div><div class="v mono">${(isFinite(kcorr)&&kcorr>0)?fmtHalfLifeAuto(hl(kcorr)):"—"}</div></div>`);
+
+  // Eckart: show selected energy and turning point width (effective)
+  if (type==="eckart"){
+    const ex = _extraTurningPointsForProfile(profile);
+    const Ek = getEckartSelectedEnergyKcal();
+    boxes.push(`<div class="box"><div class="t">${t("lbl_Esel")}</div><div class="v mono">${fmtSci(Ek,4)} kcal mol⁻¹</div></div>`);
+    boxes.push(`<div class="box"><div class="t">${t("kpi_width_E")}</div><div class="v mono">${isFinite(ex.width0)?ex.width0.toFixed(3):"—"} √amu·bohr</div></div>`);
+  }
+
+  // : show barrier heights + imaginary frequency parameters
+
+  kpi.innerHTML = boxes.join("");
+}
+
+// Re-render pieces that depend on the current Arrhenius temperature selection / Eckart energy selection.
+// (No recomputation of SP/IRC; just redraw overlays and KPI text.)
+function refreshProfileDerived(){
+  if (!STATE || !STATE.profile || !STATE.sp) return;
+
+  const profile = STATE.profile;
+  const type = (profile.mapInfo && profile.mapInfo.profileType) ? profile.mapInfo.profileType : "irc";
+  if (type==="irc") return;
+
+  const energyMode = currentEnergyMode();
+  const fscale = Number($("fscale")?.value);
+  const barShiftKcal = Number($("barShift")?.value);
+  const xi = currentXiCmEffective();
+  const T = Number($("temp")?.value);
+
+  syncProfileControlsVisibility(profile);
+
+  const extra = _extraTurningPointsForProfile(profile);
+  renderStationary(STATE.sp, energyMode, extra, xi, fscale, barShiftKcal);
+  drawEnergyProfile(profile, null, xi);
+
+  if (STATE.lastArr){
+    renderModelTunnelResults(type, profile, STATE.lastArr, T);
+  }
+}
+
+
+
+function updateArrCheckboxAvailability(arrObj){
+  const S = arrObj?.series || {};
+  const hasWKB = Array.isArray(S.wkb) && S.wkb.length>1;
+  const hasEckart = Array.isArray(S.tst_eckart) && S.tst_eckart.length>1;
+
+  const wkb = $("chkArrWKB");
+  const tw  = $("chkArrTSTWKB");
+  if (wkb){ wkb.disabled = !hasWKB; if (!hasWKB) wkb.checked=false; }
+  if (tw){  tw.disabled  = !hasWKB; if (!hasWKB) tw.checked=false; }
+
+  const ec = $("chkArrTSTEckart");
+  if (ec){ ec.disabled = !hasEckart; if (!hasEckart) ec.checked=false; }
+}
+function drawArrhenius(arrObj, opts={}){
+  const host = $("plotArr");
+  const card = $("cardArr");
+  if (!host) return;
+
+  if (!arrObj || !arrObj.series){
+    host.innerHTML = `<div class="small muted" style="padding:12px">Arrhenius plot not available.</div>`;
+    if (card) card.style.display = "none";
+    const box = $("kpiSummary");
+    if (box) box.innerHTML = "";
+    return;
+  }
+
+  if (card) card.style.display = "";
+
+  updateArrCheckboxAvailability(arrObj);
+
+  // ensure slider + summary are initialized
+  try{ renderSummary(arrObj); } catch(_e){}
+
+  const keys = getSelectedArrSeriesKeys(); // guarantees at least one key
+  try{
+    const Tsel = (STATE && isFinite(STATE.arrT)) ? Number(STATE.arrT) : NaN;
+    const svg = buildArrheniusSVG(arrObj, keys, {includePointer:true, pointerT:Tsel});
+    host.innerHTML = svg;
+  } catch (e){
+    host.innerHTML = `<div class="small muted" style="padding:12px">`+_escXml(String(e && e.message ? e.message : e))+`</div>`;
+  }
+}
+
+
+function getSelectedArrSeriesKeys(){
+  const keys=[];
+  if ($("chkArrTST")?.checked) keys.push("tst");
+  if ($("chkArrWKB")?.checked) keys.push("wkb");
+  if ($("chkArrTSTWKB")?.checked) keys.push("tst_wkb");
+  if ($("chkArrTSTEckart")?.checked) keys.push("tst_eckart");
+
+  if (!keys.length){
+    const el = $("chkArrTST");
+    if (el) el.checked = true;
+    return ["tst"];
+  }
+  return keys;
+}
+
+
+/* ======================= Summary (temperature slider) ======================= */
+function fmtHalfLifeAuto(sec){
+  if (!isFinite(sec) || sec<=0) return "—";
+  const year = 365.25*24*3600;
+  const day = 24*3600;
+  let v = sec, unit = "s";
+  if (sec >= year){ v = sec/year; unit = "a"; }
+  else if (sec >= day){ v = sec/day; unit = "d"; }
+  else if (sec >= 3600){ v = sec/3600; unit = "h"; }
+  else if (sec >= 60){ v = sec/60; unit = "min"; }
+  let str;
+  if (v >= 100) str = v.toFixed(0);
+  else if (v >= 10) str = v.toFixed(1);
+  else str = v.toFixed(2);
+  return `${str} ${unit}`;
+}
+
+function _nearestIndexByT(arr, T){
+  if (!Array.isArray(arr) || arr.length<1 || !isFinite(T)) return 0;
+  // arrays are sorted ascending by T
+  let lo=0, hi=arr.length-1;
+  while (hi-lo>8){
+    const mid = (lo+hi)>>1;
+    const tm = Number(arr[mid].T);
+    if (tm < T) lo = mid; else hi = mid;
+  }
+  let best = lo, bestd = 1e99;
+  for (let i=lo;i<=hi;i++){
+    const d = Math.abs(Number(arr[i].T) - T);
+    if (d < bestd){ bestd=d; best=i; }
+  }
+  return best;
+}
+
+
+function renderSummary(arrObj){
+  if (!arrObj || !arrObj.series) return;
+
+  const slider = $("arrT");
+  const outT = $("arrTText");
+  if (!slider || !outT) return;
+
+  // pick a base series to define the T-grid
+  const S = arrObj.series || {};
+  const baseKey = ["tst","wkb","tst_wkb","tst_eckart"].find(k=>Array.isArray(S[k]) && S[k].length>1) || null;
+  if (!baseKey) return;
+  const base = S[baseKey];
+
+  const Ts = base.map(p=>Number(p.T)).filter(x=>isFinite(x));
+  if (!Ts.length) return;
+  const Tmin = Math.min(...Ts), Tmax = Math.max(...Ts);
+  slider.min = String(Math.round(Tmin));
+  slider.max = String(Math.round(Tmax));
+  slider.step = "1";
+
+  // default temperature: closest to UI temperature input, unless already selected
+  let Tsel = (STATE && isFinite(STATE.arrT)) ? Number(STATE.arrT) : NaN;
+  if (!isFinite(Tsel)){
+    const Tui = Number($("temp")?.value);
+    Tsel = isFinite(Tui) ? Tui : 298;
+  }
+  Tsel = Math.max(Tmin, Math.min(Tmax, Math.round(Tsel)));
+  slider.value = String(Tsel);
+  if (isFinite(Tsel)) STATE.arrT = Tsel;
+
+  updateSummaryAtTemperature(Tsel, arrObj);
+}
+
+
+function updateSummaryAtTemperature(T, arrObj){
+  const box = $("kpiSummary");
+  const outT = $("arrTText");
+  if (!box || !outT || !arrObj || !arrObj.series) return;
+
+  const S = arrObj.series;
+  const baseKey = ["tst","wkb","tst_wkb","tst_eckart"].find(k=>Array.isArray(S[k]) && S[k].length>1) || null;
+  if (!baseKey) return;
+  const base = S[baseKey];
+
+  const i = _nearestIndexByT(base, T);
+  const Treal = Number(base[i].T);
+  outT.textContent = isFinite(Treal) ? Treal.toFixed(0) : "—";
+
+  const ln2 = Math.log(2);
+  const hl = (k)=> (isFinite(k) && k>0) ? (ln2/k) : NaN;
+
+  const selected = new Set(getSelectedArrSeriesKeys());
+
+  const meta = [
+    {key:"tst",        kKey:"sum_k_tst",        hlKey:"sum_t12_tst",        unit:true},
+    {key:"wkb",        kKey:"sum_k_wkb",        hlKey:"sum_t12_wkb",        unit:true},
+    {key:"tst_wkb",    kKey:"sum_k_tst_wkb",    hlKey:"sum_t12_tst_wkb",    unit:true},
+    {key:"tst_eckart", kKey:"sum_k_tst_eckart", hlKey:"sum_t12_tst_eckart", unit:true},
+  ];
+
+  const rows = [];
+  for (const m of meta){
+    if (!selected.has(m.key)) continue;
+    const arr = S[m.key];
+    if (!Array.isArray(arr) || !arr[i]) continue;
+    const k = Number(arr[i].k);
+    rows.push({label: t(m.kKey), val: (isFinite(k) && k>0) ? `${fmtSci(k,4)} s⁻¹` : "—"});
+    rows.push({label: t(m.hlKey), val: (isFinite(k) && k>0) ? fmtHalfLifeAuto(hl(k)) : "—"});
+  }
+
+  box.innerHTML = rows.map(r=>(
+    `<div class="box"><div class="t">${r.label}</div><div class="v"><b class="mono">${r.val}</b></div></div>`
+  )).join("");
+}
+
+
+
+/* ======================= SVG Export (vector) ======================= */
+function _escXml(s){
+  return String(s)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&apos;");
+}
+function _num(x){ return (Math.round(x*1000)/1000).toString(); }
+
+function plotToSVG(series, opts, W, H, overlayBuilder){
+  const hasTop = !!opts.topAxis;
+  // Origin-like layout: larger margins, darker axes, consistent typography
+  const padL=84, padR=26, padT=(hasTop?82:26), padB=(opts.xUnit?66:56);
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+
+  const xs=series.map(p=>p.x), ys=series.map(p=>p.y);
+  const xmin=Math.min(...xs), xmax=Math.max(...xs);
+  const ymin=Math.min(...ys), ymax=Math.max(...ys);
+
+  const xPad = (xmax-xmin)*0.03 || 1;
+  const yPad = (ymax-ymin)*0.08 || 1;
+  const X0=xmin-xPad, X1=xmax+xPad;
+  const Y0=ymin-yPad, Y1=ymax+yPad;
+
+  function tx(x){ return padL + (x-X0)/(X1-X0)*plotW; }
+  function ty(y){ return padT + (Y1-y)/(Y1-Y0)*plotH; }
+
+  const fontFamily = "Arial, Helvetica, sans-serif";
+
+  const el = [];
+  // axes
+  el.push(`<line x1="${_num(padL)}" y1="${_num(padT)}" x2="${_num(padL)}" y2="${_num(padT+plotH)}" stroke="#000000" stroke-width="1.7"/>`);
+  el.push(`<line x1="${_num(padL)}" y1="${_num(padT+plotH)}" x2="${_num(padL+plotW)}" y2="${_num(padT+plotH)}" stroke="#000000" stroke-width="1.7"/>`);
+  // right border (Origin-like box)
+  el.push(`<line x1="${_num(padL+plotW)}" y1="${_num(padT)}" x2="${_num(padL+plotW)}" y2="${_num(padT+plotH)}" stroke="#000000" stroke-width="1.7"/>`);
+  if (hasTop){
+    el.push(`<line x1="${_num(padL)}" y1="${_num(padT)}" x2="${_num(padL+plotW)}" y2="${_num(padT)}" stroke="#000000" stroke-width="1.7"/>`);
+  }
+
+  const nTicks=5;
+
+  // x ticks bottom
+  for (let i=0;i<=nTicks;i++){
+    const t=i/nTicks;
+    const xv = X0 + t*(X1-X0);
+    const xpx = tx(xv);
+    el.push(`<line x1="${_num(xpx)}" y1="${_num(padT+plotH)}" x2="${_num(xpx)}" y2="${_num(padT+plotH+7)}" stroke="#000000" stroke-width="1.7"/>`);
+    const bl = (opts.xTickFmt?opts.xTickFmt(xv):xv.toFixed(3));
+    el.push(`<text x="${_num(xpx)}" y="${_num(padT+plotH+22)}" fill="#000000" font-size="14" text-anchor="middle">${_escXml(bl)}</text>`);
+  }
+
+  // top ticks (custom)
+  if (hasTop){
+    const ticks = (opts.topAxis && Array.isArray(opts.topAxis.ticks)) ? opts.topAxis.ticks : [];
+    const ticksSorted = ticks.slice().sort((a,b)=>(a.x||0)-(b.x||0));
+    const yText = padT - 18;
+    let lastRight = -1e9;
+
+    // measure text width approximately: 7px per char at 12px font (good enough for filtering)
+    const approxW = (s)=> (String(s).length*7);
+
+    for (const tk of ticksSorted){
+      const xv = Number(tk.x);
+      if (!isFinite(xv)) continue;
+      if (xv < X0 || xv > X1) continue;
+      const xpx = tx(xv);
+      el.push(`<line x1="${_num(xpx)}" y1="${_num(padT)}" x2="${_num(xpx)}" y2="${_num(padT-7)}" stroke="#000000" stroke-width="1.7"/>`);
+
+      const lbl = String(tk.label ?? "");
+      if (!lbl) continue;
+
+      const w = approxW(lbl);
+      const left = xpx - w/2;
+      const right = xpx + w/2;
+
+      // omit if outside plot range (no clamping)
+      if (left < padL+2 || right > padL+plotW-2) continue;
+
+      // omit if overlapping
+      if (left <= lastRight + 8) continue;
+
+      el.push(`<text x="${_num(xpx)}" y="${_num(yText)}" fill="#000000" font-size="14" text-anchor="middle">${_escXml(lbl)}</text>`);
+      lastRight = right;
+    }
+  }
+
+  // y ticks left
+  for (let i=0;i<=nTicks;i++){
+    const t=i/nTicks;
+    const yv = Y0 + t*(Y1-Y0);
+    const ypx = ty(yv);
+    el.push(`<line x1="${_num(padL-7)}" y1="${_num(ypx)}" x2="${_num(padL)}" y2="${_num(ypx)}" stroke="#000000" stroke-width="1.7"/>`);
+    const yl = (opts.yTickFmt?opts.yTickFmt(yv):yv.toFixed(2));
+    el.push(`<text x="${_num(padL-10)}" y="${_num(ypx+5)}" fill="#000000" font-size="14" text-anchor="end">${_escXml(yl)}</text>`);
+  }
+
+  // main polyline
+  const pts = series.map(p=>`${_num(tx(p.x))},${_num(ty(p.y))}`).join(" ");
+  el.push(`<polyline points="${pts}" fill="none" stroke="#000000" stroke-width="2"/>`);
+
+  // overlays (already in SVG coords)
+  if (typeof overlayBuilder === "function"){
+    const sc = {tx,ty,padL,padT,plotW,plotH,X0,X1,Y0,Y1,W,H};
+    const ov = overlayBuilder(sc);
+    if (Array.isArray(ov)) el.push(...ov);
+  }
+
+  // labels
+  const xText = (opts.xUnit ? `${opts.xLabel||""} / ${opts.xUnit||""}` : (opts.xLabel||""));
+  el.push(`<text x="${_num(padL+plotW/2)}" y="${_num(H-16)}" fill="#000000" font-size="16" text-anchor="middle">${_escXml(xText)}</text>`);
+
+  if (hasTop){
+    const lab = (opts.topAxis && opts.topAxis.label) ? String(opts.topAxis.label) : "";
+    const unit = (opts.topAxis && opts.topAxis.unit) ? String(opts.topAxis.unit) : "";
+    const topText = (unit ? `${lab} / ${unit}` : lab);
+    el.push(`<text x="${_num(padL+plotW/2)}" y="${_num(30)}" fill="#000000" font-size="16" text-anchor="middle">${_escXml(topText)}</text>`);
+  }
+
+  const yText = (opts.yUnit ? `${opts.yLabel||""} / ${opts.yUnit||""}` : (opts.yLabel||""));
+  // rotated y label around (12, mid)
+  el.push(`<text transform="translate(${_num(10)},${_num(padT+plotH/2)}) rotate(-90)" fill="#000000" font-size="16" text-anchor="middle">${_escXml(yText)}</text>`);
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n` +
+         `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" shape-rendering="geometricPrecision">\n` +
+         `<style>
+text{font-family:${_escXml(fontFamily)}; fill:#000000; font-size:14px;}
+line,polyline{stroke-linecap:square;}
+</style>\n` +
+         el.join("\n") +
+         `\n</svg>`;
+}
+
+
+function plotToSVGMulti(seriesList, opts, W, H, overlayFn){
+  // seriesList: [{key,label,color,pts:[{x,y}]}]
+  const hasTop = !!opts.topAxis;
+  const padL=84, padR=26, padT=(hasTop?82:26), padB=(opts.xUnit?66:56);
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+
+  // gather extents across all series
+  let xmin=+Infinity, xmax=-Infinity, ymin=+Infinity, ymax=-Infinity;
+  for (const s of seriesList){
+    for (const p of s.pts){
+      if (!isFinite(p.x) || !isFinite(p.y)) continue;
+      if (p.x < xmin) xmin=p.x;
+      if (p.x > xmax) xmax=p.x;
+      if (p.y < ymin) ymin=p.y;
+      if (p.y > ymax) ymax=p.y;
+    }
+  }
+  if (!isFinite(xmin) || !isFinite(ymin)) throw new Error("No points.");
+
+  const xPad = (xmax-xmin)*0.03 || 1;
+  const yPad = (ymax-ymin)*0.08 || 1;
+  const X0=xmin-xPad, X1=xmax+xPad;
+  const Y0=ymin-yPad, Y1=ymax+yPad;
+
+  function tx(x){ return padL + (x-X0)/(X1-X0)*plotW; }
+  function ty(y){ return padT + (Y1-y)/(Y1-Y0)*plotH; }
+
+  // ticks
+  const xticks = niceTicks(X0, X1, 6);
+  // y ticks should reflect the actual data range (avoid extra 200/-800 labels)
+  const yticks = niceTicks(ymin, ymax, 6);
+
+  const fontTick = "14px Arial, Helvetica, sans-serif";
+  const fontAxis = "16px Arial, Helvetica, sans-serif";
+  const axisStroke = "#111827";
+
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`;
+
+  // background
+  svg += `<rect x="0" y="0" width="${W}" height="${H}" fill="#ffffff"/>`;
+
+  // plot border (Origin-like box)
+  svg += `<rect x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" fill="none" stroke="${axisStroke}" stroke-width="1"/>`;
+
+  // axes (left/bottom) already covered by box; add top axis line if needed
+  if (hasTop){
+    svg += `<line x1="${padL}" y1="${padT}" x2="${padL+plotW}" y2="${padT}" stroke="${axisStroke}" stroke-width="1"/>`;
+  }
+
+  // ticks + labels bottom
+  for (const x of xticks){
+    const X = tx(x);
+    svg += `<line x1="${X}" y1="${padT+plotH}" x2="${X}" y2="${padT+plotH+6}" stroke="${axisStroke}" stroke-width="1"/>`;
+    const lab = opts.xTickFmt ? opts.xTickFmt(x) : String(x);
+    svg += `<text x="${X}" y="${padT+plotH+22}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="${axisStroke}">${_escXml(lab)}</text>`;
+  }
+
+  // ticks + labels left
+  for (const y of yticks){
+    if (y < ymin - 1e-12 || y > ymax + 1e-12) continue;
+    const Y = ty(y);
+    svg += `<line x1="${padL-6}" y1="${Y}" x2="${padL}" y2="${Y}" stroke="${axisStroke}" stroke-width="1"/>`;
+    const lab = opts.yTickFmt ? opts.yTickFmt(y) : String(y);
+    svg += `<text x="${padL-10}" y="${Y+5}" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="${axisStroke}">${_escXml(lab)}</text>`;
+  }
+
+  // axis labels
+  const xLab = opts.xUnit ? `${opts.xLabel} / ${opts.xUnit}` : opts.xLabel;
+  svg += `<text x="${padL+plotW/2}" y="${H-18}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="${axisStroke}">${_escXml(xLab)}</text>`;
+
+  const yLab = opts.yUnit ? `${opts.yLabel} / ${opts.yUnit}` : opts.yLabel;
+  svg += `<text x="18" y="${padT+plotH/2}" transform="rotate(-90 18 ${padT+plotH/2})" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="${axisStroke}">${_escXml(yLab)}</text>`;
+
+  // top axis labels (T/K)
+  if (hasTop){
+    const topLab = opts.topAxis.unit ? `${opts.topAxis.label} / ${opts.topAxis.unit}` : opts.topAxis.label;
+    // place label comfortably away from the top edge and tick labels
+    svg += `<text x="${padL+plotW/2}" y="${padT-44}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="${axisStroke}">${_escXml(topLab)}</text>`;
+    const ticksRaw = (opts.topAxis.ticks || []).slice();
+    // draw tick marks for all candidates, but filter labels to avoid overlap
+    const ticks = ticksRaw.map(tk=>({tk, X:tx(tk.x)})).sort((a,b)=>a.X-b.X);
+    let lastX = -1e9;
+    let lastW = 0;
+    for (const it of ticks){
+      const tk = it.tk;
+      const X = it.X;
+      // skip labels near extremes to avoid clipping
+      if (X < padL+22 || X > padL+plotW-22) continue;
+      const lab = String(tk.label);
+      const w = Math.max(10, lab.length*8); // px estimate
+      if (X - lastX < (lastW/2 + w/2 + 18)) continue; // avoid overlaps (more spacing)
+      // draw tick mark only when we also draw a label (no unlabeled ticks)
+      svg += `<line x1="${X}" y1="${padT-6}" x2="${X}" y2="${padT}" stroke="${axisStroke}" stroke-width="1"/>`;
+      svg += `<text x="${X}" y="${padT-18}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="${axisStroke}">${_escXml(lab)}</text>`;
+      lastX = X;
+      lastW = w;
+    }
+  }
+
+  // series paths
+  for (const s of seriesList){
+    const pts = s.pts.filter(p=>isFinite(p.x)&&isFinite(p.y)).sort((a,b)=>a.x-b.x);
+    let d = "";
+    for (let i=0;i<pts.length;i++){
+      const X = tx(pts[i].x), Y = ty(pts[i].y);
+      d += (i===0 ? `M ${_num(X)} ${_num(Y)}` : ` L ${_num(X)} ${_num(Y)}`);
+    }
+    svg += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+  }
+
+  // overlays (e.g. moving pointer)
+  if (typeof overlayFn === 'function'){
+    try{
+      const extra = overlayFn({tx,ty,padL,padT,plotW,plotH,X0,X1,Y0,Y1});
+      if (extra) svg += String(extra);
+    }catch(_e){}
+  }
+
+  // legend (inside, bottom-right)
+  const legX = padL + plotW - 12;
+  let legY = padT + 16;
+  const lineLen = 18;
+  const rowH = 18;
+  const boxPad = 10;
+  const items = seriesList.map(s=>s.label);
+  const maxText = Math.max(...items.map(x=>x.length));
+  const legW = Math.min(300, lineLen + 10 + maxText*8.5 + boxPad*2);
+  const legH = seriesList.length*rowH + boxPad*2;
+  const legLeft = legX - legW;
+  const legTop = padT + (plotH - legH)/2;
+  svg += `<rect x="${legLeft}" y="${legTop}" width="${legW}" height="${legH}" fill="#ffffff" stroke="${axisStroke}" stroke-width="1" opacity="0.9"/>`;
+  for (let i=0;i<seriesList.length;i++){
+    const s = seriesList[i];
+    const y = legTop + boxPad + i*rowH + 5;
+    svg += `<line x1="${legLeft+boxPad}" y1="${y}" x2="${legLeft+boxPad+lineLen}" y2="${y}" stroke="${s.color}" stroke-width="2"/>`;
+    svg += `<text x="${legLeft+boxPad+lineLen+8}" y="${y+4}" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="${axisStroke}">${_escXml(s.label)}</text>`;
+  }
+
+  svg += `</svg>`;
+  return svg;
+}
+
+
+function buildEnergySVG(profile, wkbRes, xi_cm){
+  if (!profile || !profile.points) throw new Error("No plot data.");
+  const profType = (profile && profile.mapInfo && profile.mapInfo.profileType) ? profile.mapInfo.profileType : "irc";
+  const useZ = !!(profile && profile.mapInfo && profile.mapInfo.useZPVE);
+  const series = profile.points.map(p=>({x:p.rc, y:p.V*CONST.h2kcal}));
+
+  const xLab = (profType==="irc") ? "IRC" : "q";
+
+  // IRC/WKB profile plot (with quantized E-level lines and v=0 turning points)
+  if (profType==="irc"){
+    if (!wkbRes) throw new Error("No plot data.");
+    const hnuKcal = xi_cm*CONST.wn2h*CONST.h2kcal;
+    const epsAbsKcal = (v)=> (0.5+v)*hnuKcal;
+    const levelLine = (v)=> useZ ? (v*hnuKcal) : epsAbsKcal(v);
+
+    const levels = wkbRes.levels || [];
+    const r0 = (levels && levels[0]) ? levels[0] : null;
+
+    return plotToSVG(series, {
+      xLabel:xLab, xUnit:"√amu·bohr",
+      yLabel:"V", yUnit:"kcal·mol⁻¹",
+      topAxis: {label:"", unit:""}
+    }, 980, 320, (sc)=>{
+      const el=[];
+      // energy level lines v=0..3
+      for (let v=0; v<=3; v++){
+        const y = levelLine(v);
+        const Y = sc.ty(y);
+        el.push(`<line x1="${sc.padL}" y1="${Y}" x2="${sc.padL+sc.plotW}" y2="${Y}" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,4"/>`);
+        el.push(`<text x="${sc.padL+sc.plotW-6}" y="${Y-6}" text-anchor="end" font-size="12" fill="#374151">v=${v}</text>`);
+      }
+      // v=0 turning points
+      if (r0 && r0.ok){
+        const xL = sc.tx(r0.xL), xR=sc.tx(r0.xR);
+        el.push(`<line x1="${xL}" y1="${sc.padT}" x2="${xL}" y2="${sc.padT+sc.plotH}" stroke="#f97316" stroke-width="2"/>`);
+        el.push(`<line x1="${xR}" y1="${sc.padT}" x2="${xR}" y2="${sc.padT+sc.plotH}" stroke="#f97316" stroke-width="2"/>`);
+        el.push(`<text x="${xL+3}" y="${sc.padT+14}" font-size="12" fill="#111827">xL</text>`);
+        el.push(`<text x="${xR+3}" y="${sc.padT+14}" font-size="12" fill="#111827">xR</text>`);
+      }
+      return el;
+    });
+
+  }
+
+  // Eckart synthetic profile plot (effective model): draw E=0 and a selectable E line, with turning points.
+  if (profType==="eckart"){
+    const E1 = 0; // kcal/mol, reactant baseline
+    const E2 = Math.max(0, getEckartSelectedEnergyKcal()); // clamp to >=0 for display
+    const E2label = getEckartEnergyLabel();
+
+    const tp = findTurningPoints(profile, (E2/CONST.h2kcal));
+
+    return plotToSVG(series, {
+      xLabel:xLab, xUnit:"√amu·bohr",
+      yLabel:"V", yUnit:"kcal·mol⁻¹"
+    }, 980, 320, (sc)=>{
+      const el=[];
+      // E=0 reference
+      const Y0 = sc.ty(E1);
+      el.push(`<line x1="${sc.padL}" y1="${Y0}" x2="${sc.padL+sc.plotW}" y2="${Y0}" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,4"/>`);
+      el.push(`<text x="${sc.padL+6}" y="${Y0-6}" font-size="12" fill="#374151">E=0</text>`);
+
+      // Selected E line
+      const Y2 = sc.ty(E2);
+      el.push(`<line x1="${sc.padL}" y1="${Y2}" x2="${sc.padL+sc.plotW}" y2="${Y2}" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="6,4"/>`);
+      el.push(`<text x="${sc.padL+6}" y="${Y2-6}" font-size="12" fill="#0f172a">${_escXml(E2label)}</text>`);
+
+      if (tp && tp.ok){
+        const xL = sc.tx(tp.xL), xR=sc.tx(tp.xR);
+        el.push(`<line x1="${xL}" y1="${sc.padT}" x2="${xL}" y2="${sc.padT+sc.plotH}" stroke="#f97316" stroke-width="2"/>`);
+        el.push(`<line x1="${xR}" y1="${sc.padT}" x2="${xR}" y2="${sc.padT+sc.plotH}" stroke="#f97316" stroke-width="2"/>`);
+        el.push(`<text x="${xL+3}" y="${sc.padT+14}" font-size="12" fill="#111827">xL</text>`);
+        el.push(`<text x="${xR+3}" y="${sc.padT+14}" font-size="12" fill="#111827">xR</text>`);
+      }
+      return el;
+    });
+  }
+
+  // Fallback: just plot the series
+  return plotToSVG(series, {
+    xLabel:xLab, xUnit:"√amu·bohr",
+    yLabel:"V", yUnit:"kcal·mol⁻¹"
+  }, 980, 320);
+}
+
+
+
+
+function _tsImagFreqCm(sp, fscale){
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+  const freqs = sp?.ts?.freqs || [];
+  let minF = Infinity;
+  for (const f of freqs) if (isFinite(f) && f < minF) minF = f;
+  return (minF < 0) ? Math.abs(minF)*fs : NaN;
+}
+
+
+
+
+
+
+
+
+// simple/stable Eckart implementation (Simpson over x=βE)
+// (fast enough for 3..500 K grid; no WKB code touched)
+function _logCosh(x){
+  const ax = Math.abs(x);
+  if (ax < 20) return Math.log(Math.cosh(x));
+  return ax - Math.log(2);
+}
+function _logSumExp(a,b){
+  const m = Math.max(a,b);
+  return m + Math.log(Math.exp(a-m)+Math.exp(b-m));
+}
+function kappaEckartMicro(E, V1, V2, nu_cm){
+  if (!(isFinite(E) && E>=0)) return NaN;
+  if (!(isFinite(V1) && V1>0 && isFinite(V2) && V2>0)) return NaN;
+  if (!(isFinite(nu_cm) && nu_cm>0)) return NaN;
+
+  const hnu = CONST.wn2h * nu_cm; // Hartree
+  const alpha1 = 2*Math.PI * (V1 / hnu);
+  const alpha2 = 2*Math.PI * (V2 / hnu);
+  if (!(alpha1>0 && alpha2>0)) return NaN;
+
+  const xi = E / V1;
+  const denom = (1/Math.sqrt(alpha1) + 1/Math.sqrt(alpha2));
+
+  const A = 2 * Math.sqrt(alpha1*xi) / denom;
+  const B = 2 * Math.sqrt(Math.abs((xi-1)*alpha1 + alpha2)) / denom;
+  const D = 2 * Math.sqrt(Math.abs(alpha1*alpha2 - (Math.PI*Math.PI)/4));
+
+  const lnNum = _logSumExp(_logCosh(A-B), _logCosh(D));
+  const lnDen = _logSumExp(_logCosh(A+B), _logCosh(D));
+  const ratio = Math.exp(lnNum - lnDen);
+  let k = 1 - ratio;
+  if (!isFinite(k)) return NaN;
+  if (k<0) k=0;
+  if (k>1) k=1;
+  return k;
+}
+
+function kappaEckart(T, V1, V2, nu_cm){
+  if (!(T>0)) return NaN;
+  const beta = 1/(CONST.kb*T);
+
+  const Xmax = 60;
+  const N = 400; // even
+  const h = Xmax / N;
+
+  function f(x){
+    const E = x / beta;
+    const km = kappaEckartMicro(E, V1, V2, nu_cm);
+    return (isFinite(km) && km>=0) ? km * Math.exp(-x) : 0;
+  }
+
+  let s = f(0) + f(Xmax);
+  for (let i=1;i<N;i++){
+    const x=i*h;
+    s += (i%2===0 ? 2 : 4)*f(x);
+  }
+  const I = (h/3)*s;
+  if (!(isFinite(I) && I>0)) return 0;
+
+    const lnK = beta*V1 + Math.log(I); // κ(T)
+  if (lnK > 700) return Infinity;
+  if (lnK < -745) return 0;
+  return Math.exp(lnK);
+}
+
+function lnKappaEckart(T, V1, V2, nu_cm){
+  if (!(T>0)) return NaN;
+  const beta = 1/(CONST.kb*T);
+
+  const Xmax = 60;
+  const N = 400; // even
+  const h = Xmax / N;
+
+  function f(x){
+    const E = x / beta;
+    const km = kappaEckartMicro(E, V1, V2, nu_cm);
+    return (isFinite(km) && km>=0) ? km * Math.exp(-x) : 0;
+  }
+
+  let s = f(0) + f(Xmax);
+  for (let i=1;i<N;i++){
+    const x=i*h;
+    s += (i%2===0 ? 2 : 4)*f(x);
+  }
+  const I = (h/3)*s;
+  if (!(isFinite(I) && I>0)) return -Infinity;
+
+  // κ(T) = exp(βV1) * (1/β) * ∫ κ_micro(E) e^{-βE} dE ; with x=βE -> (1/β)∫ κ_micro(x/β) e^{-x} dx
+  const lnK = beta*V1 + Math.log(I);
+  return lnK;
+}
+
+
+function _kFromLn(lnK){
+  if (!isFinite(lnK)) return NaN;
+  if (lnK > 700) lnK = 700;
+  if (lnK < -745) return 0;
+  return Math.exp(lnK);
+}
+
+function appendEckartSeries(arrObj, sp, fscale, energyMode, barShiftKcal){
+  if (!arrObj || !arrObj.series || !Array.isArray(arrObj.series.tst)) return;
+
+  const nuImag = _tsImagFreqCm(sp, fscale);
+  if (!(isFinite(nuImag) && nuImag>0)) return;
+
+  const useZ = (energyMode==="zpve" || energyMode==="hybrid");
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+
+  const Eeduct = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+  const Eprod  = useZ ? (sp.prod.E0  + sp.prod.ZPVE*fs)  : sp.prod.E0;
+  const Ets    = useZ ? (sp.ts.E0    + sp.ts.ZPVE*fs)    : sp.ts.E0;
+
+  const dK_Eh = (Number(barShiftKcal)||0) / CONST.h2kcal;
+  const V1 = (Ets - Eeduct) + dK_Eh;
+  const V2 = (Ets - Eprod ) + dK_Eh;
+
+  // Eckart (only if both barriers are positive)
+  if (isFinite(V1) && V1>0 && isFinite(V2) && V2>0){
+    arrObj.series.tst_eckart = arrObj.series.tst.map(p=>{
+      const lnkap = lnKappaEckart(p.T, V1, V2, nuImag);
+      const lnK = (isFinite(p.lnK) && isFinite(lnkap)) ? (p.lnK + lnkap) : NaN;
+      const k = _kFromLn(lnK);
+      return {T:p.T, invT:p.invT, k, lnK};
+    });
+  }
+}
+function buildArrheniusSVG(arrObj, keys, extra){
+  if (!arrObj || !arrObj.series) throw new Error("No Arrhenius data.");
+  const seriesMap = arrObj.series;
+  const sel = Array.isArray(keys) ? keys : ["wkb"];
+  const seriesList = [];
+  const styles = {
+    wkb: {color:"#1f77b4", label:"WKB"},
+    tst: {color:"#d62728", label:"TST"},
+    tst_wkb:{color:"#7f7f7f", label:"TST + WKB"},
+    tst_eckart: {color:"#ff7f0e", label:t("arr_tst_eckart")},
+  };
+  for (const k of sel){
+    const arr = seriesMap[k];
+    if (!Array.isArray(arr) || arr.length<2) continue;
+    seriesList.push({
+      key:k,
+      label: styles[k]?.label || k,
+      color: styles[k]?.color || "#111827",
+      pts: arr.map(p=>({x:p.invT, y:p.lnK}))
+    });
+  }
+  if (seriesList.length<1) throw new Error("No series selected.");
+  // Determine T-range from the first series (all share T grid)
+  const base = seriesMap[seriesList[0].key];
+  const arr = base;
+
+  return plotToSVGMulti(seriesList, {
+    xLabel:"T⁻¹", xUnit:"K⁻¹",
+    yLabel:"ln(k / s⁻¹)", yUnit:null,
+    xTickFmt:(x)=>x.toFixed(4),
+    yTickFmt:(y)=>y.toFixed(1),
+    topAxis: {
+      label:"T", unit:"K",
+      ticks: (()=>{
+        const Ts = arr.map(p=>p.T);
+        const Tmin = Math.min(...Ts), Tmax = Math.max(...Ts);
+        const cand = [10,20,50,100,200,300,400,500]; // candidates; overlap filter will thin
+        const ticks=[];
+        for (const T of cand){
+          if (T < Tmin-1e-9 || T > Tmax+1e-9) continue;
+          ticks.push({x:1.0/T, label:String(T)});
+        }
+        return ticks;
+      })()
+    }
+  }, $("cvArr").width, $("cvArr").height, (sc)=>{
+    if (!(extra && extra.includePointer)) return "";
+    const Tsel = Number(extra.pointerT);
+    if (!isFinite(Tsel) || Tsel<=0) return "";
+    const parts=[];
+    parts.push(`<g class="no-export">`);
+    for (const s of seriesList){
+      const arrS = seriesMap[s.key] || [];
+      if (!arrS.length) continue;
+      // nearest point at selected T
+      let idx=0;
+      let best=1e99;
+      for (let i=0;i<arrS.length;i++){
+        const d = Math.abs(Number(arrS[i].T)-Tsel);
+        if (d<best){best=d; idx=i;}
+      }
+      const p = arrS[idx];
+      const invT = Number(p.invT);
+      const lnK  = Number(p.lnK);
+      // If the selected point is non-finite (e.g. k→0 ⇒ ln(k)→-∞) or outside the plot box,
+      // hide the marker completely.
+      if (!isFinite(invT) || !isFinite(lnK)) continue;
+      const x = sc.tx(invT);
+      const y = sc.ty(lnK);
+      if (x < sc.padL || x > (sc.padL + sc.plotW) || y < sc.padT || y > (sc.padT + sc.plotH)) continue;
+
+      const col = (styles[s.key]&&styles[s.key].color) ? styles[s.key].color : s.color;
+      parts.push(`<circle cx="${_num(x)}" cy="${_num(y)}" r="4.5" fill="${_escXml(col)}" stroke="#111827" stroke-width="1"/>`);
+    }
+    parts.push(`</g>`);
+    return parts.join('');
+  });
+}
+
+
+function currentXiCmEffective(){
+  const fscale = Number($("fscale").value);
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+  const xiRaw = Number(String($("xi").value||"").trim());
+  if (isFinite(xiRaw) && xiRaw>0) return xiRaw*fs;
+  if (isFinite(STATE.xiAutoRaw) && STATE.xiAutoRaw>0) return STATE.xiAutoRaw*fs;
+  return NaN;
+}
+
+function exportEnergySVG(){
+  if (!STATE.profile || !STATE.lastWKB) return;
+  const xi = currentXiCmEffective();
+  if (!isFinite(xi) || xi<=0) return;
+  const svg = buildEnergySVG(STATE.profile, STATE.lastWKB, xi);
+  downloadText("energy_profile.svg", svg, "image/svg+xml");
+}
+function exportArrheniusSVG(){
+  if (!STATE.lastArr) return;
+  const svg = buildArrheniusSVG(STATE.lastArr, getSelectedArrSeriesKeys());
+  downloadText("arrhenius.svg", svg, "image/svg+xml");
+}
+
+function exportRateConstantsCSV(){
+  const arr = STATE.lastArr;
+  if (!arr || !arr.series) return;
+  const S = arr.series;
+  const base = S.tst || S.wkb || S.tst_wkb;
+  if (!base || base.length<1) return;
+
+  const fmt = (x)=> (isFinite(x) ? Number(x).toExponential(6) : "");
+  const lines = [];
+  lines.push("T (K),k_TST (s^-1),k_WKB (s^-1),k_TST+WKB (s^-1),k_TST+Eckart (s^-1)");
+  for (let i=0;i<base.length;i++){
+    const T = base[i].T;
+    const k_tst = S.tst?.[i]?.k;
+    const k_wkb = S.wkb?.[i]?.k;
+    const k_tst_wkb = S.tst_wkb?.[i]?.k;
+    const k_eck = S.tst_eckart?.[i]?.k;
+    lines.push(`${Number(T).toFixed(0)},${fmt(k_tst)},${fmt(k_wkb)},${fmt(k_tst_wkb)},${fmt(k_eck)}`);
+  }
+  downloadText("rate_constants.csv", lines.join("\n"), "text/csv");
+}
+
+/* ======================= Export helpers ======================= */
+function downloadBlob(filename, blob){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 2000);
+}
+function downloadText(filename, text, mime="text/plain"){
+  downloadBlob(filename, new Blob([text], {type:mime}));
+}
+/* ======================= State Export/Import ======================= */
+function makeStateObject(){
+  const xi = currentXiCmEffective();
+  const T  = Number($("temp").value);
+  const barShiftKcal = Number($("barShift").value) || 0;
+  const fscale = Number($("fscale").value);
+  const energyMode = currentEnergyMode();
+
+  // Compact IRC representation: store rc, electronic energy, and unscaled projected ZPVE (Hartree) per point.
+  // This allows rebuilding profiles for different fscale / energyMode after import.
+  const irc = (STATE.irc && Array.isArray(STATE.irc.points)) ? {
+    nat: STATE.irc.nat ?? null,
+    points: STATE.irc.points.map(p=>({
+      rc: p.rc,
+      E: p.E,
+      zprojRaw: (isFinite(p.zprojRaw) ? p.zprojRaw : null),
+      freqs: (Array.isArray(p.freqs) ? p.freqs.slice() : null)
+    })),
+    revEndFreqs: Array.isArray(STATE.revEndFreqs) ? STATE.revEndFreqs.slice() : null
+  } : null;
+
+  // Optional cache: already-built profile (relative V) for instant replotting.
+  const profCache = STATE.profile ? {
+    points: STATE.profile.points.map(p=>({rc:p.rc, V:p.V})),
+    useZPVE: !!(STATE.profile.mapInfo && STATE.profile.mapInfo.useZPVE)
+  } : null;
+
+  return {
+    format: "wkb_tunnel_tool_state_v2",
+    saved_at: new Date().toISOString(),
+    ui: {xi_cm: (isFinite(xi)?xi:null), tempK: T, fscale, barShiftKcal: (isFinite(barShiftKcal)?barShiftKcal:0), energyMode, xiManual: !!STATE.xiManual, fullThermo: true},
+    swapped: !!STATE.swapped,
+    xiAutoRaw: (isFinite(STATE.xiAutoRaw) ? STATE.xiAutoRaw : null),
+    sp: STATE.sp,
+    irc,
+    profile_cache: profCache
+  };
+}
+
+function exportState(){
+  const obj = makeStateObject();
+  const text = JSON.stringify(obj, null, 2);
+  downloadText("wkb_tunnel_state.json", text, "application/json");
+}
+
+function rebuildProfileFromCache(prof){
+  if (!prof || !Array.isArray(prof.points) || prof.points.length<4) return null;
+  const points = prof.points.map(p=>({rc:Number(p.rc), V:Number(p.V)}))
+    .filter(p=>isFinite(p.rc) && isFinite(p.V))
+    .sort((a,b)=>a.rc-b.rc);
+  const spline = buildNotAKnotSpline(points.map(p=>p.rc), points.map(p=>p.V));
+  let vmax=-Infinity, imax=0;
+  for (let i=0;i<points.length;i++){ if (points[i].V > vmax){vmax=points[i].V; imax=i;} }
+  return {points, spline, imax, vmax, mapInfo:{useZPVE: !!prof.useZPVE}};
+}
+
+function setXiFromAuto(fscale){
+  const el = $("xiStatus");
+  const btn = $("btnXiAuto");
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+
+  // Enable the "ξ automatisch" button once we tried auto-detection (even if it failed).
+  if (btn) btn.disabled = !(STATE && STATE.xiAutoTried);
+
+  if (STATE && STATE.xiAutoTried){
+    if (isFinite(STATE.xiAutoRaw) && STATE.xiAutoRaw>0){
+      const raw = STATE.xiAutoRaw;
+      const scaled = raw * fs;
+
+      // Only write into the input if the user hasn't manually overridden ξ (or the field is empty).
+      const xiEl = $("xi");
+      const xiNow = String(xiEl.value||"").trim();
+      if (!STATE.xiManual || xiNow===""){
+        xiEl.value = String((Math.round(raw*10)/10).toFixed(1));
+        STATE.xiManual = false;
+      }
+
+      if (el){
+        const srcTxt = (STATE.xiAutoSourceKey ? t(STATE.xiAutoSourceKey) : (STATE.xiAutoSource||""));
+        const src = (srcTxt ? ` (${srcTxt})` : "");
+        el.innerHTML = pill(t("xi_ok").replace("{raw}", raw.toFixed(1)).replace("{scaled}", scaled.toFixed(1)).replace("{src}", src), "ok");
+      }
+    } else {
+      if (el){
+        el.innerHTML = pill(t("xi_fail"), "warn");
+      }
+    }
+  } else {
+    if (el) el.innerHTML = "";
+  }
+}
+
+async function loadStateObject(obj){
+  if (!obj || !obj.format) throw new Error(t("err_unknown_import"));
+
+  // Backward compatibility: v1 (only profile cache + sp)
+  if (obj.format==="wkb_tunnel_tool_state_v1"){
+    const ui = obj.ui || {};
+    if (ui.xi_cm!=null) $("xi").value = String(ui.xi_cm);
+    if (ui.tempK!=null) $("temp").value = String(ui.tempK);
+    if (ui.fscale!=null) $("fscale").value = String(ui.fscale);
+    if (ui.barShiftKcal!=null) $("barShift").value = String(ui.barShiftKcal);
+    if (ui.energyMode) currentEnergyMode() = ui.energyMode;
+    STATE.xiManual = !!ui.xiManual;
+
+    STATE.sp = obj.sp || null;
+  applyLang();
+    STATE.swapped = !!obj.swapped;
+    STATE.profile = rebuildProfileFromCache(obj.profile);
+    STATE.irc = null;
+    STATE.xiAutoRaw = null; STATE.xiAutoTried = false; STATE.xiAutoSource = ""; STATE.xiAutoSourceKey = "";
+    STATE.xiManual = !!ui.xiManual;
+    STATE.revEndFreqs = null;
+
+    if (!STATE.sp || !STATE.profile) throw new Error(t("err_import_incomplete_sp_profile"));
+
+    let xiRaw = Number($("xi").value);
+    const T  = Number($("temp").value);
+    const fscale = Number($("fscale").value);
+    const barShiftKcal = Number($("barShift").value) || 0;
+    const energyMode = currentEnergyMode();
+    const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+    const xi = (isFinite(xiRaw) && xiRaw>0) ? (xiRaw*fs) : NaN;
+
+    renderStatusPills(STATE.sp, energyMode, fscale);
+    const wkbRes = computeWKB(STATE.profile, xi, T);
+    STATE.lastWKB = wkbRes;
+
+    const r0 = wkbRes.levels[0];
+    const extra = (r0 && r0.ok) ? {xL0:r0.xL, xR0:r0.xR, width0:r0.width} : {};
+
+    $("cardSP").style.display = "";
+    $("cardProfile").style.display = "";
+    $("cardWKB").style.display = "";
+    renderStationary(STATE.sp, energyMode, extra, xi, fscale, barShiftKcal);
+    renderWKB(wkbRes, xi);
+    drawEnergyProfile(STATE.profile, wkbRes, xi);
+
+    const Plevels = [0,1,2,3].map(v => (wkbRes.levels[v] && wkbRes.levels[v].ok && isFinite(wkbRes.levels[v].P)) ? wkbRes.levels[v].P : 0);
+      if (isFinite(Plevels[0]) && Plevels[0]>0){
+      const arrObj = await computeArrheniusCurves(STATE.profile, STATE.sp, xi, Plevels, fscale, energyMode, barShiftKcal);
+      STATE.lastArr = arrObj;
+      applyArrDefaultSelection(currentMode(), arrObj);
+      drawArrhenius(arrObj);
+      $("btnSaveArr").disabled = false;
+      $("btnExportRates").disabled = false;
+    } else {
+      const dg = await computeTST(null, STATE.sp, fscale, barShiftKcal, true);
+      const arrObj = {meta:{}, series:{tst: dg.series.tst}};
+      appendEckartSeries(arrObj, STATE.sp, fscale, energyMode, barShiftKcal);
+      STATE.lastArr = arrObj;
+      applyArrDefaultSelection(currentMode(), arrObj);
+      drawArrhenius(arrObj);
+      $("btnSaveArr").disabled = false;
+      $("btnExportRates").disabled = false;
+}
+
+    $("btnExport").disabled = false;
+    $("btnSaveProfile").disabled = false;
+    return;
+  }
+
+  // New format: v2
+  if (obj.format!=="wkb_tunnel_tool_state_v2") throw new Error(t("err_import_unknown"));
+
+  const ui = obj.ui || {};
+  if (ui.tempK!=null) $("temp").value = String(ui.tempK);
+  if (ui.fscale!=null) $("fscale").value = String(ui.fscale);
+  if (ui.barShiftKcal!=null) $("barShift").value = String(ui.barShiftKcal);
+  if (ui.energyMode) currentEnergyMode() = ui.energyMode;
+  STATE.xiManual = !!ui.xiManual;
+
+  STATE.sp = obj.sp || null;
+  STATE.swapped = !!obj.swapped;
+
+  STATE.irc = obj.irc || null;
+  STATE.revEndFreqs = (obj.irc && Array.isArray(obj.irc.revEndFreqs)) ? obj.irc.revEndFreqs.slice() : null;
+  STATE.xiAutoRaw = (isFinite(obj.xiAutoRaw) ? Number(obj.xiAutoRaw) : null);
+
+  // If xi auto wasn't stored, try to infer from sp + revEndFreqs
+  if (!isFinite(STATE.xiAutoRaw) && STATE.sp && STATE.revEndFreqs && STATE.sp.educt && Array.isArray(STATE.sp.educt.freqs)){
+    const xi0 = inferTunnelFrequency(STATE.sp.educt.freqs, STATE.revEndFreqs);
+    if (isFinite(xi0) && xi0>0) STATE.xiAutoRaw = xi0;
+  }
+
+  const fscale = Number($("fscale").value);
+  setXiFromAuto(fscale);
+  if (!(isFinite(STATE.xiAutoRaw) && STATE.xiAutoRaw>0) && ui.xi_cm!=null) $("xi").value = String(ui.xi_cm);
+
+  // Build profile from IRC if available; otherwise fallback to cached profile
+  
+  const modeSel = $("mode")?.value || "eckart";
+    let energyMode = "zpve";
+    let tunnelMode = "eckart";
+    if (modeSel.startsWith("wkb_")){
+      tunnelMode = "irc";
+      energyMode = modeSel.slice(4);
+      STATE.lastEnergyMode = energyMode;
+    } else {
+      tunnelMode = "eckart";
+      energyMode = (STATE.lastEnergyMode || "zpve");
+    }
+if (STATE.sp && STATE.irc && Array.isArray(STATE.irc.points) && STATE.irc.points.length>3){
+    const barShiftKcal = Number($("barShift").value) || 0;
+    STATE.profile = buildProfile(STATE.irc, STATE.sp, fscale, energyMode, barShiftKcal);
+  } else {
+    STATE.profile = rebuildProfileFromCache(obj.profile_cache);
+  }
+  if (!STATE.sp || !STATE.profile) throw new Error(t("err_import_incomplete_sp_irc_profile"));
+
+  // Render
+  const xi = currentXiCmEffective();
+  const T  = Number($("temp").value);
+  const barShiftKcal = Number($("barShift").value) || 0;
+
+  renderStatusPills(STATE.sp, energyMode, fscale);
+  const wkbRes = computeWKB(STATE.profile, xi, T);
+  STATE.lastWKB = wkbRes;
+
+  const r0 = wkbRes.levels[0];
+  const extra = (r0 && r0.ok) ? {xL0:r0.xL, xR0:r0.xR, width0:r0.width} : {};
+
+  $("cardSP").style.display = "";
+  $("cardProfile").style.display = "";
+  $("cardWKB").style.display = "";
+  renderStationary(STATE.sp, energyMode, extra, xi, fscale, barShiftKcal);
+  renderWKB(wkbRes, xi);
+  drawEnergyProfile(STATE.profile, wkbRes, xi);
+
+  const Plevels = [0,1,2,3].map(v => (wkbRes.levels[v] && wkbRes.levels[v].ok) ? wkbRes.levels[v].P : NaN);
+  if (Plevels.every(p=>isFinite(p) && p>0)){
+    const arrObj = await computeArrheniusCurves(STATE.profile, STATE.sp, xi, Plevels, fscale, energyMode, barShiftKcal);
+    STATE.lastArr = arrObj;
+    applyArrDefaultSelection(currentMode(), arrObj);
+    drawArrhenius(arrObj);
+    $("btnSaveArr").disabled = false;
+      $("btnExportRates").disabled = false;
+  } else {
+    const dg = await computeTST(null, STATE.sp, fscale, barShiftKcal, true);
+    const arrObj = {meta:{}, series:{tst: dg.series.tst}};
+    appendEckartSeries(arrObj, STATE.sp, fscale, energyMode, barShiftKcal);
+    STATE.lastArr = arrObj;
+    applyArrDefaultSelection(currentMode(), arrObj);
+    drawArrhenius(arrObj);
+    $("btnSaveArr").disabled = false;
+    $("btnExportRates").disabled = false;
+}
+
+  $("btnExport").disabled = false;
+  $("btnSaveProfile").disabled = false;
+}
+
+function exportAll(){ exportState(); }
+
+function resetAll(){
+  // clear inputs
+  for (const id of ["fileE","fileP","fileTS","fileRev","fileFwd"]){
+    const el = $(id);
+    if (el) el.value = "";
+  }
+  // reset numbers to defaults
+  $("temp").value = "3";
+  $("xi").value = "";
+  $("fscale").value = "1.0000";
+  $("barShift").value = "0.00";
+  // hide sections
+  $("cardSP").style.display = "none";
+  $("cardProfile").style.display = "none";
+  $("cardWKB").style.display = "none";
+  const ca = $("cardArr"); if (ca) ca.style.display = "none";
+  $("tblSP").innerHTML = "";
+  $("kpiSP").innerHTML = "";
+  $("tblWKB").innerHTML = "";
+  // Ensure WKB table is visible again after reset
+  try{
+    const card = $("cardWKB");
+    const table = card ? card.querySelector("table") : null;
+    if (table) table.style.display = "";
+  }catch(e){}
+  const ks = $("kpiSummary"); if (ks) ks.innerHTML = "";
+  $("statusPills").innerHTML = "";
+  if ($("xiStatus")) $("xiStatus").innerHTML = "";
+  $("hintSwap").textContent = "";
+  clearError();
+  // clear plots
+  if ($("plotProfile")) $("plotProfile").innerHTML = "";
+  if ($("plotArr")) $("plotArr").innerHTML = "";
+  // clear hidden canvases (legacy)
+  for (const cid of ["cvProfile","cvArr"]){
+    const c = $(cid);
+    if (c){
+      const ctx=c.getContext("2d");
+      ctx.clearRect(0,0,c.width,c.height);
+    }
+  }
+STATE = {sp:null, irc:null, profile:null, swapped:false, lastWKB:null, lastArr:null, xiAutoRaw:null, xiAutoTried:false, xiAutoSource:"", xiAutoSourceKey:"", revEndFreqs:null, xiManual:false, arrT:NaN, eckEMode:"kbt", eckECustom:0, lastEnergyMode:"zpve"};
+// reset mode + arrhenius checkboxes
+if ($("mode")) $("mode").value = "eckart";
+updateModeAvailability(false);
+if ($("chkArrTST")) $("chkArrTST").checked = true;
+if ($("chkArrWKB")) $("chkArrWKB").checked = true;
+if ($("chkArrTSTWKB")) $("chkArrTSTWKB").checked = true;
+if ($("chkArrTSTEckart")) $("chkArrTSTEckart").checked = false;
+
+["fileE","fileP","fileTS","fileRev","fileFwd"].forEach(updateFileName);
+  $("btnExport").disabled = true;
+  $("btnSaveProfile").disabled = true;
+  $("btnSaveArr").disabled = true;
+      $("btnExportRates").disabled = true;
+  
+}
+/* ======================= UI / main flow ======================= */
+var STATE = {sp:null, irc:null, profile:null, swapped:false, lastWKB:null, xiAutoRaw:null, xiAutoTried:false, xiAutoSource:"", xiAutoSourceKey:"", revEndFreqs:null, xiManual:false, arrT:NaN, eckEMode:"kbt", eckECustom:0};
+
+function renderStatusPills(sp, energyMode, fscale){
+  const useZ = (energyMode==="zpve" || energyMode==="hybrid");
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+  const Eeduct = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+  const Eprod  = useZ ? (sp.prod.E0  + sp.prod.ZPVE*fs)  : sp.prod.E0;
+
+  const okDir = (Eeduct > Eprod);
+  const pillDir = okDir ? pill(t("dir_ok"), "ok")
+                        : pill(t("dir_amb"), "warn");
+
+  const dE = (Eprod - Eeduct)*CONST.h2kcal;
+  const pillDE = pill("ΔE = "+fmtSci(dE,4)+" kcal mol⁻¹", (dE<0 ? "ok" : "warn"));
+
+  const pillSwap = STATE.swapped ? pill(t("pill_swap"), "warn") : "";
+
+  // IRC projected frequencies missing? -> ZPVE mode will be disabled (auto-switched to Hybrid)
+  let pillProj = "";
+  let hintProj = "";
+  try{
+    if (STATE && STATE.irc && STATE.irc.hasProjected === false){
+      pillProj = pill(t("pill_no_proj"), "warn");
+      const found = (STATE.irc.freqFound!=null) ? STATE.irc.freqFound : 0;
+      const need  = (STATE.irc.freqNeed!=null)  ? STATE.irc.freqNeed  : 0;
+      const nPts  = (STATE.irc.nPoints!=null)   ? STATE.irc.nPoints   : 0;
+      const FREQ  = (STATE.irc.FREQ!=null)      ? STATE.irc.FREQ      : 0;
+      hintProj = String(t("warn_irc_few_freq"))
+        .replace("{found}", String(found))
+        .replace("{need}", String(need))
+        .replace("{n}", String(nPts))
+        .replace("{FREQ}", String(FREQ));
+    }
+  }catch(e){}
+
+  $("statusPills").innerHTML = pillDir + pillDE + pillSwap + pillProj;
+
+  const hintSwap = STATE.swapped ? t("swap_hint") : "";
+  const hintAll = (hintSwap && hintProj) ? (hintSwap + "\n" + hintProj) : (hintSwap || hintProj || "");
+  $("hintSwap").textContent = hintAll;
+}
+
+
+
+
+function renderStationary(sp, energyMode, extra, xi_cm, fscale, barShiftKcal){
+  const useZ = (energyMode==="zpve" || energyMode==="hybrid");
+  const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+  const Eref = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+
+  const rows = [
+    [t("sp_reactant"), sp.educt],
+    [t("sp_ts"), sp.ts],
+    [t("sp_product"), sp.prod],
+  ];
+
+  $("tblSP").innerHTML = rows.map(([name,obj])=>{
+    const Zs = obj.ZPVE*fs;
+    const Etot = obj.E0 + Zs;
+    const Euse = useZ ? Etot : obj.E0;
+    const dE = (Euse - Eref) * CONST.h2kcal;
+    return `<tr>
+      <td>${name}</td>
+      <td class="right mono">${fmt(obj.E0, 8)}</td>
+      <td class="right mono">${fmt(Zs, 6)}</td>
+      <td class="right mono">${fmt(Etot, 8)}</td>
+      <td class="right mono">${fmtSci(dE,4)}</td>
+    </tr>`;
+  }).join("");
+
+  const Eeduct = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+  const Eprod  = useZ ? (sp.prod.E0  + sp.prod.ZPVE*fs)  : sp.prod.E0;
+  const Ets    = useZ ? (sp.ts.E0    + sp.ts.ZPVE*fs)    : sp.ts.E0;
+
+  const dEexo = (Eprod - Eeduct)*CONST.h2kcal;
+  const dEbar0 = (Ets - Eeduct)*CONST.h2kcal;
+  const dK = (isFinite(barShiftKcal) ? Number(barShiftKcal) : 0);
+  const dEbar = dEbar0 + dK;
+
+  // Tunnel barrier height (3N-7): subtract ε0=½hν from the educt reference in ZPVE-mode
+  const xi = Number(xi_cm);
+  const eps0 = (useZ && isFinite(xi) && xi>0) ? (0.5*xi*CONST.wn2h) : 0.0; // Hartree
+  const dEbarTunnel0 = useZ ? ((Ets - (Eeduct - eps0))*CONST.h2kcal) : dEbar0;
+  const dEbarTunnel = dEbarTunnel0 + dK;
+  const eps0kcal = eps0*CONST.h2kcal;
+
+  const w = extra?.width0;
+  const xL = extra?.xL0;
+  const xR = extra?.xR0;
+
+  $("kpiSP").innerHTML = `
+    <div class="box">
+      <div class="t">${t("kpi_barrier")}</div>
+      <div class="small muted">${t("kpi_ts_minus_reactant_full")}:</div>
+      <div class="v mono"><b>${fmtSci(dEbar,4)} kcal mol⁻¹</b></div>
+      <div class="small muted" style="margin-top:6px">Tunnel (3N−7):</div>
+      <div class="v mono"><b>${fmtSci(dEbarTunnel,4)} kcal mol⁻¹</b></div>
+      ${useZ?`<div class="v mono" style="margin-top:6px"><b>ε₀ = ${fmtSci(eps0kcal,4)} kcal mol⁻¹</b></div>`:``}
+    </div>
+    <div class="box">
+      <div class="t">${t("kpi_exo")}</div>
+      <div class="v mono">${fmtSci(dEexo,4)} kcal mol⁻¹</div>
+    </div>
+    <div class="box">
+      <div class="t">${t("kpi_turning_v0")}</div>
+      <div class="v mono">${isFinite(xL)?xL.toFixed(3):"—"} … ${isFinite(xR)?xR.toFixed(3):"—"}</div>
+    </div>
+    <div class="box">
+      <div class="t">${t("kpi_width_v0")}</div>
+      <div class="v mono">${isFinite(w)?w.toFixed(3):"—"} √amu·bohr</div>
+    </div>
+  `;}
+
+function renderWKB(wkbRes, xi_cm){
+  const epsKcal = (Eh)=> Eh*CONST.h2kcal;
+
+  // Ensure WKB table is visible (may have been hidden in Eckart mode)
+  try{
+    const card = $("cardWKB");
+    const table = card ? card.querySelector("table") : null;
+    if (table) table.style.display = "";
+  }catch(e){}
+
+  $("tblWKB").innerHTML = wkbRes.levels.map(r=>{
+    const epsAbs = (isFinite(r.epsAbs) ? r.epsAbs : (r.Elevel + (r.eps0||0)));
+    if (!r.ok){
+      return `<tr>
+        <td class="mono">${r.v}</td>
+        <td class="right mono">${fmtSci(epsKcal(epsAbs),4)}</td>
+        <td class="right mono">${fmtSci(epsKcal(r.barrierEh),4)}</td>
+        <td colspan="8" class="mono" style="color:var(--err)">⚠ ${r.error}</td>
+      </tr>`;
+    }
+    const t = fmtTime(r.t);
+    return `<tr>
+      <td class="mono">${r.v}</td>
+      <td class="right mono">${fmtSci(epsKcal(epsAbs),4)}</td>
+      <td class="right mono">${fmtSci(epsKcal(r.barrierEh),4)}</td>
+      <td class="right mono">${r.xL.toFixed(3)}</td>
+      <td class="right mono">${r.xR.toFixed(3)}</td>
+      <td class="right mono">${r.width.toFixed(3)}</td>
+      <td class="right mono">${fmtSci(r.k,4)}</td>
+      <td class="right mono">${t.s}</td>
+      <td class="right mono">${t.min}</td>
+      <td class="right mono">${t.h}</td>
+      <td class="right mono">${t.y}</td>
+    </tr>`;
+  }).join("");
+
+  const tavg = fmtTime(wkbRes.boltz.tauTemp);
+  const kpi = `
+    <div class="box"><div class="t">T</div><div class="v mono">${wkbRes.boltz.T.toFixed(2)} K</div></div>
+    <div class="box"><div class="t">k(T)</div><div class="v mono">${fmtSci(wkbRes.boltz.ktemp,4)} s⁻¹</div></div>
+    <div class="box"><div class="t">t½ / s</div><div class="v mono">${tavg.s}</div></div>
+    <div class="box"><div class="t">t½ / min</div><div class="v mono">${tavg.min}</div></div>
+    <div class="box"><div class="t">t½ / h</div><div class="v mono">${tavg.h}</div></div>
+    <div class="box"><div class="t">t½ / d</div><div class="v mono">${tavg.d}</div></div>
+    <div class="box"><div class="t">t½ / a</div><div class="v mono">${tavg.y}</div></div>
+  `;
+  $("kpiWKB").innerHTML = kpi;
+}
+
+async function run(){
+  clearError();
+  $("btnRun").disabled = true;
+  try{
+    let xiRaw = Number($("xi").value);
+    const T  = Number($("temp").value);
+    const fscale = Number($("fscale").value);
+    const barShiftKcal = Number($("barShift").value);
+    let energyMode = currentEnergyMode();
+    if (currentMode().startsWith("wkb_")) STATE.lastEnergyMode = energyMode;
+
+    if (!(T>0)) throw new Error(t("err_T"));
+
+    const fE  = $("fileE")?.files?.[0];
+    const fP  = $("fileP")?.files?.[0];
+    const fTS = $("fileTS")?.files?.[0];
+    const fRev = $("fileRev")?.files?.[0];
+    const fFwd = $("fileFwd")?.files?.[0];
+
+    const haveSPFiles  = !!(fE && fP && fTS);
+    const haveIRCFiles = !!(fRev && fFwd);
+
+    // (Re)parse stationary points if new files provided
+    if (haveSPFiles){
+      const [tE,tP,tTS] = await Promise.all([readFileAsText(fE), readFileAsText(fP), readFileAsText(fTS)]);
+      const sp = {
+        educt: parseStationaryAuto(tE),
+        prod:  parseStationaryAuto(tP),
+        ts:    parseStationaryAuto(tTS)
+      };
+      STATE.sp = sp;
+      applyLang();
+
+      // Auto-detect Edukt/Produkt direction (we want Edukt energetically higher than Produkt)
+      const useZ = (energyMode==="zpve" || energyMode==="hybrid");
+      const fs = (isFinite(fscale) && fscale>0) ? fscale : 1.0;
+      const Eeduct = useZ ? (sp.educt.E0 + sp.educt.ZPVE*fs) : sp.educt.E0;
+      const Eprod  = useZ ? (sp.prod.E0  + sp.prod.ZPVE*fs)  : sp.prod.E0;
+      STATE.swapped = false;
+      if (!(Eeduct > Eprod)){
+        const tmp = sp.educt; sp.educt = sp.prod; sp.prod = tmp;
+        STATE.swapped = true;
+      }
+    }
+
+    if (!STATE.sp) throw new Error(t("err_need_sp"));
+
+    // If an imported/previous IRC lacks projected frequencies, automatically disable ZPVE mode and switch to Hybrid.
+    try{  energyMode = currentEnergyMode(); }catch(e){}
+
+    // Decide which tunneling profile to use
+    const hasIRC = haveIRCFiles || !!STATE.irc;
+    updateModeAvailability(!!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc, guessIRCProjected());
+    let tunnelMode = currentTunnelMode();
+
+    // Parse IRC only if needed and new files were provided
+    if (tunnelMode === "irc"){
+      if (haveIRCFiles){
+        const [tRev, tFwd] = await Promise.all([readFileAsText(fRev), readFileAsText(fFwd)]);
+        const rev = parseIRCAuto(tRev, -1);
+        const fwd = parseIRCAuto(tFwd, +1);
+        const hasProj = !!(rev && fwd && rev.hasProjected && fwd.hasProjected);
+        const info = (!hasProj && rev && rev.hasProjected===false) ? rev : ((!hasProj && fwd && fwd.hasProjected===false) ? fwd : (rev||{}));
+        const ircData = {
+          nat: rev.nat,
+          FREQ: rev.FREQ,
+          points: [...rev.points, ...fwd.points].sort((a,b)=>a.rc-b.rc),
+          hasProjected: hasProj,
+          freqFound: (info.freqFound!=null ? info.freqFound : 0),
+          freqNeed:  (info.freqNeed!=null  ? info.freqNeed  : 0),
+          nPoints:   (info.nPoints!=null   ? info.nPoints   : 0)
+        };
+        STATE.irc = ircData;
+
+        // Disable ZPVE mode if IRC projected frequencies are missing
+        try{  energyMode = currentEnergyMode(); }catch(e){}
+      } else if (!STATE.irc){
+        // No IRC available -> force fallback selection (Eckart if possible, else )
+        updateModeAvailability(!!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc, guessIRCProjected());
+        tunnelMode = currentTunnelMode();
+        if (tunnelMode === "irc") throw new Error(t("err_need_irc"));
+      }
+    }
+
+    // Update ξ from auto (if available) when scaling changes
+    setXiFromAuto(fscale);
+    xiRaw = Number($("xi").value);
+    const xi = currentXiCmEffective();
+
+    // Build profile
+    let profile = null;
+    if (tunnelMode === "irc"){
+      profile = buildProfile(STATE.irc, STATE.sp, fscale, energyMode, barShiftKcal);
+    } else {
+      profile = buildSyntheticProfile(tunnelMode, STATE.sp, fscale, energyMode, barShiftKcal);
+    }
+    STATE.profile = profile;
+
+    renderStatusPills(STATE.sp, energyMode, fscale);
+
+    $("cardSP").style.display = "";
+    $("cardProfile").style.display = "";
+    $("cardWKB").style.display = "";
+
+    updateTunnelHeaders(profile);
+    syncProfileControlsVisibility(profile);
+
+    if (tunnelMode === "irc"){
+      // WKB on IRC profile
+      const wkbRes = computeWKB(profile, xi, T);
+      STATE.lastWKB = wkbRes;
+
+      const r0 = (wkbRes.levels && wkbRes.levels[0]) ? wkbRes.levels[0] : null;
+      const extra = (r0 && r0.ok) ? {tpKind:"v0", xL0:r0.xL, xR0:r0.xR, width0:r0.width} : {tpKind:"v0"};
+
+      renderStationary(STATE.sp, energyMode, extra, xi, fscale, barShiftKcal);
+      renderWKB(wkbRes, xi);
+      drawEnergyProfile(profile, wkbRes, xi);
+
+      $("btnExport").disabled = false;
+      $("btnSaveProfile").disabled = false;
+
+      
+      // Arrhenius curves: compute WKB-series if v=0 is available; missing higher v-levels are treated as 0 contribution.
+      const Praw = [0,1,2,3].map(v => (wkbRes.levels[v] && wkbRes.levels[v].ok) ? wkbRes.levels[v].P : NaN);
+      if (isFinite(Praw[0]) && Praw[0] > 0){
+        const Plevels = Praw.map(p => (isFinite(p) && p>0) ? p : 0);
+        const arrObj = await computeArrheniusCurves(profile, STATE.sp, xi, Plevels, fscale, energyMode, barShiftKcal);
+        STATE.lastArr = arrObj;
+        applyArrDefaultSelection(currentMode(), arrObj);
+        drawArrhenius(arrObj);
+        $("btnSaveArr").disabled = false;
+        $("btnExportRates").disabled = false;
+      } else {
+        const dg = await computeTST(null, STATE.sp, fscale, barShiftKcal, true);
+        const arrObj = {meta:{}, series:{tst: dg.series.tst}};
+        appendEckartSeries(arrObj, STATE.sp, fscale, energyMode, barShiftKcal);
+        STATE.lastArr = arrObj;
+        applyArrDefaultSelection(currentMode(), arrObj);
+        drawArrhenius(arrObj);
+        $("btnSaveArr").disabled = false;
+        $("btnExportRates").disabled = false;
+      }
+
+    } else {
+      // Effective model (no WKB): Arrhenius + profile visuals for selected model
+      STATE.irc = null;
+      STATE.lastWKB = null;
+
+      // Build Arrhenius object (TST + optional Eckart)
+      const dg = await computeTST(null, STATE.sp, fscale, barShiftKcal, true);
+      const arrObj = {meta:{}, series:{tst: dg.series.tst}};
+      appendEckartSeries(arrObj, STATE.sp, fscale, energyMode, barShiftKcal);
+      STATE.lastArr = arrObj;
+
+      applyArrDefaultSelection(currentMode(), arrObj);
+
+      // Turning points in Eckart mode (energy selection is relative to reactant)
+      const extra = _extraTurningPointsForProfile(profile);
+
+      renderStationary(STATE.sp, energyMode, extra, xi, fscale, barShiftKcal);
+      drawEnergyProfile(profile, null, xi);
+      renderModelTunnelResults(profile.mapInfo?.profileType || tunnelMode, profile, arrObj, T);
+
+      drawArrhenius(arrObj);
+      $("btnSaveArr").disabled = false;
+      $("btnExportRates").disabled = false;
+
+      $("btnExport").disabled = false;
+      $("btnSaveProfile").disabled = false;
+    }
+
+    // All done
+  } catch(e){
+    showError(e.message || String(e), t("err_hint_general"));
+  } finally {
+    $("btnRun").disabled = false;
+  }
+}
+
+
+function swapEductProduct(){
+  if (!STATE.sp) return;
+  const tmp = STATE.sp.educt;
+  STATE.sp.educt = STATE.sp.prod;
+  STATE.sp.prod = tmp;
+  STATE.swapped = !STATE.swapped;
+  run(); // re-run with swapped assignment (rebuild profile etc.)
+}
+
+$("btnRun").addEventListener("click", run);
+bindFilePickers();
+bindArrSlider();
+
+const _modeSel = $("mode");
+if (_modeSel){
+  _modeSel.addEventListener("change", ()=>{
+    const hasIRC = !!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc;
+    updateModeAvailability(!!($("fileRev")?.files?.[0] && $("fileFwd")?.files?.[0]) || !!STATE.irc, guessIRCProjected());
+    if (STATE && STATE.sp) run();
+  });
+}
+
+
+
+
+// Arrhenius series toggles: redraw without recompute
+for (const id of ["chkArrWKB","chkArrTST","chkArrTSTWKB","chkArrTSTEckart"]){
+  const el = $(id);
+  if (el) el.addEventListener("change", ()=>{ if (STATE.lastArr) drawArrhenius(STATE.lastArr); });
+
+}
+
+$("btnReset").addEventListener("click", resetAll);
+$("btnExport").addEventListener("click", exportState);
+$("btnImport").addEventListener("click", ()=>$("fileImportState").click());
+$("fileImportState").addEventListener("change", async (ev)=>{
+  const f = ev.target.files && ev.target.files[0];
+  if (!f) return;
+  try{
+    const txt = await readFileAsText(f);
+    const obj = JSON.parse(txt);
+    await loadStateObject(obj);
+  } catch(e){
+    showError(e.message || String(e), t("err_import_failed"));
+  } finally {
+    ev.target.value = "";
+  }
+});
+$("btnSaveProfile").addEventListener("click", exportEnergySVG);
+$("btnSaveArr").addEventListener("click", exportArrheniusSVG);
+$("btnExportRates").addEventListener("click", exportRateConstantsCSV);
+
+// Ensure decimal point (.) regardless of browser locale
+function normalizeDecimalInput(el){
+  if (!el) return;
+  const v = String(el.value ?? "");
+  if (v.includes(",")) el.value = v.replace(/,/g, ".");
+}
+for (const id of ["xi","temp","fscale"]){
+  const el = $(id);
+  if (!el) continue;
+  el.addEventListener("input", ()=>normalizeDecimalInput(el));
+  el.addEventListener("blur", ()=>normalizeDecimalInput(el));
+  normalizeDecimalInput(el);
+}
+
+
+
+
+
+// Manual override detection for ξ
+const xiEl = $("xi");
+if (xiEl){
+  xiEl.addEventListener("input", ()=>{ STATE.xiManual = true; });
+}
+const btnXiAuto = $("btnXiAuto");
+if (btnXiAuto){
+  btnXiAuto.addEventListener("click", ()=>{
+    STATE.xiManual = false;
+    setXiFromAuto(Number($("fscale").value));
+  });
+}
+
+/* ======================= ξ auto-detection (preview) ======================= */
+async function tryAutoDetectXiPreview(){
+  const fE   = $("fileE").files[0];
+  const fRev = $("fileRev").files[0];
+  const fFwd = $("fileFwd").files[0];
+
+  if (!(fE && fRev && fFwd)){
+    if (STATE){
+      STATE.xiAutoTried = false;
+      STATE.xiAutoRaw = null;
+      STATE.xiAutoSource = ""; STATE.xiAutoSourceKey = "";
+    }
+    if ($("xiStatus")) $("xiStatus").innerHTML = "";
+    return;
+  }
+
+  try{
+    const [tE, tRev, tFwd] = await Promise.all([readFileAsText(fE), readFileAsText(fRev), readFileAsText(fFwd)]);
+    const ed  = parseGaussianStationary(tE);
+    const rev = parseIRCAuto(tRev, -1);
+    const fwd = parseIRCAuto(tFwd, +1);
+
+    const revEnd = (rev && Array.isArray(rev.points) && rev.points.length>0)
+      ? rev.points.reduce((best,p)=> (p.rc < best.rc ? p : best), rev.points[0])
+      : null;
+
+    const fwdEnd = (fwd && Array.isArray(fwd.points) && fwd.points.length>0)
+      ? fwd.points.reduce((best,p)=> (p.rc > best.rc ? p : best), fwd.points[0])
+      : null;
+
+    STATE.xiAutoTried = true;
+    STATE.xiAutoRaw = null;
+    STATE.xiAutoSource = ""; STATE.xiAutoSourceKey = "";
+
+    if (revEnd && Array.isArray(revEnd.freqs)){
+      const xi0 = inferTunnelFrequency(ed.freqs, revEnd.freqs);
+      if (isFinite(xi0) && xi0>0){
+        STATE.xiAutoRaw = xi0;
+        STATE.xiAutoSourceKey = "xi_auto_src_rev"; STATE.xiAutoSource = "";
+      }
+    }
+
+    if (!(isFinite(STATE.xiAutoRaw) && STATE.xiAutoRaw>0) && fwdEnd && Array.isArray(fwdEnd.freqs)){
+      const xi1 = inferTunnelFrequency(ed.freqs, fwdEnd.freqs);
+      if (isFinite(xi1) && xi1>0){
+        STATE.xiAutoRaw = xi1;
+        STATE.xiAutoSourceKey = "xi_auto_src_fwd"; STATE.xiAutoSource = "";
+      }
+    }
+
+    setXiFromAuto(Number($("fscale").value));
+  } catch(e){
+    if (STATE){
+      STATE.xiAutoTried = true;
+      STATE.xiAutoRaw = null;
+      STATE.xiAutoSource = ""; STATE.xiAutoSourceKey = "";
+    }
+    if ($("xiStatus")) $("xiStatus").innerHTML = pill(t("xi_autofail"), "warn");
+  }
+}
+
+// Trigger preview auto-detection as soon as Edukt + IRC(reverse/forward) are present
+for (const fid of ["fileE","fileRev","fileFwd"]){
+  const el = $(fid);
+  if (!el) continue;
+  el.addEventListener("change", ()=>{ tryAutoDetectXiPreview(); });
+}
+
+// Keep ξ consistent when fscale changes (if ξ was auto-detected)
+if ($("fscale")){
+  $("fscale").addEventListener("input", ()=>{
+    normalizeDecimalInput($("fscale"));
+    if (STATE && STATE.xiAutoTried) setXiFromAuto(Number($("fscale").value));
+  });
+  $("fscale").addEventListener("blur", ()=>{
+    normalizeDecimalInput($("fscale"));
+    if (STATE && STATE.xiAutoTried) setXiFromAuto(Number($("fscale").value));
+  });
+}
+
+/* ======================= Gaussian input templates (Modal) ======================= */
+const GAUSS_TEMPLATES = {
+  en:{
+    educt: {
+      title: "Reactant: Opt+Freq (stationary point)",
+      filename: "reactant_optfreq.gjf",
+      text: `%chk=reactant.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt freq scf=tight
+
+Reactant Opt+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    prod: {
+      title: "Product: Opt+Freq (stationary point)",
+      filename: "product_optfreq.gjf",
+      text: `%chk=product.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt freq scf=tight
+
+Product Opt+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    ts: {
+      title: "TS: Opt(TS)+Freq (1 imaginary frequency)",
+      filename: "ts_optfreq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt=(ts,calcfc,noeigentest) freq scf=tight
+
+TS Opt(TS)+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    irc_rev: {
+      title: "IRC reverse (projected frequencies 3N−7)",
+      filename: "irc_reverse_freq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+
+! Alternative (faster but slightly less accurate):
+! #p METHOD/BASIS irc=(reverse,calcfc,recalc=5,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+
+IRC reverse from TS (with projected frequencies)
+
+0 1
+<use geom=check guess=read instead of coordinates if you have a TS.chk>
+
+`
+    },
+    irc_fwd: {
+      title: "IRC forward (projected frequencies 3N−7)",
+      filename: "irc_forward_freq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+
+! Alternative (faster but slightly less accurate):
+! #p METHOD/BASIS irc=(forward,calcfc,recalc=5,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+
+IRC forward from TS (with projected frequencies)
+
+0 1
+<use geom=check guess=read instead of coordinates if you have a TS.chk>
+
+`
+    },
+    tag_orca_input: "ORCA input",
+    modal_hint_gauss: "Note: adjust method/basis, memory/cores and paths. The IRC templates use <span class=\"mono\">IOp(1/73=2)</span> to print projected frequencies (3N−7).",
+    modal_hint_orca: "Note: adjust method/basis, memory/cores and paths. ORCA IRC writes trajectory files <span class=\"mono\">*_IRC_F_trj.xyz</span> and <span class=\"mono\">*_IRC_B_trj.xyz</span>; upload those for IRC.",
+    modal_download_gjf: "Download .gjf",
+    modal_download_inp: "Download .inp",
+
+  },
+  de:{
+    educt: {
+      title: "Edukt: Opt+Freq (stationärer Punkt)",
+      filename: "educt_optfreq.gjf",
+      text: `%chk=educt.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt freq scf=tight
+
+Edukt Opt+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    prod: {
+      title: "Produkt: Opt+Freq (stationärer Punkt)",
+      filename: "product_optfreq.gjf",
+      text: `%chk=product.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt freq scf=tight
+
+Produkt Opt+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    ts: {
+      title: "TS: Opt(TS)+Freq (1 imag. freq)",
+      filename: "ts_optfreq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS opt=(ts,calcfc,noeigentest) freq scf=tight
+
+TS Opt(TS)+Freq
+
+0 1
+<coordinates>
+
+`
+    },
+    irc_rev: {
+      title: "IRC reverse (projizierte Frequenzen 3N−7)",
+      filename: "irc_reverse_freq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+
+! Alternative (schneller, aber etwas ungenauer):
+! #p METHOD/BASIS irc=(reverse,calcfc,recalc=5,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+
+IRC reverse from TS (with projected frequencies)
+
+0 1
+<use geom=check guess=read instead of coordinates, if you have a TS.chk>
+
+`
+    },
+    irc_fwd: {
+      title: "IRC forward (projizierte Frequenzen 3N−7)",
+      filename: "irc_forward_freq.gjf",
+      text: `%chk=ts.chk
+%nprocshared=8
+%mem=8GB
+#p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+
+! Alternative (schneller, aber etwas ungenauer):
+! #p METHOD/BASIS irc=(forward,calcfc,recalc=5,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+
+IRC forward from TS (with projected frequencies)
+
+0 1
+<use geom=check guess=read instead of coordinates, if you have a TS.chk>
+
+`
+    }
+  }
+};
+
+
+/* ======================= ORCA input templates ======================= */
+const ORCA_TEMPLATES = {
+  en:{
+    orca_educt:{
+      title:"Reactant: Opt+Freq (ORCA)",
+      filename:"reactant_optfreq.inp",
+      text:`! METHOD BASIS Opt Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<coordinates>
+*
+`
+    },
+    orca_prod:{
+      title:"Product: Opt+Freq (ORCA)",
+      filename:"product_optfreq.inp",
+      text:`! METHOD BASIS Opt Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<coordinates>
+*
+`
+    },
+    orca_ts:{
+      title:"TS: OptTS+Freq (ORCA)",
+      filename:"ts_optfreq.inp",
+      text:`! METHOD BASIS OptTS Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<coordinates>
+*
+`
+    },
+    orca_irc_rev:{
+      title:"IRC: reverse/backward trajectory (ORCA)",
+      filename:"irc.inp",
+      text:`! METHOD BASIS TightSCF
+%pal nprocs 8 end
+
+%irc
+  Direction both
+  MaxIter 50
+  Stepsize 10
+  InitHess read
+  Hess_Filename "TS.hess"
+end
+
+* xyzfile 0 1 ts.xyz
+*
+`
+    },
+    orca_irc_fwd:{
+      title:"IRC: forward trajectory (ORCA)",
+      filename:"irc.inp",
+      text:`! METHOD BASIS TightSCF
+%pal nprocs 8 end
+
+%irc
+  Direction both
+  MaxIter 50
+  Stepsize 10
+  InitHess read
+  Hess_Filename "TS.hess"
+end
+
+* xyzfile 0 1 ts.xyz
+*
+`
+    }
+  },
+  de:{
+    orca_educt:{
+      title:"Edukt: Opt+Freq (ORCA)",
+      filename:"educt_optfreq.inp",
+      text:`! METHODE BASIS Opt Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<Koordinaten>
+*
+`
+    },
+    orca_prod:{
+      title:"Produkt: Opt+Freq (ORCA)",
+      filename:"product_optfreq.inp",
+      text:`! METHODE BASIS Opt Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<Koordinaten>
+*
+`
+    },
+    orca_ts:{
+      title:"TS: OptTS+Freq (ORCA)",
+      filename:"ts_optfreq.inp",
+      text:`! METHODE BASIS OptTS Freq TightSCF
+%pal nprocs 8 end
+
+* xyz 0 1
+<Koordinaten>
+*
+`
+    },
+    orca_irc_rev:{
+      title:"IRC: reverse/backward Trajektorie (ORCA)",
+      filename:"irc.inp",
+      text:`! METHODE BASIS TightSCF
+%pal nprocs 8 end
+
+%irc
+  Direction both
+  MaxIter 50
+  Stepsize 10
+  InitHess read
+  Hess_Filename "TS.hess"
+end
+
+* xyzfile 0 1 ts.xyz
+*
+`
+    },
+    orca_irc_fwd:{
+      title:"IRC: forward Trajektorie (ORCA)",
+      filename:"irc.inp",
+      text:`! METHODE BASIS TightSCF
+%pal nprocs 8 end
+
+%irc
+  Direction both
+  MaxIter 50
+  Stepsize 10
+  InitHess read
+  Hess_Filename "TS.hess"
+end
+
+* xyzfile 0 1 ts.xyz
+*
+`
+    }
+  }
+};
+
+function getTemplate(key){
+  const isOrca = /^orca_/.test(String(key||""));
+  const pool = isOrca ? ORCA_TEMPLATES : GAUSS_TEMPLATES;
+  const byLang = pool[LANG] || pool.en;
+  return (byLang && byLang[key]) ? byLang[key] : (pool.en[key] || null);
+}
+function getGaussTemplate(key){ return getTemplate(key); }
+
+
+window.addEventListener("DOMContentLoaded", ()=>{
+
+function openModal(key){
+  const m = getTemplate(key);
+  if (!m) return;
+  $("modalTitle").textContent = m.title || "";
+  $("modalPre").textContent = (m.text || "").trimEnd();
+  $("modal").style.display = "block";
+  $("modal").dataset.key = key;
+
+  const isOrca = /^orca_/.test(String(key||""));
+  const hint = $("modalHint");
+  if (hint){
+    hint.innerHTML = t(isOrca ? "modal_hint_orca" : "modal_hint_gauss");
+  }
+  const dl = $("modalDownload");
+  if (dl){
+    const fn = String(m.filename||"");
+    dl.textContent = fn.endsWith(".inp") ? t("modal_download_inp") : t("modal_download_gjf");
+  }
+}
+function closeModal(){
+  $("modal").style.display = "none";
+}
+$("modalClose").addEventListener("click", closeModal);
+$("modalBackdrop").addEventListener("click", closeModal);
+document.addEventListener("keydown", (e)=>{ if (e.key==="Escape" && $("modal").style.display==="block") closeModal(); });
+
+for (const el of document.querySelectorAll("[data-modal]")){
+  el.addEventListener("click", (ev)=>{ try{ ev.stopPropagation(); }catch(e){} openModal(el.dataset.modal); });
+}
+
+$("modalCopy").addEventListener("click", async ()=>{
+  const txt = $("modalPre").textContent || "";
+  try{ await navigator.clipboard.writeText(txt); } catch(e){}
+});
+
+$("modalDownload").addEventListener("click", ()=>{
+  const key = $("modal").dataset.key;
+  const m = getTemplate(key);
+  if (!m) return;
+  downloadText(m.filename, $("modalPre").textContent || "", "text/plain");
+});
+
+});
+
+document.addEventListener("DOMContentLoaded", initLang);
+</script>
+
+  <div class="modal" id="modal">
+    <div class="backdrop" id="modalBackdrop"></div>
+    <div class="box" role="dialog" aria-modal="true">
+      <div class="head">
+        <div class="title" id="modalTitle" data-i18n="tag_gaussian_input">Gaussian input</div>
+        <button class="close" id="modalClose">Close</button>
+      </div>
+      <pre id="modalPre"></pre>
+      <div class="foot">
+        <button class="btn secondary" id="modalCopy">Copy</button>
+        <button class="btn secondary" id="modalDownload">Download .gjf</button>
+      </div>
+      <div class="hint" id="modalHint"></div>
+    </div>
+  </div>
+
+</body>
+</html>
