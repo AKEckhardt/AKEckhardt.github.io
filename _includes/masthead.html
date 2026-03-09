@@ -2,59 +2,53 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+    <nav id="site-nav" class="greedy-nav">
 
-        <a class="site-logo" href="{{ base_path }}/">
-          <img src="{{ '/images/RUB.png' | relative_url }}" alt="Ruhr-Universität Bochum">
-        </a>
+      <button class="greedy-nav__toggle hidden" type="button">
+        <span class="visually-hidden">
+          {{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}
+        </span>
+        <div class="navicon"></div>
+      </button>
 
-        <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            {%- if link.url contains 'http' -%}
-              {%- assign domain = '' -%}
-            {%- else -%}
-              {%- assign domain = base_path -%}
-            {%- endif -%}
+      <ul class="visible-links">
+        <li class="masthead__menu-item masthead__menu-item--lg">
+          <a href="https://www.chemie.ruhr-uni-bochum.de/fak/lsag.html.de">
+            <img src="/images/RUB.png" alt="Ruhr-Universität Bochum" width="64" height="64" align="middle">
+          </a>
+        </li>
 
-            <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
-              {% if link.children %}
-                <a href="#"
-                   class="masthead__menu-parent"
-                   onclick="return false;"
-                   aria-haspopup="true">
-                  {{ link.title }}
-                </a>
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+          {% else %}
+            {% assign domain = base_path %}
+          {% endif %}
 
-                <ul class="masthead__dropdown">
-                  {%- for child in link.children -%}
-                    {%- if child.url contains 'http' -%}
-                      {%- assign child_domain = '' -%}
-                    {%- else -%}
-                      {%- assign child_domain = base_path -%}
-                    {%- endif -%}
+          <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
+            {% if link.children %}
+              <a href="#" onclick="return false;" aria-haspopup="true">{{ link.title }}</a>
 
-                    <li class="masthead__dropdown-item">
-                      <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {% else %}
-                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-              {% endif %}
-            </li>
-          {%- endfor -%}
-        </ul>
+              <ul class="masthead__dropdown">
+                {% for child in link.children %}
+                  {% if child.url contains 'http' %}
+                    {% assign child_domain = '' %}
+                  {% else %}
+                    {% assign child_domain = base_path %}
+                  {% endif %}
+                  <li class="masthead__dropdown-item">
+                    <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
 
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">
-            {{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}
-          </span>
-          <div class="navicon"></div>
-        </button>
-
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+      <ul class="hidden-links hidden"></ul>
+    </nav>
   </div>
 </div>

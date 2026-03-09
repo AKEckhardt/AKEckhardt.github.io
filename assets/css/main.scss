@@ -41,8 +41,6 @@
 @import "print";
 
 .masthead,
-.masthead__inner-wrap,
-.masthead__menu,
 .greedy-nav,
 .greedy-nav .visible-links,
 .greedy-nav .hidden-links {
@@ -84,13 +82,9 @@
   padding: 0.5rem 1rem;
   white-space: nowrap;
   text-decoration: none;
+  font-weight: 400 !important;
 }
 
 .masthead__dropdown-item a:hover {
   background: #f5f5f5;
-}
-
-.site-logo img {
-  max-height: 3rem;
-  width: auto;
 }
