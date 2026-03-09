@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Spectra-DX-Converter"
+title: ""
 permalink: /converter/
 author_profile: true
 
