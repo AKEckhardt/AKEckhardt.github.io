@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Home"
-    url: 
+    url: /
 
   - title: "About André"
     url: /cv/
@@ -16,7 +16,6 @@ main:
     url: /publications/
     
   - title: "Tools"
-    url: 
     children:
       - title: "Ansatzrechner"
         url: /ansatzrechner/

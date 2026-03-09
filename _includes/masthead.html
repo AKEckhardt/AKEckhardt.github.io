@@ -16,7 +16,7 @@
 
         <ul class="masthead__dropdown">
           {% for child in link.children %}
-            <li>
+            <li class="masthead__dropdown-item">
               <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
             </li>
           {% endfor %}
