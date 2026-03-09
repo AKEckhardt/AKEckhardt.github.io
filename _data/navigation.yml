@@ -21,6 +21,8 @@ main:
         url: /ansatzrechner/
       - title: "Spectra-DX-Converter"
         url: /converter/
+      - title: "IR Viewer"
+        url: /viewer/
 
 #  - title: "Talks"
 #    url: /talks/    
