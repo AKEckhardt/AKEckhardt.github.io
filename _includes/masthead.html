@@ -5,8 +5,8 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
 
-        <a class="site-title" href="{{ base_path }}/">
-          {{ site.masthead_title | default: site.title }}
+        <a class="site-logo" href="{{ base_path }}/">
+          <img src="{{ '/images/RUB.png' | relative_url }}" alt="Ruhr-Universität Bochum">
         </a>
 
         <ul class="visible-links">
@@ -19,7 +19,12 @@
 
             <li class="masthead__menu-item{% if link.children %} masthead__menu-item--has-children{% endif %}">
               {% if link.children %}
-                <span class="masthead__menu-label">{{ link.title }}</span>
+                <a href="#"
+                   class="masthead__menu-parent"
+                   onclick="return false;"
+                   aria-haspopup="true">
+                  {{ link.title }}
+                </a>
 
                 <ul class="masthead__dropdown">
                   {%- for child in link.children -%}
@@ -28,6 +33,7 @@
                     {%- else -%}
                       {%- assign child_domain = base_path -%}
                     {%- endif -%}
+
                     <li class="masthead__dropdown-item">
                       <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
                     </li>
