@@ -15,8 +15,11 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "Ansatzrechner"
-    url: /ansatzrechner/ 
+  - title: "Tools"
+    url: 
+    children:
+      - title: "Ansatzrechner"
+        url: /ansatzrechner/
 
 #  - title: "Talks"
 #    url: /talks/    

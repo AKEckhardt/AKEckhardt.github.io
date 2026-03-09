@@ -39,3 +39,36 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.masthead__menu-item--has-children {
+  position: relative;
+}
+
+.masthead__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.masthead__menu-item--has-children:hover .masthead__dropdown,
+.masthead__menu-item--has-children:focus-within .masthead__dropdown {
+  display: block;
+}
+
+.masthead__dropdown li {
+  margin: 0;
+}
+
+.masthead__dropdown a {
+  display: block;
+  padding: 0.45rem 0.9rem;
+  white-space: nowrap;
+}
