@@ -379,7 +379,7 @@
       </div>
 
       <div class="row btnbar" style="margin-top:12px; align-items:center; gap:10px; flex-wrap:wrap">
-        <button class="btn" id="btnRun">Compute</button>
+        <button class="btn" id="btnRun">Calculate</button>
         <button class="btn secondary" id="btnReset">Reset</button>
         <button class="btn secondary" id="btnImport">Import</button>
         <input type="file" id="fileImportState" accept="application/json" style="display:none"/>
@@ -485,7 +485,7 @@
 const I18N = {
   en:{
     title: "WKB Tunneling Calculator",
-    subtitle: "Lade Gaussian- (oder ORCA für SP) Outputs hoch (Edukt, Produkt, TS, IRC forward & reverse). Danach WKB-Tunneling und Arrhenius-Plot berechnen.",
+    subtitle: "Upload Gaussian outputs (or ORCA outputs for stationary points) for the reactant, product, TS, and IRC forward/reverse. Then calculate WKB tunneling and an Arrhenius plot.",
     sec_inputs: "1) Inputs",
     sec_sp: "2) Stationary points",
     sec_profile: "3) Energy profile & turning points",
@@ -499,18 +499,18 @@ const I18N = {
     modal_hint_orca: "ORCA input template",
     modal_download_gjf: "Download .gjf",
     modal_download_inp: "Download .inp",
-    lab_reactant: "Edukt (.out/.log — Gaussian oder ORCA)",
-    lab_product: "Produkt (.out/.log — Gaussian oder ORCA)",
-    lab_ts: "TS (.out/.log — Gaussian oder ORCA)",
+    lab_reactant: "Reactant (.out/.log — Gaussian or ORCA)",
+    lab_product: "Product (.out/.log — Gaussian or ORCA)",
+    lab_ts: "TS (.out/.log — Gaussian or ORCA)",
     lab_irc_rev: "IRC reverse (e.g.",
     lab_irc_fwd: "IRC forward (e.g.",
     xi_label: "Tunneling frequency ξ (cm⁻¹)",
     temp_label: "Temperature for averaging (K)",
     fscale_label: "Frequency scaling (projected IRC frequencies)",
     barshift_label: "Barrier shift (kcal mol⁻¹)",
-    mode_label: "Modus",
+    mode_label: "Mode",
     btn_xi_auto: "ξ auto",
-    btn_compute: "Compute",
+    btn_compute: "Calculate",
     btn_reset: "Reset",
     btn_import: "Import",
     btn_export: "Export",
@@ -577,7 +577,7 @@ const I18N = {
     err_need_orca_trj: "For ORCA IRC, please upload the *_IRC_F_trj.xyz and *_IRC_B_trj.xyz trajectory files (not the .out alone).",
     xi_auto_src_rev: "Reactant vs. IRC reverse endpoint",
     xi_auto_src_fwd: "Fallback: reactant vs. IRC forward endpoint",
-    err_xi_auto: "Tunnel frequency ξ could not be determined automatically. Please enter ξ (cm⁻¹) and compute again.",
+    err_xi_auto: "Tunnel frequency ξ could not be determined automatically. Please enter ξ (cm⁻¹) and calculate again.",
     err_file_elec: "Could not find electronic energy (HF/SCF Done).",
     err_irc_natoms: "IRC: Could not find NAtoms=.",
     err_irc_few_points: "IRC: Too few valid points after extraction (rc/E). Check output (Normal termination, iOP, etc.).",
@@ -609,13 +609,11 @@ kpi_width_E: "Width (E)",
     err_need_barrier: "Barrier height not positive (cannot build tunneling profile).",
     sum_k_tst_eckart: "k (TST + Eckart) / s⁻¹",
     sum_t12_tst_eckart: "t½ (TST + Eckart)",
-  },
     lab_eckE_mode: "Energy line",
     opt_eckE_kbt: "E = kBT (Arrhenius T)",
     opt_eckE_custom: "Custom (kcal/mol)",
     lab_eckE_custom: "Custom E (kcal/mol)",
-
-
+  },
   de:{
     title: "WKB‑Tunnelrechner",
     subtitle: "Upload: Gaussian‑Outputs (Edukt, Produkt, TS, IRC forward & reverse). Danach WKB‑Tunneling und Arrhenius‑Plot (nur Tunneling).",
@@ -838,7 +836,7 @@ function applyLang(){
   if (modal && modal.style.display==="block" && key){
     const tpl = (typeof getTemplate==="function") ? getTemplate(key) : null;
     if (mt) mt.textContent = tpl ? tpl.title : "";
-    if (pre && tpl && tpl.text) pre.textContent = tpl.text.trimEnd();
+    if (pre && tpl && tpl.text) pre.textContent = tpl.text;
     if (hint) hint.innerHTML = t(/^orca_/.test(String(key)) ? "modal_hint_orca" : "modal_hint_gauss");
     if (dlBtn && tpl){
       const fn = String(tpl.filename||"");
@@ -4490,10 +4488,7 @@ const GAUSS_TEMPLATES = {
     educt: {
       title: "Reactant: Opt+Freq (stationary point)",
       filename: "reactant_optfreq.gjf",
-      text: `%chk=reactant.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt freq scf=tight
+      text: `#p METHOD/BASIS opt freq=NoRaman  
 
 Reactant Opt+Freq
 
@@ -4505,10 +4500,7 @@ Reactant Opt+Freq
     prod: {
       title: "Product: Opt+Freq (stationary point)",
       filename: "product_optfreq.gjf",
-      text: `%chk=product.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt freq scf=tight
+      text: `#p METHOD/BASIS opt freq=NoRaman  
 
 Product Opt+Freq
 
@@ -4520,10 +4512,7 @@ Product Opt+Freq
     ts: {
       title: "TS: Opt(TS)+Freq (1 imaginary frequency)",
       filename: "ts_optfreq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt=(ts,calcfc,noeigentest) freq scf=tight
+      text: `#p METHOD/BASIS opt=(ts,calcfc,noeigen) freq=NoRaman  
 
 TS Opt(TS)+Freq
 
@@ -4535,13 +4524,10 @@ TS Opt(TS)+Freq
     irc_rev: {
       title: "IRC reverse (projected frequencies 3N−7)",
       filename: "irc_reverse_freq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+      text: `#p METHOD/BASIS irc=(reverse,calcfc,maxpoints=50,stepsize=-10) iop(1/73=2)
 
-! Alternative (faster but slightly less accurate):
-! #p METHOD/BASIS irc=(reverse,calcfc,recalc=5,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+! Alternative (slower but more accurate fpr projected frequencies):
+! #p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) iop(1/73=2)
 
 IRC reverse from TS (with projected frequencies)
 
@@ -4553,13 +4539,10 @@ IRC reverse from TS (with projected frequencies)
     irc_fwd: {
       title: "IRC forward (projected frequencies 3N−7)",
       filename: "irc_forward_freq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+      text: `#p METHOD/BASIS irc=(forward,calfc,maxpoints=50,stepsize=-10) iop(1/73=2)
 
-! Alternative (faster but slightly less accurate):
-! #p METHOD/BASIS irc=(forward,calcfc,recalc=5,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+! Alternative (slower but more accurate fpr projected frequencies):
+! #p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=-10) iop(1/73=2)
 
 IRC forward from TS (with projected frequencies)
 
@@ -4579,10 +4562,7 @@ IRC forward from TS (with projected frequencies)
     educt: {
       title: "Edukt: Opt+Freq (stationärer Punkt)",
       filename: "educt_optfreq.gjf",
-      text: `%chk=educt.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt freq scf=tight
+      text: `#p METHOD/BASIS opt freq=NoRaman 
 
 Edukt Opt+Freq
 
@@ -4594,10 +4574,7 @@ Edukt Opt+Freq
     prod: {
       title: "Produkt: Opt+Freq (stationärer Punkt)",
       filename: "product_optfreq.gjf",
-      text: `%chk=product.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt freq scf=tight
+      text: `#p METHOD/BASIS opt freq=NoRaman  
 
 Produkt Opt+Freq
 
@@ -4609,10 +4586,7 @@ Produkt Opt+Freq
     ts: {
       title: "TS: Opt(TS)+Freq (1 imag. freq)",
       filename: "ts_optfreq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS opt=(ts,calcfc,noeigentest) freq scf=tight
+      text: `#p METHOD/BASIS opt=(ts,calcfc,noeigentest) freq=NoRaman 
 
 TS Opt(TS)+Freq
 
@@ -4624,13 +4598,10 @@ TS Opt(TS)+Freq
     irc_rev: {
       title: "IRC reverse (projizierte Frequenzen 3N−7)",
       filename: "irc_reverse_freq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+      text: `#p METHOD/BASIS irc=(reverse,calcfc,maxpoints=50,stepsize=-10) iop(1/73=2)
 
-! Alternative (schneller, aber etwas ungenauer):
-! #p METHOD/BASIS irc=(reverse,calcfc,recalc=5,maxpoints=50,stepsize=-10) scf=tight iop(1/73=2)
+! Alternative (langsamer, aber genauer):
+! #p METHOD/BASIS irc=(reverse,calcall,maxpoints=50,stepsize=-10) iop(1/73=2)
 
 IRC reverse from TS (with projected frequencies)
 
@@ -4642,13 +4613,10 @@ IRC reverse from TS (with projected frequencies)
     irc_fwd: {
       title: "IRC forward (projizierte Frequenzen 3N−7)",
       filename: "irc_forward_freq.gjf",
-      text: `%chk=ts.chk
-%nprocshared=8
-%mem=8GB
-#p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+      text: `#p METHOD/BASIS irc=(forward,calfc,maxpoints=50,stepsize=-10) iop(1/73=2)
 
-! Alternative (schneller, aber etwas ungenauer):
-! #p METHOD/BASIS irc=(forward,calcfc,recalc=5,maxpoints=50,stepsize=10) scf=tight iop(1/73=2)
+! Alternative langsamer, aber genauer):
+! #p METHOD/BASIS irc=(forward,calcall,maxpoints=50,stepsize=-10) iop(1/73=2)
 
 IRC forward from TS (with projected frequencies)
 
@@ -4666,70 +4634,87 @@ const ORCA_TEMPLATES = {
   en:{
     orca_educt:{
       title:"Reactant: Opt+Freq (ORCA)",
-      filename:"reactant_optfreq.inp",
-      text:`! METHOD BASIS Opt Freq TightSCF
-%pal nprocs 8 end
+      filename:"E.inp",
+      text:`! METHOD BASIS Opt Freq
 
 * xyz 0 1
-<coordinates>
+COORDINATES
 *
+
+
+
 `
     },
     orca_prod:{
       title:"Product: Opt+Freq (ORCA)",
-      filename:"product_optfreq.inp",
-      text:`! METHOD BASIS Opt Freq TightSCF
-%pal nprocs 8 end
+      filename:"P.inp",
+      text:`! METHOD BASIS Opt Freq
 
 * xyz 0 1
-<coordinates>
+COORDINATES
 *
+
+
+
 `
     },
     orca_ts:{
       title:"TS: OptTS+Freq (ORCA)",
-      filename:"ts_optfreq.inp",
-      text:`! METHOD BASIS OptTS Freq TightSCF
-%pal nprocs 8 end
+      filename:"TS.inp",
+      text:`! METHOD BASIS OptTS Freq
+
+%geom
+Calc_Hess true
+NumHess true
+end
 
 * xyz 0 1
-<coordinates>
+COORDINATES
 *
+
+
+
 `
     },
     orca_irc_rev:{
       title:"IRC: reverse/backward trajectory (ORCA)",
-      filename:"irc.inp",
-      text:`! METHOD BASIS TightSCF
-%pal nprocs 8 end
+      filename:"rev.inp",
+      text:`! METHOD BASIS IRC
 
 %irc
-  Direction both
-  MaxIter 50
-  Stepsize 10
-  InitHess read
-  Hess_Filename "TS.hess"
+  MaxIter 100
+  PrintLevel 1
+  Direction backward
+  InitHess calc_anfreq
+  hessMode 0
+  Scale_Init_Displ 0.10
+  Scale_Displ_SD   0.10
+  Adapt_Scale_Displ false
 end
 
-* xyzfile 0 1 ts.xyz
+* xyz 0 1
+COORDINATES
 *
 `
     },
     orca_irc_fwd:{
       title:"IRC: forward trajectory (ORCA)",
-      filename:"irc.inp",
-      text:`! METHOD BASIS TightSCF
-%pal nprocs 8 end
+      filename:"fwd.inp",
+      text:`! METHOD BASIS IRC
 
 %irc
-  Direction both
-  MaxIter 50
-  Stepsize 10
-  InitHess read
-  Hess_Filename "TS.hess"
+  MaxIter 100
+  PrintLevel 1
+  Direction forward
+  InitHess calc_anfreq
+  hessMode 0
+  Scale_Init_Displ 0.10
+  Scale_Displ_SD   0.10
+  Adapt_Scale_Displ false
 end
 
-* xyzfile 0 1 ts.xyz
+* xyz 0 1
+COORDINATES
 *
 `
     }
@@ -4737,70 +4722,87 @@ end
   de:{
     orca_educt:{
       title:"Edukt: Opt+Freq (ORCA)",
-      filename:"educt_optfreq.inp",
-      text:`! METHODE BASIS Opt Freq TightSCF
-%pal nprocs 8 end
+      filename:"E.inp",
+      text:`! METHOD BASIS Opt Freq
 
 * xyz 0 1
-<Koordinaten>
+COORDINATES
 *
+
+
+
 `
     },
     orca_prod:{
       title:"Produkt: Opt+Freq (ORCA)",
-      filename:"product_optfreq.inp",
-      text:`! METHODE BASIS Opt Freq TightSCF
-%pal nprocs 8 end
+      filename:"P.inp",
+      text:`! METHOD BASIS Opt Freq
 
 * xyz 0 1
-<Koordinaten>
+COORDINATES
 *
+
+
+
 `
     },
     orca_ts:{
       title:"TS: OptTS+Freq (ORCA)",
-      filename:"ts_optfreq.inp",
-      text:`! METHODE BASIS OptTS Freq TightSCF
-%pal nprocs 8 end
+      filename:"TS.inp",
+      text:`! METHOD BASIS OptTS Freq
+
+%geom
+Calc_Hess true
+NumHess true
+end
 
 * xyz 0 1
-<Koordinaten>
+COORDINATES
 *
+
+
+
 `
     },
     orca_irc_rev:{
       title:"IRC: reverse/backward Trajektorie (ORCA)",
-      filename:"irc.inp",
-      text:`! METHODE BASIS TightSCF
-%pal nprocs 8 end
+      filename:"rev.inp",
+      text:`! METHOD BASIS IRC
 
 %irc
-  Direction both
-  MaxIter 50
-  Stepsize 10
-  InitHess read
-  Hess_Filename "TS.hess"
+  MaxIter 100
+  PrintLevel 1
+  Direction backward
+  InitHess calc_anfreq
+  hessMode 0
+  Scale_Init_Displ 0.10
+  Scale_Displ_SD   0.10
+  Adapt_Scale_Displ false
 end
 
-* xyzfile 0 1 ts.xyz
+* xyz 0 1
+COORDINATES
 *
 `
     },
     orca_irc_fwd:{
       title:"IRC: forward Trajektorie (ORCA)",
-      filename:"irc.inp",
-      text:`! METHODE BASIS TightSCF
-%pal nprocs 8 end
+      filename:"fwd.inp",
+      text:`! METHOD BASIS IRC
 
 %irc
-  Direction both
-  MaxIter 50
-  Stepsize 10
-  InitHess read
-  Hess_Filename "TS.hess"
+  MaxIter 100
+  PrintLevel 1
+  Direction forward
+  InitHess calc_anfreq
+  hessMode 0
+  Scale_Init_Displ 0.10
+  Scale_Displ_SD   0.10
+  Adapt_Scale_Displ false
 end
 
-* xyzfile 0 1 ts.xyz
+* xyz 0 1
+COORDINATES
 *
 `
     }
@@ -4822,7 +4824,7 @@ function openModal(key){
   const m = getTemplate(key);
   if (!m) return;
   $("modalTitle").textContent = m.title || "";
-  $("modalPre").textContent = (m.text || "").trimEnd();
+  $("modalPre").textContent = (m.text || "");
   $("modal").style.display = "block";
   $("modal").dataset.key = key;
 
