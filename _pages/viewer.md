@@ -8,69 +8,96 @@ classes: wide
 ---
 
 <style>
-/* 1) Jekyll/Theme-Überschrift (page title) auf dieser Seite ausblenden */
-.page__title { display: none !important; }
+  .page__title { display: none !important; }
 
-/* 2) Iframe-Container: 90% der Viewportbreite (= 5% Rand links/rechts),
-      zentriert und unabhängig vom Theme-Container */
-.ansatzrechner-wrap{
-  width: 94vw;
-  max-width: 94vw;
-  margin-left: calc(50% - 48.5vw);
-  margin-right: calc(50% - 45.5vw);
-}
+  body {
+    background: #f7f7f8 !important;
+  }
 
-/* 3) Iframe sauber block-level, damit keine komischen Inline-Abstände entstehen */
-.ansatzrechner-wrap iframe{
-  display: block;
-  width: 100%;
-  border: 0;
-  border-radius: 12px;
-}
+  .masthead,
+  .masthead__inner-wrap,
+  .greedy-nav,
+  .greedy-nav a,
+  .greedy-nav__toggle,
+  .masthead__menu {
+    background: #fff !important;
+  }
 
-/* 1) „Untergrund“ der Seite grau */
-body { background: #f7f7f8 !important; }
+  .initial-content,
+  #main,
+  .page,
+  .page__inner-wrap,
+  .page__content,
+  .archive,
+  .layout--single {
+    background: transparent !important;
+  }
 
-/* 2) Header/Nav bleibt weiß */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav a,
-.greedy-nav__toggle,
-.masthead__menu {
-  background: #fff !important;
-}
+  .page__content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+  }
 
-/* 3) Content-Wrapper transparent, damit das Grau durchkommt */
-.initial-content,
-#main,
-.page,
-.page__inner-wrap,
-.page__content,
-.archive,
-.layout--single {
-  background: transparent !important;
-}
+  .viewer-wrap {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
 
-/* 4) 5% Rand links/rechts im Content */
-.page__content{
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
-}
+  .viewer-wrap iframe {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 140px);
+    border: 0;
+    border-radius: 0;
+  }
 
-/* Optional: Footer wieder weiß */
-.page__footer,
-.page__footer footer {
-  background: #fff !important;
-}
-
-
+  .page__footer,
+  .page__footer footer {
+    background: #fff !important;
+  }
 </style>
 
-<div class="ansatzrechner-wrap">
+<div class="viewer-wrap">
   <iframe
+    id="viewer-frame"
     src="{{ '/assets/viewer/index.html' | relative_url }}"
-    style="height: calc(100vh - 180px);"
-    loading="lazy"
-  ></iframe>
+    loading="lazy">
+  </iframe>
 </div>
+
+<script>
+  function resizeViewerFrame() {
+    const iframe = document.getElementById("viewer-frame");
+    if (!iframe) return;
+
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      const newHeight = Math.max(
+        doc.body.scrollHeight,
+        doc.documentElement.scrollHeight,
+        doc.body.offsetHeight,
+        doc.documentElement.offsetHeight
+      );
+      iframe.style.height = newHeight + "px";
+    } catch (e) {
+      iframe.style.height = "calc(100vh - 140px)";
+    }
+  }
+
+  window.addEventListener("load", resizeViewerFrame);
+  window.addEventListener("resize", resizeViewerFrame);
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const iframe = document.getElementById("viewer-frame");
+    if (!iframe) return;
+
+    iframe.addEventListener("load", function () {
+      resizeViewerFrame();
+      setTimeout(resizeViewerFrame, 200);
+      setTimeout(resizeViewerFrame, 800);
+    });
+  });
+</script>
