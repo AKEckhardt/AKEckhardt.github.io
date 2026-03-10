@@ -11,9 +11,10 @@ author_profile: true
 <td style="width:70%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/EckhardtLab.png" alt="Link" width="50%" height="auto%"/>
 <br/><br/>  
 <p style='text-align: justify;'><font size="4">
-Our research focuses on the preparation, characterization and reactivity of small reactive intermediates and molecules related to interstellar media and prebiotic chemistry. 
-For the preparation and spectroscopic characterization of these molecules we employ (in)organic synthesis, photolysis or high-vacuum flash pyrolysis in combination with cryogenic matrix isolation spectroscopy (IR, UV/Vis and EPR). 
-All prepared molecular structures are validated by comparison of experimental and quantum chemical calculated properties. 
+The Eckhardt Lab develops experimental molecular chemistry at the interface of organic and physical chemistry. We investigate the structure, spectroscopy, 
+and intrinsic reactivity of reactive intermediates and small molecules using synthesis, photolysis, high-vacuum flash pyrolysis, cryogenic matrix isolation in combination with 
+EPR,IR, and UV-Vis spectroscopy. By combining experiment with quantum-chemical analysis, we uncover fundamental structure–reactivity relationships. 
+Selected applications address molecular processes relevant to astrochemical and prebiotic environments.
 </font>
 </p>
 
