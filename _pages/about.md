@@ -12,7 +12,7 @@ author_profile: true
 <br/><br/>  
 <p style='text-align: justify;'><font size="4">
 The Eckhardt Lab develops experimental molecular chemistry at the interface of organic and physical chemistry. We investigate the structure, spectroscopy, 
-and intrinsic reactivity of reactive intermediates and small molecules using synthesis, photolysis, high-vacuum flash pyrolysis, cryogenic matrix isolation in combination with 
+and reactivity of reactive intermediates and small molecules using synthesis, photolysis, high-vacuum flash pyrolysis, cryogenic matrix isolation in combination with 
 EPR,IR, and UV-Vis spectroscopy. By combining experiment with quantum-chemical analysis, we uncover fundamental structure–reactivity relationships. 
 Selected applications address molecular processes relevant to astrochemical and prebiotic environments.
 </font>
