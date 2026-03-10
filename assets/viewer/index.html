@@ -1242,7 +1242,7 @@ body { overflow: hidden; }
   <button class="btn secondary" id="xBreakApply">OK</button>
   <button class="btn secondary" id="xBreakClear">Unterbrechung löschen</button>
 </div>
-<div class="small" style="margin-top:6px; color:var(--muted);">Beispiel: <span class="kbd">3500-2900, 1800-400</span> · Bereiche können überlappen nicht.</div>
+<div class="small" style="margin-top:6px; color:var(--muted);">Beispiel: <span class="kbd">3500-2900, 1800-400</span> · Bereiche können nicht überlappen.</div>
 <div class="small" style="margin-top:10px;">Navigator: Innen=Move · Ränder/Ecken=Resize · Außen=Neue Box</div>
 </div>
 <!-- Text formatting -->
@@ -1360,7 +1360,7 @@ body { overflow: hidden; }
 <button class="calcBtn eq" data-action="eval">=</button>
 </div>
 <div class="small" style="margin-top:10px; color:var(--muted); line-height:1.35;">
-                **X** = Wellenzahl-Achse (Basis). Funktionen wirken elementweise (z.B. <code>ln(S1)</code>).<br/>
+                X = Wellenzahl-Achse (Basis). Funktionen wirken elementweise (z.B. ln(S1)).<br/>
                 Tipp: <span class="pill">Strg/⌘ + Enter</span> berechnet.
               </div>
 </div>
@@ -1468,11 +1468,11 @@ body { overflow: hidden; }
 
 <div class="row" style="margin-top:10px; gap:10px; flex-wrap:wrap;">
 <div style="flex:1; min-width:200px;">
-<div class="lbl">Bereich Start (cm<span class="sup">−1</span>)</div>
+<div class="lbl">Bereich Start (cm⁻¹)</div>
 <input class="input" id="bandXStart" step="1" type="number"/>
 </div>
 <div style="flex:1; min-width:200px;">
-<div class="lbl">Bereich Ende (cm<span class="sup">−1</span>)</div>
+<div class="lbl">Bereich Ende (cm⁻¹)</div>
 <input class="input" id="bandXEnd" step="1" type="number"/>
 </div>
 <div style="flex:1; min-width:200px;">
@@ -1491,7 +1491,7 @@ body { overflow: hidden; }
 <button class="btn secondary" id="btnCopyBandsTable">Tabelle kopieren</button>
 </div>
 <div style="margin-top:12px;">
-<div class="lbl">Erkannte Banden (cm<span class="sup">−1</span> (rel%))</div>
+<div class="lbl">Erkannte Banden (cm⁻¹ (rel%))</div>
 <textarea class="input" id="bandResults" readonly="" style="width:100%; height:140px; font-family:var(--mono); resize:vertical;"></textarea>
 </div>
 <div style="margin-top:12px;">
@@ -1500,7 +1500,7 @@ body { overflow: hidden; }
 <table class="bandsTable">
     <thead>
       <tr>
-        <th style="width:34%;">Wellenzahl (cm<span class="sup">−1</span>)</th>
+        <th style="width:34%;">Wellenzahl (cm⁻¹)</th>
         <th style="width:33%;">Intensität</th>
         <th style="width:20%;">Rel. %</th>
       </tr>
@@ -1508,6 +1508,39 @@ body { overflow: hidden; }
     <tbody id="bandsTbody"></tbody>
   </table>
 </div>
+</div>
+</div>
+
+<!-- Band assignment auto ranges -->
+<div class="modalPanel hidden" data-panel="bandassignauto">
+<div class="small">Lege Spektralbereiche und die Toleranz in cm⁻¹ fest. Nur Peaks in diesen Bereichen werden automatisch zugeordnet.</div>
+<div class="row" style="margin-top:12px; gap:10px; flex-wrap:wrap; align-items:center;">
+<label class="row small" style="gap:8px; align-items:center; margin-right:6px;">
+<input id="assignTolUseView" type="checkbox" checked>
+<span>Aktuelle Ansicht übernehmen</span>
+</label>
+<button class="btn secondary" id="btnAssignTolAddRow" type="button">Bereich hinzufügen</button>
+<button class="btn secondary" id="btnAssignTolClear" type="button">Alle Bereiche löschen</button>
+</div>
+<div class="small" id="assignTolInfo" style="margin-top:10px;">Nur Peaks innerhalb der definierten Bereiche werden zugeordnet.</div>
+<div style="margin-top:12px;">
+  <div class="lbl">Bereiche für Auto-Zuordnung</div>
+  <div class="bandsTableWrap">
+    <table class="bandsTable">
+      <thead>
+        <tr>
+          <th style="width:30%;">Start (cm⁻¹)</th>
+          <th style="width:30%;">Ende (cm⁻¹)</th>
+          <th style="width:24%;">Toleranz (± cm⁻¹)</th>
+          <th style="width:16%;">Aktion</th>
+        </tr>
+      </thead>
+      <tbody id="assignTolTbody"></tbody>
+    </table>
+  </div>
+</div>
+<div class="row" style="margin-top:12px; gap:10px; flex-wrap:wrap;">
+<button class="btn primary" id="btnRunAutoAssignRanges" type="button">Automatische Zuordnung starten</button>
 </div>
 </div>
 </div>
@@ -1630,6 +1663,7 @@ function openModal(panelKey, title){
 
   if(panelKey==="calc"){ try{ calcOnOpen(); }catch(_e){} }
   if(panelKey==="bandsearch"){ try{ bandOnOpen(); }catch(_e){} }
+  if(panelKey==="bandassignauto"){ try{ bandAssignAutoOnOpen(); }catch(_e){} }
 
 
   // Ensure modal texts (dynamic content) are translated to current language
@@ -1655,7 +1689,7 @@ function closeModal(){
   document.querySelectorAll(".iconBtn[data-modal]").forEach(btn=>{
     btn.addEventListener("click", ()=>{
       const key=btn.dataset.modal;
-      const titles={zoom:"Zoom", view:"Ansicht", stack:"Stacking", boxes:"Boxen", calc:"Spektrenrechner", bandsearch:"Bandensuche", integrals:"Integrale"};
+      const titles={zoom:"Zoom", view:"Ansicht", stack:"Stacking", boxes:"Boxen", calc:"Spektrenrechner", bandsearch:"Bandensuche", bandassignauto:"Banden-Zuordnung", integrals:"Integrale"};
       openModal(key, titles[key]||"Werkzeuge");
     });
   });
@@ -2598,7 +2632,7 @@ spectra:[],
     plotDragIntervalMs:33,
     xUnits:"cm⁻¹",
     yUnits:"a.u."
-    ,bandAssign:{enabled:true,showLabel:true,links:[],selectedId:null,_exporting:false}
+    ,bandAssign:{enabled:true,showLabel:true,links:[],selectedId:null,_exporting:false,autoRanges:[]}
     ,xBreak:{enabled:false,ranges:[[3500,2900],[1800,400]],gapPx:34}
     ,freeText:{enabled:true,items:[],selectedId:null,placing:false,_exporting:false}
     ,legend:{enabled:false,xFrac:0.70,yFrac:0.08}
@@ -2821,6 +2855,59 @@ const I18N_MAP = {
 
   "SVG exportieren": {en:"Export SVG", de:"SVG exportieren"},
   "PNG exportieren": {en:"Export PNG", de:"PNG exportieren"},
+  "Werkzeuge": {en:"Tools", de:"Werkzeuge"},
+  "Boxen": {en:"Boxes", de:"Boxen"},
+  "X-Titel Stil": {en:"X title style", de:"X-Titel Stil"},
+  "Y-Titel Stil": {en:"Y title style", de:"Y-Titel Stil"},
+  "Textstil für markierten Text (oder Standardstil).": {en:"Text style for the selected text (or default style).", de:"Textstil für markierten Text (oder Standardstil)."},
+  "Schriftart": {en:"Font", de:"Schriftart"},
+  "Größe": {en:"Size", de:"Größe"},
+  "Unterstrichen": {en:"Underlined", de:"Unterstrichen"},
+  "Hoch/Tief": {en:"Super/Sub", de:"Hoch/Tief"},
+  "Normal": {en:"Normal", de:"Normal"},
+  "Hochgestellt": {en:"Superscript", de:"Hochgestellt"},
+  "Tiefgestellt": {en:"Subscript", de:"Tiefgestellt"},
+  "Aktives Spektrum Transmission↔Absorbance": {en:"Active spectrum transmission↔absorbance", de:"Aktives Spektrum Transmission↔Absorbance"},
+  "Horizontal": {en:"Horizontal", de:"Horizontal"},
+  "z.B.": {en:"e.g.", de:"z.B."},
+  "Beispiel:": {en:"Example:", de:"Beispiel:"},
+  "Bereiche können nicht überlappen.": {en:"Ranges must not overlap.", de:"Bereiche können nicht überlappen."},
+  "Rechner": {en:"Calculator", de:"Rechner"},
+  "Spektrenliste": {en:"Spectra list", de:"Spektrenliste"},
+  "Name Ergebnis (optional)": {en:"Result name (optional)", de:"Name Ergebnis (optional)"},
+  "Suchen (Name/Quelle)…": {en:"Search (name/source)…", de:"Suchen (Name/Quelle)…"},
+  "Kein aktives Spektrum": {en:"No active spectrum", de:"Kein aktives Spektrum"},
+  "Modus: automatisch": {en:"Mode: automatic", de:"Modus: automatisch"},
+  "Minima": {en:"Minima", de:"Minima"},
+  "Maxima": {en:"Maxima", de:"Maxima"},
+  "gefunden:": {en:"found:", de:"gefunden:"},
+  "Klicke „Integral hinzufügen“: das Modal schließt. Du kannst dann mehrere Integrale nacheinander im Plot definieren (LMB ziehen) und Grenzen verschieben. OK beendet den Modus und öffnet diese Liste wieder.": {en:"Click “Add integral”: the modal closes. You can then define several integrals in sequence in the plot (drag with LMB) and move their limits. OK ends the mode and opens this list again.", de:"Klicke „Integral hinzufügen“: das Modal schließt. Du kannst dann mehrere Integrale nacheinander im Plot definieren (LMB ziehen) und Grenzen verschieben. OK beendet den Modus und öffnet diese Liste wieder."},
+  "Variablen bereit:": {en:"Variables ready:", de:"Variablen bereit:"},
+  "Bitte eine Formel eingeben.": {en:"Please enter a formula.", de:"Bitte eine Formel eingeben."},
+  "Erzeugt:": {en:"Created:", de:"Erzeugt:"},
+  "Punkte": {en:"points", de:"Punkte"},
+  "X = Wellenzahl-Achse (Basis). Funktionen wirken elementweise (z.B. ln(S1)).": {en:"X = wavenumber axis (base). Functions operate element-wise (e.g. ln(S1)).", de:"X = Wellenzahl-Achse (Basis). Funktionen wirken elementweise (z.B. ln(S1))."},
+  "schließt · Klick außerhalb schließt": {en:"closes · click outside closes", de:"schließt · Klick außerhalb schließt"},
+  "Banden-Zuordnung: 2 oder 3 sichtbare Spektren benötigt": {en:"Band assignment: 2 or 3 visible spectra required", de:"Banden-Zuordnung: 2 oder 3 sichtbare Spektren benötigt"},
+  "Fett": {en:"Bold", de:"Fett"},
+  "Kursiv": {en:"Italic", de:"Kursiv"},
+  "Spektren auswählen": {en:"Select spectra", de:"Spektren auswählen"},
+  "Lege Spektralbereiche und die Toleranz in cm⁻¹ fest. Nur Peaks in diesen Bereichen werden automatisch zugeordnet.": {en:"Define spectral ranges and the tolerance in cm⁻¹. Only peaks inside these ranges will be assigned automatically.", de:"Lege Spektralbereiche und die Toleranz in cm⁻¹ fest. Nur Peaks in diesen Bereichen werden automatisch zugeordnet."},
+  "Aktuelle Ansicht übernehmen": {en:"Use current view", de:"Aktuelle Ansicht übernehmen"},
+  "Bereich hinzufügen": {en:"Add range", de:"Bereich hinzufügen"},
+  "Alle Bereiche löschen": {en:"Delete all ranges", de:"Alle Bereiche löschen"},
+  "Nur Peaks innerhalb der definierten Bereiche werden zugeordnet.": {en:"Only peaks inside the defined ranges will be assigned.", de:"Nur Peaks innerhalb der definierten Bereiche werden zugeordnet."},
+  "Bereiche für Auto-Zuordnung": {en:"Ranges for auto-assignment", de:"Bereiche für Auto-Zuordnung"},
+  "Start (cm⁻¹)": {en:"Start (cm⁻¹)", de:"Start (cm⁻¹)"},
+  "Ende (cm⁻¹)": {en:"End (cm⁻¹)", de:"Ende (cm⁻¹)"},
+  "Toleranz (± cm⁻¹)": {en:"Tolerance (± cm⁻¹)", de:"Toleranz (± cm⁻¹)"},
+  "Aktion": {en:"Action", de:"Aktion"},
+  "Automatische Zuordnung starten": {en:"Start auto-assignment", de:"Automatische Zuordnung starten"},
+  "Noch keine Bereiche definiert.": {en:"No ranges defined yet.", de:"Noch keine Bereiche definiert."},
+  "Bereiche:": {en:"Ranges:", de:"Bereiche:"},
+  "Bitte mindestens einen Bereich anlegen.": {en:"Please define at least one range.", de:"Bitte mindestens einen Bereich anlegen."},
+  "Keiner der definierten Bereiche liegt in der aktuellen Ansicht.": {en:"None of the defined ranges is inside the current view.", de:"Keiner der definierten Bereiche liegt in der aktuellen Ansicht."},
+  "Keine Zuordnungen in den definierten Bereichen gefunden.": {en:"No assignments found in the defined ranges.", de:"Keine Zuordnungen in den definierten Bereichen gefunden."},
 
 };
 
@@ -4635,6 +4722,13 @@ function openPeakPanel(centerX=null){
   const btnCopyBands     = document.getElementById("btnCopyBands");
   const btnCopyBandsTable = document.getElementById("btnCopyBandsTable");
 
+  const assignTolTbody = document.getElementById("assignTolTbody");
+  const assignTolInfo = document.getElementById("assignTolInfo");
+  const assignTolUseView = document.getElementById("assignTolUseView");
+  const btnAssignTolAddRow = document.getElementById("btnAssignTolAddRow");
+  const btnAssignTolClear = document.getElementById("btnAssignTolClear");
+  const btnRunAutoAssignRanges = document.getElementById("btnRunAutoAssignRanges");
+
   function fmtBandX(x){
     // Publication-style labels: always 0.1 cm⁻¹
     const v = Number(x);
@@ -4692,7 +4786,7 @@ function openPeakPanel(centerX=null){
   function bandOnOpen(){
     const sp = getActiveSpectrum();
     if(!sp){
-      if(bandModeHint) bandModeHint.textContent = "Kein aktives Spektrum";
+      if(bandModeHint) bandModeHint.textContent = translateString("Kein aktives Spektrum", getLang());
       if(bandResults) bandResults.value = "";
       return;
     }
@@ -4707,7 +4801,7 @@ function openPeakPanel(centerX=null){
     // hint
     const u = (sp.yUnits || "").toLowerCase();
     const guess = (u.includes("%t") || u.includes("t")) ? "Minima (Banden als Dips)" : "Maxima (Banden als Peaks)";
-    if(bandModeHint) bandModeHint.textContent = `Modus: automatisch (${guess})`;
+    if(bandModeHint) bandModeHint.textContent = `${translateString("Modus: automatisch", getLang())} (${translateString(guess, getLang())})`;
     updateBandResultsUI(sp);
     updateBandsTableUI(sp);
     updateBandsTableUI(sp);
@@ -5015,9 +5109,10 @@ function openPeakPanel(centerX=null){
 
   // ===== Band assignment across 3 stacked spectra (publication style) =====
   function ensureBandAssignState(){
-    if(!S.bandAssign) S.bandAssign={enabled:true, showLabel:true, links:[], selectedId:null, _exporting:false};
+    if(!S.bandAssign) S.bandAssign={enabled:true, showLabel:true, links:[], selectedId:null, _exporting:false, autoRanges:[]};
     if(S.bandAssign.showLabel==null) S.bandAssign.showLabel=true;
     if(!Array.isArray(S.bandAssign.links)) S.bandAssign.links=[];
+    if(!Array.isArray(S.bandAssign.autoRanges)) S.bandAssign.autoRanges=[];
     // Style for dashed links + label (defaults: Arial + black)
     const defStyle={fontFamily: "Arial, Helvetica, sans-serif", fontSize:11, color:"#000000", bold:false, italic:false, underline:false, script:"normal"};
     if(!S.bandAssign.labelStyle) S.bandAssign.labelStyle = {...defStyle};
@@ -5040,6 +5135,150 @@ function openPeakPanel(centerX=null){
     }
   }
 
+  function bandAssignSuggestedTolerance(xA, xB){
+    const cfg=getTwoOrThreeVisibleSpecs();
+    const ref = cfg ? (cfg.n===3 ? cfg.mid : cfg.anchor) : getActiveSpectrum();
+    if(!ref || !ref.x || !ref.x.length) return 30;
+    const xMin=Math.min(xA,xB), xMax=Math.max(xA,xB);
+    const dx=estimateDxInRange(ref.x, xMin, xMax);
+    const tol=Math.min(260, Math.max(12, dx*70));
+    return Math.round(tol);
+  }
+
+  function normalizeBandAssignAutoRanges(ranges){
+    const raw=Array.isArray(ranges) ? ranges : [];
+    const out=[];
+    for(const r of raw){
+      const a=Number(r && (r.start ?? r.x1));
+      const b=Number(r && (r.end ?? r.x2));
+      const tol=Number(r && r.tol);
+      if(!isFinite(a) || !isFinite(b) || !isFinite(tol)) continue;
+      if(a===b || !(tol>0)) continue;
+      out.push({start:Math.min(a,b), end:Math.max(a,b), tol});
+    }
+    out.sort((p,q)=>p.start-q.start || p.end-q.end);
+    for(let i=1;i<out.length;i++){
+      if(out[i].start < out[i-1].end - 1e-9){
+        throw new Error("Bereiche können nicht überlappen.");
+      }
+    }
+    return out;
+  }
+
+  function readBandAssignAutoRangesLoose(src){
+    const raw=Array.isArray(src) ? src : [];
+    const out=[];
+    for(const r of raw){
+      const a=Number(r && (r.start ?? r.x1));
+      const b=Number(r && (r.end ?? r.x2));
+      const tol=Number(r && r.tol);
+      if(!isFinite(a) || !isFinite(b)) continue;
+      const t=(isFinite(tol) && tol>0) ? tol : bandAssignSuggestedTolerance(a,b);
+      if(a===b) continue;
+      out.push({start:Math.min(a,b), end:Math.max(a,b), tol:t});
+    }
+    return out;
+  }
+
+  function getBandAssignCurrentViewRange(){
+    const v=(S && S.view) ? S.view : null;
+    if(!v) return null;
+    const start=Math.min(v.xMin,v.xMax);
+    const end=Math.max(v.xMin,v.xMax);
+    return {start, end, tol:bandAssignSuggestedTolerance(start,end)};
+  }
+
+  function bandAssignAutoRangesForView(xMin, xMax, manualRanges=null){
+    const src = manualRanges!=null ? manualRanges : (S && S.bandAssign ? S.bandAssign.autoRanges : []);
+    const ranges = normalizeBandAssignAutoRanges(src);
+    const out=[];
+    for(const r of ranges){
+      const a=Math.max(r.start, xMin);
+      const b=Math.min(r.end,   xMax);
+      if(b <= a) continue;
+      out.push({start:a, end:b, tol:r.tol, fullStart:r.start, fullEnd:r.end});
+    }
+    return out;
+  }
+
+  function addBandAssignAutoRange(start=null, end=null, tol=null){
+    ensureBandAssignState();
+    const v=(S && S.view) ? S.view : null;
+    const xA=isFinite(Number(start)) ? Number(start) : (v ? Math.min(v.xMin,v.xMax) : 400);
+    const xB=isFinite(Number(end))   ? Number(end)   : (v ? Math.max(v.xMin,v.xMax) : 4000);
+    const x1=Math.min(xA,xB), x2=Math.max(xA,xB);
+    const t=isFinite(Number(tol)) && Number(tol)>0 ? Number(tol) : bandAssignSuggestedTolerance(x1,x2);
+    if(!Array.isArray(S.bandAssign.autoRanges)) S.bandAssign.autoRanges=[];
+    S.bandAssign.autoRanges.push({start:x1, end:x2, tol:t});
+    renderBandAssignAutoRangesUI();
+  }
+
+  function renderBandAssignAutoRangesUI(){
+    ensureBandAssignState();
+    if(!assignTolTbody) return;
+    const ranges = readBandAssignAutoRangesLoose(S.bandAssign.autoRanges);
+    S.bandAssign.autoRanges = ranges;
+    assignTolTbody.innerHTML="";
+    const lang=getLang();
+    if(!ranges.length){
+      const tr=document.createElement("tr");
+      const td=document.createElement("td");
+      td.colSpan=4;
+      td.className="small";
+      td.textContent=translateString("Noch keine Bereiche definiert.", lang);
+      tr.appendChild(td);
+      assignTolTbody.appendChild(tr);
+    } else {
+      ranges.forEach((r,idx)=>{
+        const tr=document.createElement("tr");
+        tr.innerHTML=`
+          <td><input class="input" type="number" step="0.1" data-role="start" data-idx="${idx}" value="${fmtUI(r.start,1)}"></td>
+          <td><input class="input" type="number" step="0.1" data-role="end" data-idx="${idx}" value="${fmtUI(r.end,1)}"></td>
+          <td><input class="input" type="number" min="0.1" step="0.1" data-role="tol" data-idx="${idx}" value="${fmtUI(r.tol,1)}"></td>
+          <td><button class="btn secondary" type="button" data-role="delete" data-idx="${idx}" title="${translateString("Löschen", lang)}">✕</button></td>`;
+        assignTolTbody.appendChild(tr);
+      });
+    }
+    if(assignTolInfo){
+      const n=ranges.length;
+      assignTolInfo.textContent = n
+        ? translateString("Nur Peaks innerhalb der definierten Bereiche werden zugeordnet.", lang) + ` ${translateString("Bereiche:", lang)} ${n}`
+        : translateString("Nur Peaks innerhalb der definierten Bereiche werden zugeordnet.", lang);
+    }
+    try{ translateDOM(assignTolTbody); }catch(_e){}
+  }
+
+  function readBandAssignAutoRangesFromUILoose(){
+    if(!assignTolTbody) return [];
+    const starts=[...assignTolTbody.querySelectorAll('input[data-role="start"]')];
+    const ends=[...assignTolTbody.querySelectorAll('input[data-role="end"]')];
+    const tols=[...assignTolTbody.querySelectorAll('input[data-role="tol"]')];
+    const n=Math.max(starts.length, ends.length, tols.length);
+    const rows=[];
+    for(let i=0;i<n;i++){
+      rows.push({
+        start: Number(starts[i]?.value),
+        end: Number(ends[i]?.value),
+        tol: Number(tols[i]?.value)
+      });
+    }
+    return rows;
+  }
+
+  function readBandAssignAutoRangesFromUI(){
+    return normalizeBandAssignAutoRanges(readBandAssignAutoRangesFromUILoose());
+  }
+
+  function bandAssignAutoOnOpen(){
+    ensureBandAssignState();
+    if(assignTolUseView) assignTolUseView.checked = true;
+    if(!Array.isArray(S.bandAssign.autoRanges)) S.bandAssign.autoRanges=[];
+    if(!S.bandAssign.autoRanges.length && assignTolUseView && assignTolUseView.checked){
+      const cur=getBandAssignCurrentViewRange();
+      if(cur) S.bandAssign.autoRanges=[cur];
+    }
+    renderBandAssignAutoRangesUI();
+  }
 
 function bandAssignDefaultX(xGuess=null){
   if(xGuess!=null && isFinite(xGuess)) return Number(xGuess);
@@ -5051,39 +5290,67 @@ function bandAssignDefaultX(xGuess=null){
 function addBandAssignmentManual(xGuess=null){
   ensureBandAssignState();
   if(!S.view){ showStatusToast("Keine Ansicht", 1200); return; }
-  const triple=getThreeVisibleSpecs();
-  if(!triple){
-    showStatusToast("Zum Hinzufügen einer Zuordnung müssen genau 3 Spektren sichtbar sein.", 1800);
+
+  const cfg=getTwoOrThreeVisibleSpecs();
+  if(!cfg){
+    showStatusToast("Zum Hinzufügen einer Zuordnung müssen 2 oder 3 Spektren sichtbar sein.", 1800);
     return;
   }
-  const {bottom, mid, top}=triple;
-  // remember layout so sign-based switching works while dragging
-  S.bandAssign._layout={bottomId:bottom.id, midId:mid.id, topId:top.id};
 
   const x0 = bandAssignDefaultX(xGuess);
   if(x0==null || !isFinite(x0)){ showStatusToast("Keine X-Position verfügbar", 1300); return; }
 
-  const midPk = snapExtremumAssign(mid, x0, "both");
-  const midX  = midPk ? midPk.x : x0;
-  const sign  = midPk ? (midPk.yNo>=0 ? 1 : -1) : 1;
-
-  const otherSpec = (sign>=0) ? top : bottom;
-  const otherMode = isTransUnits(otherSpec) ? "min" : "max";
-  const otherPk = snapExtremumAssign(otherSpec, midX, otherMode) || snapExtremumAssign(otherSpec, x0, otherMode);
-  const otherX  = otherPk ? otherPk.x : midX;
-
   const id = `ml_${Date.now().toString(36)}_${Math.random().toString(36).slice(2,7)}`;
-  const link = {
-    id,
-    midSpecId: mid.id,
-    otherSpecId: otherSpec.id,
-    midX, otherX,
-    midKind: midPk ? midPk.kind : "both",
-    otherKind: otherPk ? otherPk.kind : otherMode,
-    sign: (sign>=0) ? "pos" : "neg"
-  };
 
-  S.bandAssign.links.push(link);
+  if(cfg.n===3){
+    const {bottom, mid, top}=cfg;
+    // remember layout so sign-based switching works while dragging
+    S.bandAssign._layout={type:'triple', bottomId:bottom.id, midId:mid.id, topId:top.id};
+
+    const midPk = snapExtremumAssign(mid, x0, "both");
+    const midX  = midPk ? midPk.x : x0;
+    const sign  = midPk ? (midPk.yNo>=0 ? 1 : -1) : 1;
+
+    const otherSpec = (sign>=0) ? top : bottom;
+    const otherMode = isTransUnits(otherSpec) ? "min" : "max";
+    const otherPk = snapExtremumAssign(otherSpec, midX, otherMode) || snapExtremumAssign(otherSpec, x0, otherMode);
+    const otherX  = otherPk ? otherPk.x : midX;
+
+    S.bandAssign.links.push({
+      id,
+      midSpecId: mid.id,
+      otherSpecId: otherSpec.id,
+      midX, otherX,
+      midKind: midPk ? midPk.kind : "both",
+      otherKind: otherPk ? otherPk.kind : otherMode,
+      sign: (sign>=0) ? "pos" : "neg"
+    });
+  } else {
+    const {anchor, other}=cfg;
+    S.bandAssign._layout={type:'pair', aId:anchor.id, bId:other.id};
+
+    const {aMode, bMode} = getPairPeakModes(anchor, other, S.view.xMin, S.view.xMax);
+
+    const anchorPk = snapExtremumAssign(anchor, x0, aMode) || snapExtremumAssign(anchor, x0, "both");
+    const anchorX  = anchorPk ? anchorPk.x : x0;
+
+    const otherPk = snapExtremumAssign(other, anchorX, bMode)
+                 || snapExtremumAssign(other, x0, bMode)
+                 || snapExtremumAssign(other, anchorX, "both")
+                 || snapExtremumAssign(other, x0, "both");
+
+    S.bandAssign.links.push({
+      id,
+      midSpecId: anchor.id,
+      otherSpecId: other.id,
+      midX: anchorX,
+      otherX: otherPk ? otherPk.x : anchorX,
+      midKind: anchorPk ? anchorPk.kind : aMode,
+      otherKind: otherPk ? otherPk.kind : bMode,
+      sign: 'pair'
+    });
+  }
+
   S.bandAssign.selectedId = id;
   scheduleRender(true,false);
   showStatusToast("Neue Zuordnung hinzugefügt – Endpunkte ziehen zum Zuordnen", 1900);
@@ -5092,16 +5359,19 @@ function addBandAssignmentManual(xGuess=null){
 function buildBandAssignMenuItems(opts={}){
   ensureBandAssignState();
 
+  const cfg=getTwoOrThreeVisibleSpecs();
   const triple=getThreeVisibleSpecs();
+  const hasAuto=!!cfg;
   const has3=!!triple;
+  const hasManual=!!cfg;
   const hasLinks=(S.bandAssign.links||[]).length>0;
   const hasSel=!!S.bandAssign.selectedId;
 
   const xGuess = ("xGuess" in opts) ? opts.xGuess : null;
 
   const items=[
-    {label:"Automatisch zuordnen", disabled:!has3, onClick:()=>autoAssignBandLinks()},
-    {label:"Zuordnung hinzufügen", disabled:!has3, onClick:()=>addBandAssignmentManual(xGuess)},
+    {label:"Automatisch zuordnen", disabled:!hasAuto, onClick:()=>{ ensureBandAssignState(); openModal("bandassignauto", "Banden-Zuordnung"); }},
+    {label:"Zuordnung hinzufügen", disabled:!hasManual, onClick:()=>addBandAssignmentManual(xGuess)},
     {label:(S.bandAssign.showLabel ? "☑ Peak-Label anzeigen" : "☐ Peak-Label anzeigen"), disabled:!hasLinks, onClick:()=>{ S.bandAssign.showLabel=!S.bandAssign.showLabel; scheduleRender(true,false); }},
     {label:"Banden-Zuordnung formatieren…", disabled:!hasLinks, onClick:()=>{ try{ openTextStyleModal("bandAssign"); }catch(_e){} }},
     "sep",
@@ -5115,7 +5385,7 @@ function buildBandAssignMenuItems(opts={}){
 
 function showBandAssignMenu(x,y, xGuess=null){
   const items = buildBandAssignMenuItems({xGuess}) || [
-    {label:"Banden-Zuordnung: genau 3 sichtbare Spektren benötigt", disabled:true}
+    {label:"Banden-Zuordnung: 2 oder 3 sichtbare Spektren benötigt", disabled:true}
   ];
   showMenu(x,y, items, "");
 }
@@ -5227,13 +5497,72 @@ function showArrowBtnMenu(x,y){
     if(vis.length===2){
       const a=vis[0], b=vis[1];
       // anchor = active spectrum if visible, else the upper one (often experimental trace)
-      const active = getSpectrumById(S.activeSpecId);
+      const active = getSpectrumById(S.activeId);
       const anchor = (active && active.visible && (active.id===a.id || active.id===b.id)) ? active : b;
       const other = (anchor.id===a.id) ? b : a;
       return {n:2, anchor, other, bottom:a, top:b};
     }
     return null;
   }
+  function meanDisplayedYInRange(sp, xA, xB){
+    const xs=sp?.x, ys=sp?.y;
+    if(!xs || !ys || !xs.length) return NaN;
+    const xMin=Math.min(xA,xB), xMax=Math.max(xA,xB);
+    const step=Math.max(1, Math.floor(xs.length/2000));
+    let sum=0, count=0;
+    for(let i=0;i<xs.length;i+=step){
+      const x=xs[i];
+      if(x < xMin-1e-9 || x > xMax+1e-9) continue;
+      const y=applyMods(sp, x, ys[i]);
+      if(!isFinite(y)) continue;
+      sum += y;
+      count++;
+    }
+    return count ? (sum/count) : NaN;
+  }
+
+  function dominantPeakModeForPair(sp, xMin, xMax){
+    const peaks=detectExtremaAssign(sp, xMin, xMax, "both", 14);
+    if(peaks && peaks.length){
+      let maxStrength=0, minStrength=0;
+      for(const p of peaks){
+        if(p.kind==="min") minStrength += Math.max(0, Number(p.strength)||0);
+        else if(p.kind==="max") maxStrength += Math.max(0, Number(p.strength)||0);
+      }
+      if(minStrength>maxStrength) return "min";
+      if(maxStrength>0) return "max";
+    }
+    return isTransUnits(sp) ? "min" : "max";
+  }
+
+  function getPairPeakModes(anchor, other, xMin, xMax){
+    const aMean=meanDisplayedYInRange(anchor, xMin, xMax);
+    const bMean=meanDisplayedYInRange(other,  xMin, xMax);
+    if(isFinite(aMean) && isFinite(bMean) && Math.abs(aMean-bMean) > 1e-9){
+      // Prefer peaks that point towards the space between the two visible traces.
+      return (aMean >= bMean)
+        ? {aMode:"min", bMode:"max"}
+        : {aMode:"max", bMode:"min"};
+    }
+    return {
+      aMode: dominantPeakModeForPair(anchor, xMin, xMax),
+      bMode: dominantPeakModeForPair(other,  xMin, xMax)
+    };
+  }
+
+  function bandAssignModeForEnd(link, which, spec){
+    const layout = (S && S.bandAssign && S.bandAssign._layout) ? S.bandAssign._layout : null;
+    if(layout && layout.type==='pair'){
+      const ownKind = (which==='mid') ? link?.midKind : link?.otherKind;
+      if(ownKind==='max' || ownKind==='min') return ownKind;
+      const otherKind = (which==='mid') ? link?.otherKind : link?.midKind;
+      if(otherKind==='max' || otherKind==='min') return otherKind;
+      return 'both';
+    }
+    if(which==='mid') return 'both';
+    return isTransUnits(spec) ? 'min' : 'max';
+  }
+
   function estimateDxInRange(xs, xMin, xMax){
     if(!xs || xs.length<2) return 1;
     // sample steps inside range
@@ -5399,7 +5728,7 @@ function showArrowBtnMenu(x,y){
     return null;
   }
 
-  function autoAssignBandLinks(){
+  function autoAssignBandLinks(opts={}){
     ensureBandAssignState();
     if(!S.view){ showStatusToast("Keine Ansicht", 1200); return; }
 
@@ -5411,15 +5740,64 @@ function showArrowBtnMenu(x,y){
 
     const v=S.view;
     const xMin=Math.min(v.xMin,v.xMax), xMax=Math.max(v.xMin,v.xMax);
+    let manualRanges=[];
+    try{
+      manualRanges = bandAssignAutoRangesForView(xMin, xMax, (opts && Array.isArray(opts.ranges)) ? opts.ranges : null);
+    }catch(err){
+      throw err;
+    }
+    const useManualRanges = manualRanges.length>0;
+    if(opts && Array.isArray(opts.ranges) && !manualRanges.length){
+      showStatusToast("Keiner der definierten Bereiche liegt in der aktuellen Ansicht.", 1900);
+      return;
+    }
 
     // 3 spectra: bottom=calc-, mid=exp(diff), top=calc+ (paper style)
     if(cfg.n===3){
       const {bottom, mid, top}=cfg;
       S.bandAssign._layout={type:'triple', bottomId:bottom.id, midId:mid.id, topId:top.id};
 
-      const midPeaks = detectExtremaAssign(mid, xMin, xMax, 'both', 8);
       const topMode  = isTransUnits(top) ? 'min' : 'max';
       const botMode  = isTransUnits(bottom) ? 'min' : 'max';
+      const usedTop=new Set(), usedBot=new Set();
+      const links=[]; let idCounter=0;
+
+      if(useManualRanges){
+        for(const rg of manualRanges){
+          const midPeaks = detectExtremaAssign(mid, rg.start, rg.end, 'both', 8);
+          const topPeaks = detectExtremaAssign(top, rg.start, rg.end, topMode, 35);
+          const botPeaks = detectExtremaAssign(bottom, rg.start, rg.end, botMode, 35);
+          for(const mp of midPeaks){
+            const sign = (mp.kind==='max') ? 1 : (mp.kind==='min' ? -1 : 1);
+            const target = (sign>=0) ? {spec:top, peaks:topPeaks, used:usedTop}
+                                     : {spec:bottom, peaks:botPeaks, used:usedBot};
+            if(!target.peaks.length) continue;
+            const cand = nearestUnusedPeak(target.peaks, mp.x, target.used, rg.tol);
+            if(!cand) continue;
+            target.used.add(cand.i);
+            links.push({
+              id:`al_${Date.now().toString(36)}_${(idCounter++)}`,
+              midSpecId: mid.id,
+              otherSpecId: target.spec.id,
+              midX: mp.x,
+              otherX: cand.x,
+              midKind: mp.kind,
+              otherKind: cand.kind,
+              sign: (sign>=0) ? 'pos' : 'neg'
+            });
+          }
+        }
+        if(!links.length){
+          showStatusToast("Keine Zuordnungen in den definierten Bereichen gefunden.", 1900);
+        }
+        S.bandAssign.links=links;
+        S.bandAssign.selectedId=null;
+        scheduleRender(true,false);
+        showStatusToast(`Zuordnungen: ${links.length} Linien (${manualRanges.length} Bereiche)`, 1900);
+        return;
+      }
+
+      const midPeaks = detectExtremaAssign(mid, xMin, xMax, 'both', 8);
       const topPeaks = detectExtremaAssign(top, xMin, xMax, topMode, 35);
       const botPeaks = detectExtremaAssign(bottom, xMin, xMax, botMode, 35);
 
@@ -5427,9 +5805,6 @@ function showArrowBtnMenu(x,y){
 
       const dx=estimateDxInRange(mid.x, xMin, xMax);
       const tol=Math.min(220, Math.max(10, dx*60));
-      const usedTop=new Set(), usedBot=new Set();
-      const links=[]; let idCounter=0;
-
       for(const mp of midPeaks){
         const sign = (mp.kind==='max') ? 1 : (mp.kind==='min' ? -1 : 1);
         const target = (sign>=0) ? {spec:top, peaks:topPeaks, used:usedTop, mode:topMode}
@@ -5463,10 +5838,47 @@ function showArrowBtnMenu(x,y){
     const {anchor, other}=cfg;
     S.bandAssign._layout={type:'pair', aId:anchor.id, bId:other.id};
 
-    const aMode = 'both';
-    const bMode = isTransUnits(other) ? 'min' : 'max';
-    const aPeaks = detectExtremaAssign(anchor, xMin, xMax, aMode, 60);
-    const bPeaks = detectExtremaAssign(other, xMin, xMax, bMode, 80);
+    const {aMode, bMode} = getPairPeakModes(anchor, other, xMin, xMax);
+
+    if(useManualRanges){
+      const usedB=new Set();
+      const links=[]; let idCounter=0;
+      for(const rg of manualRanges){
+        let aPeaks = detectExtremaAssign(anchor, rg.start, rg.end, aMode, 14);
+        let bPeaks = detectExtremaAssign(other, rg.start, rg.end, bMode, 14);
+        if(!aPeaks.length) aPeaks = detectExtremaAssign(anchor, rg.start, rg.end, 'both', 12);
+        if(!bPeaks.length) bPeaks = detectExtremaAssign(other, rg.start, rg.end, 'both', 12);
+        for(const ap of aPeaks){
+          const cand = nearestUnusedPeak(bPeaks, ap.x, usedB, rg.tol);
+          if(!cand) continue;
+          usedB.add(cand.i);
+          links.push({
+            id:`al_${Date.now().toString(36)}_${(idCounter++)}`,
+            midSpecId: anchor.id,
+            otherSpecId: other.id,
+            midX: ap.x,
+            otherX: cand.x,
+            midKind: ap.kind,
+            otherKind: cand.kind,
+            sign: 'pair'
+          });
+        }
+      }
+      if(!links.length){
+        showStatusToast("Keine Zuordnungen in den definierten Bereichen gefunden.", 1900);
+      }
+      S.bandAssign.links=links;
+      S.bandAssign.selectedId=null;
+      scheduleRender(true,false);
+      showStatusToast(`Zuordnungen: ${links.length} Linien (${manualRanges.length} Bereiche)`, 1900);
+      return;
+    }
+
+    let aPeaks = detectExtremaAssign(anchor, xMin, xMax, aMode, 14);
+    let bPeaks = detectExtremaAssign(other, xMin, xMax, bMode, 14);
+
+    if(!aPeaks.length) aPeaks = detectExtremaAssign(anchor, xMin, xMax, 'both', 12);
+    if(!bPeaks.length) bPeaks = detectExtremaAssign(other, xMin, xMax, 'both', 12);
 
     if(!aPeaks.length){ showStatusToast("Keine Peaks im aktiven Spektrum gefunden.", 1600); return; }
     if(!bPeaks.length){ showStatusToast("Keine Peaks im zweiten Spektrum gefunden.", 1600); return; }
@@ -5511,7 +5923,7 @@ function showArrowBtnMenu(x,y){
       top=getSpectrumById(S.bandAssign._layout.topId);
       bottom=getSpectrumById(S.bandAssign._layout.bottomId);
     }
-    const midPk = snapExtremumAssign(mid, link.midX, "both");
+    const midPk = snapExtremumAssign(mid, link.midX, bandAssignModeForEnd(link, "mid", mid));
     if(!midPk) return;
 
     link.midX = midPk.x;
@@ -5532,7 +5944,7 @@ function showArrowBtnMenu(x,y){
     const other=getSpectrumById(link.otherSpecId);
     if(!other) return;
 
-    const otherMode = isTransUnits(other) ? "min" : "max";
+    const otherMode = bandAssignModeForEnd(link, "other", other);
     const otherPk = snapExtremumAssign(other, link.otherX, otherMode) || snapExtremumAssign(other, midPk.x, otherMode);
     if(otherPk){
       link.otherX = otherPk.x;
@@ -5560,10 +5972,10 @@ function showArrowBtnMenu(x,y){
       const other=getSpectrumById(link.otherSpecId);
       if(!mid || !other || !mid.visible || !other.visible) continue;
 
-      const midPk=snapExtremumAssign(mid, link.midX, "both");
+      const midPk=snapExtremumAssign(mid, link.midX, bandAssignModeForEnd(link, "mid", mid));
       if(!midPk) continue;
 
-      const otherMode = isTransUnits(other) ? "min" : "max";
+      const otherMode = bandAssignModeForEnd(link, "other", other);
       const otherPk=snapExtremumAssign(other, link.otherX, otherMode);
       if(!otherPk) continue;
 
@@ -6566,9 +6978,9 @@ function clearImages(){
       const other=getSpectrumById(link.otherSpecId);
       if(!mid || !other || !mid.visible || !other.visible) continue;
 
-      const midPk=snapExtremumAssign(mid, link.midX, "both");
+      const midPk=snapExtremumAssign(mid, link.midX, bandAssignModeForEnd(link, "mid", mid));
       if(!midPk) continue;
-      const otherMode = isTransUnits(other) ? "min" : "max";
+      const otherMode = bandAssignModeForEnd(link, "other", other);
       const otherPk=snapExtremumAssign(other, link.otherX, otherMode);
       if(!otherPk) continue;
 
@@ -6618,7 +7030,7 @@ function clearImages(){
     sp.bands = out.bands;
     if(bandModeHint){
       const m = out.mode==="min" ? "Minima" : (out.mode==="max" ? "Maxima" : "—");
-      bandModeHint.textContent = `Modus: automatisch (${m}) · gefunden: ${sp.bands.length}`;
+      bandModeHint.textContent = `${translateString("Modus: automatisch", getLang())} (${translateString(m, getLang())}) · ${translateString("gefunden:", getLang())} ${sp.bands.length}`;
     }
     // ensure markers are enabled
     S.showBandsGlobal = true;
@@ -7446,7 +7858,7 @@ function updateIntegralsModeHint(){
     integralsModeHint.textContent = "";
     return;
   }
-  integralsModeHint.textContent = "Klicke „Integral hinzufügen“: das Modal schließt. Du kannst dann mehrere Integrale nacheinander im Plot definieren (LMB ziehen) und Grenzen verschieben. OK beendet den Modus und öffnet diese Liste wieder.";
+  integralsModeHint.textContent = translateString("Klicke „Integral hinzufügen“: das Modal schließt. Du kannst dann mehrere Integrale nacheinander im Plot definieren (LMB ziehen) und Grenzen verschieben. OK beendet den Modus und öffnet diese Liste wieder.", getLang());
 }
 
 function showIntegralOkBtn(show){
@@ -8591,7 +9003,7 @@ if(S.drag && S.drag.target==="plot"){
     if(S.drag.handle==="mid"){
       const mid=getSpectrumById(link.midSpecId);
       if(mid){
-        const pk = snapExtremumAssign(mid, xNew, "both");
+        const pk = snapExtremumAssign(mid, xNew, bandAssignModeForEnd(link, "mid", mid));
         if(pk){
           link.midX = pk.x;
           link.midKind = pk.kind;
@@ -8606,7 +9018,7 @@ if(S.drag && S.drag.target==="plot"){
           // snap other towards the new mid position for nicer feel
           const other=getSpectrumById(link.otherSpecId);
           if(other){
-            const otherMode = isTransUnits(other) ? "min" : "max";
+            const otherMode = bandAssignModeForEnd(link, "other", other);
             const pkO = snapExtremumAssign(other, link.otherX, otherMode) || snapExtremumAssign(other, pk.x, otherMode);
             if(pkO) link.otherX = pkO.x;
           }
@@ -8615,7 +9027,7 @@ if(S.drag && S.drag.target==="plot"){
     } else {
       const other=getSpectrumById(link.otherSpecId);
       if(other){
-        const otherMode = isTransUnits(other) ? "min" : "max";
+        const otherMode = bandAssignModeForEnd(link, "other", other);
         const pk = snapExtremumAssign(other, xNew, otherMode);
         if(pk){
           link.otherX = pk.x;
@@ -9653,8 +10065,8 @@ function refreshCalcSelects(){
     // Output hint
     if(calcOut){
       const n=CalcState.vars.length;
-      calcOut.textContent = n ? `Variablen bereit: ${CalcState.vars.map(v=>v.name).join(", ")}.`
-                              : "Bereit.";
+      calcOut.textContent = n ? `${translateString("Variablen bereit:", getLang())} ${CalcState.vars.map(v=>v.name).join(", ")}.`
+                               : translateString("Bereit.", getLang());
     }
   }
 
@@ -9696,7 +10108,7 @@ function refreshCalcSelects(){
 
   function clearCalcExpr(){
     if(calcExpr) calcExpr.value="";
-    if(calcOut) calcOut.textContent="Bereit.";
+    if(calcOut) calcOut.textContent=translateString("Bereit.", getLang());
   }
 
   function calcFuncName(base){
@@ -10034,7 +10446,7 @@ function runCalculator(){
     if(!calcExpr) return;
     const expr = (calcExpr.value||"").trim();
     if(!expr){
-      if(calcOut) calcOut.textContent="Bitte eine Formel eingeben.";
+      if(calcOut) calcOut.textContent=translateString("Bitte eine Formel eingeben.", getLang());
       return;
     }
 
@@ -10052,7 +10464,7 @@ function runCalculator(){
       addSpectrum({name, xUnits: ctx.baseSpec.xUnits, yUnits: ctx.baseSpec.yUnits, meta:{TITLE:name}, x: ctx.x, y: yRes}, "calc");
       const newSpec = S.spectra[S.spectra.length-1];
       if(newSpec) S.activeId = newSpec.id;
-      if(calcOut) calcOut.textContent = `✅ Erzeugt: "${name}" (${ctx.n.toLocaleString("de-DE")} Punkte).`;
+      if(calcOut) calcOut.textContent = `✅ ${translateString("Erzeugt:", getLang())} "${name}" (${ctx.n.toLocaleString("de-DE")} ${translateString("Punkte", getLang())}).`;
       scheduleRender(true,true);
       rebuildSpecList();
       refreshCalcSelects();
@@ -10198,6 +10610,57 @@ if(btnArrowDelete){
   });
 }
 
+if(assignTolTbody){
+  assignTolTbody.addEventListener("change", ()=>{
+    try{
+      S.bandAssign.autoRanges = readBandAssignAutoRangesLoose(readBandAssignAutoRangesFromUILoose());
+    }catch(_e){}
+  });
+  assignTolTbody.addEventListener("click", (ev)=>{
+    const btn=ev.target && ev.target.closest ? ev.target.closest('button[data-role="delete"]') : null;
+    if(!btn) return;
+    suppress(ev);
+    ensureBandAssignState();
+    const idx=Number(btn.dataset.idx);
+    if(Number.isFinite(idx) && idx>=0){
+      S.bandAssign.autoRanges.splice(idx,1);
+      renderBandAssignAutoRangesUI();
+    }
+  });
+}
+if(btnAssignTolAddRow){
+  btnAssignTolAddRow.addEventListener("click", (ev)=>{
+    suppress(ev);
+    const cur=(assignTolUseView && assignTolUseView.checked) ? getBandAssignCurrentViewRange() : null;
+    if(cur) addBandAssignAutoRange(cur.start, cur.end, cur.tol);
+    else addBandAssignAutoRange();
+  });
+}
+if(btnAssignTolClear){
+  btnAssignTolClear.addEventListener("click", (ev)=>{
+    suppress(ev);
+    ensureBandAssignState();
+    S.bandAssign.autoRanges=[];
+    renderBandAssignAutoRangesUI();
+  });
+}
+if(btnRunAutoAssignRanges){
+  btnRunAutoAssignRanges.addEventListener("click", ()=>{
+    try{
+      ensureBandAssignState();
+      const ranges=readBandAssignAutoRangesFromUI();
+      if(!ranges.length){
+        showStatusToast("Bitte mindestens einen Bereich anlegen.", 1700);
+        return;
+      }
+      S.bandAssign.autoRanges=ranges;
+      autoAssignBandLinks({ranges});
+    }catch(e){
+      console.error(e);
+      showStatusToast((e && e.message) ? e.message : "Auto-Zuordnung fehlgeschlagen", 2200);
+    }
+  });
+}
 
   // Toolbar Y-Zoom buttons (Intensity)
   document.querySelectorAll('.iconBtn[data-action="yzin"]').forEach(btn=>{
@@ -10357,6 +10820,11 @@ annotations:{
     enabled: (S.bandAssign.enabled!==false),
     showLabel: (S.bandAssign.showLabel!==false),
     labelStyle: (S.bandAssign.labelStyle ? {...S.bandAssign.labelStyle} : null),
+    autoRanges: Array.isArray(S.bandAssign.autoRanges) ? S.bandAssign.autoRanges.map(r=>({
+      start:Number(r.start),
+      end:Number(r.end),
+      tol:Number(r.tol)
+    })) : [],
     links: Array.isArray(S.bandAssign.links) ? S.bandAssign.links.map(l=>({
       id:String(l.id||""),
       midSpecId:String(l.midSpecId||""),
@@ -10473,6 +10941,7 @@ try{
     S.bandAssign.enabled = (ba.enabled!==false);
     S.bandAssign.showLabel = (ba.showLabel!==false);
     if(ba.labelStyle) S.bandAssign.labelStyle = Object.assign({}, S.bandAssign.labelStyle||{}, ba.labelStyle);
+    S.bandAssign.autoRanges = Array.isArray(ba.autoRanges) ? normalizeBandAssignAutoRanges(ba.autoRanges) : [];
     S.bandAssign.links = Array.isArray(ba.links) ? ba.links.map(l=>({
       id: String(l.id || (`al_${Date.now().toString(36)}_${Math.random().toString(36).slice(2,7)}`)),
       midSpecId: String(l.midSpecId||""),
@@ -10485,6 +10954,7 @@ try{
     })).filter(l=>idSet.has(l.midSpecId) && idSet.has(l.otherSpecId) && isFinite(l.midX) && isFinite(l.otherX)) : [];
     S.bandAssign.selectedId = null;
   } else {
+    S.bandAssign.autoRanges = [];
     S.bandAssign.links = [];
     S.bandAssign.selectedId = null;
   }
