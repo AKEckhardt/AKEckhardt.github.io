@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /converter/
+permalink: /31pnmr/
 author_profile: true
 
 ---
