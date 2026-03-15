@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 <iframe
-  src="https://huggingface.co/spaces/AKEckhardt/31PNMR"
+  src="https://akeckhardt-31pnmr.hf.space"
   title="31P NMR Shift Predictor"
   width="100%"
   height="1200"
