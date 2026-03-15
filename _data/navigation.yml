@@ -25,6 +25,8 @@ main:
         url: /viewer/
       - title: "WKB Tunneling"
         url: /tunneling/
+      - title: "31P NMR"
+        url: /31pnmr/
 
 #  - title: "Talks"
 #    url: /talks/    
