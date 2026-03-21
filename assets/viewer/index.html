@@ -3049,12 +3049,19 @@ const _i18nObserver = new MutationObserver((muts)=>{
     isReady:false
   };
 
-  function fmtUI(n, d){
+  function fmtUI(n, d, minD=0){
     if(n==null || !isFinite(n)) return "";
     const s = Number(n).toFixed(d);
-    // trim trailing zeros
-    const t = s.replace(/\.0+$|(?<=\.[0-9]*?)0+$/g,"").replace(/,$/,"");
-    return t.replace(",",".");
+    let t = s;
+    if(d > minD){
+      const parts = s.split(".");
+      if(parts.length===2){
+        let frac = parts[1].replace(/0+$/g,"");
+        if(frac.length < minD) frac = parts[1].slice(0, minD);
+        t = frac.length ? (parts[0] + "." + frac) : parts[0];
+      }
+    }
+    return t.replace(",", ".");
   }
 
   function escapeHtml(str){
@@ -4454,7 +4461,7 @@ for(let si=0; si<pm.segs.length; si++){
       const y=yMap(t);
       PlotUI.gTicks.appendChild(svgEl("line",{x1:m.l-5,x2:m.l,y1:y,y2:y,stroke:"#000","stroke-width":"1"}));
       const ty=svgEl("text",{x:m.l-8,y:y+4,fill:"#000","font-family":"Arial","font-size":"16","text-anchor":"end"});
-      ty.textContent=fmtUI(t,2).replace(/^\-/, "−");
+      ty.textContent=fmtUI(t,2,1).replace(/^\-/, "−");
       PlotUI.gTicks.appendChild(ty);
     }
 
@@ -5113,10 +5120,26 @@ function openPeakPanel(centerX=null){
     if(S.bandAssign.showLabel==null) S.bandAssign.showLabel=true;
     if(!Array.isArray(S.bandAssign.links)) S.bandAssign.links=[];
     if(!Array.isArray(S.bandAssign.autoRanges)) S.bandAssign.autoRanges=[];
-    // Style for dashed links + label (defaults: Arial + black)
-    const defStyle={fontFamily: "Arial, Helvetica, sans-serif", fontSize:11, color:"#000000", bold:false, italic:false, underline:false, script:"normal"};
+    // Style for dashed links + label (defaults: black, Arial, 14 pt)
+    const defStyle={fontFamily: "Arial", fontSize:14, color:"#000000", bold:false, italic:false, underline:false, script:"normal"};
+    const legacyDef={fontFamily: "Arial, Helvetica, sans-serif", fontSize:11, color:"#000000", bold:false, italic:false, underline:false, script:"normal"};
     if(!S.bandAssign.labelStyle) S.bandAssign.labelStyle = {...defStyle};
-    else S.bandAssign.labelStyle = Object.assign({}, defStyle, S.bandAssign.labelStyle);
+    else {
+      const merged = Object.assign({}, defStyle, S.bandAssign.labelStyle);
+      const src = S.bandAssign.labelStyle || {};
+      const looksLegacy = String(src.fontFamily||"")===legacyDef.fontFamily
+        && Number(src.fontSize)===legacyDef.fontSize
+        && String(src.color||"").toLowerCase()===legacyDef.color.toLowerCase()
+        && !!src.bold===legacyDef.bold
+        && !!src.italic===legacyDef.italic
+        && !!src.underline===legacyDef.underline
+        && String(src.script||"normal")===legacyDef.script;
+      if(looksLegacy){
+        merged.fontFamily = defStyle.fontFamily;
+        merged.fontSize = defStyle.fontSize;
+      }
+      S.bandAssign.labelStyle = merged;
+    }
   }
   function clearBandAssignments(){
     ensureBandAssignState();
@@ -5993,8 +6016,8 @@ const xLinePx=(xMidPx + xOtherPx)/2;
 // Style for dashed links + label (shared)
 const stBA = (S.bandAssign && S.bandAssign.labelStyle) ? (S.bandAssign.labelStyle||{}) : {};
 const baColor = stBA.color || "#000000";
-const baFontFamily = stBA.fontFamily || "Arial, Helvetica, sans-serif";
-const baFontSize = Number.isFinite(Number(stBA.fontSize)) ? Number(stBA.fontSize) : 11;
+const baFontFamily = stBA.fontFamily || "Arial";
+const baFontSize = Number.isFinite(Number(stBA.fontSize)) ? Number(stBA.fontSize) : 14;
 const baFontWeight = stBA.bold ? "700" : "400";
 const baFontStyle  = stBA.italic ? "italic" : "normal";
 const baTextDec    = stBA.underline ? "underline" : "none";
@@ -6049,10 +6072,11 @@ if(showLbl){
   const sizeOut = (baScript==="normal") ? baFontSize : Math.max(7, baFontSize*0.75);
   const dyLbl = (baScript==="super") ? (-0.55*baFontSize) : (baScript==="sub" ? (0.55*baFontSize) : 0);
   const baselineLbl = (baScript==="super") ? "baseline" : (baScript==="sub" ? "hanging" : "middle");
+  const exportingBA = !!(S.bandAssign && S.bandAssign._exporting);
   const t=svgEl("text",{
     x:xLinePx, y:yC,
     fill:baColor,
-    "fill-opacity":"0.92",
+    "fill-opacity":"1",
     "font-family":baFontFamily,
     "font-size":String(sizeOut),
     "font-weight":baFontWeight,
@@ -6061,10 +6085,14 @@ if(showLbl){
     "text-anchor":"middle",
     "dominant-baseline":baselineLbl,
     "pointer-events":"none",
-    // subtle halo for readability
-    stroke:"rgba(255,255,255,0.9)",
-    "stroke-width":"3",
-    "paint-order":"stroke fill"
+    ...(exportingBA
+      ? {stroke:"none"}
+      : {
+          // subtle halo for readability in the live viewer
+          stroke:"rgba(255,255,255,0.9)",
+          "stroke-width":"3",
+          "paint-order":"stroke fill"
+        })
   });
   if(dyLbl) t.setAttribute("dy", String(dyLbl));
   t.textContent = lblTxt;
@@ -11173,17 +11201,17 @@ function buildCleanExportSVG(){
 
   // Layers: integrals (fill) -> spectra -> bands -> integral overlay -> ticks (axes)
   const layers=[];
-  if(PlotUI.gIntFill) layers.push(PlotUI.gIntFill.cloneNode(true));
-  if(PlotUI.gSpectra) layers.push(PlotUI.gSpectra.cloneNode(true));
-  if(PlotUI.gAssign) layers.push(PlotUI.gAssign.cloneNode(true));
-  if(PlotUI.gImages) layers.push(PlotUI.gImages.cloneNode(true));
-  if(PlotUI.gText) layers.push(PlotUI.gText.cloneNode(true));
-  if(PlotUI.gSymbols) layers.push(PlotUI.gSymbols.cloneNode(true));
-  if(PlotUI.gBands) layers.push(PlotUI.gBands.cloneNode(true));
-  if(PlotUI.gIntOverlay) layers.push(PlotUI.gIntOverlay.cloneNode(true));
-  if(PlotUI.gTicks) layers.push(PlotUI.gTicks.cloneNode(true));
-  if(PlotUI.gArrows) layers.push(PlotUI.gArrows.cloneNode(true));
-  if(PlotUI.gLegend) layers.push(PlotUI.gLegend.cloneNode(true));
+  if(PlotUI.gIntFill) layers.push({name:"intFill", node:PlotUI.gIntFill.cloneNode(true)});
+  if(PlotUI.gSpectra) layers.push({name:"spectra", node:PlotUI.gSpectra.cloneNode(true)});
+  if(PlotUI.gAssign) layers.push({name:"assign", node:PlotUI.gAssign.cloneNode(true)});
+  if(PlotUI.gImages) layers.push({name:"images", node:PlotUI.gImages.cloneNode(true)});
+  if(PlotUI.gText) layers.push({name:"text", node:PlotUI.gText.cloneNode(true)});
+  if(PlotUI.gSymbols) layers.push({name:"symbols", node:PlotUI.gSymbols.cloneNode(true)});
+  if(PlotUI.gBands) layers.push({name:"bands", node:PlotUI.gBands.cloneNode(true)});
+  if(PlotUI.gIntOverlay) layers.push({name:"intOverlay", node:PlotUI.gIntOverlay.cloneNode(true)});
+  if(PlotUI.gTicks) layers.push({name:"ticks", node:PlotUI.gTicks.cloneNode(true)});
+  if(PlotUI.gArrows) layers.push({name:"arrows", node:PlotUI.gArrows.cloneNode(true)});
+  if(PlotUI.gLegend) layers.push({name:"legend", node:PlotUI.gLegend.cloneNode(true)});
 
   // --- Matrix helpers (to bake transforms so Corel treats each element as movable) ---
   const I=[1,0,0,1,0,0];
@@ -11307,17 +11335,32 @@ function buildCleanExportSVG(){
     }
   }
 
-  function appendFlat(node, inheritedM){
+  function appendFlat(node, inheritedM, layerName){
     inheritedM=inheritedM||I;
     Array.from(node.childNodes||[]).forEach(ch=>{
       if(!ch || ch.nodeType!==1) return; // elements only
       const M=mul(inheritedM, parseTransform(ch.getAttribute("transform")));
       const tag=(ch.tagName||"").toLowerCase();
       if(tag==="g"){
-        appendFlat(ch, M);
+        appendFlat(ch, M, layerName);
         return;
       }
       const c=ch.cloneNode(true);
+
+      // Export defaults for automatic/manual band-assignment labels:
+      // black, Arial, 14 pt in both SVG and rasterized PNG.
+      if(layerName==="assign" && tag==="text"){
+        c.setAttribute("fill", "#000000");
+        c.setAttribute("fill-opacity", "1");
+        c.setAttribute("font-family", "Arial");
+        c.setAttribute("font-size", "14");
+        if(!c.getAttribute("font-weight")) c.setAttribute("font-weight", "400");
+        if(!c.getAttribute("font-style")) c.setAttribute("font-style", "normal");
+        c.setAttribute("stroke", "none");
+        c.removeAttribute("stroke-opacity");
+        c.removeAttribute("paint-order");
+        c.setAttribute("text-rendering", "geometricPrecision");
+      }
 
       // Clean + bake
       stripAttrs(c);
@@ -11327,10 +11370,10 @@ function buildCleanExportSVG(){
     });
   }
 
-  layers.forEach(g=>{
-    stripAttrs(g);
-    const M=parseTransform(g.getAttribute && g.getAttribute("transform"));
-    appendFlat(g, M);
+  layers.forEach(({name, node})=>{
+    stripAttrs(node);
+    const M=parseTransform(node.getAttribute && node.getAttribute("transform"));
+    appendFlat(node, M, name);
   });
 
   // --- Corel-friendly appearance tweaks ---
@@ -11366,11 +11409,11 @@ function buildCleanExportSVG(){
 
   // Ensure text is editable and predictable in Corel
   out.querySelectorAll("text").forEach(t=>{
-  // Preserve existing font-size (ticks/labels are set explicitly in the viewer).
-  // Ensure a deterministic font family for publication workflows.
+  // Preserve existing font-size where explicitly set, otherwise use deterministic export defaults.
   if(!t.getAttribute("font-family")) t.setAttribute("font-family","Arial");
   if(!t.getAttribute("font-size")) t.setAttribute("font-size","16");
   if(!t.getAttribute("fill")) t.setAttribute("fill","#000");
+  if(!t.getAttribute("text-rendering")) t.setAttribute("text-rendering","geometricPrecision");
 });
 
 
