@@ -22,7 +22,7 @@ ___
 
 ___
 
-(62) <b>Unconventional Formation of Cyanamide, a Key Intermediate in Prebiotic Chemical Evolution, in Interstellar Ice Analogues.</b> J. Wang, J. H. Marks, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1021/acs.jpclett.6c00331](https://doi.org/10.1021/acs.jpclett.6c00331).
+(62) <b>Unconventional Formation of Cyanamide, a Key Intermediate in Prebiotic Chemical Evolution, in Interstellar Ice Analogues.</b> J. Wang, J. H. Marks, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, 2748–2753, [doi:10.1021/acs.jpclett.6c00331](https://doi.org/10.1021/acs.jpclett.6c00331).
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.6c00331"><img src="https://AKEckhardt.github.io/images/pub62.png" alt="Link" width="40%" height="auto%"/></a>
@@ -46,7 +46,7 @@ ___
 
 ___
 
-(59) <b>Abiotic Formation of Nitrile Precursors to Amino Acids and Nucleobases in Interstellar Ice Analogues.</b> J. Wang, S. Inada, C. Zhang, J. H. Marks, Z. Wang, A. Bergantini, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, accepted, [doi:10.1039/D5SC08569A](https://doi.org/10.1039/D5SC08569A).
+(59) <b>Abiotic Formation of Nitrile Precursors to Amino Acids and Nucleobases in Interstellar Ice Analogues.</b> J. Wang, S. Inada, C. Zhang, J. H. Marks, Z. Wang, A. Bergantini, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, <i>17</i>, 4966-4977, [doi:10.1039/D5SC08569A](https://doi.org/10.1039/D5SC08569A).
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D5SC08569A"><img src="https://AKEckhardt.github.io/images/pub59.png" alt="Link" width="40%" height="auto%"/></a>
