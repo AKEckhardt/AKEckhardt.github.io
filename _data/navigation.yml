@@ -91,13 +91,13 @@ docs:
             
   - title: Visiting Students
     children:
-      - title: "Soham Chowdhury"
-        url: /akegroup/SohamChowdhury/ 
+      - title: "Barbara Keresztes"
+        url: /akegroup/BarbaraKeresztes/ 
         
   - title: Alumni
     children:
-      - title: "Alumni"
-        url: /akegroup/Alumni/
+      - title: "Soham Chowdhury"
+        url: /akegroup/SohamChowdhury/
 
 
 
