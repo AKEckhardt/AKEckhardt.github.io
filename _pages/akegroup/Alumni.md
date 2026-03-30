@@ -19,6 +19,15 @@ September 2022 - January 2025
 
 <b>Bachelor's Thesis Candidates</b>
 
+<b>Laurin Inama</b><br/>
+January - March 2026
+
+<b>Sharanki Arudselvam</b><br/>
+October - December 2025
+
+<b>Nathalie Dietzel</b><br/>
+October - December 2025
+
 <b>Dilara Korkut</b><br/>
 January - March 2025
 <br/>
@@ -27,8 +36,14 @@ January - March 2025
 
 <b>In-depth Students</b>
 
+<b>Jonas Haiduk</b><br/>
+November - January 2026
+
 <b>Teodor Leuca</b><br/>
 November - December 2025
+
+<b>Anoop Jagadeesha</b><br/>
+October - December 2025
 
 <b>Dilara Korkut</b><br/>
 August - September 2025
@@ -79,6 +94,9 @@ March - April 2023<br/>
 
 
 <b>Visiting Students</b>
+
+<b>Soham Chowdhury</b><br/>
+January - March 2025
 
 <b>Moulay Driss Mellaoui</b><br/>
 Februar - April 2025
