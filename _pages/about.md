@@ -49,7 +49,7 @@ You are a postdoctoral researcher and interested in joining the group? We are ha
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2026</b></font><br/><font size="1"><br/></font><font size="4">
 As the group’s very first PhD student, Vladimir has successfully defended his doctoral thesis, which is another milestone for both him and the entire group. Congratulations, Vladimir! Kristin and Julian also took part in the RESOLV organized <a href="https://www.solvation.de/news/current-news/detail/girls-day-2026-at-resolv-a-day-in-the-life-of-a-scientist">Girls’ Day 2026</a>, where they helped introduce young students to a day in the life of a scientist.</font></td>
-<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news43.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news43.jpg" alt="Link" width="65%" height="auto%"/><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2026</b></font><br/><font size="1"><br/></font><font size="4">
