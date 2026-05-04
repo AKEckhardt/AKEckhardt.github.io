@@ -11,7 +11,7 @@ sidebar:
 {% include base_path %}
 <b>PhD Students</b>
 
-<b>Vladimir D. Drabkin</b><br/>
+<b>Dr. Vladimir D. Drabkin</b><br/>
 September 2022 - January 2025
 <br/>
 <br/>
