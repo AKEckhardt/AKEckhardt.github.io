@@ -14,6 +14,14 @@ sidebar:
 
 ___
 
+(64) <b>Non-Equilibrium Preparation of (<i>E</i>)-Phosphinimine (HPNH, X <sup>1</sup>A′) - A Precursor to Prebiotic Phosphorylating Agents.</b> J. Wang, B.-J. Sun, A. Bergantini, Z. Wang, M. McAnally, J. H. Marks, A. H. H. Chang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1039/D6SC01818A](https://doi.org/10.1039/D6SC01818A).
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D6SC01818A"><img src="https://AKEckhardt.github.io/images/pub64.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (63) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b> A. Portela-González, D. Kühn and <u>A. K. Eckhardt</u><sup>*</sup> <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MIU9TIN3)
 
 <p align="center"> 
