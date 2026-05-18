@@ -86,8 +86,8 @@ docs:
 #        url: /akegroup/DilaraKorkut/  
       - title: "Daniel Kühn"
         url: /akegroup/DanielKuehn/
-#      - title: "Dominik Schreiner"
-#        url: /akegroup/DominikSchreiner/         
+      - title: "Dominik Schreiner"
+        url: /akegroup/DominikSchreiner/         
             
   - title: Visiting Students
     children:
