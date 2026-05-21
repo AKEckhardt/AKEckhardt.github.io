@@ -14,11 +14,13 @@ sidebar:
 
 ___
 
-(64) <b>Non-Equilibrium Preparation of (<i>E</i>)-Phosphinimine (HPNH, X <sup>1</sup>A′) - A Precursor to Prebiotic Phosphorylating Agents.</b> J. Wang, B.-J. Sun, A. Bergantini, Z. Wang, M. McAnally, J. H. Marks, A. H. H. Chang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1039/D6SC01818A](https://doi.org/10.1039/D6SC01818A).
+(64) <b>Non-Equilibrium Preparation of (<i>E</i>)-Phosphinimine (HPNH, X <sup>1</sup>A′) - A Precursor to Prebiotic Phosphorylating Agents.</b> J. Wang, B.-J. Sun, A. Bergantini, Z. Wang, M. McAnally, J. H. Marks, A. H. H. Chang, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>Chem. Sci.</i>, <b>2026</b>, <i>17</i>, 9446–9453, [doi:10.1039/D6SC01818A](https://doi.org/10.1039/D6SC01818A).
 
 <p align="center"> 
 <a href="https://doi.org/10.1039/D6SC01818A"><img src="https://AKEckhardt.github.io/images/pub64.png" alt="Link" width="40%" height="auto%"/></a>
 </p>
+
+<b>Highlight:</b> • [Cover Feature](https://doi.org/10.1039/D6SC90110G)
 
 ___
 
