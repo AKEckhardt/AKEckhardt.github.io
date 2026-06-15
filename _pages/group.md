@@ -23,7 +23,7 @@ sidebar:
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AdrianPortelaGonzalez/">Adrián</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/KristinWulff/">Kristin</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ake/">André</a>.  
-Missing: <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnitaSchneiker/">Anita</a>,
+Missing:
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnahitaSafiyan/">Anahita</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/DanielKuehn/">Daniel</a>,
 <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/ViktorPaczelt/">Viktor</a>.
