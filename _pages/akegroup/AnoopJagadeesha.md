@@ -15,7 +15,7 @@ sidebar:
 <td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/AnoopJagadeesha_2026.jpg" width="50%" height="auto%" align="middle"></td>
 <td style="width:50%;" align="justify" valign="middle">
 <font size="4">
-<b>AnoopJ agadeesha</b><br/>
+<b>Anoop Jagadeesha</b><br/>
 MSc student<br/>
 Room NC 3/172, Tel: +49 234 32 26715<br/>
 <a href="mailto:Anoop.Jagadeesha@edu.ruhr-uni-bochum.de">E-Mail</a><br/>
