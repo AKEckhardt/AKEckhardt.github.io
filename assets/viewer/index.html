@@ -429,6 +429,7 @@ select, input[type="number"], input[type="text"]{border:1px solid rgba(17,24,39,
 .pill{display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:3px 10px; border-radius:999px; border:1px solid rgba(17,24,39,.12); background:#fff; color:var(--muted); font-family:var(--mono);}
 
 .list{flex:1; overflow:auto; padding:10px 12px 12px 12px;}
+.sidebar.dropReady{ outline:2px dashed var(--accent); outline-offset:4px; background:rgba(43,108,176,.04); }
 .specItem{border:1px solid rgba(17,24,39,.12); border-radius:12px; padding:10px; margin-bottom:10px; background:#fff;}
 .specTop{display:flex; align-items:center; gap:10px;}
 .swatch{width:14px; height:14px; border-radius:5px; border:1px solid rgba(0,0,0,.2); cursor:pointer;}
@@ -982,6 +983,185 @@ body { overflow: hidden; }
 #plotWrap{ width: clamp(10%, var(--halfPageW, 100%), 100%); max-width:none; margin-left:auto; margin-right:auto; }
 
 .sup{font-size:0.72em; vertical-align:super; line-height:0;}
+
+/* ===== Responsive screen/mobile additions ===== */
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+.layout, .sidebar, .main, .plotWrap, .toolDock, .statusInputs, .bottom{ min-width:0; }
+header.appbar{ position:sticky; top:0; max-width:100%; }
+header.appbar .barControls{ min-width:0; }
+header.appbar .hint{ min-width:0; overflow:hidden; text-overflow:ellipsis; }
+.toolDock{ flex-wrap:wrap; overflow-x:auto; overscroll-behavior-x:contain; }
+.toolDock .iconBtn, header.appbar .btn, header.appbar label.btn{ flex:0 0 auto; }
+.statusInputs{ overflow-x:auto; overscroll-behavior-x:contain; }
+.statusRow{ min-width:max-content; }
+.overlay{ max-width:calc(100% - 20px); }
+#plotWrap, #plotArea, #navArea, #plotArea svg, #navArea svg{
+  max-width:100%;
+  touch-action:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+.floatPanel{ max-width:calc(100vw - 24px); }
+.modalOverlay{ overflow:auto; }
+.modalOverlay .modalCard{ max-height:calc(100dvh - 36px); display:flex; flex-direction:column; }
+.modalBody{ overflow:auto; }
+.bandsTableWrap, .integralsTable, .bandsTable{ max-width:100%; }
+
+@supports (height: 100dvh){
+  .layout{ height:calc(100dvh - var(--appbarH, 58px)); }
+  body.barCollapsed .layout{ height:100dvh; }
+}
+
+@media (min-width: 1400px){
+  .layout{ grid-template-columns:400px minmax(0, 1fr); gap:14px; padding:14px; }
+  .specName{ max-width:230px; }
+}
+
+@media (max-width: 1100px){
+  .layout{ grid-template-columns:300px minmax(0, 1fr); gap:10px; padding:10px; }
+  .specName{ max-width:150px; }
+  .floatPanel{ width:300px; }
+  .cursorInline{ min-width:22ch; }
+  .activeInline{ min-width:20ch; }
+  #vxMinInp, #vxMaxInp, #vyMinInp, #vyMaxInp{ width:14ch !important; }
+}
+
+@media (max-width: 900px){
+  body{ overflow:auto; }
+  header.appbar{ gap:8px; padding:8px 10px; }
+  header.appbar .barControls{
+    flex:1 1 100%;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:2px;
+    overscroll-behavior-x:contain;
+  }
+  header.appbar .hint{ display:none; }
+  .layout{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    min-height:calc(100dvh - var(--appbarH, 58px));
+    gap:10px;
+    padding:10px;
+  }
+  .sidebar{
+    flex:0 0 auto;
+    max-height:none;
+    min-height:0;
+    overflow:visible;
+  }
+  .sidebar .list{ max-height:34dvh; overflow:auto; }
+  .main{
+    flex:1 1 auto;
+    height:calc(100dvh - var(--appbarH, 58px) - 20px);
+    min-height:560px;
+  }
+  .plotWrap{ min-height:300px; }
+  .navigator{ height:68px; }
+  .bottom{ padding:6px 10px 8px; }
+  .modalOverlay.nonBlocking{
+    align-items:flex-start;
+    justify-content:center;
+    padding:8px;
+  }
+  .modalOverlay.nonBlocking .modalCard{
+    width:min(520px, calc(100vw - 16px));
+    margin:8px 0 0;
+  }
+}
+
+@media (max-width: 640px){
+  header.appbar{ padding:8px; }
+  header.appbar .title{ flex:1 1 auto; min-width:0; white-space:normal; height:auto; line-height:1.15; }
+  header.appbar .btn, header.appbar label.btn{
+    height:32px;
+    min-height:32px;
+    padding:0 9px;
+    font-size:12px;
+  }
+  .layout{ gap:8px; padding:8px; }
+  .section{ padding:10px; }
+  .sidebar{ max-height:none; min-height:0; overflow:visible; }
+  .sidebar .list{ max-height:36dvh; padding:8px 10px 10px; overflow:auto; }
+  .specItem{ padding:8px; margin-bottom:8px; }
+  .specName{ max-width:42vw; }
+  .main{
+    height:calc(100dvh - var(--appbarH, 58px) - 16px);
+    min-height:520px;
+  }
+  .mainTop{ padding:6px 8px; }
+  .statusInputs{ padding:4px 8px 0; }
+  .statusRow{ gap:5px; }
+  .rightStatus{ margin-left:0; }
+  .miniInp, #vxMinInp, #vxMaxInp, #vyMinInp, #vyMaxInp{
+    width:11ch !important;
+    font-size:12px;
+  }
+  .cursorInline, .activeInline{ min-width:auto; }
+  .toolDock{
+    flex-wrap:nowrap;
+    gap:6px;
+    padding:6px 8px;
+  }
+  .toolDock .spacer{ flex:0 0 0; }
+  .iconBtn{
+    width:34px;
+    height:34px;
+    border-radius:10px;
+    flex:0 0 34px;
+  }
+  .iconBtn .ico{ font-size:15px; }
+  .pill{ flex:0 0 auto; white-space:nowrap; }
+  .plotWrap{ min-height:280px; }
+  .overlay{
+    left:8px;
+    top:8px;
+    max-width:calc(100% - 16px);
+    font-size:11px;
+    padding:7px 8px;
+  }
+  .floatPanel{
+    left:8px;
+    right:8px;
+    top:8px;
+    width:auto;
+    max-height:calc(100% - 16px);
+    overflow:auto;
+  }
+  .floatPanel .grid{ grid-template-columns:1fr; }
+  .navigator{ height:52px; }
+  .navHelp{ display:none; }
+  #plotArea svg text{ font-size:12px !important; }
+  #plotArea svg text[transform*="rotate"], #plotArea svg .axis-title, #plotArea svg .axisLabel{ font-size:13px !important; }
+  #plotArea svg .legend text, #plotArea svg [class*="legend"] text{ font-size:11px !important; }
+  .modalOverlay{ padding:8px; align-items:flex-start; }
+  .modalCard{ width:calc(100vw - 16px); border-radius:12px; }
+  .modalHeader{ padding:10px; }
+  .modalBody{ padding:10px; }
+  .modalFooter{ padding:9px 10px; }
+  .calcWrap{ gap:10px; }
+  .calcKeyGrid{ gap:6px; }
+  table{ display:block; overflow-x:auto; white-space:nowrap; }
+}
+
+@media (max-width: 420px){
+  .layout{ padding:6px; gap:6px; }
+  .sidebar{ max-height:none; min-height:0; }
+  .main{
+    height:calc(100dvh - var(--appbarH, 58px) - 12px);
+    min-height:500px;
+  }
+  .btn.small{ padding:5px 8px; }
+  .section h3{ font-size:12px; }
+  .small{ font-size:11px; }
+  .navigator{ height:44px; }
+  .bottom{ padding:4px 8px 6px; }
+  #plotArea svg text{ font-size:10px !important; }
+  #plotArea svg text[transform*="rotate"], #plotArea svg .axis-title, #plotArea svg .axisLabel{ font-size:11px !important; }
+  #btnBarExpandFloat{ top:8px; left:8px; }
+}
 </style>
 </head>
 <body>
@@ -1009,7 +1189,7 @@ body { overflow: hidden; }
   <span class="lbl">Toolbar</span>
 </button>
 <div class="layout">
-<aside class="sidebar card">
+<aside class="sidebar card" id="spectraSidebar">
 <div class="section">
 <h3>Geladene Spektren</h3>
 <div class="small">Name anklicken = aktiv · Checkbox = ein/aus · Farbfeld = Farbe ändern</div>
@@ -2443,6 +2623,7 @@ if(taBtn){
   }
 
   const fileInput=document.getElementById("fileInput");
+  const spectraSidebar=document.getElementById("spectraSidebar");
   
   // Header "Spektren laden" button triggers hidden file input (for consistent styling)
   const btnLoadSpectra = document.getElementById("btnLoadSpectra");
@@ -9454,6 +9635,31 @@ S.box=null; S.drag=null;
       }
     },{passive:false});
 
+    let lastTouchTap = {t:0, x:0, y:0};
+    svg.addEventListener("touchend", (ev)=>{
+      if(!S.view || !ev.changedTouches || ev.changedTouches.length!==1) return;
+      const touch = ev.changedTouches[0];
+      const pt = pointerToLocal(touch, svg);
+      if(!inRect(pt, PlotUI.m.l, PlotUI.m.t, PlotUI.innerW, PlotUI.innerH)) return;
+
+      const now = Date.now();
+      const dx = touch.clientX - lastTouchTap.x;
+      const dy = touch.clientY - lastTouchTap.y;
+      const isDoubleTap = (now - lastTouchTap.t) < 330 && (dx*dx + dy*dy) < 900;
+      lastTouchTap = {t:now, x:touch.clientX, y:touch.clientY};
+
+      if(!isDoubleTap) return;
+      try{
+        ensureLegendState();
+        if(S.legend && S.legend.enabled && legendPickAtPt(pt)) return;
+      }catch(_e){}
+      ev.preventDefault();
+      try{ ev.stopPropagation(); }catch(_e){}
+      S.box = null;
+      S.drag = null;
+      resetZoom();
+    }, {passive:false});
+
     svg.addEventListener("dblclick", (ev)=>{
       suppress(ev);
       try{
@@ -10788,22 +10994,76 @@ if(frameOnEl) S.showFrame=frameOnEl.checked; NavUI._overviewKey=null; scheduleRe
 
 
 
-  fileInput.addEventListener("change", async ()=>{
-    const files=Array.from(fileInput.files||[]);
+  let _spectrumImportBusy = false;
+  let _lastSpectrumImportKey = "";
+  let _lastSpectrumImportTs = 0;
+
+  function makeSpectrumImportKey(files){
+    return (files||[]).map(f=>[f.name||"", f.size||0, f.lastModified||0].join("::")).join("||");
+  }
+
+  async function processSpectrumFiles(files, source="input"){
+    files = Array.from(files||[]).filter(Boolean);
     if(!files.length) return;
-    for(const f of files){
-      try{
-        const txt=await f.text();
-        const parsed=parseJCAMP(txt, f.name);
-        if(!parsed.x.length){ overlay.classList.remove("hidden"); overlay.textContent=`⚠️ ${f.name}: keine Datenpunkte.`; continue; }
-        addSpectrum(parsed, f.name);
-      } catch(err) {
-        overlay.classList.remove("hidden");
-        overlay.textContent=`⚠️ ${f.name}: Parser-Fehler: ${err?.message||err}`;
+    const key = makeSpectrumImportKey(files);
+    const now = Date.now();
+    if(_spectrumImportBusy) return;
+    if(key && key===_lastSpectrumImportKey && (now-_lastSpectrumImportTs)<1200) return;
+    _spectrumImportBusy = true;
+    _lastSpectrumImportKey = key;
+    _lastSpectrumImportTs = now;
+    overlay.classList.remove("hidden");
+    try{
+      for(const f of files){
+        try{
+          const txt=await f.text();
+          const parsed=parseJCAMP(txt, f.name);
+          if(!parsed.x.length){ overlay.classList.remove("hidden"); overlay.textContent=`⚠️ ${f.name}: keine Datenpunkte.`; continue; }
+          addSpectrum(parsed, f.name);
+        } catch(err) {
+          overlay.classList.remove("hidden");
+          overlay.textContent=`⚠️ ${f.name}: Parser-Fehler: ${err?.message||err}`;
+        }
       }
+    } finally {
+      _spectrumImportBusy = false;
+      if(S.spectra.length) overlay.classList.add("hidden");
+      if(fileInput) fileInput.value="";
+      setTimeout(()=>{
+        if(Date.now()-_lastSpectrumImportTs > 1000) _lastSpectrumImportKey = "";
+      }, 1400);
     }
-    fileInput.value="";
+  }
+
+  fileInput.addEventListener("change", async ()=>{
+    await processSpectrumFiles(fileInput.files, "input");
   });
+
+  if(spectraSidebar){
+    const markDrop = on => spectraSidebar.classList.toggle("dropReady", !!on);
+    ["dragenter","dragover"].forEach(evt=>{
+      spectraSidebar.addEventListener(evt, (e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+        try{ if(e.dataTransfer) e.dataTransfer.dropEffect = "copy"; }catch(_e){}
+        markDrop(true);
+      });
+    });
+    ["dragleave","dragend"].forEach(evt=>{
+      spectraSidebar.addEventListener(evt, (e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+        if(!spectraSidebar.contains(e.relatedTarget)) markDrop(false);
+      });
+    });
+    spectraSidebar.addEventListener("drop", async (e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+      markDrop(false);
+      const files = Array.from((e.dataTransfer && e.dataTransfer.files) || []).filter(f=>f && !(f.type||"").includes("text/uri-list"));
+      await processSpectrumFiles(files, "drop");
+    });
+  }
 
   function makeDemoSpectrum(){
     const xMin=400, xMax=4000, n=8000;
@@ -10926,11 +11186,7 @@ annotations:{
   }
   btnSave.addEventListener("click", ()=>{ if(!S.spectra.length) return; downloadText("ir_viewer_project_v13.json", serializeProject()); });
 
-  projInput.addEventListener("change", async ()=>{
-    const f=projInput.files && projInput.files[0];
-    if(!f) return;
-    try {
-      const txt=await f.text();
+  async function loadProjectFromText(txt, sourceLabel=""){
       const proj=JSON.parse(txt);
       if(!proj || !proj.spectra) throw new Error("Ungültiges Projekt.");
       S.spectra=[];
@@ -11118,6 +11374,15 @@ try{
       refreshCalcSelects();
       rebuildSpecList();
       scheduleRender(true,true);
+
+  }
+
+  projInput.addEventListener("change", async ()=>{
+    const f=projInput.files && projInput.files[0];
+    if(!f) return;
+    try {
+      const txt=await f.text();
+      await loadProjectFromText(txt, f.name);
     } catch(err) {
       overlay.classList.remove("hidden");
       overlay.textContent=`⚠️ Projekt laden fehlgeschlagen: ${err?.message||err}`;
@@ -11125,6 +11390,71 @@ try{
       projInput.value="";
     }
   });
+
+
+  // ===== Deep-link loading: ?dx=... / ?spectrum=... / ?project=... =====
+  function collectURLParamValues(params, names){
+    const out=[];
+    for(const name of names){
+      for(const value of params.getAll(name)){
+        const v=String(value||"").trim();
+        if(v) out.push(v);
+      }
+    }
+    return out;
+  }
+  function toFetchableURL(raw){
+    const u=new URL(String(raw||""), window.location.href);
+    if(!["http:","https:"].includes(u.protocol)){
+      throw new Error("Nur http(s)-Links werden unterstützt.");
+    }
+    return u;
+  }
+  function filenameFromURLObject(u, fallback="spectrum.dx"){
+    const leaf=(u.pathname.split("/").pop() || fallback).trim();
+    try{ return decodeURIComponent(leaf) || fallback; }catch(_e){ return leaf || fallback; }
+  }
+  async function fetchTextFromURL(raw){
+    const u=toFetchableURL(raw);
+    const res=await fetch(u.href, {method:"GET", credentials:"same-origin"});
+    if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    return {url:u, text:await res.text()};
+  }
+  async function loadJCAMPSpectrumFromURL(raw){
+    const u=toFetchableURL(raw);
+    overlay.classList.remove("hidden");
+    overlay.textContent=`⏳ Lade Spektrum: ${u.href}`;
+    const got=await fetchTextFromURL(u.href);
+    const name=filenameFromURLObject(got.url, "spectrum.dx");
+    const parsed=parseJCAMP(got.text, name);
+    if(!parsed.x.length) throw new Error(`${name}: keine Datenpunkte.`);
+    addSpectrum(parsed, got.url.href);
+  }
+  async function loadProjectFromURL(raw){
+    const u=toFetchableURL(raw);
+    overlay.classList.remove("hidden");
+    overlay.textContent=`⏳ Lade Projekt: ${u.href}`;
+    const got=await fetchTextFromURL(u.href);
+    await loadProjectFromText(got.text, got.url.href);
+  }
+
+  async function loadInitialURLPayloads(){
+    const params=new URLSearchParams(window.location.search);
+    const projectUrls=collectURLParamValues(params, ["project","proj"]);
+    const spectrumUrls=collectURLParamValues(params, ["dx","jdx","jcamp","spectrum","spectra","url","open"]);
+    if(!projectUrls.length && !spectrumUrls.length) return;
+    for(const url of projectUrls){
+      try{ await loadProjectFromURL(url); }
+      catch(err){ overlay.classList.remove("hidden"); overlay.textContent=`⚠️ Projekt-Link fehlgeschlagen: ${err?.message||err}`; }
+    }
+    for(const url of spectrumUrls){
+      try{ await loadJCAMPSpectrumFromURL(url); }
+      catch(err){ overlay.classList.remove("hidden"); overlay.textContent=`⚠️ Spektrum-Link fehlgeschlagen: ${err?.message||err}`; }
+    }
+    if(S.spectra.length) overlay.classList.add("hidden");
+  }
+  loadInitialURLPayloads();
+
 
 
   // Image input handler (add movable images as annotations)
