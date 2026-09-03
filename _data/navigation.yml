@@ -1,0 +1,133 @@
+# main links links
+main:
+  - title: "Home"
+    url: /
+
+  - title: "About André"
+    url: /cv/
+
+  - title: "Group"
+    url: /group/
+    
+  - title: "Research"
+    url: /research/
+    
+  - title: "Publications"
+    url: /publications/
+    
+  - title: "Tools"
+    children:
+      - title: "Ansatzrechner"
+        url: /ansatzrechner/
+      - title: "Spectra-DX-Converter"
+        url: /converter/
+      - title: "IR Viewer"
+        url: /viewer/
+      - title: "WKB Tunneling"
+        url: /tunneling/
+      - title: "31P NMR"
+        url: /31pnmr/
+
+#  - title: "Talks"
+#    url: /talks/    
+
+#  - title: "Teaching"
+#    url: /teaching/    
+    
+#  - title: "Portfolio"
+#    url: /portfolio/
+        
+#  - title: "Blog Posts"
+#    url: /year-archive/
+    
+#  - title: "Guide"
+#    url: /markdown/
+
+
+docs:
+  - title: AKE Group        
+    url: /group/
+        
+  - title: Group Leader
+    children:
+      - title: "André K. Eckhardt"
+        url: /akegroup/ake/
+
+  - title: Postdocs
+    children:
+      - title: "Adrián Portela González"
+        url: /akegroup/AdrianPortelaGonzalez/
+      - title: "Mika Maehara"
+        url: /akegroup/MikaMaehara/
+      - title: "Anita Schneiker"
+        url: /akegroup/AnitaSchneiker/
+      - title: "Christian Thiehoff"
+        url: /akegroup/ChristianThiehoff/
+
+  - title: PhD Students
+    children:
+#      - title: "Vladimir D. Drabkin"
+#        url: /akegroup/VladimirDrabkin/
+      - title: "Julian Eßer"
+        url: /akegroup/JulianEßer/ 
+      - title: "Viktor Paczelt"
+        url: /akegroup/ViktorPaczelt/
+      - title: "Anahita Safiyan"
+        url: /akegroup/AnahitaSafiyan/
+      - title: "Kristin Wulff"
+        url: /akegroup/KristinWulff/  
+
+        
+  - title: Students
+    children:
+      - title: "Anoop Jagadeesha"
+        url: /akegroup/AnoopJagadeesha/  
+#      - title: "Tamari Kiknadze"
+#        url: /akegroup/TamariKiknadze/        
+#      - title: "Daniel Kühn"
+#        url: /akegroup/DanielKuehn/
+      - title: "Dominik Schreiner"
+        url: /akegroup/DominikSchreiner/         
+            
+  - title: Visiting Students
+
+        
+  - title: Alumni
+    children:
+      - title: "Alumni"
+        url: /akegroup/Alumni/
+
+
+
+pubs:
+  - title: Publications     
+    url: /publications/
+  - title: "2026"
+    url: /publications/#2026
+  - title: "2025"
+    url: /publications/#2025
+  - title: "2024"
+    url: /publications/#2024
+  - title: "2023"
+    url: /publications/#2023
+  - title: "2022"
+    url: /publications/#2022
+  - title: "2021"
+    url: /publications/#2021
+  - title: "2020"
+    url: /publications/#2020
+  - title: "2019"
+    url: /publications/#2019
+  - title: "2018"
+    url: /publications/#2018
+        
+res:
+  - title: Astro- and Prebiotic Chemistry     
+    url: /research/#Astro
+  - title: Reactive Intermediates and Matrix Isolation Spectroscopy    
+    url: /research/#Matrix
+  - title: Chemical Reactivity and Physical (In)Organic Chemistry
+    url: /research/#POC
+  - title: Phosphorus Chemistry
+    url: /research/#31P
+        

@@ -1,0 +1,84 @@
+---
+layout: archive
+title: "Viktor Paczelt"
+permalink: /akegroup/ViktorPaczelt/
+author_profile: false
+sidebar:
+  nav: "docs"
+
+---
+
+{% include base_path %}
+
+<font size="2"><br/></font>
+<table> <style>table, th, td {border: transparent;}</style> <tr>
+<td style="width:50%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/Viktor_2024.jpg" width="50%" height="auto%" align="middle"></td>
+<td style="width:50%;" align="justify" valign="middle">
+<font size="4">
+<b>Viktor Paczelt</b><br/>
+PhD student<br/>
+Room NC 3/172, Tel: +49 234 32 17556<br/>
+<a href="mailto:Viktor.Paczelt@ruhr-uni-bochum.de">E-Mail</a><br/>
+<br/>
+BSc (2014 - 2018, Masaryk University Brno, Czech Republic)<br/>
+MSc (2019 - 2023, Ruhr-University Bochum, Germany)<br/>
+<br/>
+<div class="page__footer-follow">
+<ul class="social-icons">
+<li><a href="https://linkedin.com/in/viktor-paczelt-4105ba179/"><i class="fab fa-linkedin fa-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+<li><a href="https://orcid.org/0000-0003-3785-6833"><i class="ai ai-orcid-square ai-3x" style="color:rgb(73,78,82)" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</font>
+</td>
+</tr></table>
+
+<p style='text-align: justify;'>
+Viktor studied chemistry at Masaryk University in Brno (Czech Republic) and obtained his BSc in 2018 with <a href="http://photochem.sci.muni.cz/">Prof. Petr Klán</a>. During his BSc studies Viktor was doing organic synthesis and photochemistry. In 2019 Viktor moved to Germany and started his MSc studies at RU Bochum.
+</p>
+
+
+
+
+Publications
+------
+___
+
+(04) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, C. Thiehoff, M. E. Sandoval-Salinas, <u>V. Paczelt</u>, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
+<p align="center"> 
+<a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.gif" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(03) <b>Generation and UV-photolysis of <i>N</i>-methyleneformamide.</b> <u>V. Paczelt</u>, V. D. Drabkin, D. Kühn and A. K. Eckhardt <i>Chem. Sci.</i>, <b>2025</b>, <i>116</i>, 11103–11109, [doi:10.1039/D5SC02777B](https://doi.org/10.1039/D5SC02777B). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-6ksdm) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M724WNW4) 
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D5SC02777B"><img src="https://AKEckhardt.github.io/images/pub53.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(02) <b>Spectroscopic identification of interstellar relevant 2-iminoacetaldehyde.</b> V. D. Drabkin, <u>V. Paczelt</u> and A. K. Eckhardt <i>Chem. Commun.</i>, <b>2023</b>, <i>59</i>, 12715–12718, [doi:10.1039/D3CC04192A](https://doi.org/10.1039/D3CC04192A).
+
+<p align="center"> 
+<a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/pub48.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+(01) <b>Glycine Imine – The Elusive <i>α</i>-Imino Acid Intermediate in the Reductive Amination of Glyoxylic Acid.</b> <u>V. Paczelt</u>, R. C. Wende, P. R. Schreiner and A. K. Eckhardt <i>Angew. Chem Int. Ed.</i>, <b>2023</b>, <i>62</i>, e202218548, [doi:10.1002/anie.202218548](https://doi.org/10.1002/anie.202218548); <i>Angew. Chem.</i>, <b>2023</b>, <i>135</i>, e202218548, [doi:10.1002/ange.202218548](https://doi.org/10.1002/ange.202218548). 
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
+
+
+
+
+
+
+

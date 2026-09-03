@@ -1,0 +1,277 @@
+---
+permalink: /
+layout: archive
+title: "Welcome to the Eckhardt Lab!"
+author_profile: true
+
+---
+<p align="center"> 
+<table> <style>table, th, td {border: transparent;}</style> 
+<tr>
+<td style="width:70%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/EckhardtLab.png" alt="Link" width="50%" height="auto%"/>
+<br/><br/><br/>   
+<p style='text-align: justify;'><font size="4">
+The Eckhardt Lab develops experimental molecular chemistry at the interface of organic and physical chemistry. We investigate the structure, spectroscopy, 
+and reactivity of reactive intermediates and small molecules using synthesis, photolysis, high-vacuum flash pyrolysis, as well as cryogenic matrix isolation in combination with 
+EPR, IR, and UV/Vis spectroscopy. By combining experiment with quantum-chemical analysis, we uncover fundamental structure–reactivity relationships. 
+Selected applications address molecular processes relevant to astrochemical and prebiotic environments.
+</font>
+</p>
+
+
+</td>
+<td style="width:30%;" align="center" valign="middle">
+<a href="https://erc.europa.eu/homepage"><img src="https://AKEckhardt.github.io/images/ERC.png" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a><br><br>
+<a href="https://www.humboldt-foundation.de/"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="65%" height="auto%"/></a><br><br>
+</td>
+</tr>
+</table>
+</p>
+
+
+<p style='text-align: justify;'>
+<b>Für alle RUB-Studenten:</b><br/> 
+Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
+wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Wer als Vertiefungspraktikant, Bachelor-, oder Masterstudent frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
+Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen.<br/> <br/> 
+
+<b>For all non-RUB members:</b><br/> 
+You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
+<br/> <br/> 
+
+
+<font size="5"><b>News</b></font><font size="2"><br/></font>
+<table> <style>table, th, td {border: transparent;}</style>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2026</b></font><br/><font size="1"><br/></font><font size="4">
+André was awarded an <a href="https://news.rub.de/english/press-releases/2026-09-03-chemistry-erc-starting-grant-andre-k-eckhardt">ERC Starting Grant 2026</a>! Following the success of the Emmy Noether Programme, this marks another major recognition of our research. Up next: With major changes to our laboratory infrastructure in Bochum, I and our lab are looking for a permanent institutional home where the Eckhardt Lab can continue to grow, develop its research programme, and make full use of the opportunities this ERC Starting Grant provides.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://erc.europa.eu/homepage"><img src="https://AKEckhardt.github.io/images/ERC.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2026</b></font><br/><font size="1"><br/></font><font size="4">
+Together with the <a href="www.mertenlab.de/">Merten Lab</a>, we organized and hosted <a href="https://www.mertenlab.de/cplt2026/">CPLT2026</a> at Ruhr University Bochum, bringing together an international community of researchers interested in low-temperature chemistry and physics. Daniel and Tamari successfully completed their Master's theses. Congratulations to both!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.mertenlab.de/cplt2026/"><img src="https://AKEckhardt.github.io/images/news46.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June and July 2026</b></font><br/><font size="1"><br/></font><font size="4">
+André gave an invited seminar at the University of Cologne and presented the group's research at RUB as part of his <i>Habilitation</i> process. Alina Miftakhova started her BSc thesis project – good luck, Alina! <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni/">Kasmita Singha</a> successfully completed her RESOLV internship. We also contributed to the <a href="https://www.solvation.de/news/current-news/detail/resolv-summer-camp-2026-a-week-full-of-research-experiments-and-exploration">RESOLV Summer Camp 2026</a>, giving young students hands-on insights into everyday scientific research. The students sucessfully synthesized their own bouncy balls.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/news/current-news/detail/resolv-summer-camp-2026-a-week-full-of-research-experiments-and-exploration"><img src="https://AKEckhardt.github.io/images/news45.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2026</b></font><br/><font size="1"><br/></font><font size="4">
+<a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni/">Kasmita Singha</a> joined our group for an internship as part of <a href="https://www.solvation.de/education/undergraduate-exchange">RESOLV's undergraduate exchange program</a>. Welcome, Kasmita! Yunus Icer started an in-depth practical in our group. We also participated in the <a href="https://www.solvation.de/news/current-news/detail/summer-school-solvation-science-2026">RESOLV Summer School 2026</a>, bringing together young researchers for lectures, hands-on modules, and scientific exchange.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/news/current-news/detail/summer-school-solvation-science-2026"><img src="https://AKEckhardt.github.io/images/news44.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2026</b></font><br/><font size="1"><br/></font><font size="4">
+As the group’s very first PhD student, Vladimir has successfully defended his doctoral thesis, which is another milestone for both him and the entire group. Congratulations, Vladimir! Kristin and Julian also took part in the RESOLV organized <a href="https://www.solvation.de/news/current-news/detail/girls-day-2026-at-resolv-a-day-in-the-life-of-a-scientist">Girls’ Day 2026</a>, where they helped introduce young students to a day in the life of a scientist.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news43.jpg" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2026</b></font><br/><font size="1"><br/></font><font size="4">
+André presented our research at the Chemiedozententagung 2026 in Essen and met <a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-chemie-und-biotechnik/profil/juniorprofessur-fachgebiet-physikalische-chemie/team">Jun.-Prof. Dr. Robert Geitner</a>. Based on Robert's graph neural network for the prediction of <sup>31</sup>P NMR shifts, André vibe-coded a simple accessible <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/31pnmr/">webapp</a>. Most group members attended the RESOLV Klausurtagung, the official opening of the Research Center Chemical Sciences and Sustainability, and the launch of RESOLV3. Kristin was awarded a <a href="https://www.vci.de/fonds/stipendien/kekule-stipendium/seiten-2.jsp">Kekulé followship</a>. Congratulations! Soham's internship ended and we welcome Barbara for the next three months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/news/current-news/detail/diving-into-the-next-era-resolv-officially-launched-its-third-funding-period"><img src="https://AKEckhardt.github.io/images/news42.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2026</b></font><br/><font size="1"><br/></font><font size="4">
+Group updates: <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni/">Tamari</a> and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/Alumni">Daniel</a> started their Master's thesis projects. Laurin Inama started his BSc thesis project. Julian visited the group of <a href="https://cmt.physik.tu-dortmund.de/schapiro-group/">Prof. Dr. Igor Schapiro</a> in Dortmund to learn more about molecular photodynamic simulations. Our new study about the spectroscopic characterization and electrocyclic ring opening of parent 2-azetine is <a href="https://doi.org/10.1002/poc.70071">online</a>. </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/poc.70071"><img src="https://AKEckhardt.github.io/images/pub63.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2026</b></font><br/><font size="1"><br/></font><font size="4">
+With the help of ChatGPT we launched the first version of our <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/ansatzrechner/">reaction planner (Ansatzrechner)</a>, which connects the PubChem database with some basic math tools for reaction setup calculations, which are (still) often done in spreadsheets or on paper by hand with a calculator. It is still a bit buggy but might be useful for students and some research groups. Soham joined us for an internship. </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/ansatzrechner/"><img src="https://AKEckhardt.github.io/images/news41.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2025</b></font><br/><font size="1"><br/></font><font size="4">
+André attended the 9th Annual Workshop of the <a href="https://www.astrobiologie.de/">German Astrobiological Society</a>, where he received the Best Presentation Award. We welcomed Jonas Haiduk to the group for an in-depth practical. Sharanki und Nathalie finished their Bachelor's Thesis. Congratulations! </font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news40.jpeg" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2025</b></font><br/><font size="1"><br/></font><font size="4">
+After more than three years of development, our work on EPR spectroscopy in <i>para</i>-H<sub>2</sub> was published in <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><i>Angewandte</i></a>! Kristin was selected to present her Master’s thesis at the Master's thesis prize symposium of the GDCh Division of Photochemistry. More group updates: Nathalie and Sharanki started their BSc theses, Theodor started an in-depth practical, Julian began his PhD studies, and <a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/akegroup/AnitaSchneiker/">Anita</a> joined as a postdoc – good luck!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202518517"><img src="https://AKEckhardt.github.io/images/news38.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Our work on alanine imine was published in <a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><i>JACS</i></a> in collaboration with the <a href="https://crespootero.uk/">Crespo-Otero group</a>! Anoop started an in-depth practical, and Kristin began her PhD studies in a joint project with the <a href="https://www.uni-muenster.de/Chemie.ac/forschung/ak_szych/welcome/index.html">Szych group</a> in Münster – good luck!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://pubs.acs.org/doi/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/news37.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Julian and Kristin finished their Master's Thesis. Congratulations! Mika and Viktor attended the 20th European Symposium on Organic Reactivity (ESOR2025).</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news36.png" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Adrián attended the 37th International Symposium on Free Radicals and presented his work about EPR spectroscopy in <i>para</i>-H<sub>2</sub>. Most Group members attended the Dream Reactions Symposium 2025 in Münster. Kristin presented her research on a poster.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-muenster.de/Chemie.oc/glorius/dream_reactions.html"><img src="https://AKEckhardt.github.io/images/news35.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2025</b></font><br/><font size="1"><br/></font><font size="4">
+The semester is over and we enjoyed an unforgettable kayak trip with our neighbor's from the Schulz lab, rounded off with a relaxed BBQ by the Ruhr river.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news34.JPG" alt="Link" width="65%" height="auto%"/><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2025</b></font><br/><font size="1"><br/></font><font size="4">
+We contributed to the <i>JOC</i> Special Issue: Physical Organic Chemistry: Never Out of Style. Our study about the <i>P-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study</i> is now <a href="https://doi.org/10.1021/acs.joc.5c00840"><i>accepted</i></a>! Julian and André attendend the <a href="https://www.grc.org/physical-organic-chemistry-conference/2025/">Physical Organic Chemistry Gordon Research Conference</a>.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/news33.gif" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2025</b></font><br/><font size="1"><br/></font><font size="4">
+The Boehringer Ingelheim Stiftung supports our research with an <a href="https://www.boehringer-ingelheim-stiftung.de/was-wir-foerdern/foerderprogramme/exploration-grants.html">Exploration Grant</a>. Thank you very much! Our study about <i>N</i>-methyleneformamide got accepted in <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/SC/D5SC02777B"><i>Chem. Sci.</i></a>! André gave a talk at the 75. Steinheimer Gespräche.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Anna and Vladislava joined our group for an in-depth practical. Welcome to our group! The new semester started and André teaches Organic Chemistry I this term.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.eckhardt-lab.ruhr-uni-bochum.de/group/"><img src="https://AKEckhardt.github.io/images/news32.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Ben Vöth and Margarita Shishkova joined the group for an indepth-practical. Welcome to our group! Check out our new preprint about the <a href="https://doi.org/10.26434/chemrxiv-2025-6ksdm">Generation and UV-Photolysis of <i>N</i>-methyleneformamide</a>! Viktor, Anahita, Adrian and André participated at the <a href="https://www.solvation.de/news/current-news/detail/klausurtagung-2025">RESOLV Klausurtagung</a>. 
+André attended the Chemiedozententagung in Braunschweig. Dilara finished her Bachelor's Thesis. Congratulations!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut"><img src="https://AKEckhardt.github.io/images/news31.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Dominik Schreiner joined the group for an in-depth practical and Moulay Driss Mellaoui for a research stay as part of the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge</a>. Welcome to our group! Our new paper is online: H-Tunneling Rotamerization in Glycine Imine. <a href="https://doi.org/10.1021/acs.jpclett.5c00117">Check it out!</a> </font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1021/acs.jpclett.5c00117"><img src="https://AKEckhardt.github.io/images/news30.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2025</b></font><br/><font size="1"><br/></font><font size="4">
+Dilara Korkut joined the group for her BSc thesis. Good luck, Dilara!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/DilaraKorkut.jpg"><img src="https://AKEckhardt.github.io/images/news28.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2024</b></font><br/><font size="1"><br/></font><font size="4">
+André visited the neighbor university in Essen for a seminar talk.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.uni-due.de"><img src="https://AKEckhardt.github.io/images/news29.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2024</b></font><br/><font size="1"><br/></font><font size="4">
+Philip Mund and Martyna Rybka joined the group for an in-depth practical. André visited ELTE - Eötvös University in Hungary.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.elte.hu/en/"><img src="https://AKEckhardt.github.io/images/news27.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2024</b></font><br/><font size="1"><br/></font><font size="4">
+Ivan Shchus and Olga Vorobyova won a research stay in our group in the <a href="https://www.solvation.de/education/student-challenge/6-eckhardt-group">Resolv Student Challenge "Your Step into Solvation Science"</a>. They will stay with us for the next three months and investigate cryosolvation effects.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news26.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2024</b></font><br/><font size="1"><br/></font><font size="4">
+<a href="https://AKEckhardt.github.io/akegroup/AdrianPortelaGonzalez">Adrián Portela González</a> joined the group as a second postdoc. He will mainly work on our matrix isolation EPR experimental setup. André attended the BioOrganik24 symposium in Dortmund.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AdrianPortelaGonzalez"><img src="https://AKEckhardt.github.io/images/news25.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June and July 2024</b></font><br/><font size="1"><br/></font><font size="4">
+André attended the <a href="https://www.vci.de/fonds/der-fonds/netzwerke/netzwerke/freq/liebig-meetings/liebig-meetings.jsp">26. Steinheimer Gespräche</a> and was invited to presented the group's research at the <a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html">CPLT2024</a> in Niseko (Japan). CPLT2026 will take place in Bochum and be co-organized by us and the <a href="https://www.mertenlab.de/">Merten Lab</a>. <a href="https://AKEckhardt.github.io/akegroup/Alumni">Hasan Gören</a> joined the group for three months as an Erasmus fellow.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www2.lowtem.hokudai.ac.jp/astro/CPLT2024/index.html"><img src="https://AKEckhardt.github.io/images/news24.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Shahid Iqbal</a>, <a href="https://AKEckhardt.github.io/akegroup/DanielKuehn">Daniel Kühn</a>, and <a href="https://AKEckhardt.github.io/akegroup/Alumni">Media Mohamad</a> started an in-depth practical in our group. <a href="https://AKEckhardt.github.io/akegroup/MikaMaehara">Mika Maehara</a> joined the group as a first postdoc.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/group/"><img src="https://AKEckhardt.github.io/images/news23.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2024</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> won a <a href="https://www.daad.de/de/">DAAD scholarship</a> and joined the group as a third PhD student. André presented the group's research at the <a href="https://www.chemie.uni-bonn.de/ciptc/en">Clausius Institute for Physical and Theoretical Chemistry</a> in Bonn.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2024</b></font><br/><font size="1"><br/></font><font size="4">André presented the group's results at the <a href="https://veranstaltungen.gdch.de/microsite/index.cfm?l=11551&sp_id=1">Chemiedozententagung 2024</a> in Aachen. Viktor, Vladimir and André attended the RESOLV Klausurtagung 2024. Finally, our new IR spectrometer arrived!</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news21.jpg" alt="Link" width="65%" height="auto%"/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2024</b></font><br/><font size="1"><br/></font><font size="4">André visited the <a href="https://uhmreactiondynamics.org/">Kaiser group</a> in Honolulu and presented the group's results at the Third Laboratory Astrophysics Workshop in Kapaa, Kauai, Hawaii.</font></td>
+<td style="width:30%;" align="center" valign="middle"><img src="https://AKEckhardt.github.io/images/news20.PNG" alt="Link" width="65%" height="auto%"/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>December 2023</b></font><br/><font size="1"><br/></font><font size="4">We got accepted in the <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether">Emmy Noether programme</a> of the DFG. In the next six years we will explore more reactive intermediates in interstellar ice analogs. Further information is available <a href="https://news.rub.de/wissenschaft/2023-12-13-forschungsfoerderung-neue-emmy-noether-gruppe-erforscht-interstellare-eisgemische">here</a>.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff">Kristin Wulff</a> joined the group for an in-depth practical. She will learn more about organic synthesis and matrix isolation spectroscopy.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/KristinWulff"><img src="https://AKEckhardt.github.io/images/news18.jpeg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan">Anahita Safiyan</a> joined the group under RESOLV's program for Iranian researchers. She will learn more about solvation effects in organic synthesis.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/AnahitaSafiyan"><img src="https://AKEckhardt.github.io/images/news17.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/JulianEßer">Julian Eßer</a> joined the group for an in-depth practical. He will learn more about organic synthesis, computational chemistry and matrix isolation spectroscopy.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/JulianEßer"><img src="https://AKEckhardt.github.io/images/news16.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2023</b></font><br/><font size="1"><br/></font><font size="4">Next step in the preparation and spectroscopic characterization of interstellar relevant imines. Vladimir and Viktor successfully generated and isolated iminoacetaldehyde in solid argon. Congratulations! Our results are published in <a href="https://doi.org/10.1039/D3CC04192A"><i>Chem. Commun.</i></a> as invited communication and part of the 2023 Emerging Investigators collection.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1039/D3CC04192A"><img src="https://AKEckhardt.github.io/images/news15.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt">Viktor Paczelt</a> successfully completed his Master studies and submitted his Master thesis. He will continue with his PhD studies at RUB in our group.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt"><img src="https://AKEckhardt.github.io/images/news3.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Dónal O'Donnell</a> joined the group as an undergraduate researcher for an international internship. He will study solvation science questions in the next three months with us. The program is funded by <a href="https://www.solvation.de/">RESOLV</a>.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news14.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>June 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Alexander Swienty</a> joined the group for for an external master thesis and will work with us in the synthesis lab for the next six months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news13.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Aya S. A. Alhaddad</a> joined the group for for an in-depth practical. She will work in the synthesis lab and learn quantum chemical calculations.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news12.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Shubham Sawle</a> joined the group for an international internship funded by RESOLV. He will learn more about solvation science in the next six months.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news11.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>April 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Adam Hasso</a> joined the group for an in-depth practical. He will synthesize a new precursor for our imine chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news10.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Luciana Herbeck</a> joined the group for an in-depth practical. She will learn more about organic synthesis and computational chemistry.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/Alumni"><img src="https://AKEckhardt.github.io/images/news9.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>March 2023</b></font><br/><font size="1"><br/></font><font size="4">In a collaborative project with the <a href="https://uhmreactiondynamics.org/">Kaiser</a> and <a href="https://faculty.fiu.edu/~mebela/index_files/slide0003.htm">Mebel</a> groups we found first evidence for the existence of oxirene! Our findings are now published in <a href="https://www.science.org/doi/10.1126/sciadv.adg1134">Science Advances</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.science.org/doi/10.1126/sciadv.adg1134"><img src="https://AKEckhardt.github.io/images/news8.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>February 2023</b></font><br/><font size="1"><br/></font><font size="4">Thank you <i>Angewandte</i> for publishing André's introducing author profile! Learn more about André <a href="https://doi.org/10.1002/anie.202301830">here</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202301830"><img src="https://AKEckhardt.github.io/images/news7.png" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>January 2023</b></font><br/><font size="1"><br/></font><font size="4">Our paper about glycine imine is now published in <i>Angewandte</i>! Check out our work about glycine imine as the reactive intermediate in amino acid synthesis <a href="https://doi.org/10.1002/anie.202218548">here</a>! More about other imino acids is coming soon.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/anie.202218548"><img src="https://AKEckhardt.github.io/images/pub43.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4">Our proposal for a PhD position got funded by <a href="https://www.solvation.de/">RESOLV</a>! We will investigate solvation effects in the future.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/Alumni">Vladimir D. Drabkin</a> joined the group for his PhD studies. He will investigate the cryosolvation of interstellar relevant molecules using matrix isolation spectroscopy and computational chemistry!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/VladimirDrabkin"><img src="https://AKEckhardt.github.io/images/news4.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2022</b></font><br/><font size="1"><br/></font><font size="4"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt">Viktor Paczelt</a> joined the group for an in-depth practical. He will have fun in the lab doing organic synthesis, matrix isolation spectroscopy and computational chemistry!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://AKEckhardt.github.io/akegroup/ViktorPaczelt"><img src="https://AKEckhardt.github.io/images/news3.jpg" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">First paper of the group published in <i>Chem. Commun.</i>! Check out our work about the explosive decomposition of 1,2-diazidoethane, spectroscopic identification of 1,2-diiminoethane and imidazole synthesis <a href="https://doi.org/10.1039/D2CC03065A">here</a>!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1039/D2CC03065A"><img src="https://AKEckhardt.github.io/images/news2.PNG" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>July 2022</b></font><br/><font size="1"><br/></font><font size="4">Official start of the group. We gratefully acknowledge the Fonds der Chemischen Industrie for funding.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a></td>
+</tr>
+</table>
+___
+
+
+
+

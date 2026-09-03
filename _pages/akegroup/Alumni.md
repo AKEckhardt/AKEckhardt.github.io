@@ -1,0 +1,173 @@
+---
+layout: archive
+title: "Alumni"
+permalink: /akegroup/Alumni/
+author_profile: false
+sidebar:
+  nav: "docs"
+
+---
+
+{% include base_path %}
+<b>PhD Students</b>
+
+<b>Dr. Vladimir D. Drabkin</b><br/>
+September 2022 - January 2025
+<br/>
+<br/>
+
+
+<b>Master's Thesis Candidates</b>
+
+<b>Daniel Kühn</b><br/>
+February - August 2026
+
+<b>Tamari Kiknadze</b><br/>
+February - August 2026
+
+<b>Kristin Wulff</b><br/>
+March - September 2025
+
+<b>Julian Eßer</b><br/>
+March - September 2025
+
+<b>Viktor Paczelt</b><br/>
+February - August 2023
+<br/>
+<br/>
+
+
+<b>Bachelor's Thesis Candidates</b>
+
+<b>Laurin Inama</b><br/>
+January - March 2026
+
+<b>Sharanki Arudselvam</b><br/>
+October - December 2025
+
+<b>Nathalie Dietzel</b><br/>
+October - December 2025
+
+<b>Dilara Korkut</b><br/>
+January - March 2025
+<br/>
+<br/>
+
+
+<b>In-depth Students</b>
+
+<b>Duc Thanh Dinh</b><br/>
+February - April 2026
+
+<b>Tamari Kiknadze</b><br/>
+May 2025 - February 2026
+
+<b>Daniel Kühn</b><br/>
+May 2024 - January 2026
+
+<b>Jonas Haiduk</b><br/>
+November - January 2026
+
+<b>Teodor Leuca</b><br/>
+November - December 2025
+
+<b>Anoop Jagadeesha</b><br/>
+October - December 2025
+
+<b>Dilara Korkut</b><br/>
+August - September 2025
+
+<b>Ömer Tiska</b><br/>
+August - September 2025
+
+<b>Hadiseh Zahed</b><br/>
+June - August 2025
+
+<b>Vladislava Kulinich</b><br/>
+June - August 2025
+
+<b>Anna Marjanovic</b><br/>
+April - June 2025
+
+<b>Ben Vöth </b><br/>
+March - April 2025
+
+<b>Margarita Shishkova </b><br/>
+March - April 2025
+
+<b>Dominik Schreiner</b><br/>
+February - October 2025
+
+<b>Martyna Rybka</b><br/>
+October - December 2024
+
+<b>Philip Mund</b><br/>
+October - November 2024
+
+<b>Media Mohamad</b><br/>
+May - June 2024
+
+<b>Shahid Iqbal</b><br/>
+April - June 2024
+
+<b>Kristin Wulff</b><br/>
+November 2023 - March 2025
+
+<b>Julian Eßer</b><br/>
+October 2023 - February 2025
+
+<b>Aya S. A. Alhaddad</b><br/>
+May - June 2023
+
+<b>Adam Hasso</b><br/>
+April - May 2023
+
+<b>Luciana Herbeck</b><br/>
+March - April 2023<br/>
+
+<b>Viktor Paczelt</b><br/>
+August 2022 - January 2023<br/>
+<br/>
+<br/>
+
+
+<b>Visiting Students</b>
+
+<b>Kasmita Singha</b><br/>
+May - July 2026
+
+<b>Barbara Keresztes</b><br/>
+March - May 2026
+
+<b>Soham Chowdhury</b><br/>
+January - March 2025
+
+<b>Moulay Driss Mellaoui</b><br/>
+Februar - April 2025
+
+<b>Olga Vorobyova</b><br/>
+September - November 2024
+
+<b>Ivan Shchus</b><br/>
+September - November 2024
+
+<b>Hasan Gören</b><br/>
+July - September 2024
+
+<b>Alexander Swienty</b><br/>
+June - December 2023<br/>
+
+<b>Dónal O'Donnell</b><br/>
+June - August 2023
+
+<b>Shubham Sawle</b><br/>
+April - September 2023
+
+
+
+
+
+
+
+
+
