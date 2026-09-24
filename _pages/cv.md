@@ -38,8 +38,8 @@ Education
 	Advisors: Prof. [Rui Fausto](http://www.qui.uc.pt/~rfausto/homepage/), [Cláudio M. Nunes](https://sites.google.com/view/cmnunes), PhD and Dr. hab. [Igor D. Reva](http://www.qui.uc.pt/~reva/)
 	* 08/2018 - 10/2018: Visiting Researcher at <b>University of Hawaiʻi at Mānoa</b> (UHM), Honolulu, HI, USA,<br/>
 	Advisor: Prof. Dr. [Ralf I. Kaiser](https://uhmreactiondynamics.org/)
-* M. Sc. in Organic Chemistry, 2014 - 2016
-* B. Sc. in Organic Chemistry, 2011 - 2014<br/>
+* M. Sc. in Chemistry, 2014 - 2016
+* B. Sc. in Chemistry, 2011 - 2014<br/>
 
 * Abitur 2011 ([Theo-Koch-Schule Grünberg](https://www.theokoch.schule/))<br/><br/>
 
