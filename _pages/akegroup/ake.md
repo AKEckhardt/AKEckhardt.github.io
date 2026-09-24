@@ -48,6 +48,7 @@ Education
 
 Awards and Honors
 ======
+* ERC Starting Grant (<a href="https://news.rub.de/english/press-releases/2026-09-03-chemistry-erc-starting-grant-andre-k-eckhardt">2026</a>)
 * Boehringer Ingelheim Exploration Grant (<a href="https://www.boehringer-ingelheim-stiftung.de/was-wir-foerdern/foerderprogramme/exploration-grants.html">2025</a>)
 * Emmy Noether programme of the DFG ([2024 - 2030](https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether))
 * FCI Liebig Fellowship ([2022 - 2025](https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp))
