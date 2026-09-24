@@ -14,6 +14,14 @@ sidebar:
 
 ___
 
+(66) <b>Nonequilibrium Formation of Cyanophosphine (H<sub>2</sub>PCN) ─ The Simplest Phosphorus-Containing Nitrile ─ in Interstellar Ice Analogues.</b> J. Wang, B.-J. Sun, Z. Wang, C. Goodreau, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup>, K.-S. Lee, A, H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1021/acs.jpclett.6c02773](https://doi.org/10.1021/acs.jpclett.6c02773).
+
+<p align="center"> 
+<a href="https://doi.org/10.1021/acs.jpclett.6c02773"><img src="https://AKEckhardt.github.io/images/pub66.png" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (65) <b>Bottom-Up Formation of the Simplest Geminal Thiol─Methanedithiol (CH<sub>2</sub>(SH)<sub>2</sub>)─and the Methyl Hydrodisulfide (H<sub>3</sub>CSSH) Isomer in Interstellar Analogue Ices.</b> J. Wang, A. Herath, A. M. Turner, M. McAnally, R. C. Fortenberry, <u>A. K. Eckhardt</u><sup>*</sup> and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, 8090–8097, [doi:10.1021/acs.jpclett.6c01781](https://doi.org/10.1021/acs.jpclett.6c01781).
 
 <p align="center"> 
