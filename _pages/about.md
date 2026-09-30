@@ -33,15 +33,15 @@ Selected applications address molecular processes relevant to astrochemical and 
 </table>
 </p>
 
-
+<!-- 
 <p style='text-align: justify;'>
 <b>Für alle RUB-Studenten:</b><br/> 
 Wir suchen motivierte und ehrgeizige Studenten, die Spaß an der Synthese haben und darüber hinaus Interesse mitbringen neue Techniken, 
 wie die Matrixisolationsspektroskopie oder quantenmechanische Berechnungen für den Laboralltag zu erlernen. Wer als Vertiefungspraktikant, Bachelor-, oder Masterstudent frühzeitig die Arbeitsgruppe mitformen und mitgestalten möchte, ist herzlich eingeladen, 
 Kontakt aufzunehmen (einfach vorbeikommen oder <a href="mailto:Andre.Eckhardt@rub.de">E-Mail</a> schicken), um weitere Details zu besprechen.<br/> <br/> 
-
-<b>For all non-RUB members:</b><br/> 
-You are a postdoctoral researcher and interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
+-->
+<b>Interested in joining the group?</b><br/> 
+You are a postdoctoral researcher or looking for a PhD position and are interested in joining the group? We are happy to support you in your grant application at funding agencies such as <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Alexander von Humboldt Foundation</a> or the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie Skłodowska-Curie</a> program.
 <br/> <br/> 
 
 
