@@ -24,7 +24,7 @@ Selected applications address molecular processes relevant to astrochemical and 
 <a href="https://erc.europa.eu/homepage"><img src="https://AKEckhardt.github.io/images/ERC.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether"><img src="https://AKEckhardt.github.io/images/news19.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.vci.de/fonds/stipendien/liebig-stipendium/seiten.jsp"><img src="https://AKEckhardt.github.io/images/FCI.png" alt="Link" width="65%" height="auto%"/></a><br><br>
-<a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br><br>
+<img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/><br><br>
 <a href="https://www.solvation.de/"><img src="https://AKEckhardt.github.io/images/news5.png" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.daad.de/de/"><img src="https://AKEckhardt.github.io/images/news22.PNG" alt="Link" width="65%" height="auto%"/></a><br><br>
 <a href="https://www.humboldt-foundation.de/"><img src="https://AKEckhardt.github.io/images/Humboldt.png" alt="Link" width="65%" height="auto%"/></a><br><br>
@@ -124,7 +124,7 @@ We contributed to the <i>JOC</i> Special Issue: Physical Organic Chemistry: Neve
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>May 2025</b></font><br/><font size="1"><br/></font><font size="4">
-The Boehringer Ingelheim Stiftung supports our research with an <a href="https://www.boehringer-ingelheim-stiftung.de/was-wir-foerdern/foerderprogramme/exploration-grants.html">Exploration Grant</a>. Thank you very much! Our study about <i>N</i>-methyleneformamide got accepted in <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/SC/D5SC02777B"><i>Chem. Sci.</i></a>! André gave a talk at the 75. Steinheimer Gespräche.</font></td>
+The Boehringer Ingelheim Stiftung supports our research with an Exploration Grant. Thank you very much! Our study about <i>N</i>-methyleneformamide got accepted in <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2025/SC/D5SC02777B"><i>Chem. Sci.</i></a>! André gave a talk at the 75. Steinheimer Gespräche.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.boehringer-ingelheim-stiftung.de/"><img src="https://AKEckhardt.github.io/images/BI.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
