@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(66) <b>Nonequilibrium Formation of Cyanophosphine (H<sub>2</sub>PCN) ─ The Simplest Phosphorus-Containing Nitrile ─ in Interstellar Ice Analogues.</b> J. Wang, B.-J. Sun, Z. Wang, C. Goodreau, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup>, K.-S. Lee, A, H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, accepted, [doi:10.1021/acs.jpclett.6c02773](https://doi.org/10.1021/acs.jpclett.6c02773).
+(66) <b>Nonequilibrium Formation of Cyanophosphine (H<sub>2</sub>PCN) ─ The Simplest Phosphorus-Containing Nitrile ─ in Interstellar Ice Analogues.</b> J. Wang, B.-J. Sun, Z. Wang, C. Goodreau, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup>, K.-S. Lee, A, H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, 11614–11620, [doi:10.1021/acs.jpclett.6c02773](https://doi.org/10.1021/acs.jpclett.6c02773).
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.jpclett.6c02773"><img src="https://AKEckhardt.github.io/images/pub66.png" alt="Link" width="40%" height="auto%"/></a>
