@@ -31,7 +31,7 @@ BSc 2016<br/>
 Dominik studies chemistry at the Ruhr-University Bochum and received his B.Sc. in 2016 with 
 <a href="https://www.schulz-lab.de/">Prof. Dr. Frank Schulz</a> 
 on the derivatization of Macrolide antibiotics. In 2025 he joined the Eckhardt-lab for his in-depth 
-practical and is now working on his focal-point practical within the group.
+practical and focal-point practical and is now doing his Master Thesis within the group.
 </p>
 
 

@@ -46,7 +46,7 @@ Publications
 ------
 ___
 
-(01<b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, <u>K. Wulff</u> and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
+(01)<b><i>P</i>-Centered Dibenzophospholyl Radical: A Matrix Isolation IR, UV/Vis and ESR Spectroscopic Study.</b> M. Saraswat, A. Portela-González, <u>K. Wulff</u> and A. K. Eckhardt <i>J. Org. Chem.</i>, <b>2025</b>, <i>90</i>, 10616–10624, [doi:10.1039/D5SC02777B](https://doi.org/10.1021/acs.joc.5c00840). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-M8IO5D34) 
 
 <p align="center"> 
 <a href="https://doi.org/10.1021/acs.joc.5c00840"><img src="https://AKEckhardt.github.io/images/pub54.gif" alt="Link" width="40%" height="auto%"/></a>
@@ -56,6 +56,10 @@ ___
 
 ___
 
+(02) <b>The Pyridylketenyl Anion: Entry to Diverse N-Heterocycles</b> S. Mayer, F. Krischer, <u>K. Wulff</u> and V. H. Gessner <i>J. Am. Chem. Soc.</i>, <b>2026</b>, <i>148 (17)</i>, 18276–18284, [doi:10.1021/jacs.6c03327](https://doi.org/10.1021/jacs.6c03327).
+
+
+___
 
 
 
