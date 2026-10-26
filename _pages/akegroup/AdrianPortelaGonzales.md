@@ -45,6 +45,14 @@ Publications
 ------
 ___
 
+(05) <b>Enhanced Resolution in EPR Spectroscopy: Solid <i>para</i>-Hydrogen Resolves Proton Hyperfine Splitting in the Diphenylphosphinyl Radical.</b> M. Maehara, <u>A. Portela-González</u>, K. Wulff, J. Eßer and A. K. Eckhardt <i>ChemistryEurope</i>, <b>2026</b>, 4:e70380, [doi:10.1002/ceur.70380](https://doi.org/10.1002/ceur.70380). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-LNL93A)
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/ceur.70380"><img src="https://AKEckhardt.github.io/images/pub67.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (04) <b>Spectroscopic Characterization and Electrocyclic Ring Opening of Parent 2-Azetine.</b> <u>A. Portela-González</u>, D. Kühn and A. K. Eckhardt <i>J. Phys. Org. Chem.</i>, <b>2026</b>, <i>39</i>, e70071, [doi:10.1002/poc.70071](https://doi.org/10.1002/poc.70071). [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MIU9TIN3)
 
 <p align="center"> 
