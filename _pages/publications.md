@@ -14,6 +14,14 @@ sidebar:
 
 ___
 
+(67) <b>Enhanced Resolution in EPR Spectroscopy: Solid <i>para</i>-Hydrogen Resolves Proton Hyperfine Splitting in the Diphenylphosphinyl Radical.</b> M. Maehara, A. Portela-González, K. Wulff, J. Eßer, <u>A. K. Eckhardt</u><sup>*</sup> <i>ChemistryEurope</i>, <b>2026</b>, 4:e70380, [doi:10.1002/ceur.70380](https://doi.org/10.1002/ceur.70380).
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/ceur.70380"><img src="https://AKEckhardt.github.io/images/pub67.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (66) <b>Nonequilibrium Formation of Cyanophosphine (H<sub>2</sub>PCN) ─ The Simplest Phosphorus-Containing Nitrile ─ in Interstellar Ice Analogues.</b> J. Wang, B.-J. Sun, Z. Wang, C. Goodreau, M. McAnally, <u>A. K. Eckhardt</u><sup>*</sup>, K.-S. Lee, A, H. H. Chang and R. I. Kaiser <i>J. Phys. Chem. Lett.</i>, <b>2026</b>, <i>17</i>, 11614–11620, [doi:10.1021/acs.jpclett.6c02773](https://doi.org/10.1021/acs.jpclett.6c02773).
 
 <p align="center"> 
