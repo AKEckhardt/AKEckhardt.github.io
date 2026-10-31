@@ -52,7 +52,7 @@ ___
 
 ___
 
-(01)<b>Carbon-Based Weakly Coordinating Anions: Molecular Design, Synthesis and Applications</b> L. Kelling, <u>J. Eßer</u>, D. Knyszek and V. H. Gessner <i>Angew. Chem. Int. Ed.</i>, <b>2024</b>, <i>63</i>, e202405936, [doi:10.1002/anie.202405936](https://doi.org/10.1002/anie.202405936). 
+(01) <b>Carbon-Based Weakly Coordinating Anions: Molecular Design, Synthesis and Applications</b> L. Kelling, <u>J. Eßer</u>, D. Knyszek and V. H. Gessner <i>Angew. Chem. Int. Ed.</i>, <b>2024</b>, <i>63</i>, e202405936, [doi:10.1002/anie.202405936](https://doi.org/10.1002/anie.202405936). 
 
 ___
 
