@@ -14,7 +14,7 @@ sidebar:
 
 ___
 
-(67) <b>Photochemical Generation and Spectroscopic Characterization of Parent 3-Iminooxetane and 3-Oxazoline From 3-Azidooxetane.</b> M. Maehara, C. Thiehoff, O. Vorobyova, A. Portela-González and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Eur. J.</i>, <b>2026</b>, e71865, [doi:10.1002/chem.71865](https://doi.org/10.1002/chem.71865). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-PKWXY1)
+(68) <b>Photochemical Generation and Spectroscopic Characterization of Parent 3-Iminooxetane and 3-Oxazoline From 3-Azidooxetane.</b> M. Maehara, C. Thiehoff, O. Vorobyova, A. Portela-González and <u>A. K. Eckhardt</u><sup>*</sup> <i>Chem. Eur. J.</i>, <b>2026</b>, e71865, [doi:10.1002/chem.71865](https://doi.org/10.1002/chem.71865). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-PKWXY1)
 
 <p align="center"> 
 <a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/pub68.jpg" alt="Link" width="40%" height="auto%"/></a>
