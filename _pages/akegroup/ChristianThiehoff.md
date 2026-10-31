@@ -46,6 +46,14 @@ Publications
 ------
 ___
 
+(02) <b>Photochemical Generation and Spectroscopic Characterization of Parent 3-Iminooxetane and 3-Oxazoline From 3-Azidooxetane.</b> M. Maehara, <u>C. Thiehoff</u>, O. Vorobyova, A. Portela-González and A. K. Eckhardt <i>Chem. Eur. J.</i>, <b>2026</b>, e71865, [doi:10.1002/chem.71865](https://doi.org/10.1002/chem.71865). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-PKWXY1)
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/pub68.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (01) <b>Photochemical Generation and Characterization of Alanine Imine: A Key Intermediate in Prebiotic Amino Acid Formation.</b> V. D. Drabkin, <u>C. Thiehoff</u>, M. E. Sandoval-Salinas, V. Paczelt, R. Crespo-Otero and A. K. Eckhardt <i>J. Am. Chem. Soc.</i>, <b>2025</b>, <i>147</i>, 38785–38795, [doi:10.1021/jacs.5c14327](https://doi.org/10.1021/jacs.5c14327). [(ChemRxiv)](https://doi.org/10.26434/chemrxiv-2025-wk0fr) [(Research Data)](https://doi.org/10.17877/RESOLV-2025-MCVZC6Y6) 
 <p align="center"> 
 <a href="https://doi.org/10.1021/jacs.5c14327"><img src="https://AKEckhardt.github.io/images/pub57.gif" alt="Link" width="40%" height="auto%"/></a>

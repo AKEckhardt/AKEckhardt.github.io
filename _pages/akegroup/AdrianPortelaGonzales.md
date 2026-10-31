@@ -45,6 +45,14 @@ Publications
 ------
 ___
 
+(06) <b>Photochemical Generation and Spectroscopic Characterization of Parent 3-Iminooxetane and 3-Oxazoline From 3-Azidooxetane.</b> M. Maehara, C. Thiehoff, O. Vorobyova, <u>A. Portela-González</u> and A. K. Eckhardt <i>Chem. Eur. J.</i>, <b>2026</b>, e71865, [doi:10.1002/chem.71865](https://doi.org/10.1002/chem.71865). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-PKWXY1)
+
+<p align="center"> 
+<a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/pub68.jpg" alt="Link" width="40%" height="auto%"/></a>
+</p>
+
+___
+
 (05) <b>Enhanced Resolution in EPR Spectroscopy: Solid <i>para</i>-Hydrogen Resolves Proton Hyperfine Splitting in the Diphenylphosphinyl Radical.</b> M. Maehara, <u>A. Portela-González</u>, K. Wulff, J. Eßer and A. K. Eckhardt <i>ChemistryEurope</i>, <b>2026</b>, <i>4</i>, e70380, [doi:10.1002/ceur.70380](https://doi.org/10.1002/ceur.70380). [(Research Data)](https://doi.org/10.17877/RESOLV-2026-LNL93A)
 
 <p align="center"> 
