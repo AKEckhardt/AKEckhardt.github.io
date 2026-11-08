@@ -50,12 +50,12 @@ You are a postdoctoral researcher or looking for a PhD position and are interest
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2026</b></font><br/><font size="1"><br/></font><font size="4">
 André submitted his habilitation thesis, marking an important step in his academic career. Mika's paper is finally online. Additionally, members of our group attended the RESOLV Autumn Workshops, engaging in stimulating scientific discussions and exchanging ideas with fellow researchers.</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/ceur.70380"><img src="https://AKEckhardt.github.io/images/news47.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/news48.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2026</b></font><br/><font size="1"><br/></font><font size="4">
 Two new papers are out! Our latest studies report the photochemical generation and characterization of 3-iminooxetane and 3-oxazoline (<a href="https://doi.org/10.1002/chem.71865"><i>Chem. Eur. J.</i></a>) and demonstrate enhanced EPR resolution using solid para-hydrogen (<a href="https://doi.org/10.1002/ceur.70380"><i>ChemistryEurope</i></a>). Alina Miftakhova successfully completed her BSc thesis. Congratulations to everyone involved!</font></td>
-<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/news48.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/ceur.70380"><img src="https://AKEckhardt.github.io/images/news47.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2026</b></font><br/><font size="1"><br/></font><font size="4">
