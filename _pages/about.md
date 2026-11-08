@@ -49,7 +49,7 @@ You are a postdoctoral researcher or looking for a PhD position and are interest
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2026</b></font><br/><font size="1"><br/></font><font size="4">
-André submitted his habilitation thesis, marking an important step in his academic career. Mika's paper is finally <a href="https://doi.org/10.1002/chem.71865">online</a>. Additionally, members of our group attended the RESOLV Autumn Workshops, engaging in stimulating scientific discussions and exchanging ideas with fellow researchers.</font></td>
+André submitted his habilitation thesis, marking the next step in his academic career. Mika's paper is finally <a href="https://doi.org/10.1002/chem.71865">online</a>. Additionally, members of our group attended the RESOLV Autumn Workshops, engaging in stimulating scientific discussions and exchanging ideas with fellow researchers.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/news48.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
