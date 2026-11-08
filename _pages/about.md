@@ -48,13 +48,23 @@ You are a postdoctoral researcher or looking for a PhD position and are interest
 <font size="5"><b>News</b></font><font size="2"><br/></font>
 <table> <style>table, th, td {border: transparent;}</style>
 <tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>November 2026</b></font><br/><font size="1"><br/></font><font size="4">
+André submitted his habilitation thesis, marking an important step in his academic career. Mika's paper is finally online. Additionally, members of our group attended the RESOLV Autumn Workshops, engaging in stimulating scientific discussions and exchanging ideas with fellow researchers.</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/ceur.70380"><img src="https://AKEckhardt.github.io/images/news47.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
+<td style="width:70%;" align="justify" valign="middle"><font size="4"><b>October 2026</b></font><br/><font size="1"><br/></font><font size="4">
+Two new papers are out! Our latest studies report the photochemical generation and characterization of 3-iminooxetane and 3-oxazoline (<a href="https://doi.org/10.1002/chem.71865"><i>Chem. Eur. J.</i></a>) and demonstrate enhanced EPR resolution using solid para-hydrogen (<a href="https://doi.org/10.1002/ceur.70380"><i>ChemistryEurope</i></a>). Alina Miftakhova successfully completed her BSc thesis. Congratulations to everyone involved!</font></td>
+<td style="width:30%;" align="center" valign="middle"><a href="https://doi.org/10.1002/chem.71865"><img src="https://AKEckhardt.github.io/images/news48.jpg" alt="Link" width="65%" height="auto%"/></a><br/></td>
+</tr>
+<tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>September 2026</b></font><br/><font size="1"><br/></font><font size="4">
-André was awarded an <a href="https://news.rub.de/english/press-releases/2026-09-03-chemistry-erc-starting-grant-andre-k-eckhardt">ERC Starting Grant 2026</a>! Following the success of the Emmy Noether Programme, this marks another major recognition of our research. Up next: With major changes to our laboratory infrastructure in Bochum, I and our lab are looking for a permanent institutional home where the Eckhardt Lab can continue to grow, develop its research programme, and make full use of the opportunities this ERC Starting Grant provides.</font></td>
+André was awarded an <a href="https://news.rub.de/english/press-releases/2026-09-03-chemistry-erc-starting-grant-andre-k-eckhardt">ERC Starting Grant 2026</a>! Following the success of the Emmy Noether Programme, this marks another major recognition of our research. Up next: With major changes to our laboratory infrastructure in Bochum, I and our lab are looking for a permanent institutional home where the Eckhardt Lab can continue to grow, develop its research programme, and make full use of the opportunities this ERC Starting Grant provides. Julian and Kristin attended the ICPOC-27. Julian won a poster price. Congratulations.</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://erc.europa.eu/homepage"><img src="https://AKEckhardt.github.io/images/ERC.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>
 <td style="width:70%;" align="justify" valign="middle"><font size="4"><b>August 2026</b></font><br/><font size="1"><br/></font><font size="4">
-Together with the <a href="www.mertenlab.de/">Merten Lab</a>, we organized and hosted <a href="https://www.mertenlab.de/cplt2026/">CPLT2026</a> at Ruhr University Bochum, bringing together an international community of researchers interested in low-temperature chemistry and physics. Daniel and Tamari successfully completed their Master's theses. Congratulations to both!</font></td>
+Together with the <a href="www.mertenlab.de/">Merten Lab</a>, we organized and hosted <a href="https://www.mertenlab.de/cplt2026/">CPLT2026</a> at Ruhr University Bochum, bringing together an international community of researchers interested in low-temperature chemistry and physics. Julian won a poster price. Congratulations! Daniel and Tamari successfully completed their Master's theses. Congratulations to both!</font></td>
 <td style="width:30%;" align="center" valign="middle"><a href="https://www.mertenlab.de/cplt2026/"><img src="https://AKEckhardt.github.io/images/news46.png" alt="Link" width="65%" height="auto%"/></a><br/></td>
 </tr>
 <tr>

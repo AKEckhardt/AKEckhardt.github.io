@@ -39,6 +39,9 @@ February - August 2023
 
 <b>Bachelor's Thesis Candidates</b>
 
+<b>Alina Miftakhova</b><br/>
+August - October 2026
+
 <b>Laurin Inama</b><br/>
 January - March 2026
 
@@ -55,6 +58,15 @@ January - March 2025
 
 
 <b>In-depth Students</b>
+
+<b>Julia Peifer</b><br/>
+August - September 2026
+
+<b>Yunus Icer</b><br/>
+April - June 2026
+
+<b>Chris Betten</b><br/>
+April - June 2026
 
 <b>Duc Thanh Dinh</b><br/>
 February - April 2026
